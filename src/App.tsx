@@ -21,7 +21,7 @@ import { CircleHelpIcon } from "./components/ui/circle-help-icon";
 import { XIcon } from "./components/ui/x-icon";
 import { PaletteIcon } from "./components/ui/palette-icon";
 import { Button } from "./components/ui/button";
-import { Book as BookIcon, Network, Check, Code } from "lucide-react";
+import { Book as BookIcon, Network, Check, Code, Github } from "lucide-react";
 import { Card, CardHeader, CardContent } from "./components/ui/card";
 import { Input } from "./components/ui/input";
 import {
@@ -569,6 +569,27 @@ function App() {
 
         <SettingsModal show={showSettings} onClose={() => setShowSettings(false)} />
         <AddNetworksModal show={showAddNetworks} onClose={() => setShowAddNetworks(false)} />
+
+        <footer
+          className="py-6 border-t flex items-center justify-center gap-4 text-base mt-auto"
+          style={{
+            borderColor: 'var(--theme-card-border)',
+            color: 'var(--theme-text-secondary)'
+          }}
+        >
+          <span>v{import.meta.env.VITE_APP_VERSION}</span>
+          <span style={{ opacity: 0.4 }}>|</span>
+          <a
+            href="https://github.com/TigerOG-Official/FreedomBridge"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 transition-colors hover:opacity-80"
+            style={{ color: 'var(--theme-text-secondary)' }}
+          >
+            <Github className="w-5 h-5" />
+            <span>GitHub</span>
+          </a>
+        </footer>
       </div>
     </>
   );

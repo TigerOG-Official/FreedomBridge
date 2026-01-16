@@ -413,10 +413,6 @@ export default function LandingPage() {
           </motion.div>
         </div>
       </section>
-
-      <footer className="text-center py-3 footer-version relative z-10">
-        v{import.meta.env.VITE_APP_VERSION}
-      </footer>
     </div>
   );
 }
