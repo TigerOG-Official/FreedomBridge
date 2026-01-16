@@ -1,0 +1,8 @@
+# Freedom Bridge - robots.txt
+# Hosted on IPFS, accessible via multiple domains
+User-agent: *
+Allow: /
+
+# Primary: freedombridge.xyz
+# Web3: freedombridge.og | tiger.og
+

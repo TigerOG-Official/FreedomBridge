@@ -1,0 +1,364 @@
+{
+  "app": {
+    "titleFreedom": "Freedom",
+    "titleBridge": "Bridge"
+  },
+  "nav": {
+    "settings": "Beállítások",
+    "menu": "Menü",
+    "preferences": "Beállítások",
+    "switchTheme": "Megjelenés",
+    "theme": {
+      "dark": "Sötét",
+      "light": "Világos"
+    },
+    "switchPalette": "Paletta váltása",
+    "wiki": "Dokumentáció / Wiki",
+    "contracts": "Szerződések",
+    "faq": "GYIK",
+    "logout": "Kijelentkezés",
+    "language": "Nyelv",
+    "languageSearchPlaceholder": "Nyelvek keresése",
+    "languageNoResults": "Nem találhatók nyelvek",
+    "close": "Bezár"
+  },
+  "addNetworks": {
+    "title": "Hálózatok hozzáadása",
+    "description": "Kattintson egy gombra alább, hogy hálózatokat adjon a pénztárcájához. Ez megkönnyíti a láncok közötti váltást tesztelés közben."
+  },
+  "tabs": {
+    "convert": "Átváltás",
+    "bridge": "Híd"
+  },
+  "convert": {
+    "token": "Token",
+    "selectToken": "Token kiválasztása",
+    "balance": "Egyenleg",
+    "noConvertibleTokens": "Nincsenek átváltható tokenek a(z) {{chainName}} hálózaton",
+    "convert": "Átváltás",
+    "addToWalletLabel": "{{symbol}} importálása a(z) {{chainName}} hálózaton a pénztárcába",
+    "addToWalletButton": "Importálás a pénztárcába",
+    "addingToken": "Hozzáadás…",
+    "addTokenError": "Nem sikerült hozzáadni a tokent a pénztárcához",
+    "legacyTokenMissing": "Hiányzó örökölt token ehhez a lánchoz",
+    "tigerOGMissing": "Hiányzó TigerOG token ehhez a lánchoz",
+    "networkWarning": {
+      "title": "Rossz hálózat",
+      "message": "A token átváltás csak a BSC láncon érhető el.",
+      "description": "Kérjük, váltson a BSC láncra a pénztárcájában a tokenek átváltásához, vagy navigáljon a Híd fülre a tokenek láncok közötti átviteléhez."
+    }
+  },
+  "bridge": {
+    "fromChain": "Láncról",
+    "selectChainPlaceholder": "Lánc kiválasztása",
+    "toChain": "Láncra",
+    "selectDestinationPlaceholder": "Cél kiválasztása",
+    "noDestination": "Nincs cél",
+    "noBridgeableTokens": "Nincsenek áthidalható tokenek",
+    "bridgeButton": "Tokenek áthidalása",
+    "getFeeQuote": "Díjajánlat kérése",
+    "viewOnAxelarscan": "Megtekintés az Axelarscan-en",
+    "addDestinationTokenLabel": "{{symbol}} importálása a(z) {{chainName}} hálózaton a pénztárcába",
+    "addTokenError": "Nem sikerült hozzáadni a tokent a pénztárcához",
+    "estimatedTime": "Becsült idő",
+    "recentTransactions": "Legutóbbi tranzakciók",
+    "clearHistory": "Előzmények törlése",
+    "historyStoredLocally": "A tranzakciós előzmények helyileg vannak tárolva ezen az eszközön"
+  },
+  "settings": {
+    "title": "Beállítások",
+    "environment": "Környezet",
+    "rpcEndpoints": "RPC végpontok",
+    "rpcEndpointsHelp": "Frissítse a kiválasztott környezetben minden lánchoz használt RPC URL-t.",
+    "noChainsConfigured": "Nincsenek konfigurált láncok ehhez a környezethez.",
+    "cancel": "Mégse",
+    "save": "Mentés"
+  },
+  "wallet": {},
+  "login": {
+    "title": "Üdvözöljük vissza",
+    "subtitle": "Jelentkezzen be a Freedom Bridge-hez való folytatáshoz",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "nev@pelda.com",
+    "passwordLabel": "Jelszó",
+    "passwordPlaceholder": "Írja be a jelszót",
+    "rememberMe": "Emlékezzen rám ezen az eszközön",
+    "submit": "Bejelentkezés",
+    "validation": {
+      "required": "E-mail és jelszó kötelező.",
+      "invalid": "Érvénytelen e-mail vagy jelszó."
+    }
+  },
+  "landing": {
+    "banner": {
+      "title": "Új itt?",
+      "message": "Ismerje meg a Freedom Bridge-et és hogy hogyan hidaljon át TigerOG tokeneket a láncok között."
+    },
+    "hero": {
+      "badge": "Az Axelar által működtetve",
+      "title": "Szabadítsa fel <1/> <2>Eszközeit</2>",
+      "subtitle": "Zökkenőmentesen hidaljon át TigerOG tokeneket a láncok között az Axelar Interchain Token Service segítségével. Biztonságos, gyors és adómentes.",
+      "launchApp": "Alkalmazás indítása",
+      "documentation": "Dokumentáció"
+    },
+    "stats": {
+      "messaging": "Axelar Hálózat",
+      "networks": "Élő hálózatok",
+      "fees": "Protokoll díjak",
+      "finality": "Véglegesség"
+    },
+    "features": {
+      "title": "Interchain Token Service",
+      "description": "A Freedom Bridge az Axelar ITS-t használja, hogy zökkenőmentes, biztonságos és adómentes áthidalási élményt nyújtson {{count}}+ blokkláncon keresztül.",
+      "stopDecay": {
+        "title": "Állítsa meg a romlást",
+        "description": "Az örökölt tokenek minden vételnél és eladásnál elégetik értékének 10-11%-át. A TigerOG-ba való csomagolás azonnal megállítja ezt a vérzést, megőrizve értékének 100%-át.",
+        "graphLabel1": "100% Megőrzött (TigerOG)",
+        "graphLabel2": "-40% Érték (Örökölt 10% Adó)"
+      },
+      "conversion": {
+        "title": "1:1 Átváltás",
+        "description": "A teljes kínálat soha nem változik. A tokenek egy biztonságos migrációs szerződésben vannak tartva, és pontosan 1:1 egyenértékű mennyiséget használnak. Nincs infláció, nincs hígulás."
+      },
+      "multichain": {
+        "title": "Többláncú",
+        "description": "Telepítse egyszer, érje el bárhol. Eszköze natív láncok közötti tokenné válik olyan láncokon, mint az Ethereum, BNB Chain, Base és mások."
+      },
+      "security": {
+        "title": "Axelar Biztonság",
+        "description": "Az Axelar decentralizált validátor hálózata működteti. Az ITS biztosítja, hogy tokenjeit biztonságosan és következetesen továbbítsák minden csatlakoztatott hálózaton.",
+        "button": "Áthidalás indítása"
+      }
+    },
+    "teaser": {
+      "title": "Szeretne más érméket?",
+      "subtitle": "Mit gondol a <lunc>LUNC</lunc>-ról, a <crepe>Crepe</crepe>-ről vagy a <shiba>Shiba</shiba>-ról?"
+    },
+    "cta": {
+      "title": "Készen áll az áthidalásra?",
+      "description": "Csatlakozzon a láncok közötti forradalomhoz. Kevesebb mint egy percet vesz igénybe eszközeinek becsomagolása és az áthidalás megkezdése az Axelar-on keresztül.",
+      "button": "Alkalmazás indítása most"
+    }
+  },
+  "wiki": {
+    "title": "Freedom Bridge Wiki",
+    "searchPlaceholder": "Dokumentáció keresése...",
+    "header": {
+      "title": "Dokumentáció",
+      "subtitle": "Tanulja meg, hogyan csomagolja be az örökölt tokeneket, hidaljon át láncok között, és integrálódjon a Freedom Bridge-dzsel."
+    },
+    "nav": {
+      "gettingStarted": "Kezdő lépések",
+      "coreConcepts": "Alapvető fogalmak",
+      "developers": "Fejlesztők",
+      "tigerogSupply": "TigerOG Kínálat",
+      "lionogSupply": "LionOG Kínálat",
+      "frogogSupply": "FrogOG Kínálat"
+    },
+    "articles": {
+      "whatIs": {
+        "title": "Mi az a Freedom Bridge?",
+        "content": "A Freedom Bridge egy decentralizált áthidaló protokoll, amely az Axelar Interchain Token Service (ITS) rendszerére épül. Arra tervezték, hogy felszabadítsa a tokeneket az egyláncú korlátozások és a magas tranzakciós adók alól. A szabványos tokenek láncok közötti kompatibilis eszközökbe történő csomagolásával a felhasználók szabadon mozgathatják értéküket a támogatott blokkláncokon keresztül.",
+        "taxFreeTitle": "Adómentes átutalások",
+        "taxFreeDesc": "Az örökölt tokenek gyakran 10%+ adóval rendelkeznek. A TigerOG tokenek 0% adóval rendelkeznek.",
+        "omnichainTitle": "Interchain",
+        "omnichainDesc": "Mozgasson eszközöket azonnal {{count}}+ blokklánc között az Axelar-on keresztül."
+      },
+      "howToConvert": {
+        "title": "Hogyan váltsunk tokeneket",
+        "step1": "Csatlakoztassa pénztárcáját a forráslánchoz (pl. BNB Chain).",
+        "step2": "Navigáljon az <strong>Átváltás</strong> fülre.",
+        "step3": "Válassza ki az átváltani kívánt örökölt tokent.",
+        "step4": "Hagyja jóvá a Migrációs szerződést a tokenjei elköltésére.",
+        "step5": "Kattintson az <strong>Átváltás</strong> gombra az örökölt tokenek letétbe helyezéséhez és egyenértékű mennyiségű \"TigerOG\" token fogadásához.",
+        "note": "<strong>Megjegyzés:</strong> Az átváltás magában foglalja az örökölt token tranzakciós adóját (a frissítés során), ha a tokenje adót számít fel az átutalásokra. Azonban a TigerOG-ba való átváltás után minden további átutalás és áthidalás adómentes."
+      },
+      "supportedNetworks": {
+        "title": "Támogatott hálózatok",
+        "content": "A Freedom Bridge {{count}}+ blokkláncból álló növekvő ökoszisztémát támogat, lehetővé téve a zökkenőmentes interoperabilitást az EVM környezetben az Axelar-on keresztül."
+      },
+      "xerc20": {
+        "title": "Interchain Tokenek",
+        "content": "Az Axelar Interchain Token Service (ITS) lehetővé teszi a tokenek telepítését több láncon, következetes címmel és egységes kínálatkezeléssel. A Freedom Bridge az ITS-t használja annak biztosítására, hogy a TigerOG kanonikus eszköz maradjon, bárhová is hidalják át."
+      },
+      "axelar": {
+        "title": "Axelar Hálózat",
+        "content": "Az Axelar-t használjuk interoperabilitási rétegként. Az Axelar egy decentralizált hálózat, amely összeköti a különböző blokkláncokat, lehetővé téve a biztonságos láncok közötti kommunikációt és eszközátvitelt. Az Axelar biztonsági modellje engedély nélküli validátorokra támaszkodik, magas szintű biztonságot nyújtva az interchain tokenek számára."
+      },
+      "migration": {
+        "title": "Migrációs logika",
+        "content": "A Migrációs szerződést az eredeti láncon (pl. BSC) telepítik. Ez őrzi az eredeti örökölt tokeneket. Amikor tokeneket frissít, a Migrációs szerződésbe helyezi el azokat. Amikor kicsomagol (ha támogatott), elégeti a TigerOG reprezentációt, hogy felszabadítsa az eredeti tokeneket. Ez szigorúan biztosítja az 1:1 rögzítést."
+      },
+      "contracts": {
+        "title": "Okosszerződés címek",
+        "colNetwork": "Hálózat",
+        "colType": "Szerződés típusa",
+        "colAddress": "Cím"
+      },
+      "security": {
+        "title": "Biztonsági modell",
+        "content": "A biztonság a legfontosabb. Többrétegű biztonsági megközelítést alkalmazunk:",
+        "point1": "<strong>Migrációs architektúra:</strong> Az örökölt tokeneket ellenőrzött, megváltoztathatatlan okosszerződésekben tárolják.",
+        "point2": "<strong>Axelar Validátorok:</strong> A láncok közötti üzeneteket az Axelar decentralizált hálózata ellenőrzi.",
+        "point3": "<strong>Következetes kínálat:</strong> Az ITS kezeli a verést és égetést, hogy állandó teljes kínálatot tartson fenn minden láncon.",
+        "point4": "<strong>Auditált logika:</strong> Az iparági szabvány Axelar és OpenZeppelin könyvtáraira épül."
+      },
+      "supplyCommon": {
+        "howWeCalculated": "Hogyan számítottuk ezt ki",
+        "verification": "Ellenőrzés",
+        "verificationDesc": "Minden kínálati adat függetlenül ellenőrizhető a láncon:",
+        "table": {
+          "category": "Kategória",
+          "amount": "Mennyiség",
+          "percentOfTotal": "A teljes %-a",
+          "originalSupply": "Eredeti teljes kínálat",
+          "deadAddress": "Halott cím (Elégetett)",
+          "contractBalance": "Szerződés egyenleg (Beragadt)",
+          "circulatingSupply": "Forgó kínálat"
+        },
+        "deadAddressTitle": "1. Halott cím",
+        "contractBalanceTitle": "2. Szerződés egyenleg",
+        "lpLockedTitle": "3. LP Zárolt tokenek"
+      },
+      "tigerogSupply": {
+        "title": "TigerOG Kínálat Részletezése",
+        "intro": "A TigerOG rögzített forgó kínálattal rendelkezik, amely az eredeti BNBTiger tokenből származik. A kínálati számítás figyelembe veszi az összes elégetett és tartósan zárolt tokent.",
+        "lpLocked": "LP Zárolt (az LP 86,18%-a Elégetve)",
+        "deadAddressDesc": "A <code>0x000...dEaD</code> címre küldött tokenek tartósan elégetésre kerülnek, és soha nem állíthatók vissza. Ez magában foglalja az eredeti BNBTiger adómechanizmuson keresztül elégetett tokeneket.",
+        "contractBalanceDesc": "Kis mennyiségű token ragadt magában a BNBTiger szerződésben. Ezek a tokenek hozzáférhetetlenek és gyakorlatilag kikerültek a forgalomból.",
+        "lpLockedDesc": "A PancakeSwap likviditási pool BNBTiger tokeneket tartalmaz BNB-vel párosítva. Amikor az LP tokeneket elégetik (a halott címre küldik), a poolban lévő mögöttes tokenek tartósan zárolva lesznek.",
+        "lpBurnedPercent": "Elégetett LP tokenek: az összes LP token 86,18%-a",
+        "lpLockedPercent": "Ezért az LP-ben lévő tokenek 86,18%-a tartósan zárolva van",
+        "note": "<strong>Megjegyzés:</strong> A TigerOG 1:1 arányt tart fenn a BNBTigerrel a migráció során. A TigerOG forgó kínálata megegyezik a BNBTiger valódi forgó kínálatával az összes elégetett és zárolt token figyelembevétele után.",
+        "launchData": "<strong>Indítási adatok:</strong> Ezeket a számokat az induláskor számították ki. Az örökölt BNBTiger token továbbra is égeti a tokeneket minden vételi/eladási tranzakciónál, így a tényleges forgó kínálat kissé alacsonyabb lehet a feltüntetettnél.",
+        "legacyContract": "BNBTiger Token Szerződés",
+        "ogContract": "TigerOG Token Szerződés",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,772,706,396,234,535,780,783,775",
+          "deadPercent": "57.73%",
+          "contract": "−6,142,342,823,271,327",
+          "contractPercent": "<0.01%",
+          "lp": "−565,059,839,948,518,979,124,912",
+          "lpPercent": "5.65%",
+          "circulating": "3,662,233,757,674,602,416,819,986",
+          "circulatingPercent": "36.62%"
+        }
+      },
+      "lionogSupply": {
+        "title": "LionOG Kínálat Részletezése",
+        "intro": "A LionOG rögzített forgó kínálattal rendelkezik, amely az eredeti BNBLion tokenből származik. A kínálati számítás figyelembe veszi az összes elégetett és tartósan zárolt tokent.",
+        "lpLocked": "LP Zárolt (az LP 99,98%-a Elégetve)",
+        "deadAddressDesc": "A <code>0x000...dEaD</code> címre küldött tokenek tartósan elégetésre kerülnek, és soha nem állíthatók vissza. Ez magában foglalja az eredeti BNBLion adómechanizmuson keresztül elégetett tokeneket.",
+        "contractBalanceDesc": "Kis mennyiségű token ragadt magában a BNBLion szerződésben. Ezek a tokenek hozzáférhetetlenek és gyakorlatilag kikerültek a forgalomból.",
+        "lpLockedDesc": "A PancakeSwap likviditási pool BNBLion tokeneket tartalmaz BNB-vel párosítva. Amikor az LP tokeneket elégetik (a halott címre küldik), a poolban lévő mögöttes tokenek tartósan zárolva lesznek.",
+        "lpBurnedPercent": "Elégetett LP tokenek: az összes LP token 99,98%-a",
+        "lpLockedPercent": "Ezért az LP-ben lévő tokenek 99,98%-a tartósan zárolva van",
+        "note": "<strong>Megjegyzés:</strong> A LionOG 1:1 arányt tart fenn a BNBLionnal a migráció során. A LionOG forgó kínálata megegyezik a BNBLion valódi forgó kínálatával az összes elégetett és zárolt token figyelembevétele után.",
+        "launchData": "<strong>Indítási adatok:</strong> Ezeket a számokat az induláskor számították ki. Az örökölt BNBLion token továbbra is égeti a tokeneket minden vételi/eladási tranzakciónál, így a tényleges forgó kínálat kissé alacsonyabb lehet a feltüntetettnél.",
+        "legacyContract": "BNBLion Token Szerződés",
+        "ogContract": "LionOG Token Szerződés",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,724,597,218,422,106,614,085,614",
+          "deadPercent": "57.25%",
+          "contract": "−9,219,967,745,410,740,095,290",
+          "contractPercent": "<0.01%",
+          "lp": "−442,490,152,327,271,918,655,109",
+          "lpPercent": "4.42%",
+          "circulating": "3,832,903,409,282,876,056,519,182",
+          "circulatingPercent": "38.33%"
+        }
+      },
+      "frogogSupply": {
+        "title": "FrogOG Kínálat Részletezése",
+        "intro": "A FrogOG rögzített forgó kínálattal rendelkezik, amely az eredeti BNBFrog tokenből származik. A kínálati számítás figyelembe veszi az összes elégetett és tartósan zárolt tokent.",
+        "lpLocked": "LP Zárolt (az LP 99,31%-a Elégetve)",
+        "deadAddressDesc": "A <code>0x000...dEaD</code> címre küldött tokenek tartósan elégetésre kerülnek, és soha nem állíthatók vissza. Ez magában foglalja az eredeti BNBFrog adómechanizmuson keresztül elégetett tokeneket.",
+        "contractBalanceDesc": "Kis mennyiségű token ragadt magában a BNBFrog szerződésben. Ezek a tokenek hozzáférhetetlenek és gyakorlatilag kikerültek a forgalomból.",
+        "lpLockedDesc": "A PancakeSwap likviditási pool BNBFrog tokeneket tartalmaz BNB-vel párosítva. Amikor az LP tokeneket elégetik (a halott címre küldik), a poolban lévő mögöttes tokenek tartósan zárolva lesznek.",
+        "lpBurnedPercent": "Elégetett LP tokenek: az összes LP token 99,31%-a",
+        "lpLockedPercent": "Ezért az LP-ben lévő tokenek 99,31%-a tartósan zárolva van",
+        "note": "<strong>Megjegyzés:</strong> A FrogOG 1:1 arányt tart fenn a BNBFroggal a migráció során. A FrogOG forgó kínálata megegyezik a BNBFrog valódi forgó kínálatával az összes elégetett és zárolt token figyelembevétele után.",
+        "launchData": "<strong>Indítási adatok:</strong> Ezeket a számokat az induláskor számították ki. Az örökölt BNBFrog token továbbra is égeti a tokeneket minden vételi/eladási tranzakciónál, így a tényleges forgó kínálat kissé alacsonyabb lehet a feltüntetettnél.",
+        "legacyContract": "BNBFrog Token Szerződés",
+        "ogContract": "FrogOG Token Szerződés",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−740,059,884,911,899,485,982,976",
+          "deadPercent": "7.40%",
+          "contract": "−4,036,008,092,593,983,879,741",
+          "contractPercent": "<0.01%",
+          "lp": "−874,144,424,929,004,044,398,902",
+          "lpPercent": "8.74%",
+          "circulating": "8,385,795,686,123,088,377,024,138",
+          "circulatingPercent": "83.86%"
+        }
+      }
+    }
+  },
+  "contracts": {
+    "title": "Szerződés címek",
+    "header": {
+      "title": "Okosszerződések",
+      "subtitle": "Hivatalos telepítési címek tokenekhez és hidakhoz a Freedom Bridge ökoszisztémában."
+    },
+    "tabs": {
+      "overview": "Áttekintés",
+      "byToken": "Token szerint",
+      "byChain": "Lánc szerint",
+      "liquidity": "Likviditás"
+    },
+    "liquidity": {
+      "title": "Likviditási poolok"
+    }
+  },
+  "faq": {
+    "title": "Freedom Bridge Támogatás",
+    "header": "Gyakran Ismételt Kérdések",
+    "subtitle": "Válaszok a TigerOG-val, az áthidalással és az Axelar-ral kapcsolatos gyakori kérdésekre.",
+    "cta": {
+      "title": "Még mindig vannak kérdései?",
+      "description": "Csatlakozzon közösségünkhöz a Telegramon, vagy ellenőrizze a részletes Wikit technikai útmutatókért.",
+      "wiki": "Wiki meglátogatása",
+      "telegram": "Csatlakozás a Telegramhoz"
+    },
+    "questions": {
+      "q1": "Mi a célja a tokenjeim átváltásának?",
+      "a1": "A tokenjei TigerOG-ra történő átváltása eltávolítja az örökölt tokenhez kapcsolódó tranzakciós adót (gyakran 10-12%). Ez lehetővé teszi azt is, hogy ezeket a tokeneket más blokkláncokra, például a Ethereum, a Base-re és másokra hidalja át az Axelar-en keresztül, lehetővé téve a hozzáférést új ökoszisztémákhoz.",
+      "q2": "Biztonságos a Freedom Bridge használata?",
+      "a2": "Igen. A protokoll egy biztonságos Migrációs szerződést és az Axelar Interchain Token Service-ét használja. Amikor átvált, a BNBTiger-ét tartósan elégetik, és TigerOG-t kap 1:1 arányban. Az égetési mechanizmus biztosítja, hogy a teljes kínálat megfelelően legyen kezelve minden láncon.",
+      "q3": "Vannak díjak?",
+      "a3": "A Freedom Bridge maga nem számít fel díjat az átváltásért. Csak a szokásos blokklánc gázdíjakat fizeti. A láncok közötti áthidalás magában foglal egy láncok közötti gázdíjat, amelyet az Axelar-nek fizetnek a továbbítási költségek fedezésére.",
+      "q4": "Mi történik, ha elveszítem a tokenjeimet?",
+      "a4": "A TigerOG tokenek úgy viselkednek, mint bármely más ERC20 token. Ha elveszíti a hozzáférést a pénztárcájához, nem lehet őket visszaszerezni. Mindig tartsa biztonságban privát kulcsait és helyreállítási kifejezéseit.",
+      "q5": "Átválthatom a TigerOG tokenjeimet vissza BNBTiger-re?",
+      "a5": "Nem. A migráció egyirányú átváltás. Amikor BNBTiger-t vált TigerOG-ra, a BNBTiger tokenjeit tartósan elégetik (a halott címre küldik). Ez szándékos — a TigerOG a frissített, adómentes verzió, amelynek célja az örökölt token teljes felváltása.",
+      "q6": "Mely hálózatok támogatottak?",
+      "a6": "Több EVM láncot támogatunk az Axelar-en keresztül, beleértve a BNB Chain-t, az Ethereum, a Base és még sok mást. Ellenőrizze a Wikit a támogatott hálózatok teljes listájáért.",
+      "q7": "Mennyi ideig tart az áthidalás?",
+      "a7": "Az áthidalási sebesség a forráslánc véglegességétől és az Axelar továbbításától függ. Jellemzően a láncok közötti átutalás körülbelül 2-5 percet vesz igénybe.",
+      "q8": "Milyen a forgalomban lévő kínálata az OG tokeneknek?",
+      "a8": "Minden OG token rögzített forgó kínálattal rendelkezik, amely az eredeti BNB tokenjéből származik, figyelembe véve az elégetett tokeneket, a beragadt szerződéses egyenlegeket és a zárolt LP-t. TigerOG: ~3,66 szeptillió (az eredeti 36,62%-a). LionOG: ~3,83 szeptillió (az eredeti 38,33%-a). FrogOG: ~8,39 szeptillió (az eredeti 83,86%-a). Lásd a Wikit az egyes tokenek részletes bontásáért."
+    }
+  },
+  "common": {
+    "from": "Feladó",
+    "to": "Címzett",
+    "max": "MAX",
+    "chainId": "Lánc Azonosító",
+    "bscChain": "BSC Lánc",
+    "insufficientBalance": "Elégtelen egyenleg.",
+    "failedToSwitchNetwork": "Hálózatváltás sikertelen. Kérjük, váltson manuálisan a pénztárcájában.",
+    "failedToFetchFeeQuote": "Díjajánlat lekérése sikertelen.",
+    "unableToDetermineGas": "Nem lehet meghatározni az Axelar gázfizetést",
+    "bridgeTxFailed": "Híd tranzakció sikertelen",
+    "estimatedGas": "Becsült Axelar gáz",
+    "success": "Siker!",
+    "viewOnExplorer": "Megtekintés a Böngészőben",
+    "bridging": "Áthidalás...",
+    "transactionFailed": "Tranzakció sikertelen",
+    "search": "Keresés",
+    "backToApp": "Vissza az alkalmazáshoz"
+  }
+}

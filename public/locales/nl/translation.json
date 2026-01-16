@@ -1,0 +1,364 @@
+{
+  "app": {
+    "titleFreedom": "Freedom",
+    "titleBridge": "Bridge"
+  },
+  "nav": {
+    "settings": "Instellingen",
+    "menu": "Menu",
+    "preferences": "Voorkeuren",
+    "switchTheme": "Uiterlijk",
+    "theme": {
+      "dark": "Donker",
+      "light": "Licht"
+    },
+    "switchPalette": "Palet wisselen",
+    "wiki": "Documentatie / Wiki",
+    "contracts": "Contracten",
+    "faq": "Veelgestelde vragen",
+    "logout": "Uitloggen",
+    "language": "Taal",
+    "languageSearchPlaceholder": "Zoek talen",
+    "languageNoResults": "Geen talen gevonden",
+    "close": "Sluiten"
+  },
+  "addNetworks": {
+    "title": "Netwerken toevoegen",
+    "description": "Klik op een knop hieronder om netwerken aan uw portemonnee toe te voegen. Dit maakt het gemakkelijk om te schakelen tussen ketens tijdens het testen."
+  },
+  "tabs": {
+    "convert": "Omzetten",
+    "bridge": "Bridge"
+  },
+  "convert": {
+    "token": "Token",
+    "selectToken": "Selecteer Token",
+    "balance": "Saldo",
+    "noConvertibleTokens": "Geen tokens om om te zetten op {{chainName}}",
+    "convert": "Omzetten",
+    "addToWalletLabel": "Importeer {{symbol}} op {{chainName}} naar portemonnee",
+    "addToWalletButton": "Importeer naar Portemonnee",
+    "addingToken": "Toevoegen...",
+    "addTokenError": "Kan token niet toevoegen aan portemonnee",
+    "legacyTokenMissing": "Legacy-token ontbreekt voor deze keten",
+    "tigerOGMissing": "TigerOG token ontbreekt voor deze keten",
+    "networkWarning": {
+      "title": "Verkeerd netwerk",
+      "message": "Tokenconversie is alleen beschikbaar op de BSC Chain.",
+      "description": "Schakel alstublieft over naar de BSC Chain in uw portemonnee om tokens om te zetten, of navigeer naar het Bridge-tabblad om tokens tussen ketens over te dragen."
+    }
+  },
+  "bridge": {
+    "fromChain": "Van Keten",
+    "selectChainPlaceholder": "Selecteer keten",
+    "toChain": "Naar Keten",
+    "selectDestinationPlaceholder": "Selecteer bestemming",
+    "noDestination": "Geen bestemming",
+    "noBridgeableTokens": "Geen bridgebare tokens",
+    "bridgeButton": "Bridge Tokens",
+    "getFeeQuote": "Vraag Tarief Offerte Aan",
+    "viewOnAxelarscan": "Bekijk op Axelarscan",
+    "addDestinationTokenLabel": "Importeer {{symbol}} op {{chainName}} naar portemonnee",
+    "addTokenError": "Kan token niet toevoegen aan portemonnee",
+    "estimatedTime": "Geschatte tijd",
+    "recentTransactions": "Recente Transacties",
+    "clearHistory": "Geschiedenis wissen",
+    "historyStoredLocally": "Transactiegeschiedenis lokaal opgeslagen op dit apparaat"
+  },
+  "settings": {
+    "title": "Instellingen",
+    "environment": "Omgeving",
+    "rpcEndpoints": "RPC Eindpunten",
+    "rpcEndpointsHelp": "Update de RPC URL die wordt gebruikt voor elke keten in de geselecteerde omgeving.",
+    "noChainsConfigured": "Geen ketens geconfigureerd voor deze omgeving.",
+    "cancel": "Annuleren",
+    "save": "Opslaan"
+  },
+  "wallet": {},
+  "login": {
+    "title": "Welkom terug",
+    "subtitle": "Meld u aan om verder te gaan naar Freedom Bridge",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "naam@voorbeeld.com",
+    "passwordLabel": "Wachtwoord",
+    "passwordPlaceholder": "Voer wachtwoord in",
+    "rememberMe": "Onthoud mij op dit apparaat",
+    "submit": "Aanmelden",
+    "validation": {
+      "required": "E-mail en wachtwoord zijn verplicht.",
+      "invalid": "Ongeldig e-mailadres of wachtwoord."
+    }
+  },
+  "landing": {
+    "banner": {
+      "title": "Nieuw hier?",
+      "message": "Leer over Freedom Bridge en hoe je TigerOG-tokens over ketens kunt bridgen."
+    },
+    "hero": {
+      "badge": "Aangedreven door Axelar",
+      "title": "Bevrijd je <1/> <2>Activa</2>",
+      "subtitle": "Bridge TigerOG-tokens naadloos over ketens met behulp van Axelar's Interchain Token Service. Veilig, snel en belastingvrij.",
+      "launchApp": "App starten",
+      "documentation": "Documentatie"
+    },
+    "stats": {
+      "messaging": "Axelar Netwerk",
+      "networks": "Netwerken Live",
+      "fees": "Protocolkosten",
+      "finality": "Finaliteit"
+    },
+    "features": {
+      "title": "Interchain Token Service",
+      "description": "Freedom Bridge maakt gebruik van Axelar ITS om een naadloze, veilige en belastingvrije bridge-ervaring te bieden over {{count}}+ blockchains.",
+      "stopDecay": {
+        "title": "Stop het Verval",
+        "description": "Legacy-tokens verbranden 10-11% van uw waarde bij elke koop en verkoop. Omzetten naar TigerOG stopt deze bloeding onmiddellijk en behoudt 100% van uw waarde.",
+        "graphLabel1": "100% Behouden (TigerOG)",
+        "graphLabel2": "-40% Waarde (Legacy 10% Belasting)"
+      },
+      "conversion": {
+        "title": "1:1 Conversie",
+        "description": "De totale voorraad verandert nooit. Tokens worden bewaard in een veilig migratiecontract en er wordt een exact 1:1 equivalent gebruikt. Geen inflatie, geen verdunning."
+      },
+      "multichain": {
+        "title": "Multi-Chain",
+        "description": "Implementeer één keer, overal toegang. Uw activum wordt een native interchain-token over ketens, inclusief Ethereum, BNB Chain, Base en meer."
+      },
+      "security": {
+        "title": "Axelar Beveiliging",
+        "description": "Aangedreven door Axelar's gedecentraliseerde netwerk van validators. ITS zorgt ervoor dat uw tokens veilig en consistent worden overgedragen over alle verbonden netwerken.",
+        "button": "Beginnen met bridgen"
+      }
+    },
+    "teaser": {
+      "title": "Wil je andere munten?",
+      "subtitle": "Wat vind je van <lunc>LUNC</lunc>, <crepe>Crepe</crepe>, of <shiba>Shiba</shiba>?"
+    },
+    "cta": {
+      "title": "Klaar om te bridgen?",
+      "description": "Sluit u aan bij de interchain revolutie. Het duurt minder dan een minuut om uw activa te wrappen en te beginnen met bridgen via Axelar.",
+      "button": "App nu starten"
+    }
+  },
+  "wiki": {
+    "title": "Freedom Bridge Wiki",
+    "searchPlaceholder": "Zoek documentatie...",
+    "header": {
+      "title": "Documentatie",
+      "subtitle": "Leer hoe je legacy tokens kunt omzetten, kunt bridgen tussen ketens en kunt integreren met Freedom Bridge."
+    },
+    "nav": {
+      "gettingStarted": "Aan de slag",
+      "coreConcepts": "Kernconcepten",
+      "developers": "Ontwikkelaars",
+      "tigerogSupply": "TigerOG Voorraad",
+      "lionogSupply": "LionOG Voorraad",
+      "frogogSupply": "FrogOG Voorraad"
+    },
+    "articles": {
+      "whatIs": {
+        "title": "Wat is Freedom Bridge?",
+        "content": "Freedom Bridge is een gedecentraliseerd bridging-protocol gebouwd op Axelar's Interchain Token Service (ITS). Het is ontworpen om tokens te bevrijden van single-chain beperkingen en hoge transactiebelastingen. Door standaardtokens te wrappen in interchain-compatibele activa, kunnen gebruikers hun waarde vrijelijk verplaatsen over ondersteunde blockchains.",
+        "taxFreeTitle": "Belastingvrije Overdrachten",
+        "taxFreeDesc": "Legacy-tokens hebben vaak 10%+ belastingen. TigerOG-tokens hebben 0% belasting.",
+        "omnichainTitle": "Interchain",
+        "omnichainDesc": "Verplaats activa direct tussen {{count}}+ blockchains via Axelar."
+      },
+      "howToConvert": {
+        "title": "Hoe tokens om te zetten",
+        "step1": "Verbind uw portemonnee met de bronketen (bijv. BNB Chain).",
+        "step2": "Navigeer naar het tabblad <strong>Omzetten</strong>.",
+        "step3": "Selecteer het legacy-token dat u wilt omzetten.",
+        "step4": "Keur het Migratie-contract goed om uw tokens uit te geven.",
+        "step5": "Klik op <strong>Omzetten</strong> om uw legacy-tokens te storten en een equivalente hoeveelheid 'TigerOG'-tokens te ontvangen.",
+        "note": "<strong>Opmerking:</strong> Conversie brengt de transactiebelasting van het legacy-token (tijdens de upgrade) met zich mee als uw token belasting heft op overdrachten. Eenmaal omgezet in TigerOG zijn echter alle volgende overdrachten en bruggen vrij van belasting."
+      },
+      "supportedNetworks": {
+        "title": "Ondersteunde Netwerken",
+        "content": "Freedom Bridge ondersteunt een groeiend ecosysteem van {{count}}+ blockchains, waardoor naadloze interoperabiliteit over het EVM-landschap via Axelar mogelijk is."
+      },
+      "xerc20": {
+        "title": "Interchain Tokens",
+        "content": "Axelar Interchain Token Service (ITS) stelt tokens in staat om over meerdere ketens te worden geïmplementeerd met een consistent adres en uniform voorraadbeheer. Freedom Bridge gebruikt ITS om ervoor te zorgen dat TigerOG een canoniek activum blijft, waar het ook wordt gebridged."
+      },
+      "axelar": {
+        "title": "Axelar Netwerk",
+        "content": "We gebruiken Axelar als onze interoperabiliteitslaag. Axelar is een gedecentraliseerd netwerk dat verschillende blockchains verbindt, waardoor veilige cross-chain communicatie en activatransfers mogelijk zijn. Axelar's beveiligingsmodel vertrouwt op een permissieloze set validators, wat zorgt voor hoogwaardige beveiliging voor interchain-tokens."
+      },
+      "migration": {
+        "title": "Migratielogica",
+        "content": "Het Migratie-contract is geïmplementeerd op de originele keten (bijv. BSC). Het bewaart de originele legacy-tokens. Wanneer u tokens upgradet, stort u in het Migratie-contract. Wanneer u unwrapt (indien ondersteund), verbrandt u de TigerOG-representatie om de originele tokens vrij te geven. Dit zorgt voor een strikte 1:1-dekking."
+      },
+      "contracts": {
+        "title": "Smart Contract Adressen",
+        "colNetwork": "Netwerk",
+        "colType": "Contracttype",
+        "colAddress": "Adres"
+      },
+      "security": {
+        "title": "Beveiligingsmodel",
+        "content": "Veiligheid is ingebouwd in elke laag van Freedom Bridge:",
+        "point1": "<strong>Migratiearchitectuur:</strong> Legacy-tokens worden bewaard in geverifieerde, onveranderlijke smart contracts.",
+        "point2": "<strong>Axelar Validators:</strong> Cross-chain berichten worden geverifieerd door Axelar's gedecentraliseerde netwerk.",
+        "point3": "<strong>Consistente Voorraad:</strong> ITS beheert minting en burning om een constante totale voorraad over alle ketens te behouden.",
+        "point4": "<strong>Geauditeerde Logica:</strong> Gebouwd op industriestandaard Axelar- en OpenZeppelin-bibliotheken."
+      },
+      "supplyCommon": {
+        "howWeCalculated": "Hoe we dit berekenden",
+        "verification": "Verificatie",
+        "verificationDesc": "Alle voorraadcijfers kunnen onafhankelijk on-chain worden geverifieerd:",
+        "table": {
+          "category": "Categorie",
+          "amount": "Bedrag",
+          "percentOfTotal": "% van Totaal",
+          "originalSupply": "Originele Totale Voorraad",
+          "deadAddress": "Dood Adres (Verbrand)",
+          "contractBalance": "Contractsaldo (Vast)",
+          "circulatingSupply": "Circulerende Voorraad"
+        },
+        "deadAddressTitle": "1. Dood Adres",
+        "contractBalanceTitle": "2. Contractsaldo",
+        "lpLockedTitle": "3. LP Vergrendelde Tokens"
+      },
+      "tigerogSupply": {
+        "title": "TigerOG Voorraad Verdeling",
+        "intro": "TigerOG heeft een vaste circulerende voorraad afgeleid van het originele BNBTiger-token. De voorraadberekening houdt rekening met alle verbrande en permanent vergrendelde tokens.",
+        "lpLocked": "LP Vergrendeld (86,18% van LP Verbrand)",
+        "deadAddressDesc": "Tokens verzonden naar <code>0x000...dEaD</code> zijn permanent verbrand en kunnen nooit worden hersteld. Dit omvat tokens verbrand via het originele BNBTiger belastingmechanisme.",
+        "contractBalanceDesc": "Een kleine hoeveelheid tokens zit vast in het BNBTiger-contract zelf. Deze tokens zijn ontoegankelijk en effectief verwijderd uit de circulatie.",
+        "lpLockedDesc": "De PancakeSwap liquiditeitspool bevat BNBTiger-tokens gekoppeld aan BNB. Wanneer LP-tokens worden verbrand (verzonden naar het dode adres), worden de onderliggende tokens in de pool permanent vergrendeld.",
+        "lpBurnedPercent": "LP-tokens verbrand: 86,18% van alle LP-tokens",
+        "lpLockedPercent": "Daarom is 86,18% van de tokens in de LP permanent vergrendeld",
+        "note": "<strong>Opmerking:</strong> TigerOG handhaaft een 1:1-verhouding met BNBTiger tijdens migratie. De circulerende voorraad van TigerOG komt overeen met de werkelijke circulerende voorraad van BNBTiger na verrekening van alle verbrande en vergrendelde tokens.",
+        "launchData": "<strong>Lanceringsgegevens:</strong> Deze cijfers zijn berekend bij de lancering. Het legacy BNBTiger-token blijft tokens verbranden bij elke koop/verkoop-transactie, dus de werkelijke circulerende voorraad kan iets lager zijn dan weergegeven.",
+        "legacyContract": "BNBTiger Token Contract",
+        "ogContract": "TigerOG Token Contract",
+        "amounts": {
+          "original": "10.000.000.000.000.000.000.000.000",
+          "dead": "−5.772.706.396.234.535.780.783.775",
+          "deadPercent": "57,73%",
+          "contract": "−6.142.342.823.271.327",
+          "contractPercent": "<0,01%",
+          "lp": "−565.059.839.948.518.979.124.912",
+          "lpPercent": "5,65%",
+          "circulating": "3.662.233.757.674.602.416.819.986",
+          "circulatingPercent": "36,62%"
+        }
+      },
+      "lionogSupply": {
+        "title": "LionOG Voorraad Verdeling",
+        "intro": "LionOG heeft een vaste circulerende voorraad afgeleid van het originele BNBLion-token. De voorraadberekening houdt rekening met alle verbrande en permanent vergrendelde tokens.",
+        "lpLocked": "LP Vergrendeld (99,98% van LP Verbrand)",
+        "deadAddressDesc": "Tokens verzonden naar <code>0x000...dEaD</code> zijn permanent verbrand en kunnen nooit worden hersteld. Dit omvat tokens verbrand via het originele BNBLion belastingmechanisme.",
+        "contractBalanceDesc": "Een kleine hoeveelheid tokens zit vast in het BNBLion-contract zelf. Deze tokens zijn ontoegankelijk en effectief verwijderd uit de circulatie.",
+        "lpLockedDesc": "De PancakeSwap liquiditeitspool bevat BNBLion-tokens gekoppeld aan BNB. Wanneer LP-tokens worden verbrand (verzonden naar het dode adres), worden de onderliggende tokens in de pool permanent vergrendeld.",
+        "lpBurnedPercent": "LP-tokens verbrand: 99,98% van alle LP-tokens",
+        "lpLockedPercent": "Daarom is 99,98% van de tokens in de LP permanent vergrendeld",
+        "note": "<strong>Opmerking:</strong> LionOG handhaaft een 1:1-verhouding met BNBLion tijdens migratie. De circulerende voorraad van LionOG komt overeen met de werkelijke circulerende voorraad van BNBLion na verrekening van alle verbrande en vergrendelde tokens.",
+        "launchData": "<strong>Lanceringsgegevens:</strong> Deze cijfers zijn berekend bij de lancering. Het legacy BNBLion-token blijft tokens verbranden bij elke koop/verkoop-transactie, dus de werkelijke circulerende voorraad kan iets lager zijn dan weergegeven.",
+        "legacyContract": "BNBLion Token Contract",
+        "ogContract": "LionOG Token Contract",
+        "amounts": {
+          "original": "10.000.000.000.000.000.000.000.000",
+          "dead": "−5.724.597.218.422.106.614.085.614",
+          "deadPercent": "57,25%",
+          "contract": "−9.219.967.745.410.740.095.290",
+          "contractPercent": "<0,01%",
+          "lp": "−442.490.152.327.271.918.655.109",
+          "lpPercent": "4,42%",
+          "circulating": "3.832.903.409.282.876.056.519.182",
+          "circulatingPercent": "38,33%"
+        }
+      },
+      "frogogSupply": {
+        "title": "FrogOG Voorraad Verdeling",
+        "intro": "FrogOG heeft een vaste circulerende voorraad afgeleid van het originele BNBFrog-token. De voorraadberekening houdt rekening met alle verbrande en permanent vergrendelde tokens.",
+        "lpLocked": "LP Vergrendeld (99,31% van LP Verbrand)",
+        "deadAddressDesc": "Tokens verzonden naar <code>0x000...dEaD</code> zijn permanent verbrand en kunnen nooit worden hersteld. Dit omvat tokens verbrand via het originele BNBFrog belastingmechanisme.",
+        "contractBalanceDesc": "Een kleine hoeveelheid tokens zit vast in het BNBFrog-contract zelf. Deze tokens zijn ontoegankelijk en effectief verwijderd uit de circulatie.",
+        "lpLockedDesc": "De PancakeSwap liquiditeitspool bevat BNBFrog-tokens gekoppeld aan BNB. Wanneer LP-tokens worden verbrand (verzonden naar het dode adres), worden de onderliggende tokens in de pool permanent vergrendeld.",
+        "lpBurnedPercent": "LP-tokens verbrand: 99,31% van alle LP-tokens",
+        "lpLockedPercent": "Daarom is 99,31% van de tokens in de LP permanent vergrendeld",
+        "note": "<strong>Opmerking:</strong> FrogOG handhaaft een 1:1-verhouding met BNBFrog tijdens migratie. De circulerende voorraad van FrogOG komt overeen met de werkelijke circulerende voorraad van BNBFrog na verrekening van alle verbrande en vergrendelde tokens.",
+        "launchData": "<strong>Lanceringsgegevens:</strong> Deze cijfers zijn berekend bij de lancering. Het legacy BNBFrog-token blijft tokens verbranden bij elke koop/verkoop-transactie, dus de werkelijke circulerende voorraad kan iets lager zijn dan weergegeven.",
+        "legacyContract": "BNBFrog Token Contract",
+        "ogContract": "FrogOG Token Contract",
+        "amounts": {
+          "original": "10.000.000.000.000.000.000.000.000",
+          "dead": "−740.059.884.911.899.485.982.976",
+          "deadPercent": "7,40%",
+          "contract": "−4.036.008.092.593.983.879.741",
+          "contractPercent": "<0,01%",
+          "lp": "−874.144.424.929.004.044.398.902",
+          "lpPercent": "8,74%",
+          "circulating": "8.385.795.686.123.088.377.024.138",
+          "circulatingPercent": "83,86%"
+        }
+      }
+    }
+  },
+  "contracts": {
+    "title": "Contract Adressen",
+    "header": {
+      "title": "Smart Contracts",
+      "subtitle": "Officiële implementatieadressen voor tokens en bridges binnen het hele Freedom Bridge-ecosysteem."
+    },
+    "tabs": {
+      "overview": "Overzicht",
+      "byToken": "Per Token",
+      "byChain": "Per Keten",
+      "liquidity": "Liquiditeit"
+    },
+    "liquidity": {
+      "title": "Liquiditeitspools"
+    }
+  },
+  "faq": {
+    "title": "Freedom Bridge Ondersteuning",
+    "header": "Veelgestelde Vragen",
+    "subtitle": "Antwoorden op veelgestelde vragen over TigerOG, bridgen en Axelar.",
+    "cta": {
+      "title": "Nog vragen?",
+      "description": "Word lid van onze community op Telegram of bekijk de gedetailleerde Wiki voor technische handleidingen.",
+      "wiki": "Bezoek Wiki",
+      "telegram": "Word lid van Telegram"
+    },
+    "questions": {
+      "q1": "Wat is het doel van het omzetten van mijn tokens?",
+      "a1": "Het omzetten van uw tokens naar TigerOG verwijdert de transactiebelasting (vaak 10-12%) die gepaard gaat met het legacy-token. Het stelt u ook in staat om deze tokens naar andere blockchains, zoals Ethereum, Base en meer, te bridgen via Axelar, waardoor toegang tot nieuwe ecosystemen mogelijk wordt.",
+      "q2": "Is het veilig om Freedom Bridge te gebruiken?",
+      "a2": "Ja. Het protocol maakt gebruik van een veilig Migratie-contract en Axelar's Interchain Token Service. Wanneer u omzet, wordt uw BNBTiger permanent verbrand en ontvangt u TigerOG in een 1:1-verhouding. Het verbrandingsmechanisme zorgt ervoor dat de totale voorraad over alle ketens correct wordt beheerd.",
+      "q3": "Zijn er kosten?",
+      "a3": "Freedom Bridge zelf brengt geen kosten in rekening voor het omzetten. U betaalt alleen de standaard blockchain-gaskosten. Bridging tussen ketens omvat echter een cross-chain gasvergoeding die aan Axelar wordt betaald om de overdrachtskosten te dekken.",
+      "q4": "Wat gebeurt er als ik mijn tokens verlies?",
+      "a4": "TigerOG-tokens gedragen zich precies zoals elk ander ERC20-token. Als u de toegang tot uw portemonnee verliest, kunnen ze niet worden hersteld. Bewaar uw privésleutels en herstelzinnen altijd veilig.",
+      "q5": "Kan ik mijn TigerOG-tokens weer omzetten naar BNBTiger?",
+      "a5": "Nee. De migratie is een eenrichtingsconversie. Wanneer u BNBTiger omzet naar TigerOG, worden uw BNBTiger-tokens permanent verbrand (verzonden naar het dode adres). Dit is opzettelijk — TigerOG is de geüpgradede, belastingvrije versie die bedoeld is om het legacy-token volledig te vervangen.",
+      "q6": "Welke netwerken worden ondersteund?",
+      "a6": "We ondersteunen meerdere EVM-ketens via Axelar, waaronder BNB Chain, Ethereum, Base en meer. Bekijk de Wiki voor de volledige lijst met ondersteunde netwerken.",
+      "q7": "Hoe lang duurt het bridgen?",
+      "a7": "De bridgesnelheid hangt af van de finaliteitstijd van de bronketen en de Axelar-relay. Typisch duurt een overdracht tussen ketens ongeveer 2-5 minuten.",
+      "q8": "Wat zijn de circulerende voorraden van de OG-tokens?",
+      "a8": "Elk OG-token heeft een vaste circulerende voorraad afgeleid van zijn originele BNB-token, rekening houdend met verbrande tokens, vastzittende contractsaldi en vergrendelde LP's. TigerOG: ~3,66 septiljoen (36,62% van origineel). LionOG: ~3,83 septiljoen (38,33% van origineel). FrogOG: ~8,39 septiljoen (83,86% van origineel). Zie de Wiki voor gedetailleerde verdelingen van elk token."
+    }
+  },
+  "common": {
+    "from": "Van",
+    "to": "Naar",
+    "max": "MAX",
+    "chainId": "Keten ID",
+    "bscChain": "BSC Keten",
+    "insufficientBalance": "Onvoldoende saldo.",
+    "failedToSwitchNetwork": "Niet gelukt om van netwerk te wisselen. Schakel handmatig over in uw portemonnee.",
+    "failedToFetchFeeQuote": "Niet gelukt om tarief offerte op te halen.",
+    "unableToDetermineGas": "Kan Axelar-gasbetaling niet bepalen",
+    "bridgeTxFailed": "Bridge transactie mislukt",
+    "estimatedGas": "Geschat Axelar gas",
+    "success": "Succes!",
+    "viewOnExplorer": "Bekijk op Explorer",
+    "bridging": "Bridgen...",
+    "transactionFailed": "Transactie mislukt",
+    "search": "Zoeken",
+    "backToApp": "Terug naar App"
+  }
+}

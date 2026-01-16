@@ -1,0 +1,364 @@
+{
+  "app": {
+    "titleFreedom": "Sloboda",
+    "titleBridge": "Most"
+  },
+  "nav": {
+    "settings": "Nastavenia",
+    "menu": "Menu",
+    "preferences": "Predvoľby",
+    "switchTheme": "Vzhľad",
+    "theme": {
+      "dark": "Tmavý",
+      "light": "Svetlý"
+    },
+    "switchPalette": "Prepnúť Paletu",
+    "wiki": "Dokumentácia / Wiki",
+    "contracts": "Zmluvy",
+    "faq": "Často Kladené Otázky",
+    "logout": "Odhlásiť Sa",
+    "language": "Jazyk",
+    "languageSearchPlaceholder": "Hľadať jazyky",
+    "languageNoResults": "Nenašli sa žiadne jazyky",
+    "close": "Zavrieť"
+  },
+  "addNetworks": {
+    "title": "Pridať Siete",
+    "description": "Kliknite na tlačidlo nižšie pre pridanie sietí do vašej peňaženky. To uľahčuje prepínanie medzi reťazcami počas testovania."
+  },
+  "tabs": {
+    "convert": "Konvertovať",
+    "bridge": "Most"
+  },
+  "convert": {
+    "token": "Token",
+    "selectToken": "Vybrať Token",
+    "balance": "Zostatok",
+    "noConvertibleTokens": "Žiadne konvertovateľné tokeny na {{chainName}}",
+    "convert": "Konvertovať",
+    "addToWalletLabel": "Importovať {{symbol}} na {{chainName}} do peňaženky",
+    "addToWalletButton": "Importovať do Peňaženky",
+    "addingToken": "Pridávanie…",
+    "addTokenError": "Nie je možné pridať token do peňaženky",
+    "legacyTokenMissing": "Chýba starší token pre tento reťazec",
+    "tigerOGMissing": "Token TigerOG pre tento reťazec chýba",
+    "networkWarning": {
+      "title": "Nesprávna Sieť",
+      "message": "Konverzia tokenov je dostupná iba na BSC Reťazci.",
+      "description": "Prosím prepnite na BSC Reťazec vo svojej peňaženke pre konverziu tokenov, alebo prejdite na kartu Most pre prevod tokenov medzi reťazcami."
+    }
+  },
+  "bridge": {
+    "fromChain": "Z Reťazca",
+    "selectChainPlaceholder": "Vybrať reťazec",
+    "toChain": "Na Reťazec",
+    "selectDestinationPlaceholder": "Vybrať cieľ",
+    "noDestination": "Žiadny Cieľ",
+    "noBridgeableTokens": "Žiadne premostiteľné tokeny",
+    "bridgeButton": "Premostiť Tokeny",
+    "getFeeQuote": "Získať Ponuku Poplatku",
+    "viewOnAxelarscan": "Zobraziť v Axelar Explorer",
+    "addDestinationTokenLabel": "Importovať {{symbol}} na {{chainName}} do peňaženky",
+    "addTokenError": "Nie je možné pridať token do peňaženky",
+    "estimatedTime": "Odhadovaný čas",
+    "recentTransactions": "Nedávne Transakcie",
+    "clearHistory": "Vymazať históriu",
+    "historyStoredLocally": "História transakcií je uložená lokálne na tomto zariadení"
+  },
+  "settings": {
+    "title": "Nastavenia",
+    "environment": "Prostredie",
+    "rpcEndpoints": "RPC koncové body",
+    "rpcEndpointsHelp": "Aktualizujte RPC URL použitú pre každý reťazec vo vybranom prostredí.",
+    "noChainsConfigured": "Pre toto prostredie nie sú nakonfigurované žiadne reťazce.",
+    "cancel": "Zrušiť",
+    "save": "Uložiť"
+  },
+  "wallet": {},
+  "login": {
+    "title": "Vitajte Späť",
+    "subtitle": "Prihláste sa pre pokračovanie na Freedom Bridge",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "meno@priklad.com",
+    "passwordLabel": "Heslo",
+    "passwordPlaceholder": "Zadajte heslo",
+    "rememberMe": "Zapamätať si ma na tomto zariadení",
+    "submit": "Prihlásiť Sa",
+    "validation": {
+      "required": "E-mail a heslo sú povinné.",
+      "invalid": "Neplatný e-mail alebo heslo."
+    }
+  },
+  "landing": {
+    "banner": {
+      "title": "Nový tu?",
+      "message": "Zistite viac o Freedom Bridge a o tom, ako premostiť TigerOG tokeny naprieč reťazcami."
+    },
+    "hero": {
+      "badge": "Poháňané Axelar",
+      "title": "Osloboďte Svoje <1/> <2>Aktíva</2>",
+      "subtitle": "Bezproblémovo premosťujte TigerOG tokeny naprieč reťazcami pomocou služby Axelar Interchain Token Service. Bezpečne, rýchlo a bez daní.",
+      "launchApp": "Spustiť Aplikáciu",
+      "documentation": "Dokumentácia"
+    },
+    "stats": {
+      "messaging": "Sieť Axelar",
+      "networks": "Aktívne Siete",
+      "fees": "Protokolové Poplatky",
+      "finality": "Finalita"
+    },
+    "features": {
+      "title": "Interchain Token Service",
+      "description": "Freedom Bridge využíva Axelar ITS na poskytovanie bezproblémového, bezpečného a bezdaňového premostenia naprieč {{count}}+ blockchainmi.",
+      "stopDecay": {
+        "title": "Zastavte Rozklad",
+        "description": "Staršie tokeny spália 10-11% vašej hodnoty pri každom nákupe a predaji. Konverzia na TigerOG toto krvácanie okamžite zastaví, čím sa zachová 100% vašej hodnoty.",
+        "graphLabel1": "100% Zachované (TigerOG)",
+        "graphLabel2": "-40% Hodnoty (Stará 10% Daň)"
+      },
+      "conversion": {
+        "title": "Konverzia 1:1",
+        "description": "Celková ponuka sa nikdy nemení. Tokeny sú držané v bezpečnej migračnej zmluve a používa sa presný ekvivalent 1:1. Žiadna inflácia, žiadne riedenie."
+      },
+      "multichain": {
+        "title": "Multi-Chain",
+        "description": "Nasaďte raz, pristupujte všade. Vaše aktívum sa stáva natívnym interchain tokenom naprieč reťazcami vrátane Etherea, BNB Chain, Base a ďalších."
+      },
+      "security": {
+        "title": "Bezpečnosť Axelar",
+        "description": "Poháňané decentralizovanou sieťou validátorov Axelar. ITS zaisťuje, že vaše tokeny sú prenášané bezpečne a konzistentne naprieč všetkými pripojenými sieťami.",
+        "button": "Začať Premosťovať"
+      }
+    },
+    "teaser": {
+      "title": "Chcete iné mince?",
+      "subtitle": "Čo si myslíte o <lunc>LUNC</lunc>, <crepe>Crepe</crepe>, alebo <shiba>Shiba</shiba>??"
+    },
+    "cta": {
+      "title": "Ste pripravení premosťovať?",
+      "description": "Pridajte sa k interchain revolúcii. Zabalenie vašich aktív a začatie premostenia cez Axelar trvá menej ako minútu.",
+      "button": "Spustiť Aplikáciu Teraz"
+    }
+  },
+  "wiki": {
+    "title": "Freedom Bridge Wiki",
+    "searchPlaceholder": "Prehľadávať dokumentáciu...",
+    "header": {
+      "title": "Dokumentácia",
+      "subtitle": "Zistite, ako zabaliť staršie tokeny, premosťovať medzi reťazcami a integrovať sa s Freedom Bridge."
+    },
+    "nav": {
+      "gettingStarted": "Začíname",
+      "coreConcepts": "Základné Koncepty",
+      "developers": "Vývojári",
+      "tigerogSupply": "Ponuka TigerOG",
+      "lionogSupply": "Ponuka LionOG",
+      "frogogSupply": "Ponuka FrogOG"
+    },
+    "articles": {
+      "whatIs": {
+        "title": "Čo je Freedom Bridge?",
+        "content": "Freedom Bridge je decentralizovaný protokol premostenia postavený na Axelar Interchain Token Service (ITS). Je navrhnutý na oslobodenie tokenov spod obmedzení jedného reťazca a vysokých transakčných daní. Zabalením štandardných tokenov do aktív kompatibilných s interchain môžu používatelia voľne presúvať svoju hodnotu cez podporované blockchainy.",
+        "taxFreeTitle": "Prevody Bez Dane",
+        "taxFreeDesc": "Staršie tokeny majú často dane 10%+. Tokeny TigerOG majú 0% daň.",
+        "omnichainTitle": "Interchain",
+        "omnichainDesc": "Okamžite presúvajte aktíva medzi {{count}}+ blockchainmi cez Axelar."
+      },
+      "howToConvert": {
+        "title": "Ako Konvertovať Tokeny",
+        "step1": "Pripojte svoju peňaženku k zdrojovému reťazcu (napr. BNB Chain).",
+        "step2": "Prejdite na kartu <strong>Konvertovať</strong>.",
+        "step3": "Vyberte starší token, ktorý chcete konvertovať.",
+        "step4": "Schváľte zmluvu Migrácie na míňanie vašich tokenov.",
+        "step5": "Kliknite na <strong>Konvertovať</strong> pre vloženie vašich starších tokenov a získanie ekvivalentného množstva tokenov \"TigerOG\".",
+        "note": "<strong>Poznámka:</strong> Konverzia zahŕňa transakčnú daň staršieho tokenu (počas aktualizácie), ak váš token účtuje daň pri prevodoch. Avšak, akonáhle je konvertovaný na TigerOG, všetky následné prevody a premostenia sú od tejto dane oslobodené."
+      },
+      "supportedNetworks": {
+        "title": "Podporované Siete",
+        "content": "Freedom Bridge podporuje rastúci ekosystém {{count}}+ blockchainov, čo umožňuje bezproblémovú interoperabilitu v celom prostredí EVM cez Axelar."
+      },
+      "xerc20": {
+        "title": "Interchain Tokeny",
+        "content": "Axelar Interchain Token Service (ITS) umožňuje nasadenie tokenov na viacerých reťazcoch s konzistentnou adresou a jednotnou správou ponuky. Freedom Bridge využíva ITS na zabezpečenie toho, aby TigerOG zostal kanonickým aktívom kdekoľvek je premostený."
+      },
+      "axelar": {
+        "title": "Sieť Axelar",
+        "content": "Využívame Axelar ako našu vrstvu interoperability. Axelar je decentralizovaná sieť, ktorá spája rôzne blockchainy, čím umožňuje bezpečnú medzi-reťazovú komunikáciu a prevody aktív. Bezpečnostný model Axelar sa spolieha na súbor validátorov bez potreby povolenia, čo poskytuje vysokú úroveň bezpečnosti pre interchain tokeny."
+      },
+      "migration": {
+        "title": "Migračná Logika",
+        "content": "Zmluva o migrácii je nasadená na pôvodnom reťazci (napr. BSC). Uchováva pôvodné staršie tokeny v úschove. Keď aktualizujete tokeny, vkladáte ich do migračnej zmluvy. Keď ich rozbalíte (ak je to podporované), spálite reprezentáciu TigerOG, aby ste uvoľnili pôvodné tokeny. To zaisťuje prísne krytie 1:1."
+      },
+      "contracts": {
+        "title": "Adresy Smart Kontraktov",
+        "colNetwork": "Sieť",
+        "colType": "Typ Zmluvy",
+        "colAddress": "Adresa"
+      },
+      "security": {
+        "title": "Bezpečnostný Model",
+        "content": "Bezpečnosť je zabudovaná v každej vrstve Freedom Bridge:",
+        "point1": "<strong>Architektúra Migrácie:</strong> Staršie tokeny sú držané v overených, nemenných smart kontraktoch.",
+        "point2": "<strong>Validátory Axelar:</strong> Medzi-reťazové správy sú overované decentralizovanou sieťou Axelar.",
+        "point3": "<strong>Konzistentná Ponuka:</strong> ITS spravuje razenie a pálenie na udržanie konštantnej celkovej ponuky naprieč všetkými reťazcami.",
+        "point4": "<strong>Auditovaná Logika:</strong> Postavené na priemyselných štandardných knižniciach Axelar a OpenZeppelin."
+      },
+      "supplyCommon": {
+        "howWeCalculated": "Ako sme to vypočítali",
+        "verification": "Overenie",
+        "verificationDesc": "Všetky údaje o ponuke je možné nezávisle overiť na reťazci:",
+        "table": {
+          "category": "Kategória",
+          "amount": "Množstvo",
+          "percentOfTotal": "% z Celku",
+          "originalSupply": "Pôvodná Celková Ponuka",
+          "deadAddress": "Mŕtva Adresa (Spálené)",
+          "contractBalance": "Zostatok na Zmluve (Zaseknuté)",
+          "circulatingSupply": "Obehová Ponuka"
+        },
+        "deadAddressTitle": "1. Mŕtva Adresa",
+        "contractBalanceTitle": "2. Zostatok na Zmluve",
+        "lpLockedTitle": "3. LP Uzamknuté Tokeny"
+      },
+      "tigerogSupply": {
+        "title": "Rozpis Ponuky TigerOG",
+        "intro": "TigerOG má pevnú obehovú ponuku odvodenú od pôvodného tokenu BNBTiger. Výpočet ponuky zohľadňuje všetky spálené a trvalo uzamknuté tokeny.",
+        "lpLocked": "LP Uzamknuté (86,18 % LP spálených)",
+        "deadAddressDesc": "Tokeny odoslané na <code>0x000...dEaD</code> sú trvalo spálené a nikdy ich nemožno získať späť. To zahŕňa tokeny spálené prostredníctvom pôvodného daňového mechanizmu BNBTiger.",
+        "contractBalanceDesc": "Malé množstvo tokenov je zaseknuté v samotnej zmluve BNBTiger. Tieto tokeny sú neprístupné a efektívne odstránené z obehu.",
+        "lpLockedDesc": "Fond likvidity PancakeSwap obsahuje tokeny BNBTiger spárované s BNB. Keď sú LP tokeny spálené (odoslané na mŕtvu adresu), podkladové tokeny vo fonde sa stanú trvalo uzamknutými.",
+        "lpBurnedPercent": "LP tokeny spálené: 86,18 % všetkých LP tokenov",
+        "lpLockedPercent": "Preto je 86,18 % tokenov v LP trvalo uzamknutých",
+        "note": "<strong>Poznámka:</strong> TigerOG udržiava pomer 1:1 s BNBTiger počas migrácie. Obehová ponuka TigerOG zodpovedá skutočnej obehovej ponuke BNBTiger po zohľadnení všetkých spálených a uzamknutých tokenov.",
+        "launchData": "<strong>Údaje o Spustení:</strong> Tieto čísla boli vypočítané pri spustení. Starší token BNBTiger pokračuje v pálení tokenov pri každej transakcii nákupu/predaja, takže skutočná obehová ponuka môže byť o niečo nižšia, ako je zobrazené.",
+        "legacyContract": "Zmluva o Tokene BNBTiger",
+        "ogContract": "Zmluva o Tokene TigerOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,772,706,396,234,535,780,783,775",
+          "deadPercent": "57,73%",
+          "contract": "−6,142,342,823,271,327",
+          "contractPercent": "<0,01%",
+          "lp": "−565,059,839,948,518,979,124,912",
+          "lpPercent": "5,65%",
+          "circulating": "3,662,233,757,674,602,416,819,986",
+          "circulatingPercent": "36,62%"
+        }
+      },
+      "lionogSupply": {
+        "title": "Rozpis Ponuky LionOG",
+        "intro": "LionOG má pevnú obehovú ponuku odvodenú od pôvodného tokenu BNBLion. Výpočet ponuky zohľadňuje všetky spálené a trvalo uzamknuté tokeny.",
+        "lpLocked": "LP Uzamknuté (99,98 % LP spálených)",
+        "deadAddressDesc": "Tokeny odoslané na <code>0x000...dEaD</code> sú trvalo spálené a nikdy ich nemožno získať späť. To zahŕňa tokeny spálené prostredníctvom pôvodného daňového mechanizmu BNBLion.",
+        "contractBalanceDesc": "Malé množstvo tokenov je zaseknuté v samotnej zmluve BNBLion. Tieto tokeny sú neprístupné a efektívne odstránené z obehu.",
+        "lpLockedDesc": "Fond likvidity PancakeSwap obsahuje tokeny BNBLion spárované s BNB. Keď sú LP tokeny spálené (odoslané na mŕtvu adresu), podkladové tokeny vo fonde sa stanú trvalo uzamknutými.",
+        "lpBurnedPercent": "LP tokeny spálené: 99,98 % všetkých LP tokenov",
+        "lpLockedPercent": "Preto je 99,98 % tokenov v LP trvalo uzamknutých",
+        "note": "<strong>Poznámka:</strong> LionOG udržiava pomer 1:1 s BNBLion počas migrácie. Obehová ponuka LionOG zodpovedá skutočnej obehovej ponuke BNBLion po zohľadnení všetkých spálených a uzamknutých tokenov.",
+        "launchData": "<strong>Údaje o Spustení:</strong> Tieto čísla boli vypočítané pri spustení. Starší token BNBLion pokračuje v pálení tokenov pri každej transakcii nákupu/predaja, takže skutočná obehová ponuka môže byť o niečo nižšia, ako je zobrazené.",
+        "legacyContract": "Zmluva o Tokene BNBLion",
+        "ogContract": "Zmluva o Tokene LionOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,724,597,218,422,106,614,085,614",
+          "deadPercent": "57,25%",
+          "contract": "−9,219,967,745,410,740,095,290",
+          "contractPercent": "<0,01%",
+          "lp": "−442,490,152,327,271,918,655,109",
+          "lpPercent": "4,42%",
+          "circulating": "3,832,903,409,282,876,056,519,182",
+          "circulatingPercent": "38,33%"
+        }
+      },
+      "frogogSupply": {
+        "title": "Rozpis Ponuky FrogOG",
+        "intro": "FrogOG má pevnú obehovú ponuku odvodenú od pôvodného tokenu BNBFrog. Výpočet ponuky zohľadňuje všetky spálené a trvalo uzamknuté tokeny.",
+        "lpLocked": "LP Uzamknuté (99,31 % LP spálených)",
+        "deadAddressDesc": "Tokeny odoslané na <code>0x000...dEaD</code> sú trvalo spálené a nikdy ich nemožno získať späť. To zahŕňa tokeny spálené prostredníctvom pôvodného daňového mechanizmu BNBFrog.",
+        "contractBalanceDesc": "Malé množstvo tokenov je zaseknuté v samotnej zmluve BNBFrog. Tieto tokeny sú neprístupné a efektívne odstránené z obehu.",
+        "lpLockedDesc": "Fond likvidity PancakeSwap obsahuje tokeny BNBFrog spárované s BNB. Keď sú LP tokeny spálené (odoslané na mŕtvu adresu), podkladové tokeny vo fonde sa stanú trvalo uzamknutými.",
+        "lpBurnedPercent": "LP tokeny spálené: 99,31 % všetkých LP tokenov",
+        "lpLockedPercent": "Preto je 99,31 % tokenov v LP trvalo uzamknutých",
+        "note": "<strong>Poznámka:</strong> FrogOG udržiava pomer 1:1 s BNBFrog počas migrácie. Obehová ponuka FrogOG zodpovedá skutočnej obehovej ponuke BNBFrog po zohľadnení všetkých spálených a uzamknutých tokenov.",
+        "launchData": "<strong>Údaje o Spustení:</strong> Tieto čísla boli vypočítané pri spustení. Starší token BNBFrog pokračuje v pálení tokenov pri každej transakcii nákupu/predaja, takže skutočná obehová ponuka môže byť o niečo nižšia, ako je zobrazené.",
+        "legacyContract": "Zmluva o Tokene BNBFrog",
+        "ogContract": "Zmluva o Tokene FrogOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−740,059,884,911,899,485,982,976",
+          "deadPercent": "7,40%",
+          "contract": "−4,036,008,092,593,983,879,741",
+          "contractPercent": "<0,01%",
+          "lp": "−874,144,424,929,004,044,398,902",
+          "lpPercent": "8,74%",
+          "circulating": "8,385,795,686,123,088,377,024,138",
+          "circulatingPercent": "83,86%"
+        }
+      }
+    }
+  },
+  "contracts": {
+    "title": "Adresy Zmlúv",
+    "header": {
+      "title": "Smart Kontrakty",
+      "subtitle": "Oficiálne adresy nasadenia pre tokeny a mosty v celom ekosystéme Freedom Bridge."
+    },
+    "tabs": {
+      "overview": "Prehľad",
+      "byToken": "Podľa Tokenu",
+      "byChain": "Podľa Reťazca",
+      "liquidity": "Likvidita"
+    },
+    "liquidity": {
+      "title": "Fondy Likvidity"
+    }
+  },
+  "faq": {
+    "title": "Podpora Freedom Bridge",
+    "header": "Často Kladené Otázky",
+    "subtitle": "Odpovede na bežné otázky o TigerOG, premostení a Axelar.",
+    "cta": {
+      "title": "Máte ďalšie otázky?",
+      "description": "Pripojte sa k našej komunite na Telegrame alebo si pozrite podrobnú Wiki pre technické príručky.",
+      "wiki": "Navštíviť Wiki",
+      "telegram": "Pripojiť sa k Telegramu"
+    },
+    "questions": {
+      "q1": "Aký je účel konverzie mojich tokenov?",
+      "a1": "Konverzia vašich tokenov do TigerOG odstraňuje transakčnú daň (často 10-12%) spojenú so starším tokenom. Umožňuje vám tiež premostiť tieto tokeny na iné blockchainy ako Ethereum, Base a ďalšie cez Axelar, čím umožňuje prístup k novým ekosystémom.",
+      "q2": "Je bezpečné používať Freedom Bridge?",
+      "a2": "Áno. Protokol využíva bezpečnú zmluvu o migrácii a službu Axelar Interchain Token Service. Keď konvertujete, vaše BNBTiger sú trvalo spálené a získavate TigerOG v pomere 1:1. Mechanizmus spaľovania zaisťuje, že celková ponuka je správne riadená vo všetkých reťazcoch.",
+      "q3": "Sú tam nejaké poplatky?",
+      "a3": "Samotný protokol Freedom Bridge neúčtuje poplatok za konverziu. Platíte iba štandardné poplatky za plyn blockchainu. Premostenie medzi reťazcami zahŕňa poplatok za plyn cross-chain platený Axelar na pokrytie nákladov na prenos.",
+      "q4": "Čo sa stane, ak stratím svoje tokeny?",
+      "a4": "TigerOG tokeny sa správajú rovnako ako akýkoľvek iný token ERC20. Ak stratíte prístup k svojej peňaženke, nie je možné ich obnoviť. Vždy uchovávajte svoje súkromné kľúče a obnovovacie frázy v bezpečí.",
+      "q5": "Môžem konvertovať svoje TigerOG tokeny späť na BNBTiger?",
+      "a5": "Nie. Migrácia je jednosmerná konverzia. Keď konvertujete BNBTiger na TigerOG, vaše BNBTiger tokeny sú trvalo spálené (odoslané na mŕtvu adresu). Toto je zámerné — TigerOG je vylepšená, bezdaňová verzia určená na úplné nahradenie staršieho tokenu.",
+      "q6": "Ktoré siete sú podporované?",
+      "a6": "Podporujeme viacero reťazcov EVM prostredníctvom Axelar, vrátane BNB Chain, Ethereum, Base a ďalších. Úplný zoznam podporovaných sietí nájdete vo Wiki.",
+      "q7": "Ako dlho trvá premostenie?",
+      "a7": "Rýchlosť premostenia závisí od času finality zdrojového reťazca a prenosu Axelar. Prevod medzi reťazcami zvyčajne trvá približne 2-5 minút.",
+      "q8": "Aké sú obehové ponuky OG tokenov?",
+      "a8": "Každý OG token má pevnú obehovú ponuku odvodenú od jeho pôvodného BNB tokenu, po zohľadnení spálených tokenov, zaseknutých zostatkov na zmluvách a uzamknutých LP. TigerOG: ~3,66 kvadrilióna (36,62 % pôvodnej). LionOG: ~3,83 kvadrilióna (38,33 % pôvodnej). FrogOG: ~8,39 kvadrilióna (83,86 % pôvodnej). Podrobné rozpisy nájdete vo Wiki."
+    }
+  },
+  "common": {
+    "from": "Z",
+    "to": "Do",
+    "max": "MAX",
+    "chainId": "ID Reťazca",
+    "bscChain": "BSC Reťazec",
+    "insufficientBalance": "Nedostatočný zostatok.",
+    "failedToSwitchNetwork": "Prepnutie siete zlyhalo. Prepnite prosím manuálne vo svojej peňaženke.",
+    "failedToFetchFeeQuote": "Získanie ponuky poplatku zlyhalo.",
+    "unableToDetermineGas": "Nie je možné určiť Axelar platbu plynu",
+    "bridgeTxFailed": "Transakcia premostenia zlyhala",
+    "estimatedGas": "Odhadovaný Axelar Plyn",
+    "success": "Úspech!",
+    "viewOnExplorer": "Zobraziť v Prieskumníkovi",
+    "bridging": "Premosťovanie...",
+    "transactionFailed": "Transakcia Zlyhala",
+    "search": "Hľadať",
+    "backToApp": "Späť do aplikácie"
+  }
+}

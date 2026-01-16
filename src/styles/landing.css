@@ -1,0 +1,256 @@
+/* Theme-Aware Landing Page - Adapts to Selected Palette */
+
+/* Map Landing Page Variables to Global Theme Variables */
+:root {
+  --landing-bg: var(--theme-bg);
+  --landing-text: var(--theme-text-primary);
+  --landing-text-secondary: var(--theme-text-secondary);
+  
+  /* Orbs derived from theme accents using color-mix for transparency */
+  --orb-1: radial-gradient(circle, color-mix(in srgb, var(--accent-primary) 30%, transparent) 0%, transparent 70%);
+  --orb-2: radial-gradient(circle, color-mix(in srgb, var(--accent-secondary) 25%, transparent) 0%, transparent 70%);
+  --orb-3: radial-gradient(circle, color-mix(in srgb, var(--accent-signal) 20%, transparent) 0%, transparent 70%);
+  
+  --grid-line: color-mix(in srgb, var(--theme-text-primary) 4%, transparent);
+  
+  --hero-text-gradient: linear-gradient(to bottom right, var(--theme-text-primary) 30%, var(--theme-text-muted) 100%);
+  /* Use theme-specific shadow if available, else fallback */
+  --hero-shadow: var(--hero-heading-shadow, none);
+  
+  --card-bg: var(--theme-card-bg);
+  --card-border: var(--theme-card-border);
+  --card-shadow: var(--theme-shadow-color);
+  
+  --card-hover-bg: var(--theme-section-hover-bg);
+  --card-hover-border: var(--accent-primary);
+  --card-hover-shadow: 0 20px 40px -5px color-mix(in srgb, var(--theme-shadow-hover) 50%, transparent), 0 0 20px color-mix(in srgb, var(--accent-primary) 20%, transparent);
+
+  --icon-box-bg: linear-gradient(135deg, var(--theme-section-bg), var(--theme-card-bg));
+  --icon-box-border: var(--theme-section-border);
+  
+  --btn-primary-bg: var(--theme-button-gradient-start); /* Using start of gradient for solid fallback */
+  --btn-primary-text: var(--primary-foreground, #ffffff);
+  --btn-primary-shadow: 0 10px 20px -5px color-mix(in srgb, var(--accent-primary) 40%, transparent);
+  
+  --btn-secondary-bg: var(--theme-section-bg);
+  --btn-secondary-border: var(--theme-section-border);
+  --btn-secondary-text: var(--theme-text-primary);
+  
+  --stats-bg: var(--theme-section-bg);
+  --stats-border: var(--theme-section-border);
+  --stats-text-val: var(--theme-text-primary);
+  --stats-text-label: var(--theme-text-secondary);
+
+  --feature-title: var(--theme-text-primary);
+  --feature-text: var(--theme-text-secondary);
+
+  --graph-line: var(--accent-primary);
+  --graph-bg: var(--theme-section-bg);
+}
+
+.landing-page-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  min-height: calc(100vh - 80px);
+  background: var(--landing-bg); /* Use background shorthand to support gradients in theme-bg */
+  color: var(--landing-text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Dynamic Background - Glowing Orbs */
+.landing-bg-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  z-index: 0;
+  opacity: 0.6;
+  /* Allow themes to override animations if needed */
+  animation: orb-float 20s infinite alternate ease-in-out;
+}
+
+.orb-1 {
+  top: -10%;
+  left: -10%;
+  width: 50vw;
+  height: 50vw;
+  background: var(--orb-1);
+}
+
+.orb-2 {
+  bottom: -10%;
+  right: -10%;
+  width: 40vw;
+  height: 40vw;
+  background: var(--orb-2);
+  animation-delay: -5s;
+}
+
+.orb-3 {
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  height: 60vh;
+  background: var(--orb-3);
+  opacity: 0.4;
+  animation-delay: -10s;
+}
+
+@keyframes orb-float {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(5%, 5%) scale(1.1); }
+}
+
+/* Grid Overlay */
+.landing-grid-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size: 4rem 4rem;
+  mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Typography */
+.landing-hero-text {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  background: var(--hero-text-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: var(--hero-shadow);
+}
+
+.landing-hero-highlight {
+  background: linear-gradient(to right, var(--accent-primary), var(--accent-secondary), var(--accent-signal));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  display: inline-block;
+}
+
+/* Glass Cards */
+.bento-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--card-border);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  box-shadow: 0 4px 20px -2px color-mix(in srgb, var(--theme-shadow-color) 30%, transparent);
+}
+
+.bento-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--card-hover-border);
+  box-shadow: var(--card-hover-shadow);
+  background: var(--card-hover-bg);
+}
+
+/* Feature Icons */
+.feature-icon-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1rem;
+  background: var(--icon-box-bg);
+  border: 1px solid var(--icon-box-border);
+  margin-bottom: 1rem;
+  color: var(--accent-primary); 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Buttons */
+.btn-primary-glow {
+  background: linear-gradient(135deg, var(--theme-button-gradient-start), var(--theme-button-gradient-end));
+  color: var(--btn-primary-text);
+  font-weight: 600;
+  border-radius: 9999px;
+  padding: 0 2.5rem;
+  height: 3.5rem;
+  transition: all 0.3s ease;
+  box-shadow: var(--btn-primary-shadow);
+  border: 1px solid var(--theme-button-gradient-start); /* Subtle border */
+}
+
+.btn-primary-glow:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px color-mix(in srgb, var(--accent-primary) 60%, transparent);
+  filter: brightness(1.1);
+}
+
+.btn-secondary-glass {
+  background: var(--btn-secondary-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--btn-secondary-border);
+  color: var(--btn-secondary-text);
+  font-weight: 500;
+  border-radius: 9999px;
+  padding: 0 2.5rem;
+  height: 3.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary-glass:hover {
+  background: var(--theme-section-hover-bg);
+  border-color: var(--accent-primary);
+  transform: scale(1.05);
+}
+
+/* Graph Animation */
+.graph-path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw-graph 2.5s ease-out forwards;
+  filter: drop-shadow(0 0 8px color-mix(in srgb, var(--accent-primary) 60%, transparent));
+  stroke: var(--graph-line);
+}
+
+.graph-bg {
+  background-color: var(--graph-bg);
+  border-color: var(--card-border);
+}
+
+.graph-area {
+  opacity: 0;
+  animation: fade-in-area 2s ease-out 1s forwards;
+}
+
+@keyframes draw-graph {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes fade-in-area {
+  to { opacity: 1; }
+}
+
+/* Stats Bar */
+.stats-bar {
+  border-top: 1px solid var(--stats-border);
+  border-bottom: 1px solid var(--stats-border);
+  background: var(--stats-bg);
+  backdrop-filter: blur(5px);
+}
+
+.stats-val {
+  color: var(--stats-text-val);
+}
+
+.stats-label {
+  color: var(--stats-text-label);
+}
+
+.feature-title {
+  color: var(--feature-title);
+}
+
+.feature-text {
+  color: var(--feature-text);
+}

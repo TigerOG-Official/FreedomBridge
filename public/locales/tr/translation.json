@@ -1,0 +1,364 @@
+{
+  "app": {
+    "titleFreedom": "Özgürlük",
+    "titleBridge": "Köprü"
+  },
+  "nav": {
+    "settings": "Ayarlar",
+    "menu": "Menü",
+    "preferences": "Tercihler",
+    "switchTheme": "Görünüm",
+    "theme": {
+      "dark": "Koyu",
+      "light": "Açık"
+    },
+    "switchPalette": "Paleti Değiştir",
+    "wiki": "Dokümantasyon / Wiki",
+    "contracts": "Sözleşmeler",
+    "faq": "SSS",
+    "logout": "Çıkış Yap",
+    "language": "Dil",
+    "languageSearchPlaceholder": "Dilleri ara",
+    "languageNoResults": "Dil bulunamadı",
+    "close": "Kapat"
+  },
+  "addNetworks": {
+    "title": "Ağları Ekle",
+    "description": "Cüzdanınıza Ağlar eklemek için aşağıdaki bir düğmeye tıklayın. Bu, test sırasında zincirler arasında geçiş yapmayı kolaylaştırır."
+  },
+  "tabs": {
+    "convert": "Dönüştür",
+    "bridge": "Köprü"
+  },
+  "convert": {
+    "token": "Token",
+    "selectToken": "Token Seç",
+    "balance": "Bakiye",
+    "noConvertibleTokens": "{{chainName}} üzerinde dönüştürülecek token yok",
+    "convert": "Dönüştür",
+    "addToWalletLabel": "{{chainName}} üzerindeki {{symbol}} tokenını cüzdana aktar",
+    "addToWalletButton": "Cüzdana Aktar",
+    "addingToken": "Ekleniyor...",
+    "addTokenError": "Token cüzdana eklenemiyor",
+    "legacyTokenMissing": "Bu zincir için eski token eksik",
+    "tigerOGMissing": "Bu zincir için TigerOG token eksik",
+    "networkWarning": {
+      "title": "Yanlış Ağ",
+      "message": "Token dönüşümü yalnızca BSC Zincirinde mevcuttur.",
+      "description": "Tokenları dönüştürmek için lütfen cüzdanınızda BSC Zincirine geçin veya tokenları zincirler arasında transfer etmek için Köprü sekmesine gidin."
+    }
+  },
+  "bridge": {
+    "fromChain": "Kaynak Zincir",
+    "selectChainPlaceholder": "Zincir seç",
+    "toChain": "Hedef Zincir",
+    "selectDestinationPlaceholder": "Hedef seç",
+    "noDestination": "Hedef yok",
+    "noBridgeableTokens": "Köprülenebilir token yok",
+    "bridgeButton": "Tokenları Köprüle",
+    "getFeeQuote": "Ücret Teklifi Al",
+    "viewOnAxelarscan": "Axelarscan'de Görüntüle",
+    "addDestinationTokenLabel": "{{chainName}} üzerindeki {{symbol}} tokenını cüzdana aktar",
+    "addTokenError": "Token cüzdana eklenemiyor",
+    "estimatedTime": "Tah. süre",
+    "recentTransactions": "Son İşlemler",
+    "clearHistory": "Geçmişi temizle",
+    "historyStoredLocally": "İşlem geçmişi bu cihazda yerel olarak saklanır"
+  },
+  "settings": {
+    "title": "Ayarlar",
+    "environment": "Ortam",
+    "rpcEndpoints": "RPC Uç Noktaları",
+    "rpcEndpointsHelp": "Seçilen ortamdaki her zincir için kullanılan RPC URL'sini güncelleyin.",
+    "noChainsConfigured": "Bu ortam için yapılandırılmış zincir yok.",
+    "cancel": "İptal",
+    "save": "Kaydet"
+  },
+  "wallet": {},
+  "login": {
+    "title": "Tekrar hoş geldiniz",
+    "subtitle": "Freedom Bridge'e devam etmek için oturum açın",
+    "emailLabel": "E-posta",
+    "emailPlaceholder": "ad@example.com",
+    "passwordLabel": "Şifre",
+    "passwordPlaceholder": "Şifreyi girin",
+    "rememberMe": "Bu cihazda beni hatırla",
+    "submit": "Giriş Yap",
+    "validation": {
+      "required": "E-posta ve şifre gerekli.",
+      "invalid": "Geçersiz e-posta veya şifre."
+    }
+  },
+  "landing": {
+    "banner": {
+      "title": "Burada yeni misiniz?",
+      "message": "Freedom Bridge ve TigerOG tokenlarını zincirler arasında nasıl köprüleyeceğinizi öğrenin."
+    },
+    "hero": {
+      "badge": "Axelar Tarafından Desteklenmektedir",
+      "title": "<1/> <2>Varlıklarınızı</2> Özgürleştirin",
+      "subtitle": "Axelar'in Zincirler Arası Token Hizmetini kullanarak TigerOG tokenlarını zincirler arasında sorunsuz bir şekilde köprüleyin. Güvenli, hızlı ve vergisiz.",
+      "launchApp": "Uygulamayı Başlat",
+      "documentation": "Dokümantasyon"
+    },
+    "stats": {
+      "messaging": "Axelar Ağı",
+      "networks": "Canlı Ağlar",
+      "fees": "Protokol Ücretleri",
+      "finality": "Kesinlik"
+    },
+    "features": {
+      "title": "Zincirler Arası Token Hizmeti",
+      "description": "Freedom Bridge, {{count}}+ blok zinciri üzerinde sorunsuz, güvenli ve vergisiz bir köprüleme deneyimi sunmak için Axelar ITS'den yararlanır.",
+      "stopDecay": {
+        "title": "Çürümeyi Durdurun",
+        "description": "Eski tokenlar, her alım ve satımda değerinizin %10-11'ini yakar. TigerOG'ye sarmak, bu kanamayı hemen durdurur ve değerinizin %100'ünü korur.",
+        "graphLabel1": "%100 Korunan (TigerOG)",
+        "graphLabel2": "-%40 Değer (Eski %10 Vergi)"
+      },
+      "conversion": {
+        "title": "1:1 Dönüşüm",
+        "description": "Toplam arz asla değişmez. Tokenlar güvenli bir göç sözleşmesinde tutulur ve tam bir 1:1 eşdeğeri kullanılır. Enflasyon yok, seyreltme yok."
+      },
+      "multichain": {
+        "title": "Çoklu Zincir",
+        "description": "Bir kez dağıtın, her yerden erişin. Varlığınız, Ethereum, BNB Chain, Base ve daha fazlası dahil olmak üzere zincirler arasında yerel bir zincirler arası token olur."
+      },
+      "security": {
+        "title": "Axelar Güvenliği",
+        "description": "Axelar'in merkezi olmayan doğrulayıcılar ağı tarafından desteklenmektedir. ITS, tokenlarınızın tüm bağlı ağlarda güvenli ve tutarlı bir şekilde transfer edilmesini sağlar.",
+        "button": "Köprülemeye Başla"
+      }
+    },
+    "teaser": {
+      "title": "Başka coinler mi istiyorsunuz?",
+      "subtitle": "<lunc>LUNC</lunc>, <crepe>Crepe</crepe> veya <shiba>Shiba</shiba> hakkında ne düşünüyorsunuz?"
+    },
+    "cta": {
+      "title": "Köprülemeye hazır mısınız?",
+      "description": "Zincirler arası devrime katılın. Varlıklarınızı sarmak ve Axelar aracılığıyla köprülemeye başlamak bir dakikadan az sürer.",
+      "button": "Uygulamayı Şimdi Başlat"
+    }
+  },
+  "wiki": {
+    "title": "Freedom Bridge Wiki",
+    "searchPlaceholder": "Dokümantasyonu ara...",
+    "header": {
+      "title": "Dokümantasyon",
+      "subtitle": "Eski tokenların nasıl sarılacağını, zincirler arasında nasıl köprüleneceğini ve Freedom Bridge ile nasıl entegre olunacağını öğrenin."
+    },
+    "nav": {
+      "gettingStarted": "Başlarken",
+      "coreConcepts": "Temel Kavramlar",
+      "developers": "Geliştiriciler",
+      "tigerogSupply": "TigerOG Arzı",
+      "lionogSupply": "LionOG Arzı",
+      "frogogSupply": "FrogOG Arzı"
+    },
+    "articles": {
+      "whatIs": {
+        "title": "Freedom Bridge Nedir?",
+        "content": "Freedom Bridge, Axelar'in Zincirler Arası Token Hizmeti (ITS) üzerine inşa edilmiş merkezi olmayan bir köprüleme protokolüdür. Tokenları tek zincir sınırlamalarından ve yüksek işlem vergilerinden kurtarmak için tasarlanmıştır. Standart tokenları zincirler arası uyumlu varlıklara sararak, kullanıcılar değerlerini desteklenen blok zincirleri arasında özgürce taşıyabilirler.",
+        "taxFreeTitle": "Vergisiz Transferler",
+        "taxFreeDesc": "Eski tokenlar genellikle %10+ vergiye sahiptir. TigerOG tokenları %0 vergiye sahiptir.",
+        "omnichainTitle": "Zincirler Arası",
+        "omnichainDesc": "Varlıkları {{count}}+ blok zinciri arasında Axelar aracılığıyla anında taşıyın."
+      },
+      "howToConvert": {
+        "title": "Tokenlar Nasıl Dönüştürülür",
+        "step1": "Cüzdanınızı kaynak zincire (örneğin, BNB Chain) bağlayın.",
+        "step2": "<strong>Dönüştür</strong> sekmesine gidin.",
+        "step3": "Dönüştürmek istediğiniz eski tokenı seçin.",
+        "step4": "Tokenlarınızı harcamak için Göç sözleşmesini onaylayın.",
+        "step5": "Eski tokenlarınızı yatırmak ve eşdeğer miktarda \"TigerOG\" tokenı almak için <strong>Dönüştür</strong> düğmesine tıklayın.",
+        "note": "<strong>Not:</strong> Dönüşüm, tokenınız transferlerde vergi alıyorsa eski tokenın işlem vergisini (yükseltme sırasında) doğurur. Ancak, TigerOG'ye dönüştürüldükten sonra, sonraki tüm transferler ve köprüler vergiden muaftır."
+      },
+      "supportedNetworks": {
+        "title": "Desteklenen Ağlar",
+        "content": "Freedom Bridge, Axelar aracılığıyla EVM ortamında sorunsuz birlikte çalışabilirliği sağlayan {{count}}+ blok zincirinden oluşan büyüyen bir ekosistemi destekler."
+      },
+      "xerc20": {
+        "title": "Zincirler Arası Tokenlar",
+        "content": "Axelar Zincirler Arası Token Hizmeti (ITS), tokenların tutarlı bir adres ve birleşik arz yönetimi ile birden fazla zincirde dağıtılmasına izin verir. Freedom Bridge, TigerOG'nin köprülendiği her yerde kanonik bir varlık olarak kalmasını sağlamak için ITS kullanır."
+      },
+      "axelar": {
+        "title": "Axelar Ağı",
+        "content": "Birlikte çalışabilirlik katmanımız olarak Axelar kullanıyoruz. Axelar, farklı blok zincirlerini birbirine bağlayan, güvenli zincirler arası iletişim ve varlık transferi sağlayan merkezi olmayan bir ağdır. Axelar'in güvenlik modeli, zincirler arası tokenlar için yüksek dereceli güvenlik sağlayan izinsiz bir doğrulayıcı kümesine dayanır."
+      },
+      "migration": {
+        "title": "Göç Mantığı",
+        "content": "Göç sözleşmesi kaynak zincirde (örneğin, BSC) dağıtılır. Orijinal eski tokenları gözetim altında tutar. Tokenları yükselttiğinizde, Göç sözleşmesine yatırırsınız. Çözdüğünüzde (destekleniyorsa), orijinal tokenları serbest bırakmak için TigerOG temsilini yakıyorsunuz. Bu, kesin bir 1:1 destek sağlar."
+      },
+      "contracts": {
+        "title": "Akıllı Sözleşme Adresleri",
+        "colNetwork": "Ağ",
+        "colType": "Sözleşme Türü",
+        "colAddress": "Adres"
+      },
+      "security": {
+        "title": "Güvenlik Modeli",
+        "content": "Güvenlik, Freedom Bridge'in her katmanında yerleşiktir:",
+        "point1": "<strong>Göç Mimarisi:</strong> Eski tokenlar doğrulanmış, değişmez akıllı sözleşmelerde tutulur.",
+        "point2": "<strong>Axelar Doğrulayıcıları:</strong> Zincirler arası mesajlar Axelar'in merkezi olmayan ağı tarafından doğrulanır.",
+        "point3": "<strong>Tutarlı Arz:</strong> ITS, tüm zincirlerde sabit bir toplam arzı sürdürmek için basma ve yakma işlemlerini yönetir.",
+        "point4": "<strong>Denetlenmiş Mantık:</strong> Endüstri standardı Axelar ve OpenZeppelin kütüphaneleri üzerine inşa edilmiştir."
+      },
+      "supplyCommon": {
+        "howWeCalculated": "Bunu Nasıl Hesapladık",
+        "verification": "Doğrulama",
+        "verificationDesc": "Tüm arz rakamları zincir üzerinde bağımsız olarak doğrulanabilir:",
+        "table": {
+          "category": "Kategori",
+          "amount": "Miktar",
+          "percentOfTotal": "Toplamın %'si",
+          "originalSupply": "Orijinal Toplam Arz",
+          "deadAddress": "Ölü Adres (Yakılmış)",
+          "contractBalance": "Sözleşme Bakiyesi (Sıkışmış)",
+          "circulatingSupply": "Dolaşımdaki Arz"
+        },
+        "deadAddressTitle": "1. Ölü Adres",
+        "contractBalanceTitle": "2. Sözleşme Bakiyesi",
+        "lpLockedTitle": "3. LP Kilitli Tokenlar"
+      },
+      "tigerogSupply": {
+        "title": "TigerOG Arz Dağılımı",
+        "intro": "TigerOG, orijinal BNBTiger tokenından türetilen sabit bir dolaşım arzına sahiptir. Arz hesaplaması, tüm yakılan ve kalıcı olarak kilitlenen tokenları hesaba katar.",
+        "lpLocked": "LP Kilitli (Yakılan LP'nin %86.18'i)",
+        "deadAddressDesc": "<code>0x000...dEaD</code> adresine gönderilen tokenlar kalıcı olarak yakılır ve asla geri alınamaz. Bu, orijinal BNBTiger vergi mekanizması yoluyla yakılan tokenları içerir.",
+        "contractBalanceDesc": "BNBTiger sözleşmesinin kendisinde az miktarda token sıkışmış durumda. Bu tokenlar erişilemez ve dolaşımdan etkili bir şekilde çıkarılmıştır.",
+        "lpLockedDesc": "PancakeSwap likidite havuzu, BNB ile eşleştirilmiş BNBTiger tokenlarını içerir. LP tokenları yakıldığında (ölü adrese gönderildiğinde), havuzdaki temel tokenlar kalıcı olarak kilitlenir.",
+        "lpBurnedPercent": "Yakılan LP tokenları: Tüm LP tokenlarının %86.18'i",
+        "lpLockedPercent": "Bu nedenle, LP'deki tokenların %86.18'i kalıcı olarak kilitlenmiştir",
+        "note": "<strong>Not:</strong> TigerOG, göç sırasında BNBTiger ile 1:1 oranını korur. TigerOG'nin dolaşımdaki arzı, tüm yakılan ve kilitlenen tokenları hesaba kattıktan sonra BNBTiger'in gerçek dolaşımdaki arzıyla eşleşir.",
+        "launchData": "<strong>Başlangıç Verileri:</strong> Bu rakamlar başlangıçta hesaplanmıştır. Eski BNBTiger tokenı her alım/satım işleminde token yakmaya devam eder, bu nedenle gerçek dolaşımdaki arz gösterilenden biraz daha düşük olabilir.",
+        "legacyContract": "BNBTiger Token Sözleşmesi",
+        "ogContract": "TigerOG Token Sözleşmesi",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,772,706,396,234,535,780,783,775",
+          "deadPercent": "%57.73",
+          "contract": "−6,142,342,823,271,327",
+          "contractPercent": "<%0.01",
+          "lp": "−565,059,839,948,518,979,124,912",
+          "lpPercent": "%5.65",
+          "circulating": "3,662,233,757,674,602,416,819,986",
+          "circulatingPercent": "%36.62"
+        }
+      },
+      "lionogSupply": {
+        "title": "LionOG Arz Dağılımı",
+        "intro": "LionOG, orijinal BNBLion tokenından türetilen sabit bir dolaşım arzına sahiptir. Arz hesaplaması, tüm yakılan ve kalıcı olarak kilitlenen tokenları hesaba katar.",
+        "lpLocked": "LP Kilitli (Yakılan LP'nin %99.98'i)",
+        "deadAddressDesc": "<code>0x000...dEaD</code> adresine gönderilen tokenlar kalıcı olarak yakılır ve asla geri alınamaz. Bu, orijinal BNBLion vergi mekanizması yoluyla yakılan tokenları içerir.",
+        "contractBalanceDesc": "BNBLion sözleşmesinin kendisinde az miktarda token sıkışmış durumda. Bu tokenlar erişilemez ve dolaşımdan etkili bir şekilde çıkarılmıştır.",
+        "lpLockedDesc": "PancakeSwap likidite havuzu, BNB ile eşleştirilmiş BNBLion tokenlarını içerir. LP tokenları yakıldığında (ölü adrese gönderildiğinde), havuzdaki temel tokenlar kalıcı olarak kilitlenir.",
+        "lpBurnedPercent": "Yakılan LP tokenları: Tüm LP tokenlarının %99.98'i",
+        "lpLockedPercent": "Bu nedenle, LP'deki tokenların %99.98'i kalıcı olarak kilitlenmiştir",
+        "note": "<strong>Not:</strong> LionOG, göç sırasında BNBLion ile 1:1 oranını korur. LionOG'nin dolaşımdaki arzı, tüm yakılan ve kilitlenen tokenları hesaba kattıktan sonra BNBLion'un gerçek dolaşımdaki arzıyla eşleşir.",
+        "launchData": "<strong>Başlangıç Verileri:</strong> Bu rakamlar başlangıçta hesaplanmıştır. Eski BNBLion tokenı her alım/satım işleminde token yakmaya devam eder, bu nedenle gerçek dolaşımdaki arz gösterilenden biraz daha düşük olabilir.",
+        "legacyContract": "BNBLion Token Sözleşmesi",
+        "ogContract": "LionOG Token Sözleşmesi",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,724,597,218,422,106,614,085,614",
+          "deadPercent": "%57.25",
+          "contract": "−9,219,967,745,410,740,095,290",
+          "contractPercent": "<%0.01",
+          "lp": "−442,490,152,327,271,918,655,109",
+          "lpPercent": "%4.42",
+          "circulating": "3,832,903,409,282,876,056,519,182",
+          "circulatingPercent": "%38.33"
+        }
+      },
+      "frogogSupply": {
+        "title": "FrogOG Arz Dağılımı",
+        "intro": "FrogOG, orijinal BNBFrog tokenından türetilen sabit bir dolaşım arzına sahiptir. Arz hesaplaması, tüm yakılan ve kalıcı olarak kilitlenen tokenları hesaba katar.",
+        "lpLocked": "LP Kilitli (Yakılan LP'nin %99.31'i)",
+        "deadAddressDesc": "<code>0x000...dEaD</code> adresine gönderilen tokenlar kalıcı olarak yakılır ve asla geri alınamaz. Bu, orijinal BNBFrog vergi mekanizması yoluyla yakılan tokenları içerir.",
+        "contractBalanceDesc": "BNBFrog sözleşmesinin kendisinde az miktarda token sıkışmış durumda. Bu tokenlar erişilemez ve dolaşımdan etkili bir şekilde çıkarılmıştır.",
+        "lpLockedDesc": "PancakeSwap likidite havuzu, BNB ile eşleştirilmiş BNBFrog tokenlarını içerir. LP tokenları yakıldığında (ölü adrese gönderildiğinde), havuzdaki temel tokenlar kalıcı olarak kilitlenir.",
+        "lpBurnedPercent": "Yakılan LP tokenları: Tüm LP tokenlarının %99.31'i",
+        "lpLockedPercent": "Bu nedenle, LP'deki tokenların %99.31'i kalıcı olarak kilitlenmiştir",
+        "note": "<strong>Not:</strong> FrogOG, göç sırasında BNBFrog ile 1:1 oranını korur. FrogOG'nin dolaşımdaki arzı, tüm yakılan ve kilitlenen tokenları hesaba kattıktan sonra BNBFrog'un gerçek dolaşımdaki arzıyla eşleşir.",
+        "launchData": "<strong>Başlangıç Verileri:</strong> Bu rakamlar başlangıçta hesaplanmıştır. Eski BNBFrog tokenı her alım/satım işleminde token yakmaya devam eder, bu nedenle gerçek dolaşımdaki arz gösterilenden biraz daha düşük olabilir.",
+        "legacyContract": "BNBFrog Token Sözleşmesi",
+        "ogContract": "FrogOG Token Sözleşmesi",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−740,059,884,911,899,485,982,976",
+          "deadPercent": "%7.40",
+          "contract": "−4,036,008,092,593,983,879,741",
+          "contractPercent": "<%0.01",
+          "lp": "−874,144,424,929,004,044,398,902",
+          "lpPercent": "%8.74",
+          "circulating": "8,385,795,686,123,088,377,024,138",
+          "circulatingPercent": "%83.86"
+        }
+      }
+    }
+  },
+  "contracts": {
+    "title": "Sözleşme Adresleri",
+    "header": {
+      "title": "Akıllı Sözleşmeler",
+      "subtitle": "Freedom Bridge ekosistemindeki tokenlar ve köprüler için resmi dağıtım adresleri."
+    },
+    "tabs": {
+      "overview": "Genel Bakış",
+      "byToken": "Token'a Göre",
+      "byChain": "Zincire Göre",
+      "liquidity": "Likidite"
+    },
+    "liquidity": {
+      "title": "Likidite Havuzları"
+    }
+  },
+  "faq": {
+    "title": "Freedom Bridge Desteği",
+    "header": "Sıkça Sorulan Sorular",
+    "subtitle": "TigerOG, köprüleme ve Axelar hakkında sık sorulan soruların yanıtları.",
+    "cta": {
+      "title": "Hala sorularınız mı var?",
+      "description": "Telegram'daki topluluğumuza katılın veya teknik kılavuzlar için ayrıntılı Wiki'yi kontrol edin.",
+      "wiki": "Wiki'yi Ziyaret Et",
+      "telegram": "Telegram'a Katıl"
+    },
+    "questions": {
+      "q1": "Tokenlarımı dönüştürmenin amacı nedir?",
+      "a1": "Tokenlarınızı TigerOG'ye dönüştürmek, eski tokenla ilişkili işlem vergisini (genellikle %10-12) kaldırır. Ayrıca bu tokenları Axelar aracılığıyla Ethereum, Base ve daha fazlası gibi diğer blok zincirlerine köprülemenize izin vererek yeni ekosistemlere erişim sağlar.",
+      "q2": "Freedom Bridge'i kullanmak güvenli mi?",
+      "a2": "Evet. Protokol, güvenli bir Göç sözleşmesi ve Axelar'in Zincirler Arası Token Hizmetini kullanır. Dönüştürdüğünüzde, BNBTiger'ınız kalıcı olarak yakılır ve 1:1 oranında TigerOG alırsınız. Yakma mekanizması, toplam arzın tüm zincirlerde düzgün bir şekilde yönetilmesini sağlar.",
+      "q3": "Herhangi bir ücret var mı?",
+      "a3": "Freedom Bridge'in kendisi dönüştürme için bir ücret talep etmez. Yalnızca standart blok zinciri gaz ücretlerini ödersiniz. Zincirler arasında köprüleme, aktarma maliyetlerini karşılamak için Axelar'a ödenen bir zincirler arası gaz ücretini içerir.",
+      "q4": "Tokenlarımı kaybedersem ne olur?",
+      "a4": "TigerOG tokenları diğer herhangi bir ERC20 tokenı gibi davranır. Cüzdanınıza erişimi kaybederseniz, kurtarılamazlar. Özel anahtarlarınızı ve kurtarma ifadelerinizi her zaman güvende tutun.",
+      "q5": "Tokenlarımı tekrar BNBTiger'a dönüştürebilir miyim?",
+      "a5": "Hayır. Göç, tek yönlü bir dönüşümdür. BNBTiger'ı TigerOG'ye dönüştürdüğünüzde, BNBTiger tokenlarınız kalıcı olarak yakılır (ölü adrese gönderilir). Bu kasıtlıdır — TigerOG, eski tokenı tamamen değiştirmek için tasarlanmış yükseltilmiş, vergisiz sürümdür.",
+      "q6": "Hangi ağlar destekleniyor?",
+      "a6": "Axelar aracılığıyla BNB Chain, Ethereum, Base ve daha fazlası dahil olmak üzere birden fazla EVM zincirini destekliyoruz. Desteklenen ağların tam listesi için Wiki'yi kontrol edin.",
+      "q7": "Köprüleme ne kadar sürer?",
+      "a7": "Köprüleme hızı, kaynak zincirin kesinleşme süresine ve Axelar aktarımına bağlıdır. Tipik olarak, zincirler arası bir transfer yaklaşık 2-5 dakika sürer.",
+      "q8": "OG tokenlarının dolaşımdaki arzı nedir?",
+      "a8": "Her OG tokenı, orijinal BNB tokenından türetilen, yakılan tokenları, sıkışmış sözleşme bakiyelerini ve kilitli LP'yi hesaba katan sabit bir dolaşım arzına sahiptir. TigerOG: ~3.66 septilyon (orijinalin %36.62'si). LionOG: ~3.83 septilyon (orijinalin %38.33'ü). FrogOG: ~8.39 septilyon (orijinalin %83.86'sı). Her tokenın ayrıntılı dökümleri için Wiki'ye bakın."
+    }
+  },
+  "common": {
+    "from": "Nereden",
+    "to": "Nereye",
+    "max": "MAKS",
+    "chainId": "Zincir Kimliği",
+    "bscChain": "BSC Zinciri",
+    "insufficientBalance": "Yetersiz bakiye.",
+    "failedToSwitchNetwork": "Ağ değiştirilemedi. Lütfen cüzdanınızda manuel olarak değiştirin.",
+    "failedToFetchFeeQuote": "Ücret teklifi alınamadı.",
+    "unableToDetermineGas": "Axelar gaz ödemesi belirlenemiyor",
+    "bridgeTxFailed": "Köprü işlemi başarısız oldu",
+    "estimatedGas": "Tahmini Axelar gazı",
+    "success": "Başarılı!",
+    "viewOnExplorer": "Gezginde Görüntüle",
+    "bridging": "Köprüleniyor...",
+    "transactionFailed": "İşlem başarısız oldu",
+    "search": "Ara",
+    "backToApp": "Uygulamaya Dön"
+  }
+}

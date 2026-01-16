@@ -1,0 +1,518 @@
+import { useEffect, useMemo, useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Alert, AlertDescription } from "@/components/ui/alert";
+import { ArrowDown, Loader2, CheckCircle, ExternalLink } from "lucide-react";
+import { useAccount, useChainId, usePublicClient, useWalletClient } from "wagmi";
+import { formatUnits, parseUnits } from "viem";
+import { migrationAbi } from "../abi/migration";
+import { erc20Abi } from "../utils/erc20Abi";
+import { NumberInput } from "./NumberInput";
+import { formatLargeNumber, formatInputWithCommas } from "../utils/numberFormat";
+import { useTranslation } from "react-i18next";
+import { getChainIcon } from "../utils/chainIcons";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+} from "@/components/ui/select";
+
+// Token pairs available for conversion
+type TokenPair = {
+  id: string;
+  legacyName: string;
+  legacySymbol: string;
+  newName: string;
+  newSymbol: string;
+  legacyAddress: `0x${string}`;
+  newAddress: `0x${string}`;
+  migrationAddress: `0x${string}`;
+};
+
+// Contract addresses per network
+const TOKEN_PAIRS: Record<number, TokenPair[]> = {
+  // BSC Mainnet (56)
+  56: [
+    {
+      id: "tigerog",
+      legacyName: "BNBTiger",
+      legacySymbol: "BNBTIGER",
+      newName: "TigerOG",
+      newSymbol: "TIGEROG",
+      legacyAddress: "0xAC68931B666E086E9de380CFDb0Fb5704a35dc2D",
+      newAddress: "0xCF7Fc0De71238c9EC45EC2Fd24FDc8521345dbB5",
+      migrationAddress: "0x18b2AeD6Aa6aE20A70be57739F8B5C26706Ff2af",
+    },
+    {
+      id: "lionog",
+      legacyName: "BNBLion",
+      legacySymbol: "BNBLION",
+      newName: "LionOG",
+      newSymbol: "LIONOG",
+      legacyAddress: "0xdA1689C5557564d06E2A546F8FD47350b9D44a73",
+      newAddress: "0x6731F2d7ADF86cfba30d15c4D10113Ce98f3492A",
+      migrationAddress: "0x4272b9EeBde520Dfb9cFc3C16bBfc8d3868b467b",
+    },
+    {
+      id: "frogog",
+      legacyName: "BNBFrog",
+      legacySymbol: "BNBFROG",
+      newName: "FrogOG",
+      newSymbol: "FROGOG",
+      legacyAddress: "0x64da67A12a46f1DDF337393e2dA12eD0A507Ad3D",
+      newAddress: "0x0E3b564bdD09348840811C7e1106BbD0e98b5b4f",
+      migrationAddress: "0xbF4b1F662247147afCefecbdEa5590fd103dF1FB",
+    },
+  ],
+};
+
+const EXPLORERS: Record<number, string> = {
+  56: "https://bscscan.com",
+};
+
+const DECIMALS = 9;
+
+const ConverterForm = () => {
+  const { t } = useTranslation();
+  const { address, isConnected } = useAccount();
+  const chainId = useChainId();
+  const publicClient = usePublicClient();
+  const { data: walletClient } = useWalletClient();
+
+  // Get available token pairs for current chain
+  const availableTokenPairs = TOKEN_PAIRS[chainId as keyof typeof TOKEN_PAIRS] ?? [];
+  const isBSC = chainId === 56;
+
+  // Selected token pair state - default to first available pair with valid addresses
+  const [selectedPairId, setSelectedPairId] = useState<string>(() => {
+    const validPair = availableTokenPairs.find(
+      p => p.migrationAddress !== "0x0000000000000000000000000000000000000000"
+    );
+    return validPair?.id ?? availableTokenPairs[0]?.id ?? "";
+  });
+
+  // Get selected token pair
+  const selectedPair = availableTokenPairs.find(p => p.id === selectedPairId) ?? availableTokenPairs[0];
+
+  const [amount, setAmount] = useState("");
+  const [legacyBalance, setLegacyBalance] = useState<bigint>(0n);
+  const [newTokenBalance, setNewTokenBalance] = useState<bigint>(0n);
+  const [availableForUpgrade, setAvailableForUpgrade] = useState<bigint>(0n);
+  const [balanceLoading, setBalanceLoading] = useState(false);
+  const [converting, setConverting] = useState(false);
+  const [txHash, setTxHash] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
+
+  // Get addresses from selected pair
+  const LEGACY_ADDRESS = selectedPair?.legacyAddress ?? "0x0000000000000000000000000000000000000000";
+  const NEW_TOKEN_ADDRESS = selectedPair?.newAddress ?? "0x0000000000000000000000000000000000000000";
+  const MIGRATION_ADDRESS = selectedPair?.migrationAddress ?? "0x0000000000000000000000000000000000000000";
+  const BSC_EXPLORER = EXPLORERS[chainId] ?? EXPLORERS[97];
+
+  // Reset amount when token pair changes
+  useEffect(() => {
+    setAmount("");
+    setTxHash(null);
+    setError(null);
+  }, [selectedPairId]);
+
+  // Fetch balances
+  useEffect(() => {
+    if (!publicClient || !address || !selectedPair) {
+      setLegacyBalance(0n);
+      setNewTokenBalance(0n);
+      return;
+    }
+
+    let cancelled = false;
+    const fetchBalances = async () => {
+      setBalanceLoading(true);
+      try {
+        const promises: Promise<bigint>[] = [];
+
+        // Fetch legacy token balance
+        if (LEGACY_ADDRESS !== "0x0000000000000000000000000000000000000000") {
+          promises.push(
+            publicClient.readContract({
+              address: LEGACY_ADDRESS,
+              abi: erc20Abi,
+              functionName: "balanceOf",
+              args: [address],
+            }) as Promise<bigint>
+          );
+        } else {
+          promises.push(Promise.resolve(0n));
+        }
+
+        // Fetch new token balance
+        if (NEW_TOKEN_ADDRESS !== "0x0000000000000000000000000000000000000000") {
+          promises.push(
+            publicClient.readContract({
+              address: NEW_TOKEN_ADDRESS,
+              abi: erc20Abi,
+              functionName: "balanceOf",
+              args: [address],
+            }) as Promise<bigint>
+          );
+        } else {
+          promises.push(Promise.resolve(0n));
+        }
+
+        // Fetch migration available
+        if (MIGRATION_ADDRESS !== "0x0000000000000000000000000000000000000000") {
+          promises.push(
+            publicClient.readContract({
+              address: MIGRATION_ADDRESS,
+              abi: migrationAbi,
+              functionName: "availableForUpgrade",
+            }) as Promise<bigint>
+          );
+        } else {
+          promises.push(Promise.resolve(0n));
+        }
+
+        const [legacy, newToken, available] = await Promise.all(promises);
+
+        if (!cancelled) {
+          setLegacyBalance(legacy);
+          setNewTokenBalance(newToken);
+          setAvailableForUpgrade(available);
+        }
+      } catch (err) {
+        console.error("Failed to fetch balances:", err);
+        if (!cancelled) {
+          setLegacyBalance(0n);
+          setNewTokenBalance(0n);
+        }
+      } finally {
+        if (!cancelled) setBalanceLoading(false);
+      }
+    };
+
+    fetchBalances();
+    const interval = setInterval(fetchBalances, 15000);
+
+    return () => {
+      cancelled = true;
+      clearInterval(interval);
+    };
+  }, [publicClient, address, txHash, selectedPair, LEGACY_ADDRESS, NEW_TOKEN_ADDRESS, MIGRATION_ADDRESS]);
+
+  const amountBigInt = useMemo(() => {
+    try {
+      return parseUnits(amount || "0", DECIMALS);
+    } catch {
+      return 0n;
+    }
+  }, [amount]);
+
+  const exceedsBalance = amountBigInt > legacyBalance;
+  const exceedsAvailable = amountBigInt > availableForUpgrade && availableForUpgrade > 0n;
+
+  const canConvert =
+    isConnected &&
+    amountBigInt > 0n &&
+    !converting &&
+    !exceedsBalance &&
+    !exceedsAvailable &&
+    MIGRATION_ADDRESS !== "0x0000000000000000000000000000000000000000";
+
+  const ensureApproval = async (): Promise<boolean> => {
+    if (!publicClient || !walletClient || !address) return false;
+
+    try {
+      const allowance = (await publicClient.readContract({
+        address: LEGACY_ADDRESS,
+        abi: erc20Abi,
+        functionName: "allowance",
+        args: [address, MIGRATION_ADDRESS],
+        blockTag: "latest",
+      })) as bigint;
+
+      if (allowance >= amountBigInt) return true;
+
+      const approveTx = await walletClient.writeContract({
+        address: LEGACY_ADDRESS,
+        abi: erc20Abi,
+        functionName: "approve",
+        args: [MIGRATION_ADDRESS, amountBigInt],
+      });
+      await publicClient.waitForTransactionReceipt({ hash: approveTx, confirmations: 1 });
+
+      return true;
+    } catch (err) {
+      setError("Approval failed. Please try again.");
+      console.error("Approval error:", err);
+      return false;
+    }
+  };
+
+  const handleConvert = async () => {
+    if (!publicClient || !walletClient || !canConvert) return;
+
+    setError(null);
+    setTxHash(null);
+    setConverting(true);
+
+    try {
+      const approved = await ensureApproval();
+      if (!approved) {
+        setConverting(false);
+        return;
+      }
+
+      const tx = await walletClient.writeContract({
+        address: MIGRATION_ADDRESS,
+        abi: migrationAbi,
+        functionName: "upgrade",
+        args: [amountBigInt],
+      });
+
+      await publicClient.waitForTransactionReceipt({ hash: tx, confirmations: 1 });
+      setTxHash(tx);
+      setAmount("");
+    } catch (err: unknown) {
+      const message = err instanceof Error ? err.message : "Conversion failed";
+      setError(message);
+      console.error("Conversion error:", err);
+    } finally {
+      setConverting(false);
+    }
+  };
+
+  const setPercentageAmount = (percentage: number) => {
+    if (legacyBalance > 0n) {
+      const percentageBalance = (legacyBalance * BigInt(percentage)) / 100n;
+      setAmount(formatUnits(percentageBalance, DECIMALS));
+    }
+  };
+
+  const legacyFormatted = formatLargeNumber(formatUnits(legacyBalance, DECIMALS));
+  const newTokenFormatted = formatLargeNumber(formatUnits(newTokenBalance, DECIMALS));
+  const amountFormatted = formatLargeNumber(amount || "0");
+
+  // Show warning if not on BSC
+  if (!isBSC) {
+    return (
+      <div className="bridge-form-container">
+        <Alert className="warning-alert">
+          <AlertDescription>
+            <div className="font-semibold mb-1">Wrong Network</div>
+            <div className="text-sm">
+              Token conversion is only available on BSC Chain. Please switch to BSC to convert your legacy tokens.
+            </div>
+          </AlertDescription>
+        </Alert>
+      </div>
+    );
+  }
+
+  return (
+    <div className="bridge-form-container">
+      {/* Source: Legacy Token */}
+      <div className="asset-panel">
+        <div className="asset-panel-header">
+          <span className="asset-panel-label">{t('common.from')}</span>
+          <div className="chain-selector-pill cursor-default hover:bg-transparent opacity-100">
+            <div className="flex items-center gap-2">
+              {getChainIcon(chainId) && <img src={getChainIcon(chainId)} alt="" className="w-5 h-5 rounded-full" />}
+              BSC Chain
+            </div>
+          </div>
+        </div>
+
+        <div className="asset-panel-input-row">
+          <NumberInput
+            value={amount}
+            onValueChange={setAmount}
+            placeholder="0"
+            className="asset-input-large"
+          />
+
+          {availableTokenPairs.length > 1 ? (
+            <Select
+              value={selectedPairId}
+              onValueChange={setSelectedPairId}
+            >
+              <SelectTrigger className="asset-token-pill w-auto h-auto hover:bg-accent/10 focus:ring-0 border-0 shadow-none">
+                <div className="flex items-center gap-2">
+                  <span className="font-bold text-lg">{selectedPair?.legacySymbol ?? 'Select'}</span>
+                </div>
+              </SelectTrigger>
+              <SelectContent className="shadcn-select-content">
+                {availableTokenPairs.map((pair) => (
+                  <SelectItem
+                    key={pair.id}
+                    value={pair.id}
+                    disabled={pair.migrationAddress === "0x0000000000000000000000000000000000000000"}
+                  >
+                    <div className="flex items-center gap-2">
+                      <span>{pair.legacyName} ({pair.legacySymbol})</span>
+                      {pair.migrationAddress === "0x0000000000000000000000000000000000000000" && (
+                        <span className="text-xs text-muted-foreground">(Coming Soon)</span>
+                      )}
+                    </div>
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          ) : (
+            <div className="asset-token-pill cursor-default">
+              <span className="font-bold text-lg">{selectedPair?.legacySymbol ?? 'Select Token'}</span>
+            </div>
+          )}
+        </div>
+
+        <div className="asset-panel-footer">
+          <div className="flex items-center gap-2">
+            {amount.length > 0 && amountFormatted.word && (
+              <span className="text-xs text-muted-foreground">
+                {amountFormatted.word}
+              </span>
+            )}
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="text-sm text-muted-foreground">
+              {t('convert.balance')}: {balanceLoading ? <Loader2 className="inline h-3 w-3 animate-spin" /> : legacyFormatted.formatted}
+            </span>
+            <div className="amount-buttons-row compact-buttons">
+              {[25, 50, 75].map((percentage) => (
+                <button
+                  key={percentage}
+                  className={`percent-button compact-percent-button percent-${percentage}`}
+                  onClick={() => setPercentageAmount(percentage)}
+                  type="button"
+                >
+                  {percentage}%
+                </button>
+              ))}
+              <button
+                className="percent-button compact-percent-button percent-100"
+                onClick={() => setPercentageAmount(100)}
+                type="button"
+              >
+                {t('common.max')}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Arrow (static - no flip on Convert page) */}
+      <div className="swap-arrow-container">
+        <div className="swap-arrow-button swap-arrow-static">
+          <ArrowDown size={20} />
+        </div>
+      </div>
+
+      {/* Destination: New Token */}
+      <div className="asset-panel">
+        <div className="asset-panel-header">
+          <span className="asset-panel-label">{t('common.to')}</span>
+          <div className="chain-selector-pill cursor-default hover:bg-transparent opacity-100">
+            <div className="flex items-center gap-2">
+              {getChainIcon(chainId) && <img src={getChainIcon(chainId)} alt="" className="w-5 h-5 rounded-full" />}
+              BSC Chain
+            </div>
+          </div>
+        </div>
+
+        <div className="asset-panel-input-row">
+          <div className="asset-input-large">
+            {amount.length > 0 ? formatInputWithCommas(amount) : '0'}
+          </div>
+          <div className="asset-token-pill cursor-default hover:transform-none hover:shadow-none">
+            <span className="font-bold text-lg">{selectedPair?.newSymbol ?? 'New Token'}</span>
+          </div>
+        </div>
+
+        <div className="asset-panel-footer">
+          <div className="flex items-center gap-2">
+            {amount.length > 0 && amountFormatted.word && (
+              <span className="text-xs text-muted-foreground">
+                {amountFormatted.word}
+              </span>
+            )}
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="text-sm text-muted-foreground">
+              {t('convert.balance')}: {balanceLoading ? <Loader2 className="inline h-3 w-3 animate-spin" /> : newTokenFormatted.formatted}
+            </span>
+          </div>
+        </div>
+      </div>
+
+      {/* Errors */}
+      {error && (
+        <Alert className="error-alert">
+          <AlertDescription>{error}</AlertDescription>
+        </Alert>
+      )}
+
+      {exceedsBalance && amountBigInt > 0n && (
+        <Alert className="error-alert">
+          <AlertDescription>Insufficient {selectedPair?.legacySymbol} balance</AlertDescription>
+        </Alert>
+      )}
+
+      {exceedsAvailable && amountBigInt > 0n && (
+        <Alert className="warning-alert">
+          <AlertDescription>
+            Amount exceeds available {selectedPair?.newSymbol} in migration contract ({formatLargeNumber(formatUnits(availableForUpgrade, DECIMALS)).formatted})
+          </AlertDescription>
+        </Alert>
+      )}
+
+      {MIGRATION_ADDRESS === "0x0000000000000000000000000000000000000000" && (
+        <Alert className="warning-alert">
+          <AlertDescription>
+            Migration contract not yet deployed. Coming soon!
+          </AlertDescription>
+        </Alert>
+      )}
+
+      {/* Success */}
+      {txHash && (
+        <Alert className="alert-custom-success">
+          <AlertDescription>
+            <div className="success-container">
+              <div className="success-header">
+                <CheckCircle className="success-icon" />
+                <span className="success-title">{t('common.success')}!</span>
+              </div>
+              <div className="success-actions">
+                <div className="success-links-row">
+                  <a
+                    href={`${BSC_EXPLORER}/tx/${txHash}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="success-explorer-link"
+                  >
+                    <ExternalLink />
+                    {t('common.viewOnExplorer')}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </AlertDescription>
+        </Alert>
+      )}
+
+      {/* Convert Button */}
+      <div className="flex flex-col gap-2 pt-2">
+        <Button onClick={handleConvert} disabled={!canConvert} className="bridge-button w-full h-12 text-lg">
+          {converting ? (
+            <>
+              <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+              Converting...
+            </>
+          ) : (
+            `Convert to ${selectedPair?.newSymbol ?? 'New Token'}`
+          )}
+        </Button>
+      </div>
+    </div>
+  );
+};
+
+export default ConverterForm;

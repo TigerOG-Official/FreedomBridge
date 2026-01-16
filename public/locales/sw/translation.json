@@ -1,0 +1,364 @@
+{
+  "app": {
+    "titleFreedom": "Uhuru",
+    "titleBridge": "Daraja"
+  },
+  "nav": {
+    "settings": "Mipangilio",
+    "menu": "Menyu",
+    "preferences": "Mapendeleo",
+    "switchTheme": "Muonekano",
+    "theme": {
+      "dark": "Giza",
+      "light": "Mwanga"
+    },
+    "switchPalette": "Badilisha Ubao",
+    "wiki": "Nyaraka / Wiki",
+    "contracts": "Mikataba",
+    "faq": "Maswali Yanayoulizwa Mara kwa Mara",
+    "logout": "Toka",
+    "language": "Lugha",
+    "languageSearchPlaceholder": "Tafuta lugha",
+    "languageNoResults": "Hakuna lugha zilizopatikana",
+    "close": "Funga"
+  },
+  "addNetworks": {
+    "title": "Ongeza Mitandao",
+    "description": "Bofya kitufe hapa chini ili kuongeza Mitandao kwenye pochi yako. Hii inafanya iwe rahisi kubadilisha kati ya minyororo wakati wa kupima."
+  },
+  "tabs": {
+    "convert": "Badilisha",
+    "bridge": "Daraja"
+  },
+  "convert": {
+    "token": "Tokeni",
+    "selectToken": "Chagua Tokeni",
+    "balance": "Salio",
+    "noConvertibleTokens": "Hakuna tokeni za kubadilisha kwenye {{chainName}}",
+    "convert": "Badilisha",
+    "addToWalletLabel": "Ingiza {{symbol}} kwenye {{chainName}} kwenye pochi",
+    "addToWalletButton": "Ingiza kwenye Pochi",
+    "addingToken": "Inaongeza...",
+    "addTokenError": "Imeshindwa kuongeza tokeni kwenye pochi",
+    "legacyTokenMissing": "Tokeni ya zamani inakosekana kwa mnyororo huu",
+    "tigerOGMissing": "Tokeni ya TigerOG inakosekana kwa mnyororo huu",
+    "networkWarning": {
+      "title": "Mtandao Mbaya",
+      "message": "Ubadilishaji wa tokeni unapatikana tu kwenye BSC Chain.",
+      "description": "Tafadhali badilisha hadi BSC Chain kwenye pochi yako ili kubadilisha tokeni, au nenda kwenye kichupo cha Daraja ili kuhamisha tokeni kati ya minyororo."
+    }
+  },
+  "bridge": {
+    "fromChain": "Kutoka Mnyororo",
+    "selectChainPlaceholder": "Chagua mnyororo",
+    "toChain": "Kwenda Mnyororo",
+    "selectDestinationPlaceholder": "Chagua mahali pa kwenda",
+    "noDestination": "Hakuna mahali pa kwenda",
+    "noBridgeableTokens": "Hakuna tokeni za kuunganisha",
+    "bridgeButton": "Unganisha Tokeni",
+    "getFeeQuote": "Pata Makadirio ya Ada",
+    "viewOnAxelarscan": "Tazama kwenye Axelar Explorer",
+    "addDestinationTokenLabel": "Ingiza {{symbol}} kwenye {{chainName}} kwenye pochi",
+    "addTokenError": "Imeshindwa kuongeza tokeni kwenye pochi",
+    "estimatedTime": "Muda uliokadiriwa",
+    "recentTransactions": "Miamala ya Hivi Karibuni",
+    "clearHistory": "Futa historia",
+    "historyStoredLocally": "Historia ya miamala imehifadhiwa ndani ya kifaa hiki"
+  },
+  "settings": {
+    "title": "Mipangilio",
+    "environment": "Mazingira",
+    "rpcEndpoints": "Vituo vya RPC",
+    "rpcEndpointsHelp": "Sasisha URL ya RPC inayotumika kwa kila mnyororo katika mazingira yaliyochaguliwa.",
+    "noChainsConfigured": "Hakuna minyororo iliyosanidiwa kwa mazingira haya.",
+    "cancel": "Ghairi",
+    "save": "Hifadhi"
+  },
+  "wallet": {},
+  "login": {
+    "title": "Karibu tena",
+    "subtitle": "Ingia ili uendelee kwenye Freedom Bridge",
+    "emailLabel": "Barua pepe",
+    "emailPlaceholder": "jina@mfano.com",
+    "passwordLabel": "Nenosiri",
+    "passwordPlaceholder": "Weka nenosiri",
+    "rememberMe": "Nikumbuke kwenye kifaa hiki",
+    "submit": "Ingia",
+    "validation": {
+      "required": "Barua pepe na nenosiri vinahitajika.",
+      "invalid": "Barua pepe au nenosiri si sahihi."
+    }
+  },
+  "landing": {
+    "banner": {
+      "title": "Mpya hapa?",
+      "message": "Jifunze kuhusu Freedom Bridge na jinsi ya kuunganisha tokeni za TigerOG kwenye minyororo."
+    },
+    "hero": {
+      "badge": "Inaendeshwa na Axelar",
+      "title": "Fungua <1/> <2>Mali</2> Zako",
+      "subtitle": "Unganisha tokeni za TigerOG bila mshono kwenye minyororo ukitumia Huduma ya Tokeni ya Interchain ya Axelar. Salama, haraka, na bila kodi.",
+      "launchApp": "Zindua Programu",
+      "documentation": "Nyaraka"
+    },
+    "stats": {
+      "messaging": "Mtandao wa Axelar",
+      "networks": "Mitandao Moja kwa Moja",
+      "fees": "Ada za Itifaki",
+      "finality": "Ukamili"
+    },
+    "features": {
+      "title": "Huduma ya Tokeni ya Interchain",
+      "description": "Freedom Bridge hutumia Axelar ITS kutoa uzoefu usio na mshono, salama, na usio na kodi wa kuunganisha kwenye {{count}}+ blockchains.",
+      "stopDecay": {
+        "title": "Acha Uozo",
+        "description": "Tokeni za zamani huchoma 10-11% ya thamani yako kwa kila ununuzi na uuzaji. Kubadilisha kuwa TigerOG husimamisha uvujaji huu mara moja, ikihifadhi 100% ya thamani yako.",
+        "graphLabel1": "100% Imehifadhiwa (TigerOG)",
+        "graphLabel2": "-40% Thamani (Kodi ya Zamani 10%)"
+      },
+      "conversion": {
+        "title": "Ubadilishaji wa 1:1",
+        "description": "Jumla ya usambazaji haibadiliki kamwe. Tokeni zimefungwa kwenye mkataba salama wa uhamiaji, na sawa kabisa ya 1:1 inatumiwa. Hakuna mfumuko wa bei, hakuna dilution."
+      },
+      "multichain": {
+        "title": "Mnyororo Mingi",
+        "description": "Sambaza mara moja, fikia popote. Mali yako inakuwa tokeni ya asili ya mnyororo kwenye minyororo ikijumuisha Ethereum, BNB Chain, Base, na zaidi."
+      },
+      "security": {
+        "title": "Usalama wa Axelar",
+        "description": "Inaendeshwa na mtandao wa waidhinishaji waliogatuliwa wa Axelar. ITS inahakikisha tokeni zako zinahamishwa kwa usalama na uthabiti kwenye mitandao yote iliyounganishwa.",
+        "button": "Anza Kuunganisha"
+      }
+    },
+    "teaser": {
+      "title": "Unataka sarafu zingine?",
+      "subtitle": "Unaonaje kuhusu <lunc>LUNC</lunc>, <crepe>Crepe</crepe>, au <shiba>Shiba</shiba>?"
+    },
+    "cta": {
+      "title": "Uko tayari kuunganisha?",
+      "description": "Jiunge na mapinduzi ya mnyororo. Inachukua chini ya dakika moja kubadilisha mali zako na kuanza kuunganisha kupitia Axelar.",
+      "button": "Zindua Programu Sasa"
+    }
+  },
+  "wiki": {
+    "title": "Wiki ya Freedom Bridge",
+    "searchPlaceholder": "Tafuta nyaraka...",
+    "header": {
+      "title": "Nyaraka",
+      "subtitle": "Jifunze jinsi ya kubadilisha tokeni za zamani, kuunganisha kati ya minyororo, na kuunganisha na Freedom Bridge."
+    },
+    "nav": {
+      "gettingStarted": "Kuanza",
+      "coreConcepts": "Dhana Kuu",
+      "developers": "Waendelezaji",
+      "tigerogSupply": "Ugavi wa TigerOG",
+      "lionogSupply": "Ugavi wa LionOG",
+      "frogogSupply": "Ugavi wa FrogOG"
+    },
+    "articles": {
+      "whatIs": {
+        "title": "Freedom Bridge ni nini?",
+        "content": "Freedom Bridge ni itifaki ya kuunganisha iliyogatuliwa iliyojengwa kwenye Huduma ya Tokeni ya Interchain ya Axelar (ITS). Imeundwa ili kukomboa tokeni kutoka kwa vikwazo vya mnyororo mmoja na kodi za juu za miamala. Kwa kubadilisha tokeni za kawaida kuwa mali zinazooana na mnyororo, watumiaji wanaweza kuhamisha thamani yao kwa uhuru kwenye blockchains zinazoungwa mkono.",
+        "taxFreeTitle": "Uhamisho Usio na Kodi",
+        "taxFreeDesc": "Tokeni za zamani mara nyingi zina kodi ya 10%+. Tokeni za TigerOG zina kodi ya 0%.",
+        "omnichainTitle": "Interchain",
+        "omnichainDesc": "Hamisha mali mara moja kati ya {{count}}+ blockchains kupitia Axelar."
+      },
+      "howToConvert": {
+        "title": "Jinsi ya Kubadilisha Tokeni",
+        "step1": "Unganisha pochi yako na mnyororo wa chanzo (k.m., BNB Chain).",
+        "step2": "Nenda kwenye kichupo cha <strong>Badilisha</strong>.",
+        "step3": "Chagua tokeni ya zamani unayotaka kubadilisha.",
+        "step4": "Idhinisha mkataba wa Uhamiaji ili kutumia tokeni zako.",
+        "step5": "Bofya <strong>Badilisha</strong> ili kuweka tokeni zako za zamani na kupokea kiasi sawa cha tokeni za \"TigerOG\".",
+        "note": "<strong>Kumbuka:</strong> Ubadilishaji unatoza kodi ya muamala wa tokeni ya zamani (wakati wa uboreshaji) ikiwa tokeni yako inatoza kodi kwenye uhamisho. Hata hivyo, mara tu imebadilishwa kuwa TigerOG, uhamisho wote unaofuata na madaraja hayana kodi."
+      },
+      "supportedNetworks": {
+        "title": "Mitandao Inayoungwa Mkono",
+        "content": "Freedom Bridge inasaidia mfumo wa ikolojia unaokua wa {{count}}+ blockchains, kuwezesha ushirikiano usio na mshono katika mazingira ya EVM kupitia Axelar."
+      },
+      "xerc20": {
+        "title": "Tokeni za Interchain",
+        "content": "Huduma ya Tokeni ya Interchain ya Axelar (ITS) inaruhusu tokeni kutumwa kwenye minyororo mingi na anwani thabiti na usimamizi wa ugavi uliounganishwa. Freedom Bridge inatumia ITS kuhakikisha kuwa TigerOG inabaki kuwa mali ya kisheria popote inapounganishwa."
+      },
+      "axelar": {
+        "title": "Mtandao wa Axelar",
+        "content": "Tunatumia Axelar kama safu yetu ya ushirikiano. Axelar ni mtandao uliogatuliwa unaounganisha blockchains tofauti, kuwezesha mawasiliano salama ya mnyororo na uhamisho wa mali. Mfano wa usalama wa Axelar unategemea seti ya waidhinishaji isiyo na ruhusa, kutoa usalama wa hali ya juu kwa tokeni za interchain."
+      },
+      "migration": {
+        "title": "Mantiki ya Uhamiaji",
+        "content": "Mkataba wa Uhamiaji umewekwa kwenye mnyororo wa asili (k.m., BSC). Unashikilia tokeni za asili za zamani chini ya ulinzi. Unapoboresha tokeni, unaweka kwenye mkataba wa Uhamiaji. Unapofungua (ikiwa inasaidiwa), unachoma uwakilishi wa TigerOG ili kutoa tokeni za asili. Hii inahakikisha msaada madhubuti wa 1:1."
+      },
+      "contracts": {
+        "title": "Anwani za Mikataba Mzuri",
+        "colNetwork": "Mtandao",
+        "colType": "Aina ya Mkataba",
+        "colAddress": "Anwani"
+      },
+      "security": {
+        "title": "Mfano wa Usalama",
+        "content": "Usalama umejengwa katika kila safu ya Freedom Bridge:",
+        "point1": "<strong>Usanifu wa Uhamiaji:</strong> Tokeni za zamani zinashikiliwa katika mikataba mzuri iliyothibitishwa, isiyobadilika.",
+        "point2": "<strong>Waidhinishaji wa Axelar:</strong> Ujumbe wa mnyororo unathibitishwa na mtandao uliogatuliwa wa Axelar.",
+        "point3": "<strong>Ugavi Thabiti:</strong> ITS inasimamia utengenezaji na uchomaji ili kudumisha jumla ya ugavi thabiti kwenye minyororo yote.",
+        "point4": "<strong>Mantiki Iliyokaguliwa:</strong> Imejengwa kwenye maktaba za kawaida za tasnia ya Axelar na OpenZeppelin."
+      },
+      "supplyCommon": {
+        "howWeCalculated": "Jinsi Tulivyohesabu Hii",
+        "verification": "Uthibitishaji",
+        "verificationDesc": "Takwimu zote za ugavi zinaweza kuthibitishwa kwa uhuru kwenye mnyororo:",
+        "table": {
+          "category": "Kategoria",
+          "amount": "Kiasi",
+          "percentOfTotal": "% ya Jumla",
+          "originalSupply": "Jumla ya Ugavi Asili",
+          "deadAddress": "Anwani Iliyokufa (Imechomwa)",
+          "contractBalance": "Salio la Mkataba (Limekwama)",
+          "circulatingSupply": "Ugavi Unaozunguka"
+        },
+        "deadAddressTitle": "1. Anwani Iliyokufa",
+        "contractBalanceTitle": "2. Salio la Mkataba",
+        "lpLockedTitle": "3. Tokeni Zilizofungwa za LP"
+      },
+      "tigerogSupply": {
+        "title": "Mchanganuo wa Ugavi wa TigerOG",
+        "intro": "TigerOG ina ugavi uliowekwa unaozunguka unaotokana na tokeni asili ya BNBTiger. Hesabu ya ugavi inazingatia tokeni zote zilizochomwa na kufungwa kabisa.",
+        "lpLocked": "LP Imefungwa (86.18% ya LP Imechomwa)",
+        "deadAddressDesc": "Tokeni zilizotumwa kwa <code>0x000...dEaD</code> zimechomwa kabisa na haziwezi kurejeshwa. Hii inajumuisha tokeni zilizochomwa kupitia utaratibu wa awali wa kodi ya BNBTiger.",
+        "contractBalanceDesc": "Kiasi kidogo cha tokeni kimekwama kwenye mkataba wa BNBTiger wenyewe. Tokeni hizi hazipatikani na zimeondolewa kwenye mzunguko.",
+        "lpLockedDesc": "Bwawa la ukwasi la PancakeSwap lina tokeni za BNBTiger zilizooanishwa na BNB. Wakati tokeni za LP zinapochomwa (zimetumwa kwa anwani iliyokufa), tokeni za msingi kwenye bwawa hufungwa kabisa.",
+        "lpBurnedPercent": "Tokeni za LP zilizochomwa: 86.18% ya tokeni zote za LP",
+        "lpLockedPercent": "Kwa hiyo, 86.18% ya tokeni kwenye LP zimefungwa kabisa",
+        "note": "<strong>Kumbuka:</strong> TigerOG inadumisha uwiano wa 1:1 na BNBTiger wakati wa uhamiaji. Ugavi unaozunguka wa TigerOG unalingana na ugavi halisi unaozunguka wa BNBTiger baada ya kuhesabu tokeni zote zilizochomwa na kufungwa.",
+        "launchData": "<strong>Data ya Uzinduzi:</strong> Takwimu hizi zilihesabiwa wakati wa uzinduzi. Tokeni ya zamani ya BNBTiger inaendelea kuchoma tokeni kwa kila muamala wa ununuzi/uuzaji, kwa hivyo ugavi halisi unaozunguka unaweza kuwa chini kidogo kuliko ulioonyeshwa.",
+        "legacyContract": "Mkataba wa Tokeni ya BNBTiger",
+        "ogContract": "Mkataba wa Tokeni ya TigerOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,772,706,396,234,535,780,783,775",
+          "deadPercent": "57.73%",
+          "contract": "−6,142,342,823,271,327",
+          "contractPercent": "<0.01%",
+          "lp": "−565,059,839,948,518,979,124,912",
+          "lpPercent": "5.65%",
+          "circulating": "3,662,233,757,674,602,416,819,986",
+          "circulatingPercent": "36.62%"
+        }
+      },
+      "lionogSupply": {
+        "title": "Mchanganuo wa Ugavi wa LionOG",
+        "intro": "LionOG ina ugavi uliowekwa unaozunguka unaotokana na tokeni asili ya BNBLion. Hesabu ya ugavi inazingatia tokeni zote zilizochomwa na kufungwa kabisa.",
+        "lpLocked": "LP Imefungwa (99.98% ya LP Imechomwa)",
+        "deadAddressDesc": "Tokeni zilizotumwa kwa <code>0x000...dEaD</code> zimechomwa kabisa na haziwezi kurejeshwa. Hii inajumuisha tokeni zilizochomwa kupitia utaratibu wa awali wa kodi ya BNBLion.",
+        "contractBalanceDesc": "Kiasi kidogo cha tokeni kimekwama kwenye mkataba wa BNBLion wenyewe. Tokeni hizi hazipatikani na zimeondolewa kwenye mzunguko.",
+        "lpLockedDesc": "Bwawa la ukwasi la PancakeSwap lina tokeni za BNBLion zilizooanishwa na BNB. Wakati tokeni za LP zinapochomwa (zimetumwa kwa anwani iliyokufa), tokeni za msingi kwenye bwawa hufungwa kabisa.",
+        "lpBurnedPercent": "Tokeni za LP zilizochomwa: 99.98% ya tokeni zote za LP",
+        "lpLockedPercent": "Kwa hiyo, 99.98% ya tokeni kwenye LP zimefungwa kabisa",
+        "note": "<strong>Kumbuka:</strong> LionOG inadumisha uwiano wa 1:1 na BNBLion wakati wa uhamiaji. Ugavi unaozunguka wa LionOG unalingana na ugavi halisi unaozunguka wa BNBLion baada ya kuhesabu tokeni zote zilizochomwa na kufungwa.",
+        "launchData": "<strong>Data ya Uzinduzi:</strong> Takwimu hizi zilihesabiwa wakati wa uzinduzi. Tokeni ya zamani ya BNBLion inaendelea kuchoma tokeni kwa kila muamala wa ununuzi/uuzaji, kwa hivyo ugavi halisi unaozunguka unaweza kuwa chini kidogo kuliko ulioonyeshwa.",
+        "legacyContract": "Mkataba wa Tokeni ya BNBLion",
+        "ogContract": "Mkataba wa Tokeni ya LionOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,724,597,218,422,106,614,085,614",
+          "deadPercent": "57.25%",
+          "contract": "−9,219,967,745,410,740,095,290",
+          "contractPercent": "<0.01%",
+          "lp": "−442,490,152,327,271,918,655,109",
+          "lpPercent": "4.42%",
+          "circulating": "3,832,903,409,282,876,056,519,182",
+          "circulatingPercent": "38.33%"
+        }
+      },
+      "frogogSupply": {
+        "title": "Mchanganuo wa Ugavi wa FrogOG",
+        "intro": "FrogOG ina ugavi uliowekwa unaozunguka unaotokana na tokeni asili ya BNBFrog. Hesabu ya ugavi inazingatia tokeni zote zilizochomwa na kufungwa kabisa.",
+        "lpLocked": "LP Imefungwa (99.31% ya LP Imechomwa)",
+        "deadAddressDesc": "Tokeni zilizotumwa kwa <code>0x000...dEaD</code> zimechomwa kabisa na haziwezi kurejeshwa. Hii inajumuisha tokeni zilizochomwa kupitia utaratibu wa awali wa kodi ya BNBFrog.",
+        "contractBalanceDesc": "Kiasi kidogo cha tokeni kimekwama kwenye mkataba wa BNBFrog wenyewe. Tokeni hizi hazipatikani na zimeondolewa kwenye mzunguko.",
+        "lpLockedDesc": "Bwawa la ukwasi la PancakeSwap lina tokeni za BNBFrog zilizooanishwa na BNB. Wakati tokeni za LP zinapochomwa (zimetumwa kwa anwani iliyokufa), tokeni za msingi kwenye bwawa hufungwa kabisa.",
+        "lpBurnedPercent": "Tokeni za LP zilizochomwa: 99.31% ya tokeni zote za LP",
+        "lpLockedPercent": "Kwa hiyo, 99.31% ya tokeni kwenye LP zimefungwa kabisa",
+        "note": "<strong>Kumbuka:</strong> FrogOG inadumisha uwiano wa 1:1 na BNBFrog wakati wa uhamiaji. Ugavi unaozunguka wa FrogOG unalingana na ugavi halisi unaozunguka wa BNBFrog baada ya kuhesabu tokeni zote zilizochomwa na kufungwa.",
+        "launchData": "<strong>Data ya Uzinduzi:</strong> Takwimu hizi zilihesabiwa wakati wa uzinduzi. Tokeni ya zamani ya BNBFrog inaendelea kuchoma tokeni kwa kila muamala wa ununuzi/uuzaji, kwa hivyo ugavi halisi unaozunguka unaweza kuwa chini kidogo kuliko ulioonyeshwa.",
+        "legacyContract": "Mkataba wa Tokeni ya BNBFrog",
+        "ogContract": "Mkataba wa Tokeni ya FrogOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−740,059,884,911,899,485,982,976",
+          "deadPercent": "7.40%",
+          "contract": "−4,036,008,092,593,983,879,741",
+          "contractPercent": "<0.01%",
+          "lp": "−874,144,424,929,004,044,398,902",
+          "lpPercent": "8.74%",
+          "circulating": "8,385,795,686,123,088,377,024,138",
+          "circulatingPercent": "83.86%"
+        }
+      }
+    }
+  },
+  "contracts": {
+    "title": "Anwani za Mkataba",
+    "header": {
+      "title": "Mikataba Mzuri",
+      "subtitle": "Anwani rasmi za kupeleka kwa tokeni na madaraja kote kwenye mfumo wa ikolojia wa Freedom Bridge."
+    },
+    "tabs": {
+      "overview": "Muhtasari",
+      "byToken": "Kwa Tokeni",
+      "byChain": "Kwa Mnyororo",
+      "liquidity": "Ukwasi"
+    },
+    "liquidity": {
+      "title": "Mabwawa ya Ukwasi"
+    }
+  },
+  "faq": {
+    "title": "Msaada wa Freedom Bridge",
+    "header": "Maswali Yanayoulizwa Mara kwa Mara",
+    "subtitle": "Majibu kwa maswali ya kawaida kuhusu TigerOG, kuunganisha, na Axelar.",
+    "cta": {
+      "title": "Bado una maswali?",
+      "description": "Jiunge na jumuiya yetu kwenye Telegram au angalia Wiki ya kina kwa miongozo ya kiufundi.",
+      "wiki": "Tembelea Wiki",
+      "telegram": "Jiunge na Telegram"
+    },
+    "questions": {
+      "q1": "Kusudi la kubadilisha tokeni zangu ni nini?",
+      "a1": "Kubadilisha tokeni zako kuwa TigerOG huondoa kodi ya muamala (mara nyingi 10-12%) inayohusishwa na tokeni ya zamani. Pia inakuruhusu kuunganisha tokeni hizi kwa blockchains zingine kama Ethereum, Base, na zaidi kupitia Axelar, kuwezesha ufikiaji wa mifumo mipya ya ikolojia.",
+      "q2": "Je, ni salama kutumia Freedom Bridge?",
+      "a2": "Ndiyo. Itifaki inatumia mkataba salama wa Uhamiaji na Huduma ya Tokeni ya Interchain ya Axelar. Unapobadilisha, BNBTiger yako inachomwa kabisa na unapokea TigerOG kwa uwiano wa 1:1. Utaratibu wa kuchoma unahakikisha kuwa jumla ya ugavi inasimamiwa vizuri kwenye minyororo yote.",
+      "q3": "Je, kuna ada yoyote?",
+      "a3": "Freedom Bridge yenyewe haitozi ada ya kubadilisha. Unalipa tu ada za kawaida za gesi ya blockchain. Kuunganisha kati ya minyororo kunahusisha ada ya gesi ya mnyororo inayolipwa kwa Axelar ili kufidia gharama za kuwasilisha.",
+      "q4": "Ni nini kinatokea nikipoteza tokeni zangu?",
+      "a4": "Tokeni za TigerOG hufanya kazi kama tokeni nyingine yoyote ya ERC20. Ikiwa utapoteza ufikiaji wa pochi yako, haziwezi kurejeshwa. Weka funguo zako za kibinafsi na misemo ya kurejesha salama kila wakati.",
+      "q5": "Je, ninaweza kubadilisha tokeni zangu za TigerOG kurudi kwa BNBTiger?",
+      "a5": "Hapana. Uhamiaji ni ubadilishaji wa njia moja. Unapobadilisha BNBTiger kuwa TigerOG, tokeni zako za BNBTiger zinachomwa kabisa (zimetumwa kwa anwani iliyokufa). Hii ni kwa muundo — TigerOG ni toleo lililoboreshwa, lisilo na kodi lililokusudiwa kuchukua nafasi ya tokeni ya zamani kabisa.",
+      "q6": "Mitandao gani inatumika?",
+      "a6": "Tunasaidia minyororo mingi ya EVM kupitia Axelar, ikijumuisha BNB Chain, Ethereum, Base, na zaidi. Angalia Wiki kwa orodha kamili ya mitandao inayoungwa mkono.",
+      "q7": "Je, kuunganisha kunachukua muda gani?",
+      "a7": "Kasi ya kuunganisha inategemea wakati wa ukamilifu wa mnyororo wa chanzo na uwasilishaji wa Axelar. Kwa kawaida, uhamisho kati ya minyororo huchukua kama dakika 2-5.",
+      "q8": "Ugavi unaozunguka wa tokeni za OG ni upi?",
+      "a8": "Kila tokeni ya OG ina ugavi uliowekwa unaozunguka unaotokana na tokeni yake ya asili ya BNB, kuhesabu tokeni zilizochomwa, salio la mkataba lililokwama, na LP iliyofungwa. TigerOG: ~3.66 septillion (36.62% ya asili). LionOG: ~3.83 septillion (38.33% ya asili). FrogOG: ~8.39 septillion (83.86% ya asili). Angalia Wiki kwa michanganuo ya kina ya kila tokeni."
+    }
+  },
+  "common": {
+    "from": "Kutoka",
+    "to": "Kwenda",
+    "max": "MAX",
+    "chainId": "Kitambulisho cha Mnyororo",
+    "bscChain": "Mnyororo wa BSC",
+    "insufficientBalance": "Salio halitoshi.",
+    "failedToSwitchNetwork": "Imeshindwa kubadili mtandao. Tafadhali badilisha mwenyewe kwenye pochi yako.",
+    "failedToFetchFeeQuote": "Imeshindwa kupata makadirio ya ada.",
+    "unableToDetermineGas": "Imeshindwa kubaini malipo ya gesi ya Axelar",
+    "bridgeTxFailed": "Muamala wa daraja umeshindwa",
+    "estimatedGas": "Gesi inayokadiriwa ya Axelar",
+    "success": "Imefanikiwa!",
+    "viewOnExplorer": "Tazama kwenye Kivinjari",
+    "bridging": "Inaunganisha...",
+    "transactionFailed": "Muamala umeshindwa",
+    "search": "Tafuta",
+    "backToApp": "Rudi kwenye Programu"
+  }
+}

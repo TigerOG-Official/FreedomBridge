@@ -1,0 +1,364 @@
+{
+  "app": {
+    "titleFreedom": "フリーダム",
+    "titleBridge": "ブリッジ"
+  },
+  "nav": {
+    "settings": "設定",
+    "menu": "メニュー",
+    "preferences": "環境設定",
+    "switchTheme": "外観",
+    "theme": {
+      "dark": "ダーク",
+      "light": "ライト"
+    },
+    "switchPalette": "パレットを切り替える",
+    "wiki": "ドキュメント / Wiki",
+    "contracts": "契約",
+    "faq": "よくある質問",
+    "logout": "ログアウト",
+    "language": "言語",
+    "languageSearchPlaceholder": "言語を検索",
+    "languageNoResults": "利用可能な言語が見つかりません",
+    "close": "閉じる"
+  },
+  "addNetworks": {
+    "title": "ネットワークを追加",
+    "description": "テスト中にチェーンを切り替えるのが簡単になります。下のボタンをクリックして、ウォレットにネットワークを追加してください。"
+  },
+  "tabs": {
+    "convert": "変換",
+    "bridge": "ブリッジ"
+  },
+  "convert": {
+    "token": "トークン",
+    "selectToken": "トークンを選択",
+    "balance": "残高",
+    "noConvertibleTokens": "{{chainName}} で変換可能なトークンはありません",
+    "convert": "変換",
+    "addToWalletLabel": "{{chainName}} の {{symbol}} をウォレットにインポートする",
+    "addToWalletButton": "ウォレットにインポート",
+    "addingToken": "追加中...",
+    "addTokenError": "トークンをウォレットに追加できませんでした",
+    "legacyTokenMissing": "このチェーンにレガシートークンがありません",
+    "tigerOGMissing": "このチェーンにTigerOGトークンがありません",
+    "networkWarning": {
+      "title": "ネットワークが間違っています",
+      "message": "トークンの変換はBSCチェーンでのみ利用可能です。",
+      "description": "トークンを変換するにはウォレットでBSCチェーンに切り替えるか、チェーン間でトークンを転送するにはブリッジタブに移動してください。"
+    }
+  },
+  "bridge": {
+    "fromChain": "送信元チェーン",
+    "selectChainPlaceholder": "チェーンを選択",
+    "toChain": "送信先チェーン",
+    "selectDestinationPlaceholder": "宛先を選択",
+    "noDestination": "宛先なし",
+    "noBridgeableTokens": "ブリッジ可能なトークンはありません",
+    "bridgeButton": "トークンをブリッジ",
+    "getFeeQuote": "手数料見積取得",
+    "viewOnAxelarscan": "Axelarscanで表示",
+    "addDestinationTokenLabel": "{{chainName}} の {{symbol}} をウォレットにインポートする",
+    "addTokenError": "トークンをウォレットに追加できませんでした",
+    "estimatedTime": "推定時間",
+    "recentTransactions": "最近の取引",
+    "clearHistory": "履歴を消去",
+    "historyStoredLocally": "取引履歴はこのデバイスにローカルに保存されます"
+  },
+  "settings": {
+    "title": "設定",
+    "environment": "環境",
+    "rpcEndpoints": "RPCエンドポイント",
+    "rpcEndpointsHelp": "選択した環境の各チェーンで使用されるRPC URLを更新します。",
+    "noChainsConfigured": "この環境にはチェーンが設定されていません。",
+    "cancel": "キャンセル",
+    "save": "保存"
+  },
+  "wallet": {},
+  "login": {
+    "title": "おかえりなさい",
+    "subtitle": "Freedom Bridge を続けるにはサインインしてください",
+    "emailLabel": "メールアドレス",
+    "emailPlaceholder": "name@example.com",
+    "passwordLabel": "パスワード",
+    "passwordPlaceholder": "パスワードを入力",
+    "rememberMe": "このデバイスに記憶する",
+    "submit": "サインイン",
+    "validation": {
+      "required": "メールアドレスとパスワードを入力してください。",
+      "invalid": "メールアドレスまたはパスワードが正しくありません。"
+    }
+  },
+  "landing": {
+    "banner": {
+      "title": "初めてですか?",
+      "message": "Freedom BridgeとTigerOGトークンをチェーン間でブリッジする方法について学びましょう。"
+    },
+    "hero": {
+      "badge": "Axelarを搭載",
+      "title": "あなたの <1/> <2>資産</2>を解放する",
+      "subtitle": "Axelarのインターチェーン・トークン・サービスを使用して、TigerOGトークンをチェーン間でシームレスにブリッジします。安全、高速、非課税。",
+      "launchApp": "アプリを起動",
+      "documentation": "ドキュメント"
+    },
+    "stats": {
+      "messaging": "Axelarネットワーク",
+      "networks": "稼働中のネットワーク",
+      "fees": "プロトコル手数料",
+      "finality": "最終性"
+    },
+    "features": {
+      "title": "インターチェーン・トークン・サービス",
+      "description": "Freedom BridgeはAxelar ITSを活用し、{{count}}+のブロックチェーン間でシームレスで安全、かつ非課税のブリッジ体験を提供します。",
+      "stopDecay": {
+        "title": "腐敗を止める",
+        "description": "レガシートークンは、売買のたびに価値の10-11%を焼却します。TigerOGへのラッピングは即座にこの流血を止め、価値の100%を維持します。",
+        "graphLabel1": "100%保持 (TigerOG)",
+        "graphLabel2": "-40%の価値 (レガシー10%税)"
+      },
+      "conversion": {
+        "title": "1:1変換",
+        "description": "総供給量は決して変わりません。トークンは安全な移行契約に保持され、正確な1:1の同等物が使用されます。インフレも希薄化もありません。"
+      },
+      "multichain": {
+        "title": "マルチチェーン",
+        "description": "一度デプロイすれば、どこからでもアクセスできます。あなたの資産は、イーサリアム、BNB Chain、Baseなどを含むチェーン上でネイティブなインターチェーントークンになります。"
+      },
+      "security": {
+        "title": "Axelarセキュリティ",
+        "description": "Axelarの分散型バリデーターネットワークによって支えられています。ITSは、トークンがすべての接続ネットワーク間で安全かつ一貫して転送されることを保証します。",
+        "button": "ブリッジを開始"
+      }
+    },
+    "teaser": {
+      "title": "他のコインも欲しいですか？",
+      "subtitle": "<lunc>LUNC</lunc>、<crepe>Crepe</crepe>、または <shiba>Shiba</shiba> についてどう思いますか？"
+    },
+    "cta": {
+      "title": "ブリッジする準備はできましたか？",
+      "description": "インターチェーン革命に参加しましょう。資産をラップしてAxelar経由でブリッジを開始するのに1分もかかりません。",
+      "button": "今すぐアプリを起動"
+    }
+  },
+  "wiki": {
+    "title": "フリーダムブリッジ Wiki",
+    "searchPlaceholder": "ドキュメントを検索...",
+    "header": {
+      "title": "ドキュメント",
+      "subtitle": "レガシートークンのラップ方法、チェーン間のブリッジ方法、およびFreedom Bridgeとの統合方法を学びましょう。"
+    },
+    "nav": {
+      "gettingStarted": "始める",
+      "coreConcepts": "コアコンセプト",
+      "developers": "開発者",
+      "tigerogSupply": "TigerOG供給",
+      "lionogSupply": "LionOG供給",
+      "frogogSupply": "FrogOG供給"
+    },
+    "articles": {
+      "whatIs": {
+        "title": "フリーダムブリッジとは？",
+        "content": "Freedom Bridgeは、Axelarのインターチェーン・トークン・サービス（ITS）上に構築された分散型ブリッジングプロトコルです。これは、トークンをシングルチェーンの制約や高額な取引税から解放するために設計されています。標準トークンをインターチェーン互換資産にラップすることで、ユーザーはサポートされているブロックチェーン間で自由に価値を移動できます。",
+        "taxFreeTitle": "非課税の転送",
+        "taxFreeDesc": "レガシートークンには10%+の税金がかかることがよくあります。TigerOGトークンには0%の税金がかかります。",
+        "omnichainTitle": "オムニチェーン",
+        "omnichainDesc": "Axelarを介して{{count}}+のブロックチェーン間で資産を瞬時に移動します。"
+      },
+      "howToConvert": {
+        "title": "トークンの変換方法",
+        "step1": "ウォレットをソースチェーン（例：BNB Chain）に接続します。",
+        "step2": "<strong>変換</strong>タブに移動します。",
+        "step3": "変換したいレガシートークンを選択します。",
+        "step4": "移行契約があなたのトークンを使用することを承認します。",
+        "step5": "<strong>変換</strong>をクリックして、レガシートークンを預け入れ、同量の「TigerOG」トークンを受け取ります。",
+        "note": "<strong>注：</strong>変換には、トークンが転送時に税金を課す場合、レガシートークンの取引税（アップグレード中）が発生します。ただし、一度TigerOGに変換されると、その後のすべての転送とブリッジはこの税金から解放されます。"
+      },
+      "supportedNetworks": {
+        "title": "サポートされているネットワーク",
+        "content": "Freedom Bridgeは、{{count}}+のブロックチェーンの成長するエコシステムをサポートしており、Axelarを介してEVMランドスケープ全体でシームレスな相互運用性を可能にしています。"
+      },
+      "xerc20": {
+        "title": "インターチェーントークン",
+        "content": "Axelarインターチェーン・トークン・サービス（ITS）を使用すると、トークンを一貫したアドレスと統一された供給管理で複数のチェーンに展開できます。Freedom BridgeはITSを使用して、TigerOGがどこにブリッジされても正規の資産であり続けることを保証します。"
+      },
+      "axelar": {
+        "title": "Axelarネットワーク",
+        "content": "私たちはAxelarを相互運用性レイヤーとして利用しています。Axelarは、異なるブロックチェーンを接続する分散型ネットワークであり、安全なクロスチェーン通信と資産転送を可能にします。Axelarのセキュリティモデルは、許可のないバリデーターセットに依存しており、インターチェーントークンに高グレードのセキュリティを提供します。"
+      },
+      "migration": {
+        "title": "移行ロジック",
+        "content": "移行契約は、オリジンチェーン（例：BSC）にデプロイされます。これは、元のレガシートークンを保管します。トークンをアップグレードすると、移行契約に預け入れています。アンラップする場合（サポートされている場合）、TigerOG表現を焼却して元のトークンを解放します。これにより、厳密な1:1の裏付けが保証されます。"
+      },
+      "contracts": {
+        "title": "スマートコントラクトアドレス",
+        "colNetwork": "ネットワーク",
+        "colType": "コントラクトタイプ",
+        "colAddress": "アドレス"
+      },
+      "security": {
+        "title": "セキュリティモデル",
+        "content": "セキュリティはFreedom Bridgeのあらゆる層に組み込まれています。",
+        "point1": "<strong>移行アーキテクチャ：</strong>レガシートークンは、検証済みで不変のスマートコントラクトに保持されます。",
+        "point2": "<strong>Axelarバリデーター：</strong>クロスチェーンメッセージは、Axelarの分散型ネットワークによって検証されます。",
+        "point3": "<strong>一貫した供給：</strong>ITSは、すべてのチェーンで一定の総供給量を維持するために、ミントとバーンを管理します。",
+        "point4": "<strong>監査済みロジック：</strong>業界標準のAxelarおよびOpenZeppelinライブラリに基づいて構築されています。"
+      },
+      "supplyCommon": {
+        "howWeCalculated": "計算方法",
+        "verification": "検証",
+        "verificationDesc": "すべての供給量はオンチェーンで独立して検証できます。",
+        "table": {
+          "category": "カテゴリ",
+          "amount": "量",
+          "percentOfTotal": "合計の%",
+          "originalSupply": "元の総供給量",
+          "deadAddress": "デッドアドレス（焼却済み）",
+          "contractBalance": "契約残高（スタック）",
+          "circulatingSupply": "循環供給量"
+        },
+        "deadAddressTitle": "1. デッドアドレス",
+        "contractBalanceTitle": "2. 契約残高",
+        "lpLockedTitle": "3. LPロックトークン"
+      },
+      "tigerogSupply": {
+        "title": "TigerOG供給内訳",
+        "intro": "TigerOGには、元のBNBTigerトークンに由来する固定された循環供給量があります。供給量の計算には、焼却されたトークンと永久にロックされたトークンのすべてが考慮されています。",
+        "lpLocked": "LPロック（LPの86.18％が焼却済み）",
+        "deadAddressDesc": "<code>0x000...dEaD</code>に送信されたトークンは永久に焼却され、回復することはできません。これには、元のBNBTiger税メカニズムを通じて焼却されたトークンが含まれます。",
+        "contractBalanceDesc": "BNBTiger契約自体に少量のトークンがスタックされています。これらのトークンはアクセス不能であり、事実上循環から削除されています。",
+        "lpLockedDesc": "PancakeSwap流動性プールには、BNBとペアになったBNBTigerトークンが含まれています。LPトークンが焼却される（デッドアドレスに送信される）と、プール内の基になるトークンは永久にロックされます。",
+        "lpBurnedPercent": "LPトークン焼却：全LPトークンの86.18％",
+        "lpLockedPercent": "したがって、LP内のトークンの86.18％が永久にロックされています",
+        "note": "<strong>注：</strong>TigerOGは、移行中にBNBTigerと1:1の比率を維持します。TigerOGの循環供給量は、すべての焼却およびロックされたトークンを考慮した後のBNBTigerの真の循環供給量と一致します。",
+        "launchData": "<strong>ローンチデータ：</strong>これらの数字はローンチ時に計算されました。レガシーBNBTigerトークンは各売買取引でトークンを焼却し続けるため、実際の循環供給量は表示されているものよりわずかに少ない場合があります。",
+        "legacyContract": "BNBTigerトークン契約",
+        "ogContract": "TigerOGトークン契約",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,772,706,396,234,535,780,783,775",
+          "deadPercent": "57.73%",
+          "contract": "−6,142,342,823,271,327",
+          "contractPercent": "<0.01%",
+          "lp": "−565,059,839,948,518,979,124,912",
+          "lpPercent": "5.65%",
+          "circulating": "3,662,233,757,674,602,416,819,986",
+          "circulatingPercent": "36.62%"
+        }
+      },
+      "lionogSupply": {
+        "title": "LionOG供給内訳",
+        "intro": "LionOGには、元のBNBLionトークンに由来する固定された循環供給量があります。供給量の計算には、焼却されたトークンと永久にロックされたトークンのすべてが考慮されています。",
+        "lpLocked": "LPロック（LPの99.98％が焼却済み）",
+        "deadAddressDesc": "<code>0x000...dEaD</code>に送信されたトークンは永久に焼却され、回復することはできません。これには、元のBNBLion税メカニズムを通じて焼却されたトークンが含まれます。",
+        "contractBalanceDesc": "BNBLion契約自体に少量のトークンがスタックされています。これらのトークンはアクセス不能であり、事実上循環から削除されています。",
+        "lpLockedDesc": "PancakeSwap流動性プールには、BNBとペアになったBNBLionトークンが含まれています。LPトークンが焼却される（デッドアドレスに送信される）と、プール内の基になるトークンは永久にロックされます。",
+        "lpBurnedPercent": "LPトークン焼却：全LPトークンの99.98％",
+        "lpLockedPercent": "したがって、LP内のトークンの99.98％が永久にロックされています",
+        "note": "<strong>注：</strong>LionOGは、移行中にBNBLionと1:1の比率を維持します。LionOGの循環供給量は、すべての焼却およびロックされたトークンを考慮した後のBNBLionの真の循環供給量と一致します。",
+        "launchData": "<strong>ローンチデータ：</strong>これらの数字はローンチ時に計算されました。レガシーBNBLionトークンは各売買取引でトークンを焼却し続けるため、実際の循環供給量は表示されているものよりわずかに少ない場合があります。",
+        "legacyContract": "BNBLionトークン契約",
+        "ogContract": "LionOGトークン契約",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,724,597,218,422,106,614,085,614",
+          "deadPercent": "57.25%",
+          "contract": "−9,219,967,745,410,740,095,290",
+          "contractPercent": "<0.01%",
+          "lp": "−442,490,152,327,271,918,655,109",
+          "lpPercent": "4.42%",
+          "circulating": "3,832,903,409,282,876,056,519,182",
+          "circulatingPercent": "38.33%"
+        }
+      },
+      "frogogSupply": {
+        "title": "FrogOG供給内訳",
+        "intro": "FrogOGには、元のBNBFrogトークンに由来する固定された循環供給量があります。供給量の計算には、焼却されたトークンと永久にロックされたトークンのすべてが考慮されています。",
+        "lpLocked": "LPロック（LPの99.31％が焼却済み）",
+        "deadAddressDesc": "<code>0x000...dEaD</code>に送信されたトークンは永久に焼却され、回復することはできません。これには、元のBNBFrog税メカニズムを通じて焼却されたトークンが含まれます。",
+        "contractBalanceDesc": "BNBFrog契約自体に少量のトークンがスタックされています。これらのトークンはアクセス不能であり、事実上循環から削除されています。",
+        "lpLockedDesc": "PancakeSwap流動性プールには、BNBとペアになったBNBFrogトークンが含まれています。LPトークンが焼却される（デッドアドレスに送信される）と、プール内の基になるトークンは永久にロックされます。",
+        "lpBurnedPercent": "LPトークン焼却：全LPトークンの99.31％",
+        "lpLockedPercent": "したがって、LP内のトークンの99.31％が永久にロックされています",
+        "note": "<strong>注：</strong>FrogOGは、移行中にBNBFrogと1:1の比率を維持します。FrogOGの循環供給量は、すべての焼却およびロックされたトークンを考慮した後のBNBFrogの真の循環供給量と一致します。",
+        "launchData": "<strong>ローンチデータ：</strong>これらの数字はローンチ時に計算されました。レガシーBNBFrogトークンは各売買取引でトークンを焼却し続けるため、実際の循環供給量は表示されているものよりわずかに少ない場合があります。",
+        "legacyContract": "BNBFrogトークン契約",
+        "ogContract": "FrogOGトークン契約",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−740,059,884,911,899,485,982,976",
+          "deadPercent": "7.40%",
+          "contract": "−4,036,008,092,593,983,879,741",
+          "contractPercent": "<0.01%",
+          "lp": "−874,144,424,929,004,044,398,902",
+          "lpPercent": "8.74%",
+          "circulating": "8,385,795,686,123,088,377,024,138",
+          "circulatingPercent": "83.86%"
+        }
+      }
+    }
+  },
+  "contracts": {
+    "title": "コントラクトアドレス",
+    "header": {
+      "title": "スマートコントラクト",
+      "subtitle": "Freedom Bridgeエコシステム全体のトークンとブリッジに関する公式デプロイメントアドレス。"
+    },
+    "tabs": {
+      "overview": "概要",
+      "byToken": "トークン別",
+      "byChain": "チェーン別",
+      "liquidity": "流動性"
+    },
+    "liquidity": {
+      "title": "流動性プール"
+    }
+  },
+  "faq": {
+    "title": "フリーダムブリッジ サポート",
+    "header": "よくある質問",
+    "subtitle": "TigerOG、ブリッジング、Axelarに関するよくある質問への回答。",
+    "cta": {
+      "title": "まだ質問がありますか？",
+      "description": "Telegramのコミュニティに参加するか、詳細な技術ガイドについてはWikiを確認してください。",
+      "wiki": "Wikiを訪問",
+      "telegram": "Telegramに参加"
+    },
+    "questions": {
+      "q1": "私のトークンを変換する目的は何ですか？",
+      "a1": "トークンをTigerOGに変換すると、レガシートークンに関連する取引税（通常10〜12％）がなくなります。また、これらのトークンをEthereum、Baseなどの他のブロックチェーンにAxelar経由でブリッジすることができ、新しいエコシステムへのアクセスが可能になります。",
+      "q2": "Freedom Bridgeの使用は安全ですか？",
+      "a2": "はい。このプロトコルは、安全な移行契約とAxelarのインターチェーン・トークン・サービスを使用しています。変換すると、BNBTigerは永久に焼却され、1：1の比率でTigerOGを受け取ります。焼却メカニズムにより、総供給量がすべてのチェーンで適切に管理されることが保証されます。",
+      "q3": "手数料はありますか？",
+      "a3": "Freedom Bridge自体は、変換に手数料を課しません。標準のブロックチェーンガス料金のみを支払います。チェーン間のブリッジングには、Axelarにリレーコストをカバーするために支払われるクロスチェーンガス料金が含まれます。",
+      "q4": "トークンを紛失したらどうなりますか？",
+      "a4": "TigerOGトークンは、他のERC20トークンと同様に動作します。ウォレットへのアクセスを失った場合、回復することはできません。常にプライベートキーとリカバリフレーズを安全に保管してください。",
+      "q5": "TigerOGトークンをBNBTigerに戻すことはできますか？",
+      "a5": "いいえ。移行は一方通行の変換です。BNBTigerをTigerOGに変換すると、BNBTigerトークンは永久に焼却されます（デッドアドレスに送信されます）。これは設計によるものです。TigerOGは、レガシートークンを完全に置き換えることを目的とした、アップグレードされた非課税バージョンです。",
+      "q6": "どのネットワークがサポートされていますか？",
+      "a6": "BNB Chain、Ethereum、Baseなど、Axelarを介して複数のEVMチェーンをサポートしています。サポートされているネットワークの完全なリストについては、Wikiを確認してください。",
+      "q7": "ブリッジにはどのくらいの時間がかかりますか？",
+      "a7": "ブリッジの速度は、ソースチェーンのファイナリティとAxelarのリレーに依存します。通常、チェーン間の転送には約2〜5分かかります。",
+      "q8": "OGトークンの循環供給量は何ですか？",
+      "a8": "各OGトークンには、焼却されたトークン、スタックされた契約残高、ロックされたLPを考慮して、元のBNBトークンから導出された固定循環供給量があります。TigerOG：~3.66 septillion（元の36.62％）。LionOG：~3.83 septillion（元の38.33％）。FrogOG：~8.39 septillion（元の83.86％）。各トークンの詳細な内訳については、Wikiをご覧ください。"
+    }
+  },
+  "common": {
+    "from": "から",
+    "to": "へ",
+    "max": "最大",
+    "chainId": "チェーンID",
+    "bscChain": "BSCチェーン",
+    "insufficientBalance": "残高不足です。",
+    "failedToSwitchNetwork": "ネットワークの切り替えに失敗しました。ウォレットで手動で切り替えてください。",
+    "failedToFetchFeeQuote": "手数料見積もりの取得に失敗しました。",
+    "unableToDetermineGas": "Axelarガス料金を決定できません",
+    "bridgeTxFailed": "ブリッジトランザクションが失敗しました",
+    "estimatedGas": "推定Axelarガス",
+    "success": "成功！",
+    "viewOnExplorer": "エクスプローラーで表示",
+    "bridging": "ブリッジ中...",
+    "transactionFailed": "トランザクション失敗",
+    "search": "検索",
+    "backToApp": "アプリに戻る"
+  }
+}

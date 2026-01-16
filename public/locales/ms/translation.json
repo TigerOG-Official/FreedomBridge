@@ -1,0 +1,364 @@
+{
+  "app": {
+    "titleFreedom": "Kebebasan",
+    "titleBridge": "Jambatan"
+  },
+  "nav": {
+    "settings": "Tetapan",
+    "menu": "Menu",
+    "preferences": "Keutamaan",
+    "switchTheme": "Penampilan",
+    "theme": {
+      "dark": "Gelap",
+      "light": "Terang"
+    },
+    "switchPalette": "Tukar Palet",
+    "wiki": "Dokumentasi / Wiki",
+    "contracts": "Kontrak",
+    "faq": "Soalan Lazim",
+    "logout": "Log keluar",
+    "language": "Bahasa",
+    "languageSearchPlaceholder": "Cari bahasa",
+    "languageNoResults": "Tiada bahasa ditemui",
+    "close": "Tutup"
+  },
+  "addNetworks": {
+    "title": "Tambah Rangkaian",
+    "description": "Klik butang di bawah untuk Tambah Rangkaian ke dompet anda. Ini memudahkan penukaran antara rantai semasa menguji."
+  },
+  "tabs": {
+    "convert": "Tukar",
+    "bridge": "Jambatan"
+  },
+  "convert": {
+    "token": "Token",
+    "selectToken": "Pilih Token",
+    "balance": "Baki",
+    "noConvertibleTokens": "Tiada token untuk ditukar pada {{chainName}}",
+    "convert": "Tukar",
+    "addToWalletLabel": "Import {{symbol}} pada {{chainName}} ke dompet",
+    "addToWalletButton": "Import ke Dompet",
+    "addingToken": "Menambah…",
+    "addTokenError": "Tidak dapat menambah token ke dompet",
+    "legacyTokenMissing": "Token warisan tiada untuk rantai ini",
+    "tigerOGMissing": "Token TigerOG tiada untuk rantai ini",
+    "networkWarning": {
+      "title": "Rangkaian Salah",
+      "message": "Penukaran token hanya tersedia pada Rantai BSC.",
+      "description": "Sila tukar ke Rantai BSC dalam dompet anda untuk menukar token, atau navigasi ke tab Jambatan untuk memindahkan token antara rantai."
+    }
+  },
+  "bridge": {
+    "fromChain": "Dari Rantaian",
+    "selectChainPlaceholder": "Pilih rantaian",
+    "toChain": "Ke Rantaian",
+    "selectDestinationPlaceholder": "Pilih destinasi",
+    "noDestination": "Tiada destinasi",
+    "noBridgeableTokens": "Tiada token boleh dijambatkan",
+    "bridgeButton": "Jambatkan Token",
+    "getFeeQuote": "Dapatkan Sebut Harga Yuran",
+    "viewOnAxelarscan": "Lihat di Axelar Explorer",
+    "addDestinationTokenLabel": "Import {{symbol}} pada {{chainName}} ke dompet",
+    "addTokenError": "Tidak dapat menambah token ke dompet",
+    "estimatedTime": "Anggaran masa",
+    "recentTransactions": "Transaksi Terkini",
+    "clearHistory": "Kosongkan sejarah",
+    "historyStoredLocally": "Sejarah transaksi disimpan secara tempatan pada peranti ini"
+  },
+  "settings": {
+    "title": "Tetapan",
+    "environment": "Persekitaran",
+    "rpcEndpoints": "Titik Akhir RPC",
+    "rpcEndpointsHelp": "Kemas kini URL RPC yang digunakan untuk setiap rantaian dalam persekitaran yang dipilih.",
+    "noChainsConfigured": "Tiada rantaian dikonfigurasi untuk persekitaran ini.",
+    "cancel": "Batal",
+    "save": "Simpan"
+  },
+  "wallet": {},
+  "login": {
+    "title": "Selamat kembali",
+    "subtitle": "Log masuk untuk terus ke Freedom Bridge",
+    "emailLabel": "E-mel",
+    "emailPlaceholder": "nama@contoh.com",
+    "passwordLabel": "Kata Laluan",
+    "passwordPlaceholder": "Masukkan kata laluan",
+    "rememberMe": "Ingat saya pada peranti ini",
+    "submit": "Log masuk",
+    "validation": {
+      "required": "E-mel dan kata laluan diperlukan.",
+      "invalid": "E-mel atau kata laluan tidak sah."
+    }
+  },
+  "landing": {
+    "banner": {
+      "title": "Baru di sini?",
+      "message": "Ketahui tentang Freedom Bridge dan cara menjambatan token TigerOG merentasi rantai."
+    },
+    "hero": {
+      "badge": "Dikuasakan oleh Axelar",
+      "title": "Bebaskan <1/> <2>Aset</2> Anda",
+      "subtitle": "Jambatan token TigerOG dengan lancar merentasi rantai menggunakan Perkhidmatan Token Interchain Axelar. Selamat, pantas, dan bebas cukai.",
+      "launchApp": "Lancarkan Aplikasi",
+      "documentation": "Dokumentasi"
+    },
+    "stats": {
+      "messaging": "Rangkaian Axelar",
+      "networks": "Rangkaian Langsung",
+      "fees": "Yuran Protokol",
+      "finality": "Akhir"
+    },
+    "features": {
+      "title": "Perkhidmatan Token Interchain",
+      "description": "Freedom Bridge memanfaatkan Axelar ITS untuk memberikan pengalaman jambatan yang lancar, selamat, dan bebas cukai merentasi {{count}}+ blok rantai.",
+      "stopDecay": {
+        "title": "Hentikan Pereputan",
+        "description": "Token warisan membakar 10-11% daripada nilai anda pada setiap pembelian dan penjualan. Membalut menjadi TigerOG menghentikan pendarahan ini serta-merta, mengekalkan 100% nilai anda.",
+        "graphLabel1": "100% Kekal (TigerOG)",
+        "graphLabel2": "-40% Nilai (Cukai Warisan 10%)"
+      },
+      "conversion": {
+        "title": "1:1 Penukaran",
+        "description": "Jumlah bekalan tidak pernah berubah. Token dipegang dalam kontrak migrasi yang selamat, dan jumlah yang sama 1:1 digunakan. Tiada inflasi, tiada pencairan."
+      },
+      "multichain": {
+        "title": "Pelbagai Rantai",
+        "description": "Gunakan sekali, akses di mana-mana. Aset anda menjadi token interchain asli merentasi rantai termasuk Ethereum, BNB Chain, Base, dan banyak lagi."
+      },
+      "security": {
+        "title": "Keselamatan Axelar",
+        "description": "Dikuasakan oleh rangkaian validator terdesentralisasi Axelar. ITS memastikan token anda dipindahkan dengan selamat dan konsisten merentasi semua rangkaian yang bersambung.",
+        "button": "Mula Menjambatan"
+      }
+    },
+    "teaser": {
+      "title": "Adakah anda mahu syiling lain?",
+      "subtitle": "Apa pendapat anda tentang <lunc>LUNC</lunc>, <crepe>Crepe</crepe>, atau <shiba>Shiba</shiba>??"
+    },
+    "cta": {
+      "title": "Sedia untuk menjambatan?",
+      "description": "Sertai revolusi interchain. Ia mengambil masa kurang dari satu minit untuk membalut aset anda dan mula menjambatan melalui Axelar.",
+      "button": "Lancarkan Aplikasi Sekarang"
+    }
+  },
+  "wiki": {
+    "title": "Wiki Freedom Bridge",
+    "searchPlaceholder": "Cari dokumentasi...",
+    "header": {
+      "title": "Dokumentasi",
+      "subtitle": "Ketahui cara membalut token warisan, menjambatan merentas rantai, dan menyepadukan dengan Freedom Bridge."
+    },
+    "nav": {
+      "gettingStarted": "Bermula",
+      "coreConcepts": "Konsep Teras",
+      "developers": "Pembangun",
+      "tigerogSupply": "Bekalan TigerOG",
+      "lionogSupply": "Bekalan LionOG",
+      "frogogSupply": "Bekalan FrogOG"
+    },
+    "articles": {
+      "whatIs": {
+        "title": "Apakah Freedom Bridge?",
+        "content": "Freedom Bridge ialah protokol jambatan terdesentralisasi yang dibina di atas Perkhidmatan Token Interchain (ITS) Axelar. Ia direka untuk membebaskan token daripada batasan satu rantai dan cukai transaksi yang tinggi. Dengan membalut token standard ke dalam aset yang serasi dengan interchain, pengguna boleh memindahkan nilai mereka secara bebas merentas blok rantai yang disokong.",
+        "taxFreeTitle": "Pemindahan Bebas Cukai",
+        "taxFreeDesc": "Token warisan sering mempunyai cukai 10%+. Token TigerOG mempunyai 0% cukai.",
+        "omnichainTitle": "Interchain",
+        "omnichainDesc": "Pindahkan aset serta-merta antara {{count}}+ blok rantai melalui Axelar."
+      },
+      "howToConvert": {
+        "title": "Cara Menukar Token",
+        "step1": "Sambungkan dompet anda ke rantai sumber (cth., Rantai BNB).",
+        "step2": "Navigasi ke tab <strong>Tukar</strong>.",
+        "step3": "Pilih token warisan yang anda ingin tukar.",
+        "step4": "Luluskan kontrak Migrasi untuk membelanjakan token anda.",
+        "step5": "Klik <strong>Tukar</strong> untuk mendepositkan token warisan anda dan menerima jumlah token \"TigerOG\" yang setara.",
+        "note": "<strong>Nota:</strong> Penukaran menanggung cukai transaksi token warisan (semasa peningkatan) jika token anda mengenakan cukai ke atas pemindahan. Walau bagaimanapun, setelah ditukar menjadi TigerOG, semua pemindahan dan jambatan seterusnya adalah bebas cukai."
+      },
+      "supportedNetworks": {
+        "title": "Rangkaian yang Disokong",
+        "content": "Freedom Bridge menyokong ekosistem {{count}}+ blok rantai yang semakin berkembang, membolehkan interoperabiliti yang lancar merentasi landskap EVM melalui Axelar."
+      },
+      "xerc20": {
+        "title": "Token Interchain",
+        "content": "Perkhidmatan Token Interchain (ITS) Axelar membolehkan token digunakan merentasi pelbagai rantai dengan alamat yang konsisten dan pengurusan bekalan bersatu. Freedom Bridge menggunakan ITS untuk memastikan TigerOG kekal sebagai aset kanonik di mana sahaja ia dijambatan."
+      },
+      "axelar": {
+        "title": "Rangkaian Axelar",
+        "content": "Kami menggunakan Axelar sebagai lapisan interoperabiliti kami. Axelar ialah rangkaian terdesentralisasi yang menghubungkan blok rantai yang berbeza, membolehkan komunikasi dan pemindahan aset rentas rantai yang selamat. Model keselamatan Axelar bergantung pada set validator tanpa kebenaran, memberikan keselamatan gred tinggi untuk token interchain."
+      },
+      "migration": {
+        "title": "Logik Migrasi",
+        "content": "Kontrak Migrasi digunakan pada rantai asal (cth., BSC). Ia memegang token warisan asal dalam jagaan. Apabila anda meningkatkan token, anda mendepositkan ke dalam kontrak Migrasi. Apabila anda membuka balutan (jika disokong), anda membakar perwakilan TigerOG untuk melepaskan token asal. Ini memastikan pasak 1:1 yang disokong ketat."
+      },
+      "contracts": {
+        "title": "Alamat Kontrak Pintar",
+        "colNetwork": "Rangkaian",
+        "colType": "Jenis Kontrak",
+        "colAddress": "Alamat"
+      },
+      "security": {
+        "title": "Model Keselamatan",
+        "content": "Keselamatan dibina dalam setiap lapisan Freedom Bridge:",
+        "point1": "<strong>Seni Bina Migrasi:</strong> Token warisan dipegang dalam kontrak pintar yang disahkan dan tidak berubah.",
+        "point2": "<strong>Validator Axelar:</strong> Mesej rentas rantai disahkan oleh rangkaian terdesentralisasi Axelar.",
+        "point3": "<strong>Bekalan Konsisten:</strong> ITS menguruskan pencetakan dan pembakaran untuk mengekalkan jumlah bekalan yang tetap merentasi semua rantai.",
+        "point4": "<strong>Logik Diaudit:</strong> Dibina berdasarkan perpustakaan standard OpenZeppelin dan Axelar."
+      },
+      "supplyCommon": {
+        "howWeCalculated": "Bagaimana Kami Mengiranya",
+        "verification": "Pengesahan",
+        "verificationDesc": "Semua angka bekalan boleh disahkan secara bebas di atas rantaian:",
+        "table": {
+          "category": "Kategori",
+          "amount": "Jumlah",
+          "percentOfTotal": "% daripada Jumlah",
+          "originalSupply": "Jumlah Bekalan Asal",
+          "deadAddress": "Alamat Mati (Dibakar)",
+          "contractBalance": "Baki Kontrak (Tersekat)",
+          "circulatingSupply": "Bekalan Beredar"
+        },
+        "deadAddressTitle": "1. Alamat Mati",
+        "contractBalanceTitle": "2. Baki Kontrak",
+        "lpLockedTitle": "3. Token Terkunci LP"
+      },
+      "tigerogSupply": {
+        "title": "Pecahan Bekalan TigerOG",
+        "intro": "TigerOG mempunyai bekalan beredar tetap yang diperoleh daripada token BNBTiger asal. Pengiraan bekalan mengambil kira semua token yang dibakar dan dikunci secara kekal.",
+        "lpLocked": "LP Terkunci (86.18% daripada LP Dibakar)",
+        "deadAddressDesc": "Token yang dihantar ke <code>0x000...dEaD</code> dibakar secara kekal dan tidak boleh dipulihkan. Ini termasuk token yang dibakar melalui mekanisme cukai BNBTiger asal.",
+        "contractBalanceDesc": "Sebilangan kecil token tersekat dalam kontrak BNBTiger itu sendiri. Token ini tidak boleh diakses dan berkesan dikeluarkan dari peredaran.",
+        "lpLockedDesc": "Kumpulan kecairan PancakeSwap mengandungi token BNBTiger yang dipadankan dengan BNB. Apabila token LP dibakar (dihantar ke alamat mati), token asas dalam kumpulan menjadi terkunci secara kekal.",
+        "lpBurnedPercent": "Token LP dibakar: 86.18% daripada semua token LP",
+        "lpLockedPercent": "Oleh itu, 86.18% token dalam LP dikunci secara kekal",
+        "note": "<strong>Nota:</strong> TigerOG mengekalkan nisbah 1:1 dengan BNBTiger semasa migrasi. Bekalan beredar TigerOG sepadan dengan bekalan beredar sebenar BNBTiger selepas mengambil kira semua token yang dibakar dan dikunci.",
+        "launchData": "<strong>Data Pelancaran:</strong> Angka-angka ini dikira semasa pelancaran. Token BNBTiger warisan terus membakar token pada setiap transaksi beli/jual, jadi bekalan beredar sebenar mungkin sedikit lebih rendah daripada yang ditunjukkan.",
+        "legacyContract": "Kontrak Token BNBTiger",
+        "ogContract": "Kontrak Token TigerOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,772,706,396,234,535,780,783,775",
+          "deadPercent": "57.73%",
+          "contract": "−6,142,342,823,271,327",
+          "contractPercent": "<0.01%",
+          "lp": "−565,059,839,948,518,979,124,912",
+          "lpPercent": "5.65%",
+          "circulating": "3,662,233,757,674,602,416,819,986",
+          "circulatingPercent": "36.62%"
+        }
+      },
+      "lionogSupply": {
+        "title": "Pecahan Bekalan LionOG",
+        "intro": "LionOG mempunyai bekalan beredar tetap yang diperoleh daripada token BNBLion asal. Pengiraan bekalan mengambil kira semua token yang dibakar dan dikunci secara kekal.",
+        "lpLocked": "LP Terkunci (99.98% daripada LP Dibakar)",
+        "deadAddressDesc": "Token yang dihantar ke <code>0x000...dEaD</code> dibakar secara kekal dan tidak boleh dipulihkan. Ini termasuk token yang dibakar melalui mekanisme cukai BNBLion asal.",
+        "contractBalanceDesc": "Sebilangan kecil token tersekat dalam kontrak BNBLion itu sendiri. Token ini tidak boleh diakses dan berkesan dikeluarkan dari peredaran.",
+        "lpLockedDesc": "Kumpulan kecairan PancakeSwap mengandungi token BNBLion yang dipadankan dengan BNB. Apabila token LP dibakar (dihantar ke alamat mati), token asas dalam kumpulan menjadi terkunci secara kekal.",
+        "lpBurnedPercent": "Token LP dibakar: 99.98% daripada semua token LP",
+        "lpLockedPercent": "Oleh itu, 99.98% token dalam LP dikunci secara kekal",
+        "note": "<strong>Nota:</strong> LionOG mengekalkan nisbah 1:1 dengan BNBLion semasa migrasi. Bekalan beredar LionOG sepadan dengan bekalan beredar sebenar BNBLion selepas mengambil kira semua token yang dibakar dan dikunci.",
+        "launchData": "<strong>Data Pelancaran:</strong> Angka-angka ini dikira semasa pelancaran. Token BNBLion warisan terus membakar token pada setiap transaksi beli/jual, jadi bekalan beredar sebenar mungkin sedikit lebih rendah daripada yang ditunjukkan.",
+        "legacyContract": "Kontrak Token BNBLion",
+        "ogContract": "Kontrak Token LionOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,724,597,218,422,106,614,085,614",
+          "deadPercent": "57.25%",
+          "contract": "−9,219,967,745,410,740,095,290",
+          "contractPercent": "<0.01%",
+          "lp": "−442,490,152,327,271,918,655,109",
+          "lpPercent": "4.42%",
+          "circulating": "3,832,903,409,282,876,056,519,182",
+          "circulatingPercent": "38.33%"
+        }
+      },
+      "frogogSupply": {
+        "title": "Pecahan Bekalan FrogOG",
+        "intro": "FrogOG mempunyai bekalan beredar tetap yang diperoleh daripada token BNBFrog asal. Pengiraan bekalan mengambil kira semua token yang dibakar dan dikunci secara kekal.",
+        "lpLocked": "LP Terkunci (99.31% daripada LP Dibakar)",
+        "deadAddressDesc": "Token yang dihantar ke <code>0x000...dEaD</code> dibakar secara kekal dan tidak boleh dipulihkan. Ini termasuk token yang dibakar melalui mekanisme cukai BNBFrog asal.",
+        "contractBalanceDesc": "Sebilangan kecil token tersekat dalam kontrak BNBFrog itu sendiri. Token ini tidak boleh diakses dan berkesan dikeluarkan dari peredaran.",
+        "lpLockedDesc": "Kumpulan kecairan PancakeSwap mengandungi token BNBFrog yang dipadankan dengan BNB. Apabila token LP dibakar (dihantar ke alamat mati), token asas dalam kumpulan menjadi terkunci secara kekal.",
+        "lpBurnedPercent": "Token LP dibakar: 99.31% daripada semua token LP",
+        "lpLockedPercent": "Oleh itu, 99.31% token dalam LP dikunci secara kekal",
+        "note": "<strong>Nota:</strong> FrogOG mengekalkan nisbah 1:1 dengan BNBFrog semasa migrasi. Bekalan beredar FrogOG sepadan dengan bekalan beredar sebenar BNBFrog selepas mengambil kira semua token yang dibakar dan dikunci.",
+        "launchData": "<strong>Data Pelancaran:</strong> Angka-angka ini dikira semasa pelancaran. Token BNBFrog warisan terus membakar token pada setiap transaksi beli/jual, jadi bekalan beredar sebenar mungkin sedikit lebih rendah daripada yang ditunjukkan.",
+        "legacyContract": "Kontrak Token BNBFrog",
+        "ogContract": "Kontrak Token FrogOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−740,059,884,911,899,485,982,976",
+          "deadPercent": "7.40%",
+          "contract": "−4,036,008,092,593,983,879,741",
+          "contractPercent": "<0.01%",
+          "lp": "−874,144,424,929,004,044,398,902",
+          "lpPercent": "8.74%",
+          "circulating": "8,385,795,686,123,088,377,024,138",
+          "circulatingPercent": "83.86%"
+        }
+      }
+    }
+  },
+  "contracts": {
+    "title": "Alamat Kontrak",
+    "header": {
+      "title": "Kontrak Pintar",
+      "subtitle": "Alamat penggunaan rasmi untuk token, penghala, dan kumpulan kecairan merentasi ekosistem Freedom Bridge."
+    },
+    "tabs": {
+      "overview": "Gambaran Keseluruhan",
+      "byToken": "Mengikut Token",
+      "byChain": "Mengikut Rantai",
+      "liquidity": "Kecairan"
+    },
+    "liquidity": {
+      "title": "Kumpulan Kecairan"
+    }
+  },
+  "faq": {
+    "title": "Sokongan Freedom Bridge",
+    "header": "Soalan Lazim",
+    "subtitle": "Jawapan kepada soalan lazim tentang TigerOG, penjambatan, dan Axelar.",
+    "cta": {
+      "title": "Masih ada soalan?",
+      "description": "Sertai komuniti kami di Telegram atau semak Wiki terperinci untuk panduan teknikal.",
+      "wiki": "Lawati Wiki",
+      "telegram": "Sertai Telegram"
+    },
+    "questions": {
+      "q1": "Apakah tujuan menukar token saya?",
+      "a1": "Menukar token anda kepada TigerOG menghilangkan cukai transaksi (sering 10-12%) yang berkaitan dengan token warisan. Ia juga membenarkan anda menjambatkan token ini ke blok rantai lain seperti Ethereum, Base, dan banyak lagi melalui Axelar, membolehkan akses kepada ekosistem baharu.",
+      "q2": "Adakah selamat menggunakan Freedom Bridge?",
+      "a2": "Ya. Protokol ini menggunakan kontrak Migrasi yang selamat dan Perkhidmatan Token Interchain Axelar. Apabila anda menukar, BNBTiger anda dibakar secara kekal dan anda menerima TigerOG pada nisbah 1:1. Mekanisme pembakaran memastikan jumlah bekalan diurus dengan betul merentasi semua rantai.",
+      "q3": "Adakah terdapat sebarang yuran?",
+      "a3": "Freedom Bridge sendiri tidak mengenakan yuran untuk menukar. Anda hanya membayar yuran gas blok rantai standard. Penjambatan antara rantai melibatkan yuran gas rentas rantai yang dibayar kepada Axelar untuk menampung kos penyampaian.",
+      "q4": "Apa yang berlaku jika saya kehilangan token saya?",
+      "a4": "Token TigerOG berkelakuan seperti token ERC20 yang lain. Jika anda kehilangan akses kepada dompet anda, ia tidak boleh dipulihkan. Sentiasa pastikan kunci peribadi dan frasa pemulihan anda disimpan dengan selamat.",
+      "q5": "Bolehkah saya menukar token TigerOG saya kembali ke BNBTiger?",
+      "a5": "Tidak. Migrasi adalah penukaran sehala. Apabila anda menukar BNBTiger kepada TigerOG, token BNBTiger anda dibakar secara kekal (dihantar ke alamat mati). Ini adalah secara reka bentuk — TigerOG adalah versi naik taraf bebas cukai yang bertujuan untuk menggantikan token warisan sepenuhnya.",
+      "q6": "Rangkaian mana yang disokong?",
+      "a6": "Kami menyokong pelbagai rantai EVM melalui Axelar, termasuk BNB Chain, Ethereum, Base, dan banyak lagi. Semak Wiki untuk senarai penuh rangkaian yang disokong.",
+      "q7": "Berapa lama masa yang diambil untuk menjambatkan?",
+      "a7": "Kelajuan jambatan bergantung pada masa akhir rantai sumber dan penyampaian Axelar. Lazimnya, pemindahan antara rantai mengambil masa kira-kira 2-5 minit.",
+      "q8": "Apakah bekalan beredar token OG?",
+      "a8": "Setiap token OG mempunyai bekalan beredar tetap yang diperoleh daripada token BNB asalnya, mengambil kira token yang dibakar, baki kontrak yang tersekat, dan LP yang dikunci. TigerOG: ~3.66 septilion (36.62% daripada asal). LionOG: ~3.83 septilion (38.33% daripada asal). FrogOG: ~8.39 septilion (83.86% daripada asal). Lihat Wiki untuk pecahan terperinci bagi setiap token."
+    }
+  },
+  "common": {
+    "from": "Dari",
+    "to": "Ke",
+    "max": "MAKS",
+    "chainId": "ID Rantaian",
+    "bscChain": "Rantai BSC",
+    "insufficientBalance": "Baki tidak mencukupi.",
+    "failedToSwitchNetwork": "Gagal menukar rangkaian. Sila tukar secara manual dalam dompet anda.",
+    "failedToFetchFeeQuote": "Gagal mendapatkan sebut harga yuran.",
+    "unableToDetermineGas": "Tidak dapat menentukan pembayaran gas Axelar",
+    "bridgeTxFailed": "Transaksi jambatan gagal",
+    "estimatedGas": "Anggaran gas Axelar",
+    "success": "Berjaya!",
+    "viewOnExplorer": "Lihat di Explorer",
+    "bridging": "Menjambatan...",
+    "transactionFailed": "Transaksi gagal",
+    "search": "Cari",
+    "backToApp": "Kembali ke Aplikasi"
+  }
+}

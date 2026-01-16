@@ -1,0 +1,364 @@
+{
+  "app": {
+    "titleFreedom": "Tự do",
+    "titleBridge": "Cầu nối"
+  },
+  "nav": {
+    "settings": "Cài đặt",
+    "menu": "Menu",
+    "preferences": "Tùy chọn",
+    "switchTheme": "Giao diện",
+    "theme": {
+      "dark": "Tối",
+      "light": "Sáng"
+    },
+    "switchPalette": "Chuyển đổi bảng màu",
+    "wiki": "Tài liệu / Wiki",
+    "contracts": "Hợp đồng",
+    "faq": "Câu hỏi thường gặp",
+    "logout": "Đăng xuất",
+    "language": "Ngôn ngữ",
+    "languageSearchPlaceholder": "Tìm kiếm ngôn ngữ",
+    "languageNoResults": "Không tìm thấy ngôn ngữ",
+    "close": "Đóng"
+  },
+  "addNetworks": {
+    "title": "Thêm Mạng",
+    "description": "Nhấp vào nút bên dưới để Thêm Mạng vào ví của bạn. Điều này giúp dễ dàng chuyển đổi giữa các chuỗi khi thử nghiệm."
+  },
+  "tabs": {
+    "convert": "Chuyển đổi",
+    "bridge": "Cầu nối"
+  },
+  "convert": {
+    "token": "Token",
+    "selectToken": "Chọn Token",
+    "balance": "Số dư",
+    "noConvertibleTokens": "Không có token để chuyển đổi trên {{chainName}}",
+    "convert": "Chuyển đổi",
+    "addToWalletLabel": "Nhập {{symbol}} trên {{chainName}} vào ví",
+    "addToWalletButton": "Nhập vào Ví",
+    "addingToken": "Đang thêm…",
+    "addTokenError": "Không thể thêm token vào ví",
+    "legacyTokenMissing": "Thiếu token cũ cho chuỗi này",
+    "tigerOGMissing": "Thiếu token TigerOG cho chuỗi này",
+    "networkWarning": {
+      "title": "Mạng Sai",
+      "message": "Chuyển đổi token chỉ khả dụng trên BSC Chain.",
+      "description": "Vui lòng chuyển sang BSC Chain trong ví của bạn để chuyển đổi token, hoặc điều hướng đến tab Cầu nối để chuyển token giữa các chuỗi."
+    }
+  },
+  "bridge": {
+    "fromChain": "Từ Chuỗi",
+    "selectChainPlaceholder": "Chọn chuỗi",
+    "toChain": "Đến Chuỗi",
+    "selectDestinationPlaceholder": "Chọn điểm đến",
+    "noDestination": "Không có điểm đến",
+    "noBridgeableTokens": "Không có token nào có thể cầu nối",
+    "bridgeButton": "Cầu nối Token",
+    "getFeeQuote": "Lấy báo giá phí",
+    "viewOnAxelarscan": "Xem trên Axelarscan",
+    "addDestinationTokenLabel": "Nhập {{symbol}} trên {{chainName}} vào ví",
+    "addTokenError": "Không thể thêm token vào ví",
+    "estimatedTime": "Thời gian ước tính",
+    "recentTransactions": "Giao dịch gần đây",
+    "clearHistory": "Xóa lịch sử",
+    "historyStoredLocally": "Lịch sử giao dịch được lưu trữ cục bộ trên thiết bị này"
+  },
+  "settings": {
+    "title": "Cài đặt",
+    "environment": "Môi trường",
+    "rpcEndpoints": "Điểm cuối RPC",
+    "rpcEndpointsHelp": "Cập nhật URL RPC được sử dụng cho mỗi chuỗi trong môi trường đã chọn.",
+    "noChainsConfigured": "Không có chuỗi nào được cấu hình cho môi trường này.",
+    "cancel": "Hủy",
+    "save": "Lưu"
+  },
+  "wallet": {},
+  "login": {
+    "title": "Chào mừng trở lại",
+    "subtitle": "Đăng nhập để tiếp tục sử dụng Freedom Bridge",
+    "emailLabel": "Email",
+    "emailPlaceholder": "ten@example.com",
+    "passwordLabel": "Mật khẩu",
+    "passwordPlaceholder": "Nhập mật khẩu",
+    "rememberMe": "Ghi nhớ tôi trên thiết bị này",
+    "submit": "Đăng nhập",
+    "validation": {
+      "required": "Email và mật khẩu là bắt buộc.",
+      "invalid": "Email hoặc mật khẩu không hợp lệ."
+    }
+  },
+  "landing": {
+    "banner": {
+      "title": "Mới ở đây?",
+      "message": "Tìm hiểu về Freedom Bridge và cách cầu nối token TigerOG giữa các chuỗi."
+    },
+    "hero": {
+      "badge": "Được cung cấp bởi Axelar",
+      "title": "Giải phóng <1/> <2>Tài sản</2> Của Bạn",
+      "subtitle": "Cầu nối liền mạch token TigerOG giữa các chuỗi bằng cách sử dụng Dịch vụ Token Liên chuỗi của Axelar. An toàn, nhanh chóng và miễn thuế.",
+      "launchApp": "Khởi chạy Ứng dụng",
+      "documentation": "Tài liệu"
+    },
+    "stats": {
+      "messaging": "Mạng Axelar",
+      "networks": "Mạng hoạt động",
+      "fees": "Phí giao thức",
+      "finality": "Tính hoàn tất"
+    },
+    "features": {
+      "title": "Dịch vụ Token Liên chuỗi",
+      "description": "Freedom Bridge tận dụng Axelar ITS để mang lại trải nghiệm cầu nối liền mạch, an toàn và miễn thuế trên {{count}}+ blockchain.",
+      "stopDecay": {
+        "title": "Ngừng suy giảm",
+        "description": "Các token cũ đốt cháy 10-11% giá trị của bạn trong mỗi lần mua và bán. Gói vào TigerOG ngay lập tức ngăn chặn sự chảy máu này, bảo toàn 100% giá trị của bạn.",
+        "graphLabel1": "100% Được giữ lại (TigerOG)",
+        "graphLabel2": "-40% Giá trị (Thuế 10% cũ)"
+      },
+      "conversion": {
+        "title": "Chuyển đổi 1:1",
+        "description": "Tổng cung không bao giờ thay đổi. Token được giữ trong một hợp đồng di chuyển an toàn, và một lượng tương đương 1:1 chính xác được sử dụng. Không lạm phát, không pha loãng."
+      },
+      "multichain": {
+        "title": "Đa chuỗi",
+        "description": "Triển khai một lần, truy cập mọi nơi. Tài sản của bạn trở thành token liên chuỗi bản địa trên các chuỗi bao gồm Ethereum, BNB Chain, Base và nhiều hơn nữa."
+      },
+      "security": {
+        "title": "Bảo mật Axelar",
+        "description": "Được cung cấp bởi mạng lưới các trình xác thực phi tập trung của Axelar. ITS đảm bảo rằng token của bạn được chuyển an toàn và nhất quán trên tất cả các mạng được kết nối.",
+        "button": "Bắt đầu cầu nối"
+      }
+    },
+    "teaser": {
+      "title": "Bạn muốn các đồng tiền khác?",
+      "subtitle": "Bạn nghĩ gì về <lunc>LUNC</lunc>, <crepe>Crepe</crepe>, hay <shiba>Shiba</shiba>??"
+    },
+    "cta": {
+      "title": "Sẵn sàng để cầu nối?",
+      "description": "Tham gia cuộc cách mạng liên chuỗi. Chỉ mất chưa đầy một phút để gói tài sản của bạn và bắt đầu cầu nối qua Axelar.",
+      "button": "Khởi chạy Ứng dụng ngay"
+    }
+  },
+  "wiki": {
+    "title": "Wiki Freedom Bridge",
+    "searchPlaceholder": "Tìm kiếm tài liệu...",
+    "header": {
+      "title": "Tài liệu",
+      "subtitle": "Tìm hiểu cách gói token cũ, cầu nối giữa các chuỗi và tích hợp với Freedom Bridge."
+    },
+    "nav": {
+      "gettingStarted": "Bắt đầu",
+      "coreConcepts": "Khái niệm cốt lõi",
+      "developers": "Nhà phát triển",
+      "tigerogSupply": "Cung TigerOG",
+      "lionogSupply": "Cung LionOG",
+      "frogogSupply": "Cung FrogOG"
+    },
+    "articles": {
+      "whatIs": {
+        "title": "Freedom Bridge là gì?",
+        "content": "Freedom Bridge là một giao thức cầu nối phi tập trung được xây dựng trên Dịch vụ Token Liên chuỗi (ITS) của Axelar. Nó được thiết kế để giải phóng các token khỏi các giới hạn của một chuỗi và các loại thuế giao dịch cao. Bằng cách gói các token tiêu chuẩn thành các tài sản tương thích liên chuỗi, người dùng có thể tự do di chuyển giá trị của họ qua các blockchain được hỗ trợ.",
+        "taxFreeTitle": "Chuyển khoản miễn thuế",
+        "taxFreeDesc": "Các token cũ thường có thuế 10%+. Token TigerOG có thuế 0%.",
+        "omnichainTitle": "Liên chuỗi",
+        "omnichainDesc": "Chuyển tài sản ngay lập tức giữa {{count}}+ blockchain qua Axelar."
+      },
+      "howToConvert": {
+        "title": "Cách chuyển đổi Token",
+        "step1": "Kết nối ví của bạn với chuỗi nguồn (ví dụ: BSC Chain).",
+        "step2": "Điều hướng đến tab <strong>Chuyển đổi</strong>.",
+        "step3": "Chọn token cũ bạn muốn chuyển đổi.",
+        "step4": "Phê duyệt hợp đồng Di chuyển để chi tiêu token của bạn.",
+        "step5": "Nhấp <strong>Chuyển đổi</strong> để gửi các token cũ của bạn và nhận một lượng token \"TigerOG\" tương đương.",
+        "note": "<strong>Lưu ý:</strong> Việc chuyển đổi sẽ phát sinh thuế giao dịch của token cũ (trong quá trình nâng cấp) nếu token của bạn tính thuế trên các giao dịch chuyển. Tuy nhiên, sau khi chuyển đổi sang TigerOG, tất cả các giao dịch chuyển và cầu nối tiếp theo sẽ được miễn thuế."
+      },
+      "supportedNetworks": {
+        "title": "Mạng được hỗ trợ",
+        "content": "Freedom Bridge hỗ trợ một hệ sinh thái đang phát triển gồm {{count}}+ blockchain, cho phép khả năng tương tác liền mạch trên toàn bộ hệ sinh thái EVM qua Axelar."
+      },
+      "xerc20": {
+        "title": "Token Liên chuỗi",
+        "content": "Dịch vụ Token Liên chuỗi (ITS) của Axelar cho phép các token được triển khai trên nhiều chuỗi với địa chỉ nhất quán và quản lý nguồn cung thống nhất. Freedom Bridge sử dụng ITS để đảm bảo rằng TigerOG vẫn là một tài sản chính tắc bất cứ nơi nào nó được cầu nối."
+      },
+      "axelar": {
+        "title": "Mạng Axelar",
+        "content": "Chúng tôi sử dụng Axelar làm lớp tương tác của mình. Axelar là một mạng phi tập trung kết nối các blockchain khác nhau, cho phép giao tiếp liên chuỗi an toàn và chuyển giao tài sản. Mô hình bảo mật của Axelar dựa vào một tập hợp các trình xác thực không cần cấp phép, cung cấp bảo mật cao cấp cho các token liên chuỗi."
+      },
+      "migration": {
+        "title": "Logic Di chuyển",
+        "content": "Hợp đồng Di chuyển được triển khai trên chuỗi gốc (ví dụ: BSC). Nó giữ các token cũ gốc trong quyền giám hộ. Khi bạn nâng cấp token, bạn đang gửi vào hợp đồng Di chuyển. Khi bạn mở gói (nếu được hỗ trợ), bạn đang đốt biểu diễn TigerOG để giải phóng các token gốc. Điều này đảm bảo một chốt 1:1 được hỗ trợ nghiêm ngặt."
+      },
+      "contracts": {
+        "title": "Địa chỉ hợp đồng thông minh",
+        "colNetwork": "Mạng",
+        "colType": "Loại hợp đồng",
+        "colAddress": "Địa chỉ"
+      },
+      "security": {
+        "title": "Mô hình bảo mật",
+        "content": "Bảo mật được tích hợp vào mọi lớp của Freedom Bridge:",
+        "point1": "<strong>Kiến trúc Di chuyển:</strong> Các token cũ được giữ trong các hợp đồng thông minh đã được xác minh, không thể thay đổi.",
+        "point2": "<strong>Trình xác thực Axelar:</strong> Các tin nhắn liên chuỗi được xác minh bởi mạng phi tập trung của Axelar.",
+        "point3": "<strong>Cung nhất quán:</strong> ITS quản lý việc đúc và đốt để duy trì tổng cung không đổi trên tất cả các chuỗi.",
+        "point4": "<strong>Logic đã được kiểm toán:</strong> Được xây dựng trên các thư viện tiêu chuẩn của Axelar và OpenZeppelin."
+      },
+      "supplyCommon": {
+        "howWeCalculated": "Cách chúng tôi tính toán điều này",
+        "verification": "Xác minh",
+        "verificationDesc": "Tất cả các số liệu cung có thể được xác minh độc lập trên chuỗi:",
+        "table": {
+          "category": "Danh mục",
+          "amount": "Số lượng",
+          "percentOfTotal": "% của Tổng",
+          "originalSupply": "Tổng cung gốc",
+          "deadAddress": "Địa chỉ chết (Đã đốt)",
+          "contractBalance": "Số dư hợp đồng (Bị kẹt)",
+          "circulatingSupply": "Cung lưu thông"
+        },
+        "deadAddressTitle": "1. Địa chỉ chết",
+        "contractBalanceTitle": "2. Số dư hợp đồng",
+        "lpLockedTitle": "3. Token LP bị khóa"
+      },
+      "tigerogSupply": {
+        "title": "Phân tích cung TigerOG",
+        "intro": "TigerOG có nguồn cung lưu thông cố định bắt nguồn từ token BNBTiger gốc. Việc tính toán nguồn cung tính đến tất cả các token đã bị đốt và bị khóa vĩnh viễn.",
+        "lpLocked": "LP Bị khóa (86.18% LP Đã đốt)",
+        "deadAddressDesc": "Các token được gửi đến <code>0x000...dEaD</code> sẽ bị đốt vĩnh viễn và không bao giờ có thể phục hồi. Điều này bao gồm các token bị đốt thông qua cơ chế thuế BNBTiger gốc.",
+        "contractBalanceDesc": "Một lượng nhỏ token bị kẹt trong chính hợp đồng BNBTiger. Những token này không thể truy cập và thực sự bị loại khỏi lưu thông.",
+        "lpLockedDesc": "Pool thanh khoản PancakeSwap chứa các token BNBTiger được ghép nối với BNB. Khi các token LP bị đốt (gửi đến địa chỉ chết), các token cơ sở trong pool sẽ bị khóa vĩnh viễn.",
+        "lpBurnedPercent": "Token LP đã đốt: 86.18% của tất cả các token LP",
+        "lpLockedPercent": "Do đó, 86.18% token trong LP bị khóa vĩnh viễn",
+        "note": "<strong>Lưu ý:</strong> TigerOG duy trì tỷ lệ 1:1 với BNBTiger trong quá trình di chuyển. Nguồn cung lưu thông của TigerOG khớp với nguồn cung lưu thông thực sự của BNBTiger sau khi tính đến tất cả các token đã bị đốt và bị khóa.",
+        "launchData": "<strong>Dữ liệu Khởi chạy:</strong> Những con số này được tính toán khi khởi chạy. Token BNBTiger cũ tiếp tục đốt token trên mỗi giao dịch mua/bán, vì vậy nguồn cung lưu thông thực tế có thể thấp hơn một chút so với hiển thị.",
+        "legacyContract": "Hợp đồng Token BNBTiger",
+        "ogContract": "Hợp đồng Token TigerOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,772,706,396,234,535,780,783,775",
+          "deadPercent": "57.73%",
+          "contract": "−6,142,342,823,271,327",
+          "contractPercent": "<0.01%",
+          "lp": "−565,059,839,948,518,979,124,912",
+          "lpPercent": "5.65%",
+          "circulating": "3,662,233,757,674,602,416,819,986",
+          "circulatingPercent": "36.62%"
+        }
+      },
+      "lionogSupply": {
+        "title": "Phân tích cung LionOG",
+        "intro": "LionOG có nguồn cung lưu thông cố định bắt nguồn từ token BNBLion gốc. Việc tính toán nguồn cung tính đến tất cả các token đã bị đốt và bị khóa vĩnh viễn.",
+        "lpLocked": "LP Bị khóa (99.98% LP Đã đốt)",
+        "deadAddressDesc": "Các token được gửi đến <code>0x000...dEaD</code> sẽ bị đốt vĩnh viễn và không bao giờ có thể phục hồi. Điều này bao gồm các token bị đốt thông qua cơ chế thuế BNBLion gốc.",
+        "contractBalanceDesc": "Một lượng nhỏ token bị kẹt trong chính hợp đồng BNBLion. Những token này không thể truy cập và thực sự bị loại khỏi lưu thông.",
+        "lpLockedDesc": "Pool thanh khoản PancakeSwap chứa các token BNBLion được ghép nối với BNB. Khi các token LP bị đốt (gửi đến địa chỉ chết), các token cơ sở trong pool sẽ bị khóa vĩnh viễn.",
+        "lpBurnedPercent": "Token LP đã đốt: 99.98% của tất cả các token LP",
+        "lpLockedPercent": "Do đó, 99.98% token trong LP bị khóa vĩnh viễn",
+        "note": "<strong>Lưu ý:</strong> LionOG duy trì tỷ lệ 1:1 với BNBLion trong quá trình di chuyển. Nguồn cung lưu thông của LionOG khớp với nguồn cung lưu thông thực sự của BNBLion sau khi tính đến tất cả các token đã bị đốt và bị khóa.",
+        "launchData": "<strong>Dữ liệu Khởi chạy:</strong> Những con số này được tính toán khi khởi chạy. Token BNBLion cũ tiếp tục đốt token trên mỗi giao dịch mua/bán, vì vậy nguồn cung lưu thông thực tế có thể thấp hơn một chút so với hiển thị.",
+        "legacyContract": "Hợp đồng Token BNBLion",
+        "ogContract": "Hợp đồng Token LionOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,724,597,218,422,106,614,085,614",
+          "deadPercent": "57.25%",
+          "contract": "−9,219,967,745,410,740,095,290",
+          "contractPercent": "<0.01%",
+          "lp": "−442,490,152,327,271,918,655,109",
+          "lpPercent": "4.42%",
+          "circulating": "3,832,903,409,282,876,056,519,182",
+          "circulatingPercent": "38.33%"
+        }
+      },
+      "frogogSupply": {
+        "title": "Phân tích cung FrogOG",
+        "intro": "FrogOG có nguồn cung lưu thông cố định bắt nguồn từ token BNBFrog gốc. Việc tính toán nguồn cung tính đến tất cả các token đã bị đốt và bị khóa vĩnh viễn.",
+        "lpLocked": "LP Bị khóa (99.31% LP Đã đốt)",
+        "deadAddressDesc": "Các token được gửi đến <code>0x000...dEaD</code> sẽ bị đốt vĩnh viễn và không bao giờ có thể phục hồi. Điều này bao gồm các token bị đốt thông qua cơ chế thuế BNBFrog gốc.",
+        "contractBalanceDesc": "Một lượng nhỏ token bị kẹt trong chính hợp đồng BNBFrog. Những token này không thể truy cập và thực sự bị loại khỏi lưu thông.",
+        "lpLockedDesc": "Pool thanh khoản PancakeSwap chứa các token BNBFrog được ghép nối với BNB. Khi các token LP bị đốt (gửi đến địa chỉ chết), các token cơ sở trong pool sẽ bị khóa vĩnh viễn.",
+        "lpBurnedPercent": "Token LP đã đốt: 99.31% của tất cả các token LP",
+        "lpLockedPercent": "Do đó, 99.31% token trong LP bị khóa vĩnh viễn",
+        "note": "<strong>Lưu ý:</strong> FrogOG duy trì tỷ lệ 1:1 với BNBFrog trong quá trình di chuyển. Nguồn cung lưu thông của FrogOG khớp với nguồn cung lưu thông thực sự của BNBFrog sau khi tính đến tất cả các token đã bị đốt và bị khóa.",
+        "launchData": "<strong>Dữ liệu Khởi chạy:</strong> Những con số này được tính toán khi khởi chạy. Token BNBFrog cũ tiếp tục đốt token trên mỗi giao dịch mua/bán, vì vậy nguồn cung lưu thông thực tế có thể thấp hơn một chút so với hiển thị.",
+        "legacyContract": "Hợp đồng Token BNBFrog",
+        "ogContract": "Hợp đồng Token FrogOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−740,059,884,911,899,485,982,976",
+          "deadPercent": "7.40%",
+          "contract": "−4,036,008,092,593,983,879,741",
+          "contractPercent": "<0.01%",
+          "lp": "−874,144,424,929,004,044,398,902",
+          "lpPercent": "8.74%",
+          "circulating": "8,385,795,686,123,088,377,024,138",
+          "circulatingPercent": "83.86%"
+        }
+      }
+    }
+  },
+  "contracts": {
+    "title": "Địa chỉ hợp đồng",
+    "header": {
+      "title": "Hợp đồng thông minh",
+      "subtitle": "Địa chỉ triển khai chính thức cho các token và cầu nối trong toàn bộ hệ sinh thái Freedom Bridge."
+    },
+    "tabs": {
+      "overview": "Tổng quan",
+      "byToken": "Theo Token",
+      "byChain": "Theo Chuỗi",
+      "liquidity": "Thanh khoản"
+    },
+    "liquidity": {
+      "title": "Các pool thanh khoản"
+    }
+  },
+  "faq": {
+    "title": "Hỗ trợ Freedom Bridge",
+    "header": "Câu hỏi thường gặp",
+    "subtitle": "Trả lời các câu hỏi thường gặp về TigerOG, cầu nối và Axelar.",
+    "cta": {
+      "title": "Vẫn còn câu hỏi?",
+      "description": "Tham gia cộng đồng của chúng tôi trên Telegram hoặc kiểm tra Wiki chi tiết để biết các hướng dẫn kỹ thuật.",
+      "wiki": "Truy cập Wiki",
+      "telegram": "Tham gia Telegram"
+    },
+    "questions": {
+      "q1": "Mục đích của việc chuyển đổi token của tôi là gì?",
+      "a1": "Chuyển đổi token của bạn sang TigerOG loại bỏ thuế giao dịch (thường là 10-12%) liên quan đến token cũ. Nó cũng cho phép bạn cầu nối các token này đến các blockchain khác như Ethereum, Base và nhiều hơn nữa qua Axelar, cho phép truy cập vào các hệ sinh thái mới.",
+      "q2": "Có an toàn khi sử dụng Freedom Bridge không?",
+      "a2": "Có. Giao thức sử dụng hợp đồng Di chuyển an toàn và Dịch vụ Token Liên chuỗi của Axelar. Khi bạn chuyển đổi, BNBTiger của bạn sẽ bị đốt vĩnh viễn và bạn nhận được TigerOG theo tỷ lệ 1:1. Cơ chế đốt đảm bảo rằng tổng cung được quản lý đúng cách trên tất cả các chuỗi.",
+      "q3": "Có bất kỳ khoản phí nào không?",
+      "a3": "Bản thân Freedom Bridge không tính phí chuyển đổi. Bạn chỉ phải trả phí gas blockchain tiêu chuẩn. Cầu nối giữa các chuỗi bao gồm phí gas liên chuỗi được trả cho Axelar để chi trả chi phí chuyển tiếp.",
+      "q4": "Điều gì sẽ xảy ra nếu tôi mất token của mình?",
+      "a4": "Token TigerOG hoạt động giống như bất kỳ token ERC20 nào khác. Nếu bạn mất quyền truy cập vào ví của bạn, chúng không thể được khôi phục. Luôn giữ khóa riêng và cụm từ khôi phục của bạn an toàn.",
+      "q5": "Tôi có thể chuyển đổi token TigerOG của mình trở lại BNBTiger không?",
+      "a5": "Không. Việc di chuyển là chuyển đổi một chiều. Khi bạn chuyển đổi BNBTiger sang TigerOG, token BNBTiger của bạn sẽ bị đốt vĩnh viễn (gửi đến địa chỉ chết). Điều này là do thiết kế — TigerOG là phiên bản nâng cấp, miễn thuế nhằm thay thế hoàn toàn token cũ.",
+      "q6": "Những mạng nào được hỗ trợ?",
+      "a6": "Chúng tôi hỗ trợ nhiều chuỗi EVM qua Axelar, bao gồm BNB Chain, Ethereum, Base và nhiều hơn nữa. Kiểm tra Wiki để biết danh sách đầy đủ các mạng được hỗ trợ.",
+      "q7": "Việc cầu nối mất bao lâu?",
+      "a7": "Tốc độ cầu nối phụ thuộc vào tính hoàn tất của chuỗi nguồn và chuyển tiếp của Axelar. Thông thường, một giao dịch chuyển giữa các chuỗi mất khoảng 2-5 phút.",
+      "q8": "Cung lưu thông của các token OG là bao nhiêu?",
+      "a8": "Mỗi token OG có nguồn cung lưu thông cố định bắt nguồn từ token BNB gốc của nó, tính đến các token đã bị đốt, số dư hợp đồng bị kẹt và LP bị khóa. TigerOG: ~3.66 tỷ tỷ (36.62% của bản gốc). LionOG: ~3.83 tỷ tỷ (38.33% của bản gốc). FrogOG: ~8.39 tỷ tỷ (83.86% của bản gốc). Xem Wiki để biết chi tiết phân tích của từng token."
+    }
+  },
+  "common": {
+    "from": "Từ",
+    "to": "Đến",
+    "max": "TỐI ĐA",
+    "chainId": "ID Chuỗi",
+    "bscChain": "Chuỗi BSC",
+    "insufficientBalance": "Số dư không đủ.",
+    "failedToSwitchNetwork": "Không thể chuyển mạng. Vui lòng chuyển thủ công trong ví của bạn.",
+    "failedToFetchFeeQuote": "Không thể lấy báo giá phí.",
+    "unableToDetermineGas": "Không thể xác định phí gas Axelar",
+    "bridgeTxFailed": "Giao dịch cầu nối thất bại",
+    "estimatedGas": "Ước tính phí gas Axelar",
+    "success": "Thành công!",
+    "viewOnExplorer": "Xem trên Trình khám phá",
+    "bridging": "Đang cầu nối...",
+    "transactionFailed": "Giao dịch thất bại",
+    "search": "Tìm kiếm",
+    "backToApp": "Quay lại Ứng dụng"
+  }
+}

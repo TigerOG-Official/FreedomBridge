@@ -1,0 +1,1297 @@
+/* Multisig Manager Full-Width Layout Styles */
+
+.multisig-page {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--theme-bg);
+  color: var(--theme-text-primary);
+}
+
+/* Hero Section */
+.multisig-hero {
+  background: var(--hero-bg);
+  padding: 3rem 0 2rem;
+  border-bottom: 1px solid var(--hero-border);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-home-btn {
+  border-color: var(--hero-button-border) !important;
+  color: var(--hero-button-color) !important;
+  min-width: 120px;
+}
+
+.multisig-hero::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, var(--accent-primary) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.multisig-hero::after {
+  content: "";
+  position: absolute;
+  bottom: -30%;
+  left: -5%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, var(--accent-secondary) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  opacity: 0.25;
+}
+
+.multisig-hero-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.multisig-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--hero-heading-color);
+  text-shadow: var(--hero-heading-shadow);
+}
+
+.multisig-hero-subtitle {
+  font-size: 1.1rem;
+  color: var(--hero-subtitle-color);
+  margin-bottom: 2rem;
+}
+
+/* Navigation Tabs in Hero */
+.multisig-nav-tabs {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  border-bottom: 2px solid var(--theme-navbar-border);
+  margin-top: 2rem;
+}
+
+.multisig-nav-tab {
+  padding: 0.75rem 1.5rem;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  color: var(--nav-tab-color);
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-bottom: -2px;
+}
+
+.multisig-nav-tab:hover {
+  color: var(--nav-tab-hover-color);
+  border-bottom-color: var(--nav-tab-hover-border);
+}
+
+.multisig-nav-tab.active {
+  color: var(--nav-tab-active-color);
+  border-bottom-color: var(--nav-tab-active-color);
+  text-shadow: var(--nav-tab-active-shadow);
+}
+
+/* Stats Section */
+.multisig-stats {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: var(--stat-card-bg);
+  border: 1px solid var(--stat-card-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px var(--stat-card-hover-shadow);
+  border-color: var(--stat-card-hover-border);
+  background: var(--stat-card-hover-bg);
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: var(--stat-label-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.stat-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--stat-value-color);
+  text-shadow: var(--stat-value-shadow);
+}
+
+.stat-description {
+  font-size: 0.875rem;
+  color: var(--stat-description-color);
+  margin-top: 0.5rem;
+}
+
+.stat-description a {
+  color: var(--stat-link-color);
+  transition: color 0.2s;
+}
+
+.stat-description a:hover {
+  color: var(--stat-link-hover-color);
+}
+
+/* Content Section */
+.multisig-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem 3rem;
+}
+
+/* Full Width Section with Background */
+.multisig-section {
+  margin-bottom: 3rem;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--section-title-color);
+  margin: 0;
+  text-shadow: var(--section-title-shadow);
+}
+
+.section-subtitle {
+  font-size: 0.95rem;
+  color: var(--section-subtitle-color);
+  margin-top: 0.25rem;
+}
+
+/* Card Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Modern Card Styles */
+.modern-card {
+  background: var(--theme-card-bg);
+  border: 1px solid var(--theme-card-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s;
+  backdrop-filter: blur(10px);
+}
+
+.modern-card:hover {
+  box-shadow: 0 8px 24px var(--theme-shadow-hover);
+  transform: translateY(-2px);
+  border-color: var(--theme-card-border);
+}
+
+.modern-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--theme-text-primary);
+}
+
+/* Router Connections Grid */
+.router-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.router-card {
+  background: var(--router-card-bg) !important;
+  border: 1px solid var(--router-card-border) !important;
+  border-radius: 8px;
+  padding: 1rem;
+  position: relative;
+  transition: all 0.3s;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+
+.router-card-address {
+  color: var(--router-card-address-color);
+}
+
+.router-card-label {
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  color: var(--router-card-label-color);
+}
+
+.connection-chip-check {
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.router-card:hover {
+  border-color: var(--router-card-hover-border) !important;
+  box-shadow: 0 4px 12px var(--router-card-hover-shadow);
+}
+
+.router-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.router-chain-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--theme-text-primary) !important;
+}
+
+.connection-matrix {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.connection-chip {
+  padding: 0.35rem 0.85rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.connection-chip.connected {
+  background: var(--chip-connected-bg) !important;
+  color: var(--chip-connected-color) !important;
+  border: 1px solid var(--chip-connected-border) !important;
+}
+
+.connection-chip.disconnected {
+  background: var(--chip-disconnected-bg) !important;
+  color: var(--chip-disconnected-color) !important;
+  border: 1px solid var(--chip-disconnected-border) !important;
+}
+
+.connection-matrix-summary {
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 12px;
+  border: 1px solid var(--theme-section-border);
+  background: var(--theme-section-bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  color: var(--theme-text-primary);
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.connection-matrix-summary:hover {
+  background: var(--theme-section-hover-bg);
+  box-shadow: 0 4px 12px var(--router-card-hover-shadow);
+}
+
+.connection-matrix-summary .summary-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.connection-matrix-summary .summary-count {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* Alternate Background Section */
+.multisig-alternate-section {
+  background: var(--theme-section-bg);
+  padding: 3rem 0;
+  margin: 3rem 0;
+  border-top: 1px solid var(--theme-section-border);
+  border-bottom: 1px solid var(--theme-section-border);
+}
+
+.multisig-alternate-section .multisig-content {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Enhanced Table - Aggressive Bootstrap Overrides */
+.multisig-page .modern-table {
+  background: var(--table-bg) !important;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--table-border);
+  backdrop-filter: blur(10px);
+}
+
+.router-limit-card {
+  background: var(--router-limit-card-bg);
+  border: 1px solid var(--router-limit-card-border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  transition: all 0.25s ease;
+  backdrop-filter: blur(6px);
+}
+
+.router-limit-card.active {
+  background: var(--router-limit-card-active-bg);
+  border-color: var(--router-limit-card-active-border);
+  box-shadow: 0 8px 24px var(--router-limit-card-shadow);
+}
+
+.router-limit-card.status-connected {
+  border-color: var(--router-limit-card-connected-border);
+}
+
+.router-limit-card .chain-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.chain-avatar.small {
+  width: 28px;
+  height: 28px;
+  font-size: 0.7rem;
+}
+
+.router-limit-card .limit-group {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--router-limit-card-divider);
+}
+
+.multisig-page .modern-table table,
+.multisig-page .modern-table .table,
+.multisig-page .modern-table .table-responsive {
+  margin-bottom: 0 !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  --bs-table-bg: transparent !important;
+  --bs-table-color: var(--table-header-color) !important;
+}
+
+.multisig-page .modern-table thead,
+.multisig-page .modern-table thead tr {
+  background: var(--table-header-bg) !important;
+  background-color: var(--table-header-bg) !important;
+}
+
+.multisig-page .modern-table thead th {
+  border-bottom: 2px solid var(--table-border) !important;
+  border-top: none !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+  color: var(--table-header-color) !important;
+  padding: 1rem !important;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.multisig-page .modern-table tbody,
+.multisig-page .modern-table tbody tr,
+.multisig-page .modern-table tbody td {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.multisig-page .modern-table tbody td {
+  padding: 1rem !important;
+  vertical-align: middle;
+  color: var(--theme-text-primary) !important;
+  border-color: var(--table-row-border) !important;
+}
+
+.multisig-page .modern-table tbody tr {
+  border-bottom: 1px solid var(--table-row-border);
+  transition: background 0.2s;
+}
+
+.multisig-page .modern-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.multisig-page .modern-table tbody tr:hover,
+.multisig-page .modern-table tbody tr:hover td {
+  background: var(--table-row-hover-bg) !important;
+  background-color: var(--table-row-hover-bg) !important;
+}
+
+/* Override Bootstrap table text colors */
+.multisig-page .modern-table a {
+  color: var(--table-link-color) !important;
+}
+
+.multisig-page .modern-table a:hover {
+  color: var(--table-link-hover-color) !important;
+}
+
+/* Force text and div colors inside table cells */
+.multisig-page .modern-table td div,
+.multisig-page .modern-table td span:not(.badge) {
+  color: var(--theme-text-primary) !important;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+/* Themed bootstrap controls inside the multisig experience */
+.multisig-page .btn {
+  font-weight: 600;
+  border-radius: 999px;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.multisig-page .btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 0.18rem color-mix(in oklch, var(--theme-input-focus-border) 35%, transparent);
+}
+
+.multisig-page .btn-primary {
+  color: #ffffff !important;
+  background-image: linear-gradient(
+    135deg,
+    var(--theme-button-gradient-start),
+    var(--theme-button-gradient-mid),
+    var(--theme-button-gradient-end)
+  ) !important;
+  border-color: color-mix(in oklch, var(--theme-button-gradient-start) 65%, var(--theme-button-gradient-end) 35%) !important;
+  box-shadow: 0 12px 26px color-mix(in oklch, var(--theme-shadow-hover) 65%, transparent);
+}
+
+.multisig-page .btn-primary:hover,
+.multisig-page .btn-primary:active {
+  background-image: linear-gradient(
+    135deg,
+    var(--theme-button-hover-start),
+    var(--theme-button-hover-mid),
+    var(--theme-button-hover-end)
+  ) !important;
+  border-color: var(--theme-button-hover-start) !important;
+  transform: translateY(-1px);
+}
+
+.multisig-page .btn-outline-primary {
+  color: var(--accent-primary) !important;
+  border-color: color-mix(in oklch, var(--accent-primary) 70%, transparent) !important;
+  background: transparent !important;
+}
+
+.multisig-page .btn-outline-primary:hover,
+.multisig-page .btn-outline-primary:active {
+  background-image: linear-gradient(
+    135deg,
+    var(--theme-button-gradient-start),
+    var(--theme-button-gradient-end)
+  ) !important;
+  color: var(--primary-foreground, #ffffff) !important;
+  border-color: var(--accent-primary) !important;
+}
+
+.multisig-page .btn-outline-light {
+  color: var(--hero-button-color) !important;
+  border-color: var(--hero-button-border) !important;
+  background: transparent !important;
+}
+
+.multisig-page .btn-outline-light:hover,
+.multisig-page .btn-outline-light:active {
+  background: color-mix(in oklch, var(--hero-button-border) 20%, transparent) !important;
+  color: var(--theme-text-primary) !important;
+}
+
+.multisig-page .btn-secondary {
+  background: color-mix(in oklch, var(--theme-section-bg) 65%, var(--theme-card-bg) 35%) !important;
+  border-color: var(--theme-section-border) !important;
+  color: var(--theme-text-primary) !important;
+}
+
+.multisig-page .btn-secondary:hover,
+.multisig-page .btn-secondary:active {
+  background: var(--theme-section-hover-bg) !important;
+  border-color: var(--theme-section-border) !important;
+}
+
+.multisig-page .btn-outline-secondary {
+  color: var(--theme-text-primary) !important;
+  border-color: color-mix(in oklch, var(--theme-section-border) 70%, transparent) !important;
+  background: transparent !important;
+}
+
+.multisig-page .btn-outline-secondary:hover,
+.multisig-page .btn-outline-secondary:active {
+  background: color-mix(in oklch, var(--theme-section-bg) 60%, var(--theme-card-bg) 40%) !important;
+  border-color: var(--theme-section-border) !important;
+}
+
+.multisig-page .btn-success {
+  background: color-mix(in oklch, var(--chip-connected-color) 25%, var(--chip-connected-bg) 75%) !important;
+  border-color: var(--chip-connected-border) !important;
+  color: var(--chip-connected-color) !important;
+}
+
+.multisig-page .btn-success:hover,
+.multisig-page .btn-success:active {
+  background: color-mix(in oklch, var(--chip-connected-color) 70%, var(--chip-connected-bg) 30%) !important;
+  color: #ffffff !important;
+  border-color: var(--chip-connected-color) !important;
+}
+
+.multisig-page .btn-outline-success {
+  color: var(--chip-connected-color) !important;
+  border-color: var(--chip-connected-border) !important;
+  background: transparent !important;
+}
+
+.multisig-page .btn-outline-success:hover,
+.multisig-page .btn-outline-success:active {
+  background: color-mix(in oklch, var(--chip-connected-color) 20%, var(--chip-connected-bg) 80%) !important;
+  color: var(--chip-connected-color) !important;
+}
+
+.multisig-page .btn-warning {
+  background: color-mix(in oklch, var(--accent-warning) 75%, transparent) !important;
+  border-color: color-mix(in oklch, var(--accent-warning) 80%, transparent) !important;
+  color: #1c0f00 !important;
+}
+
+.multisig-page .btn-warning:hover,
+.multisig-page .btn-warning:active {
+  background: color-mix(in oklch, var(--accent-warning) 90%, black 10%) !important;
+  color: #ffffff !important;
+  border-color: color-mix(in oklch, var(--accent-warning) 80%, black 20%) !important;
+}
+
+.multisig-page .btn-danger {
+  background: color-mix(in oklch, var(--accent-danger) 75%, transparent) !important;
+  border-color: color-mix(in oklch, var(--accent-danger) 80%, transparent) !important;
+  color: #ffffff !important;
+}
+
+.multisig-page .btn-danger:hover,
+.multisig-page .btn-danger:active {
+  background: color-mix(in oklch, var(--accent-danger) 90%, black 10%) !important;
+  border-color: color-mix(in oklch, var(--accent-danger) 90%, black 10%) !important;
+}
+
+.multisig-page .btn-outline-danger {
+  color: var(--accent-danger) !important;
+  border-color: color-mix(in oklch, var(--accent-danger) 75%, transparent) !important;
+  background: transparent !important;
+}
+
+.multisig-page .btn-outline-danger:hover,
+.multisig-page .btn-outline-danger:active {
+  background: color-mix(in oklch, var(--accent-danger) 20%, transparent) !important;
+  color: var(--primary-foreground, #ffffff) !important;
+  border-color: var(--accent-danger) !important;
+}
+
+/* Badge emphasis */
+.multisig-page .badge {
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0.25rem 0.65rem;
+}
+
+.multisig-page .badge.bg-primary,
+.multisig-page .badge.text-bg-primary {
+  background: color-mix(in oklch, var(--accent-primary) 85%, transparent) !important;
+  color: var(--primary-foreground, #ffffff) !important;
+}
+
+.multisig-page .badge.bg-secondary,
+.multisig-page .badge.text-bg-secondary {
+  background: color-mix(in oklch, var(--theme-section-bg) 70%, var(--theme-card-bg) 30%) !important;
+  color: var(--theme-text-primary) !important;
+}
+
+.multisig-page .badge.bg-success,
+.multisig-page .badge.text-bg-success {
+  background: color-mix(in oklch, var(--chip-connected-color) 35%, var(--chip-connected-bg) 65%) !important;
+  color: color-mix(in oklch, var(--chip-connected-color) 80%, #ffffff 20%) !important;
+}
+
+.multisig-page .badge.bg-warning,
+.multisig-page .badge.text-bg-warning {
+  background: color-mix(in oklch, var(--accent-warning) 70%, transparent) !important;
+  color: color-mix(in oklch, var(--accent-warning) 15%, black) !important;
+}
+
+.multisig-page .badge.bg-danger,
+.multisig-page .badge.text-bg-danger {
+  background: color-mix(in oklch, var(--accent-danger) 80%, transparent) !important;
+  color: #ffffff !important;
+}
+
+.multisig-page .badge.bg-info,
+.multisig-page .badge.text-bg-info {
+  background: color-mix(in oklch, var(--accent-signal) 65%, transparent) !important;
+  color: color-mix(in oklch, var(--accent-signal) 25%, black) !important;
+}
+
+/* Form Sections */
+.form-section {
+  background: var(--form-section-bg);
+  border: 1px solid var(--form-section-border);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(10px);
+}
+
+.form-section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--theme-text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Dark form inputs for multisig page */
+.multisig-page .form-control,
+.multisig-page .form-select {
+  background: var(--theme-input-bg) !important;
+  border: 1px solid var(--theme-input-border) !important;
+  color: var(--theme-text-primary) !important;
+}
+
+.multisig-page .form-control:focus,
+.multisig-page .form-select:focus {
+  background: var(--theme-input-bg) !important;
+  border-color: var(--theme-input-focus-border) !important;
+  color: var(--theme-text-primary) !important;
+  box-shadow: 0 0 0 0.25rem color-mix(in oklch, var(--theme-input-focus-border) 15%, transparent) !important;
+}
+
+.multisig-page .form-control::placeholder {
+  color: var(--theme-text-muted);
+  opacity: 0.6;
+}
+
+.multisig-page .form-label {
+  color: var(--form-label-color);
+  font-weight: 500;
+}
+
+.multisig-page .form-text {
+  color: var(--form-text-color);
+}
+
+.multisig-page .form-check-input {
+  background-color: var(--theme-input-bg);
+  border-color: var(--form-check-border);
+}
+
+.multisig-page .form-check-input:checked {
+  background-color: var(--form-check-active-bg);
+  border-color: var(--form-check-active-bg);
+}
+
+.multisig-page .form-check-label {
+  color: var(--theme-text-primary);
+}
+
+/* Alert Boxes */
+.multisig-page .alert,
+.multisig-page .shadcn-alert {
+  background: var(--theme-card-bg) !important;
+  border: 1px solid var(--theme-card-border) !important;
+  color: var(--theme-text-primary) !important;
+}
+
+.multisig-page .alert-info,
+.multisig-page .shadcn-alert.alert-info {
+  background: var(--alert-info-bg) !important;
+  border-color: var(--alert-info-border) !important;
+  color: var(--alert-info-text) !important;
+}
+
+.multisig-page .alert .text-muted,
+.multisig-page .shadcn-alert .text-muted {
+  color: var(--theme-text-muted) !important;
+}
+
+/* Status Indicators */
+.status-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.status-indicator.connected {
+  background: var(--chip-connected-bg);
+  color: var(--chip-connected-color);
+  border: 1px solid var(--chip-connected-border);
+}
+
+.status-indicator.disconnected {
+  background: var(--chip-disconnected-bg);
+  color: var(--chip-disconnected-color);
+  border: 1px solid var(--chip-disconnected-border);
+}
+
+.status-indicator.pending {
+  background: color-mix(in oklch, var(--accent-warning) 15%, transparent);
+  color: var(--accent-warning);
+  border: 1px solid color-mix(in oklch, var(--accent-warning) 30%, transparent);
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--theme-text-muted);
+}
+
+.empty-state-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.3;
+}
+
+.empty-state-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.empty-state-description {
+  font-size: 0.95rem;
+}
+
+/* Router Connection Modal Styles */
+.connection-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.connection-status-badge.full {
+  background: var(--chip-connected-bg);
+  color: var(--chip-connected-color);
+  border: 1px solid var(--chip-connected-border);
+}
+
+.connection-status-badge.partial {
+  background: color-mix(in oklch, var(--accent-warning) 15%, transparent);
+  color: var(--accent-warning);
+  border: 1px solid color-mix(in oklch, var(--accent-warning) 30%, transparent);
+}
+
+.connection-status-badge.none {
+  background: var(--chip-disconnected-bg);
+  color: var(--chip-disconnected-color);
+  border: 1px solid var(--chip-disconnected-border);
+}
+
+.modal-connection-card {
+  background: var(--theme-modal-section-bg);
+  border: 1px solid var(--theme-card-border);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  transition: all 0.2s;
+}
+
+.modal-connection-card:hover {
+  background: var(--form-section-hover-bg);
+  border-color: var(--form-section-hover-border);
+}
+
+.modal-connection-card .chain-name {
+  font-weight: 600;
+  color: var(--theme-text-primary);
+}
+
+.modal-connection-card .connection-limits {
+  font-size: 0.85rem;
+  color: var(--theme-text-secondary);
+  margin-top: 0.5rem;
+}
+
+.batch-operations-bar {
+  background: var(--theme-section-bg);
+  border: 1px solid var(--theme-section-border);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search-filter-box {
+  margin-bottom: 1.5rem;
+}
+
+.search-filter-box .form-control {
+  background: var(--theme-input-bg);
+  border: 1px solid var(--theme-input-border);
+  color: var(--theme-text-primary);
+}
+
+.search-filter-box .form-control:focus {
+  border-color: var(--theme-input-focus-border);
+  box-shadow: 0 0 0 0.25rem color-mix(in oklch, var(--theme-input-focus-border) 15%, transparent);
+}
+
+/* Modal Theme Overrides */
+.multisig-page .shadcn-dialog-overlay {
+  background: color-mix(in srgb, rgb(2 6 23) 85%, transparent) !important;
+  backdrop-filter: blur(6px);
+}
+
+.multisig-page .shadcn-dialog-content {
+  background: var(--theme-modal-bg) !important;
+  border: 1px solid var(--theme-card-border) !important;
+  color: var(--theme-text-primary) !important;
+  box-shadow: 0 25px 70px color-mix(in oklch, var(--theme-shadow-hover) 35%, transparent) !important;
+}
+
+.multisig-page .connection-management-modal,
+.multisig-page .connection-detail-modal {
+  background: var(--theme-modal-bg) !important;
+  border: 1px solid var(--theme-card-border) !important;
+  color: var(--theme-text-primary) !important;
+  box-shadow: 0 30px 80px color-mix(in srgb, var(--theme-shadow-hover) 45%, transparent);
+  backdrop-filter: blur(14px);
+}
+
+.multisig-page .connection-management-modal {
+  max-width: min(1200px, 95vw) !important;
+}
+
+.multisig-page .connection-detail-modal {
+  max-width: min(720px, 95vw) !important;
+}
+
+
+.connection-detail-status,
+.connection-detail-limits {
+  border: 1px solid var(--theme-section-border);
+  border-radius: 12px;
+  padding: 1rem;
+  background: color-mix(in srgb, var(--theme-section-bg) 85%, transparent);
+  margin-bottom: 1.5rem;
+}
+
+.connection-detail-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.connection-detail-limits {
+  background: var(--theme-card-bg);
+  margin-bottom: 0;
+}
+
+.limit-label {
+  font-size: 0.8rem;
+  color: var(--theme-text-secondary);
+}
+
+.limit-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--theme-text-primary);
+}
+
+.limit-preset-buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.limit-form {
+  margin-top: 1rem;
+}
+
+.multisig-modal .modal-header,
+.multisig-modal .modal-footer {
+  border-color: var(--theme-section-border);
+  background: var(--theme-modal-section-bg);
+}
+
+.multisig-modal .modal-title {
+  color: var(--theme-text-primary);
+}
+
+.multisig-modal .modal-body {
+  color: var(--theme-text-primary);
+  background: color-mix(in oklch, var(--theme-card-bg) 85%, var(--theme-section-bg) 15%);
+}
+
+.multisig-modal .btn-close {
+  filter: invert(1);
+  opacity: 0.8;
+}
+
+.multisig-modal .btn-close:hover {
+  opacity: 1;
+}
+
+/* Modal Section Headers */
+.modal-section-header {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--theme-text-secondary);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--theme-section-border);
+}
+
+/* Compact Connection Cards */
+.compact-connection-card {
+  background: var(--theme-modal-section-bg);
+  border: 1px solid var(--theme-card-border);
+  border-radius: 8px;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  transition: all 0.2s;
+}
+
+.compact-connection-card:hover {
+  background: var(--form-section-hover-bg);
+  border-color: var(--form-section-hover-border);
+}
+
+.compact-connection-card .chain-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--theme-text-primary);
+}
+
+.compact-connection-card .connection-limits {
+  font-size: 0.8rem;
+  color: var(--theme-text-secondary);
+  margin-top: 0.25rem;
+}
+
+.connection-grid-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.connection-filter-group {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.connection-filter-btn {
+  border: 1px solid var(--theme-section-border);
+  background: var(--theme-card-bg);
+  color: var(--theme-text-primary);
+  border-radius: 999px;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.connection-filter-btn.active {
+  background: var(--chip-connected-bg);
+  border-color: var(--chip-connected-border);
+  color: var(--chip-connected-color);
+  box-shadow: 0 4px 12px var(--router-card-hover-shadow);
+}
+
+.connection-grid-legend {
+  display: flex;
+  gap: 0.85rem;
+  font-size: 0.8rem;
+  color: var(--theme-text-secondary);
+  flex-wrap: wrap;
+}
+
+.legend-dot {
+  display: inline-flex;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 0.35rem;
+  border: 1px solid var(--theme-card-border);
+}
+
+.legend-dot.connected {
+  background: var(--chip-connected-bg);
+  border-color: var(--chip-connected-border);
+}
+
+.legend-dot.missing {
+  background: var(--chip-disconnected-bg);
+  border-color: var(--chip-disconnected-border);
+}
+
+.legend-dot.enrolled-only {
+  background: color-mix(in oklch, var(--accent-warning) 20%, transparent);
+  border-color: color-mix(in oklch, var(--accent-warning) 35%, transparent);
+}
+
+.connection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 200px));
+  gap: 0.75rem;
+  max-height: 620px;
+  overflow-y: auto;
+  padding-right: 0.25rem;
+  justify-content: flex-start;
+}
+
+.connection-grid-card {
+  border: 1px solid var(--theme-card-border);
+  border-radius: 12px;
+  padding: 0.9rem 0.75rem 0.65rem;
+  background: var(--theme-modal-section-bg);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
+  cursor: pointer;
+  text-align: left;
+  color: var(--theme-text-primary);
+  font: inherit;
+  width: 190px;
+  min-height: 120px;
+  position: relative;
+}
+
+.connection-grid-card:hover {
+  transform: translateY(-2px);
+}
+
+.connection-grid-card:focus-visible {
+  outline: 2px solid var(--theme-input-focus-border);
+  outline-offset: 2px;
+}
+
+.connection-grid-card.selected {
+  border-color: var(--theme-input-focus-border);
+  box-shadow: 0 6px 18px var(--router-card-hover-shadow);
+}
+
+.connection-grid-card.state-missing {
+  border-style: dashed;
+}
+
+.connection-grid-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.connection-grid-header > .badge {
+  font-size: 0.65rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+}
+
+.connection-grid-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.connection-grid-checkbox {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.connection-grid-checkbox .form-check-input {
+  margin: 0;
+}
+
+.connection-grid-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  min-width: 0;
+}
+
+.connection-name-row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.connection-grid-meta .chain-name {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.connection-grid-meta .chain-address {
+  font-size: 0.7rem;
+  color: var(--theme-text-secondary);
+  font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.connection-grid-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 1.5rem;
+  border: 1px dashed var(--theme-section-border);
+  border-radius: 12px;
+  color: var(--theme-text-secondary);
+}
+
+@media (max-width: 520px) {
+  .connection-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .connection-grid-card {
+    width: 100%;
+  }
+}
+
+/* Limit Input Groups */
+.limit-input-group {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.limit-input-group .form-control {
+  flex: 1;
+}
+
+.limit-input-group .btn-group {
+  display: flex;
+  gap: 0.25rem;
+}
+
+/* Router Limits Card */
+.router-limits-card {
+  background: var(--router-card-bg);
+  border: 1px solid var(--router-card-border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s;
+}
+
+.router-limits-card:hover {
+  border-color: var(--router-card-hover-border);
+  box-shadow: 0 4px 12px var(--router-card-hover-shadow);
+}
+
+.router-limits-card.has-limits {
+  border-color: var(--chip-connected-border);
+  background: color-mix(in oklch, var(--chip-connected-bg) 50%, var(--router-card-bg) 50%);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .multisig-hero h1 {
+    font-size: 2rem;
+  }
+
+  .multisig-hero-content,
+  .multisig-stats,
+  .multisig-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .router-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .multisig-nav-tabs {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .multisig-nav-tab {
+    white-space: nowrap;
+  }
+}

@@ -1,0 +1,364 @@
+{
+  "app": {
+    "titleFreedom": "Fahafahana",
+    "titleBridge": "Tetezana"
+  },
+  "nav": {
+    "settings": "Fandrindrana",
+    "menu": "Menio",
+    "preferences": "Safidy",
+    "switchTheme": "Fisehoana",
+    "theme": {
+      "dark": "Maizina",
+      "light": "Mazava"
+    },
+    "switchPalette": "Hanova Paleta",
+    "wiki": "Tahirin-kevitra / Wiki",
+    "contracts": "Fifanarahana",
+    "faq": "Fanontaniana Fametraka Matetika",
+    "logout": "Hivoaka",
+    "language": "Fiteny",
+    "languageSearchPlaceholder": "Hitady fiteny",
+    "languageNoResults": "Tsy nahita fiteny",
+    "close": "Hideho"
+  },
+  "addNetworks": {
+    "title": "Ampio Tambazotra",
+    "description": "Tsindrio ny bokotra iray eto ambany mba hanampiana Tambazotra amin'ny kitapom-bolanao. Manamora ny fifindrana eo anelanelan'ny rojo izany mandritra ny fitsapana."
+  },
+  "tabs": {
+    "convert": "Hanova",
+    "bridge": "Tetezana"
+  },
+  "convert": {
+    "token": "Token",
+    "selectToken": "Safidio ny Token",
+    "balance": "Vola Sisa",
+    "noConvertibleTokens": "Tsy misy token azo ovaina ao amin'ny {{chainName}}",
+    "convert": "Hanova",
+    "addToWalletLabel": "Ampidiro {{symbol}} amin'ny {{chainName}} ao amin'ny kitapom-bola",
+    "addToWalletButton": "Ampidiro ao amin'ny Kitapom-bola",
+    "addingToken": "Manampy...",
+    "addTokenError": "Tsy afaka manampy token ao amin'ny kitapom-bola",
+    "legacyTokenMissing": "Tsy hita ny token taloha ho an'ity rojo ity",
+    "tigerOGMissing": "Tsy hita ny token TigerOG ho an'ity rojo ity",
+    "networkWarning": {
+      "title": "Tambazotra Diso",
+      "message": "Ny Fanovana Token dia tsy misy afa-tsy amin'ny BSC Chain.",
+      "description": "Azafady mifindra amin'ny BSC Chain ao amin'ny kitapom-bolanao mba hanovana tokens, na mandehana any amin'ny takelaka Tetezana mba hamindrana tokens eo anelanelan'ny rojo."
+    }
+  },
+  "bridge": {
+    "fromChain": "Avy amin'ny Rojo",
+    "selectChainPlaceholder": "Hifidy rojo",
+    "toChain": "Mankany amin'ny Rojo",
+    "selectDestinationPlaceholder": "Hifidy toerana",
+    "noDestination": "Tsy Misy Toerana",
+    "noBridgeableTokens": "Tsy misy token azo ampitaina",
+    "bridgeButton": "Mampita Token",
+    "getFeeQuote": "Hahazo Toman-karama Sarany",
+    "viewOnAxelarscan": "Jereo ao amin'ny Axelar Explorer",
+    "addDestinationTokenLabel": "Ampidiro {{symbol}} amin'ny {{chainName}} ao amin'ny kitapom-bola",
+    "addTokenError": "Tsy afaka manampy token ao amin'ny kitapom-bola",
+    "estimatedTime": "Fotoana Tombanana",
+    "recentTransactions": "Fifampiraharahana Farany",
+    "clearHistory": "Hamafa tantara",
+    "historyStoredLocally": "Ny tantaran'ny fifampiraharahana dia voatahiry eto amin'ity fitaovana ity"
+  },
+  "settings": {
+    "title": "Fandrindrana",
+    "environment": "Tontolo Iainana",
+    "rpcEndpoints": "Farany RPC",
+    "rpcEndpointsHelp": "Havaozina ny RPC URL ampiasaina ho an'ny rojo tsirairay ao amin'ny tontolo iainana voafidy.",
+    "noChainsConfigured": "Tsy misy rojo nomanina ho an'ity tontolo iainana ity.",
+    "cancel": "Aoka ihany",
+    "save": "Tehirizo"
+  },
+  "wallet": {},
+  "login": {
+    "title": "Tonga Soa Indray",
+    "subtitle": "Midira hitohy mankany amin'ny Tetezana Fahafahana",
+    "emailLabel": "Mailaka",
+    "emailPlaceholder": "anarana@ohatra.mg",
+    "passwordLabel": "Teny Miafina",
+    "passwordPlaceholder": "Ampidiro ny teny miafina",
+    "rememberMe": "Tsarovy aho eto amin'ity fitaovana ity",
+    "submit": "Hiditra",
+    "validation": {
+      "required": "Mailaka sy teny miafina no takiana.",
+      "invalid": "Mailaka na teny miafina tsy mety."
+    }
+  },
+  "landing": {
+    "banner": {
+      "title": "Vaovao eto?",
+      "message": "Mianara momba ny Freedom Bridge sy ny fomba hifandraisana ny TigerOG tokens manerana ny rojo."
+    },
+    "hero": {
+      "badge": "Natolotry ny Axelar",
+      "title": "Afaho ny <1/> <2>Fanànanao</2>",
+      "subtitle": "Ampitao malalaka ny TigerOG tokens manerana ny rojo amin'ny alàlan'ny Interchain Token Service an'ny Axelar. Azo antoka, haingana, ary tsy misy hetra.",
+      "launchApp": "Alefaso ny App",
+      "documentation": "Tahirin-kevitra"
+    },
+    "stats": {
+      "messaging": "Sokajy Fandefasan-kafatra",
+      "networks": "Tambazotra Mivantana",
+      "fees": "Saran'ny Protokol",
+      "finality": "Fahavitana"
+    },
+    "features": {
+      "title": "Fifandraisana Tsy Misy Fanomezan-dalana",
+      "description": "Ny Tetezana Fahafahana dia mampiasa ny ITS Axelar mba hanomezana traikefa tetezana tsy misy olana, azo antoka, ary tsy misy hetra manerana ny {{count}}+ blockchains.",
+      "stopDecay": {
+        "title": "Ajanony ny Fahasimbana",
+        "description": "Ny tokens taloha dia mandoro ny 10-11% amin'ny sandanao isaky ny mividy sy mivarotra. Ny fanovana ho TigerOG dia manakana io fandehanan-dra io avy hatrany, mitahiry ny 100% amin'ny sandanao.",
+        "graphLabel1": "100% Voatahiry (TigerOG)",
+        "graphLabel2": "-40% Sanda (Hetra Taloha 10%)"
+      },
+      "conversion": {
+        "title": "Fanovana 1:1",
+        "description": "Ny totalin'ny famatsiana dia tsy miova mihitsy. Ny tokens dia mihidy ao anaty fifanarahana fifindra-monina azo antoka, ary misy mitovy marina 1:1 ampiasaina. Tsy misy fiakaran'ny vidim-piainana, tsy misy fampihenana."
+      },
+      "multichain": {
+        "title": "Rojo Maro",
+        "description": "Alefaso indray mandeha, midira na aiza na aiza. Ny fanananao dia lasa token iraisam-pirenena teratany amin'ny rojo maro anisan'izany ny Ethereum, BNB Chain, Base, ary maro hafa."
+      },
+      "security": {
+        "title": "Fiarovana Axelar",
+        "description": "Natolotry ny tambazotra fitsinjaram-pahefana an'ny Axelar. Ny ITS dia manome antoka fa ny tokens-nao dia afindra azo antoka sy tsy miovaova manerana ny tambazotra rehetra mifandray.",
+        "button": "Atombohy ny Tetezana"
+      }
+    },
+    "teaser": {
+      "title": "Te hanana vola hafa ve ianao?",
+      "subtitle": "Ahoana ny hevitrao momba ny <lunc>LUNC</lunc>, <crepe>Crepe</crepe>, na <shiba>Shiba</shiba>"
+    },
+    "cta": {
+      "title": "Vonona ny ho afaka?",
+      "description": "Midira amin'ny revolisiona iraisam-pirenena. Latsaky ny iray minitra ny famonosana ny fanànanao ary manomboka ny tetezana amin'ny alàlan'ny Axelar.",
+      "button": "Alefaso ny App Izao"
+    }
+  },
+  "wiki": {
+    "title": "Wiki Tetezana Fahafahana",
+    "searchPlaceholder": "Hitady tahirin-kevitra...",
+    "header": {
+      "title": "Tahirin-kevitra",
+      "subtitle": "Mianara ny fomba famonosana tokens taloha, ny fomba fampifandraisana ny rojo, ary ny fampidirana amin'ny Tetezana Fahafahana."
+    },
+    "nav": {
+      "gettingStarted": "Fanombohana",
+      "coreConcepts": "Hevitra Fototra",
+      "developers": "Mpamolavola",
+      "tigerogSupply": "Famatsiana TigerOG",
+      "lionogSupply": "Famatsiana LionOG",
+      "frogogSupply": "Famatsiana FrogOG"
+    },
+    "articles": {
+      "whatIs": {
+        "title": "Inona ny Tetezana Fahafahana?",
+        "content": "Freedom Bridge dia protokol fitsinjaram-pahefana natsangana tamin'ny Axelar Interchain Token Service (ITS). Natao hanafaka ny tokens amin'ny fameperana rojo tokana sy ny hetra fifampiraharana avo izy. Amin'ny fanovana tokens mahazatra ho fananana mifanaraka amin'ny interchain, ny mpampiasa dia afaka mamindra ny sandany malalaka manerana ny blockchains tohana.",
+        "taxFreeTitle": "Famindrana Tsy Misy Hetra",
+        "taxFreeDesc": "Matetika ny tokens taloha dia manana hetra 10%+. Ny tokens TigerOG dia manana hetra 0%.",
+        "omnichainTitle": "Interchain",
+        "omnichainDesc": "Mamindra fananana avy hatrany eo anelanelan'ny {{count}}+ blockchains amin'ny alàlan'ny Axelar."
+      },
+      "howToConvert": {
+        "title": "Ahoana ny Fanovana Tokens",
+        "step1": "Ampifandraiso amin'ny rojo loharano (oh: BNB Chain) ny kitapom-bolanao.",
+        "step2": "Mankanesa any amin'ny takelaka <strong>Hanova</strong>.",
+        "step3": "Safidio ny token taloha tianao hovaina.",
+        "step4": "Ekeo ny fifanarahana Migration handaniana ny tokens anao.",
+        "step5": "Tsindrio <strong>Hanova</strong> mba hametrahana ny tokens taloha anao ary handray ny habetsahan'ny tokens \"TigerOG\" mitovy.",
+        "note": "<strong>Fanamarihana:</strong> Ny fanovana dia miteraka ny hetra fifampiraharana amin'ny token taloha (mandritra ny fanatsarana) raha toa ka manefa hetra amin'ny famindrana ny token anao. Na izany aza, rehefa voafonosina ho TigerOG dia afaka amin'io hetra io ny famindrana sy tetezana manaraka rehetra."
+      },
+      "supportedNetworks": {
+        "title": "Tambazotra Tohana",
+        "content": "Ny Freedom Bridge dia manohana tontolo iainana mitombo amin'ny {{count}}+ blockchains, mamela ny fifandraisana tsy misy olana manerana ny tontolo EVM amin'ny alàlan'ny Axelar."
+      },
+      "xerc20": {
+        "title": "Tokens Interchain",
+        "content": "Ny Axelar Interchain Token Service (ITS) dia mamela ny tokens hapetraka amin'ny rojo maro miaraka amin'ny adiresy tsy miovaova sy fitantanana famatsiana miray. Ny Freedom Bridge dia mampiasa ITS mba hiantohana fa ny TigerOG dia mijanona ho fananana kanonika na aiza na aiza misy azy."
+      },
+      "axelar": {
+        "title": "Tambazotra Axelar",
+        "content": "Mampiasa Axelar izahay ho sosona fifandraisana. Axelar dia tambazotra fitsinjaram-pahefana izay mampifandray blockchains samihafa, mamela ny fifandraisana azo antoka eo amin'ny rojo sy ny famindrana fananana. Ny modely fiarovana an'ny Axelar dia miankina amin'ny mpanamarina tsy misy fanomezan-dalana, manome fiarovana avo lenta ho an'ny tokens interchain."
+      },
+      "migration": {
+        "title": "Lojika Fifindra-monina",
+        "content": "Ny fifanarahana Migration dia napetraka eo amin'ny rojo niaviany (oh: BSC). Mitazona ny tokens taloha tany am-boalohany ho fitahirizana izy io. Rehefa manavao tokens ianao dia mametraka ao amin'ny fifanarahana Migration. Rehefa manokatra ianao (raha tohana) dia mandoro ny solontena TigerOG mba hanafaka ny tokens tany am-boalohany. Izany dia miantoka ny fanohanana hentitra 1:1."
+      },
+      "contracts": {
+        "title": "Adiresy Fifanarahana Marani-tsaina",
+        "colNetwork": "Tambazotra",
+        "colType": "Karazana Fifanarahana",
+        "colAddress": "Adiresy"
+      },
+      "security": {
+        "title": "Modely Fiarovana",
+        "content": "Ny fiarovana dia natsangana ao amin'ny sosona rehetra amin'ny Freedom Bridge:",
+        "point1": "<strong>Maritrano Fifindra-monina:</strong> Ny tokens taloha dia tazonina ao anaty fifanarahana marani-tsaina voamarina sy tsy azo ovaina.",
+        "point2": "<strong>Axelar Validators:</strong> Ny hafatra miampita rojo dia voamarina amin'ny alàlan'ny tambazotra fitsinjaram-pahefana an'ny Axelar.",
+        "point3": "<strong>Famatsiana Tsy Miovaova:</strong> ITS dia mitantana ny famoronana sy fandoroana mba hitazonana ny totalin'ny famatsiana tsy miova manerana ny rojo rehetra.",
+        "point4": "<strong>Lojika Voamarina:</strong> Niorina tamin'ny tranomboky mahazatra Axelar sy OpenZeppelin."
+      },
+      "supplyCommon": {
+        "howWeCalculated": "Fomba Kajy",
+        "verification": "Fanamarinana",
+        "verificationDesc": "Ny antontan'isa momba ny famatsiana dia azo hamarinina tsy miankina ao amin'ny rojo:",
+        "table": {
+          "category": "Sokajy",
+          "amount": "Isany",
+          "percentOfTotal": "% ny Totaly",
+          "originalSupply": "Totalin'ny Famatsiana Tany Am-boalohany",
+          "deadAddress": "Adiresy Maty (Nodorana)",
+          "contractBalance": "Fifandanjan'ny Fifanarahana (Mihitsoka)",
+          "circulatingSupply": "Famatsiana Miodina"
+        },
+        "deadAddressTitle": "1. Adiresy Maty",
+        "contractBalanceTitle": "2. Fifandanjan'ny Fifanarahana",
+        "lpLockedTitle": "3. Tokens LP Mihidy"
+      },
+      "tigerogSupply": {
+        "title": "Fizarana Famatsiana TigerOG",
+        "intro": "TigerOG dia manana famatsiana miodina raikitra avy amin'ny token BNBTiger tany am-boalohany. Ny kajy ny famatsiana dia mihevitra ny tokens rehetra nodorana sy mihidy maharitra.",
+        "lpLocked": "LP Mihidy (86.18% ny LP Nodorana)",
+        "deadAddressDesc": "Ny tokens nalefa tany amin'ny <code>0x000...dEaD</code> dia nodorana maharitra ary tsy azo averina intsony. Tafiditra ao anatin'izany ny tokens nodorana tamin'ny alàlan'ny mekanika hetra BNBTiger tany am-boalohany.",
+        "contractBalanceDesc": "Misy tokens kely mihitsoka ao amin'ny fifanarahana BNBTiger mihitsy. Ireo tokens ireo dia tsy azo idirana ary esorina amin'ny fiodinana.",
+        "lpLockedDesc": "Ny dobo liquidity PancakeSwap dia misy tokens BNBTiger miaraka amin'ny BNB. Rehefa nodorana ny tokens LP (nalefa tany amin'ny adiresy maty), dia mihidy maharitra ny tokens ao anaty dobo.",
+        "lpBurnedPercent": "Tokens LP nodorana: 86.18% amin'ny tokens LP rehetra",
+        "lpLockedPercent": "Noho izany, 86.18% amin'ny tokens ao amin'ny LP dia mihidy maharitra",
+        "note": "<strong>Fanamarihana:</strong> TigerOG dia mitazona ny tahan'ny 1:1 miaraka amin'ny BNBTiger mandritra ny fifindra-monina. Ny famatsiana miodina ny TigerOG dia mifanandrify amin'ny famatsiana miodina marina ny BNBTiger aorian'ny fanisana ny tokens rehetra nodorana sy mihidy.",
+        "launchData": "<strong>Angona Fanombohana:</strong> Ireo tarehimarika ireo dia nokajiana tamin'ny fanombohana. Ny token BNBTiger taloha dia manohy mandoro tokens isaky ny fifampiraharahana fividianana/fivarotana, noho izany dia mety ho ambany kely ny famatsiana miodina tena izy noho ny aseho.",
+        "legacyContract": "Fifanarahana Token BNBTiger",
+        "ogContract": "Fifanarahana Token TigerOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,772,706,396,234,535,780,783,775",
+          "deadPercent": "57.73%",
+          "contract": "−6,142,342,823,271,327",
+          "contractPercent": "<0.01%",
+          "lp": "−565,059,839,948,518,979,124,912",
+          "lpPercent": "5.65%",
+          "circulating": "3,662,233,757,674,602,416,819,986",
+          "circulatingPercent": "36.62%"
+        }
+      },
+      "lionogSupply": {
+        "title": "Fizarana Famatsiana LionOG",
+        "intro": "LionOG dia manana famatsiana miodina raikitra avy amin'ny token BNBLion tany am-boalohany. Ny kajy ny famatsiana dia mihevitra ny tokens rehetra nodorana sy mihidy maharitra.",
+        "lpLocked": "LP Mihidy (99.98% ny LP Nodorana)",
+        "deadAddressDesc": "Ny tokens nalefa tany amin'ny <code>0x000...dEaD</code> dia nodorana maharitra ary tsy azo averina intsony. Tafiditra ao anatin'izany ny tokens nodorana tamin'ny alàlan'ny mekanika hetra BNBLion tany am-boalohany.",
+        "contractBalanceDesc": "Misy tokens kely mihitsoka ao amin'ny fifanarahana BNBLion mihitsy. Ireo tokens ireo dia tsy azo idirana ary esorina amin'ny fiodinana.",
+        "lpLockedDesc": "Ny dobo liquidity PancakeSwap dia misy tokens BNBLion miaraka amin'ny BNB. Rehefa nodorana ny tokens LP (nalefa tany amin'ny adiresy maty), dia mihidy maharitra ny tokens ao anaty dobo.",
+        "lpBurnedPercent": "Tokens LP nodorana: 99.98% amin'ny tokens LP rehetra",
+        "lpLockedPercent": "Noho izany, 99.98% amin'ny tokens ao amin'ny LP dia mihidy maharitra",
+        "note": "<strong>Fanamarihana:</strong> LionOG dia mitazona ny tahan'ny 1:1 miaraka amin'ny BNBLion mandritra ny fifindra-monina. Ny famatsiana miodina ny LionOG dia mifanandrify amin'ny famatsiana miodina marina ny BNBLion aorian'ny fanisana ny tokens rehetra nodorana sy mihidy.",
+        "launchData": "<strong>Angona Fanombohana:</strong> Ireo tarehimarika ireo dia nokajiana tamin'ny fanombohana. Ny token BNBLion taloha dia manohy mandoro tokens isaky ny fifampiraharahana fividianana/fivarotana, noho izany dia mety ho ambany kely ny famatsiana miodina tena izy noho ny aseho.",
+        "legacyContract": "Fifanarahana Token BNBLion",
+        "ogContract": "Fifanarahana Token LionOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,724,597,218,422,106,614,085,614",
+          "deadPercent": "57.25%",
+          "contract": "−9,219,967,745,410,740,095,290",
+          "contractPercent": "<0.01%",
+          "lp": "−442,490,152,327,271,918,655,109",
+          "lpPercent": "4.42%",
+          "circulating": "3,832,903,409,282,876,056,519,182",
+          "circulatingPercent": "38.33%"
+        }
+      },
+      "frogogSupply": {
+        "title": "Fizarana Famatsiana FrogOG",
+        "intro": "FrogOG dia manana famatsiana miodina raikitra avy amin'ny token BNBFrog tany am-boalohany. Ny kajy ny famatsiana dia mihevitra ny tokens rehetra nodorana sy mihidy maharitra.",
+        "lpLocked": "LP Mihidy (99.31% ny LP Nodorana)",
+        "deadAddressDesc": "Ny tokens nalefa tany amin'ny <code>0x000...dEaD</code> dia nodorana maharitra ary tsy azo averina intsony. Tafiditra ao anatin'izany ny tokens nodorana tamin'ny alàlan'ny mekanika hetra BNBFrog tany am-boalohany.",
+        "contractBalanceDesc": "Misy tokens kely mihitsoka ao amin'ny fifanarahana BNBFrog mihitsy. Ireo tokens ireo dia tsy azo idirana ary esorina amin'ny fiodinana.",
+        "lpLockedDesc": "Ny dobo liquidity PancakeSwap dia misy tokens BNBFrog miaraka amin'ny BNB. Rehefa nodorana ny tokens LP (nalefa tany amin'ny adiresy maty), dia mihidy maharitra ny tokens ao anaty dobo.",
+        "lpBurnedPercent": "Tokens LP nodorana: 99.31% amin'ny tokens LP rehetra",
+        "lpLockedPercent": "Noho izany, 99.31% amin'ny tokens ao amin'ny LP dia mihidy maharitra",
+        "note": "<strong>Fanamarihana:</strong> FrogOG dia mitazona ny tahan'ny 1:1 miaraka amin'ny BNBFrog mandritra ny fifindra-monina. Ny famatsiana miodina ny FrogOG dia mifanandrify amin'ny famatsiana miodina marina ny BNBFrog aorian'ny fanisana ny tokens rehetra nodorana sy mihidy.",
+        "launchData": "<strong>Angona Fanombohana:</strong> Ireo tarehimarika ireo dia nokajiana tamin'ny fanombohana. Ny token BNBFrog taloha dia manohy mandoro tokens isaky ny fifampiraharahana fividianana/fivarotana, noho izany dia mety ho ambany kely ny famatsiana miodina tena izy noho ny aseho.",
+        "legacyContract": "Fifanarahana Token BNBFrog",
+        "ogContract": "Fifanarahana Token FrogOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−740,059,884,911,899,485,982,976",
+          "deadPercent": "7.40%",
+          "contract": "−4,036,008,092,593,983,879,741",
+          "contractPercent": "<0.01%",
+          "lp": "−874,144,424,929,004,044,398,902",
+          "lpPercent": "8.74%",
+          "circulating": "8,385,795,686,123,088,377,024,138",
+          "circulatingPercent": "83.86%"
+        }
+      }
+    }
+  },
+  "contracts": {
+    "title": "Adiresy Fifanarahana",
+    "header": {
+      "title": "Fifanarahana Marani-tsaina",
+      "subtitle": "Adiresy fametrahana ofisialy ho an'ny tokens sy tetezana manerana ny tontolo iainana Freedom Bridge."
+    },
+    "tabs": {
+      "overview": "Topimaso",
+      "byToken": "Araka ny Token",
+      "byChain": "Araka ny Rojo",
+      "liquidity": "Liquidity"
+    },
+    "liquidity": {
+      "title": "Dobo Liquidity"
+    }
+  },
+  "faq": {
+    "title": "Fanohanana Tetezana Fahafahana",
+    "header": "Fanontaniana Fametraka Matetika",
+    "subtitle": "Valiny amin'ny fanontaniana mahazatra momba ny TigerOG, tetezana, ary Axelar.",
+    "cta": {
+      "title": "Mbola manana fanontaniana?",
+      "description": "Midira ao amin'ny vondrom-piaraha-moninay ao amin'ny Telegram na jereo ny Wiki amin'ny antsipiriany ho an'ny torolàlana ara-teknika.",
+      "wiki": "Tsidiho ny Wiki",
+      "telegram": "Midira ao amin'ny Telegram"
+    },
+    "questions": {
+      "q1": "Inona ny tanjon'ny fanovana ny tokens-ko?",
+      "a1": "Ny fanovana ny tokens-nao ho TigerOG dia manaisotra ny hetra fifampiraharana (matetika 10-12%) mifandraika amin'ny token taloha. Izany koa dia mamela anao hampifandray ireo tokens ireo amin'ny blockchains hafa toa ny Ethereum, Base, ary maro hafa amin'ny alàlan'ny Axelar, mamela ny fidirana amin'ny tontolo iainana vaovao.",
+      "q2": "Azo antoka ve ny fampiasana ny Freedom Bridge?",
+      "a2": "Eny. Ny protokol dia mampiasa fifanarahana Migration azo antoka sy ny Interchain Token Service an'ny Axelar. Rehefa manova ianao, ny BNBTiger anao dia nodorana maharitra ary mandray TigerOG amin'ny tahan'ny 1:1 ianao. Ny mekanika fandoroana dia miantoka fa ny totalin'ny famatsiana dia voatantana tsara manerana ny rojo rehetra.",
+      "q3": "Misy sarany ve?",
+      "a3": "Ny Freedom Bridge mihitsy dia tsy manefa sarany amin'ny fanovana. Tsy mandoa afa-tsy ny saran'ny entona blockchain mahazatra ianao. Ny tetezana eo anelanelan'ny rojo dia misy saran'ny entona miampita rojo aloa amin'ny Axelar handrakofana ny vidin'ny fandefasana.",
+      "q4": "Inona no mitranga raha very ny tokens-ko?",
+      "a4": "Ny tokens TigerOG dia mitondra tena toy ny token ERC20 hafa rehetra. Raha very ny fidirana amin'ny kitapom-bolanao ianao, dia tsy azo averina izy ireo. Tehirizo tsara foana ny fanalahidinao manokana sy ny fehezanteny fanarenana.",
+      "q5": "Afaka manova ny tokens TigerOG-ko hiverina amin'ny BNBTiger ve aho?",
+      "a5": "Tsia. Ny fifindra-monina dia fiovam-po iray lalana. Rehefa manova BNBTiger ho TigerOG ianao, ny tokens BNBTiger anao dia nodorana maharitra (nalefa tany amin'ny adiresy maty). Izany dia natao — TigerOG no dika vaovao, tsy misy hetra natao hanoloana tanteraka ny token taloha.",
+      "q6": "Inona ny tambazotra tohana?",
+      "a6": "Manohana rojo EVM maro izahay amin'ny alàlan'ny Axelar, anisan'izany ny BNB Chain, Ethereum, Base, ary maro hafa. Jereo ny Wiki ho an'ny lisitra feno amin'ny tambazotra tohana.",
+      "q7": "Maharitra hafiriana ny tetezana?",
+      "a7": "Ny hafainganam-pandehan'ny tetezana dia miankina amin'ny fahavitan'ny rojo loharano sy ny fandefasan'ny Axelar. Matetika, ny famindrana eo anelanelan'ny rojo dia maharitra 2-5 minitra.",
+      "q8": "Inona ny famatsiana miodina ny tokens OG?",
+      "a8": "Ny token OG tsirairay dia manana famatsiana miodina raikitra avy amin'ny token BNB tany am-boalohany, manisa ny tokens nodorana, fifandanjana fifanarahana mihitsoka, sy LP mihidy. TigerOG: ~3.66 septillion (36.62% ny tany am-boalohany). LionOG: ~3.83 septillion (38.33% ny tany am-boalohany). FrogOG: ~8.39 septillion (83.86% ny tany am-boalohany). Jereo ny Wiki ho an'ny antsipiriany feno."
+    }
+  },
+  "common": {
+    "from": "Avy amin'ny",
+    "to": "Mankany amin'ny",
+    "max": "MAX",
+    "chainId": "ID Rojo",
+    "bscChain": "BSC Chain",
+    "insufficientBalance": "Vola sisa tsy ampy.",
+    "failedToSwitchNetwork": "Tsy nahomby ny fifindrana tambazotra. Azafady mifindra amin'ny alalan'ny tanan'ny kitapom-bolanao.",
+    "failedToFetchFeeQuote": "Tsy nahomby ny fandraisan-drakitra toman-karama sarany.",
+    "unableToDetermineGas": "Tsy afaka mamaritra ny fandoavam-bola Axelar gas",
+    "bridgeTxFailed": "Fifampiraharahana tetezana tsy nahomby",
+    "estimatedGas": "Axelar Gas Tombanana",
+    "success": "Nahomby!",
+    "viewOnExplorer": "Jereo ao amin'ny Explorer",
+    "bridging": "Mampita...",
+    "transactionFailed": "Tsy Nahomby ny Fifampiraharahana",
+    "search": "Hitady",
+    "backToApp": "Miverina amin'ny App"
+  }
+}

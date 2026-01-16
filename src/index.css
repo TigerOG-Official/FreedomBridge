@@ -1,0 +1,114 @@
+@import "tailwindcss";
+/* Import existing theme variables */
+@import "./styles/theme.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Map shadcn color names to theme-friendly palettes */
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 47.4% 11.2%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 47.4% 11.2%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 47.4% 11.2%;
+  --primary: 243 75% 58%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 214.3 31.8% 91.4%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  --muted: 214.3 31.8% 91.4%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 215 22% 90%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 215 20.2% 65.1%;
+  --radius: 0.75rem;
+
+  /* Bridge shadcn + legacy theme variables */
+  --color-background: var(--theme-card-bg);
+  --color-foreground: var(--theme-text-primary);
+  --color-card: var(--theme-card-bg);
+  --color-card-foreground: var(--theme-text-primary);
+  --color-popover: var(--theme-modal-bg);
+  --color-popover-foreground: var(--theme-text-primary);
+  --color-primary: var(--accent-primary);
+  --color-primary-foreground: var(--theme-card-bg);
+  --color-secondary: var(--theme-section-bg);
+  --color-secondary-foreground: var(--theme-text-secondary);
+  --color-muted: var(--theme-section-bg);
+  --color-muted-foreground: var(--theme-text-muted);
+  --color-accent: var(--theme-section-hover-bg);
+  --color-accent-foreground: var(--theme-text-primary);
+  --color-destructive: var(--accent-warning);
+  --color-destructive-foreground: var(--theme-card-bg);
+  --color-border: var(--theme-card-border);
+  --color-input: var(--theme-input-bg);
+  --color-ring: var(--theme-input-focus-border);
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+}
+
+html[data-theme="dark"] {
+  --background: 224 71% 4%;
+  --foreground: 213 31% 91%;
+  --card: 219 42% 10%;
+  --card-foreground: 213 31% 91%;
+  --popover: 222 47% 11%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 204 71% 53%;
+  --primary-foreground: 198 100% 96%;
+  --secondary: 215 28% 17%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 217 33% 17%;
+  --muted-foreground: 215 20% 65%;
+  --accent: 217 33% 17%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 85.7% 97.3%;
+  --border: 217 33% 17%;
+  --input: 217 33% 17%;
+  --ring: 212 21% 14%;
+}
+
+:root,
+body {
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll from background elements */
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dark {
+  --background: 224 71% 4%;
+  --foreground: 213 31% 91%;
+  --card: 219 42% 10%;
+  --card-foreground: 213 31% 91%;
+  --popover: 222 47% 11%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 204 71% 53%;
+  --primary-foreground: 198 100% 96%;
+  --secondary: 215 28% 17%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 217 33% 17%;
+  --muted-foreground: 215 20% 65%;
+  --accent: 217 33% 17%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 85.7% 97.3%;
+  --border: 217 33% 17%;
+  --input: 217 33% 17%;
+  --ring: 212 21% 14%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

@@ -1,0 +1,364 @@
+{
+  "app": {
+    "titleFreedom": "Freedom",
+    "titleBridge": "Bridge"
+  },
+  "nav": {
+    "settings": "Paramètres",
+    "menu": "Menu",
+    "preferences": "Préférences",
+    "switchTheme": "Apparence",
+    "theme": {
+      "dark": "Sombre",
+      "light": "Clair"
+    },
+    "switchPalette": "Changer de palette",
+    "wiki": "Documentation / Wiki",
+    "contracts": "Contrats",
+    "faq": "FAQ",
+    "logout": "Se déconnecter",
+    "language": "Langue",
+    "languageSearchPlaceholder": "Rechercher des langues",
+    "languageNoResults": "Aucune langue trouvée",
+    "close": "Fermer"
+  },
+  "addNetworks": {
+    "title": "Ajouter des réseaux",
+    "description": "Cliquez sur un bouton ci-dessous pour ajouter des réseaux à votre portefeuille. Cela facilite le passage d'une chaîne à l'autre pendant les tests."
+  },
+  "tabs": {
+    "convert": "Convertir",
+    "bridge": "Bridge"
+  },
+  "convert": {
+    "token": "Token",
+    "selectToken": "Sélectionner un Token",
+    "balance": "Solde",
+    "noConvertibleTokens": "Aucun token à convertir sur {{chainName}}",
+    "convert": "Convertir",
+    "addToWalletLabel": "Importer {{symbol}} sur {{chainName}} dans le portefeuille",
+    "addToWalletButton": "Importer dans le portefeuille",
+    "addingToken": "Ajout en cours…",
+    "addTokenError": "Impossible d'ajouter le token au portefeuille",
+    "legacyTokenMissing": "Token hérité manquant pour cette chaîne",
+    "tigerOGMissing": "Token TigerOG manquant pour cette chaîne",
+    "networkWarning": {
+      "title": "Mauvais réseau",
+      "message": "La conversion de tokens n'est disponible que sur la chaîne BSC.",
+      "description": "Veuillez passer à la chaîne BSC dans votre portefeuille pour convertir des tokens, ou accédez à l'onglet Bridge pour transférer des tokens entre les chaînes."
+    }
+  },
+  "bridge": {
+    "fromChain": "De la chaîne",
+    "selectChainPlaceholder": "Sélectionner une chaîne",
+    "toChain": "Vers la chaîne",
+    "selectDestinationPlaceholder": "Sélectionner une destination",
+    "noDestination": "Pas de destination",
+    "noBridgeableTokens": "Aucun token pontable",
+    "bridgeButton": "Ponter les Tokens",
+    "getFeeQuote": "Obtenir un devis de frais",
+    "viewOnAxelarscan": "Voir sur Axelarscan",
+    "addDestinationTokenLabel": "Importer {{symbol}} sur {{chainName}} dans le portefeuille",
+    "addTokenError": "Impossible d'ajouter le token au portefeuille",
+    "estimatedTime": "Temps estimé",
+    "recentTransactions": "Transactions récentes",
+    "clearHistory": "Effacer l'historique",
+    "historyStoredLocally": "L'historique des transactions est stocké localement sur cet appareil"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "environment": "Environnement",
+    "rpcEndpoints": "Points de terminaison RPC",
+    "rpcEndpointsHelp": "Mettre à jour l'URL RPC utilisée pour chaque chaîne dans l'environnement sélectionné.",
+    "noChainsConfigured": "Aucune chaîne configurée pour cet environnement.",
+    "cancel": "Annuler",
+    "save": "Enregistrer"
+  },
+  "wallet": {},
+  "login": {
+    "title": "Bon retour parmi nous",
+    "subtitle": "Connectez-vous pour continuer vers Freedom Bridge",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "nom@exemple.com",
+    "passwordLabel": "Mot de passe",
+    "passwordPlaceholder": "Entrez le mot de passe",
+    "rememberMe": "Se souvenir de moi sur cet appareil",
+    "submit": "Se connecter",
+    "validation": {
+      "required": "L'e-mail et le mot de passe sont requis.",
+      "invalid": "E-mail ou mot de passe invalide."
+    }
+  },
+  "landing": {
+    "banner": {
+      "title": "Nouveau ici ?",
+      "message": "Découvrez Freedom Bridge et comment ponter les tokens TigerOG à travers les chaînes."
+    },
+    "hero": {
+      "badge": "Propulsé par Axelar",
+      "title": "Libérez vos <1/> <2>Actifs</2>",
+      "subtitle": "Pontez de manière transparente les tokens TigerOG à travers les chaînes en utilisant l'Interchain Token Service d'Axelar. Sécurisé, rapide et sans taxe.",
+      "launchApp": "Lancer l'application",
+      "documentation": "Documentation"
+    },
+    "stats": {
+      "messaging": "Réseau Axelar",
+      "networks": "Réseaux en direct",
+      "fees": "Frais de protocole",
+      "finality": "Finalité"
+    },
+    "features": {
+      "title": "Interchain Token Service",
+      "description": "Freedom Bridge exploite l'ITS d'Axelar pour offrir une expérience de pontage transparente, sécurisée et sans taxe sur {{count}}+ blockchains.",
+      "stopDecay": {
+        "title": "Arrêtez la dégradation",
+        "description": "Les tokens hérités brûlent 10 à 11 % de votre valeur à chaque achat et vente. L'enveloppement dans TigerOG arrête immédiatement cette hémorragie, préservant 100 % de votre valeur.",
+        "graphLabel1": "100 % Conservé (TigerOG)",
+        "graphLabel2": "-40 % Valeur (Taxe héritée de 10 %)"
+      },
+      "conversion": {
+        "title": "Conversion 1:1",
+        "description": "L'offre totale ne change jamais. Les tokens sont conservés dans un contrat de migration sécurisé, et un équivalent exact de 1:1 est utilisé. Pas d'inflation, pas de dilution."
+      },
+      "multichain": {
+        "title": "Multi-Chaîne",
+        "description": "Déployez une fois, accédez partout. Votre actif devient un token interchaîne natif sur les chaînes incluant Ethereum, BNB Chain, Base, et plus encore."
+      },
+      "security": {
+        "title": "Sécurité Axelar",
+        "description": "Propulsé par le réseau décentralisé de validateurs d'Axelar. L'ITS garantit que vos tokens sont transférés de manière sécurisée et cohérente sur tous les réseaux connectés.",
+        "button": "Commencer le pontage"
+      }
+    },
+    "teaser": {
+      "title": "Voulez-vous d'autres jetons ?",
+      "subtitle": "Que pensez-vous de <lunc>LUNC</lunc>, <crepe>Crepe</crepe>, ou <shiba>Shiba</shiba> ??"
+    },
+    "cta": {
+      "title": "Prêt à ponter ?",
+      "description": "Rejoignez la révolution interchaîne. Il faut moins d'une minute pour envelopper vos actifs et commencer le pontage via Axelar.",
+      "button": "Lancer l'application maintenant"
+    }
+  },
+  "wiki": {
+    "title": "Wiki Freedom Bridge",
+    "searchPlaceholder": "Rechercher dans la documentation...",
+    "header": {
+      "title": "Documentation",
+      "subtitle": "Apprenez à envelopper les tokens hérités, à ponter entre les chaînes et à intégrer Freedom Bridge."
+    },
+    "nav": {
+      "gettingStarted": "Commencer",
+      "coreConcepts": "Concepts de base",
+      "developers": "Développeurs",
+      "tigerogSupply": "Offre TigerOG",
+      "lionogSupply": "Offre LionOG",
+      "frogogSupply": "Offre FrogOG"
+    },
+    "articles": {
+      "whatIs": {
+        "title": "Qu'est-ce que Freedom Bridge ?",
+        "content": "Freedom Bridge est un protocole de pontage décentralisé construit sur l'Interchain Token Service (ITS) d'Axelar. Il est conçu pour libérer les tokens des limitations d'une seule chaîne et des taxes de transaction élevées. En enveloppant des tokens standard dans des actifs compatibles interchaînes, les utilisateurs peuvent déplacer leur valeur librement à travers les blockchains prises en charge.",
+        "taxFreeTitle": "Transferts sans taxe",
+        "taxFreeDesc": "Les tokens hérités ont souvent des taxes de 10 %+. Les tokens TigerOG ont 0 % de taxe.",
+        "omnichainTitle": "Interchaîne",
+        "omnichainDesc": "Déplacez des actifs instantanément entre {{count}}+ blockchains via Axelar."
+      },
+      "howToConvert": {
+        "title": "Comment convertir des tokens",
+        "step1": "Connectez votre portefeuille à la chaîne source (par exemple, BNB Chain).",
+        "step2": "Accédez à l'onglet <strong>Convertir</strong>.",
+        "step3": "Sélectionnez le token hérité que vous souhaitez convertir.",
+        "step4": "Approuvez le contrat de Migration pour dépenser vos tokens.",
+        "step5": "Cliquez sur <strong>Convertir</strong> pour déposer vos tokens hérités et recevoir une quantité équivalente de tokens « TigerOG ».",
+        "note": "<strong>Remarque :</strong> La conversion entraîne la taxe de transaction du token hérité (pendant la mise à niveau) si votre token facture une taxe sur les transferts. Cependant, une fois convertis en TigerOG, tous les transferts et pontages ultérieurs sont sans taxe."
+      },
+      "supportedNetworks": {
+        "title": "Réseaux pris en charge",
+        "content": "Freedom Bridge prend en charge un écosystème croissant de {{count}}+ blockchains, permettant une interopérabilité transparente à travers le paysage EVM via Axelar."
+      },
+      "xerc20": {
+        "title": "Tokens Interchaînes",
+        "content": "L'Interchain Token Service (ITS) d'Axelar permet aux tokens d'être déployés sur plusieurs chaînes avec une adresse cohérente et une gestion unifiée de l'offre. Freedom Bridge utilise l'ITS pour garantir que TigerOG reste un actif canonique partout où il est ponté."
+      },
+      "axelar": {
+        "title": "Réseau Axelar",
+        "content": "Nous utilisons Axelar comme couche d'interopérabilité. Axelar est un réseau décentralisé qui connecte différentes blockchains, permettant une communication interchaîne sécurisée et des transferts d'actifs. Le modèle de sécurité d'Axelar repose sur un ensemble de validateurs sans permission, offrant une sécurité de haut niveau pour les tokens interchaînes."
+      },
+      "migration": {
+        "title": "Logique de migration",
+        "content": "Le contrat de Migration est déployé sur la chaîne d'origine (par exemple, BSC). Il détient les tokens hérités d'origine en garde. Lorsque vous mettez à niveau des tokens, vous déposez dans le contrat de Migration. Lorsque vous déballez (si pris en charge), vous brûlez la représentation TigerOG pour libérer les tokens d'origine. Cela garantit un ancrage 1:1 strictement soutenu."
+      },
+      "contracts": {
+        "title": "Adresses des contrats intelligents",
+        "colNetwork": "Réseau",
+        "colType": "Type de contrat",
+        "colAddress": "Adresse"
+      },
+      "security": {
+        "title": "Modèle de sécurité",
+        "content": "La sécurité est intégrée à chaque couche de Freedom Bridge :",
+        "point1": "<strong>Architecture de Migration :</strong> Les tokens hérités sont conservés dans des contrats intelligents vérifiés et immuables.",
+        "point2": "<strong>Validateurs Axelar :</strong> Les messages interchaînes sont vérifiés par le réseau décentralisé d'Axelar.",
+        "point3": "<strong>Offre cohérente :</strong> L'ITS gère la frappe et le brûlage pour maintenir une offre totale constante sur toutes les chaînes.",
+        "point4": "<strong>Logique auditée :</strong> Construit sur les bibliothèques standard d'Axelar et d'OpenZeppelin."
+      },
+      "supplyCommon": {
+        "howWeCalculated": "Comment nous avons calculé cela",
+        "verification": "Vérification",
+        "verificationDesc": "Tous les chiffres de l'offre peuvent être vérifiés indépendamment sur la chaîne :",
+        "table": {
+          "category": "Catégorie",
+          "amount": "Montant",
+          "percentOfTotal": "% du total",
+          "originalSupply": "Offre totale originale",
+          "deadAddress": "Adresse morte (Brûlée)",
+          "contractBalance": "Solde du contrat (Bloqué)",
+          "circulatingSupply": "Offre circulante"
+        },
+        "deadAddressTitle": "1. Adresse morte",
+        "contractBalanceTitle": "2. Solde du contrat",
+        "lpLockedTitle": "3. Tokens LP bloqués"
+      },
+      "tigerogSupply": {
+        "title": "Répartition de l'offre TigerOG",
+        "intro": "TigerOG a une offre circulante fixe dérivée du token BNBTiger original. Le calcul de l'offre prend en compte tous les tokens brûlés et verrouillés en permanence.",
+        "lpLocked": "LP bloqué (86,18 % du LP brûlé)",
+        "deadAddressDesc": "Les tokens envoyés à <code>0x000...dEaD</code> sont brûlés en permanence et ne peuvent jamais être récupérés. Cela inclut les tokens brûlés via le mécanisme de taxe BNBTiger original.",
+        "contractBalanceDesc": "Une petite quantité de tokens est bloquée dans le contrat BNBTiger lui-même. Ces tokens sont inaccessibles et effectivement retirés de la circulation.",
+        "lpLockedDesc": "Le pool de liquidité PancakeSwap contient des tokens BNBTiger parrainés avec du BNB. Lorsque les tokens LP sont brûlés (envoyés à l'adresse morte), les tokens sous-jacents dans le pool deviennent verrouillés en permanence.",
+        "lpBurnedPercent": "Tokens LP brûlés : 86,18 % de tous les tokens LP",
+        "lpLockedPercent": "Par conséquent, 86,18 % des tokens dans le LP sont verrouillés en permanence",
+        "note": "<strong>Remarque :</strong> TigerOG maintient un ratio 1:1 avec BNBTiger pendant la migration. L'offre circulante de TigerOG correspond à la véritable offre circulante de BNBTiger après avoir pris en compte tous les tokens brûlés et verrouillés.",
+        "launchData": "<strong>Données de lancement :</strong> Ces chiffres ont été calculés au lancement. Le token BNBTiger hérité continue de brûler des tokens à chaque transaction d'achat/vente, de sorte que l'offre circulante réelle peut être légèrement inférieure à celle indiquée.",
+        "legacyContract": "Contrat de token BNBTiger",
+        "ogContract": "Contrat de token TigerOG",
+        "amounts": {
+          "original": "10 000 000 000 000 000 000 000 000",
+          "dead": "−5 772 706 396 234 535 780 783 775",
+          "deadPercent": "57,73 %",
+          "contract": "−6 142 342 823 271 327",
+          "contractPercent": "<0,01 %",
+          "lp": "−565 059 839 948 518 979 124 912",
+          "lpPercent": "5,65 %",
+          "circulating": "3 662 233 757 674 602 416 819 986",
+          "circulatingPercent": "36,62 %"
+        }
+      },
+      "lionogSupply": {
+        "title": "Répartition de l'offre LionOG",
+        "intro": "LionOG a une offre circulante fixe dérivée du token BNBLion original. Le calcul de l'offre prend en compte tous les tokens brûlés et verrouillés en permanence.",
+        "lpLocked": "LP bloqué (99,98 % du LP brûlé)",
+        "deadAddressDesc": "Les tokens envoyés à <code>0x000...dEaD</code> sont brûlés en permanence et ne peuvent jamais être récupérés. Cela inclut les tokens brûlés via le mécanisme de taxe BNBLion original.",
+        "contractBalanceDesc": "Une petite quantité de tokens est bloquée dans le contrat BNBLion lui-même. Ces tokens sont inaccessibles et effectivement retirés de la circulation.",
+        "lpLockedDesc": "Le pool de liquidité PancakeSwap contient des tokens BNBLion parrainés avec du BNB. Lorsque les tokens LP sont brûlés (envoyés à l'adresse morte), les tokens sous-jacents dans le pool deviennent verrouillés en permanence.",
+        "lpBurnedPercent": "Tokens LP brûlés : 99,98 % de tous les tokens LP",
+        "lpLockedPercent": "Par conséquent, 99,98 % des tokens dans le LP sont verrouillés en permanence",
+        "note": "<strong>Remarque :</strong> LionOG maintient un ratio 1:1 avec BNBLion pendant la migration. L'offre circulante de LionOG correspond à la véritable offre circulante de BNBLion après avoir pris en compte tous les tokens brûlés et verrouillés.",
+        "launchData": "<strong>Données de lancement :</strong> Ces chiffres ont été calculés au lancement. Le token BNBLion hérité continue de brûler des tokens à chaque transaction d'achat/vente, de sorte que l'offre circulante réelle peut être légèrement inférieure à celle indiquée.",
+        "legacyContract": "Contrat de token BNBLion",
+        "ogContract": "Contrat de token LionOG",
+        "amounts": {
+          "original": "10 000 000 000 000 000 000 000 000",
+          "dead": "−5 724 597 218 422 106 614 085 614",
+          "deadPercent": "57,25 %",
+          "contract": "−9 219 967 745 410 740 095 290",
+          "contractPercent": "<0,01 %",
+          "lp": "−442 490 152 327 271 918 655 109",
+          "lpPercent": "4,42 %",
+          "circulating": "3 832 903 409 282 876 056 519 182",
+          "circulatingPercent": "38,33 %"
+        }
+      },
+      "frogogSupply": {
+        "title": "Répartition de l'offre FrogOG",
+        "intro": "FrogOG a une offre circulante fixe dérivée du token BNBFrog original. Le calcul de l'offre prend en compte tous les tokens brûlés et verrouillés en permanence.",
+        "lpLocked": "LP bloqué (99,31 % du LP brûlé)",
+        "deadAddressDesc": "Les tokens envoyés à <code>0x000...dEaD</code> sont brûlés en permanence et ne peuvent jamais être récupérés. Cela inclut les tokens brûlés via le mécanisme de taxe BNBFrog original.",
+        "contractBalanceDesc": "Une petite quantité de tokens est bloquée dans le contrat BNBFrog lui-même. Ces tokens sont inaccessibles et effectivement retirés de la circulation.",
+        "lpLockedDesc": "Le pool de liquidité PancakeSwap contient des tokens BNBFrog parrainés avec du BNB. Lorsque les tokens LP sont brûlés (envoyés à l'adresse morte), les tokens sous-jacents dans le pool deviennent verrouillés en permanence.",
+        "lpBurnedPercent": "Tokens LP brûlés : 99,31 % de tous les tokens LP",
+        "lpLockedPercent": "Par conséquent, 99,31 % des tokens dans le LP sont verrouillés en permanence",
+        "note": "<strong>Remarque :</strong> FrogOG maintient un ratio 1:1 avec BNBFrog pendant la migration. L'offre circulante de FrogOG correspond à la véritable offre circulante de BNBFrog après avoir pris en compte tous les tokens brûlés et verrouillés.",
+        "launchData": "<strong>Données de lancement :</strong> Ces chiffres ont été calculés au lancement. Le token BNBFrog hérité continue de brûler des tokens à chaque transaction d'achat/vente, de sorte que l'offre circulante réelle peut être légèrement inférieure à celle indiquée.",
+        "legacyContract": "Contrat de token BNBFrog",
+        "ogContract": "Contrat de token FrogOG",
+        "amounts": {
+          "original": "10 000 000 000 000 000 000 000 000",
+          "dead": "−740 059 884 911 899 485 982 976",
+          "deadPercent": "7,40 %",
+          "contract": "−4 036 008 092 593 983 879 741",
+          "contractPercent": "<0,01 %",
+          "lp": "−874 144 424 929 004 044 398 902",
+          "lpPercent": "8,74 %",
+          "circulating": "8 385 795 686 123 088 377 024 138",
+          "circulatingPercent": "83,86 %"
+        }
+      }
+    }
+  },
+  "contracts": {
+    "title": "Adresses des contrats",
+    "header": {
+      "title": "Contrats intelligents",
+      "subtitle": "Adresses de déploiement officielles pour les tokens et les bridges à travers l'écosystème Freedom Bridge."
+    },
+    "tabs": {
+      "overview": "Aperçu",
+      "byToken": "Par Token",
+      "byChain": "Par chaîne",
+      "liquidity": "Liquidité"
+    },
+    "liquidity": {
+      "title": "Pools de liquidité"
+    }
+  },
+  "faq": {
+    "title": "Support Freedom Bridge",
+    "header": "Questions fréquemment posées",
+    "subtitle": "Réponses aux questions courantes sur TigerOG, le pontage et Axelar.",
+    "cta": {
+      "title": "Vous avez encore des questions ?",
+      "description": "Rejoignez notre communauté sur Telegram ou consultez le Wiki détaillé pour des guides techniques.",
+      "wiki": "Visiter le Wiki",
+      "telegram": "Rejoindre Telegram"
+    },
+    "questions": {
+      "q1": "Quel est le but de convertir mes tokens ?",
+      "a1": "La conversion de vos tokens en TigerOG supprime la taxe de transaction (souvent 10-12 %) associée au token hérité. Cela vous permet également de ponter ces tokens vers d'autres blockchains comme Ethereum, Base, et plus encore via Axelar, permettant l'accès à de nouveaux écosystèmes.",
+      "q2": "Est-il sûr d'utiliser Freedom Bridge ?",
+      "a2": "Oui. Le protocole utilise un contrat de Migration sécurisé et l'Interchain Token Service d'Axelar. Lorsque vous convertissez, votre BNBTiger est brûlé en permanence et vous recevez TigerOG à un ratio de 1:1. Le mécanisme de brûlage garantit que l'offre totale est correctement gérée sur toutes les chaînes.",
+      "q3": "Y a-t-il des frais ?",
+      "a3": "Freedom Bridge lui-même ne facture pas de frais pour la conversion. Vous ne payez que les frais de gaz standard de la blockchain. Le pontage entre les chaînes implique des frais de gaz interchaînes payés à Axelar pour couvrir les coûts de relais.",
+      "q4": "Que se passe-t-il si je perds mes tokens ?",
+      "a4": "Les tokens TigerOG se comportent comme n'importe quel autre token ERC20. Si vous perdez l'accès à votre portefeuille, ils ne peuvent pas être récupérés. Gardez toujours vos clés privées et vos phrases de récupération en sécurité.",
+      "q5": "Puis-je convertir mes tokens TigerOG en BNBTiger ?",
+      "a5": "Non. La migration est une conversion à sens unique. Lorsque vous convertissez BNBTiger en TigerOG, vos tokens BNBTiger sont brûlés en permanence (envoyés à l'adresse morte). C'est par conception — TigerOG est la version améliorée et sans taxe destinée à remplacer entièrement le token hérité.",
+      "q6": "Quels réseaux sont pris en charge ?",
+      "a6": "Nous prenons en charge plusieurs chaînes EVM via Axelar, notamment BNB Chain, Ethereum, Base et plus encore. Consultez le Wiki pour la liste complète des réseaux pris en charge.",
+      "q7": "Combien de temps prend le pontage ?",
+      "a7": "La vitesse de pontage dépend de la finalité de la chaîne source et du relais d'Axelar. En règle générale, un transfert entre les chaînes prend environ 2 à 5 minutes.",
+      "q8": "Quelles sont les offres circulantes des tokens OG ?",
+      "a8": "Chaque token OG a une offre circulante fixe dérivée de son token BNB original, en tenant compte des tokens brûlés, des soldes de contrat bloqués et du LP verrouillé. TigerOG : ~3,66 septillions (36,62 % de l'original). LionOG : ~3,83 septillions (38,33 % de l'original). FrogOG : ~8,39 septillions (83,86 % de l'original). Voir le Wiki pour les répartitions détaillées de chaque token."
+    }
+  },
+  "common": {
+    "from": "De",
+    "to": "À",
+    "max": "MAX",
+    "chainId": "ID de chaîne",
+    "bscChain": "Chaîne BSC",
+    "insufficientBalance": "Solde insuffisant.",
+    "failedToSwitchNetwork": "Échec du changement de réseau. Veuillez changer manuellement dans votre portefeuille.",
+    "failedToFetchFeeQuote": "Échec de la récupération du devis de frais.",
+    "unableToDetermineGas": "Impossible de déterminer le paiement du gaz Axelar",
+    "bridgeTxFailed": "La transaction de pont a échoué",
+    "estimatedGas": "Gaz Axelar estimé",
+    "success": "Succès !",
+    "viewOnExplorer": "Voir sur l'explorateur",
+    "bridging": "Pontage en cours...",
+    "transactionFailed": "La transaction a échoué",
+    "search": "Rechercher",
+    "backToApp": "Retour à l'application"
+  }
+}

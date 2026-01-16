@@ -1,0 +1,364 @@
+{
+  "app": {
+    "titleFreedom": "Liri",
+    "titleBridge": "Urë"
+  },
+  "nav": {
+    "settings": "Cilësimet",
+    "menu": "Meny",
+    "preferences": "Preferencat",
+    "switchTheme": "Pamja",
+    "theme": {
+      "dark": "Errët",
+      "light": "Dritë"
+    },
+    "switchPalette": "Ndrysho Paletën",
+    "wiki": "Dokumentacioni / Wiki",
+    "contracts": "Kontrata",
+    "faq": "FAQ",
+    "logout": "Dil",
+    "language": "Gjuha",
+    "languageSearchPlaceholder": "Kërko gjuhë",
+    "languageNoResults": "Nuk u gjet asnjë gjuhë",
+    "close": "Mbyll"
+  },
+  "addNetworks": {
+    "title": "Shto Rrjete",
+    "description": "Klikoni një buton më poshtë për të Shtuar Rrjete në portofolin tuaj. Kjo e bën të lehtë kalimin midis zinxhirëve gjatë testimit."
+  },
+  "tabs": {
+    "convert": "Konverto",
+    "bridge": "Urë"
+  },
+  "convert": {
+    "token": "Token",
+    "selectToken": "Zgjidh Token",
+    "balance": "Bilanci",
+    "noConvertibleTokens": "Nuk ka token për të konvertuar në {{chainName}}",
+    "convert": "Konverto",
+    "addToWalletLabel": "Importo {{symbol}} në {{chainName}} në portofol",
+    "addToWalletButton": "Importo në Portofol",
+    "addingToken": "Duke shtuar...",
+    "addTokenError": "Nuk mund të shtohet token në portofol",
+    "legacyTokenMissing": "Tokeni i vjetër mungon për këtë zinxhir",
+    "tigerOGMissing": "Tokeni TigerOG mungon për këtë zinxhir",
+    "networkWarning": {
+      "title": "Rrjet i Gabuar",
+      "message": "Konvertimi i token-it është i disponueshëm vetëm në Zinxhirin BSC.",
+      "description": "Ju lutemi kaloni në Zinxhirin BSC në portofolin tuaj për të konvertuar token-a, ose lundroni te skeda Urë për të transferuar token-a midis zinxhirëve."
+    }
+  },
+  "bridge": {
+    "fromChain": "Nga Zinxhiri",
+    "selectChainPlaceholder": "Zgjidh zinxhir",
+    "toChain": "Te Zinxhiri",
+    "selectDestinationPlaceholder": "Zgjidh destinacionin",
+    "noDestination": "Nuk Ka Destinacion",
+    "noBridgeableTokens": "Nuk ka token për urë",
+    "bridgeButton": "Urë Token",
+    "getFeeQuote": "Merr Kuotë Tarife",
+    "viewOnAxelarscan": "Shiko në Axelarscan",
+    "addDestinationTokenLabel": "Importo {{symbol}} në {{chainName}} në portofol",
+    "addTokenError": "Nuk mund të shtohet token në portofol",
+    "estimatedTime": "Koha e vlerësuar",
+    "recentTransactions": "Transaksionet e Fundit",
+    "clearHistory": "Pastro historinë",
+    "historyStoredLocally": "Historia e transaksioneve ruhet lokalisht në këtë pajisje"
+  },
+  "settings": {
+    "title": "Cilësimet",
+    "environment": "Mjedisi",
+    "rpcEndpoints": "Pikat Fundore RPC",
+    "rpcEndpointsHelp": "Përditëso URL-në RPC të përdorur për çdo zinxhir në mjedisin e zgjedhur.",
+    "noChainsConfigured": "Nuk ka zinxhirë të konfiguruar për këtë mjedis.",
+    "cancel": "Anulo",
+    "save": "Ruaj"
+  },
+  "wallet": {},
+  "login": {
+    "title": "Mirë se Erdhët Përsëri",
+    "subtitle": "Hyni për të vazhduar te Ura e Lirisë",
+    "emailLabel": "Email",
+    "emailPlaceholder": "emri@shembull.al",
+    "passwordLabel": "Fjalëkalimi",
+    "passwordPlaceholder": "Fut fjalëkalimin",
+    "rememberMe": "Më mbaj mend në këtë pajisje",
+    "submit": "Hyr",
+    "validation": {
+      "required": "Email dhe fjalëkalimi janë të detyrueshëm.",
+      "invalid": "Email ose fjalëkalim i pavlefshëm."
+    }
+  },
+  "landing": {
+    "banner": {
+      "title": "I ri këtu?",
+      "message": "Mësoni për Freedom Bridge dhe si të bëni urë token-at TigerOG nëpër zinxhirë."
+    },
+    "hero": {
+      "badge": "Mundësuar nga Axelar",
+      "title": "Çliro <1/> <2>Asetet</2> e Tua",
+      "subtitle": "Bëni urë pa probleme token-at TigerOG nëpër zinxhirë duke përdorur Shërbimin e Token-ave Ndër-zinxhir të Axelar. I sigurt, i shpejtë dhe pa taksa.",
+      "launchApp": "Nis Aplikacionin",
+      "documentation": "Dokumentacioni"
+    },
+    "stats": {
+      "messaging": "Rrjeti Axelar",
+      "networks": "Rrjete Live",
+      "fees": "Tarifat e Protokollit",
+      "finality": "Përfundim"
+    },
+    "features": {
+      "title": "Shërbimi i Token-ave Ndër-zinxhir",
+      "description": "Freedom Bridge shfrytëzon Axelar ITS për të ofruar një përvojë ure pa probleme, të sigurt dhe pa taksa nëpër {{count}}+ blockchain.",
+      "stopDecay": {
+        "title": "Ndalo Kalbjen",
+        "description": "Token-at e vjetër djegin 10-11% të vlerës suaj në çdo blerje dhe shitje. Mbështjellja në TigerOG e ndalon këtë gjakderdhje menjëherë, duke ruajtur 100% të vlerës suaj.",
+        "graphLabel1": "100% E Ruajtur (TigerOG)",
+        "graphLabel2": "-40% Vlerë (Taksë e Vjetër 10%)"
+      },
+      "conversion": {
+        "title": "Konvertim 1:1",
+        "description": "Furnizimi total nuk ndryshon kurrë. Token-at mbahen në një kontratë migrimi të sigurt dhe përdoret një ekuivalent i saktë 1:1. Pa inflacion, pa hollim."
+      },
+      "multichain": {
+        "title": "Shumë-Zinxhir",
+        "description": "Vendosni një herë, qasuni kudo. Aseti juaj bëhet një token vendas ndër-zinxhir nëpër zinxhirë duke përfshirë Ethereum, Zinxhiri BNB, Base dhe më shumë."
+      },
+      "security": {
+        "title": "Siguria Axelar",
+        "description": "Mundësuar nga rrjeti i decentralizuar i vërtetuesve të Axelar. ITS siguron që token-at tuaja të transferohen në mënyrë të sigurt dhe konsistente në të gjitha rrjetet e lidhura.",
+        "button": "Fillo Urëzimin"
+      }
+    },
+    "teaser": {
+      "title": "Doni monedha të tjera?",
+      "subtitle": "Çfarë mendoni për <lunc>LUNC</lunc>, <crepe>Crepe</crepe>, ose <shiba>Shiba</shiba>"
+    },
+    "cta": {
+      "title": "Gati për të bërë urë?",
+      "description": "Bashkohuni me revolucionin ndër-zinxhir. Duhet më pak se një minutë për të mbështjellë asetet tuaja dhe për të filluar urëzimin përmes Axelar.",
+      "button": "Nis Aplikacionin Tani"
+    }
+  },
+  "wiki": {
+    "title": "Wiki Freedom Bridge",
+    "searchPlaceholder": "Kërko dokumentacionin...",
+    "header": {
+      "title": "Dokumentacioni",
+      "subtitle": "Mësoni se si të mbështillni token-a të vjetër, të bëni urë midis zinxhirëve dhe të integroheni me Freedom Bridge."
+    },
+    "nav": {
+      "gettingStarted": "Fillimi",
+      "coreConcepts": "Konceptet Bazë",
+      "developers": "Zhvilluesit",
+      "tigerogSupply": "Furnizimi TigerOG",
+      "lionogSupply": "Furnizimi LionOG",
+      "frogogSupply": "Furnizimi FrogOG"
+    },
+    "articles": {
+      "whatIs": {
+        "title": "Çfarë është Freedom Bridge?",
+        "content": "Freedom Bridge është një protokoll i decentralizuar urëzimi i ndërtuar mbi Shërbimin e Token-ave Ndër-zinxhir (ITS) të Axelar. Është krijuar për të çliruar token-at nga kufizimet e një zinxhiri të vetëm dhe taksat e larta të transaksioneve. Duke mbështjellë token-a standard në asete të pajtueshme ndër-zinxhir, përdoruesit mund të lëvizin vlerën e tyre lirshëm nëpër blockchain-et e mbështetur.",
+        "taxFreeTitle": "Transferta Pa Taksa",
+        "taxFreeDesc": "Token-at e vjetër shpesh kanë taksa 10%+. Token-at TigerOG kanë 0% taksë.",
+        "omnichainTitle": "Ndër-zinxhir",
+        "omnichainDesc": "Lëvizni asete në çast midis {{count}}+ blockchain-eve përmes Axelar."
+      },
+      "howToConvert": {
+        "title": "Si të Konvertoni Token-a",
+        "step1": "Lidhni portofolin tuaj me zinxhirin e burimit (p.sh., Zinxhiri BNB).",
+        "step2": "Navigoni te skeda <strong>Konverto</strong>.",
+        "step3": "Zgjidhni token-in e vjetër që dëshironi të konvertoni.",
+        "step4": "Miratoni kontratën e Migrimit për të shpenzuar token-at tuaj.",
+        "step5": "Klikoni <strong>Konverto</strong> për të depozituar token-at tuaj të vjetër dhe për të marrë një shumë ekuivalente të token-ave \"TigerOG\".",
+        "note": "<strong>Shënim:</strong> Konvertimi shkakton taksën e transaksionit të token-it të vjetër (gjatë përmirësimit) nëse token-i juaj ngarkon taksë për transferta. Megjithatë, pasi të konvertohet në TigerOG, të gjitha transfertat dhe urat pasuese janë pa taksa."
+      },
+      "supportedNetworks": {
+        "title": "Rrjetet e Mbështetura",
+        "content": "Freedom Bridge mbështet një ekosistem në rritje prej {{count}}+ blockchain-eve, duke mundësuar ndërveprueshmëri pa probleme në peizazhin EVM përmes Axelar."
+      },
+      "xerc20": {
+        "title": "Token-a Ndër-zinxhir",
+        "content": "Shërbimi i Token-ave Ndër-zinxhir Axelar (ITS) lejon që token-at të vendosen nëpër zinxhirë të shumtë me një adresë të qëndrueshme dhe menaxhim të unifikuar të furnizimit. Freedom Bridge përdor ITS për të siguruar që TigerOG të mbetet një aset kanonik kudo që bëhet urë."
+      },
+      "axelar": {
+        "title": "Rrjeti Axelar",
+        "content": "Ne përdorim Axelar si shtresën tonë të ndërveprimit. Axelar është një rrjet i decentralizuar që lidh blockchain-e të ndryshme, duke mundësuar komunikim të sigurt ndër-zinxhir dhe transferim asetesh. Modeli i sigurisë së Axelar mbështetet në një grup vërtetuesish pa leje, duke ofruar siguri të nivelit të lartë për token-at ndër-zinxhir."
+      },
+      "migration": {
+        "title": "Logjika e Migrimit",
+        "content": "Kontrata e Migrimit është vendosur në zinxhirin e origjinës (p.sh., BSC). Ajo mban token-at origjinalë të vjetër në kujdestari. Kur përmirësoni token-at, po depozitoni në kontratën e Migrimit. Kur zhbështillni (nëse mbështetet), po digjni përfaqësimin TigerOG për të lëshuar token-at origjinalë. Kjo siguron një lidhje rreptësisht të mbështetur 1:1."
+      },
+      "contracts": {
+        "title": "Adresat e Kontratave Inteligjente",
+        "colNetwork": "Rrjeti",
+        "colType": "Lloji i Kontratës",
+        "colAddress": "Adresa"
+      },
+      "security": {
+        "title": "Modeli i Sigurisë",
+        "content": "Siguria është ndërtuar në çdo shtresë të Freedom Bridge:",
+        "point1": "<strong>Arkitektura e Migrimit:</strong> Token-at e vjetër mbahen në kontrata inteligjente të verifikuara dhe të pandryshueshme.",
+        "point2": "<strong>Vërtetuesit Axelar:</strong> Mesazhet ndër-zinxhir verifikohen nga rrjeti i decentralizuar i Axelar.",
+        "point3": "<strong>Furnizim Konsistent:</strong> ITS menaxhon prerjen dhe djegien për të mbajtur një furnizim total konstant në të gjithë zinxhirët.",
+        "point4": "<strong>Logjikë e Audituar:</strong> Ndërtuar mbi bibliotekat standarde të industrisë Axelar dhe OpenZeppelin."
+      },
+      "supplyCommon": {
+        "howWeCalculated": "Si e Llogaritëm Këtë",
+        "verification": "Verifikimi",
+        "verificationDesc": "Të gjitha shifrat e furnizimit mund të verifikohen në mënyrë të pavarur në zinxhir:",
+        "table": {
+          "category": "Kategoria",
+          "amount": "Shuma",
+          "percentOfTotal": "% e Totalit",
+          "originalSupply": "Furnizimi Total Origjinal",
+          "deadAddress": "Adresa e Vdekur (E Djegur)",
+          "contractBalance": "Bilanci i Kontratës (I Ngecur)",
+          "circulatingSupply": "Furnizimi në Qarkullim"
+        },
+        "deadAddressTitle": "1. Adresa e Vdekur",
+        "contractBalanceTitle": "2. Bilanci i Kontratës",
+        "lpLockedTitle": "3. Token-a të Kyçur LP"
+      },
+      "tigerogSupply": {
+        "title": "Zbërthimi i Furnizimit TigerOG",
+        "intro": "TigerOG ka një furnizim fiks në qarkullim që rrjedh nga token-i origjinal BNBTiger. Llogaritja e furnizimit merr parasysh të gjithë token-at e djegur dhe të kyçur përgjithmonë.",
+        "lpLocked": "LP i Kyçur (86.18% e LP të Djegur)",
+        "deadAddressDesc": "Token-at e dërguar te <code>0x000...dEaD</code> digjen përgjithmonë dhe nuk mund të rikuperohen kurrë. Kjo përfshin token-a të djegur përmes mekanizmit origjinal të taksave BNBTiger.",
+        "contractBalanceDesc": "Një sasi e vogël token-ash janë ngecur në vetë kontratën BNBTiger. Këto token-a janë të paarritshëm dhe efektivisht të hequr nga qarkullimi.",
+        "lpLockedDesc": "Pishina e likuiditetit PancakeSwap përmban token-a BNBTiger të çiftuar me BNB. Kur token-at LP digjen (dërgohen në adresën e vdekur), token-at themelorë në pishinë bëhen përgjithmonë të kyçur.",
+        "lpBurnedPercent": "Token-a LP të djegur: 86.18% e të gjithë token-ave LP",
+        "lpLockedPercent": "Prandaj, 86.18% e token-ave në LP janë kyçur përgjithmonë",
+        "note": "<strong>Shënim:</strong> TigerOG ruan një raport 1:1 me BNBTiger gjatë migrimit. Furnizimi në qarkullim i TigerOG përputhet me furnizimin e vërtetë në qarkullim të BNBTiger pasi të merren parasysh të gjithë token-at e djegur dhe të kyçur.",
+        "launchData": "<strong>Të Dhënat e Nisjes:</strong> Këto shifra u llogaritën në nisje. Token-i i vjetër BNBTiger vazhdon të djegë token-a në çdo transaksion blerjeje/shitjeje, kështu që furnizimi aktual në qarkullim mund të jetë pak më i ulët se sa tregohet.",
+        "legacyContract": "Kontrata e Token-it BNBTiger",
+        "ogContract": "Kontrata e Token-it TigerOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,772,706,396,234,535,780,783,775",
+          "deadPercent": "57.73%",
+          "contract": "−6,142,342,823,271,327",
+          "contractPercent": "<0.01%",
+          "lp": "−565,059,839,948,518,979,124,912",
+          "lpPercent": "5.65%",
+          "circulating": "3,662,233,757,674,602,416,819,986",
+          "circulatingPercent": "36.62%"
+        }
+      },
+      "lionogSupply": {
+        "title": "Zbërthimi i Furnizimit LionOG",
+        "intro": "LionOG ka një furnizim fiks në qarkullim që rrjedh nga token-i origjinal BNBLion. Llogaritja e furnizimit merr parasysh të gjithë token-at e djegur dhe të kyçur përgjithmonë.",
+        "lpLocked": "LP i Kyçur (99.98% e LP të Djegur)",
+        "deadAddressDesc": "Token-at e dërguar te <code>0x000...dEaD</code> digjen përgjithmonë dhe nuk mund të rikuperohen kurrë. Kjo përfshin token-a të djegur përmes mekanizmit origjinal të taksave BNBLion.",
+        "contractBalanceDesc": "Një sasi e vogël token-ash janë ngecur në vetë kontratën BNBLion. Këto token-a janë të paarritshëm dhe efektivisht të hequr nga qarkullimi.",
+        "lpLockedDesc": "Pishina e likuiditetit PancakeSwap përmban token-a BNBLion të çiftuar me BNB. Kur token-at LP digjen (dërgohen në adresën e vdekur), token-at themelorë në pishinë bëhen përgjithmonë të kyçur.",
+        "lpBurnedPercent": "Token-a LP të djegur: 99.98% e të gjithë token-ave LP",
+        "lpLockedPercent": "Prandaj, 99.98% e token-ave në LP janë kyçur përgjithmonë",
+        "note": "<strong>Shënim:</strong> LionOG ruan një raport 1:1 me BNBLion gjatë migrimit. Furnizimi në qarkullim i LionOG përputhet me furnizimin e vërtetë në qarkullim të BNBLion pasi të merren parasysh të gjithë token-at e djegur dhe të kyçur.",
+        "launchData": "<strong>Të Dhënat e Nisjes:</strong> Këto shifra u llogaritën në nisje. Token-i i vjetër BNBLion vazhdon të djegë token-a në çdo transaksion blerjeje/shitjeje, kështu që furnizimi aktual në qarkullim mund të jetë pak më i ulët se sa tregohet.",
+        "legacyContract": "Kontrata e Token-it BNBLion",
+        "ogContract": "Kontrata e Token-it LionOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,724,597,218,422,106,614,085,614",
+          "deadPercent": "57.25%",
+          "contract": "−9,219,967,745,410,740,095,290",
+          "contractPercent": "<0.01%",
+          "lp": "−442,490,152,327,271,918,655,109",
+          "lpPercent": "4.42%",
+          "circulating": "3,832,903,409,282,876,056,519,182",
+          "circulatingPercent": "38.33%"
+        }
+      },
+      "frogogSupply": {
+        "title": "Zbërthimi i Furnizimit FrogOG",
+        "intro": "FrogOG ka një furnizim fiks në qarkullim që rrjedh nga token-i origjinal BNBFrog. Llogaritja e furnizimit merr parasysh të gjithë token-at e djegur dhe të kyçur përgjithmonë.",
+        "lpLocked": "LP i Kyçur (99.31% e LP të Djegur)",
+        "deadAddressDesc": "Token-at e dërguar te <code>0x000...dEaD</code> digjen përgjithmonë dhe nuk mund të rikuperohen kurrë. Kjo përfshin token-a të djegur përmes mekanizmit origjinal të taksave BNBFrog.",
+        "contractBalanceDesc": "Një sasi e vogël token-ash janë ngecur në vetë kontratën BNBFrog. Këto token-a janë të paarritshëm dhe efektivisht të hequr nga qarkullimi.",
+        "lpLockedDesc": "Pishina e likuiditetit PancakeSwap përmban token-a BNBFrog të çiftuar me BNB. Kur token-at LP digjen (dërgohen në adresën e vdekur), token-at themelorë në pishinë bëhen përgjithmonë të kyçur.",
+        "lpBurnedPercent": "Token-a LP të djegur: 99.31% e të gjithë token-ave LP",
+        "lpLockedPercent": "Prandaj, 99.31% e token-ave në LP janë kyçur përgjithmonë",
+        "note": "<strong>Shënim:</strong> FrogOG ruan një raport 1:1 me BNBFrog gjatë migrimit. Furnizimi në qarkullim i FrogOG përputhet me furnizimin e vërtetë në qarkullim të BNBFrog pasi të merren parasysh të gjithë token-at e djegur dhe të kyçur.",
+        "launchData": "<strong>Të Dhënat e Nisjes:</strong> Këto shifra u llogaritën në nisje. Token-i i vjetër BNBFrog vazhdon të djegë token-a në çdo transaksion blerjeje/shitjeje, kështu që furnizimi aktual në qarkullim mund të jetë pak më i ulët se sa tregohet.",
+        "legacyContract": "Kontrata e Token-it BNBFrog",
+        "ogContract": "Kontrata e Token-it FrogOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−740,059,884,911,899,485,982,976",
+          "deadPercent": "7.40%",
+          "contract": "−4,036,008,092,593,983,879,741",
+          "contractPercent": "<0.01%",
+          "lp": "−874,144,424,929,004,044,398,902",
+          "lpPercent": "8.74%",
+          "circulating": "8,385,795,686,123,088,377,024,138",
+          "circulatingPercent": "83.86%"
+        }
+      }
+    }
+  },
+  "contracts": {
+    "title": "Adresat e Kontratave",
+    "header": {
+      "title": "Kontrata Inteligjente",
+      "subtitle": "Adresat zyrtare të vendosjes për token-a dhe ura në të gjithë ekosistemin Freedom Bridge."
+    },
+    "tabs": {
+      "overview": "Përmbledhje",
+      "byToken": "Sipas Token-it",
+      "byChain": "Sipas Zinxhirit",
+      "liquidity": "Likuiditeti"
+    },
+    "liquidity": {
+      "title": "Pishinat e Likuiditetit"
+    }
+  },
+  "faq": {
+    "title": "Mbështetja e Freedom Bridge",
+    "header": "Pyetjet e Bëra Shpesh",
+    "subtitle": "Përgjigje për pyetjet e zakonshme rreth TigerOG, urëzimit dhe Axelar.",
+    "cta": {
+      "title": "Keni ende pyetje?",
+      "description": "Bashkohuni me komunitetin tonë në Telegram ose kontrolloni Wiki-n e detajuar për udhëzime teknike.",
+      "wiki": "Vizitoni Wiki",
+      "telegram": "Bashkohuni në Telegram"
+    },
+    "questions": {
+      "q1": "Cili është qëllimi i konvertimit të token-ave të mi?",
+      "a1": "Konvertimi i token-ave tuaj në TigerOG heq taksën e transaksionit (shpesh 10-12%) të lidhur me token-in e vjetër. Gjithashtu ju lejon të bëni urë këto token-a në blockchain-e të tjera si Ethereum, Base dhe më shumë përmes Axelar, duke mundësuar qasje në ekosisteme të reja.",
+      "q2": "A është e sigurt të përdoret Freedom Bridge?",
+      "a2": "Po. Protokolli përdor një kontratë të sigurt Migrimi dhe Shërbimin e Token-ave Ndër-zinxhir të Axelar. Kur konvertoni, BNBTiger-i juaj digjet përgjithmonë dhe ju merrni TigerOG në një raport 1:1. Mekanizmi i djegies siguron që furnizimi total të menaxhohet siç duhet në të gjithë zinxhirët.",
+      "q3": "A ka ndonjë tarifë?",
+      "a3": "Vetë Freedom Bridge nuk ngarkon tarifë për konvertim. Ju paguani vetëm tarifat standarde të gazit të blockchain. Urëzimi midis zinxhirëve përfshin një tarifë gazi ndër-zinxhir që i paguhet Axelar për të mbuluar kostot e transmetimit.",
+      "q4": "Çfarë ndodh nëse humbas token-at e mi?",
+      "a4": "Token-at TigerOG sillen njësoj si çdo token tjetër ERC20. Nëse humbni qasjen në portofolin tuaj, ato nuk mund të rikuperohen. Mbani gjithmonë të sigurta çelësat tuaj privatë dhe frazat e rikuperimit.",
+      "q5": "A mund t'i konvertoj token-at e mi TigerOG përsëri në BNBTiger?",
+      "a5": "Jo. Migrimi është një konvertim njëkahësh. Kur konvertoni BNBTiger në TigerOG, token-at tuaj BNBTiger digjen përgjithmonë (dërgohen në adresën e vdekur). Kjo është me dizajn — TigerOG është versioni i përmirësuar, pa taksa i destinuar për të zëvendësuar plotësisht token-in e vjetër.",
+      "q6": "Cilat rrjete mbështeten?",
+      "a6": "Ne mbështesim zinxhirë të shumtë EVM përmes Axelar, duke përfshirë Zinxhiri BNB, Ethereum, Base dhe më shumë. Kontrolloni Wiki-n për listën e plotë të rrjeteve të mbështetura.",
+      "q7": "Sa kohë zgjat urëzimi?",
+      "a7": "Shpejtësia e urëzimit varet nga koha e përfundimit të zinxhirit të burimit dhe transmetimit të Axelar. Zakonisht, një transfertë midis zinxhirëve zgjat rreth 2-5 minuta.",
+      "q8": "Cili është furnizimi në qarkullim i token-ave OG?",
+      "a8": "Çdo token OG ka një furnizim fiks në qarkullim që rrjedh nga token-i i tij origjinal BNB, duke llogaritur token-at e djegur, bilancet e ngecura të kontratës dhe LP-në e kyçur. TigerOG: ~3.66 septilion (36.62% e origjinalit). LionOG: ~3.83 septilion (38.33% e origjinalit). FrogOG: ~8.39 septilion (83.86% e origjinalit). Shihni Wiki-n për zbërthime të detajuara të secilit token."
+    }
+  },
+  "common": {
+    "from": "Nga",
+    "to": "Te",
+    "max": "Maksimumi",
+    "chainId": "ID e Zinxhirit",
+    "bscChain": "Zinxhiri BSC",
+    "insufficientBalance": "Bilanc i pamjaftueshëm.",
+    "failedToSwitchNetwork": "Ndryshimi i rrjetit dështoi. Ju lutemi ndryshoni manualisht në portofolin tuaj.",
+    "failedToFetchFeeQuote": "Marrja e kuotës së tarifës dështoi.",
+    "unableToDetermineGas": "Nuk mund të përcaktohet pagesa e gazit Axelar",
+    "bridgeTxFailed": "Transaksioni i urës dështoi",
+    "estimatedGas": "Gazi i Vlerësuar Axelar",
+    "success": "Sukses!",
+    "viewOnExplorer": "Shiko në Eksplorues",
+    "bridging": "Duke bërë urë...",
+    "transactionFailed": "Transaksioni Dështoi",
+    "search": "Kërko",
+    "backToApp": "Kthehu në Aplikacion"
+  }
+}

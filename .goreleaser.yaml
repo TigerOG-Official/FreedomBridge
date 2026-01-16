@@ -1,0 +1,40 @@
+version: 2
+
+project_name: freedom-bridge
+
+builds:
+  - main: ./cmd/server
+    goos:
+      - linux
+      - windows
+    goarch:
+      - amd64
+      - arm64
+    binary: freedom-bridge
+    env:
+      - CGO_ENABLED=0
+    ldflags:
+      - -s -w
+
+archives:
+  - formats:
+      - tar.gz
+    format_overrides:
+      - goos: windows
+        formats:
+          - zip
+    files:
+      - none*
+    name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
+
+checksum:
+  name_template: "checksums.txt"
+  extra_files:
+    - glob: ./release/MacOS.zip
+
+release:
+  extra_files:
+    - glob: ./release/MacOS.zip
+
+changelog:
+  disable: true

@@ -1,0 +1,297 @@
+/* Modern Bridge UI Styles */
+
+/* CSS Variables for theming */
+:root {
+  /* Light mode colors (default) */
+  --theme-bg: linear-gradient(135deg, #e8f0f7 0%, #f5f7fa 50%, #e8f0f7 100%);
+  --theme-card-bg: #ffffff;
+  --theme-card-border: #cbd5e1;
+  --theme-text-primary: #1e293b;
+  --theme-text-secondary: #475569;
+  --theme-text-muted: #64748b;
+  --theme-input-bg: #ffffff;
+  --theme-input-border: #cbd5e1;
+  --theme-input-focus-border: #6366f1;
+  --theme-section-bg: #f8fafc;
+  --theme-section-hover-bg: #f1f5f9;
+  --theme-section-border: #e2e8f0;
+  --theme-button-gradient-start: #6366f1;
+  --theme-button-gradient-mid: #8b5cf6;
+  --theme-button-gradient-end: #7c3aed;
+  --theme-button-hover-start: #4f46e5;
+  --theme-button-hover-mid: #7c3aed;
+  --theme-button-hover-end: #6d28d9;
+  --theme-shadow-color: rgba(0, 0, 0, 0.1);
+  --theme-shadow-hover: rgba(99, 102, 241, 0.3);
+  --theme-percent-25-bg: rgba(99, 102, 241, 0.1);
+  --theme-percent-50-bg: rgba(99, 102, 241, 0.2);
+  --theme-percent-75-bg: rgba(99, 102, 241, 0.3);
+  --theme-percent-border: rgba(99, 102, 241, 0.4);
+  --theme-navbar-bg: rgba(255, 255, 255, 0.95);
+  --theme-navbar-border: #e2e8f0;
+  --theme-modal-bg: rgba(255, 255, 255, 0.98);
+  --theme-modal-section-bg: #f8fafc;
+  --theme-link-color: #5b21b6;
+  --theme-link-hover-color: #4c1d95;
+  --theme-success-bg: rgba(99, 102, 241, 0.08);
+  --theme-success-border: rgba(139, 92, 246, 0.45);
+  --theme-success-text: #4c1d95;
+
+  --accent-primary: #6366f1;
+  --accent-primary-strong: #4338ca;
+  --accent-secondary: #a855f7;
+  --accent-signal: #0ea5e9;
+  --accent-warning: #f97316;
+  --accent-danger: #ef4444;
+
+  --hero-bg: linear-gradient(135deg, rgba(13, 110, 253, 0.08) 0%, rgba(111, 66, 193, 0.08) 50%, rgba(0, 212, 255, 0.05) 100%);
+  --hero-border: rgba(0, 0, 0, 0.08);
+  --hero-heading-color: #1e293b;
+  --hero-heading-shadow: none;
+  --hero-subtitle-color: rgba(30, 41, 59, 0.7);
+  --hero-button-border: rgba(99, 102, 241, 0.35);
+  --hero-button-color: #1e293b;
+
+  --nav-tab-color: rgba(30, 41, 59, 0.6);
+  --nav-tab-hover-color: #4338ca;
+  --nav-tab-hover-border: rgba(67, 56, 202, 0.4);
+  --nav-tab-active-color: #4338ca;
+  --nav-tab-active-shadow: none;
+
+  --stat-card-bg: rgba(255, 255, 255, 0.85);
+  --stat-card-border: rgba(99, 102, 241, 0.2);
+  --stat-card-hover-bg: rgba(255, 255, 255, 0.98);
+  --stat-card-hover-border: rgba(99, 102, 241, 0.35);
+  --stat-card-hover-shadow: rgba(99, 102, 241, 0.15);
+  --stat-label-color: rgba(30, 41, 59, 0.6);
+  --stat-value-color: #4338ca;
+  --stat-value-shadow: none;
+  --stat-description-color: #475569;
+  --stat-link-color: #2563eb;
+  --stat-link-hover-color: #1d4ed8;
+
+  --section-title-color: #1e293b;
+  --section-title-shadow: none;
+  --section-subtitle-color: rgba(30, 41, 59, 0.6);
+
+  --router-card-bg: rgba(255, 255, 255, 0.85);
+  --router-card-border: rgba(99, 102, 241, 0.2);
+  --router-card-hover-border: rgba(99, 102, 241, 0.35);
+  --router-card-hover-shadow: rgba(99, 102, 241, 0.2);
+  --router-card-address-color: rgba(30, 41, 59, 0.55);
+  --router-card-label-color: rgba(30, 41, 59, 0.7);
+
+  --chip-connected-bg: rgba(34, 197, 94, 0.1);
+  --chip-connected-color: #15803d;
+  --chip-connected-border: rgba(34, 197, 94, 0.3);
+  --chip-disconnected-bg: rgba(148, 163, 184, 0.12);
+  --chip-disconnected-color: rgba(71, 85, 105, 0.85);
+  --chip-disconnected-border: rgba(148, 163, 184, 0.3);
+
+  --router-limit-card-bg: rgba(255, 255, 255, 0.92);
+  --router-limit-card-border: rgba(99, 102, 241, 0.2);
+  --router-limit-card-active-bg: rgba(99, 102, 241, 0.08);
+  --router-limit-card-active-border: rgba(99, 102, 241, 0.4);
+  --router-limit-card-shadow: rgba(99, 102, 241, 0.2);
+  --router-limit-card-connected-border: rgba(34, 197, 94, 0.35);
+  --router-limit-card-divider: rgba(15, 23, 42, 0.15);
+
+  --table-bg: rgba(255, 255, 255, 0.85);
+  --table-border: rgba(99, 102, 241, 0.2);
+  --table-header-bg: rgba(148, 163, 184, 0.15);
+  --table-header-color: #0f172a;
+  --table-row-border: rgba(226, 232, 240, 0.7);
+  --table-row-hover-bg: rgba(99, 102, 241, 0.12);
+  --table-row-hover-border: rgba(99, 102, 241, 0.25);
+  --table-link-color: #2563eb;
+  --table-link-hover-color: #1d4ed8;
+
+  --form-section-bg: var(--theme-section-bg);
+  --form-section-border: var(--theme-section-border);
+  --form-section-hover-bg: var(--theme-section-hover-bg);
+  --form-section-hover-border: var(--theme-input-focus-border);
+  --form-label-color: var(--theme-text-secondary);
+  --form-text-color: var(--theme-text-muted);
+  --form-check-border: var(--theme-input-border);
+  --form-check-active-bg: var(--accent-primary);
+
+  --alert-info-bg: rgba(59, 130, 246, 0.12);
+  --alert-info-border: rgba(59, 130, 246, 0.3);
+  --alert-info-text: #1e3a8a;
+
+  --brand-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #7c3aed 100%);
+  --brand-shadow: rgba(99, 102, 241, 0.3);
+  --brand-shadow-strong: rgba(99, 102, 241, 0.5);
+  --brand-glow-animation: none;
+
+  --fee-button-bg: rgba(99, 102, 241, 0.12);
+  --fee-button-border: #6366f1;
+  --fee-button-text: #312e81;
+  --fee-button-shadow: rgba(99, 102, 241, 0.15);
+  --fee-button-hover-bg: #6366f1;
+  --fee-button-hover-border: #4f46e5;
+  --fee-button-hover-text: #ffffff;
+  --fee-button-hover-shadow: rgba(99, 102, 241, 0.35);
+
+  --banner-bg: rgba(59, 130, 246, 0.12);
+  --banner-border: rgba(59, 130, 246, 0.25);
+  --banner-text: #0f172a;
+  --banner-dismiss: #1e3a8a;
+
+  --about-modal-bg: color-mix(in srgb, var(--theme-card-bg) 88%, var(--theme-section-bg) 12%);
+  --about-modal-border: color-mix(in srgb, var(--theme-card-border) 60%, transparent);
+  --about-modal-header-bg: color-mix(in srgb, var(--theme-modal-bg) 85%, var(--theme-section-bg) 15%);
+  --about-card-bg: color-mix(in srgb, var(--theme-card-bg) 94%, var(--theme-section-bg) 6%);
+  --about-card-border: color-mix(in srgb, var(--theme-card-border) 50%, transparent);
+  --about-card-heading: color-mix(in srgb, var(--theme-text-primary) 85%, var(--theme-text-secondary) 15%);
+  --about-card-text: color-mix(in srgb, var(--theme-text-secondary) 85%, var(--theme-text-primary) 15%);
+
+  --theme-font-amount: 'Roboto Mono', monospace;
+}
+
+html.dark,
+html[data-theme="dark"] {
+  /* Dark mode colors */
+  --theme-bg: linear-gradient(135deg, #0a0e1a 0%, #161b2e 25%, #0d1120 50%, #1a1f35 75%, #0a0e1a 100%);
+  --theme-card-bg: rgba(15, 20, 35, 0.95);
+  --theme-card-border: rgba(100, 200, 255, 0.5);
+  --theme-text-primary: #ffffff;
+  --theme-text-secondary: #e2e8f0;
+  --theme-text-muted: #cbd5e1;
+  --theme-input-bg: rgba(26, 32, 48, 0.9);
+  --theme-input-border: rgba(100, 200, 255, 0.4);
+  --theme-input-focus-border: #00d4ff;
+  --theme-section-bg: rgba(25, 30, 50, 0.7);
+  --theme-section-hover-bg: rgba(30, 35, 60, 0.85);
+  --theme-section-border: rgba(100, 200, 255, 0.3);
+  --theme-button-gradient-start: #7b9eff;
+  --theme-button-gradient-mid: #a8c0ff;
+  --theme-button-gradient-end: #8fa9ff;
+  --theme-button-hover-start: #8fa9ff;
+  --theme-button-hover-mid: #b3c6ff;
+  --theme-button-hover-end: #9fb6ff;
+  --theme-shadow-color: rgba(0, 150, 255, 0.2);
+  --theme-shadow-hover: rgba(123, 158, 255, 0.6);
+  --theme-percent-25-bg: rgba(123, 158, 255, 0.25);
+  --theme-percent-50-bg: rgba(123, 158, 255, 0.5);
+  --theme-percent-75-bg: rgba(123, 158, 255, 0.75);
+  --theme-percent-border: rgba(123, 158, 255, 0.7);
+  --theme-navbar-bg: rgba(10, 10, 20, 0.85);
+  --theme-navbar-border: rgba(100, 200, 255, 0.2);
+  --theme-modal-bg: rgba(28, 38, 58, 0.98);
+  --theme-modal-section-bg: rgba(20, 28, 45, 0.7);
+  --theme-link-color: #a8c0ff;
+  --theme-link-hover-color: #cfe0ff;
+  --theme-success-bg: rgba(123, 158, 255, 0.12);
+  --theme-success-border: rgba(168, 192, 255, 0.5);
+  --theme-success-text: #e0e7ff;
+
+  --accent-primary: #80a2ff;
+  --accent-primary-strong: #5c7cff;
+  --accent-secondary: #d6a8ff;
+  --accent-signal: #2fe1c0;
+  --accent-warning: #fbbf24;
+  --accent-danger: #f87171;
+
+  --hero-bg: linear-gradient(135deg, rgba(13, 110, 253, 0.15) 0%, rgba(111, 66, 193, 0.15) 50%, rgba(0, 212, 255, 0.1) 100%);
+  --hero-border: rgba(255, 255, 255, 0.08);
+  --hero-heading-color: #ffffff;
+  --hero-heading-shadow: 0 2px 10px rgba(13, 110, 253, 0.3);
+  --hero-subtitle-color: rgba(224, 231, 255, 0.7);
+  --hero-button-border: rgba(96, 165, 250, 0.4);
+  --hero-button-color: rgba(224, 231, 255, 0.9);
+
+  --nav-tab-color: rgba(224, 231, 255, 0.6);
+  --nav-tab-hover-color: #80a2ff;
+  --nav-tab-hover-border: rgba(128, 162, 255, 0.5);
+  --nav-tab-active-color: #80a2ff;
+  --nav-tab-active-shadow: 0 0 10px rgba(128, 162, 255, 0.4);
+
+  --stat-card-bg: rgba(26, 35, 50, 0.65);
+  --stat-card-border: rgba(13, 110, 253, 0.2);
+  --stat-card-hover-bg: rgba(26, 35, 50, 0.85);
+  --stat-card-hover-border: rgba(128, 162, 255, 0.6);
+  --stat-card-hover-shadow: rgba(128, 162, 255, 0.3);
+  --stat-label-color: rgba(224, 231, 255, 0.6);
+  --stat-value-color: #80a2ff;
+  --stat-value-shadow: 0 0 20px rgba(128, 162, 255, 0.4);
+  --stat-description-color: rgba(224, 231, 255, 0.75);
+  --stat-link-color: #93c5fd;
+  --stat-link-hover-color: #bfdbfe;
+
+  --section-title-color: #ffffff;
+  --section-title-shadow: 0 2px 10px rgba(96, 165, 250, 0.2);
+  --section-subtitle-color: rgba(224, 231, 255, 0.7);
+
+  --router-card-bg: rgba(26, 35, 50, 0.65);
+  --router-card-border: rgba(96, 165, 250, 0.2);
+  --router-card-hover-border: rgba(96, 165, 250, 0.4);
+  --router-card-hover-shadow: rgba(13, 110, 253, 0.2);
+  --router-card-address-color: rgba(224, 231, 255, 0.5);
+  --router-card-label-color: rgba(224, 231, 255, 0.7);
+
+  --chip-connected-bg: rgba(47, 225, 192, 0.15);
+  --chip-connected-color: #2fe1c0;
+  --chip-connected-border: rgba(47, 225, 192, 0.4);
+  --chip-disconnected-bg: rgba(108, 117, 125, 0.2);
+  --chip-disconnected-color: rgba(224, 231, 255, 0.6);
+  --chip-disconnected-border: rgba(108, 117, 125, 0.3);
+
+  --router-limit-card-bg: rgba(26, 35, 50, 0.6);
+  --router-limit-card-border: rgba(96, 165, 250, 0.3);
+  --router-limit-card-active-bg: rgba(13, 110, 253, 0.15);
+  --router-limit-card-active-border: rgba(13, 110, 253, 0.5);
+  --router-limit-card-shadow: rgba(13, 110, 253, 0.25);
+  --router-limit-card-connected-border: rgba(47, 225, 192, 0.45);
+  --router-limit-card-divider: rgba(255, 255, 255, 0.08);
+
+  --table-bg: rgba(26, 35, 50, 0.6);
+  --table-border: rgba(96, 165, 250, 0.25);
+  --table-header-bg: rgba(148, 163, 184, 0.15);
+  --table-header-color: #e2e8f0;
+  --table-row-border: rgba(255, 255, 255, 0.06);
+  --table-row-hover-bg: rgba(96, 165, 250, 0.15);
+  --table-row-hover-border: rgba(96, 165, 250, 0.35);
+  --table-link-color: #cbd5f5;
+  --table-link-hover-color: #e0e7ff;
+
+  --form-section-bg: rgba(25, 30, 50, 0.7);
+  --form-section-border: rgba(100, 200, 255, 0.25);
+  --form-section-hover-bg: rgba(30, 35, 60, 0.85);
+  --form-section-hover-border: rgba(0, 212, 255, 0.6);
+  --form-label-color: rgba(224, 231, 255, 0.75);
+  --form-text-color: rgba(224, 231, 255, 0.6);
+  --form-check-border: rgba(100, 200, 255, 0.4);
+  --form-check-active-bg: #80a2ff;
+
+  --alert-info-bg: rgba(59, 130, 246, 0.16);
+  --alert-info-border: rgba(59, 130, 246, 0.35);
+  --alert-info-text: rgba(224, 231, 255, 0.85);
+
+  --brand-gradient: linear-gradient(135deg, #a8c0ff 0%, #80a2ff 50%, #a8c0ff 100%);
+  --brand-shadow: rgba(168, 192, 255, 0.5);
+  --brand-shadow-strong: rgba(168, 192, 255, 0.8);
+  --brand-glow-animation: glowText 4s ease-in-out infinite;
+
+  --fee-button-bg: rgba(128, 162, 255, 0.18);
+  --fee-button-border: #80a2ff;
+  --fee-button-text: #e2e8ff;
+  --fee-button-shadow: rgba(128, 162, 255, 0.25);
+  --fee-button-hover-bg: #80a2ff;
+  --fee-button-hover-border: #a8c0ff;
+  --fee-button-hover-text: #050914;
+  --fee-button-hover-shadow: rgba(128, 162, 255, 0.45);
+
+  --banner-bg: rgba(15, 23, 42, 0.75);
+  --banner-border: rgba(96, 165, 250, 0.35);
+  --banner-text: #e2e8f0;
+  --banner-dismiss: #cbd5ff;
+
+  --about-modal-bg: color-mix(in srgb, var(--theme-card-bg) 75%, var(--theme-section-bg) 25%);
+  --about-modal-border: color-mix(in srgb, var(--theme-card-border) 55%, transparent);
+  --about-modal-header-bg: color-mix(in srgb, var(--theme-modal-bg) 70%, var(--theme-section-bg) 30%);
+  --about-card-bg: color-mix(in srgb, var(--theme-card-bg) 85%, var(--theme-section-bg) 15%);
+  --about-card-border: color-mix(in srgb, var(--theme-card-border) 45%, transparent);
+  --about-card-heading: color-mix(in srgb, var(--theme-text-primary) 80%, var(--theme-text-secondary) 20%);
+  --about-card-text: color-mix(in srgb, var(--theme-text-secondary) 80%, var(--theme-text-primary) 20%);
+}

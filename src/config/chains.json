@@ -1,0 +1,9 @@
+{
+  "56": { "name": "BNB Chain", "network": "bsc", "testnet": false, "nativeCurrency": { "name": "BNB", "symbol": "BNB", "decimals": 18 } },
+  "1": { "name": "Ethereum", "network": "mainnet", "testnet": false, "nativeCurrency": { "name": "Ether", "symbol": "ETH", "decimals": 18 } },
+  "8453": { "name": "Base", "network": "base", "testnet": false, "nativeCurrency": { "name": "Ether", "symbol": "ETH", "decimals": 18 } },
+  "59144": { "name": "Linea", "network": "linea", "testnet": false, "nativeCurrency": { "name": "Ether", "symbol": "ETH", "decimals": 18 } },
+  "1440000": { "name": "XRPL EVM", "network": "xrpl-evm", "testnet": false, "nativeCurrency": { "name": "XRP", "symbol": "XRP", "decimals": 18 } },
+  "137": { "name": "Polygon", "network": "polygon", "testnet": false, "nativeCurrency": { "name": "POL", "symbol": "POL", "decimals": 18 } },
+  "43114": { "name": "Avalanche", "network": "avalanche", "testnet": false, "nativeCurrency": { "name": "AVAX", "symbol": "AVAX", "decimals": 18 } }
+}

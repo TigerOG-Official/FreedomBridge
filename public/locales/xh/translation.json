@@ -1,0 +1,364 @@
+{
+  "app": {
+    "titleFreedom": "Inkululeko",
+    "titleBridge": "Ibhulorho"
+  },
+  "nav": {
+    "settings": "Izicwangciso",
+    "menu": "Imenyu",
+    "preferences": "Ukhetho",
+    "switchTheme": "Imbonakalo",
+    "theme": {
+      "dark": "Mnyama",
+      "light": "Khanya"
+    },
+    "switchPalette": "Tshintsha Umbala",
+    "wiki": "Amaxwebhu / Wiki",
+    "contracts": "Izivumelwano",
+    "faq": "Imibuzo Ebuzwa Rhoqo",
+    "logout": "Phuma",
+    "language": "Ulwimi",
+    "languageSearchPlaceholder": "Khangela iilwimi",
+    "languageNoResults": "Akukho lwimi lufunyenweyo",
+    "close": "Vala"
+  },
+  "addNetworks": {
+    "title": "Yongeza Iinethiwekhi",
+    "description": "Cofa iqhosha elingezantsi ukuze ungeze Iinethiwekhi kwiwallet yakho. Oku kwenza kube lula ukutshintsha phakathi kwamakhonkco ngelixa uvavanya."
+  },
+  "tabs": {
+    "convert": "Guqula",
+    "bridge": "Ibhulorho"
+  },
+  "convert": {
+    "token": "Itoken",
+    "selectToken": "Khetha iToken",
+    "balance": "Ibhalansi",
+    "noConvertibleTokens": "Akukho token zinokuguqulwa kwi-{{chainName}}",
+    "convert": "Guqula",
+    "addToWalletLabel": "Ngenisa {{symbol}} kwi {{chainName}} kwiwallet",
+    "addToWalletButton": "Ngenisa kwiWallet",
+    "addingToken": "Iyongeza…",
+    "addTokenError": "Ayikwazi ukongeza itoken kwiwallet",
+    "legacyTokenMissing": "Itoken yakudala ayikho kule khonkco",
+    "tigerOGMissing": "Itoken ye-TigerOG ayikho kule khonkco",
+    "networkWarning": {
+      "title": "Inethiwekhi Engachanekanga",
+      "message": "Ukuguqulwa kwetoken kufumaneka kuphela kwiKhonkco le-BSC.",
+      "description": "Nceda utshintshele kwiKhonkco le-BSC kwiwallet yakho ukuze uguqule iitokeni, okanye ujonge kwi-Bridge tab ukuze udlulise iitokeni phakathi kwamakhonkco."
+    }
+  },
+  "bridge": {
+    "fromChain": "Ukusuka kwiKhonkco",
+    "selectChainPlaceholder": " Khetha ikhonkco",
+    "toChain": "Ukuya kwiKhonkco",
+    "selectDestinationPlaceholder": " Khetha indawo oya kuyo",
+    "noDestination": "Akukho ndawo uya kuyo",
+    "noBridgeableTokens": "Akukho token zinokudluliselwa ngebhulorho",
+    "bridgeButton": "Dlulisa iiToken ngebhulorho",
+    "getFeeQuote": "Fumana Ixabiso leNtlawulo",
+    "viewOnAxelarscan": "Jonga kwi-Axelarscan",
+    "addDestinationTokenLabel": "Ngenisa {{symbol}} kwi {{chainName}} kwiwallet",
+    "addTokenError": "Ayikwazi ukongeza itoken kwiwallet",
+    "estimatedTime": "Ixesha eliqikelelweyo",
+    "recentTransactions": "Iitransaction zakutshanje",
+    "clearHistory": "Cima imbali",
+    "historyStoredLocally": "Imbali yeetransaction igcinwe kwesi sixhobo"
+  },
+  "settings": {
+    "title": "Izicwangciso",
+    "environment": "Indawo esingqongileyo",
+    "rpcEndpoints": "Iindawo zokugqibela ze-RPC",
+    "rpcEndpointsHelp": "Hlaziya i-URL ye-RPC esetyenziselwa ikhonkco ngalinye kwindawo ekhethiweyo.",
+    "noChainsConfigured": "Akukho makhonkco aqwalaselweyo kule ndawo.",
+    "cancel": "Rhoxisa",
+    "save": "Gcina"
+  },
+  "wallet": {},
+  "login": {
+    "title": "Wamkelekile kwakhona",
+    "subtitle": "Ngena ukuze uqhubeke kwiBhulorho yeNkululeko",
+    "emailLabel": "I-imeyile",
+    "emailPlaceholder": "igama@umzekelo.com",
+    "passwordLabel": "Iphaswedi",
+    "passwordPlaceholder": "Faka iphaswedi",
+    "rememberMe": "Ndicel' undikhumbule kwesi sixhobo",
+    "submit": "Ngena",
+    "validation": {
+      "required": "I-imeyile nephaswedi ziyafuneka.",
+      "invalid": "I-imeyile okanye iphaswedi engachanekanga."
+    }
+  },
+  "landing": {
+    "banner": {
+      "title": "Intsha apha?",
+      "message": "Funda nge-Freedom Bridge nendlela yokudlulisa iitokeni ze-TigerOG phakathi kwamakhonkco."
+    },
+    "hero": {
+      "badge": "Inikwe amandla yi-Axelar",
+      "title": "Khulula <1/> <2>Ii-Asethi</2> Zakho",
+      "subtitle": "Dlulisa iitokeni ze-TigerOG ngokungenamthungo kumakhonkco usebenzisa i-Axelar Interchain Token Service. Khuselekile, ikhawuleza, kwaye ayinarhafu.",
+      "launchApp": "Qalisa I-App",
+      "documentation": "Amaxwebhu"
+    },
+    "stats": {
+      "messaging": "Inethiwekhi ye-Axelar",
+      "networks": "Iinethiwekhi ezibukhoma",
+      "fees": "Imirhumo yeProtocol",
+      "finality": "Ukugqitywa"
+    },
+    "features": {
+      "title": "Interchain Token Service",
+      "description": "I-Freedom Bridge isebenzisa i-Axelar ITS ukunikezela ngamava okudibanisa angenamthungo, akhuselekileyo, kwaye angenarhafu kwi-blockchains ezi-{{count}}+.",
+      "stopDecay": {
+        "title": "Yeka Ukubola",
+        "description": "Iitokeni zakudala zitshisa i-10-11% yexabiso lakho kuyo yonke into oyithengayo kunye nokuthengisa. Ukuguqulela kwi-TigerOG kuyakunqanda oku kuphuma igazi ngoko nangoko, kugcina i-100% yamandla akho.",
+        "graphLabel1": "100% Igciniwe (TigerOG)",
+        "graphLabel2": "-40% Ixabiso (Irhafu Yakudala 10%)"
+      },
+      "conversion": {
+        "title": "1:1 Ukuguqulwa",
+        "description": "Ukunikezelwa okupheleleyo akutshintshi. Iitokeni zigcinwe kwisivumelwano sokufuduka esikhuselekileyo, kwaye i-1:1 echanekileyo iyasetyenziswa. Akukho kutyala imali, akukho kuthotywa."
+      },
+      "multichain": {
+        "title": "Amakhonkco Amaninzi",
+        "description": "Thumela kanye, fikelela kuyo yonke indawo. I-asethi yakho iba yi-native interchain token kumakhonkco kuquka i-Ethereum, i-BNB Chain, i-Base, kunye nokunye."
+      },
+      "security": {
+        "title": "Ukhuseleko lwe-Axelar",
+        "description": "Inikwe amandla yi-decentralized network yee-validators ze-Axelar. I-ITS iqinisekisa ukuba iitokeni zakho zihanjiswa ngokukhuselekileyo kwaye ngokungaguquguqukiyo kuzo zonke iinethiwekhi eziqhagamshelweyo.",
+        "button": "Qalisa Ukudibanisa"
+      }
+    },
+    "teaser": {
+      "title": "Ufuna ezinye iingqekembe?",
+      "subtitle": "Ucinga ntoni nge <lunc>LUNC</lunc>, <crepe>Crepe</crepe>, okanye <shiba>Shiba</shiba>??"
+    },
+    "cta": {
+      "title": "Ulungele ukudibanisa?",
+      "description": "Joyina inguqu ye-interchain. Kuthatha ngaphantsi komzuzu ukuguqula ii-asethi zakho kwaye uqalise ukudibanisa nge-Axelar.",
+      "button": "Qalisa I-App Ngoku"
+    }
+  },
+  "wiki": {
+    "title": "I-Wiki ye-Freedom Bridge",
+    "searchPlaceholder": "Khangela amaxwebhu...",
+    "header": {
+      "title": "Amaxwebhu",
+      "subtitle": "Funda indlela yokuguqula iitokeni zakudala, ibhulorho phakathi kwamakhonkco, kunye nokudibanisa neFreedom Bridge."
+    },
+    "nav": {
+      "gettingStarted": "Ukuqalisa",
+      "coreConcepts": "Iikhonsepthi eziNdoqo",
+      "developers": "Abaphuhlisi",
+      "tigerogSupply": "Ubonelelo lwe-TigerOG",
+      "lionogSupply": "Ubonelelo lwe-LionOG",
+      "frogogSupply": "Ubonelelo lwe-FrogOG"
+    },
+    "articles": {
+      "whatIs": {
+        "title": "Yintoni iFreedom Bridge?",
+        "content": "I-Freedom Bridge yiprotocol ebekwe endaweni enye eyilelwe ukukhulula iitokeni zakudala kwiirhafu eziphezulu zentengiselwano kunye nemida yekhonkco elinye. Ngokuguqula iitokeni eziqhelekileyo zibe zii-asethi ezihambelanayo ne-interchain, abasebenzisi banokuhambisa ixabiso labo ngokukhululekileyo kwi-blockchains exhaswayo.",
+        "taxFreeTitle": "Ukutshintshwa Okungenarhafu",
+        "taxFreeDesc": "Iitokeni zakudala zihlala zine-10%+ iirhafu. Iitokeni ze-TigerOG zine-0% yerhafu.",
+        "omnichainTitle": "Interchain",
+        "omnichainDesc": "Hambisa ii-asethi ngokukhawuleza phakathi kwe-{{count}}+ blockchains nge-Axelar."
+      },
+      "howToConvert": {
+        "title": "Indlela Yokuguqula Iitokeni",
+        "step1": "Qhagamshela iwallet yakho kwikhonkco lomthombo (umz. i-BNB Chain).",
+        "step2": "Yiya kwi <strong>Guqula</strong> ithebhu.",
+        "step3": "Khetha itoken yakudala ofuna ukuyiguqula.",
+        "step4": "Vuma isivumelwano se-Migration sokuchitha iitokeni zakho.",
+        "step5": "Cofa <strong>Guqula</strong> ukufaka iitokeni zakho zakudala kwaye ufumane isixa esilinganayo se \"TigerOG\" iitokeni.",
+        "note": "<strong>Qaphela:</strong> Ukuguqula kuthatha irhafu yentengiselwano yetoken yakudala (ngexesha lohlaziyo) ukuba itoken yakho ihlawulisa irhafu kotshintshiselwano. Nangona kunjalo, xa sele iguqulelwe kwi-TigerOG, lonke utshintshiselwano olulandelayo kunye neebhulorho zikhululekile kule rhafu."
+      },
+      "supportedNetworks": {
+        "title": "Iinethiwekhi eziXhaswayo",
+        "content": "I-Freedom Bridge ixhasa inkqubo ekhulayo ye-{{count}}+ blockchains, eyenza ukusebenzisana okungenamthungo kuwo wonke umhlaba we-EVM nge-Axelar."
+      },
+      "xerc20": {
+        "title": "ii-Token ze-Interchain",
+        "content": "I-Axelar Interchain Token Service (ITS) ivumela iitokeni ukuba zisetyenziswe kumakhonkco amaninzi anedilesi engaguqukiyo kunye nolawulo lophononongo olumanyeneyo. I-Freedom Bridge isebenzisa i-ITS ukuqinisekisa ukuba i-TigerOG ihlala iyi-asethi esemthethweni naphi na apho idityaniswe khona."
+      },
+      "axelar": {
+        "title": "Inethiwekhi ye-Axelar",
+        "content": "Sisebenzisa i-Axelar njengoluhlu lwethu lokusebenzisana. I-Axelar yinethiwekhi ebekwe kwiindawo ezahlukeneyo eqhagamshela ii-blockchains ezahlukeneyo, evumela unxibelelwano olukhuselekileyo kunye nokutshintshelwa kwee-asethi. Imodeli yokhuseleko ye-Axelar ixhhomekeke kwiiseti zee-validators engadingi mvume, ezibonelela ngokhuseleko lwenqanaba eliphezulu kwiitokeni ze-interchain."
+      },
+      "migration": {
+        "title": "I-Logic yoFuduko",
+        "content": "Isivumelwano se-Migration sisetyenziswe kwikhonkco lokuqala (umz. BSC). Ibamba iitokeni zakudala zoqobo elugcinweni. Xa uphucula iitokeni, ufaka kwisivumelwano se-Migration. Xa ukhulula (ukuba kuyaxhaswa), utshisa ukumelwa kwe-TigerOG ukukhulula iitokeni zoqobo. Oku kuqinisekisa i-1:1 exhaswa ngokungqongqo."
+      },
+      "contracts": {
+        "title": "Iidilesi zeSivumelwano esiHlakaniphileyo",
+        "colNetwork": "Inethiwekhi",
+        "colType": "Uhlobo lweSivumelwano",
+        "colAddress": "Idilesi"
+      },
+      "security": {
+        "title": "Imodeli yoKhuseleko",
+        "content": "Ukhuseleko lwakhiwe kuwo wonke umaleko weFreedom Bridge:",
+        "point1": "<strong>I-Architecture yoFuduko:</strong> Iitokeni zakudala zigcinwa kwizivumelwano ezihlakaniphileyo eziqinisekisiweyo, ezingenakutshintshwa.",
+        "point2": "<strong>I-Axelar Validators:</strong> Imiyalezo enqamlezileyo iqinisekiswa yinetiwekhi ye-Axelar ebekwe kwiindawo ezahlukeneyo.",
+        "point3": "<strong>Ubonelelo Olungaguqukiyo:</strong> I-ITS ilawula i-minting kunye ne-burning ukugcina ubonelelo olupheleleyo luhleli kuzo zonke iinethiwekhi.",
+        "point4": "<strong>I-Logic ePhicothiweyo:</strong> Yakhiwe kwi-Axelar kunye ne-OpenZeppelin standard libraries."
+      },
+      "supplyCommon": {
+        "howWeCalculated": "Indlela Esibale Ngayo Oku",
+        "verification": "Uqinisekiso",
+        "verificationDesc": "Zonke iinombolo zobonelelo zinokuqinisekiswa ngokuzimeleyo kwi-chain:",
+        "table": {
+          "category": "Inqanaba",
+          "amount": "Isixa",
+          "percentOfTotal": "% yeTotal",
+          "originalSupply": "Ubonelelo Lokuqala Lulonke",
+          "deadAddress": "Idilesi eFileyo (Etshisiweyo)",
+          "contractBalance": "Ibhalansi yeSivumelwano (Ebambekileyo)",
+          "circulatingSupply": "Ubonelelo Oluvelayo"
+        },
+        "deadAddressTitle": "1. Idilesi eFileyo",
+        "contractBalanceTitle": "2. Ibhalansi yeSivumelwano",
+        "lpLockedTitle": "3. ii-Token ze-LP ezitshixiweyo"
+      },
+      "tigerogSupply": {
+        "title": "Ukuqhekeka koBonelelo lwe-TigerOG",
+        "intro": "I-TigerOG inobonelelo olusisigxina oluvelayo oluvela kwitoken ye-BNBTiger yoqobo. Ubalo lobonelelo luthathela ingqalelo zonke iitokeni ezitshisiweyo nezigcinwe ngokusisigxina.",
+        "lpLocked": "I-LP eTshixiweyo (86.18% ye-LP eTshisiweyo)",
+        "deadAddressDesc": "Iitokeni ezithunyelwe ku-<code>0x000...dEaD</code> zitshisiwe ngokusisigxina kwaye azinakuphinda zifunyanwe. Oku kuquka iitokeni ezitshiswe ngendlela yerhafu ye-BNBTiger yoqobo.",
+        "contractBalanceDesc": "Isixa esincinci seetokeni sibambekile kwisivumelwano se-BNBTiger ngokwaso. Ezi tokeni azifikeleleki kwaye zisusiwe ngokufanelekileyo kubonelelo.",
+        "lpLockedDesc": "I-PancakeSwap liquidity pool iqulethe iitokeni ze-BNBTiger ezidityaniswe ne-BNB. Xa iitokeni ze-LP zitshisiwe (zithunyelwe kwidilesi efileyo), iitokeni ezingezantsi kwi-pool zitshixiwe ngokusisigxina.",
+        "lpBurnedPercent": "ii-Token ze-LP ezitshisiweyo: 86.18% yazo zonke iitokeni ze-LP",
+        "lpLockedPercent": "Ngoko ke, i-86.18% yeetokeni kwi-LP zitshixiwe ngokusisigxina",
+        "note": "<strong>Qaphela:</strong> I-TigerOG igcina umlinganiselo we-1:1 ne-BNBTiger ngexesha lofuduko. Ubonelelo oluvelayo lwe-TigerOG luhambelana nobonelelo oluvelayo lwenyani lwe-BNBTiger emva kokubala zonke iitokeni ezitshisiweyo nezitshixiweyo.",
+        "launchData": "<strong>Idatha yokuQalisa:</strong> Ezi nani zabalwa xa kwaqalwa. Itoken ye-BNBTiger yakudala isaqhubeka nokutshisa iitokeni kuthengiselwano ngalunye, ngoko ke ubonelelo lwenyani lusenokuba ngezantsi kancinci kunokuba kubonisiwe.",
+        "legacyContract": "Isivumelwano seToken ye-BNBTiger",
+        "ogContract": "Isivumelwano seToken ye-TigerOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,772,706,396,234,535,780,783,775",
+          "deadPercent": "57.73%",
+          "contract": "−6,142,342,823,271,327",
+          "contractPercent": "<0.01%",
+          "lp": "−565,059,839,948,518,979,124,912",
+          "lpPercent": "5.65%",
+          "circulating": "3,662,233,757,674,602,416,819,986",
+          "circulatingPercent": "36.62%"
+        }
+      },
+      "lionogSupply": {
+        "title": "Ukuqhekeka koBonelelo lwe-LionOG",
+        "intro": "I-LionOG inobonelelo olusisigxina oluvelayo oluvela kwitoken ye-BNBLion yoqobo. Ubalo lobonelelo luthathela ingqalelo zonke iitokeni ezitshisiweyo nezigcinwe ngokusisigxina.",
+        "lpLocked": "I-LP eTshixiweyo (99.98% ye-LP eTshisiweyo)",
+        "deadAddressDesc": "Iitokeni ezithunyelwe ku-<code>0x000...dEaD</code> zitshisiwe ngokusisigxina kwaye azinakuphinda zifunyanwe. Oku kuquka iitokeni ezitshiswe ngendlela yerhafu ye-BNBLion yoqobo.",
+        "contractBalanceDesc": "Isixa esincinci seetokeni sibambekile kwisivumelwano se-BNBLion ngokwaso. Ezi tokeni azifikeleleki kwaye zisusiwe ngokufanelekileyo kubonelelo.",
+        "lpLockedDesc": "I-PancakeSwap liquidity pool iqulethe iitokeni ze-BNBLion ezidityaniswe ne-BNB. Xa iitokeni ze-LP zitshisiwe (zithunyelwe kwidilesi efileyo), iitokeni ezingezantsi kwi-pool zitshixiwe ngokusisigxina.",
+        "lpBurnedPercent": "ii-Token ze-LP ezitshisiweyo: 99.98% yazo zonke iitokeni ze-LP",
+        "lpLockedPercent": "Ngoko ke, i-99.98% yeetokeni kwi-LP zitshixiwe ngokusisigxina",
+        "note": "<strong>Qaphela:</strong> I-LionOG igcina umlinganiselo we-1:1 ne-BNBLion ngexesha lofuduko. Ubonelelo oluvelayo lwe-LionOG luhambelana nobonelelo oluvelayo lwenyani lwe-BNBLion emva kokubala zonke iitokeni ezitshisiweyo nezitshixiweyo.",
+        "launchData": "<strong>Idatha yokuQalisa:</strong> Ezi nani zabalwa xa kwaqalwa. Itoken ye-BNBLion yakudala isaqhubeka nokutshisa iitokeni kuthengiselwano ngalunye, ngoko ke ubonelelo lwenyani lusenokuba ngezantsi kancinci kunokuba kubonisiwe.",
+        "legacyContract": "Isivumelwano seToken ye-BNBLion",
+        "ogContract": "Isivumelwano seToken ye-LionOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,724,597,218,422,106,614,085,614",
+          "deadPercent": "57.25%",
+          "contract": "−9,219,967,745,410,740,095,290",
+          "contractPercent": "<0.01%",
+          "lp": "−442,490,152,327,271,918,655,109",
+          "lpPercent": "4.42%",
+          "circulating": "3,832,903,409,282,876,056,519,182",
+          "circulatingPercent": "38.33%"
+        }
+      },
+      "frogogSupply": {
+        "title": "Ukuqhekeka koBonelelo lwe-FrogOG",
+        "intro": "I-FrogOG inobonelelo olusisigxina oluvelayo oluvela kwitoken ye-BNBFrog yoqobo. Ubalo lobonelelo luthathela ingqalelo zonke iitokeni ezitshisiweyo nezigcinwe ngokusisigxina.",
+        "lpLocked": "I-LP eTshixiweyo (99.31% ye-LP eTshisiweyo)",
+        "deadAddressDesc": "Iitokeni ezithunyelwe ku-<code>0x000...dEaD</code> zitshisiwe ngokusisigxina kwaye azinakuphinda zifunyanwe. Oku kuquka iitokeni ezitshiswe ngendlela yerhafu ye-BNBFrog yoqobo.",
+        "contractBalanceDesc": "Isixa esincinci seetokeni sibambekile kwisivumelwano se-BNBFrog ngokwaso. Ezi tokeni azifikeleleki kwaye zisusiwe ngokufanelekileyo kubonelelo.",
+        "lpLockedDesc": "I-PancakeSwap liquidity pool iqulethe iitokeni ze-BNBFrog ezidityaniswe ne-BNB. Xa iitokeni ze-LP zitshisiwe (zithunyelwe kwidilesi efileyo), iitokeni ezingezantsi kwi-pool zitshixiwe ngokusisigxina.",
+        "lpBurnedPercent": "ii-Token ze-LP ezitshisiweyo: 99.31% yazo zonke iitokeni ze-LP",
+        "lpLockedPercent": "Ngoko ke, i-99.31% yeetokeni kwi-LP zitshixiwe ngokusisigxina",
+        "note": "<strong>Qaphela:</strong> I-FrogOG igcina umlinganiselo we-1:1 ne-BNBFrog ngexesha lofuduko. Ubonelelo oluvelayo lwe-FrogOG luhambelana nobonelelo oluvelayo lwenyani lwe-BNBFrog emva kokubala zonke iitokeni ezitshisiweyo nezitshixiweyo.",
+        "launchData": "<strong>Idatha yokuQalisa:</strong> Ezi nani zabalwa xa kwaqalwa. Itoken ye-BNBFrog yakudala isaqhubeka nokutshisa iitokeni kuthengiselwano ngalunye, ngoko ke ubonelelo lwenyani lusenokuba ngezantsi kancinci kunokuba kubonisiwe.",
+        "legacyContract": "Isivumelwano seToken ye-BNBFrog",
+        "ogContract": "Isivumelwano seToken ye-FrogOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−740,059,884,911,899,485,982,976",
+          "deadPercent": "7.40%",
+          "contract": "−4,036,008,092,593,983,879,741",
+          "contractPercent": "<0.01%",
+          "lp": "−874,144,424,929,004,044,398,902",
+          "lpPercent": "8.74%",
+          "circulating": "8,385,795,686,123,088,377,024,138",
+          "circulatingPercent": "83.86%"
+        }
+      }
+    }
+  },
+  "contracts": {
+    "title": "Iidilesi zeSivumelwano",
+    "header": {
+      "title": "Izivumelwano eziHlakaniphileyo",
+      "subtitle": "Iidilesi zokusasazwa ngokusemthethweni zeetokeni kunye neebhulorho kuwo wonke ummandla we-Freedom Bridge."
+    },
+    "tabs": {
+      "overview": "Isishwankathelo",
+      "byToken": "NgeToken",
+      "byChain": "NgeKhonkco",
+      "liquidity": "Ubumanzi"
+    },
+    "liquidity": {
+      "title": "Amachibi oBumanzi"
+    }
+  },
+  "faq": {
+    "title": "Inkxaso ye-Freedom Bridge",
+    "header": "Imibuzo Ebuzwa Rhoqo",
+    "subtitle": "Iimpendulo kwimibuzo eqhelekileyo malunga ne-TigerOG, ukudibanisa, kunye ne-Axelar.",
+    "cta": {
+      "title": "Usenemibuzo?",
+      "description": "Joyina uluntu lwethu kwi-Telegram okanye ujonge i-Wiki eneenkcukacha zeziKhokelo zobugcisa.",
+      "wiki": "Ndwendwela iWiki",
+      "telegram": "Joyina i-Telegram"
+    },
+    "questions": {
+      "q1": "Yintoni injongo yokuguqula iitokeni zam?",
+      "a1": "Ukuguqula iitokeni zakho zibe yi-TigerOG kususa irhafu yentengiselwano (ihlala i-10-12%) eyayanyaniswa netoken yakudala. Ikwakuvumela ukuba udibanise ezi tokeni kwezinye ii-blockchains ezifana ne-Ethereum, i-Base, kunye nokunye nge-Axelar, uvumela ukufikelela kwi-ecosystems entsha.",
+      "q2": "Ingaba kukhuselekile ukusebenzisa i-Freedom Bridge?",
+      "a2": "Ewe. Iprotocol isebenzisa isivumelwano se-Migration esikhuselekileyo kunye ne-Axelar's Interchain Token Service. Xa uguqula, i-BNBTiger yakho itshiswa ngokusisigxina kwaye ufumana i-TigerOG kumlinganiselo we-1:1. Inkqubo yokutshisa iqinisekisa ukuba ubonelelo lulonke lulawulwa kakuhle kuwo onke amakhonkco.",
+      "q3": "Ingaba kukho nayiphi na imirhumo?",
+      "a3": "I-Freedom Bridge ngokwayo ayihlawulisi mrhumo ngokuguqula. Uhlawula kuphela imirhumo yegesi ye-blockchain eqhelekileyo. Ukudibanisa phakathi kwamakhonkco kubandakanya umrhumo wegesi enqamlezileyo ohlawulwa ku-Axelar ukugubungela iindleko zokudlulisela.",
+      "q4": "Kwenzeka ntoni ukuba ndilahlekelwa ziitokeni zam?",
+      "a4": "ii-Token ze-TigerOG ziziphatha njengayo nayiphi na enye itoken ye-ERC20. Ukuba ulahlekelwa lufikelelo kwiwallet yakho, azinakubuyiselwa. Soloko ugcina izitshixo zakho zabucala kunye namabinzana okubuyisela ekhuselekile.",
+      "q5": "Ndingakwazi ukuguqulela iitokeni zam ze-TigerOG zibuyele kwi-BNBTiger?",
+      "a5": "Hayi. Ufuduko luguqulelo lwendlela enye. Xa uguqulela i-BNBTiger kwi-TigerOG, iitokeni zakho ze-BNBTiger zitshiswa ngokusisigxina (zithunyelwe kwidilesi efileyo). Oku kungenxa yoyilo — i-TigerOG luguqulelo oluphuculweyo, olungenarhafu olujolise ekuthatheni indawo yetoken yakudala ngokupheleleyo.",
+      "q6": "Ziziphi iinethiwekhi ezixhaswayo?",
+      "a6": "Sixhasa amakhonkco amaninzi we-EVM nge-Axelar, kubandakanywa i-BNB Chain, i-Ethereum, i-Base, kunye nokunye. Jonga i-Wiki kuluhlu olupheleleyo lweenethiwekhi ezixhaswayo.",
+      "q7": "Kuthatha ixesha elingakanani ukudibanisa?",
+      "a7": "Isantya sokudibanisa sixhomekeke kwixesha lokugqibela lekhonkco lomthombo kunye nokudluliselwa kwe-Axelar. Ngokuqhelekileyo, ukudluliselwa phakathi kwamakhonkco kuthatha malunga nemizuzu emi-2-5.",
+      "q8": "Luthini ubonelelo oluvelayo lweetoken ze-OG?",
+      "a8": "Itoken nganye ye-OG inobonelelo olusisigxina oluvelayo oluvela kwitoken yayo ye-BNB yoqobo, ukubala iitokeni ezitshisiweyo, iibhalansi zezivumelwano ezibambekileyo, kunye ne-LP etshixiweyo. I-TigerOG: ~3.66 iseptiliyoni (36.62% yoqobo). I-LionOG: ~3.83 iseptiliyoni (38.33% yoqobo). I-FrogOG: ~8.39 iseptiliyoni (83.86% yoqobo). Bona i-Wiki ngokuchithwa kweenkcukacha zetoken nganye."
+    }
+  },
+  "common": {
+    "from": "Ukusuka",
+    "to": "Ukuya",
+    "max": "UBUNINZI",
+    "chainId": "I-ID yeKhonkco",
+    "bscChain": "Ikhonkco le-BSC",
+    "insufficientBalance": "Ibhalansi ayonelanga.",
+    "failedToSwitchNetwork": "Ukutshintsha inethiwekhi akwenzekanga. Nceda utshintshe ngesandla kwiwallet yakho.",
+    "failedToFetchFeeQuote": "Ukufumana ixabiso lentlawulo akwenzekanga.",
+    "unableToDetermineGas": "Ayikwazi ukufumanisa intlawulo yegesi yeAxelar",
+    "bridgeTxFailed": "Intengiselwano yebhulorho ayiphumelelanga",
+    "estimatedGas": "Igesi yeAxelar eqikelelweyo",
+    "success": "Impumelelo!",
+    "viewOnExplorer": "Jonga kwi-Explorer",
+    "bridging": "Kuyadlulisa ngebhulorho...",
+    "transactionFailed": "Intengiselwano ayiphumelelanga",
+    "search": "Khangela",
+    "backToApp": "Buyela kwi-App"
+  }
+}

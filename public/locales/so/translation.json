@@ -1,0 +1,364 @@
+{
+  "app": {
+    "titleFreedom": "Xorriyadda",
+    "titleBridge": "Buundada"
+  },
+  "nav": {
+    "settings": "Dejinta",
+    "menu": "Liiska",
+    "preferences": "Dookhyada",
+    "switchTheme": "Muuqaalka",
+    "theme": {
+      "dark": "Madow",
+      "light": "Iftiin"
+    },
+    "switchPalette": "Beddel Midabada",
+    "wiki": "Dukumentiyada / Wiki",
+    "contracts": "Heshiisyada",
+    "faq": "Su'aalaha Inta Badan La Isweydiiyo",
+    "logout": "Ka bax",
+    "language": "Luqadda",
+    "languageSearchPlaceholder": "Raadi luqadaha",
+    "languageNoResults": "Lama helin luqado",
+    "close": "Xidh"
+  },
+  "addNetworks": {
+    "title": "Kudar Shabakado",
+    "description": "Guji badhanka hoose si aad ugu darto shabakado boorsadaada. Tani waxay fududaynaysaa in la kala beddelo silsiladaha inta lagu jiro tijaabinta."
+  },
+  "tabs": {
+    "convert": "Beddel",
+    "bridge": "Buundo"
+  },
+  "convert": {
+    "token": "Calaamad",
+    "selectToken": "Dooro Calaamad",
+    "balance": "Hadhaaga",
+    "noConvertibleTokens": "Ma jiraan calaamado la beddeli karo oo ku jira {{chainName}}",
+    "convert": "Beddel",
+    "addToWalletLabel": "Soo deji {{symbol}} gudaha {{chainName}} boorsada",
+    "addToWalletButton": "Soo Deji Boorsada",
+    "addingToken": "Kudaraya...",
+    "addTokenError": "Lama awoodo in lagu daro calaamadda boorsada",
+    "legacyTokenMissing": "Calaamaddii hore ayaa ka maqan silsiladdan",
+    "tigerOGMissing": "Calaamadda TigerOG ayaa ka maqan silsiladdan",
+    "networkWarning": {
+      "title": "Shabakad Qaldan",
+      "message": "Beddelka calaamadda waxaa laga heli karaa oo keliya BSC Chain.",
+      "description": "Fadlan u beddel BSC Chain boorsadaada si aad u beddesho calaamadaha, ama u gudub tabka Buundada si aad ugu wareejiso calaamadaha silsiladaha dhexdooda."
+    }
+  },
+  "bridge": {
+    "fromChain": "Laga soo bilaabo Silsiladda",
+    "selectChainPlaceholder": "Dooro silsilad",
+    "toChain": "Ku socota Silsiladda",
+    "selectDestinationPlaceholder": "Dooro meesha loo socdo",
+    "noDestination": "Ma jirto meel loo socdo",
+    "noBridgeableTokens": "Ma jiraan calaamado la buundo gelin karo",
+    "bridgeButton": "Calaamadaha Buundada",
+    "getFeeQuote": "Hel Qiimaha Kharashka",
+    "viewOnAxelarscan": "Ku eeg Axelar Baare",
+    "addDestinationTokenLabel": "Soo deji {{symbol}} gudaha {{chainName}} boorsada",
+    "addTokenError": "Lama awoodo in lagu daro calaamadda boorsada",
+    "estimatedTime": "Waqtiga la qiyaasay",
+    "recentTransactions": "Macaamiladii Dhawaa",
+    "clearHistory": "Tirtir taariikhda",
+    "historyStoredLocally": "Taariikhda macaamilka waxaa lagu kaydiyaa gudaha qalabkan"
+  },
+  "settings": {
+    "title": "Dejinta",
+    "environment": "Deegaanka",
+    "rpcEndpoints": "RPC Endpoints",
+    "rpcEndpointsHelp": "Cusboonaysii URL-ka RPC ee loo isticmaalo silsilad kasta oo ku jirta deegaanka la doortay.",
+    "noChainsConfigured": "Ma jiraan silsilado loo habeeyey deegaankan.",
+    "cancel": "Jooji",
+    "save": "Keydi"
+  },
+  "wallet": {},
+  "login": {
+    "title": "Soo dhowow mar kale",
+    "subtitle": "Soo gal si aad u sii wadato Freedom Bridge",
+    "emailLabel": "Iimayl",
+    "emailPlaceholder": "magaca@tusaale.com",
+    "passwordLabel": "Furaha sirta ah",
+    "passwordPlaceholder": "Geli furaha sirta ah",
+    "rememberMe": "I xusuusnow qalabkan",
+    "submit": "Soo gal",
+    "validation": {
+      "required": "Iimaylka iyo furaha sirta ah waa loo baahan yahay.",
+      "invalid": "Iimayl ama furaha sirta ah oo khaldan."
+    }
+  },
+  "landing": {
+    "banner": {
+      "title": "Cusub halkan?",
+      "message": "Wax ka baro Freedom Bridge iyo sida loo buundo geliyo calaamadaha TigerOG silsiladaha."
+    },
+    "hero": {
+      "badge": "Waxaa xoojiyay Axelar",
+      "title": "Xoree <1/> <2>Hantidaada</2>",
+      "subtitle": "Si habsami leh ugu gudbi calaamadaha TigerOG silsiladaha adoo isticmaalaya Adeegga Calaamadaha Interchain ee Axelar. Ammaan, dhakhso ah, oo canshuur la'aan ah.",
+      "launchApp": "Bilow App-ka",
+      "documentation": "Dukumentiyada"
+    },
+    "stats": {
+      "messaging": "Shabakadda Axelar",
+      "networks": "Shabakadaha Tooska Ah",
+      "fees": "Kharashyada Protocol-ka",
+      "finality": "Dhameystirka"
+    },
+    "features": {
+      "title": "Adeegga Calaamadaha Interchain",
+      "description": "Freedom Bridge waxay ka faa'iidaysataa Axelar ITS si ay u bixiso khibrad isku xirnaan oo aan kala go' lahayn, ammaan ah, oo canshuur la'aan ah in ka badan {{count}}+ blockchains.",
+      "stopDecay": {
+        "title": "Jooji Burburka",
+        "description": "Tokens-ka hore waxay gubaan 10-11% qiimahaaga iibsasho iyo iib kasta. U beddelka TigerOG waxay joojinaysaa dhiig-baxan isla markiiba, iyadoo ilaalinaysa 100% qiimahaaga.",
+        "graphLabel1": "100% La hayo (TigerOG)",
+        "graphLabel2": "-40% Qiimaha (Canshuur Hore 10%)"
+      },
+      "conversion": {
+        "title": "Beddelka 1:1",
+        "description": "Wadarta sahayda weligeed isma beddesho. Tokens-ka waxaa lagu hayaa heshiis guuritaan oo ammaan ah, waxaana la isticmaalaa mid u dhigma 1:1. Ma jirto sicir barar, ma jirto qasid."
+      },
+      "multichain": {
+        "title": "Silsilado Badan",
+        "description": "Hal mar daadguree, ka hel meel kasta. Hantidaadu waxay noqonaysaa calaamad interchain asal ah silsiladaha ay ku jiraan Ethereum, BNB Chain, Base, iyo in ka badan."
+      },
+      "security": {
+        "title": "Amniga Axelar",
+        "description": "Waxaa xoojiyay shabakadda xaqiijiyeyaasha baahsan ee Axelar. ITS waxay hubisaa in calaamadahaaga si ammaan ah oo joogto ah loogu wareejiyo dhammaan shabakadaha ku xiran.",
+        "button": "Bilow Buundada"
+      }
+    },
+    "teaser": {
+      "title": "Ma doonaysaa lacago kale?",
+      "subtitle": "Maxaad ka qabtaa <lunc>LUNC</lunc>, <crepe>Crepe</crepe>, ama <shiba>Shiba</shiba>??"
+    },
+    "cta": {
+      "title": "Diyaar ma u tahay inaad buundo gasho?",
+      "description": "Ku biir kacaanka interchain. Waxay qaadataa wax ka yar hal daqiiqo in la duubo hantidaada oo la bilaabo buundada iyada oo loo marayo Axelar.",
+      "button": "Bilow App-ka Hadda"
+    }
+  },
+  "wiki": {
+    "title": "Freedom Bridge Wiki",
+    "searchPlaceholder": "Raadi dukumentiyada...",
+    "header": {
+      "title": "Dukumentiyada",
+      "subtitle": "Baro sida loo duubo tokens-ka hore, loo kala gudbo silsiladaha, iyo loogu biiro Freedom Bridge."
+    },
+    "nav": {
+      "gettingStarted": "Bilaabidda",
+      "coreConcepts": "Fikradaha Muhiimka Ah",
+      "developers": "Horumariyayaasha",
+      "tigerogSupply": "Sahayda TigerOG",
+      "lionogSupply": "Sahayda LionOG",
+      "frogogSupply": "Sahayda FrogOG"
+    },
+    "articles": {
+      "whatIs": {
+        "title": "Waa maxay Freedom Bridge?",
+        "content": "Freedom Bridge waa borotokool baahsan oo lagu dhisay Adeegga Calaamadaha Interchain ee Axelar (ITS). Waxaa loogu talagalay in lagu xoreeyo tokens-ka xaddidaadaha silsiladda kaliya iyo canshuuraha macaamilka ee sarreeya. Adigoo ku duubaya tokens-ka caadiga ah hanti ku habboon interchain, isticmaalayaashu waxay u wareejin karaan qiimahooda si xor ah blockchains-ka la taageeray.",
+        "taxFreeTitle": "Wareejinta Canshuur La'aanta",
+        "taxFreeDesc": "Tokens-ka hore waxay inta badan leeyihiin canshuur 10%+. Tokens-ka TigerOG waxay leeyihiin canshuur 0%.",
+        "omnichainTitle": "Interchain",
+        "omnichainDesc": "Isla markiiba u wareeji hantida inta u dhaxaysa {{count}}+ blockchains iyada oo loo marayo Axelar."
+      },
+      "howToConvert": {
+        "title": "Sida Loo Beddelo Tokens",
+        "step1": "Ku xidh boorsadaada silsiladda isha (tusaale, BNB Chain).",
+        "step2": "U gudub tabka <strong>Beddel</strong>.",
+        "step3": "Dooro token-ka hore ee aad rabto inaad beddesho.",
+        "step4": "Oggolow Heshiiska Guuritaanka si aad u isticmaasho tokens-kaaga.",
+        "step5": "Guji <strong>Beddel</strong> si aad u dhigato tokens-kaaga hore oo aad u hesho qadar u dhigma ee \"TigerOG\" tokens.",
+        "note": "<strong>Fiiro gaar ah:</strong> Beddelku wuxuu keenayaa canshuurta macaamilka ee token-ka hore (inta lagu jiro cusboonaysiinta) haddii token-kaagu uu canshuur ka qaado wareejinta. Si kastaba ha ahaatee, marka loo beddelo TigerOG, dhammaan wareejinta iyo buundooyinka xiga waa canshuur la'aan."
+      },
+      "supportedNetworks": {
+        "title": "Shabakadaha La Taageeray",
+        "content": "Freedom Bridge waxay taageertaa nidaam deegaan oo koraya oo ah {{count}}+ blockchains, taasoo awood u siinaysa isdhexgalka aan kala go' lahayn ee guud ahaan muuqaalka EVM iyada oo loo marayo Axelar."
+      },
+      "xerc20": {
+        "title": "Calaamadaha Interchain",
+        "content": "Adeegga Calaamadaha Interchain ee Axelar (ITS) wuxuu u oggolaanayaa in tokens lagu daadgureeyo silsilado badan oo leh cinwaan joogto ah iyo maamulka sahayda midaysan. Freedom Bridge waxay isticmaashaa ITS si loo hubiyo in TigerOG ay ahaato hanti sharci ah meel kasta oo la buundo geliyo."
+      },
+      "axelar": {
+        "title": "Shabakadda Axelar",
+        "content": "Waxaan u isticmaalnaa Axelar lakabkayaga isdhexgalka. Axelar waa shabakad baahsan oo isku xirta blockchains kala duwan, taasoo awood u siinaysa isgaarsiinta silsiladaha isku xiran ee ammaanka ah iyo wareejinta hantida. Qaabka amniga ee Axelar wuxuu ku tiirsan yahay koox xaqiijiyeyaal ah oo oggolaansho la'aan ah, oo bixiya ammaan heer sare ah calaamadaha interchain."
+      },
+      "migration": {
+        "title": "Macquulka Guuritaanka",
+        "content": "Heshiiska Guuritaanka waxaa lagu daadgureeyay silsiladda asalka (tusaale, BSC). Waxay ku haysaa tokens-kii hore ee asalka ah haynta. Markaad cusboonaysiiso tokens, waxaad dhiganaysaa Heshiiska Guuritaanka. Markaad furto (haddii la taageero), waxaad gubeysaa matalaadda TigerOG si aad u sii deyso tokens-ka asalka ah. Tani waxay hubinaysaa taageero adag oo 1:1 ah."
+      },
+      "contracts": {
+        "title": "Cinwaannada Heshiiska Caqliga Badan",
+        "colNetwork": "Shabakadda",
+        "colType": "Nooca Heshiiska",
+        "colAddress": "Cinwaanka"
+      },
+      "security": {
+        "title": "Qaabka Amniga",
+        "content": "Amniga ayaa lagu dhisay lakab kasta oo Freedom Bridge ah:",
+        "point1": "<strong>Qaab-dhismeedka Guuritaanka:</strong> Tokens-ka hore waxaa lagu hayaa heshiisyo caqli badan oo la xaqiijiyay, oo aan la beddeli karin.",
+        "point2": "<strong>Xaqiijiyeyaasha Axelar:</strong> Fariimaha silsiladaha isku xiran waxaa xaqiijiya shabakadda baahsan ee Axelar.",
+        "point3": "<strong>Sahay Joogto ah:</strong> ITS waxay maamushaa soo saarista iyo gubashada si loo ilaaliyo wadarta sahayda joogtada ah ee dhammaan silsiladaha.",
+        "point4": "<strong>Macquulka La Hanti-dhowray:</strong> Waxaa lagu dhisay maktabadaha caadiga ah ee OpenZeppelin iyo Axelar."
+      },
+      "supplyCommon": {
+        "howWeCalculated": "Sida Aan U Xisaabinay Tani",
+        "verification": "Xaqiijin",
+        "verificationDesc": "Dhammaan tirooyinka sahayda si madax-bannaan ayaa looga xaqiijin karaa silsiladda:",
+        "table": {
+          "category": "Qeybta",
+          "amount": "Qadarka",
+          "percentOfTotal": "% ee Wadarta",
+          "originalSupply": "Wadarta Sahayda Asalka ah",
+          "deadAddress": "Cinwaanka Dhintay (La Gubay)",
+          "contractBalance": "Hadhaaga Heshiiska (Xanniban)",
+          "circulatingSupply": "Sahayda Wareegta"
+        },
+        "deadAddressTitle": "1. Cinwaanka Dhintay",
+        "contractBalanceTitle": "2. Hadhaaga Heshiiska",
+        "lpLockedTitle": "3. Calaamadaha Xidhan ee LP"
+      },
+      "tigerogSupply": {
+        "title": "Burburka Sahayda TigerOG",
+        "intro": "TigerOG waxay leedahay sahay wareegta oo go'an oo laga soo qaatay calaamadda asalka ah ee BNBTiger. Xisaabinta sahayda waxay xisaabta ku darsataa dhammaan tokens-ka la gubay iyo kuwa sida joogtada ah u xidhan.",
+        "lpLocked": "LP Xidhan (86.18% ee LP La Gubay)",
+        "deadAddressDesc": "Tokens-ka loo diro <code>0x000...dEaD</code> si joogto ah ayaa loo gubaa oo waligood dib looma soo celin karo. Tan waxaa ku jira tokens lagu gubay farsamada canshuurta BNBTiger ee asalka ah.",
+        "contractBalanceDesc": "Qadar yar oo tokens ah ayaa ku xayiran heshiiska BNBTiger laftiisa. Tokens-kan lama geli karo oo si wax ku ool ah ayaa looga saaray wareegga.",
+        "lpLockedDesc": "Barkadda dareeraha PancakeSwap waxay ka kooban tahay tokens BNBTiger oo lagu lamaaniyay BNB. Marka tokens LP la gubo (loo diro cinwaanka dhintay), tokens-ka hoose ee barkadda waxay noqdaan kuwo si joogto ah u xidhan.",
+        "lpBurnedPercent": "Tokens LP la gubay: 86.18% dhammaan tokens LP",
+        "lpLockedPercent": "Sidaa darteed, 86.18% tokens-ka LP si joogto ah ayay u xidhan yihiin",
+        "note": "<strong>Fiiro gaar ah:</strong> TigerOG waxay ilaalisaa saamiga 1:1 ee BNBTiger inta lagu jiro guuritaanka. Sahayda wareegta ee TigerOG waxay u dhigantaa sahayda wareegta ee dhabta ah ee BNBTiger ka dib marka la xisaabiyo dhammaan tokens-ka la gubay iyo kuwa xidhan.",
+        "launchData": "<strong>Xogta Daahfurka:</strong> Tirooyinkan waxaa la xisaabiyay markii la bilaabay. Token-ka hore ee BNBTiger wuxuu sii wadaa inuu gubo tokens macaamil kasta oo iibsi/iib, markaa sahayda dhabta ah ee wareegta ayaa laga yaabaa inay wax yar ka hooseyso inta la muujiyay.",
+        "legacyContract": "Heshiiska Token BNBTiger",
+        "ogContract": "Heshiiska Token TigerOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,772,706,396,234,535,780,783,775",
+          "deadPercent": "57.73%",
+          "contract": "−6,142,342,823,271,327",
+          "contractPercent": "<0.01%",
+          "lp": "−565,059,839,948,518,979,124,912",
+          "lpPercent": "5.65%",
+          "circulating": "3,662,233,757,674,602,416,819,986",
+          "circulatingPercent": "36.62%"
+        }
+      },
+      "lionogSupply": {
+        "title": "Burburka Sahayda LionOG",
+        "intro": "LionOG waxay leedahay sahay wareegta oo go'an oo laga soo qaatay calaamadda asalka ah ee BNBLion. Xisaabinta sahayda waxay xisaabta ku darsataa dhammaan tokens-ka la gubay iyo kuwa sida joogtada ah u xidhan.",
+        "lpLocked": "LP Xidhan (99.98% ee LP La Gubay)",
+        "deadAddressDesc": "Tokens-ka loo diro <code>0x000...dEaD</code> si joogto ah ayaa loo gubaa oo waligood dib looma soo celin karo. Tan waxaa ku jira tokens lagu gubay farsamada canshuurta BNBLion ee asalka ah.",
+        "contractBalanceDesc": "Qadar yar oo tokens ah ayaa ku xayiran heshiiska BNBLion laftiisa. Tokens-kan lama geli karo oo si wax ku ool ah ayaa looga saaray wareegga.",
+        "lpLockedDesc": "Barkadda dareeraha PancakeSwap waxay ka kooban tahay tokens BNBLion oo lagu lamaaniyay BNB. Marka tokens LP la gubo (loo diro cinwaanka dhintay), tokens-ka hoose ee barkadda waxay noqdaan kuwo si joogto ah u xidhan.",
+        "lpBurnedPercent": "Tokens LP la gubay: 99.98% dhammaan tokens LP",
+        "lpLockedPercent": "Sidaa darteed, 99.98% tokens-ka LP si joogto ah ayay u xidhan yihiin",
+        "note": "<strong>Fiiro gaar ah:</strong> LionOG waxay ilaalisaa saamiga 1:1 ee BNBLion inta lagu jiro guuritaanka. Sahayda wareegta ee LionOG waxay u dhigantaa sahayda wareegta ee dhabta ah ee BNBLion ka dib marka la xisaabiyo dhammaan tokens-ka la gubay iyo kuwa xidhan.",
+        "launchData": "<strong>Xogta Daahfurka:</strong> Tirooyinkan waxaa la xisaabiyay markii la bilaabay. Token-ka hore ee BNBLion wuxuu sii wadaa inuu gubo tokens macaamil kasta oo iibsi/iib, markaa sahayda dhabta ah ee wareegta ayaa laga yaabaa inay wax yar ka hooseyso inta la muujiyay.",
+        "legacyContract": "Heshiiska Token BNBLion",
+        "ogContract": "Heshiiska Token LionOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,724,597,218,422,106,614,085,614",
+          "deadPercent": "57.25%",
+          "contract": "−9,219,967,745,410,740,095,290",
+          "contractPercent": "<0.01%",
+          "lp": "−442,490,152,327,271,918,655,109",
+          "lpPercent": "4.42%",
+          "circulating": "3,832,903,409,282,876,056,519,182",
+          "circulatingPercent": "38.33%"
+        }
+      },
+      "frogogSupply": {
+        "title": "Burburka Sahayda FrogOG",
+        "intro": "FrogOG waxay leedahay sahay wareegta oo go'an oo laga soo qaatay calaamadda asalka ah ee BNBFrog. Xisaabinta sahayda waxay xisaabta ku darsataa dhammaan tokens-ka la gubay iyo kuwa sida joogtada ah u xidhan.",
+        "lpLocked": "LP Xidhan (99.31% ee LP La Gubay)",
+        "deadAddressDesc": "Tokens-ka loo diro <code>0x000...dEaD</code> si joogto ah ayaa loo gubaa oo waligood dib looma soo celin karo. Tan waxaa ku jira tokens lagu gubay farsamada canshuurta BNBFrog ee asalka ah.",
+        "contractBalanceDesc": "Qadar yar oo tokens ah ayaa ku xayiran heshiiska BNBFrog laftiisa. Tokens-kan lama geli karo oo si wax ku ool ah ayaa looga saaray wareegga.",
+        "lpLockedDesc": "Barkadda dareeraha PancakeSwap waxay ka kooban tahay tokens BNBFrog oo lagu lamaaniyay BNB. Marka tokens LP la gubo (loo diro cinwaanka dhintay), tokens-ka hoose ee barkadda waxay noqdaan kuwo si joogto ah u xidhan.",
+        "lpBurnedPercent": "Tokens LP la gubay: 99.31% dhammaan tokens LP",
+        "lpLockedPercent": "Sidaa darteed, 99.31% tokens-ka LP si joogto ah ayay u xidhan yihiin",
+        "note": "<strong>Fiiro gaar ah:</strong> FrogOG waxay ilaalisaa saamiga 1:1 ee BNBFrog inta lagu jiro guuritaanka. Sahayda wareegta ee FrogOG waxay u dhigantaa sahayda wareegta ee dhabta ah ee BNBFrog ka dib marka la xisaabiyo dhammaan tokens-ka la gubay iyo kuwa xidhan.",
+        "launchData": "<strong>Xogta Daahfurka:</strong> Tirooyinkan waxaa la xisaabiyay markii la bilaabay. Token-ka hore ee BNBFrog wuxuu sii wadaa inuu gubo tokens macaamil kasta oo iibsi/iib, markaa sahayda dhabta ah ee wareegta ayaa laga yaabaa inay wax yar ka hooseyso inta la muujiyay.",
+        "legacyContract": "Heshiiska Token BNBFrog",
+        "ogContract": "Heshiiska Token FrogOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−740,059,884,911,899,485,982,976",
+          "deadPercent": "7.40%",
+          "contract": "−4,036,008,092,593,983,879,741",
+          "contractPercent": "<0.01%",
+          "lp": "−874,144,424,929,004,044,398,902",
+          "lpPercent": "8.74%",
+          "circulating": "8,385,795,686,123,088,377,024,138",
+          "circulatingPercent": "83.86%"
+        }
+      }
+    }
+  },
+  "contracts": {
+    "title": "Cinwaannada Heshiiska",
+    "header": {
+      "title": "Heshiisyada Caqliga Badan",
+      "subtitle": "Cinwaannada daadgureynta rasmiga ah ee tokens, router-yada, iyo barkadaha dareeraha ee guud ahaan nidaamka deegaanka Freedom Bridge."
+    },
+    "tabs": {
+      "overview": "Guudmar",
+      "byToken": "Sida Token",
+      "byChain": "Sida Silsilad",
+      "liquidity": "Dareeraha"
+    },
+    "liquidity": {
+      "title": "Barkadaha Dareeraha"
+    }
+  },
+  "faq": {
+    "title": "Taageerada Freedom Bridge",
+    "header": "Su'aalaha Inta Badan La Isweydiiyo",
+    "subtitle": "Jawaabaha su'aalaha caadiga ah ee ku saabsan duubista, buundada, iyo amniga.",
+    "cta": {
+      "title": "Weli ma qabtaa su'aalo?",
+      "description": "Ku biir bulshadeena Discord ama ka eeg Wiki faahfaahsan hagayaasha farsamada.",
+      "wiki": "Booqo Wiki",
+      "telegram": "Ku biir Telegram"
+    },
+    "questions": {
+      "q1": "Waa maxay ujeedada beddelka calaamadahayga?",
+      "a1": "U beddelka calaamadahaaga heerka Freedom Bridge (xERC20) waxay ka saartaa canshuurta macaamilka (inta badan 10-12%) ee la xidhiidha calaamadda hore. Waxay sidoo kale kuu ogolaanaysaa inaad u gudbiso calaamadahan blockchains kale sida Base, Ethereum, iyo in ka badan, taasoo awood u siinaysa gelitaanka DeFi iyo dareeraha guud ahaan nidaamka deegaanka.",
+      "q2": "Ma ammaan baa in la isticmaalo Freedom Bridge?",
+      "a2": "Haa. Borotokoolku wuxuu isticmaalaa nidaamka Lockbox oo ay bulshadu hanti-dhowrtay iyo heshiisyada caadiga ah ee OpenZeppelin. Calaamadahaaga asalka ah waxaa lagu xiray qandaraas caqli badan oo ku yaal silsiladda isha, waxaana la soo saaray nuqul sax ah oo 1:1 ah. Waxaad dib u soo ceshan kartaa calaamadahaaga asalka ah wakhti kasta adigoo gubaya nooca la duubay.",
+      "q3": "Ma jiraan kharashyo?",
+      "a3": "Borotokoolka Freedom Bridge laftiisu wax lacag ah kama qaado beddelka. Waxaad bixinaysaa oo kaliya kharashyada caadiga ah ee gaaska blockchain. Si kastaba ha ahaatee, buundada u dhaxaysa silsiladaha (tusaale, BSC ilaa Base) waxay ku lug leedahay kharash yar si loo daboolo kharashyada fariimaha silsiladaha isku xiran iyada oo loo marayo Axelar.",
+      "q4": "Maxaa dhacaya haddii aan lumiyo calaamadahayga?",
+      "a4": "Calaamadaha TigerOG waxay u dhaqmaan sida calaamad kasta oo kale oo ERC20 ah. Haddii aad lumiso gelitaanka boorsadaada ama aad u dirto cinwaan khaldan, lama soo celin karo. Had iyo jeer hubi inaad u dirayso cinwaanka saxda ah oo furayaashaada gaarka ah dhig meel ammaan ah.",
+      "q5": "Miyaan u beddeli karaa calaamadahayga TigerOG dib ugu celiyo BNBTiger?",
+      "a5": "Maya. Guuritaanku waa beddel hal dhinac ah. Markaad u beddesho BNBTiger una beddesho TigerOG, calaamadahaaga BNBTiger si joogto ah ayaa loo gubaa (loo diraa cinwaanka dhintay). Tani waa qaabka loogu talagalay - TigerOG waa nooca la cusboonaysiiyay, ee canshuur la'aanta ah kaas oo loogu talagalay inuu gebi ahaanba beddelo calaamaddii hore.",
+      "q6": "Waa maxay shabakadaha la taageeray?",
+      "a6": "Waxaan taageernaa in ka badan 50 blockchains oo ay ku jiraan Ethereum, BNB Chain, Base, Arbitrum, Optimism, Polygon, Avalanche, iyo in ka badan. Ka eeg Wiki liiska buuxa ee shabakadaha la taageeray.",
+      "q7": "Intee in le'eg ayay qaadataa buundada?",
+      "a7": "Xawaaraha buundada wuxuu ku xiran yahay waqtiga dhameystirka silsiladda isha iyo lakabka fariimaha Axelar. Caadi ahaan, wareejinta BSC ilaa silsilad kale waxay qaadataa qiyaastii 1-3 daqiiqo.",
+      "q8": "Waa maxay sahayda wareegta ee calaamadaha OG?",
+      "a8": "Calaamad kasta oo OG ah waxay leedahay sahay wareegta oo go'an oo laga soo qaatay calaamadda asalka ah ee BNB, iyadoo xisaabta lagu darsayo calaamadaha la gubay, hadhaaga heshiiska ee xayiran, iyo LP xidhan. TigerOG: ~3.66 septillion (36.62% ee asalka). LionOG: ~3.83 septillion (38.33% ee asalka). FrogOG: ~8.39 septillion (83.86% ee asalka). Eeg Wiki faahfaahinta burburka calaamad kasta."
+    }
+  },
+  "common": {
+    "from": "Ka",
+    "to": "Ku",
+    "max": "UGU BADAN",
+    "chainId": "Aqoonsiga Silsiladda",
+    "bscChain": "Silsiladda BSC",
+    "insufficientBalance": "Hadhaaga oo aan ku filnayn.",
+    "failedToSwitchNetwork": "Ku guuldareystay in la beddelo shabakadda. Fadlan gacanta ku beddel boorsadaada.",
+    "failedToFetchFeeQuote": "Ku guuldareystay in la helo qiimaha kharashka.",
+    "unableToDetermineGas": "Awoodi kari waayay in la go'aamiyo lacagta gaaska Axelar",
+    "bridgeTxFailed": "Wax kala iibsiga buundada wuu fashilmay",
+    "estimatedGas": "Gaaska Axelar ee la qiyaasay",
+    "success": "Guul!",
+    "viewOnExplorer": "Ku eeg Baaraha",
+    "bridging": "Buundo gelinta...",
+    "transactionFailed": "Wax kala iibsiga wuu fashilmay",
+    "search": "Raadi",
+    "backToApp": "Ku laabo App-ka"
+  }
+}

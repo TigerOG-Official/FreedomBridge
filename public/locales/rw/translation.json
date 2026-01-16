@@ -1,0 +1,364 @@
+{
+  "app": {
+    "titleFreedom": "Ubwisanzure",
+    "titleBridge": "Ikiraro"
+  },
+  "nav": {
+    "settings": "Igenamiterere",
+    "menu": "Ibikubiyemo",
+    "preferences": "Ibyifuzo",
+    "switchTheme": "Isura",
+    "theme": {
+      "dark": "Umwijima",
+      "light": "Urumuri"
+    },
+    "switchPalette": "Hindura Urutonde",
+    "wiki": "Inyandiko / Wiki",
+    "contracts": "Amasezerano",
+    "faq": "Ibibazo Bikunze Kubazwa",
+    "logout": "Gusohoka",
+    "language": "Ururimi",
+    "languageSearchPlaceholder": "Shakisha indimi",
+    "languageNoResults": "Nta ndimi zabonetse",
+    "close": "Gufunga"
+  },
+  "addNetworks": {
+    "title": "Ongeraho Imiyoboro",
+    "description": "Kanda buto hepfo kugirango wongere Imiyoboro mu mufuka wawe. Ibi byoroshya guhinduranya iminyururu mugihe cyo kugerageza."
+  },
+  "tabs": {
+    "convert": "Guhindura",
+    "bridge": "Ikiraro"
+  },
+  "convert": {
+    "token": "Token",
+    "selectToken": "Hitamo Token",
+    "balance": "Amafaranga Asigaye",
+    "noConvertibleTokens": "Nta token zishobora guhindurwa kuri {{chainName}}",
+    "convert": "Guhindura",
+    "addToWalletLabel": "Kwinjiza {{symbol}} kuri {{chainName}} mu mufuka",
+    "addToWalletButton": "Kwinjiza mu Mufuka",
+    "addingToken": "Kongeraho…",
+    "addTokenError": "Ntibishoboka kongeraho token mu mufuka",
+    "legacyTokenMissing": "Token ishaje irabura kuri uru runigi",
+    "tigerOGMissing": "Token TigerOG irabura kuri uru runigi",
+    "networkWarning": {
+      "title": "Urunigi Rutari rwo",
+      "message": "Guhindura Token biboneka gusa kuri BSC Chain.",
+      "description": "Nyamuneka hindura kuri BSC Chain mu mufuka wawe kugirango uhindure tokens, cyangwa ujye kuri tab ya Bridge kugirango wohereze token hagati y'iminyururu."
+    }
+  },
+  "bridge": {
+    "fromChain": "Uva kuri Urunigi",
+    "selectChainPlaceholder": "Hitamo urunigi",
+    "toChain": "Kuri Urunigi",
+    "selectDestinationPlaceholder": "Hitamo aho ugana",
+    "noDestination": "Nta ho ugana",
+    "noBridgeableTokens": "Nta token zishobora koherezwa",
+    "bridgeButton": "Kohereza Token",
+    "getFeeQuote": "Kubona Ikiguzi cy'Ikiguzi",
+    "viewOnAxelarscan": "Kureba kuri Axelar Explorer",
+    "addDestinationTokenLabel": "Kwinjiza {{symbol}} kuri {{chainName}} mu mufuka",
+    "addTokenError": "Ntibishoboka kongeraho token mu mufuka",
+    "estimatedTime": "Igihe cyagereranijwe",
+    "recentTransactions": "Ibikorwa Biheruka",
+    "clearHistory": "Gusiba amateka",
+    "historyStoredLocally": "Amateka y'ibikorwa abitswe kuri iki gikoresho"
+  },
+  "settings": {
+    "title": "Igenamiterere",
+    "environment": "Ibidukikije",
+    "rpcEndpoints": "Impera za RPC",
+    "rpcEndpointsHelp": "Kuvugurura RPC URL ikoreshwa ku runigi ruri wese mu bidukikije byatoranijwe.",
+    "noChainsConfigured": "Nta runigi rwateguwe kuri ibi bidukikije.",
+    "cancel": "Guhagarika",
+    "save": "Kubika"
+  },
+  "wallet": {},
+  "login": {
+    "title": "Murakaza Neza Muri",
+    "subtitle": "Kwinjira kugirango ukomeze kuri Freedom Bridge",
+    "emailLabel": "Imeri",
+    "emailPlaceholder": "izina@urugero.rw",
+    "passwordLabel": "Ijambo Ryibanga",
+    "passwordPlaceholder": "Injiza ijambo ryibanga",
+    "rememberMe": "Nnyibuka kuri iki gikoresho",
+    "submit": "Kwinjira",
+    "validation": {
+      "required": "Imeri n'ijambo ryibanga birakenewe.",
+      "invalid": "Imeri cyangwa ijambo ryibanga ridakwiye."
+    }
+  },
+  "landing": {
+    "banner": {
+      "title": "Mushya hano?",
+      "message": "Wige ku bijyanye na Freedom Bridge n'uko wakwohereza TigerOG tokens ku minyururu itandukanye."
+    },
+    "hero": {
+      "badge": "Ikoreshwa na Axelar",
+      "title": "Bohora <1/> <2>Umutungo</2> Wawe",
+      "subtitle": "Ohereza TigerOG tokens ku buryo buhoraho ku minyururu itandukanye ukoresheje Axelar Interchain Token Service. Biratekanye, birihuta, kandi nta musoro.",
+      "launchApp": "Tangiza Porogaramu",
+      "documentation": "Inyandiko"
+    },
+    "stats": {
+      "messaging": "Urwego rwo Kohereza Ubutumwa",
+      "networks": "Imiyoboro iriho",
+      "fees": "Amafaranga ya Protocol",
+      "finality": "Iherezo"
+    },
+    "features": {
+      "title": "Interchain Token Service",
+      "description": "Freedom Bridge ikoresha protocol ya Axelar ITS kugirango itange uburambe bwo kohereza butagira ikibazo, bwizewe, kandi butarimo umusoro mu ma blockchains {{count}}+.",
+      "stopDecay": {
+        "title": "Hagarika Kwangirika",
+        "description": "Tokens za kera zitwika 10-11% by'agaciro kawe kuri buri kugura no kugurisha. Guhindura muri TigerOG bihagarika uku kuva amaraso ako kanya, kubika 100% by'agaciro kawe.",
+        "graphLabel1": "100% Yabitswe (TigerOG)",
+        "graphLabel2": "-40% Agaciro (Umusoro wa Kera 10%)"
+      },
+      "conversion": {
+        "title": "1:1 Guhindura",
+        "description": "Ingano yose ntabwo ihinduka. Tokens zifunze muri kasho yizewe yo kwimuka, kandi ingano ingana neza ya 1:1 irakoreshwa. Nta gutakaza agaciro, nta kuvanga."
+      },
+      "multichain": {
+        "title": "Imirongo Myinshi",
+        "description": "Shyiraho rimwe, gera hose. Umutungo wawe uhinduka umuturage kavukire wa interchain ku minyururu myinshi harimo Ethereum, BNB Chain, Base, n'izindi."
+      },
+      "security": {
+        "title": "Umutekano wa Axelar",
+        "description": "Ikoreshwa n'urusobe rw'abagenzuzi ba Axelar. ITS yemeza ko tokens zawe zoherezwa neza kandi zikahagera zifite agaciro kamwe ku miyoboro yose ihujwe.",
+        "button": "Tangira Kohereza"
+      }
+    },
+    "teaser": {
+      "title": "Urashaka ibindi biceri?",
+      "subtitle": "Uratekereza iki kuri <lunc>LUNC</lunc>, <crepe>Crepe</crepe>, cyangwa <shiba>Shiba</shiba> ?"
+    },
+    "cta": {
+      "title": "Witeguye kwigenga?",
+      "description": "Injira mu mpinduramatwara ya interchain. Bifata munsi y'umunota umwe gupfunyika umutungo wawe no gutangira kohereza ukoresheje Axelar.",
+      "button": "Tangiza Porogaramu Ubu"
+    }
+  },
+  "wiki": {
+    "title": "Freedom Bridge Wiki",
+    "searchPlaceholder": "Shakisha inyandiko...",
+    "header": {
+      "title": "Inyandiko",
+      "subtitle": "Wige uburyo bwo guhindura tokens za kera, kohereza hagati y'iminyururu, no guhuza na Freedom Bridge."
+    },
+    "nav": {
+      "gettingStarted": "Gutangira",
+      "coreConcepts": "Inyigisho z'Ibanze",
+      "developers": "Abateza imbere",
+      "tigerogSupply": "Ingano ya TigerOG",
+      "lionogSupply": "Ingano ya LionOG",
+      "frogogSupply": "Ingano ya FrogOG"
+    },
+    "articles": {
+      "whatIs": {
+        "title": "Freedom Bridge ni iki?",
+        "content": "Freedom Bridge ni protocol idahuriweho yagenewe kubohora tokens za kera ku misoro y'ubucuruzi yo hejuru n'imipaka y'urunigi rumwe. Muguhindura tokens zisanzwe mu mitungo ya interchain, abakoresha bashobora kwimura agaciro kabo mu bwisanzure mu ma blockchains ashyigikiwe.",
+        "taxFreeTitle": "Kohereza Bitagira Umusoro",
+        "taxFreeDesc": "Tokens za kera akenshi ziba zifite imisoro 10%+. Tokens za TigerOG zifite umusoro wa 0.",
+        "omnichainTitle": "Interchain",
+        "omnichainDesc": "Imura umutungo ako kanya hagati ya blockchains {{count}}+ ukoresheje Axelar."
+      },
+      "howToConvert": {
+        "title": "Uburyo bwo Guhindura Tokens",
+        "step1": "Huza umufuka wawe n'urunigi rw'inkomoko (urugero, BNB Chain).",
+        "step2": "Jya kuri tab ya <strong>Guhindura</strong>.",
+        "step3": "Hitamo token ya kera ushaka guhindura.",
+        "step4": "Emeza amasezerano ya Migration kugirango ukoreshe tokens zawe.",
+        "step5": "Kanda <strong>Guhindura</strong> kugirango ubike tokens zawe za kera kandi wakire ingano ingana ya tokens \"TigerOG\".",
+        "note": "<strong>Icyitonderwa:</strong> Guhindura bitera umusoro w'ubucuruzi wa token ya kera (mugihe cyo kuzamura) niba token yawe yishyuza umusoro ku kohereza. Nyamara, iyo imaze guhindurwa muri TigerOG, kohereza no kwambuka byose bikurikira biba bideze uwo musoro."
+      },
+      "supportedNetworks": {
+        "title": "Imiyoboro Ishyigikiwe",
+        "content": "Freedom Bridge ishyigikiwe urusobe rw'ibinyabuzima rwa blockchains {{count}}+ ruri kwiyongera, bituma habaho gukorana ntamakemwa muri EVM landscape ukoresheje Axelar."
+      },
+      "xerc20": {
+        "title": "Tokens za Interchain",
+        "content": "Axelar Interchain Token Service (ITS) yemerera tokens gushyirwa ku minyururu myinshi hamwe na aderesi idahinduka n'imicungire y'ingano ihuriweho. Freedom Bridge ikoresha ITS kugirango yizere ko TigerOG iguma ari umutungo wemewe aho yoherejwe hose."
+      },
+      "axelar": {
+        "title": "Urunigi rwa Axelar",
+        "content": "Dukoresha Axelar nka layer yacu yo gukorana. Axelar ni urunigi rudahuriweho ruhuza blockchains zitandukanye, rugatuma habaho itumanaho ryizewe rya cross-chain no kohereza umutungo. Icyitegererezo cy'umutekano cya Axelar cyishingikiriza ku itsinda ry'abagenzuzi ridakeneye uruhushya, ritanga umutekano wo hejuru kuri tokens za interchain."
+      },
+      "migration": {
+        "title": "Imikorere yo Kwimuka",
+        "content": "Amasezerano ya Migration yashyizweho ku runigi rw'inkomoko (urugero, BSC). Ifite tokens za kera z'umwimerere mu bubiko. Iyo uvuguruye tokens, uba ubitsa muri amasezerano ya Migration. Iyo ukinguye (niba bishyigikiwe), utwika TigerOG representation kugirango urekure tokens z'umwimerere. Ibi byemeza 1:1 ishyigikiwe cyane."
+      },
+      "contracts": {
+        "title": "Aderesi z'Amasezerano y'Ubwenge",
+        "colNetwork": "Urunigi",
+        "colType": "Ubwoko bw'Amasezerano",
+        "colAddress": "Aderesi"
+      },
+      "security": {
+        "title": "Icyitegererezo cy'Umutekano",
+        "content": "Umutekano wubatswe muri buri gice cya Freedom Bridge:",
+        "point1": "<strong>Imiterere yo Kwimuka:</strong> Tokens za kera zibitswe mu masezerano y'ubwenge yagenzuwe, adahinduka.",
+        "point2": "<strong>Axelar Validators:</strong> Ubutumwa bwa cross-chain bugenzurwa n'urusobe rudahuriweho rwa Axelar.",
+        "point3": "<strong>Ingano Idahinduka:</strong> ITS icunga gucura no gutwika kugirango ingano yose igume idahinduka ku minyururu yose.",
+        "point4": "<strong>Logic Yagenzuwe:</strong> Yubatswe ku masomero asanzwe ya Axelar na OpenZeppelin."
+      },
+      "supplyCommon": {
+        "howWeCalculated": "Uko Twabibaze",
+        "verification": "Kugenzura",
+        "verificationDesc": "Imibare yose y'ingano ishobora kugenzurwa wigenga kuri chain:",
+        "table": {
+          "category": "Icyiciro",
+          "amount": "Ingano",
+          "percentOfTotal": "% by'Igiteranyo",
+          "originalSupply": "Ingano Rusange y'Umwimerere",
+          "deadAddress": "Aderesi Yapfuye (Yatwitswe)",
+          "contractBalance": "Amafaranga ari muri Contract (Yafunganye)",
+          "circulatingSupply": "Ingano iri mu Isoko"
+        },
+        "deadAddressTitle": "1. Aderesi Yapfuye",
+        "contractBalanceTitle": "2. Amafaranga ari muri Contract",
+        "lpLockedTitle": "3. Tokens za LP Zifunze"
+      },
+      "tigerogSupply": {
+        "title": "Isesengura ry'Ingano ya TigerOG",
+        "intro": "TigerOG ifite ingano idahinduka mu isoko ikomoka kuri token ya BNBTiger y'umwimerere. Kubara ingano bifata tokens zose zatwitswe n'izifunze burundu.",
+        "lpLocked": "LP Ifunze (86.18% bya LP Byatwitswe)",
+        "deadAddressDesc": "Tokens zoherejwe kuri <code>0x000...dEaD</code> zatwitswe burundu kandi ntizishobora kugarurwa. Ibi birimo tokens zatwitswe binyuze mu buryo bwa musoro bwa BNBTiger.",
+        "contractBalanceDesc": "Amafaranga make ya tokens yafunganye muri contract ya BNBTiger ubwayo. Izi tokens ntizishobora kugerwaho kandi zakuwe mu isoko.",
+        "lpLockedDesc": "Ikidendezi cya PancakeSwap kirimo tokens za BNBTiger zifatanije na BNB. Iyo tokens za LP zitwitswe (zoherejwe kuri aderesi yapfuye), tokens ziri inyuma mu kidendezi zifunga burundu.",
+        "lpBurnedPercent": "Tokens za LP zatwitswe: 86.18% bya tokens za LP zose",
+        "lpLockedPercent": "Bityo, 86.18% bya tokens muri LP zifunze burundu",
+        "note": "<strong>Icyitonderwa:</strong> TigerOG igumana igipimo cya 1:1 na BNBTiger mugihe cyo kwimuka. Ingano ya TigerOG mu isoko ihura n'ingano nyayo ya BNBTiger mu isoko nyuma yo kubara tokens zose zatwitswe n'izifunze.",
+        "launchData": "<strong>Amakuru yo Gutangiza:</strong> Iyi mibare yabazwe igihe cyo gutangiza. Token ya BNBTiger ishaje ikomeza gutwika tokens kuri buri gikorwa cyo kugura/kugurisha, bityo ingano nyayo mu isoko ishobora kuba munsi gato y'iyerekanwe.",
+        "legacyContract": "Amasezerano ya Token BNBTiger",
+        "ogContract": "Amasezerano ya Token TigerOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,772,706,396,234,535,780,783,775",
+          "deadPercent": "57.73%",
+          "contract": "−6,142,342,823,271,327",
+          "contractPercent": "<0.01%",
+          "lp": "−565,059,839,948,518,979,124,912",
+          "lpPercent": "5.65%",
+          "circulating": "3,662,233,757,674,602,416,819,986",
+          "circulatingPercent": "36.62%"
+        }
+      },
+      "lionogSupply": {
+        "title": "Isesengura ry'Ingano ya LionOG",
+        "intro": "LionOG ifite ingano idahinduka mu isoko ikomoka kuri token ya BNBLion y'umwimerere. Kubara ingano bifata tokens zose zatwitswe n'izifunze burundu.",
+        "lpLocked": "LP Ifunze (99.98% bya LP Byatwitswe)",
+        "deadAddressDesc": "Tokens zoherejwe kuri <code>0x000...dEaD</code> zatwitswe burundu kandi ntizishobora kugarurwa. Ibi birimo tokens zatwitswe binyuze mu buryo bwa musoro bwa BNBLion.",
+        "contractBalanceDesc": "Amafaranga make ya tokens yafunganye muri contract ya BNBLion ubwayo. Izi tokens ntizishobora kugerwaho kandi zakuwe mu isoko.",
+        "lpLockedDesc": "Ikidendezi cya PancakeSwap kirimo tokens za BNBLion zifatanije na BNB. Iyo tokens za LP zitwitswe (zoherejwe kuri aderesi yapfuye), tokens ziri inyuma mu kidendezi zifunga burundu.",
+        "lpBurnedPercent": "Tokens za LP zatwitswe: 99.98% bya tokens za LP zose",
+        "lpLockedPercent": "Bityo, 99.98% bya tokens muri LP zifunze burundu",
+        "note": "<strong>Icyitonderwa:</strong> LionOG igumana igipimo cya 1:1 na BNBLion mugihe cyo kwimuka. Ingano ya LionOG mu isoko ihura n'ingano nyayo ya BNBLion mu isoko nyuma yo kubara tokens zose zatwitswe n'izifunze.",
+        "launchData": "<strong>Amakuru yo Gutangiza:</strong> Iyi mibare yabazwe igihe cyo gutangiza. Token ya BNBLion ishaje ikomeza gutwika tokens kuri buri gikorwa cyo kugura/kugurisha, bityo ingano nyayo mu isoko ishobora kuba munsi gato y'iyerekanwe.",
+        "legacyContract": "Amasezerano ya Token BNBLion",
+        "ogContract": "Amasezerano ya Token LionOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,724,597,218,422,106,614,085,614",
+          "deadPercent": "57.25%",
+          "contract": "−9,219,967,745,410,740,095,290",
+          "contractPercent": "<0.01%",
+          "lp": "−442,490,152,327,271,918,655,109",
+          "lpPercent": "4.42%",
+          "circulating": "3,832,903,409,282,876,056,519,182",
+          "circulatingPercent": "38.33%"
+        }
+      },
+      "frogogSupply": {
+        "title": "Isesengura ry'Ingano ya FrogOG",
+        "intro": "FrogOG ifite ingano idahinduka mu isoko ikomoka kuri token ya BNBFrog y'umwimerere. Kubara ingano bifata tokens zose zatwitswe n'izifunze burundu.",
+        "lpLocked": "LP Ifunze (99.31% bya LP Byatwitswe)",
+        "deadAddressDesc": "Tokens zoherejwe kuri <code>0x000...dEaD</code> zatwitswe burundu kandi ntizishobora kugarurwa. Ibi birimo tokens zatwitswe binyuze mu buryo bwa musoro bwa BNBFrog.",
+        "contractBalanceDesc": "Amafaranga make ya tokens yafunganye muri contract ya BNBFrog ubwayo. Izi tokens ntizishobora kugerwaho kandi zakuwe mu isoko.",
+        "lpLockedDesc": "Ikidendezi cya PancakeSwap kirimo tokens za BNBFrog zifatanije na BNB. Iyo tokens za LP zitwitswe (zoherejwe kuri aderesi yapfuye), tokens ziri inyuma mu kidendezi zifunga burundu.",
+        "lpBurnedPercent": "Tokens za LP zatwitswe: 99.31% bya tokens za LP zose",
+        "lpLockedPercent": "Bityo, 99.31% bya tokens muri LP zifunze burundu",
+        "note": "<strong>Icyitonderwa:</strong> FrogOG igumana igipimo cya 1:1 na BNBFrog mugihe cyo kwimuka. Ingano ya FrogOG mu isoko ihura n'ingano nyayo ya BNBFrog mu isoko nyuma yo kubara tokens zose zatwitswe n'izifunze.",
+        "launchData": "<strong>Amakuru yo Gutangiza:</strong> Iyi mibare yabazwe igihe cyo gutangiza. Token ya BNBFrog ishaje ikomeza gutwika tokens kuri buri gikorwa cyo kugura/kugurisha, bityo ingano nyayo mu isoko ishobora kuba munsi gato y'iyerekanwe.",
+        "legacyContract": "Amasezerano ya Token BNBFrog",
+        "ogContract": "Amasezerano ya Token FrogOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−740,059,884,911,899,485,982,976",
+          "deadPercent": "7.40%",
+          "contract": "−4,036,008,092,593,983,879,741",
+          "contractPercent": "<0.01%",
+          "lp": "−874,144,424,929,004,044,398,902",
+          "lpPercent": "8.74%",
+          "circulating": "8,385,795,686,123,088,377,024,138",
+          "circulatingPercent": "83.86%"
+        }
+      }
+    }
+  },
+  "contracts": {
+    "title": "Aderesi z'Amasezerano",
+    "header": {
+      "title": "Amasezerano y'Ubwenge",
+      "subtitle": "Aderesi zo gushyiraho zemewe za tokens n'ibiraro muri ecosystem ya Freedom Bridge."
+    },
+    "tabs": {
+      "overview": "Incamake",
+      "byToken": "Kuri Token",
+      "byChain": "Kuri Urunigi",
+      "liquidity": "Ubwisanzure"
+    },
+    "liquidity": {
+      "title": "Ibidendezi by'Ubwisanzure"
+    }
+  },
+  "faq": {
+    "title": "Ubufasha bwa Freedom Bridge",
+    "header": "Ibibazo Bikunze Kubazwa",
+    "subtitle": "Ibisubizo ku bibazo bisanzwe bijyanye na TigerOG, kohereza, na Axelar.",
+    "cta": {
+      "title": "Uragifite ibibazo?",
+      "description": "Injira mu muryango wacu kuri Telegram cyangwa urebe Wiki irambuye kugirango ubone ibitabo bya tekiniki.",
+      "wiki": "Sura Wiki",
+      "telegram": "Injira muri Telegram"
+    },
+    "questions": {
+      "q1": "Intego yo guhindura tokens zanjye ni iyihe?",
+      "a1": "Guhindura tokens zawe muri TigerOG bikuraho umusoro w'ubucuruzi (akenshi 10-12%) ufitanye isano na token ya kera. Ikemerera kandi kohereza izo tokens ku yandi ma blockchains nka Ethereum, Base, n'andi uciye kuri Axelar, bigatuma ubona ecosystem nshya.",
+      "q2": "Biratekanye gukoresha Freedom Bridge?",
+      "a2": "Yego. Protocol ikoresha amasezerano ya Migration yizewe na Axelar Interchain Token Service. Iyo uhinduye, BNBTiger yawe iratwikwa burundu kandi ukakira TigerOG ku gipimo cya 1:1. Uburyo bwo gutwika bwemeza ko ingano yose icungwa neza ku minyururu yose.",
+      "q3": "Hari amafaranga asabwa?",
+      "a3": "Freedom Bridge ubwayo ntabwo yishyuza amafaranga yo guhindura. Wishyura gusa amafaranga asanzwe ya blockchain gas. Kohereza hagati y'iminyururu birimo amafaranga ya gas ya cross-chain yishyurwa kuri Axelar kugirango yishyure ikiguzi cyo kohereza.",
+      "q4": "Bigenda bite nimbura tokens zanjye?",
+      "a4": "Tokens za TigerOG zikora kimwe n'izindi token zose za ERC20. Niba utakaje uburenganzira ku mufuka wawe, ntizishobora kugarurwa. Buri gihe bika neza imfunguzo zawe bwite n'interuro zo kugarura.",
+      "q5": "Ese nshobora guhindura tokens zanjye za TigerOG nkazisubiza kuri BNBTiger?",
+      "a5": "Oya. Kwimuka ni uguhindura inzira imwe. Iyo uhinduye BNBTiger muri TigerOG, tokens zawe za BNBTiger ziratwikwa burundu (zoherezwa kuri aderesi yapfuye). Ibi ni nkana — TigerOG ni verisiyo nshya, itagira umusoro yagenewe gusimbura burundu token ya kera.",
+      "q6": "Ni iyihe miyoboro ishyigikiwe?",
+      "a6": "Dushyigikiye iminyururu myinshi ya EVM binyuze kuri Axelar, harimo BNB Chain, Ethereum, Base, n'izindi. Reba Wiki kugirango ubone urutonde rwuzuye rw'imiyoboro ishyigikiwe.",
+      "q7": "Kohereza bifata igihe kingana iki?",
+      "a7": "Umuvuduko wo kohereza biterwa na finality y'urunigi rw'inkomoko n'iyohereza rya Axelar. Mubisanzwe, kohereza hagati y'iminyururu bifata nka muminota 2-5.",
+      "q8": "Ni izihe ngano ziri mu isoko za tokens za OG?",
+      "a8": "Buri token ya OG ifite ingano idahinduka mu isoko ikomoka kuri token ya BNB y'umwimerere, ibara tokens zatwitswe, amafaranga ya contract yafunganye, na LP yafunze. TigerOG: ~3.66 septillion (36.62% by'umwimerere). LionOG: ~3.83 septillion (38.33% by'umwimerere). FrogOG: ~8.39 septillion (83.86% by'umwimerere). Reba Wiki kugirango ubone ibisobanuro birambuye."
+    }
+  },
+  "common": {
+    "from": "Kuva",
+    "to": "Kuri",
+    "max": "NTARENGWA",
+    "chainId": "ID y'Urunigi",
+    "bscChain": "BSC Chain",
+    "insufficientBalance": "Amafaranga asigaye ntabwo ahagije.",
+    "failedToSwitchNetwork": "Guhindura umuyoboro byanze. Nyamuneka hindura mu bwite mu mufuka wawe.",
+    "failedToFetchFeeQuote": "Kubona ikiguzi cy'ikiguzi byanze.",
+    "unableToDetermineGas": "Ntishobora kumenya kwishyura Axelar gas",
+    "bridgeTxFailed": "Igikorwa cyo kohereza cyanze",
+    "estimatedGas": "Axelar Gas Yagereranijwe",
+    "success": "Byagenze neza!",
+    "viewOnExplorer": "Kureba kuri Explorer",
+    "bridging": "Kohereza...",
+    "transactionFailed": "Igikorwa Cyanze",
+    "search": "Shakisha",
+    "backToApp": "Subira kuri Porogaramu"
+  }
+}

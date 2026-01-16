@@ -1,0 +1,364 @@
+{
+  "app": {
+    "titleFreedom": "Pont de la",
+    "titleBridge": "Llibertat"
+  },
+  "nav": {
+    "settings": "Configuració",
+    "menu": "Menú",
+    "preferences": "Preferències",
+    "switchTheme": "Aparença",
+    "theme": {
+      "dark": "Fosc",
+      "light": "Clar"
+    },
+    "switchPalette": "Canviar Paleta",
+    "wiki": "Documentació / Wiki",
+    "contracts": "Contractes",
+    "faq": "PMF",
+    "logout": "Tancar Sessió",
+    "language": "Idioma",
+    "languageSearchPlaceholder": "Cercar idiomes",
+    "languageNoResults": "No s'han trobat idiomes",
+    "close": "Tancar"
+  },
+  "addNetworks": {
+    "title": "Afegir Xarxes",
+    "description": "Feu clic a un botó a continuació per afegir xarxes a la vostra cartera. Això facilita el canvi entre cadenes mentre proveu."
+  },
+  "tabs": {
+    "convert": "Convertir",
+    "bridge": "Pont"
+  },
+  "convert": {
+    "token": "Token",
+    "selectToken": "Selecciona Token",
+    "balance": "Balanç",
+    "noConvertibleTokens": "No hi ha tokens per convertir a {{chainName}}",
+    "convert": "Convertir",
+    "addToWalletLabel": "Importar {{symbol}} a {{chainName}} a la cartera",
+    "addToWalletButton": "Importar a la Cartera",
+    "addingToken": "Afegint...",
+    "addTokenError": "No s'ha pogut afegir el token a la cartera",
+    "legacyTokenMissing": "Falta el token heretat per a aquesta cadena",
+    "tigerOGMissing": "Falta el token TigerOG per a aquesta cadena",
+    "networkWarning": {
+      "title": "Xarxa Incorrecta",
+      "message": "La conversió de tokens només està disponible a la cadena BSC.",
+      "description": "Si us plau, canvieu a la cadena BSC a la vostra cartera per convertir tokens, o navegueu a la pestanya Pont per transferir tokens entre cadenes."
+    }
+  },
+  "bridge": {
+    "fromChain": "De la Cadena",
+    "selectChainPlaceholder": "Selecciona cadena",
+    "toChain": "A la Cadena",
+    "selectDestinationPlaceholder": "Selecciona destinació",
+    "noDestination": "Sense Destinació",
+    "noBridgeableTokens": "No hi ha tokens pontejables",
+    "bridgeButton": "Pontejar Tokens",
+    "getFeeQuote": "Obtenir Pressupost de Comissió",
+    "viewOnAxelarscan": "Veure a Axelarscan",
+    "addDestinationTokenLabel": "Importar {{symbol}} a {{chainName}} a la cartera",
+    "addTokenError": "No s'ha pogut afegir el token a la cartera",
+    "estimatedTime": "Temps estimat",
+    "recentTransactions": "Transaccions Recents",
+    "clearHistory": "Esborrar historial",
+    "historyStoredLocally": "L'historial de transaccions s'emmagatzema localment en aquest dispositiu"
+  },
+  "settings": {
+    "title": "Configuració",
+    "environment": "Entorn",
+    "rpcEndpoints": "Punts finals RPC",
+    "rpcEndpointsHelp": "Actualitzeu l'URL RPC utilitzat per a cada cadena en l'entorn seleccionat.",
+    "noChainsConfigured": "No hi ha cadenes configurades per a aquest entorn.",
+    "cancel": "Cancel·lar",
+    "save": "Desar"
+  },
+  "wallet": {},
+  "login": {
+    "title": "Benvingut de Nou",
+    "subtitle": "Inicieu sessió per continuar al Pont de la Llibertat",
+    "emailLabel": "Correu Electrònic",
+    "emailPlaceholder": "nom@exemple.cat",
+    "passwordLabel": "Contrasenya",
+    "passwordPlaceholder": "Introduïu la contrasenya",
+    "rememberMe": "Recorda'm en aquest dispositiu",
+    "submit": "Iniciar Sessió",
+    "validation": {
+      "required": "El correu electrònic i la contrasenya són obligatoris.",
+      "invalid": "Correu electrònic o contrasenya no vàlids."
+    }
+  },
+  "landing": {
+    "banner": {
+      "title": "Nou aquí?",
+      "message": "Aprèn sobre el Pont de la Llibertat i com pontejar tokens TigerOG entre cadenes."
+    },
+    "hero": {
+      "badge": "Impulsat per Axelar",
+      "title": "Allibera els Teus <1/> <2>Actius</2>",
+      "subtitle": "Ponteja sense problemes tokens TigerOG entre cadenes utilitzant el Servei de Tokens Intercadena d'Axelar. Segur, ràpid i lliure d'impostos.",
+      "launchApp": "Iniciar Aplicació",
+      "documentation": "Documentació"
+    },
+    "stats": {
+      "messaging": "Xarxa Axelar",
+      "networks": "Xarxes Actives",
+      "fees": "Comissions de Protocol",
+      "finality": "Finalitat"
+    },
+    "features": {
+      "title": "Servei de Tokens Intercadena",
+      "description": "El Pont de la Llibertat aprofita Axelar ITS per oferir una experiència de pont sense problemes, segura i lliure d'impostos a través de {{count}}+ blockchains.",
+      "stopDecay": {
+        "title": "Atura la Decadència",
+        "description": "Els tokens heretats cremen el 10-11% del teu valor en cada compra i venda. Embolicar en TigerOG atura aquest sagnat immediatament, preservant el 100% del teu valor.",
+        "graphLabel1": "100% Retingut (TigerOG)",
+        "graphLabel2": "-40% Valor (Impost Heretat 10%)"
+      },
+      "conversion": {
+        "title": "Conversió 1:1",
+        "description": "El subministrament total mai canvia. Els tokens es mantenen en un contracte de migració segur, i s'utilitza un equivalent exacte 1:1. Sense inflació, sense dilució."
+      },
+      "multichain": {
+        "title": "Multi-Cadena",
+        "description": "Desplega una vegada, accedeix a tot arreu. El teu actiu es converteix en un token intercadena natiu a través de cadenes incloent Ethereum, BNB Chain, Base i més."
+      },
+      "security": {
+        "title": "Seguretat Axelar",
+        "description": "Impulsat per la xarxa descentralitzada de validadors d'Axelar. ITS assegura que els teus tokens es transfereixin de manera segura i consistent a través de totes les xarxes connectades.",
+        "button": "Començar a Pontejar"
+      }
+    },
+    "teaser": {
+      "title": "Vols altres monedes?",
+      "subtitle": "Què en penses de <lunc>LUNC</lunc>, <crepe>Crepe</crepe>, o <shiba>Shiba</shiba>??"
+    },
+    "cta": {
+      "title": "Llest per pontejar?",
+      "description": "Uneix-te a la revolució intercadena. Es triga menys d'un minut a embolicar els teus actius i començar a pontejar via Axelar.",
+      "button": "Iniciar Aplicació Ara"
+    }
+  },
+  "wiki": {
+    "title": "Wiki del Pont de la Llibertat",
+    "searchPlaceholder": "Cercar documentació...",
+    "header": {
+      "title": "Documentació",
+      "subtitle": "Aprèn com embolicar tokens heretats, pontejar entre cadenes i integrar-te amb el Pont de la Llibertat."
+    },
+    "nav": {
+      "gettingStarted": "Començant",
+      "coreConcepts": "Conceptes Bàsics",
+      "developers": "Desenvolupadors",
+      "tigerogSupply": "Subministrament TigerOG",
+      "lionogSupply": "Subministrament LionOG",
+      "frogogSupply": "Subministrament FrogOG"
+    },
+    "articles": {
+      "whatIs": {
+        "title": "Què és el Pont de la Llibertat?",
+        "content": "El Pont de la Llibertat és un protocol de pont descentralitzat construit sobre el Servei de Tokens Intercadena (ITS) d'Axelar. Està dissenyat per alliberar tokens de les limitacions d'una sola cadena i dels alts impostos de transacció. En embolicar tokens estàndard en actius compatibles amb intercadena, els usuaris poden moure el seu valor lliurement a través de blockchains suportades.",
+        "taxFreeTitle": "Transferències Lliures d'Impostos",
+        "taxFreeDesc": "Els tokens heretats sovint tenen impostos del 10%+. Els tokens TigerOG tenen un 0% d'impost.",
+        "omnichainTitle": "Intercadena",
+        "omnichainDesc": "Mou actius instantàniament entre {{count}}+ blockchains via Axelar."
+      },
+      "howToConvert": {
+        "title": "Com Convertir Tokens",
+        "step1": "Connecta la teva cartera a la cadena d'origen (per exemple, BNB Chain).",
+        "step2": "Navega a la pestanya <strong>Convertir</strong>.",
+        "step3": "Selecciona el token heretat que vols convertir.",
+        "step4": "Aprova el contracte de Migració per gastar els teus tokens.",
+        "step5": "Fes clic a <strong>Convertir</strong> per dipositar els teus tokens heretats i rebre una quantitat equivalent de tokens \"TigerOG\".",
+        "note": "<strong>Nota:</strong> La conversió incorre en l'impost de transacció del token heretat (durant l'actualització) si el teu token cobra impostos en transferències. No obstant això, una vegada convertit en TigerOG, totes les transferències i ponts posteriors estan lliures d'impostos."
+      },
+      "supportedNetworks": {
+        "title": "Xarxes Suportades",
+        "content": "El Pont de la Llibertat suporta un ecosistema creixent de {{count}}+ blockchains, permetent una interoperabilitat sense problemes a través del paisatge EVM via Axelar."
+      },
+      "xerc20": {
+        "title": "Tokens Intercadena",
+        "content": "El Servei de Tokens Intercadena (ITS) d'Axelar permet que els tokens es despleguin a través de múltiples cadenes amb una adreça consistent i una gestió de subministrament unificada. El Pont de la Llibertat utilitza ITS per assegurar que TigerOG segueixi sent un actiu canònic allà on es pontegi."
+      },
+      "axelar": {
+        "title": "Xarxa Axelar",
+        "content": "Utilitzem Axelar com la nostra capa d'interoperabilitat. Axelar és una xarxa descentralitzada que connecta diferents blockchains, permetent una comunicació segura entre cadenes i transferències d'actius. El model de seguretat d'Axelar es basa en un conjunt de validadors sense permisos, proporcionant seguretat d'alt grau per als tokens intercadena."
+      },
+      "migration": {
+        "title": "Lògica de Migració",
+        "content": "El contracte de Migració es desplega a la cadena d'origen (per exemple, BSC). Manté els tokens heretats originals en custòdia. Quan actualitzes tokens, estàs dipositant al contracte de Migració. Quan desemboliques (si està suportat), estàs cremant la representació TigerOG per alliberar els tokens originals. Això assegura un suport estricte d'1:1."
+      },
+      "contracts": {
+        "title": "Adreces de Contractes Intel·ligents",
+        "colNetwork": "Xarxa",
+        "colType": "Tipus de Contracte",
+        "colAddress": "Adreça"
+      },
+      "security": {
+        "title": "Model de Seguretat",
+        "content": "La seguretat està integrada en cada capa del Pont de la Llibertat:",
+        "point1": "<strong>Arquitectura de Migració:</strong> Els tokens heretats es mantenen en contractes intel·ligents verificats i immutables.",
+        "point2": "<strong>Validadors Axelar:</strong> Els missatges entre cadenes són verificats per la xarxa descentralitzada d'Axelar.",
+        "point3": "<strong>Subministrament Consistent:</strong> ITS gestiona l'encunyació i la crema per mantenir un subministrament total constant a través de totes les cadenes.",
+        "point4": "<strong>Lògica Auditada:</strong> Construïda sobre les biblioteques Axelar i OpenZeppelin estàndard de la indústria."
+      },
+      "supplyCommon": {
+        "howWeCalculated": "Com hem calculat això",
+        "verification": "Verificació",
+        "verificationDesc": "Totes les xifres de subministrament es poden verificar independentment a la cadena:",
+        "table": {
+          "category": "Categoria",
+          "amount": "Quantitat",
+          "percentOfTotal": "% del Total",
+          "originalSupply": "Subministrament Total Original",
+          "deadAddress": "Adreça Morta (Cremat)",
+          "contractBalance": "Balanç del Contracte (Encallat)",
+          "circulatingSupply": "Subministrament Circulant"
+        },
+        "deadAddressTitle": "1. Adreça Morta",
+        "contractBalanceTitle": "2. Balanç del Contracte",
+        "lpLockedTitle": "3. Tokens LP Bloquejats"
+      },
+      "tigerogSupply": {
+        "title": "Desglossament del Subministrament TigerOG",
+        "intro": "TigerOG té un subministrament circulant fix derivat del token original BNBTiger. El càlcul del subministrament té en compte tots els tokens cremats i bloquejats permanentment.",
+        "lpLocked": "LP Bloquejat (86.18% de LP Cremat)",
+        "deadAddressDesc": "Els tokens enviats a <code>0x000...dEaD</code> es cremen permanentment i mai es poden recuperar. Això inclou els tokens cremats mitjançant el mecanisme d'impostos original de BNBTiger.",
+        "contractBalanceDesc": "Una petita quantitat de tokens estan encallats al propi contracte BNBTiger. Aquests tokens són inaccessibles i efectivament eliminats de la circulació.",
+        "lpLockedDesc": "El grup de liquiditat de PancakeSwap conté tokens BNBTiger aparellats amb BNB. Quan els tokens LP es cremen (s'envien a l'adreça morta), els tokens subjacents al grup es bloquegen permanentment.",
+        "lpBurnedPercent": "Tokens LP cremats: 86.18% de tots els tokens LP",
+        "lpLockedPercent": "Per tant, el 86.18% dels tokens al LP estan permanentment bloquejats",
+        "note": "<strong>Nota:</strong> TigerOG manté una ràtio 1:1 amb BNBTiger durant la migració. El subministrament circulant de TigerOG coincideix amb el subministrament circulant real de BNBTiger després de comptabilitzar tots els tokens cremats i bloquejats.",
+        "launchData": "<strong>Dades de Llançament:</strong> Aquestes xifres es van calcular en el moment del llançament. El token heretat BNBTiger continua cremant tokens en cada transacció de compra/venda, de manera que el subministrament circulant real pot ser lleugerament inferior al mostrat.",
+        "legacyContract": "Contracte de Token BNBTiger",
+        "ogContract": "Contracte de Token TigerOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,772,706,396,234,535,780,783,775",
+          "deadPercent": "57.73%",
+          "contract": "−6,142,342,823,271,327",
+          "contractPercent": "<0.01%",
+          "lp": "−565,059,839,948,518,979,124,912",
+          "lpPercent": "5.65%",
+          "circulating": "3,662,233,757,674,602,416,819,986",
+          "circulatingPercent": "36.62%"
+        }
+      },
+      "lionogSupply": {
+        "title": "Desglossament del Subministrament LionOG",
+        "intro": "LionOG té un subministrament circulant fix derivat del token original BNBLion. El càlcul del subministrament té en compte tots els tokens cremats i bloquejats permanentment.",
+        "lpLocked": "LP Bloquejat (99.98% de LP Cremat)",
+        "deadAddressDesc": "Els tokens enviats a <code>0x000...dEaD</code> es cremen permanentment i mai es poden recuperar. Això inclou els tokens cremats mitjançant el mecanisme d'impostos original de BNBLion.",
+        "contractBalanceDesc": "Una petita quantitat de tokens estan encallats al propi contracte BNBLion. Aquests tokens són inaccessibles i efectivament eliminats de la circulació.",
+        "lpLockedDesc": "El grup de liquiditat de PancakeSwap conté tokens BNBLion aparellats amb BNB. Quan els tokens LP es cremen (s'envien a l'adreça morta), els tokens subjacents al grup es bloquegen permanentment.",
+        "lpBurnedPercent": "Tokens LP cremats: 99.98% de tots els tokens LP",
+        "lpLockedPercent": "Per tant, el 99.98% dels tokens al LP estan permanentment bloquejats",
+        "note": "<strong>Nota:</strong> LionOG manté una ràtio 1:1 amb BNBLion durant la migració. El subministrament circulant de LionOG coincideix amb el subministrament circulant real de BNBLion després de comptabilitzar tots els tokens cremats i bloquejats.",
+        "launchData": "<strong>Dades de Llançament:</strong> Aquestes xifres es van calcular en el moment del llançament. El token heretat BNBLion continua cremant tokens en cada transacció de compra/venda, de manera que el subministrament circulant real pot ser lleugerament inferior al mostrat.",
+        "legacyContract": "Contracte de Token BNBLion",
+        "ogContract": "Contracte de Token LionOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,724,597,218,422,106,614,085,614",
+          "deadPercent": "57.25%",
+          "contract": "−9,219,967,745,410,740,095,290",
+          "contractPercent": "<0.01%",
+          "lp": "−442,490,152,327,271,918,655,109",
+          "lpPercent": "4.42%",
+          "circulating": "3,832,903,409,282,876,056,519,182",
+          "circulatingPercent": "38.33%"
+        }
+      },
+      "frogogSupply": {
+        "title": "Desglossament del Subministrament FrogOG",
+        "intro": "FrogOG té un subministrament circulant fix derivat del token original BNBFrog. El càlcul del subministrament té en compte tots els tokens cremats i bloquejats permanentment.",
+        "lpLocked": "LP Bloquejat (99.31% de LP Cremat)",
+        "deadAddressDesc": "Els tokens enviats a <code>0x000...dEaD</code> es cremen permanentment i mai es poden recuperar. Això inclou els tokens cremats mitjançant el mecanisme d'impostos original de BNBFrog.",
+        "contractBalanceDesc": "Una petita quantitat de tokens estan encallats al propi contracte BNBFrog. Aquests tokens són inaccessibles i efectivament eliminats de la circulació.",
+        "lpLockedDesc": "El grup de liquiditat de PancakeSwap conté tokens BNBFrog aparellats amb BNB. Quan els tokens LP es cremen (s'envien a l'adreça morta), els tokens subjacents al grup es bloquegen permanentment.",
+        "lpBurnedPercent": "Tokens LP cremats: 99.31% de tots els tokens LP",
+        "lpLockedPercent": "Per tant, el 99.31% dels tokens al LP estan permanentment bloquejats",
+        "note": "<strong>Nota:</strong> FrogOG manté una ràtio 1:1 amb BNBFrog durant la migració. El subministrament circulant de FrogOG coincideix amb el subministrament circulant real de BNBFrog després de comptabilitzar tots els tokens cremats i bloquejats.",
+        "launchData": "<strong>Dades de Llançament:</strong> Aquestes xifres es van calcular en el moment del llançament. El token heretat BNBFrog continua cremant tokens en cada transacció de compra/venda, de manera que el subministrament circulant real pot ser lleugerament inferior al mostrat.",
+        "legacyContract": "Contracte de Token BNBFrog",
+        "ogContract": "Contracte de Token FrogOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−740,059,884,911,899,485,982,976",
+          "deadPercent": "7.40%",
+          "contract": "−4,036,008,092,593,983,879,741",
+          "contractPercent": "<0.01%",
+          "lp": "−874,144,424,929,004,044,398,902",
+          "lpPercent": "8.74%",
+          "circulating": "8,385,795,686,123,088,377,024,138",
+          "circulatingPercent": "83.86%"
+        }
+      }
+    }
+  },
+  "contracts": {
+    "title": "Adreces de Contracte",
+    "header": {
+      "title": "Contractes Intel·ligents",
+      "subtitle": "Adreces de desplegament oficials per a tokens i ponts a tot l'ecosistema del Pont de la Llibertat."
+    },
+    "tabs": {
+      "overview": "Visió General",
+      "byToken": "Per Token",
+      "byChain": "Per Cadena",
+      "liquidity": "Liquiditat"
+    },
+    "liquidity": {
+      "title": "Grups de Liquiditat"
+    }
+  },
+  "faq": {
+    "title": "Suport del Pont de la Llibertat",
+    "header": "Preguntes Freqüents",
+    "subtitle": "Respostes a preguntes comunes sobre TigerOG, el pont i Axelar.",
+    "cta": {
+      "title": "Encara tens preguntes?",
+      "description": "Uneix-te a la nostra comunitat a Telegram o consulta la Wiki detallada per a guies tècniques.",
+      "wiki": "Visitar Wiki",
+      "telegram": "Unir-se a Telegram"
+    },
+    "questions": {
+      "q1": "Quin és el propòsit de convertir els meus tokens?",
+      "a1": "Convertir els teus tokens a TigerOG elimina l'impost de transacció (sovint 10-12%) associat amb el token heretat. També et permet pontejar aquests tokens a altres blockchains com Ethereum, Base i més via Axelar, permetent l'accés a nous ecosistemes.",
+      "q2": "És segur utilitzar el Pont de la Llibertat?",
+      "a2": "Sí. El protocol utilitza un contracte de Migració segur i el Servei de Tokens Intercadena d'Axelar. Quan converteixes, el teu BNBTiger es crema permanentment i reps TigerOG en una ràtio 1:1. El mecanisme de crema assegura que el subministrament total es gestioni adequadament a través de totes les cadenes.",
+      "q3": "Hi ha alguna comissió?",
+      "a3": "El propi Pont de la Llibertat no cobra cap comissió per la conversió. Només pagues les comissions de gas estàndard de la blockchain. Pontejar entre cadenes implica una comissió de gas intercadena pagada a Axelar per cobrir els costos de retransmissió.",
+      "q4": "Què passa si perdo els meus tokens?",
+      "a4": "Els tokens TigerOG es comporten com qualsevol altre token ERC20. Si perds l'accés a la teva cartera, no es poden recuperar. Mantén sempre segures les teves claus privades i frases de recuperació.",
+      "q5": "Puc convertir els meus tokens TigerOG de tornada a BNBTiger?",
+      "a5": "No. La migració és una conversió unidireccional. Quan converteixes BNBTiger a TigerOG, els teus tokens BNBTiger es cremen permanentment (s'envien a l'adreça morta). Això és per disseny — TigerOG és la versió actualitzada i lliure d'impostos destinada a substituir completament el token heretat.",
+      "q6": "Quines xarxes estan suportades?",
+      "a6": "Suportem múltiples cadenes EVM via Axelar, incloent BNB Chain, Ethereum, Base i més. Consulta la Wiki per a la llista completa de xarxes suportades.",
+      "q7": "Quant triga el pont?",
+      "a7": "La velocitat de pont depèn de la finalitat de la cadena d'origen i la retransmissió d'Axelar. Típicament, una transferència entre cadenes triga al voltant de 2-5 minuts.",
+      "q8": "Quins són els subministraments circulants dels tokens OG?",
+      "a8": "Cada token OG té un subministrament circulant fix derivat del seu token BNB original, comptabilitzant tokens cremats, balanços de contracte encallats i LP bloquejat. TigerOG: ~3.66 septilions (36.62% de l'original). LionOG: ~3.83 septilions (38.33% de l'original). FrogOG: ~8.39 septilions (83.86% de l'original). Consulta la Wiki per a desglossaments detallats de cada token."
+    }
+  },
+  "common": {
+    "from": "Des de",
+    "to": "A",
+    "max": "MÀX",
+    "chainId": "ID de Cadena",
+    "bscChain": "Cadena BSC",
+    "insufficientBalance": "Balanç insuficient.",
+    "failedToSwitchNetwork": "No s'ha pogut canviar de xarxa. Si us plau, canvieu manualment a la vostra cartera.",
+    "failedToFetchFeeQuote": "No s'ha pogut obtenir el pressupost de comissió.",
+    "unableToDetermineGas": "No es pot determinar el pagament de gas Axelar",
+    "bridgeTxFailed": "Transacció de pont fallida",
+    "estimatedGas": "Gas Axelar Estimat",
+    "success": "Èxit!",
+    "viewOnExplorer": "Veure a l'Explorador",
+    "bridging": "Pontejant...",
+    "transactionFailed": "Transacció Fallida",
+    "search": "Cercar",
+    "backToApp": "Tornar a l'Aplicació"
+  }
+}

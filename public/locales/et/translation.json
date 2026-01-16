@@ -1,0 +1,364 @@
+{
+  "app": {
+    "titleFreedom": "Vabadus",
+    "titleBridge": "Sild"
+  },
+  "nav": {
+    "settings": "Seaded",
+    "menu": "Menüü",
+    "preferences": "Eelistused",
+    "switchTheme": "Välimus",
+    "theme": {
+      "dark": "Tume",
+      "light": "Hele"
+    },
+    "switchPalette": "Vaheta Paletti",
+    "wiki": "Dokumentatsioon / Wiki",
+    "contracts": "Lepingud",
+    "faq": "KKK",
+    "logout": "Logi välja",
+    "language": "Keel",
+    "languageSearchPlaceholder": "Otsi keeli",
+    "languageNoResults": "Keeli ei leitud",
+    "close": "Sulge"
+  },
+  "addNetworks": {
+    "title": "Lisa Võrke",
+    "description": "Klõpsake allolevat nuppu, et lisada võrke oma rahakotti. See teeb testimise ajal ahelate vahel vahetamise lihtsaks."
+  },
+  "tabs": {
+    "convert": "Teisenda",
+    "bridge": "Sild"
+  },
+  "convert": {
+    "token": "Token",
+    "selectToken": "Vali Token",
+    "balance": "Saldo",
+    "noConvertibleTokens": "{{chainName}} võrgus pole teisendatavaid tokeneid",
+    "convert": "Teisenda",
+    "addToWalletLabel": "Impordi {{symbol}} {{chainName}}-s rahakotti",
+    "addToWalletButton": "Impordi Rahakotti",
+    "addingToken": "Lisamine…",
+    "addTokenError": "Ei saanud tokenit rahakotti lisada",
+    "legacyTokenMissing": "Pärandtoken puudub selle ahela jaoks",
+    "tigerOGMissing": "TigerOG token puudub selle ahela jaoks",
+    "networkWarning": {
+      "title": "Vale Võrk",
+      "message": "Tokenite teisendamine on saadaval ainult BSC ahelas.",
+      "description": "Palun vahetage oma rahakotis BSC ahelale, et tokeneid teisendada, või navigeerige Silla vahekaardile, et kanda tokeneid ahelate vahel üle."
+    }
+  },
+  "bridge": {
+    "fromChain": "Ahelast",
+    "selectChainPlaceholder": "Vali ahel",
+    "toChain": "Ahelasse",
+    "selectDestinationPlaceholder": "Vali sihtkoht",
+    "noDestination": "Sihtkoht puudub",
+    "noBridgeableTokens": "Sildatavad tokenid puuduvad",
+    "bridgeButton": "Silla Tokenid",
+    "getFeeQuote": "Hangi tasu pakkumine",
+    "viewOnAxelarscan": "Vaata Axelarscanis",
+    "addDestinationTokenLabel": "Impordi {{symbol}} {{chainName}}-s rahakotti",
+    "addTokenError": "Ei saanud tokenit rahakotti lisada",
+    "estimatedTime": "Hinnanguline aeg",
+    "recentTransactions": "Hiljutised tehingud",
+    "clearHistory": "Tühjenda ajalugu",
+    "historyStoredLocally": "Tehingute ajalugu salvestatakse lokaalselt sellesse seadmesse"
+  },
+  "settings": {
+    "title": "Seaded",
+    "environment": "Keskkond",
+    "rpcEndpoints": "RPC Lõpp-punktid",
+    "rpcEndpointsHelp": "Värskenda valitud keskkonnas iga ahela jaoks kasutatavat RPC URL-i.",
+    "noChainsConfigured": "Selle keskkonna jaoks pole ahelaid seadistatud.",
+    "cancel": "Tühista",
+    "save": "Salvesta"
+  },
+  "wallet": {},
+  "login": {
+    "title": "Tere tulemast tagasi",
+    "subtitle": "Logi sisse, et jätkata Vabaduse Sillale",
+    "emailLabel": "E-post",
+    "emailPlaceholder": "nimi@naide.com",
+    "passwordLabel": "Parool",
+    "passwordPlaceholder": "Sisesta parool",
+    "rememberMe": "Jäta mind sellesse seadmesse meelde",
+    "submit": "Logi sisse",
+    "validation": {
+      "required": "E-post ja parool on kohustuslikud.",
+      "invalid": "Vigane e-post või parool."
+    }
+  },
+  "landing": {
+    "banner": {
+      "title": "Uus siin?",
+      "message": "Õppige Freedom Bridge'i kohta ja kuidas sildada TigerOG tokeneid ahelate vahel."
+    },
+    "hero": {
+      "badge": "Toetatud Axelar'i poolt",
+      "title": "Vabasta Oma <1/> <2>Varad</2>",
+      "subtitle": "Silda sujuvalt TigerOG tokeneid ahelate vahel, kasutades Axelar'i Interchain Token Service'it. Turvaline, kiire ja maksuvaba.",
+      "launchApp": "Käivita Rakendus",
+      "documentation": "Dokumentatsioon"
+    },
+    "stats": {
+      "messaging": "Axelar Võrk",
+      "networks": "Aktiivsed Võrgud",
+      "fees": "Protokolli Tasud",
+      "finality": "Lõplikkus"
+    },
+    "features": {
+      "title": "Interchain Token Service",
+      "description": "Freedom Bridge kasutab Axelar ITS-i, et pakkuda sujuvat, turvalist ja maksuvaba sildamise kogemust {{count}}+ plokiahela vahel.",
+      "stopDecay": {
+        "title": "Peatage Lagunemine",
+        "description": "Pärandtokenid põletavad iga ostu ja müügiga 10-11% teie väärtusest. Mähkimine TigerOG-sse peatab selle verejooksu koheselt, säilitades 100% teie väärtusest.",
+        "graphLabel1": "100% Säilitatud (TigerOG)",
+        "graphLabel2": "-40% Väärtus (Pärand 10% Maks)"
+      },
+      "conversion": {
+        "title": "1:1 Teisendamine",
+        "description": "Kogupakkumine ei muutu kunagi. Tokenid on lukustatud turvalisse migratsioonilepingusse ja kasutatakse täpset 1:1 ekvivalenti. Ei mingit inflatsiooni, ei mingit lahjendamist."
+      },
+      "multichain": {
+        "title": "Mitmeahelaline",
+        "description": "Juuruta üks kord, pääse ligi kõikjal. Teie varast saab loomulik interchain token ahelates, sealhulgas Ethereum, BNB Chain, Base ja teised."
+      },
+      "security": {
+        "title": "Axelar Turvalisus",
+        "description": "Toetatud Axelar'i detsentraliseeritud valideerijate võrgu poolt. ITS tagab, et teie tokeneid kantakse turvaliselt ja järjepidevalt üle kõigi ühendatud võrkude.",
+        "button": "Alusta Sildamist"
+      }
+    },
+    "teaser": {
+      "title": "Kas soovite teisi münte?",
+      "subtitle": "Mida arvate <lunc>LUNC</lunc>-ist, <crepe>Crepe</crepe>-ist või <shiba>Shiba</shiba>-st?"
+    },
+    "cta": {
+      "title": "Valmis sildama?",
+      "description": "Liituge ahelatevahelise revolutsiooniga. Varade mähkimiseks ja Axelar'i kaudu sildamise alustamiseks kulub vähem kui minut.",
+      "button": "Käivita Rakendus Nüüd"
+    }
+  },
+  "wiki": {
+    "title": "Freedom Bridge Wiki",
+    "searchPlaceholder": "Otsi dokumentatsioonist...",
+    "header": {
+      "title": "Dokumentatsioon",
+      "subtitle": "Õppige, kuidas mähkida pärandtokeneid, sildada ahelate vahel ja integreeruda Freedom Bridge'iga."
+    },
+    "nav": {
+      "gettingStarted": "Alustamine",
+      "coreConcepts": "Põhimõisted",
+      "developers": "Arendajad",
+      "tigerogSupply": "TigerOG varud",
+      "lionogSupply": "LionOG varud",
+      "frogogSupply": "FrogOG varud"
+    },
+    "articles": {
+      "whatIs": {
+        "title": "Mis on Freedom Bridge?",
+        "content": "Freedom Bridge on detsentraliseeritud sildamise protokoll, mis on ehitatud Axelar'i Interchain Token Service'ile (ITS). See on loodud tokenite vabastamiseks üheahelalistest piirangutest ja kõrgetest tehingumaksudest. Mähkides standardsed tokenid ahelatevaheliselt ühilduvatesse varadesse, saavad kasutajad oma väärtust vabalt liigutada toetatud plokiahelate vahel.",
+        "taxFreeTitle": "Maksuvabad Ülekanded",
+        "taxFreeDesc": "Pärandtokenitel on sageli 10%+ maksud. TigerOG tokenitel on 0% maks.",
+        "omnichainTitle": "Omnichain",
+        "omnichainDesc": "Liiguta varasid koheselt {{count}}+ plokiahela vahel Axelar'i kaudu."
+      },
+      "howToConvert": {
+        "title": "Kuidas Tokeneid Teisendada",
+        "step1": "Ühendage oma rahakott lähteahelaga (nt BNB Chain).",
+        "step2": "Navigeerige vahekaardile <strong>Teisenda</strong>.",
+        "step3": "Valige pärandtoken, mida soovite teisendada.",
+        "step4": "Kinnitage Migratsiooni leping oma tokenite kulutamiseks.",
+        "step5": "Klõpsake <strong>Teisenda</strong>, et hoiustada oma pärandtokenid ja saada samaväärne kogus \"TigerOG\" tokeneid.",
+        "note": "<strong>Märkus:</strong> Teisendamine toob kaasa pärandtokeni tehingumaksu (uuendamise ajal), kui teie token võtab maksu ülekannetelt. Kuid pärast TigerOG-ks teisendamist on kõik järgnevad ülekanded ja sildamised maksuvabad."
+      },
+      "supportedNetworks": {
+        "title": "Toetatud Võrgud",
+        "content": "Freedom Bridge toetab kasvavat {{count}}+ plokiahela ökosüsteemi, võimaldades sujuvat koostalitlusvõimet kogu EVM-maastikul Axelar'i kaudu."
+      },
+      "xerc20": {
+        "title": "Interchain Tokenid",
+        "content": "Axelar Interchain Token Service (ITS) võimaldab tokeneid juurutada mitmes ahelas järjepideva aadressi ja ühtse pakkumise haldamisega. Freedom Bridge kasutab ITS-i tagamaks, et TigerOG jääb kanooniliseks varaks, kus iganes seda sildatakse."
+      },
+      "axelar": {
+        "title": "Axelar Võrk",
+        "content": "Me kasutame Axelar'i oma koostalitlusvõime kihina. Axelar on detsentraliseeritud võrk, mis ühendab erinevaid plokiahelaid, võimaldades turvalist ahelatevahelist suhtlust ja varade ülekandmist. Axelar'i turvamudel tugineb loata valideerijate komplektile, pakkudes kõrgetasemelist turvalisust interchain tokenitele."
+      },
+      "migration": {
+        "title": "Migratsiooni Loogika",
+        "content": "Migratsiooni leping on juurutatud päritoluahelas (nt BSC). See hoiab algseid pärandtokeneid oma hoole all. Kui uuendate tokeneid, hoiustate need Migratsiooni lepingusse. Kui mähite lahti (kui toetatud), põletate TigerOG esinduse, et vabastada algsed tokenid. See tagab rangelt tagatud 1:1 seose."
+      },
+      "contracts": {
+        "title": "Nutilepingu Aadressid",
+        "colNetwork": "Võrk",
+        "colType": "Lepingu Tüüp",
+        "colAddress": "Aadress"
+      },
+      "security": {
+        "title": "Turvamudel",
+        "content": "Turvalisus on ehitatud igasse Freedom Bridge'i kihti:",
+        "point1": "<strong>Migratsiooni Arhitektuur:</strong> Pärandtokeneid hoitakse verifitseeritud, muutumatutes nutilepingutes.",
+        "point2": "<strong>Axelar Valideerijad:</strong> Ahelatevahelisi sõnumeid verifitseerib Axelar'i detsentraliseeritud võrk.",
+        "point3": "<strong>Järjepidev Pakkumine:</strong> ITS haldab vermimist ja põletamist, et säilitada püsiv kogupakkumine kõigis ahelates.",
+        "point4": "<strong>Auditeeritud Loogika:</strong> Ehitatud tööstusstandardi Axelar'i ja OpenZeppelini teekidele."
+      },
+      "supplyCommon": {
+        "howWeCalculated": "Kuidas me seda arvutasime",
+        "verification": "Verifitseerimine",
+        "verificationDesc": "Kõiki pakkumise andmeid saab ahelas sõltumatult verifitseerida:",
+        "table": {
+          "category": "Kategooria",
+          "amount": "Kogus",
+          "percentOfTotal": "% koguarvust",
+          "originalSupply": "Algne kogupakkumine",
+          "deadAddress": "Surnud aadress (Põletatud)",
+          "contractBalance": "Lepingu saldo (Kinni)",
+          "circulatingSupply": "Ringluses olev varu"
+        },
+        "deadAddressTitle": "1. Surnud Aadress",
+        "contractBalanceTitle": "2. Lepingu Saldo",
+        "lpLockedTitle": "3. LP Lukustatud Tokenid"
+      },
+      "tigerogSupply": {
+        "title": "TigerOG varude jaotus",
+        "intro": "TigerOG-l on fikseeritud ringluses olev varu, mis tuleneb algsest BNBTiger tokenist. Varu arvutus võtab arvesse kõik põletatud ja püsivalt lukustatud tokenid.",
+        "lpLocked": "LP lukustatud (86.18% LP-st põletatud)",
+        "deadAddressDesc": "Tokenid, mis on saadetud aadressile <code>0x000...dEaD</code>, on püsivalt põletatud ja neid ei saa kunagi taastada. See hõlmab algse BNBTiger maksumehhanismi kaudu põletatud tokeneid.",
+        "contractBalanceDesc": "Väike kogus tokeneid on kinni BNBTiger lepingus endas. Need tokenid on kättesaamatud ja tõhusalt ringlusest eemaldatud.",
+        "lpLockedDesc": "PancakeSwap likviidsusbassein sisaldab BNBTiger tokeneid, mis on seotud BNB-ga. Kui LP tokenid põletatakse (saadetakse surnud aadressile), muutuvad basseinis olevad alusvaratokenid püsivalt lukustatuks.",
+        "lpBurnedPercent": "LP tokenid põletatud: 86.18% kõigist LP tokenitest",
+        "lpLockedPercent": "Seega, 86.18% LP-s olevatest tokenitest on püsivalt lukustatud",
+        "note": "<strong>Märkus:</strong> TigerOG säilitab migratsiooni ajal 1:1 suhte BNBTigeriga. TigerOG ringluses olev varu vastab BNBTigeri tegelikule ringluses olevale varule pärast kõigi põletatud ja lukustatud tokenite arvessevõtmist.",
+        "launchData": "<strong>Käivitamise andmed:</strong> Need arvud arvutati käivitamisel. Pärand BNBTiger token jätkab tokenite põletamist iga ostu/müügi tehinguga, seega tegelik ringluses olev varu võib olla veidi madalam kui näidatud.",
+        "legacyContract": "BNBTiger Tokeni Leping",
+        "ogContract": "TigerOG Tokeni Leping",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,772,706,396,234,535,780,783,775",
+          "deadPercent": "57.73%",
+          "contract": "−6,142,342,823,271,327",
+          "contractPercent": "<0.01%",
+          "lp": "−565,059,839,948,518,979,124,912",
+          "lpPercent": "5.65%",
+          "circulating": "3,662,233,757,674,602,416,819,986",
+          "circulatingPercent": "36.62%"
+        }
+      },
+      "lionogSupply": {
+        "title": "LionOG varude jaotus",
+        "intro": "LionOG-l on fikseeritud ringluses olev varu, mis tuleneb algsest BNBLion tokenist. Varu arvutus võtab arvesse kõik põletatud ja püsivalt lukustatud tokenid.",
+        "lpLocked": "LP lukustatud (99.98% LP-st põletatud)",
+        "deadAddressDesc": "Tokenid, mis on saadetud aadressile <code>0x000...dEaD</code>, on püsivalt põletatud ja neid ei saa kunagi taastada. See hõlmab algse BNBLion maksumehhanismi kaudu põletatud tokeneid.",
+        "contractBalanceDesc": "Väike kogus tokeneid on kinni BNBLion lepingus endas. Need tokenid on kättesaamatud ja tõhusalt ringlusest eemaldatud.",
+        "lpLockedDesc": "PancakeSwap likviidsusbassein sisaldab BNBLion tokeneid, mis on seotud BNB-ga. Kui LP tokenid põletatakse (saadetakse surnud aadressile), muutuvad basseinis olevad alusvaratokenid püsivalt lukustatuks.",
+        "lpBurnedPercent": "LP tokenid põletatud: 99.98% kõigist LP tokenitest",
+        "lpLockedPercent": "Seega, 99.98% LP-s olevatest tokenitest on püsivalt lukustatud",
+        "note": "<strong>Märkus:</strong> LionOG säilitab migratsiooni ajal 1:1 suhte BNBLioniga. LionOG ringluses olev varu vastab BNBLioni tegelikule ringluses olevale varule pärast kõigi põletatud ja lukustatud tokenite arvessevõtmist.",
+        "launchData": "<strong>Käivitamise andmed:</strong> Need arvud arvutati käivitamisel. Pärand BNBLion token jätkab tokenite põletamist iga ostu/müügi tehinguga, seega tegelik ringluses olev varu võib olla veidi madalam kui näidatud.",
+        "legacyContract": "BNBLion Tokeni Leping",
+        "ogContract": "LionOG Tokeni Leping",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,724,597,218,422,106,614,085,614",
+          "deadPercent": "57.25%",
+          "contract": "−9,219,967,745,410,740,095,290",
+          "contractPercent": "<0.01%",
+          "lp": "−442,490,152,327,271,918,655,109",
+          "lpPercent": "4.42%",
+          "circulating": "3,832,903,409,282,876,056,519,182",
+          "circulatingPercent": "38.33%"
+        }
+      },
+      "frogogSupply": {
+        "title": "FrogOG varude jaotus",
+        "intro": "FrogOG-l on fikseeritud ringluses olev varu, mis tuleneb algsest BNBFrog tokenist. Varu arvutus võtab arvesse kõik põletatud ja püsivalt lukustatud tokenid.",
+        "lpLocked": "LP lukustatud (99.31% LP-st põletatud)",
+        "deadAddressDesc": "Tokenid, mis on saadetud aadressile <code>0x000...dEaD</code>, on püsivalt põletatud ja neid ei saa kunagi taastada. See hõlmab algse BNBFrog maksumehhanismi kaudu põletatud tokeneid.",
+        "contractBalanceDesc": "Väike kogus tokeneid on kinni BNBFrog lepingus endas. Need tokenid on kättesaamatud ja tõhusalt ringlusest eemaldatud.",
+        "lpLockedDesc": "PancakeSwap likviidsusbassein sisaldab BNBFrog tokeneid, mis on seotud BNB-ga. Kui LP tokenid põletatakse (saadetakse surnud aadressile), muutuvad basseinis olevad alusvaratokenid püsivalt lukustatuks.",
+        "lpBurnedPercent": "LP tokenid põletatud: 99.31% kõigist LP tokenitest",
+        "lpLockedPercent": "Seega, 99.31% LP-s olevatest tokenitest on püsivalt lukustatud",
+        "note": "<strong>Märkus:</strong> FrogOG säilitab migratsiooni ajal 1:1 suhte BNBFrogiga. FrogOG ringluses olev varu vastab BNBFrogi tegelikule ringluses olevale varule pärast kõigi põletatud ja lukustatud tokenite arvessevõtmist.",
+        "launchData": "<strong>Käivitamise andmed:</strong> Need arvud arvutati käivitamisel. Pärand BNBFrog token jätkab tokenite põletamist iga ostu/müügi tehinguga, seega tegelik ringluses olev varu võib olla veidi madalam kui näidatud.",
+        "legacyContract": "BNBFrog Tokeni Leping",
+        "ogContract": "FrogOG Tokeni Leping",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−740,059,884,911,899,485,982,976",
+          "deadPercent": "7.40%",
+          "contract": "−4,036,008,092,593,983,879,741",
+          "contractPercent": "<0.01%",
+          "lp": "−874,144,424,929,004,044,398,902",
+          "lpPercent": "8.74%",
+          "circulating": "8,385,795,686,123,088,377,024,138",
+          "circulatingPercent": "83.86%"
+        }
+      }
+    }
+  },
+  "contracts": {
+    "title": "Lepingu Aadressid",
+    "header": {
+      "title": "Nutilepingud",
+      "subtitle": "Ametlikud juurutusaadressid tokenitele ja sildadele kogu Freedom Bridge'i ökosüsteemis."
+    },
+    "tabs": {
+      "overview": "Ülevaade",
+      "byToken": "Tokeni järgi",
+      "byChain": "Ahela järgi",
+      "liquidity": "Likviidsus"
+    },
+    "liquidity": {
+      "title": "Likviidsusbasseinid"
+    }
+  },
+  "faq": {
+    "title": "Freedom Bridge Tugi",
+    "header": "Korduma Kippuvad Küsimused",
+    "subtitle": "Vastused levinud küsimustele TigerOG, sildamise ja Axelar'i kohta.",
+    "cta": {
+      "title": "Ikka on küsimusi?",
+      "description": "Liituge meie kogukonnaga Telegramis või vaadake üksikasjalikku Wikit tehniliste juhendite jaoks.",
+      "wiki": "Külasta Wikit",
+      "telegram": "Liitu Telegramiga"
+    },
+    "questions": {
+      "q1": "Mis on minu tokenite teisendamise eesmärk?",
+      "a1": "Teie tokenite teisendamine TigerOG-ks eemaldab tehingumaksu (sageli 10-12%), mis on seotud pärandtokeniga. See võimaldab teil ka sildada neid tokeneid teistesse plokiahelatesse nagu Ethereum, Base ja teised Axelar'i kaudu, võimaldades juurdepääsu uutele ökosüsteemidele.",
+      "q2": "Kas Freedom Bridge'i kasutamine on turvaline?",
+      "a2": "Jah. Protokoll kasutab turvalist migratsioonilepingut ja Axelar'i Interchain Token Service'it. Kui teisendate, põletatakse teie BNBTiger püsivalt ja saate TigerOG 1:1 suhtega.Põletusmehhanism tagab, et kogupakkumist hallatakse kõigis ahelates õigesti.",
+      "q3": "Kas on mingeid tasusid?",
+      "a3": "Freedom Bridge ise ei võta teisendamise eest tasu. Maksate ainult standardseid plokiahela gaasitasusid. Sildamine ahelate vahel hõlmab ahelatevahelist gaasitasu, mis makstakse Axelarile ülekandekulude katmiseks.",
+      "q4": "Mis juhtub, kui ma kaotan oma tokenid?",
+      "a4": "TigerOG tokenid käituvad nagu iga teine ERC20 token. Kui kaotate juurdepääsu oma rahakotile, ei saa neid taastada. Hoidke alati oma privaatvõtmed ja taastefraasid turvalisena.",
+      "q5": "Kas ma saan oma TigerOG tokenid tagasi BNBTigeriks teisendada?",
+      "a5": "Ei. Migratsioon on ühesuunaline teisendamine. Kui teisendate BNBTigeri TigerOG-ks, põletatakse teie BNBTigeri tokenid püsivalt (saadetakse surnud aadressile). See on tahtlik — TigerOG on uuendatud, maksuvaba versioon, mis on mõeldud pärandtokeni täielikuks asendamiseks.",
+      "q6": "Milliseid võrke toetatakse?",
+      "a6": "Me toetame mitmeid EVM ahelaid Axelar'i kaudu, sealhulgas BNB Chain, Ethereum, Base ja teised. Vaadake Wikist toetatud võrkude täielikku loendit.",
+      "q7": "Kui kaua võtab sildamine aega?",
+      "a7": "Sildamise kiirus sõltub lähteahela lõplikkusest ja Axelar'i edastamisest. Tavaliselt võtab ülekanne ahelate vahel aega umbes 2-5 minutit.",
+      "q8": "Millised on OG tokenite ringluses olevad varud?",
+      "a8": "Igal OG tokenil on fikseeritud ringluses olev varu, mis tuleneb selle algsest BNB tokenist, võttes arvesse põletatud tokeneid, kinni jäänud lepingusaldosid ja lukustatud LP-d. TigerOG: ~3.66 septiljonit (36.62% algsest). LionOG: ~3.83 septiljonit (38.33% algsest). FrogOG: ~8.39 septiljonit (83.86% algsest). Vaadake Wikist iga tokeni üksikasjalikku jaotust."
+    }
+  },
+  "common": {
+    "from": "Kust",
+    "to": "Kuhu",
+    "max": "MAX",
+    "chainId": "Ahela ID",
+    "bscChain": "BSC Chain",
+    "insufficientBalance": "Ebapiisav saldo.",
+    "failedToSwitchNetwork": "Võrgu vahetamine ebaõnnestus. Palun vaheta käsitsi oma rahakotis.",
+    "failedToFetchFeeQuote": "Tasu pakkumise hankimine ebaõnnestus.",
+    "unableToDetermineGas": "Ei saa määrata Axelar gaasitasu",
+    "bridgeTxFailed": "Silla tehing ebaõnnestus",
+    "estimatedGas": "Hinnanguline Axelar gaas",
+    "success": "Õnnestus!",
+    "viewOnExplorer": "Vaata Exploreris",
+    "bridging": "Sildamine...",
+    "transactionFailed": "Tehing ebaõnnestus",
+    "search": "Otsi",
+    "backToApp": "Tagasi rakendusse"
+  }
+}

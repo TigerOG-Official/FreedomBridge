@@ -1,0 +1,364 @@
+{
+  "app": {
+    "titleFreedom": "自由",
+    "titleBridge": "橋樑"
+  },
+  "nav": {
+    "settings": "設定",
+    "menu": "選單",
+    "preferences": "偏好設定",
+    "switchTheme": "外觀",
+    "theme": {
+      "dark": "深色",
+      "light": "淺色"
+    },
+    "switchPalette": "切換色調",
+    "wiki": "文件 / Wiki",
+    "contracts": "合約",
+    "faq": "常見問題",
+    "logout": "登出",
+    "language": "語言",
+    "languageSearchPlaceholder": "搜尋語言",
+    "languageNoResults": "找不到語言",
+    "close": "關閉"
+  },
+  "addNetworks": {
+    "title": "新增網路",
+    "description": "點擊下方按鈕以新增網路至您的錢包。這讓您在測試時可以輕鬆切換不同的鏈。"
+  },
+  "tabs": {
+    "convert": "轉換",
+    "bridge": "橋接"
+  },
+  "convert": {
+    "token": "代幣",
+    "selectToken": "選擇代幣",
+    "balance": "餘額",
+    "noConvertibleTokens": "{{chainName}} 上沒有可轉換的代幣",
+    "convert": "轉換",
+    "addToWalletLabel": "將 {{chainName}} 上的 {{symbol}} 匯入錢包",
+    "addToWalletButton": "匯入至錢包",
+    "addingToken": "正在新增...",
+    "addTokenError": "無法將代幣新增至錢包",
+    "legacyTokenMissing": "此鏈缺少舊代幣",
+    "tigerOGMissing": "此鏈缺少 TigerOG 代幣",
+    "networkWarning": {
+      "title": "錯誤的網路",
+      "message": "代幣轉換僅在 BSC 鏈上可用。",
+      "description": "請切換至您的錢包中的 BSC 鏈以轉換代幣，或導航至橋接標籤以在鏈之間轉移代幣。"
+    }
+  },
+  "bridge": {
+    "fromChain": "從鏈",
+    "selectChainPlaceholder": "選擇鏈",
+    "toChain": "到鏈",
+    "selectDestinationPlaceholder": "選擇目的地",
+    "noDestination": "無目的地",
+    "noBridgeableTokens": "沒有可橋接的代幣",
+    "bridgeButton": "橋接代幣",
+    "getFeeQuote": "獲取費用報價",
+    "viewOnAxelarscan": "在 Axelar 瀏覽器上查看",
+    "addDestinationTokenLabel": "將 {{chainName}} 上的 {{symbol}} 匯入錢包",
+    "addTokenError": "無法將代幣新增至錢包",
+    "estimatedTime": "預計時間",
+    "recentTransactions": "最近的交易",
+    "clearHistory": "清除歷史記錄",
+    "historyStoredLocally": "交易歷史記錄存儲在本地設備上"
+  },
+  "settings": {
+    "title": "設定",
+    "environment": "環境",
+    "rpcEndpoints": "RPC 端點",
+    "rpcEndpointsHelp": "更新所選環境中每個鏈使用的 RPC URL。",
+    "noChainsConfigured": "此環境未配置鏈。",
+    "cancel": "取消",
+    "save": "儲存"
+  },
+  "wallet": {},
+  "login": {
+    "title": "歡迎回來",
+    "subtitle": "登入以繼續使用自由之橋",
+    "emailLabel": "電子郵件",
+    "emailPlaceholder": "name@example.com",
+    "passwordLabel": "密碼",
+    "passwordPlaceholder": "輸入密碼",
+    "rememberMe": "在此裝置上記住我",
+    "submit": "登入",
+    "validation": {
+      "required": "電子郵件和密碼為必填項。",
+      "invalid": "電子郵件或密碼無效。"
+    }
+  },
+  "landing": {
+    "banner": {
+      "title": "新來的嗎?",
+      "message": "了解 Freedom Bridge 以及如何跨鏈橋接 TigerOG 代幣。"
+    },
+    "hero": {
+      "badge": "由 Axelar 支援",
+      "title": "解鎖您的 <1/> <2>資產</2>",
+      "subtitle": "使用 Axelar 的跨鏈代幣服務無縫地跨鏈橋接 TigerOG 代幣。安全、快速且免稅。",
+      "launchApp": "啟動應用程式",
+      "documentation": "文件"
+    },
+    "stats": {
+      "messaging": "Axelar 網路",
+      "networks": "活躍網路",
+      "fees": "協議費用",
+      "finality": "最終性"
+    },
+    "features": {
+      "title": "跨鏈代幣服務",
+      "description": "自由之橋利用 Axelar ITS 在 {{count}}+ 區塊鏈之間提供無縫、安全且免稅的橋接體驗。",
+      "stopDecay": {
+        "title": "停止衰減",
+        "description": "傳統代幣在每次買賣時會燃燒您 10-11% 的價值。轉換為 TigerOG 立即停止這種失血，保留您 100% 的價值。",
+        "graphLabel1": "100% 保留 (TigerOG)",
+        "graphLabel2": "-40% 價值 (傳統 10% 稅)"
+      },
+      "conversion": {
+        "title": "1:1 轉換",
+        "description": "總供應量永遠不變。代幣被保存在安全的遷移合約中，並使用完全相等的 1:1 等價物。無通貨膨脹，無稀釋。"
+      },
+      "multichain": {
+        "title": "多鏈",
+        "description": "一次部署，隨處存取。您的資產成為包括 Ethereum、BNB Chain、Base 等在內的鏈的原生跨鏈代幣。"
+      },
+      "security": {
+        "title": "Axelar 安全性",
+        "description": "由 Axelar 的去中心化驗證者網路支援。ITS 確保您的代幣在所有連接的網路之間安全且一致地傳輸。",
+        "button": "開始橋接"
+      }
+    },
+    "teaser": {
+      "title": "您想要其他幣嗎？",
+      "subtitle": "您對 <lunc>LUNC</lunc>、<crepe>Crepe</crepe> 或 <shiba>Shiba</shiba> 有什麼看法？"
+    },
+    "cta": {
+      "title": "準備好橋接了嗎？",
+      "description": "加入跨鏈革命。包裝您的資產並透過 Axelar 開始橋接只需不到一分鐘。",
+      "button": "立即啟動應用程式"
+    }
+  },
+  "wiki": {
+    "title": "自由之橋 Wiki",
+    "searchPlaceholder": "搜尋文件...",
+    "header": {
+      "title": "文件",
+      "subtitle": "學習如何包裝傳統代幣、跨鏈橋接以及與自由之橋整合。"
+    },
+    "nav": {
+      "gettingStarted": "入門",
+      "coreConcepts": "核心概念",
+      "developers": "開發者",
+      "tigerogSupply": "TigerOG 供應量",
+      "lionogSupply": "LionOG 供應量",
+      "frogogSupply": "FrogOG 供應量"
+    },
+    "articles": {
+      "whatIs": {
+        "title": "什麼是自由之橋？",
+        "content": "自由之橋是一個建立在 Axelar 跨鏈代幣服務 (ITS) 上的去中心化橋接協議。旨在將代幣從單一鏈限制和高額交易稅中解放出來。透過將標準代幣包裝成跨鏈兼容資產，使用者可以在支援的區塊鏈上自由移動其價值。",
+        "taxFreeTitle": "免稅轉移",
+        "taxFreeDesc": "傳統代幣通常有 10%+ 的稅。TigerOG 代幣為 0% 稅。",
+        "omnichainTitle": "全鏈",
+        "omnichainDesc": "透過 Axelar 在 {{count}}+ 區塊鏈之間即時移動資產。"
+      },
+      "howToConvert": {
+        "title": "如何轉換代幣",
+        "step1": "將您的錢包連接到來源鏈 (例如，BNB Chain)。",
+        "step2": "導航至 <strong>轉換</strong> 標籤。",
+        "step3": "選擇您想要轉換的傳統代幣。",
+        "step4": "批准遷移合約以花費您的代幣。",
+        "step5": "點擊 <strong>轉換</strong> 以存入您的傳統代幣並接收等量的 \"TigerOG\" 代幣。",
+        "note": "<strong>注意：</strong> 如果您的代幣對轉移收取稅費，轉換將產生傳統代幣的交易稅 (在升級期間)。然而，一旦轉換為 TigerOG，所有後續的轉移和橋接都是免稅的。"
+      },
+      "supportedNetworks": {
+        "title": "支援的網路",
+        "content": "自由之橋支援一個不斷增長的 {{count}}+ 區塊鏈生態系統，透過 Axelar 在 EVM 領域實現無縫的互操作性。"
+      },
+      "xerc20": {
+        "title": "跨鏈代幣",
+        "content": "Axelar 跨鏈代幣服務 (ITS) 允許代幣在具有一致地址和統一供應管理的多個鏈上部署。自由之橋使用 ITS 確保 TigerOG 在橋接到的任何地方都保持為規範資產。"
+      },
+      "axelar": {
+        "title": "Axelar 網路",
+        "content": "我們利用 Axelar 作為我們的互操作性層。Axelar 是一個連接不同區塊鏈的去中心化網路，實現安全的跨鏈通信和資產轉移。Axelar 的安全模型依賴於一組無需許可的驗證者，為跨鏈代幣提供高等級的安全性。"
+      },
+      "migration": {
+        "title": "遷移邏輯",
+        "content": "遷移合約部署在來源鏈 (例如，BSC) 上。它託管原始的傳統代幣。當您升級代幣時，您正在存入遷移合約。當您解包裝時 (如果支援)，您正在燃燒 TigerOG 代表以釋放原始代幣。這確保了始終嚴格支持 1:1 的掛鉤。"
+      },
+      "contracts": {
+        "title": "智能合約地址",
+        "colNetwork": "網路",
+        "colType": "合約類型",
+        "colAddress": "地址"
+      },
+      "security": {
+        "title": "安全模型",
+        "content": "安全建構在自由之橋的每一層中：",
+        "point1": "<strong>遷移架構：</strong> 傳統代幣保存在經過驗證的、不可變的智能合約中。",
+        "point2": "<strong>Axelar 驗證者：</strong> 跨鏈訊息由 Axelar 的去中心化網路驗證。",
+        "point3": "<strong>一致的供應量：</strong> ITS 管理鑄造和燃燒，以維持所有鏈上恆定的總供應量。",
+        "point4": "<strong>經審計的邏輯：</strong> 建立在 OpenZeppelin 和 Axelar 標準庫之上。"
+      },
+      "supplyCommon": {
+        "howWeCalculated": "我們如何計算此數據",
+        "verification": "驗證",
+        "verificationDesc": "所有供應量數據均可在鏈上獨立驗證：",
+        "table": {
+          "category": "類別",
+          "amount": "數量",
+          "percentOfTotal": "佔總數的 %",
+          "originalSupply": "原始總供應量",
+          "deadAddress": "黑洞地址 (已銷毀)",
+          "contractBalance": "合約餘額 (滯留)",
+          "circulatingSupply": "流通供應量"
+        },
+        "deadAddressTitle": "1. 黑洞地址",
+        "contractBalanceTitle": "2. 合約餘額",
+        "lpLockedTitle": "3. LP 鎖定代幣"
+      },
+      "tigerogSupply": {
+        "title": "TigerOG 供應量明細",
+        "intro": "TigerOG 的流通供應量固定，源自原始的 BNBTiger 代幣。供應量計算考慮了所有已銷毀和永久鎖定的代幣。",
+        "lpLocked": "LP 鎖定 (86.18% LP 已銷毀)",
+        "deadAddressDesc": "發送到 <code>0x000...dEaD</code> 的代幣將被永久銷毀，無法恢復。這包括透過原始 BNBTiger 稅收機制銷毀的代幣。",
+        "contractBalanceDesc": "少量代幣滯留在 BNBTiger 合約本身中。這些代幣無法存取，實際上已從流通中移除。",
+        "lpLockedDesc": "PancakeSwap 流動性池包含與 BNB 配對的 BNBTiger 代幣。當 LP 代幣被銷毀 (發送到黑洞地址) 時，池中的基礎代幣將被永久鎖定。",
+        "lpBurnedPercent": "已銷毀 LP 代幣：所有 LP 代幣的 86.18%",
+        "lpLockedPercent": "因此，LP 中 86.18% 的代幣被永久鎖定",
+        "note": "<strong>注意：</strong> TigerOG 在遷移期間與 BNBTiger 保持 1:1 的比例。在計入所有已銷毀和鎖定的代幣後，TigerOG 的流通供應量與 BNBTiger 的真實流通供應量相匹配。",
+        "launchData": "<strong>發布數據：</strong> 這些數據是在發布時計算的。傳統 BNBTiger 代幣在每筆買賣交易中都會繼續銷毀代幣，因此實際流通供應量可能略低於顯示值。",
+        "legacyContract": "BNBTiger 代幣合約",
+        "ogContract": "TigerOG 代幣合約",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,772,706,396,234,535,780,783,775",
+          "deadPercent": "57.73%",
+          "contract": "−6,142,342,823,271,327",
+          "contractPercent": "<0.01%",
+          "lp": "−565,059,839,948,518,979,124,912",
+          "lpPercent": "5.65%",
+          "circulating": "3,662,233,757,674,602,416,819,986",
+          "circulatingPercent": "36.62%"
+        }
+      },
+      "lionogSupply": {
+        "title": "LionOG 供應量明細",
+        "intro": "LionOG 的流通供應量固定，源自原始的 BNBLion 代幣。供應量計算考慮了所有已銷毀和永久鎖定的代幣。",
+        "lpLocked": "LP 鎖定 (99.98% LP 已銷毀)",
+        "deadAddressDesc": "發送到 <code>0x000...dEaD</code> 的代幣將被永久銷毀，無法恢復。這包括透過原始 BNBLion 稅收機制銷毀的代幣。",
+        "contractBalanceDesc": "少量代幣滯留在 BNBLion 合約本身中。這些代幣無法存取，實際上已從流通中移除。",
+        "lpLockedDesc": "PancakeSwap 流動性池包含與 BNB 配對的 BNBLion 代幣。當 LP 代幣被銷毀 (發送到黑洞地址) 時，池中的基礎代幣將被永久鎖定。",
+        "lpBurnedPercent": "已銷毀 LP 代幣：所有 LP 代幣的 99.98%",
+        "lpLockedPercent": "因此，LP 中 99.98% 的代幣被永久鎖定",
+        "note": "<strong>注意：</strong> LionOG 在遷移期間與 BNBLion 保持 1:1 的比例。在計入所有已銷毀和鎖定的代幣後，LionOG 的流通供應量與 BNBLion 的真實流通供應量相匹配。",
+        "launchData": "<strong>發布數據：</strong> 這些數據是在發布時計算的。傳統 BNBLion 代幣在每筆買賣交易中都會繼續銷毀代幣，因此實際流通供應量可能略低於顯示值。",
+        "legacyContract": "BNBLion 代幣合約",
+        "ogContract": "LionOG 代幣合約",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,724,597,218,422,106,614,085,614",
+          "deadPercent": "57.25%",
+          "contract": "−9,219,967,745,410,740,095,290",
+          "contractPercent": "<0.01%",
+          "lp": "−442,490,152,327,271,918,655,109",
+          "lpPercent": "4.42%",
+          "circulating": "3,832,903,409,282,876,056,519,182",
+          "circulatingPercent": "38.33%"
+        }
+      },
+      "frogogSupply": {
+        "title": "FrogOG 供應量明細",
+        "intro": "FrogOG 的流通供應量固定，源自原始的 BNBFrog 代幣。供應量計算考慮了所有已銷毀和永久鎖定的代幣。",
+        "lpLocked": "LP 鎖定 (99.31% LP 已銷毀)",
+        "deadAddressDesc": "發送到 <code>0x000...dEaD</code> 的代幣將被永久銷毀，無法恢復。這包括透過原始 BNBFrog 稅收機制銷毀的代幣。",
+        "contractBalanceDesc": "少量代幣滯留在 BNBFrog 合約本身中。這些代幣無法存取，實際上已從流通中移除。",
+        "lpLockedDesc": "PancakeSwap 流動性池包含與 BNB 配對的 BNBFrog 代幣。當 LP 代幣被銷毀 (發送到黑洞地址) 時，池中的基礎代幣將被永久鎖定。",
+        "lpBurnedPercent": "已銷毀 LP 代幣：所有 LP 代幣的 99.31%",
+        "lpLockedPercent": "因此，LP 中 99.31% 的代幣被永久鎖定",
+        "note": "<strong>注意：</strong> FrogOG 在遷移期間與 BNBFrog 保持 1:1 的比例。在計入所有已銷毀和鎖定的代幣後，FrogOG 的流通供應量與 BNBFrog 的真實流通供應量相匹配。",
+        "launchData": "<strong>發布數據：</strong> 這些數據是在發布時計算的。傳統 BNBFrog 代幣在每筆買賣交易中都會繼續銷毀代幣，因此實際流通供應量可能略低於顯示值。",
+        "legacyContract": "BNBFrog 代幣合約",
+        "ogContract": "FrogOG 代幣合約",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−740,059,884,911,899,485,982,976",
+          "deadPercent": "7.40%",
+          "contract": "−4,036,008,092,593,983,879,741",
+          "contractPercent": "<0.01%",
+          "lp": "−874,144,424,929,004,044,398,902",
+          "lpPercent": "8.74%",
+          "circulating": "8,385,795,686,123,088,377,024,138",
+          "circulatingPercent": "83.86%"
+        }
+      }
+    }
+  },
+  "contracts": {
+    "title": "合約地址",
+    "header": {
+      "title": "智能合約",
+      "subtitle": "自由之橋生態系統中代幣、路由器和流動性池的官方部署地址。"
+    },
+    "tabs": {
+      "overview": "概覽",
+      "byToken": "按代幣",
+      "byChain": "按鏈",
+      "liquidity": "流動性"
+    },
+    "liquidity": {
+      "title": "流動性池"
+    }
+  },
+  "faq": {
+    "title": "自由之橋支援",
+    "header": "常見問題",
+    "subtitle": "關於 TigerOG、橋接和 Axelar 的常見問題解答。",
+    "cta": {
+      "title": "還有問題嗎？",
+      "description": "加入我們的 Telegram 社群或查看詳細的 Wiki 以獲取技術指南。",
+      "wiki": "訪問 Wiki",
+      "telegram": "加入 Telegram"
+    },
+    "questions": {
+      "q1": "轉換我的代幣的目的是什麼？",
+      "a1": "將您的代幣轉換為 TigerOG 可以去除與傳統代幣相關的交易稅 (通常為 10-12%)。它還允許您透過 Axelar 將這些代幣橋接到其他區塊鏈，如 Ethereum、Base 等，從而存取新的生態系統。",
+      "q2": "使用自由之橋安全嗎？",
+      "a2": "是的。該協議使用安全的遷移合約和 Axelar 跨鏈代幣服務。當您轉換時，您的 BNBTiger 會被永久銷毀，您將收到 1:1 比例的 TigerOG。銷毀機制確保在所有鏈上正確管理總供應量。",
+      "q3": "有任何費用嗎？",
+      "a3": "自由之橋本身不對轉換收取費用。您只需支付標準區塊鏈燃料費。在鏈之間橋接涉及支付給 Axelar 的跨鏈燃料費，以支付中繼成本。",
+      "q4": "如果我丟失了我的代幣會怎樣？",
+      "a4": "TigerOG 代幣的行為與任何其他 ERC20 代幣一樣。如果您失去了對錢包的存取權，它們將無法恢復。請務必妥善保管您的私鑰和助記詞。",
+      "q5": "我可以將我的 TigerOG 代幣轉換回 BNBTiger 嗎？",
+      "a5": "不。遷移是單向轉換。當您將 BNBTiger 轉換為 TigerOG 時，您的 BNBTiger 代幣將被永久銷毀 (發送到黑洞地址)。這是設計使然 — TigerOG 是升級後的免稅版本，旨在完全取代傳統代幣。",
+      "q6": "支援哪些網路？",
+      "a6": "我們透過 Axelar 支援多個 EVM 鏈，包括 BNB Chain、Ethereum、Base 等。查看 Wiki 以獲取支援網路的完整列表。",
+      "q7": "橋接需要多長時間？",
+      "a7": "橋接速度取決於來源鏈的最終性時間和 Axelar 中繼。通常，鏈之間的轉移大約需要 2-5 分鐘。",
+      "q8": "OG 代幣的流通供應量是多少？",
+      "a8": "每個 OG 代幣都有固定的流通供應量，源自其原始 BNB 代幣，並計入了已銷毀代幣、滯留合約餘額和鎖定 LP。TigerOG：~3.66 秭 (原始的 36.62%)。LionOG：~3.83 秭 (原始的 38.33%)。FrogOG：~8.39 秭 (原始的 83.86%)。有關每個代幣的詳細細目，請參閱 Wiki。"
+    }
+  },
+  "common": {
+    "from": "從",
+    "to": "到",
+    "max": "最大",
+    "chainId": "鏈 ID",
+    "bscChain": "BSC 鏈",
+    "insufficientBalance": "餘額不足。",
+    "failedToSwitchNetwork": "切換網路失敗。請在您的錢包中手動切換。",
+    "failedToFetchFeeQuote": "獲取費用報價失敗。",
+    "unableToDetermineGas": "無法確定 Axelar 燃料費支付",
+    "bridgeTxFailed": "橋接交易失敗",
+    "estimatedGas": "預估 Axelar 燃料費",
+    "success": "成功！",
+    "viewOnExplorer": "在瀏覽器上查看",
+    "bridging": "橋接中...",
+    "transactionFailed": "交易失敗",
+    "search": "搜尋",
+    "backToApp": "返回應用程式"
+  }
+}

@@ -1,0 +1,364 @@
+{
+  "app": {
+    "titleFreedom": "Nwereonwe",
+    "titleBridge": "Àkwà mmiri"
+  },
+  "nav": {
+    "settings": "Ntọala",
+    "menu": "Menu",
+    "preferences": "Mmasị",
+    "switchTheme": "Ọdịdị",
+    "theme": {
+      "dark": "Ọchịchịrị",
+      "light": "Ìhè"
+    },
+    "switchPalette": "Gbanwee Palette",
+    "wiki": "Akwụkwọ / Wiki",
+    "contracts": "Nkwekọrịta",
+    "faq": "Ajụjụ Ndị A Na-ajụkarị",
+    "logout": "Wepụ akaụntụ",
+    "language": "Asụsụ",
+    "languageSearchPlaceholder": "Chọọ asụsụ",
+    "languageNoResults": "Enweghị asụsụ ahụrụ",
+    "close": "Mechie"
+  },
+  "addNetworks": {
+    "title": "Tinye Netwọk",
+    "description": "Pịa bọtịnụ dị n'okpuru iji tinye Netwọk na obere akpa gị. Nke a na-eme ka ọ dị mfe ịgbanwe n'etiti yinye mgbe ị na-anwale."
+  },
+  "tabs": {
+    "convert": "Tụgharịa",
+    "bridge": "Àkwà mmiri"
+  },
+  "convert": {
+    "token": "Akara ngosi",
+    "selectToken": "Họrọ Akara Ngosi",
+    "balance": "Nkwụnye ego",
+    "noConvertibleTokens": "Enweghị akara ngosi enwere ike ịgbanwe na {{chainName}}",
+    "convert": "Tụgharịa",
+    "addToWalletLabel": "Bubata {{symbol}} na {{chainName}} na obere akpa",
+    "addToWalletButton": "Bubata na Obere Akpa",
+    "addingToken": "Na-agbakwunye…",
+    "addTokenError": "Enweghị ike ịgbakwunye akara ngosi na obere akpa",
+    "legacyTokenMissing": "Akara ngosi ochie efu maka yinye a",
+    "tigerOGMissing": "Akara ngosi TigerOG efu maka yinye a",
+    "networkWarning": {
+      "title": "Netwọk Na-ezighi Ezi",
+      "message": "Ntụgharị akara ngosi dị naanị na BSC Chain.",
+      "description": "Biko gbanwee na BSC Chain na obere akpa gị iji tụgharịa akara ngosi, ma ọ bụ gaa na taabụ Bridge iji nyefee akara ngosi n'etiti yinye."
+    }
+  },
+  "bridge": {
+    "fromChain": "Site na yinye",
+    "selectChainPlaceholder": "Họrọ yinye",
+    "toChain": "Gaa na yinye",
+    "selectDestinationPlaceholder": "Họrọ ebe aga",
+    "noDestination": "Enweghị ebe aga",
+    "noBridgeableTokens": "Enweghị akara ngosi enwere ike ịkwado",
+    "bridgeButton": "Akara ngosi àkwà mmiri",
+    "getFeeQuote": "Nweta ọnụ ahịa ego",
+    "viewOnAxelarscan": "Lelee na Axelar Explorer",
+    "addDestinationTokenLabel": "Bubata {{symbol}} na {{chainName}} na obere akpa",
+    "addTokenError": "Enweghị ike ịgbakwunye akara ngosi na obere akpa",
+    "estimatedTime": "Oge e mere atụmatụ",
+    "recentTransactions": "Azụmahịa Na-adịbeghị Anya",
+    "clearHistory": "Kpochapụ akụkọ ihe mere eme",
+    "historyStoredLocally": "Echekwara akụkọ ihe mere eme nke azụmahịa na mpaghara na ngwaọrụ a"
+  },
+  "settings": {
+    "title": "Ntọala",
+    "environment": "Gburugburu ebe obibi",
+    "rpcEndpoints": "RPC Endpoints",
+    "rpcEndpointsHelp": "Melite URL RPC ejiri maka yinye ọ bụla na gburugburu ebe obibi ahọpụtara.",
+    "noChainsConfigured": "Enweghị yinye ahaziri maka gburugburu ebe obibi a.",
+    "cancel": "Kagbuo",
+    "save": "Chekwaa"
+  },
+  "wallet": {},
+  "login": {
+    "title": "Nnọọ ọzọ",
+    "subtitle": "Banye iji gaa n'ihu na Freedom Bridge",
+    "emailLabel": "Email",
+    "emailPlaceholder": "aha@iheomume.com",
+    "passwordLabel": "Okwuntụhie",
+    "passwordPlaceholder": "Tinye okwuntụhie",
+    "rememberMe": "Cheta m na ngwaọrụ a",
+    "submit": "Banye",
+    "validation": {
+      "required": "Achọrọ email na okwuntụhie.",
+      "invalid": "Email ma ọ bụ okwuntụhie ezighi ezi."
+    }
+  },
+  "landing": {
+    "banner": {
+      "title": "Ọ bụ ebe a ka ị bịara ọhụrụ?",
+      "message": "Mụta banyere Freedom Bridge na otu esi ebufe akara ngosi TigerOG n'etiti yinye."
+    },
+    "hero": {
+      "badge": "Site na Axelar",
+      "title": "Wepụ <1/> <2>Akụ</2> Gị",
+      "subtitle": "Na-ebufe akara ngosi TigerOG n'enweghị nsogbu n'etiti yinye site na iji Axelar's Interchain Token Service. Dị nchebe, ọsọ ọsọ, ma nwee onwe ya na ụtụ.",
+      "launchApp": "Malite Ngwa",
+      "documentation": "Akwụkwọ"
+    },
+    "stats": {
+      "messaging": "Axelar Network",
+      "networks": "Netwọk Dị Ndụ",
+      "fees": "Ụgwọ Protocol",
+      "finality": "Ikpeazụ"
+    },
+    "features": {
+      "title": "Interchain Token Service",
+      "description": "Freedom Bridge na-eji Axelar ITS iji wepụta ahụmịhe bridging na-enweghị nsogbu, echekwara, na enweghị ụtụ n'ofe {{count}}+ blockchains.",
+      "stopDecay": {
+        "title": "Kwụsị Ire Ure",
+        "description": "Akara ngosi ochie na-agba 10-11% nke uru gị na azụrụ na ire ọ bụla. Ịtụgharị na TigerOG na-akwụsị ọbara ọgbụgba a ozugbo, na-echekwa 100% nke uru gị.",
+        "graphLabel1": "100% Echekwara (TigerOG)",
+        "graphLabel2": "-40% Uru (Utụ Ochie 10%)"
+      },
+      "conversion": {
+        "title": "1:1 Ntụgharị",
+        "description": "Ngụkọta ọkọnọ anaghị agbanwe agbanwe. A na-akpọchi akara ngosi n'ime nkwekọrịta mbata echekwara, a na-akpụkwa 1:1 kpọmkwem. Enweghị onu oriri, enweghị mbelata."
+      },
+      "multichain": {
+        "title": "Multi-Chain",
+        "description": "Buga otu ugboro, nweta ebe niile. Akụ gị na-aghọ akara ngosi interchain obodo na yinye gụnyere Ethereum, BNB Chain, Base, na ndị ọzọ."
+      },
+      "security": {
+        "title": "Nchekwa Axelar",
+        "description": "Site na netwọk Axelar nke ndị nkwado enweghị etiti. ITS na-ahụ na a na-ebufe akara ngosi gị n'enweghị nsogbu ma na-agbanwe agbanwe gafee netwọk niile ejikọrọ.",
+        "button": "Malite Bridging"
+      }
+    },
+    "teaser": {
+      "title": "Ị chọrọ mkpụrụ ego ndị ọzọ?",
+      "subtitle": "Kedu ihe ị chere banyere <lunc>LUNC</lunc>, <crepe>Crepe</crepe>, ma ọ bụ <shiba>Shiba</shiba>??"
+    },
+    "cta": {
+      "title": "Dị njikere ịkwado?",
+      "description": "Soro mgbanwe interchain. Ọ na-ewe ihe na-erughị otu nkeji iji tụgharịa akụ gị ma malite bridging site na Axelar.",
+      "button": "Malite Ngwa Ugbu A"
+    }
+  },
+  "wiki": {
+    "title": "Freedom Bridge Wiki",
+    "searchPlaceholder": "Chọọ akwụkwọ...",
+    "header": {
+      "title": "Akwụkwọ",
+      "subtitle": "Mụta otu esi atụgharị akara ngosi ochie, bridge gafee yinye, ma jikọta ya na Freedom Bridge."
+    },
+    "nav": {
+      "gettingStarted": "Mmalite",
+      "coreConcepts": "Isi Echiche",
+      "developers": "Ndị Mmepe",
+      "tigerogSupply": "TigerOG Ọkọnọ",
+      "lionogSupply": "LionOG Ọkọnọ",
+      "frogogSupply": "FrogOG Ọkọnọ"
+    },
+    "articles": {
+      "whatIs": {
+        "title": "Gịnị Bụ Freedom Bridge?",
+        "content": "Freedom Bridge bụ usoro nkwekọrịta ekesara iji wepụta akara ngosi ochie na nnukwu ụtụ azụmahịa na njedebe yinye. Site na ịgbanye akara ngosi ọkọlọtọ n'ime akụ dakọtara na interchain, ndị ọrụ nwere ike ibufe uru ha n'efu na blockchains akwadoro.",
+        "taxFreeTitle": "Mbufe Enweghị Ụtụ",
+        "taxFreeDesc": "Akara ngosi ochie na-enwekarị ụtụ 10%+. Akara ngosi TigerOG nwere ụtụ 0%.",
+        "omnichainTitle": "Interchain",
+        "omnichainDesc": "Buga akụ ozugbo n'etiti {{count}}+ blockchains site na Axelar."
+      },
+      "howToConvert": {
+        "title": "Otu Esi Atụgharị Akara Ngosi",
+        "step1": "Jikọọ obere akpa gị na yinye isi (dịka, BNB Chain).",
+        "step2": "Gaa na taabụ <strong>Tụgharịa</strong>.",
+        "step3": "Họrọ akara ngosi ochie ịchọrọ ịgbanye.",
+        "step4": "Kwado nkwekọrịta Mbata ka ọ mefuo akara ngosi gị.",
+        "step5": "Pịa <strong>Tụgharịa</strong> iji tinye akara ngosi ochie gị ma nata ego nhata nke \"TigerOG\" tokens.",
+        "note": "<strong>Rịba ama:</strong> Ntụgharị na-eweta ụtụ azụmahịa nke akara ngosi ochie (n'oge nkwalite) ma ọ bụrụ na akara ngosi gị na-ana ụtụ na mbufe. Agbanyeghị, ozugbo agbanyere na TigerOG, mbufe na bridges niile na-esote na-enwere onwe na ụtụ."
+      },
+      "supportedNetworks": {
+        "title": "Netwọk Akwadoro",
+        "content": "Freedom Bridge na-akwado usoro okike na-eto eto nke {{count}}+ blockchains, na-enye ohere interoperability na-enweghị nsogbu na mpaghara EVM site na Axelar."
+      },
+      "xerc20": {
+        "title": "Interchain Tokens",
+        "content": "Axelar Interchain Token Service (ITS) na-enye akara ngosi ohere ka ebuga ya n'ọtụtụ yinye nwere adreesị na-agbanwe agbanwe na njikwa ọkọnọ dị n'otu. Freedom Bridge na-eji ITS iji hụ na TigerOG na-anọgide na-abụ akụ canonical ebe ọ bụla a kwadoro ya."
+      },
+      "axelar": {
+        "title": "Axelar Network",
+        "content": "Anyị na-eji Axelar dị ka akwa interoperability anyị. Axelar bụ netwọk enweghị etiti na-ejikọ blockchains dị iche iche, na-enye ohere nkwukọrịta cross-chain echekwara na mbufe akụ. Nlereanya nchekwa Axelar na-adabere na usoro ndị nkwado enweghị ikike, na-enye nchekwa dị elu maka akara ngosi interchain."
+      },
+      "migration": {
+        "title": "Uche Mbata",
+        "content": "A na-ebuga nkwekọrịta Mbata na yinye mbụ (dịka, BSC). Ọ na-ejide akara ngosi ochie mbụ na njide. Mgbe ị na-akwalite akara ngosi, ị na-etinye n'ime nkwekọrịta Mbata. Mgbe ị na-ewepụ (ọ bụrụ na akwadoro), ị na-agba TigerOG representation ọkụ iji wepụta akara ngosi mbụ. Nke a na-ahụ na nkwado 1:1 siri ike."
+      },
+      "contracts": {
+        "title": "Adreesị Nkwekọrịta Smart",
+        "colNetwork": "Netwọk",
+        "colType": "Ụdị Nkwekọrịta",
+        "colAddress": "Adreesị"
+      },
+      "security": {
+        "title": "Nlereanya Nchekwa",
+        "content": "Nchekwa dị n'ime ọkwa ọ bụla nke Freedom Bridge:",
+        "point1": "<strong>Nrụpụta Mbata:</strong> A na-ejide akara ngosi ochie na nkwekọrịta smart enwetara, anaghị agbanwe agbanwe.",
+        "point2": "<strong>Axelar Validators:</strong> A na-enyocha ozi cross-chain site na netwọk Axelar enweghị etiti.",
+        "point3": "<strong>Ọkọnọ Na-agbanwe Agbanwe:</strong> ITS na-ejikwa minting na burning iji debe ngụkọta ọkọnọ na-adịgide adịgide na yinye niile.",
+        "point4": "<strong>Uche Enyochara:</strong> Ewuru na ọba akwụkwọ ọkọlọtọ Axelar na OpenZeppelin."
+      },
+      "supplyCommon": {
+        "howWeCalculated": "Otu Anyị Si Gbakọọ Nke A",
+        "verification": "Nkwenye",
+        "verificationDesc": "Enwere ike inyocha ọnụ ọgụgụ ọkọnọ niile n'onwe ha na yinye:",
+        "table": {
+          "category": "Otu",
+          "amount": "Ego ole",
+          "percentOfTotal": "% nke Ngụkọta",
+          "originalSupply": "Ngụkọta Ọkọnọ Mbụ",
+          "deadAddress": "Adreesị Nwụrụ Anwụ (Gbara Ọkụ)",
+          "contractBalance": "Nkwụnye Ego Nkwekọrịta (Raarapara)",
+          "circulatingSupply": "Ọkọnọ Na-ekesa"
+        },
+        "deadAddressTitle": "1. Adreesị Nwụrụ Anwụ",
+        "contractBalanceTitle": "2. Nkwụnye Ego Nkwekọrịta",
+        "lpLockedTitle": "3. Akara Ngosi LP Akpọchiri"
+      },
+      "tigerogSupply": {
+        "title": "Nkewa Ọkọnọ TigerOG",
+        "intro": "TigerOG nwere ọkọnọ na-ekesa nke a kapịrị ọnụ sitere na akara ngosi BNBTiger mbụ. Ngụkọta ọkọnọ na-agụnye akara ngosi niile gbara ọkụ ma kpọchie kpamkpam.",
+        "lpLocked": "LP Akpọchiri (86.18% nke LP Gbara Ọkụ)",
+        "deadAddressDesc": "Akara ngosi ezigara na <code>0x000...dEaD</code> agbaala ọkụ kpamkpam ma enweghị ike ị nwetaghachi ya. Nke a gụnyere akara ngosi gbara ọkụ site na usoro ụtụ BNBTiger mbụ.",
+        "contractBalanceDesc": "Obere akara ngosi raarapara na nkwekọrịta BNBTiger n'onwe ya. Akara ngosi ndị a anaghị enweta ma wepụ ha na mgbasa ozi.",
+        "lpLockedDesc": "Ọdọ mmiri PancakeSwap nwere akara ngosi BNBTiger ejikọtara na BNB. Mgbe akara ngosi LP gbara ọkụ (ezigara na adreesị nwụrụ anwụ), akara ngosi ndị dị n'okpuru na ọdọ mmiri ahụ na-akpọchi kpamkpam.",
+        "lpBurnedPercent": "Akara ngosi LP gbara ọkụ: 86.18% nke akara ngosi LP niile",
+        "lpLockedPercent": "Ya mere, 86.18% nke akara ngosi na LP akpọchiri kpamkpam",
+        "note": "<strong>Rịba ama:</strong> TigerOG na-edobe oke 1:1 na BNBTiger n'oge mbata. Ọkọnọ na-ekesa nke TigerOG dabara na ezigbo ọkọnọ na-ekesa nke BNBTiger mgbe agụchara akara ngosi niile gbara ọkụ na ndị akpọchiri.",
+        "launchData": "<strong>Data Mmalite:</strong> A gbakọrọ ọnụ ọgụgụ ndị a na mmalite. Akara ngosi BNBTiger ochie na-aga n'ihu na-agba akara ngosi ọkụ na azụmahịa ịzụta/ire ọ bụla, yabụ ọkọnọ na-ekesa n'ezie nwere ike ịdị ntakịrị karịa ka egosiri.",
+        "legacyContract": "Nkwekọrịta Akara Ngosi BNBTiger",
+        "ogContract": "Nkwekọrịta Akara Ngosi TigerOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,772,706,396,234,535,780,783,775",
+          "deadPercent": "57.73%",
+          "contract": "−6,142,342,823,271,327",
+          "contractPercent": "<0.01%",
+          "lp": "−565,059,839,948,518,979,124,912",
+          "lpPercent": "5.65%",
+          "circulating": "3,662,233,757,674,602,416,819,986",
+          "circulatingPercent": "36.62%"
+        }
+      },
+      "lionogSupply": {
+        "title": "Nkewa Ọkọnọ LionOG",
+        "intro": "LionOG nwere ọkọnọ na-ekesa nke a kapịrị ọnụ sitere na akara ngosi BNBLion mbụ. Ngụkọta ọkọnọ na-agụnye akara ngosi niile gbara ọkụ ma kpọchie kpamkpam.",
+        "lpLocked": "LP Akpọchiri (99.98% nke LP Gbara Ọkụ)",
+        "deadAddressDesc": "Akara ngosi ezigara na <code>0x000...dEaD</code> agbaala ọkụ kpamkpam ma enweghị ike ị nwetaghachi ya. Nke a gụnyere akara ngosi gbara ọkụ site na usoro ụtụ BNBLion mbụ.",
+        "contractBalanceDesc": "Obere akara ngosi raarapara na nkwekọrịta BNBLion n'onwe ya. Akara ngosi ndị a anaghị enweta ma wepụ ha na mgbasa ozi.",
+        "lpLockedDesc": "Ọdọ mmiri PancakeSwap nwere akara ngosi BNBLion ejikọtara na BNB. Mgbe akara ngosi LP gbara ọkụ (ezigara na adreesị nwụrụ anwụ), akara ngosi ndị dị n'okpuru na ọdọ mmiri ahụ na-akpọchi kpamkpam.",
+        "lpBurnedPercent": "Akara ngosi LP gbara ọkụ: 99.98% nke akara ngosi LP niile",
+        "lpLockedPercent": "Ya mere, 99.98% nke akara ngosi na LP akpọchiri kpamkpam",
+        "note": "<strong>Rịba ama:</strong> LionOG na-edobe oke 1:1 na BNBLion n'oge mbata. Ọkọnọ na-ekesa nke LionOG dabara na ezigbo ọkọnọ na-ekesa nke BNBLion mgbe agụchara akara ngosi niile gbara ọkụ na ndị akpọchiri.",
+        "launchData": "<strong>Data Mmalite:</strong> A gbakọrọ ọnụ ọgụgụ ndị a na mmalite. Akara ngosi BNBLion ochie na-aga n'ihu na-agba akara ngosi ọkụ na azụmahịa ịzụta/ire ọ bụla, yabụ ọkọnọ na-ekesa n'ezie nwere ike ịdị ntakịrị karịa ka egosiri.",
+        "legacyContract": "Nkwekọrịta Akara Ngosi BNBLion",
+        "ogContract": "Nkwekọrịta Akara Ngosi LionOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,724,597,218,422,106,614,085,614",
+          "deadPercent": "57.25%",
+          "contract": "−9,219,967,745,410,740,095,290",
+          "contractPercent": "<0.01%",
+          "lp": "−442,490,152,327,271,918,655,109",
+          "lpPercent": "4.42%",
+          "circulating": "3,832,903,409,282,876,056,519,182",
+          "circulatingPercent": "38.33%"
+        }
+      },
+      "frogogSupply": {
+        "title": "Nkewa Ọkọnọ FrogOG",
+        "intro": "FrogOG nwere ọkọnọ na-ekesa nke a kapịrị ọnụ sitere na akara ngosi BNBFrog mbụ. Ngụkọta ọkọnọ na-agụnye akara ngosi niile gbara ọkụ ma kpọchie kpamkpam.",
+        "lpLocked": "LP Akpọchiri (99.31% nke LP Gbara Ọkụ)",
+        "deadAddressDesc": "Akara ngosi ezigara na <code>0x000...dEaD</code> agbaala ọkụ kpamkpam ma enweghị ike ị nwetaghachi ya. Nke a gụnyere akara ngosi gbara ọkụ site na usoro ụtụ BNBFrog mbụ.",
+        "contractBalanceDesc": "Obere akara ngosi raarapara na nkwekọrịta BNBFrog n'onwe ya. Akara ngosi ndị a anaghị enweta ma wepụ ha na mgbasa ozi.",
+        "lpLockedDesc": "Ọdọ mmiri PancakeSwap nwere akara ngosi BNBFrog ejikọtara na BNB. Mgbe akara ngosi LP gbara ọkụ (ezigara na adreesị nwụrụ anwụ), akara ngosi ndị dị n'okpuru na ọdọ mmiri ahụ na-akpọchi kpamkpam.",
+        "lpBurnedPercent": "Akara ngosi LP gbara ọkụ: 99.31% nke akara ngosi LP niile",
+        "lpLockedPercent": "Ya mere, 99.31% nke akara ngosi na LP akpọchiri kpamkpam",
+        "note": "<strong>Rịba ama:</strong> FrogOG na-edobe oke 1:1 na BNBFrog n'oge mbata. Ọkọnọ na-ekesa nke FrogOG dabara na ezigbo ọkọnọ na-ekesa nke BNBFrog mgbe agụchara akara ngosi niile gbara ọkụ na ndị akpọchiri.",
+        "launchData": "<strong>Data Mmalite:</strong> A gbakọrọ ọnụ ọgụgụ ndị a na mmalite. Akara ngosi BNBFrog ochie na-aga n'ihu na-agba akara ngosi ọkụ na azụmahịa ịzụta/ire ọ bụla, yabụ ọkọnọ na-ekesa n'ezie nwere ike ịdị ntakịrị karịa ka egosiri.",
+        "legacyContract": "Nkwekọrịta Akara Ngosi BNBFrog",
+        "ogContract": "Nkwekọrịta Akara Ngosi FrogOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−740,059,884,911,899,485,982,976",
+          "deadPercent": "7.40%",
+          "contract": "−4,036,008,092,593,983,879,741",
+          "contractPercent": "<0.01%",
+          "lp": "−874,144,424,929,004,044,398,902",
+          "lpPercent": "8.74%",
+          "circulating": "8,385,795,686,123,088,377,024,138",
+          "circulatingPercent": "83.86%"
+        }
+      }
+    }
+  },
+  "contracts": {
+    "title": "Adreesị Nkwekọrịta",
+    "header": {
+      "title": "Nkwekọrịta Smart",
+      "subtitle": "Adreesị mbunye gọọmentị maka akara ngosi na bridges na gburugburu ebe obibi Freedom Bridge."
+    },
+    "tabs": {
+      "overview": "Nchịkọta",
+      "byToken": "Site na Token",
+      "byChain": "Site na Yinye",
+      "liquidity": "Mmiri"
+    },
+    "liquidity": {
+      "title": "Ọdọ Mmiri Mmiri"
+    }
+  },
+  "faq": {
+    "title": "Nkwado Freedom Bridge",
+    "header": "Ajụjụ Ndị A Na-ajụkarị",
+    "subtitle": "Azịza maka ajụjụ ndị a na-ajụkarị gbasara TigerOG, bridging, na Axelar.",
+    "cta": {
+      "title": "Ka nwere ajụjụ?",
+      "description": "Soro obodo anyị na Telegram ma ọ bụ lelee Wiki zuru ezu maka ntuziaka teknụzụ.",
+      "wiki": "Gaa na Wiki",
+      "telegram": "Soro Telegram"
+    },
+    "questions": {
+      "q1": "Kedu ebumnuche nke ịgbanwe akara ngosi m?",
+      "a1": "Ịgbanwe akara ngosi gị na TigerOG na-ewepụ ụtụ azụmahịa (na-abụkarị 10-12%) jikọtara na akara ngosi ochie. Ọ na-enyekwa gị ohere ịgwa akara ngosi ndị a na blockchains ndị ọzọ dị ka Ethereum, Base, na ndị ọzọ site na Axelar, na-enye ohere ịnweta usoro okike ọhụrụ.",
+      "q2": "Ọ dị mma iji Freedom Bridge?",
+      "a2": "Ee. Usoro a na-eji nkwekọrịta Mbata echekwara na Axelar's Interchain Token Service. Mgbe ị na-atụgharị, BNBTiger gị na-agba ọkụ kpamkpam ma ị na-enweta TigerOG na 1:1. Usoro nsure ọkụ na-ahụ na a na-ejikwa ngụkọta ọkọnọ nke ọma n'ofe yinye niile.",
+      "q3": "Enwere ụgwọ ọ bụla?",
+      "a3": "Freedom Bridge n'onwe ya anaghị ana ụgwọ maka ịgbanwe. Naanị ị na-akwụ ụgwọ gas blockchain ọkọlọtọ. Bridging n'etiti yinye gụnyere ụgwọ gas cross-chain a na-akwụ Axelar iji kpuchie ụgwọ mbufe.",
+      "q4": "Gịnị ga-eme ma ọ bụrụ na m tufuo akara ngosi m?",
+      "a4": "Akara ngosi TigerOG na-akpa àgwà dị ka akara ngosi ERC20 ọ bụla ọzọ. Ọ bụrụ na ịnweghị ike ịnweta obere akpa gị, enweghị ike ị nwetaghachi ha. Jiri n'aka mgbe niile na ị na-edebe igodo nzuzo na nkebi ahịrịokwu nwetaghachi gị na nchekwa.",
+      "q5": "Enwere m ike ịgbanwe akara ngosi TigerOG m na BNBTiger?",
+      "a5": "Mba. Mbata bụ ntụgharị otu ụzọ. Mgbe ị tụgharịrị BNBTiger na TigerOG, akara ngosi BNBTiger gị na-agba ọkụ kpamkpam (ezigara na adreesị nwụrụ anwụ). Nke a bụ site na imewe — TigerOG bụ ụdị kwalite, enweghị ụtụ nke pụtara iji dochie akara ngosi ochie kpamkpam.",
+      "q6": "Kedu netwọk akwadoro?",
+      "a6": "Anyị na-akwado ọtụtụ yinye EVM site na Axelar, gụnyere BNB Chain, Ethereum, Base, na ndị ọzọ. Lelee Wiki maka ndepụta zuru ezu nke netwọk akwadoro.",
+      "q7": "Ogologo oge ole ka bridging na-ewe?",
+      "a7": "Ọsọ bridging na-adabere n'oge ikpeazụ nke yinye isi na Axelar relaying. Dịka, mbufe n'etiti yinye na-ewe ihe dị ka nkeji 2-5.",
+      "q8": "Kedu ihe bụ ọkọnọ na-ekesa nke akara ngosi OG?",
+      "a8": "Akara ngosi OG ọ bụla nwere ọkọnọ na-ekesa nke a kapịrị ọnụ sitere na akara ngosi BNB mbụ ya, na-aza ajụjụ maka akara ngosi gbara ọkụ, nkwụnye ego nkwekọrịta raarapara, na LP akpọchiri. TigerOG: ~3.66 septillion (36.62% nke mbụ). LionOG: ~3.83 septillion (38.33% nke mbụ). FrogOG: ~8.39 septillion (83.86% nke mbụ). Hụ Wiki maka nkowa zuru ezu nke akara ngosi ọ bụla."
+    }
+  },
+  "common": {
+    "from": "Site na",
+    "to": "Gaa na",
+    "max": "KACHA",
+    "chainId": "Chain ID",
+    "bscChain": "BSC Chain",
+    "insufficientBalance": "Nkwụnye ego ezughị oke.",
+    "failedToSwitchNetwork": "Ịgbanwe netwọk adaghị. Biko gbanwee aka na obere akpa gị.",
+    "failedToFetchFeeQuote": "Ịnweta ọnụ ahịa ego adaghị.",
+    "unableToDetermineGas": "Enweghị ike ikpebi ịkwụ ụgwọ gas Axelar",
+    "bridgeTxFailed": "Azụmahịa àkwà mmiri adaghị",
+    "estimatedGas": "Gas Axelar e mere atụmatụ",
+    "success": "Ọganihu!",
+    "viewOnExplorer": "Lelee na Explorer",
+    "bridging": "Na-akwado...",
+    "transactionFailed": "Azụmahịa adaghị",
+    "search": "Chọọ",
+    "backToApp": "Laghachi na Ngwa"
+  }
+}

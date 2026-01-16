@@ -1,0 +1,33 @@
+{
+  "1": [
+    "https://ethereum-rpc.publicnode.com",
+    "https://eth.drpc.org",
+    "https://rpc.ankr.com/eth"
+  ],
+  "56": [
+    "https://bsc-rpc.publicnode.com",
+    "https://bsc-dataseed.binance.org/",
+    "https://bsc-dataseed1.defibit.io/"
+  ],
+  "8453": [
+    "https://mainnet.base.org",
+    "https://base-rpc.publicnode.com"
+  ],
+  "59144": [
+    "https://rpc.linea.build",
+    "https://linea-rpc.publicnode.com"
+  ],
+  "1440000": [
+    "https://rpc.xrplevm.org"
+  ],
+  "137": [
+    "https://polygon-rpc.com",
+    "https://polygon-bor-rpc.publicnode.com",
+    "https://rpc.ankr.com/polygon"
+  ],
+  "43114": [
+    "https://api.avax.network/ext/bc/C/rpc",
+    "https://avalanche-c-chain-rpc.publicnode.com",
+    "https://rpc.ankr.com/avalanche"
+  ]
+}

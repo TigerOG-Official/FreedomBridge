@@ -1,0 +1,187 @@
+/* Global shadcn dialog overrides */
+.shadcn-dialog-content {
+  background: var(--theme-modal-bg) !important;
+  border: 1px solid var(--theme-card-border) !important;
+  color: var(--theme-text-primary) !important;
+}
+
+.shadcn-dialog-content .text-muted-foreground {
+  color: var(--theme-text-muted) !important;
+}
+
+/* Custom modal styling (for alerts and warnings) */
+.custom-modal .modal-content {
+  background: var(--about-modal-bg, var(--theme-modal-bg));
+  border: 1px solid var(--theme-card-border);
+  box-shadow: 0 25px 60px var(--theme-shadow-color);
+  backdrop-filter: blur(20px);
+  color: var(--theme-text-primary);
+  border-radius: 16px;
+}
+
+.custom-modal .modal-header {
+  background: var(--about-modal-header-bg, var(--theme-modal-section-bg));
+  border-color: var(--theme-section-border);
+  border-radius: 16px 16px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.custom-modal .modal-title {
+  font-weight: 700;
+  color: var(--theme-text-primary);
+}
+
+.custom-modal .modal-body {
+  color: var(--theme-text-primary);
+}
+
+.custom-modal .modal-body .text-muted {
+  color: var(--theme-text-secondary) !important;
+}
+
+/* Custom animated close button */
+.custom-close-btn {
+  background: transparent;
+  border: none;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+  color: var(--theme-text-primary);
+}
+
+.custom-close-btn:hover {
+  opacity: 1;
+}
+
+.custom-close-btn:focus {
+  outline: none;
+  opacity: 1;
+}
+
+.about-modal .modal-content {
+  background: var(--about-modal-bg);
+  border: 1px solid var(--about-modal-border);
+  color: var(--theme-text-primary);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.about-modal .about-card,
+.about-modal .about-warning,
+.about-modal .about-footer-card {
+  background: var(--about-card-bg);
+  border: 1px solid var(--about-card-border);
+  border-radius: 12px;
+  color: var(--theme-text-primary);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.01);
+}
+
+.about-modal .about-card h5,
+.about-modal .about-warning h6,
+.about-modal .about-footer-card h6 {
+  color: var(--about-card-heading);
+}
+
+.about-modal .about-card p,
+.about-modal .about-warning p,
+.about-modal .about-footer-card p,
+.about-modal .about-muted {
+  color: var(--about-card-text) !important;
+}
+
+/* Settings modal styling */
+.settings-modal .modal-dialog {
+  max-width: 720px;
+}
+
+.settings-modal-content {
+  background: var(--theme-modal-bg);
+  border: 1px solid var(--theme-card-border);
+  box-shadow: 0 25px 60px var(--theme-shadow-color);
+  backdrop-filter: blur(20px);
+  color: var(--theme-text-primary);
+}
+
+.settings-modal-content .modal-header,
+.settings-modal-content .modal-footer {
+  background: var(--theme-modal-section-bg);
+  border-color: var(--theme-section-border);
+  color: inherit;
+}
+
+.settings-modal-content .modal-title {
+  font-weight: 700;
+  color: var(--theme-text-primary);
+}
+
+.settings-modal-content .nav-tabs {
+  border-bottom: 1px solid var(--theme-section-border);
+}
+
+.settings-modal-content .nav-tabs .nav-link {
+  color: var(--theme-text-secondary);
+  background: transparent;
+  border: none;
+  padding: 0.75rem 1rem;
+}
+
+.settings-modal-content .nav-tabs .nav-link:hover {
+  color: var(--theme-text-primary);
+}
+
+.settings-modal-content .nav-tabs .nav-link.active {
+  color: white;
+  background: linear-gradient(135deg, var(--theme-button-gradient-start) 0%, var(--theme-button-gradient-mid) 100%);
+  border-radius: 10px 10px 0 0;
+}
+
+.settings-modal-content .form-label {
+  color: var(--theme-text-secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+}
+
+.settings-modal-content .form-control,
+.settings-modal-content .form-select {
+  background: var(--theme-input-bg);
+  border: 1px solid var(--theme-input-border);
+  color: var(--theme-text-primary);
+}
+
+.settings-modal-content .form-control:focus,
+.settings-modal-content .form-select:focus {
+  background: var(--theme-input-bg);
+  border-color: var(--theme-input-focus-border);
+  box-shadow: 0 0 0 0.25rem rgba(99, 102, 241, 0.2);
+}
+
+.settings-modal-content .form-control::placeholder {
+  color: var(--theme-text-muted);
+}
+
+.settings-modal-content .text-muted {
+  color: var(--theme-text-muted) !important;
+}
+
+.settings-modal-content .alert-info,
+.settings-modal-content .shadcn-alert.alert-info {
+  background: var(--theme-section-bg);
+  border-color: var(--theme-section-border);
+  color: var(--theme-text-primary);
+}
+
+.settings-modal-content .alert-info a,
+.settings-modal-content .shadcn-alert.alert-info a {
+  color: var(--theme-input-focus-border);
+}
+
+.settings-modal-content ol {
+  color: inherit;
+}

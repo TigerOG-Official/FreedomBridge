@@ -1,0 +1,364 @@
+{
+  "app": {
+    "titleFreedom": "Brīvība",
+    "titleBridge": "Tilts"
+  },
+  "nav": {
+    "settings": "Iestatījumi",
+    "menu": "Izvēlne",
+    "preferences": "Preferences",
+    "switchTheme": "Izskats",
+    "theme": {
+      "dark": "Tumšs",
+      "light": "Gaišs"
+    },
+    "switchPalette": "Mainīt Paleti",
+    "wiki": "Dokumentācija / Wiki",
+    "contracts": "Līgumi",
+    "faq": "BUJ",
+    "logout": "Iziet",
+    "language": "Valoda",
+    "languageSearchPlaceholder": "Meklēt valodas",
+    "languageNoResults": "Valodas nav atrastas",
+    "close": "Aizvērt"
+  },
+  "addNetworks": {
+    "title": "Pievienot Tīklus",
+    "description": "Noklikšķiniet uz pogas zemāk, lai pievienotu tīklus savam makam. Tas atvieglo pārslēgšanos starp ķēdēm testēšanas laikā."
+  },
+  "tabs": {
+    "convert": "Konvertēt",
+    "bridge": "Tilts"
+  },
+  "convert": {
+    "token": "Tokens",
+    "selectToken": "Izvēlēties Tokenu",
+    "balance": "Atlikums",
+    "noConvertibleTokens": "Nav konvertējamu tokenu uz {{chainName}}",
+    "convert": "Konvertēt",
+    "addToWalletLabel": "Importēt {{symbol}} uz {{chainName}} makā",
+    "addToWalletButton": "Importēt makā",
+    "addingToken": "Pievienošana…",
+    "addTokenError": "Nevarēja pievienot tokenu makam",
+    "legacyTokenMissing": "Trūkst mantotā tokena šai ķēdei",
+    "tigerOGMissing": "Trūkst TigerOG tokena šai ķēdei",
+    "networkWarning": {
+      "title": "Nepareizs Tīkls",
+      "message": "Tokenu konvertācija ir pieejama tikai BSC ķēdē.",
+      "description": "Lūdzu, pārslēdzieties uz BSC ķēdi savā makā, lai konvertētu tokenus, vai dodieties uz Tilta cilni, lai pārsūtītu tokenus starp ķēdēm."
+    }
+  },
+  "bridge": {
+    "fromChain": "No Ķēdes",
+    "selectChainPlaceholder": "Izvēlēties ķēdi",
+    "toChain": "Uz Ķēdi",
+    "selectDestinationPlaceholder": "Izvēlēties galamērķi",
+    "noDestination": "Nav galamērķa",
+    "noBridgeableTokens": "Nav tiltam piemērotu tokenu",
+    "bridgeButton": "Tiltot Tokenus",
+    "getFeeQuote": "Saņemt nodevu piedāvājumu",
+    "viewOnAxelarscan": "Skatīt Axelar Explorer",
+    "addDestinationTokenLabel": "Importēt {{symbol}} uz {{chainName}} makā",
+    "addTokenError": "Nevarēja pievienot tokenu makam",
+    "estimatedTime": "Apt. laiks",
+    "recentTransactions": "Pēdējās transakcijas",
+    "clearHistory": "Notīrīt vēsturi",
+    "historyStoredLocally": "Darījumu vēsture tiek glabāta lokāli šajā ierīcē"
+  },
+  "settings": {
+    "title": "Iestatījumi",
+    "environment": "Vide",
+    "rpcEndpoints": "RPC galapunkti",
+    "rpcEndpointsHelp": "Atjauniniet RPC URL, ko izmanto katrai ķēdei izvēlētajā vidē.",
+    "noChainsConfigured": "Šai videi nav konfigurētu ķēžu.",
+    "cancel": "Atcelt",
+    "save": "Saglabāt"
+  },
+  "wallet": {},
+  "login": {
+    "title": "Laipni lūdzam atpakaļ",
+    "subtitle": "Piesakieties, lai turpinātu uz Brīvības Tiltu",
+    "emailLabel": "E-pasts",
+    "emailPlaceholder": "vards@piemers.com",
+    "passwordLabel": "Parole",
+    "passwordPlaceholder": "Ievadiet paroli",
+    "rememberMe": "Atcerēties mani šajā ierīcē",
+    "submit": "Piesakieties",
+    "validation": {
+      "required": "E-pasts un parole ir obligāti.",
+      "invalid": "Nederīgs e-pasts vai parole."
+    }
+  },
+  "landing": {
+    "banner": {
+      "title": "Jauns šeit?",
+      "message": "Uzziniet par Brīvības Tiltu un kā pārvietot TigerOG tokenus starp ķēdēm."
+    },
+    "hero": {
+      "badge": "Darbojas ar Axelar",
+      "title": "Atbrīvojiet Savus <1/> <2>Aktīvus</2>",
+      "subtitle": "Vienmērīgi pārvietojiet TigerOG tokenus starp ķēdēm, izmantojot Axelar starpķēžu tokenu pakalpojumu. Droši, ātri un beznodokļu.",
+      "launchApp": "Palaist lietotni",
+      "documentation": "Dokumentācija"
+    },
+    "stats": {
+      "messaging": "Axelar Tīkls",
+      "networks": "Aktīvie Tīkli",
+      "fees": "Protokola Maksas",
+      "finality": "Galīgums"
+    },
+    "features": {
+      "title": "Starpķēžu tokenu pakalpojums",
+      "description": "Brīvības Tilts izmanto Axelar ITS, lai nodrošinātu vienmērīgu, drošu un beznodokļu tiltu veidošanas pieredzi vairāk nekā {{count}}+ blokķēdēs.",
+      "stopDecay": {
+        "title": "Apturēt sabrukšanu",
+        "description": "Mantotie tokeni sadedzina 10-11% no jūsu vērtības katrā pirkšanas un pārdošanas reizē. Konvertēšana uz TigerOG nekavējoties aptur šo asiņošanu, saglabājot 100% jūsu vērtības.",
+        "graphLabel1": "100% Saglabāts (TigerOG)",
+        "graphLabel2": "-40% Vērtība (Mantotais 10% Nodoklis)"
+      },
+      "conversion": {
+        "title": "1:1 Konvertācija",
+        "description": "Kopējais piedāvājums nekad nemainās. Tokeni tiek glabāti drošā migrācijas līgumā, un tiek izmantots precīzs 1:1 ekvivalents. Nav inflācijas, nav atšķaidīšanas."
+      },
+      "multichain": {
+        "title": "Daudzķēžu",
+        "description": "Ievietojiet vienreiz, piekļūstiet visur. Jūsu aktīvs kļūst par vietējo starpķēžu tokenu {{count}}+ ķēdēs, ieskaitot Ethereum, BNB Chain, Base un citas."
+      },
+      "security": {
+        "title": "Axelar Drošība",
+        "description": "Darbojas ar Axelar decentralizēto validatoru tīklu. ITS nodrošina, ka jūsu tokeni tiek pārsūtīti droši un konsekventi visos pievienotajos tīklos.",
+        "button": "Sākt tiltu veidošanu"
+      }
+    },
+    "teaser": {
+      "title": "Vai vēlaties citas monētas?",
+      "subtitle": "Ko jūs domājat par <lunc>LUNC</lunc>, <crepe>Crepe</crepe> vai <shiba>Shiba</shiba>?"
+    },
+    "cta": {
+      "title": "Gatavs tiltot?",
+      "description": "Pievienojieties starpķēžu revolūcijai. Paiet mazāk nekā minūte, lai konvertētu savus aktīvus un sāktu tiltu veidošanu caur Axelar.",
+      "button": "Palaist lietotni tagad"
+    }
+  },
+  "wiki": {
+    "title": "Brīvības Tilta Wiki",
+    "searchPlaceholder": "Meklēt dokumentācijā...",
+    "header": {
+      "title": "Dokumentācija",
+      "subtitle": "Uzziniet, kā konvertēt mantotos tokenus, tiltot starp ķēdēm un integrēties ar Brīvības Tiltu."
+    },
+    "nav": {
+      "gettingStarted": "Sākt",
+      "coreConcepts": "Pamatjēdzieni",
+      "developers": "Izstrādātāji",
+      "tigerOGSupply": "TigerOG piedāvājums",
+      "lionOGSupply": "LionOG piedāvājums",
+      "frogOGSupply": "FrogOG piedāvājums"
+    },
+    "articles": {
+      "whatIs": {
+        "title": "Kas ir Brīvības Tilts?",
+        "content": "Brīvības Tilts ir decentralizēts tiltu protokols, kas izveidots uz Axelar starpķēžu tokenu pakalpojuma (ITS). Tas ir paredzēts, lai atbrīvotu tokenus no vienas ķēdes ierobežojumiem un augstiem transakciju nodokļiem. Konvertējot standarta tokenus starpķēžu saderīgos aktīvos, lietotāji var brīvi pārvietot savu vērtību pa atbalstītajām blokķēdēm.",
+        "taxFreeTitle": "Beznodokļu Pārskaitījumi",
+        "taxFreeDesc": "Mantotajiem tokeniem bieži ir 10%+ nodokļi. TigerOG tokeniem ir 0% nodoklis.",
+        "omnichainTitle": "Starpķēžu",
+        "omnichainDesc": "Pārvietojiet aktīvus uzreiz starp {{count}}+ blokķēdēm, izmantojot Axelar."
+      },
+      "howToConvert": {
+        "title": "Kā konvertēt tokenus",
+        "step1": "Pievienojiet savu maku avota ķēdei (piemēram, BNB Chain).",
+        "step2": "Dodieties uz cilni <strong>Konvertēt</strong>.",
+        "step3": "Izvēlieties mantoto tokenu, ko vēlaties konvertēt.",
+        "step4": "Apstipriniet Migrācijas līgumu, lai tērētu savus tokenus.",
+        "step5": "Noklikšķiniet <strong>Konvertēt</strong>, lai iemaksātu savus mantotos tokenus un saņemtu līdzvērtīgu \"TigerOG\" tokenu daudzumu.",
+        "note": "<strong>Piezīme:</strong> Konvertācija ietver mantotā tokena transakciju nodokli (uzlabošanas laikā), ja jūsu tokens piemēro nodokli par pārskaitījumiem. Tomēr, kad tas ir konvertēts uz TigerOG, visi turpmākie pārskaitījumi un tiltu veidošana ir brīva no nodokļa."
+      },
+      "supportedNetworks": {
+        "title": "Atbalstītie tīkli",
+        "content": "Brīvības Tilts atbalsta pieaugošu {{count}}+ blokķēžu ekosistēmu, nodrošinot vienmērīgu savietojamību visā EVM ainavā caur Axelar."
+      },
+      "xerc20": {
+        "title": "Starpķēžu tokeni",
+        "content": "Axelar starpķēžu tokenu pakalpojums (ITS) ļauj tokenus izvietot vairākās ķēdēs ar konsekventu adresi un vienotu piedāvājuma pārvaldību. Brīvības Tilts izmanto ITS, lai nodrošinātu, ka TigerOG paliek kanonisks aktīvs visur, kur tas tiek tiltots."
+      },
+      "axelar": {
+        "title": "Axelar Tīkls",
+        "content": "Mēs izmantojam Axelar kā savu savietojamības slāni. Axelar ir decentralizēts tīkls, kas savieno dažādas blokķēdes, nodrošinot drošu starpķēžu saziņu un aktīvu pārsūtīšanu. Axelar drošības modelis balstās uz bezatļauju validatoru kopu, nodrošinot augstas pakāpes drošību starpķēžu tokeniem."
+      },
+      "migration": {
+        "title": "Migrācijas loģika",
+        "content": "Migrācijas līgums ir izvietots izcelsmes ķēdē (piemēram, BSC). Tas glabā oriģinālos mantotos tokenus. Kad jūs uzlabojat tokenus, jūs iemaksājat tos Migrācijas līgumā. Kad jūs attinat (ja atbalstīts), jūs sadedzināt TigerOG attēlojumu, lai atbrīvotu oriģinālos tokenus. Tas nodrošina stingri pamatotu 1:1 piesaisti."
+      },
+      "contracts": {
+        "title": "Viedlīgumu Adreses",
+        "colNetwork": "Tīkls",
+        "colType": "Līguma Tips",
+        "colAddress": "Adrese"
+      },
+      "security": {
+        "title": "Drošības Modelis",
+        "content": "Drošība ir iebūvēta katrā Brīvības Tilta slānī:",
+        "point1": "<strong>Migrācijas arhitektūra:</strong> Mantotie tokeni tiek glabāti pārbaudītos, nemainīgos viedlīgumos.",
+        "point2": "<strong>Axelar validatori:</strong> Starpķēžu ziņojumus pārbauda Axelar decentralizētais tīkls.",
+        "point3": "<strong>Konsekvents piedāvājums:</strong> ITS pārvalda kalšanu un dedzināšanu, lai saglabātu nemainīgu kopējo piedāvājumu visās ķēdēs.",
+        "point4": "<strong>Auditēta loģika:</strong> Veidota uz nozares standarta Axelar un OpenZeppelin bibliotēkām."
+      },
+      "supplyCommon": {
+        "howWeCalculated": "Kā mēs to aprēķinājām",
+        "verification": "Pārbaude",
+        "verificationDesc": "Visi piedāvājuma dati var tikt neatkarīgi pārbaudīti ķēdē:",
+        "table": {
+          "category": "Kategorija",
+          "amount": "Daudzums",
+          "percentOfTotal": "% no kopējā",
+          "originalSupply": "Sākotnējais kopējais piedāvājums",
+          "deadAddress": "Mirušā adrese (Sadedzināts)",
+          "contractBalance": "Līguma atlikums (Iestrēdzis)",
+          "circulatingSupply": "Apgrozībā esošais piedāvājums"
+        },
+        "deadAddressTitle": "1. Mirušā adrese",
+        "contractBalanceTitle": "2. Līguma atlikums",
+        "lpLockedTitle": "3. LP bloķētie tokeni"
+      },
+      "tigerOGSupply": {
+        "title": "TigerOG piedāvājuma sadalījums",
+        "intro": "TigerOG ir fiksēts apgrozībā esošais piedāvājums, kas atvasināts no sākotnējā BNBTiger tokena. Piedāvājuma aprēķins ņem vērā visus sadedzinātos un pastāvīgi bloķētos tokenus.",
+        "lpLocked": "LP bloķēts (86.18% no LP sadedzināts)",
+        "deadAddressDesc": "Tokeni, kas nosūtīti uz <code>0x000...dEaD</code>, ir pastāvīgi sadedzināti un nekad nevar tikt atgūti. Tas ietver tokenus, kas sadedzināti caur sākotnējo BNBTiger nodokļu mehānismu.",
+        "contractBalanceDesc": "Neliels daudzums tokenu ir iestrēguši pašā BNBTiger līgumā. Šie tokeni nav pieejami un ir efektīvi izņemti no apgrozības.",
+        "lpLockedDesc": "PancakeSwap likviditātes fonds satur BNBTiger tokenus pārī ar BNB. Kad LP tokeni tiek sadedzināti (nosūtīti uz mirušo adresi), fondā esošie pamata tokeni tiek pastāvīgi bloķēti.",
+        "lpBurnedPercent": "LP tokeni sadedzināti: 86.18% no visiem LP tokeniem",
+        "lpLockedPercent": "Tāpēc 86.18% no LP esošajiem tokeniem ir pastāvīgi bloķēti",
+        "note": "<strong>Piezīme:</strong> TigerOG migrācijas laikā saglabā attiecību 1:1 ar BNBTiger. TigerOG apgrozībā esošais piedāvājums atbilst patiesajam BNBTiger apgrozībā esošajam piedāvājumam pēc visu sadedzināto un bloķēto tokenu uzskaites.",
+        "launchData": "<strong>Uzsākšanas dati:</strong> Šie skaitļi tika aprēķināti uzsākšanas brīdī. Mantotais BNBTiger tokens turpina dedzināt tokenus katrā pirkšanas/pārdošanas darījumā, tāpēc faktiskais apgrozībā esošais piedāvājums var būt nedaudz mazāks nekā parādīts.",
+        "legacyContract": "BNBTiger tokena līgums",
+        "ogContract": "TigerOG tokena līgums",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,772,706,396,234,535,780,783,775",
+          "deadPercent": "57.73%",
+          "contract": "−6,142,342,823,271,327",
+          "contractPercent": "<0.01%",
+          "lp": "−565,059,839,948,518,979,124,912",
+          "lpPercent": "5.65%",
+          "circulating": "3,662,233,757,674,602,416,819,986",
+          "circulatingPercent": "36.62%"
+        }
+      },
+      "lionOGSupply": {
+        "title": "LionOG piedāvājuma sadalījums",
+        "intro": "LionOG ir fiksēts apgrozībā esošais piedāvājums, kas atvasināts no sākotnējā BNBLion tokena. Piedāvājuma aprēķins ņem vērā visus sadedzinātos un pastāvīgi bloķētos tokenus.",
+        "lpLocked": "LP bloķēts (99.98% no LP sadedzināts)",
+        "deadAddressDesc": "Tokeni, kas nosūtīti uz <code>0x000...dEaD</code>, ir pastāvīgi sadedzināti un nekad nevar tikt atgūti. Tas ietver tokenus, kas sadedzināti caur sākotnējo BNBLion nodokļu mehānismu.",
+        "contractBalanceDesc": "Neliels daudzums tokenu ir iestrēguši pašā BNBLion līgumā. Šie tokeni nav pieejami un ir efektīvi izņemti no apgrozības.",
+        "lpLockedDesc": "PancakeSwap likviditātes fonds satur BNBLion tokenus pārī ar BNB. Kad LP tokeni tiek sadedzināti (nosūtīti uz mirušo adresi), fondā esošie pamata tokeni tiek pastāvīgi bloķēti.",
+        "lpBurnedPercent": "LP tokeni sadedzināti: 99.98% no visiem LP tokeniem",
+        "lpLockedPercent": "Tāpēc 99.98% no LP esošajiem tokeniem ir pastāvīgi bloķēti",
+        "note": "<strong>Piezīme:</strong> LionOG migrācijas laikā saglabā attiecību 1:1 ar BNBLion. LionOG apgrozībā esošais piedāvājums atbilst patiesajam BNBLion apgrozībā esošajam piedāvājumam pēc visu sadedzināto un bloķēto tokenu uzskaites.",
+        "launchData": "<strong>Uzsākšanas dati:</strong> Šie skaitļi tika aprēķināti uzsākšanas brīdī. Mantotais BNBLion tokens turpina dedzināt tokenus katrā pirkšanas/pārdošanas darījumā, tāpēc faktiskais apgrozībā esošais piedāvājums var būt nedaudz mazāks nekā parādīts.",
+        "legacyContract": "BNBLion tokena līgums",
+        "ogContract": "LionOG tokena līgums",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,724,597,218,422,106,614,085,614",
+          "deadPercent": "57.25%",
+          "contract": "−9,219,967,745,410,740,095,290",
+          "contractPercent": "<0.01%",
+          "lp": "−442,490,152,327,271,918,655,109",
+          "lpPercent": "4.42%",
+          "circulating": "3,832,903,409,282,876,056,519,182",
+          "circulatingPercent": "38.33%"
+        }
+      },
+      "frogOGSupply": {
+        "title": "FrogOG piedāvājuma sadalījums",
+        "intro": "FrogOG ir fiksēts apgrozībā esošais piedāvājums, kas atvasināts no sākotnējā BNBFrog tokena. Piedāvājuma aprēķins ņem vērā visus sadedzinātos un pastāvīgi bloķētos tokenus.",
+        "lpLocked": "LP bloķēts (99.31% no LP sadedzināts)",
+        "deadAddressDesc": "Tokeni, kas nosūtīti uz <code>0x000...dEaD</code>, ir pastāvīgi sadedzināti un nekad nevar tikt atgūti. Tas ietver tokenus, kas sadedzināti caur sākotnējo BNBFrog nodokļu mehānismu.",
+        "contractBalanceDesc": "Neliels daudzums tokenu ir iestrēguši pašā BNBFrog līgumā. Šie tokeni nav pieejami un ir efektīvi izņemti no apgrozības.",
+        "lpLockedDesc": "PancakeSwap likviditātes fonds satur BNBFrog tokenus pārī ar BNB. Kad LP tokeni tiek sadedzināti (nosūtīti uz mirušo adresi), fondā esošie pamata tokeni tiek pastāvīgi bloķēti.",
+        "lpBurnedPercent": "LP tokeni sadedzināti: 99.31% no visiem LP tokeniem",
+        "lpLockedPercent": "Tāpēc 99.31% no LP esošajiem tokeniem ir pastāvīgi bloķēti",
+        "note": "<strong>Piezīme:</strong> FrogOG migrācijas laikā saglabā attiecību 1:1 ar BNBFrog. FrogOG apgrozībā esošais piedāvājums atbilst patiesajam BNBFrog apgrozībā esošajam piedāvājumam pēc visu sadedzināto un bloķēto tokenu uzskaites.",
+        "launchData": "<strong>Uzsākšanas dati:</strong> Šie skaitļi tika aprēķināti uzsākšanas brīdī. Mantotais BNBFrog tokens turpina dedzināt tokenus katrā pirkšanas/pārdošanas darījumā, tāpēc faktiskais apgrozībā esošais piedāvājums var būt nedaudz mazāks nekā parādīts.",
+        "legacyContract": "BNBFrog tokena līgums",
+        "ogContract": "FrogOG tokena līgums",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−740,059,884,911,899,485,982,976",
+          "deadPercent": "7.40%",
+          "contract": "−4,036,008,092,593,983,879,741",
+          "contractPercent": "<0.01%",
+          "lp": "−874,144,424,929,004,044,398,902",
+          "lpPercent": "8.74%",
+          "circulating": "8,385,795,686,123,088,377,024,138",
+          "circulatingPercent": "83.86%"
+        }
+      }
+    }
+  },
+  "contracts": {
+    "title": "Viedlīgumu Adreses",
+    "header": {
+      "title": "Viedlīgumu Adreses",
+      "subtitle": "Oficiālās izvietošanas adreses tokeniem un tiltiem visā Brīvības Tilta ekosistēmā."
+    },
+    "tabs": {
+      "overview": "Pārskats",
+      "byToken": "Pēc Tokena",
+      "byChain": "Pēc Ķēdes",
+      "liquidity": "Likviditāte"
+    },
+    "liquidity": {
+      "title": "Likviditātes fondi"
+    }
+  },
+  "faq": {
+    "title": "Brīvības Tilta Atbalsts",
+    "header": "Biežāk Uzdotie Jautājumi",
+    "subtitle": "Atbildes uz bieži uzdotajiem jautājumiem par TigerOG, tiltu veidošanu un Axelar.",
+    "cta": {
+      "title": "Vēl joprojām ir jautājumi?",
+      "description": "Pievienojieties mūsu kopienai Telegram vai pārbaudiet detalizēto Wiki tehniskiem ceļvežiem.",
+      "wiki": "Apmeklēt Wiki",
+      "telegram": "Pievienoties Telegram"
+    },
+    "questions": {
+      "q1": "Kāds ir manu tokenu konvertēšanas mērķis?",
+      "a1": "Konvertējot savus tokenus par TigerOG, tiek novērsts transakciju nodoklis (bieži 10-12%), kas saistīts ar mantoto tokenu. Tas arī ļauj jums tiltot šos tokenus uz citām blokķēdēm, piemēram, Ethereum, Base un citām caur Axelar, nodrošinot piekļuvi jaunām ekosistēmām.",
+      "q2": "Vai Brīvības Tilta izmantošana ir droša?",
+      "a2": "Jā. Protokols izmanto drošu Migrācijas līgumu un Axelar starpķēžu tokenu pakalpojumu. Kad jūs konvertējat, jūsu BNBTiger tiek pastāvīgi sadedzināts un jūs saņemat TigerOG attiecībā 1:1. Dedzināšanas mehānisms nodrošina, ka kopējais piedāvājums tiek pareizi pārvaldīts visās ķēdēs.",
+      "q3": "Vai ir kādas maksas?",
+      "a3": "Brīvības Tilta protokols pats neuzliek maksu par konvertēšanu. Jūs maksājat tikai standarta blokķēdes gāzes maksas. Tiltu veidošana starp ķēdēm ietver starpķēžu gāzes maksu, kas tiek maksāta Axelar, lai segtu pārsūtīšanas izmaksas.",
+      "q4": "Kas notiek, ja es pazaudēju savus tokenus?",
+      "a4": "TigerOG tokeni darbojas tāpat kā jebkuri citi ERC20 tokeni. Ja jūs pazaudējat piekļuvi savam makam, tos nevar atgūt. Vienmēr glabājiet savas privātās atslēgas un atkopšanas frāzes drošībā.",
+      "q5": "Vai es varu konvertēt savus TigerOG tokenus atpakaļ uz BNBTiger?",
+      "a5": "Nē. Migrācija ir vienvirziena konvertācija. Kad jūs konvertējat BNBTiger par TigerOG, jūsu BNBTiger tokeni tiek pastāvīgi sadedzināti (nosūtīti uz mirušo adresi). Tas ir paredzēts ar nolūku — TigerOG ir uzlabotā, beznodokļu versija, kas paredzēta pilnīgai mantotā tokena aizstāšanai.",
+      "q6": "Kādi tīkli tiek atbalstīti?",
+      "a6": "Mēs atbalstām vairākas EVM ķēdes caur Axelar, tostarp BNB Chain, Ethereum, Base un citas. Pārbaudiet Wiki, lai iegūtu pilnu atbalstīto tīklu sarakstu.",
+      "q7": "Cik ilgi notiek tiltu veidošana?",
+      "a7": "Tiltu veidošanas ātrums ir atkarīgs no avota ķēdes galīguma un Axelar pārsūtīšanas. Parasti pārsūtīšana starp ķēdēm aizņem apmēram 2-5 minūtes.",
+      "q8": "Kādi ir OG tokenu apgrozībā esošie piedāvājumi?",
+      "a8": "Katram OG tokenam ir fiksēts apgrozībā esošais piedāvājums, kas atvasināts no tā sākotnējā BNB tokena, ņemot vērā sadedzinātos tokenus, iestrēgušos līgumu atlikumus un bloķēto LP. TigerOG: ~3.66 septiljoni (36.62% no sākotnējā). LionOG: ~3.83 septiljoni (38.33% no sākotnējā). FrogOG: ~8.39 septiljoni (83.86% no sākotnējā). Skatiet Wiki, lai iegūtu detalizētu katra tokena sadalījumu."
+    }
+  },
+  "common": {
+    "from": "No",
+    "to": "Uz",
+    "max": "MAKS",
+    "chainId": "Ķēdes ID",
+    "bscChain": "BSC Ķēde",
+    "insufficientBalance": "Nepietiekams atlikums.",
+    "failedToSwitchNetwork": "Neizdevās pārslēgt tīklu. Lūdzu, pārslēdzieties manuāli savā makā.",
+    "failedToFetchFeeQuote": "Neizdevās saņemt nodevu piedāvājumu.",
+    "unableToDetermineGas": "Nevar noteikt Axelar gāzes maksājumu",
+    "bridgeTxFailed": "Tilta darījums neizdevās",
+    "estimatedGas": "Aprēķinātā Axelar gāze",
+    "success": "Veiksmīgi!",
+    "viewOnExplorer": "Skatīt Explorer",
+    "bridging": "Tiltu veidošana...",
+    "transactionFailed": "Darījums neizdevās",
+    "search": "Meklēt",
+    "backToApp": "Atpakaļ uz lietotni"
+  }
+}

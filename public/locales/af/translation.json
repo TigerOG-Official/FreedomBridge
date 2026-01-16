@@ -1,0 +1,364 @@
+{
+  "app": {
+    "titleFreedom": "Vryheid",
+    "titleBridge": "Brug"
+  },
+  "nav": {
+    "settings": "Instellings",
+    "menu": "Kieslys",
+    "preferences": "Voorkeure",
+    "switchTheme": "Voorkoms",
+    "theme": {
+      "dark": "Donker",
+      "light": "Lig"
+    },
+    "switchPalette": "Wissel Palet",
+    "wiki": "Dokumentasie / Wiki",
+    "contracts": "Kontrakte",
+    "faq": "Gereelde Vrae",
+    "logout": "Teken Uit",
+    "language": "Taal",
+    "languageSearchPlaceholder": "Soek tale",
+    "languageNoResults": "Geen tale gevind nie",
+    "close": "Sluit"
+  },
+  "addNetworks": {
+    "title": "Voeg Netwerke By",
+    "description": "Klik 'n knoppie hieronder om Netwerke by jou beursie te voeg. Dit maak dit maklik om tussen kettings te wissel terwyl jy toets."
+  },
+  "tabs": {
+    "convert": "Omskep",
+    "bridge": "Brug"
+  },
+  "convert": {
+    "token": "Token",
+    "selectToken": "Kies Token",
+    "balance": "Balans",
+    "noConvertibleTokens": "Geen omskakelbare tokens op {{chainName}} nie",
+    "convert": "Omskep",
+    "addToWalletLabel": "Voer {{symbol}} op {{chainName}} in na beursie",
+    "addToWalletButton": "Voer in na Beursie",
+    "addingToken": "Besig om by te voeg...",
+    "addTokenError": "Kon nie token by beursie voeg nie",
+    "legacyTokenMissing": "Nalatenskap token ontbreek vir hierdie ketting",
+    "tigerOGMissing": "TigerOG token ontbreek vir hierdie ketting",
+    "networkWarning": {
+      "title": "Verkeerde Netwerk",
+      "message": "Token omskakeling is slegs beskikbaar op BSC Ketting.",
+      "description": "Skakel asseblief oor na BSC Ketting in jou beursie om tokens te omskep, of gaan na die Brug-oortjie om tokens tussen kettings oor te dra."
+    }
+  },
+  "bridge": {
+    "fromChain": "Van Ketting",
+    "selectChainPlaceholder": "Kies ketting",
+    "toChain": "Na Ketting",
+    "selectDestinationPlaceholder": "Kies bestemming",
+    "noDestination": "Geen bestemming",
+    "noBridgeableTokens": "Geen brugbare tokens nie",
+    "bridgeButton": "Brug Tokens",
+    "getFeeQuote": "Kry Fooi Kwotasie",
+    "viewOnAxelarscan": "Bekyk op Axelar Verkenner",
+    "addDestinationTokenLabel": "Voer {{symbol}} op {{chainName}} in na beursie",
+    "addTokenError": "Kon nie token by beursie voeg nie",
+    "estimatedTime": "Geskatte tyd",
+    "recentTransactions": "Onlangse Transaksies",
+    "clearHistory": "Vee geskiedenis uit",
+    "historyStoredLocally": "Transaksiegeskiedenis word plaaslik gestoor"
+  },
+  "settings": {
+    "title": "Instellings",
+    "environment": "Omgewing",
+    "rpcEndpoints": "RPC Eindpunte",
+    "rpcEndpointsHelp": "Werk die RPC URL op wat gebruik word vir elke ketting in die gekose omgewing.",
+    "noChainsConfigured": "Geen kettings gekonfigureer vir hierdie omgewing nie.",
+    "cancel": "Kanselleer",
+    "save": "Stoor"
+  },
+  "wallet": {},
+  "login": {
+    "title": "Welkom terug",
+    "subtitle": "Teken in om voort te gaan na Vryheid Brug",
+    "emailLabel": "E-pos",
+    "emailPlaceholder": "naam@voorbeeld.za",
+    "passwordLabel": "Wagwoord",
+    "passwordPlaceholder": "Voer wagwoord in",
+    "rememberMe": "Onthou my op hierdie toestel",
+    "submit": "Teken in",
+    "validation": {
+      "required": "E-pos en wagwoord word vereis.",
+      "invalid": "Ongeldige e-pos of wagwoord."
+    }
+  },
+  "landing": {
+    "banner": {
+      "title": "Nuut hier?",
+      "message": "Leer oor Vryheid Brug en hoe om TigerOG tokens tussen kettings te brug."
+    },
+    "hero": {
+      "badge": "Aangedryf deur Axelar",
+      "title": "Ontsluit Jou <1/> <2>Bates</2>",
+      "subtitle": "Brug TigerOG tokens naatloos tussen kettings met behulp van Axelar se Interchain Token Service. Veilig, vinnig en belastingvry.",
+      "launchApp": "Begin Toepassing",
+      "documentation": "Dokumentasie"
+    },
+    "stats": {
+      "messaging": "Axelar Netwerk",
+      "networks": "Netwerke Regstreeks",
+      "fees": "Protokol Fooie",
+      "finality": "Finaliteit"
+    },
+    "features": {
+      "title": "Interchain Token Service",
+      "description": "Vryheid Brug maak gebruik van Axelar ITS om 'n naatlose, veilige en belastingvrye oorbruggingservaring oor {{count}}+ blokkettings te lewer.",
+      "stopDecay": {
+        "title": "Stop die Verval",
+        "description": "Nalatenskap tokens verbrand 10-11% van jou waarde met elke koop en verkoop. Omskakeling na TigerOG stop hierdie bloeding onmiddellik en behou 100% van jou waarde.",
+        "graphLabel1": "100% Behou (TigerOG)",
+        "graphLabel2": "-40% Waarde (Nalatenskap 10% Belasting)"
+      },
+      "conversion": {
+        "title": "1:1 Omskakeling",
+        "description": "Totale aanbod verander nooit nie. Tokens word in 'n veilige migrasiekontrak gehou, en 'n presiese 1:1 ekwivalent word gebruik. Geen inflasie, geen verwatering nie."
+      },
+      "multichain": {
+        "title": "Multi-Ketting",
+        "description": "Ontplooi een keer, toegang oral. Jou bate word 'n inheemse interketting token oor kettings insluitend Ethereum, BNB Ketting, Base, en meer."
+      },
+      "security": {
+        "title": "Axelar Sekuriteit",
+        "description": "Aangedryf deur Axelar se gedesentraliseerde netwerk van validators. ITS verseker dat jou tokens veilig en konsekwent oor alle gekoppelde netwerke oorgedra word.",
+        "button": "Begin Brug"
+      }
+    },
+    "teaser": {
+      "title": "Wil jy ander munte hê?",
+      "subtitle": "Wat dink jy van <lunc>LUNC</lunc>, <crepe>Crepe</crepe>, of <shiba>Shiba</shiba>??"
+    },
+    "cta": {
+      "title": "Gereed om te brug?",
+      "description": "Sluit aan by die interketting revolusie. Dit neem minder as 'n minuut om jou bates om te skakel en te begin brug via Axelar.",
+      "button": "Begin Toepassing Nou"
+    }
+  },
+  "wiki": {
+    "title": "Vryheid Brug Wiki",
+    "searchPlaceholder": "Soek dokumentasie...",
+    "header": {
+      "title": "Dokumentasie",
+      "subtitle": "Leer hoe om nalatenskap tokens om te skakel, tussen kettings te brug, en te integreer met Vryheid Brug."
+    },
+    "nav": {
+      "gettingStarted": "Om te Begin",
+      "coreConcepts": "Kern Konsepte",
+      "developers": "Ontwikkelaars",
+      "tigerogSupply": "TigerOG Aanbod",
+      "lionogSupply": "LionOG Aanbod",
+      "frogogSupply": "FrogOG Aanbod"
+    },
+    "articles": {
+      "whatIs": {
+        "title": "Wat is Vryheid Brug?",
+        "content": "Vryheid Brug is 'n gedesentraliseerde protokol gebou op Axelar se Interchain Token Service (ITS). Dit is ontwerp om tokens te bevry van enkel-ketting beperkings en hoë transaksie belastings. Deur standaard tokens in interketting-versoenbare bates om te skakel, kan gebruikers hul waarde vrylik oor ondersteunde blokkettings beweeg.",
+        "taxFreeTitle": "Belastingvrye Oordragte",
+        "taxFreeDesc": "Nalatenskap tokens het dikwels 10%+ belastings. TigerOG tokens het 0% belasting.",
+        "omnichainTitle": "Interketting",
+        "omnichainDesc": "Beweeg bates onmiddellik tussen {{count}}+ blokkettings via Axelar."
+      },
+      "howToConvert": {
+        "title": "Hoe om Tokens Om te Skakel",
+        "step1": "Koppel jou beursie aan die bronketting (bv. BNB Ketting).",
+        "step2": "Navigeer na die <strong>Omskep</strong> oortjie.",
+        "step3": "Kies die nalatenskap token wat jy wil omskep.",
+        "step4": "Keur die Migrasie kontrak goed om jou tokens te spandeer.",
+        "step5": "Klik <strong>Omskep</strong> om jou nalatenskap tokens te deponeer en 'n ekwivalente hoeveelheid \"TigerOG\" tokens te ontvang.",
+        "note": "<strong>Nota:</strong> Omskakeling loop die nalatenskap token se transaksie belasting aan (tydens die opgradering) as jou token belastings op oordragte hef. Sodra dit egter in TigerOG omgeskakel is, is alle daaropvolgende oordragte en brûe belastingvry."
+      },
+      "supportedNetworks": {
+        "title": "Ondersteunde Netwerke",
+        "content": "Vryheid Brug ondersteun 'n groeiende ekosisteem van {{count}}+ blokkettings, wat naatlose interoperabiliteit oor die EVM landskap moontlik maak via Axelar."
+      },
+      "xerc20": {
+        "title": "Interchain Tokens",
+        "content": "Axelar Interchain Token Service (ITS) laat tokens toe om oor verskeie kettings ontplooi te word met 'n konsekwente adres en verenigde aanbodbestuur. Vryheid Brug gebruik ITS om te verseker dat TigerOG 'n kanonieke bate bly waar dit ook al gebrug word."
+      },
+      "axelar": {
+        "title": "Axelar Netwerk",
+        "content": "Ons gebruik Axelar as ons interoperabiliteitslaag. Axelar is 'n gedesentraliseerde netwerk wat verskillende blokkettings verbind, wat veilige interketting kommunikasie en bate oordragte moontlik maak. Axelar se sekuriteit model maak staat op 'n toestemminglose stel validators, wat hoë graad sekuriteit vir interketting tokens bied."
+      },
+      "migration": {
+        "title": "Migrasie Logika",
+        "content": "Die Migrasie kontrak is ontplooi op die oorsprongketting (bv. BSC). Dit hou die oorspronklike nalatenskap tokens in bewaring. Wanneer jy tokens opgradeer, deponeer jy in die Migrasie kontrak. Wanneer jy oopmaak (indien ondersteun), verbrand jy die TigerOG voorstelling om die oorspronklike tokens vry te stel. Dit verseker 'n streng ondersteunde 1:1 koppeling."
+      },
+      "contracts": {
+        "title": "Slim Kontrak Adresse",
+        "colNetwork": "Netwerk",
+        "colType": "Kontrak Tipe",
+        "colAddress": "Adres"
+      },
+      "security": {
+        "title": "Sekuriteit Model",
+        "content": "Sekuriteit is ingebou in elke laag van Vryheid Brug:",
+        "point1": "<strong>Migrasie Argitektuur:</strong> Nalatenskap tokens word in geverifieerde, onveranderlike slim kontrakte gehou.",
+        "point2": "<strong>Axelar Validators:</strong> Interketting boodskappe word deur Axelar se gedesentraliseerde netwerk geverifieer.",
+        "point3": "<strong>Konsekwente Aanbod:</strong> ITS bestuur munt en verbranding om 'n konstante totale aanbod oor alle kettings te handhaaf.",
+        "point4": "<strong>Ouditeerde Logika:</strong> Gebou op industrie-standaard Axelar en OpenZeppelin biblioteke."
+      },
+      "supplyCommon": {
+        "howWeCalculated": "Hoe ons dit bereken het",
+        "verification": "Verifikasie",
+        "verificationDesc": "Alle aanbodsyfers kan onafhanklik op-ketting geverifieer word:",
+        "table": {
+          "category": "Kategorie",
+          "amount": "Bedrag",
+          "percentOfTotal": "% van Totaal",
+          "originalSupply": "Oorspronklike Totale Aanbod",
+          "deadAddress": "Dooie Adres (Verbrand)",
+          "contractBalance": "Kontrak Balans (Vas)",
+          "circulatingSupply": "Sirkulerende Aanbod"
+        },
+        "deadAddressTitle": "1. Dooie Adres",
+        "contractBalanceTitle": "2. Kontrak Balans",
+        "lpLockedTitle": "3. LP Geslote Tokens"
+      },
+      "tigerogSupply": {
+        "title": "TigerOG Aanbod Uiteensetting",
+        "intro": "TigerOG het 'n vaste sirkulerende aanbod afgelei van die oorspronklike BNBTiger token. Die aanbod berekening neem alle verbrande en permanent geslote tokens in ag.",
+        "lpLocked": "LP Gesluit (86.18% van LP Verbrand)",
+        "deadAddressDesc": "Tokens gestuur na <code>0x000...dEaD</code> is permanent verbrand en kan nooit herwin word nie. Dit sluit tokens in wat deur die oorspronklike BNBTiger belasting meganisme verbrand is.",
+        "contractBalanceDesc": "'n Klein hoeveelheid tokens is vas in die BNBTiger kontrak self. Hierdie tokens is ontoeganklik en effektief verwyder uit sirkulasie.",
+        "lpLockedDesc": "Die PancakeSwap likiditeit poel bevat BNBTiger tokens gepaar met BNB. Wanneer LP tokens verbrand word (gestuur na die dooie adres), word die onderliggende tokens in die poel permanent gesluit.",
+        "lpBurnedPercent": "LP tokens verbrand: 86.18% van alle LP tokens",
+        "lpLockedPercent": "Daarom is 86.18% van tokens in die LP permanent gesluit",
+        "note": "<strong>Nota:</strong> TigerOG handhaaf 'n 1:1 verhouding met BNBTiger tydens migrasie. Die sirkulerende aanbod van TigerOG pas by die ware sirkulerende aanbod van BNBTiger na verrekening van alle verbrande en geslote tokens.",
+        "launchData": "<strong>Bekendstellingsdata:</strong> Hierdie syfers is bereken by bekendstelling. Die nalatenskap BNBTiger token gaan voort om tokens te verbrand op elke koop/verkoop transaksie, so die werklike sirkulerende aanbod mag effens laer wees as aangedui.",
+        "legacyContract": "BNBTiger Token Kontrak",
+        "ogContract": "TigerOG Token Kontrak",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,772,706,396,234,535,780,783,775",
+          "deadPercent": "57.73%",
+          "contract": "−6,142,342,823,271,327",
+          "contractPercent": "<0.01%",
+          "lp": "−565,059,839,948,518,979,124,912",
+          "lpPercent": "5.65%",
+          "circulating": "3,662,233,757,674,602,416,819,986",
+          "circulatingPercent": "36.62%"
+        }
+      },
+      "lionogSupply": {
+        "title": "LionOG Aanbod Uiteensetting",
+        "intro": "LionOG het 'n vaste sirkulerende aanbod afgelei van die oorspronklike BNBLion token. Die aanbod berekening neem alle verbrande en permanent geslote tokens in ag.",
+        "lpLocked": "LP Gesluit (99.98% van LP Verbrand)",
+        "deadAddressDesc": "Tokens gestuur na <code>0x000...dEaD</code> is permanent verbrand en kan nooit herwin word nie. Dit sluit tokens in wat deur die oorspronklike BNBLion belasting meganisme verbrand is.",
+        "contractBalanceDesc": "'n Klein hoeveelheid tokens is vas in die BNBLion kontrak self. Hierdie tokens is ontoeganklik en effektief verwyder uit sirkulasie.",
+        "lpLockedDesc": "Die PancakeSwap likiditeit poel bevat BNBLion tokens gepaar met BNB. Wanneer LP tokens verbrand word (gestuur na die dooie adres), word die onderliggende tokens in die poel permanent gesluit.",
+        "lpBurnedPercent": "LP tokens verbrand: 99.98% van alle LP tokens",
+        "lpLockedPercent": "Daarom is 99.98% van tokens in die LP permanent gesluit",
+        "note": "<strong>Nota:</strong> LionOG handhaaf 'n 1:1 verhouding met BNBLion tydens migrasie. Die sirkulerende aanbod van LionOG pas by die ware sirkulerende aanbod van BNBLion na verrekening van alle verbrande en geslote tokens.",
+        "launchData": "<strong>Bekendstellingsdata:</strong> Hierdie syfers is bereken by bekendstelling. Die nalatenskap BNBLion token gaan voort om tokens te verbrand op elke koop/verkoop transaksie, so die werklike sirkulerende aanbod mag effens laer wees as aangedui.",
+        "legacyContract": "BNBLion Token Kontrak",
+        "ogContract": "LionOG Token Kontrak",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,724,597,218,422,106,614,085,614",
+          "deadPercent": "57.25%",
+          "contract": "−9,219,967,745,410,740,095,290",
+          "contractPercent": "<0.01%",
+          "lp": "−442,490,152,327,271,918,655,109",
+          "lpPercent": "4.42%",
+          "circulating": "3,832,903,409,282,876,056,519,182",
+          "circulatingPercent": "38.33%"
+        }
+      },
+      "frogogSupply": {
+        "title": "FrogOG Aanbod Uiteensetting",
+        "intro": "FrogOG het 'n vaste sirkulerende aanbod afgelei van die oorspronklike BNBFrog token. Die aanbod berekening neem alle verbrande en permanent geslote tokens in ag.",
+        "lpLocked": "LP Gesluit (99.31% van LP Verbrand)",
+        "deadAddressDesc": "Tokens gestuur na <code>0x000...dEaD</code> is permanent verbrand en kan nooit herwin word nie. Dit sluit tokens in wat deur die oorspronklike BNBFrog belasting meganisme verbrand is.",
+        "contractBalanceDesc": "'n Klein hoeveelheid tokens is vas in die BNBFrog kontrak self. Hierdie tokens is ontoeganklik en effektief verwyder uit sirkulasie.",
+        "lpLockedDesc": "Die PancakeSwap likiditeit poel bevat BNBFrog tokens gepaar met BNB. Wanneer LP tokens verbrand word (gestuur na die dooie adres), word die onderliggende tokens in die poel permanent gesluit.",
+        "lpBurnedPercent": "LP tokens verbrand: 99.31% van alle LP tokens",
+        "lpLockedPercent": "Daarom is 99.31% van tokens in die LP permanent gesluit",
+        "note": "<strong>Nota:</strong> FrogOG handhaaf 'n 1:1 verhouding met BNBFrog tydens migrasie. Die sirkulerende aanbod van FrogOG pas by die ware sirkulerende aanbod van BNBFrog na verrekening van alle verbrande en geslote tokens.",
+        "launchData": "<strong>Bekendstellingsdata:</strong> Hierdie syfers is bereken by bekendstelling. Die nalatenskap BNBFrog token gaan voort om tokens te verbrand op elke koop/verkoop transaksie, so die werklike sirkulerende aanbod mag effens laer wees as aangedui.",
+        "legacyContract": "BNBFrog Token Kontrak",
+        "ogContract": "FrogOG Token Kontrak",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−740,059,884,911,899,485,982,976",
+          "deadPercent": "7.40%",
+          "contract": "−4,036,008,092,593,983,879,741",
+          "contractPercent": "<0.01%",
+          "lp": "−874,144,424,929,004,044,398,902",
+          "lpPercent": "8.74%",
+          "circulating": "8,385,795,686,123,088,377,024,138",
+          "circulatingPercent": "83.86%"
+        }
+      }
+    }
+  },
+  "contracts": {
+    "title": "Kontrak Adresse",
+    "header": {
+      "title": "Slim Kontrakte",
+      "subtitle": "Amptelike ontplooiings adresse vir tokens en brûe oor die Vryheid Brug ekosisteem."
+    },
+    "tabs": {
+      "overview": "Oorsig",
+      "byToken": "Per Token",
+      "byChain": "Per Ketting",
+      "liquidity": "Likiditeit"
+    },
+    "liquidity": {
+      "title": "Likiditeit Poele"
+    }
+  },
+  "faq": {
+    "title": "Vryheid Brug Ondersteuning",
+    "header": "Gereelde Vrae",
+    "subtitle": "Antwoorde op algemene vrae oor TigerOG, oorbrugging, en Axelar.",
+    "cta": {
+      "title": "Het jy nog vrae?",
+      "description": "Sluit aan by ons gemeenskap op Telegram of kyk na die gedetailleerde Wiki vir tegniese gidse.",
+      "wiki": "Besoek Wiki",
+      "telegram": "Sluit aan by Telegram"
+    },
+    "questions": {
+      "q1": "Wat is die doel daarvan om my tokens om te skakel?",
+      "a1": "Om jou tokens in TigerOG om te skakel, verwyder die transaksie belasting (dikwels 10-12%) wat met die nalatenskap token geassosieer word. Dit laat jou ook toe om hierdie tokens na ander blokkettings soos Ethereum, Base, en meer te brug via Axelar, wat toegang tot nuwe ekosisteme moontlik maak.",
+      "q2": "Is dit veilig om Vryheid Brug te gebruik?",
+      "a2": "Ja. Die protokol gebruik 'n veilige Migrasie kontrak en Axelar se Interchain Token Service. Wanneer jy omskep, word jou BNBTiger permanent verbrand en jy ontvang TigerOG teen 'n 1:1 verhouding. Die verbrandingsmeganisme verseker dat die totale aanbod behoorlik bestuur word oor alle kettings.",
+      "q3": "Is daar enige fooie?",
+      "a3": "Vryheid Brug self hef nie 'n fooi vir omskakeling nie. Jy betaal slegs die standaard blokketting gasfooie. Oorbrugging tussen kettings behels 'n interketting gasfooi wat aan Axelar betaal word om die oordragkostes te dek.",
+      "q4": "Wat gebeur as ek my tokens verloor?",
+      "a4": "TigerOG tokens tree net soos enige ander ERC20 token op. As jy toegang tot jou beursie verloor, kan hulle nie herwin word nie. Hou altyd jou privaat sleutels en herstelfrases veilig.",
+      "q5": "Kan ek my TigerOG tokens terug omskep na BNBTiger?",
+      "a5": "Nee. Die migrasie is 'n eenrigting-omskakeling. Wanneer jy BNBTiger na TigerOG omskep, word jou BNBTiger tokens permanent verbrand (gestuur na die dooie adres). Dit is doelbewus ontwerp — TigerOG is die opgegradeerde, belastingvrye weergawe bedoel om die nalatenskap token heeltemal te vervang.",
+      "q6": "Watter netwerke word ondersteun?",
+      "a6": "Ons ondersteun verskeie EVM kettings via Axelar, insluitend BNB Ketting, Ethereum, Base, en meer. Kyk na die Wiki vir die volledige lys van ondersteunde netwerke.",
+      "q7": "Hoe lank neem oorbrugging?",
+      "a7": "Oorbrugging spoed hang af van die bronketting se finaliteit en Axelar se oordrag. Tipies neem 'n oordrag tussen kettings ongeveer 2-5 minute.",
+      "q8": "Wat is die sirkulerende aanbod van die OG tokens?",
+      "a8": "Elke OG token het 'n vaste sirkulerende aanbod afgelei van sy oorspronklike BNB token, wat rekening hou met verbrande tokens, vasgesit kontrak balanse, en geslote LP. TigerOG: ~3.66 septiljoen (36.62% van oorspronklike). LionOG: ~3.83 septiljoen (38.33% van oorspronklike). FrogOG: ~8.39 septiljoen (83.86% van oorspronklike). Sien die Wiki vir gedetailleerde uiteensettings van elke token."
+    }
+  },
+  "common": {
+    "from": "Van",
+    "to": "Na",
+    "max": "MAKS",
+    "chainId": "Ketting ID",
+    "bscChain": "BSC Ketting",
+    "insufficientBalance": "Onvoldoende balans.",
+    "failedToSwitchNetwork": "Kon nie netwerk wissel nie. Wissel asseblief handmatig in jou beursie.",
+    "failedToFetchFeeQuote": "Kon nie fooi kwotasie kry nie.",
+    "unableToDetermineGas": "Kan nie Axelar gas betaling bepaal nie",
+    "bridgeTxFailed": "Brug transaksie misluk",
+    "estimatedGas": "Geskatte Axelar gas",
+    "success": "Sukses!",
+    "viewOnExplorer": "Bekyk op Verkenner",
+    "bridging": "Brug...",
+    "transactionFailed": "Transaksie misluk",
+    "search": "Soek",
+    "backToApp": "Terug na Toepassing"
+  }
+}

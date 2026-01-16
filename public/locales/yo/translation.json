@@ -1,0 +1,364 @@
+{
+  "app": {
+    "titleFreedom": "Ominira",
+    "titleBridge": "Afara"
+  },
+  "nav": {
+    "settings": "Ètò",
+    "menu": "Akojọ aṣayan",
+    "preferences": "Awọn ayanfẹ",
+    "switchTheme": "Irisi",
+    "theme": {
+      "dark": "Dudu",
+      "light": "Imọlẹ"
+    },
+    "switchPalette": "Yipada Paleti",
+    "wiki": "Awọn iwe aṣẹ / Wiki",
+    "contracts": "Awọn adehun",
+    "faq": "Awọn ibeere loorekoore",
+    "logout": "Jade",
+    "language": "Èdè",
+    "languageSearchPlaceholder": "Wa awọn ede",
+    "languageNoResults": "Ko si ede ti a ri",
+    "close": "Pa"
+  },
+  "addNetworks": {
+    "title": "Fi Awọn nẹtiwọọki kun",
+    "description": "Tẹ bọtini isalẹ lati Fikun Awọn nẹtiwọọki si apamọwọ rẹ. Eyi jẹ ki o rọrun lati yipada laarin awọn ẹwọn nigba idanwo."
+  },
+  "tabs": {
+    "convert": "Yi pada",
+    "bridge": "Afara"
+  },
+  "convert": {
+    "token": "Àmi",
+    "selectToken": "Yan Àmi",
+    "balance": "Iwontunwonsi",
+    "noConvertibleTokens": "Ko si ami-ẹri ti o le yi pada lori {{chainName}}",
+    "convert": "Yi pada",
+    "addToWalletLabel": "Gbe wọle {{symbol}} lori {{chainName}} si apamọwọ",
+    "addToWalletButton": "Gbe wọle si Apamọwọ",
+    "addingToken": "Nfi kun…",
+    "addTokenError": "Ko le fi ami-ẹri kun apamọwọ",
+    "legacyTokenMissing": "Ami-ẹri agba agba ti sonu fun pq yii",
+    "tigerOGMissing": "Ami-ẹri TigerOG sonu fun pq yii",
+    "networkWarning": {
+      "title": "Nẹtiwọọki ti ko tọ",
+      "message": "Iyipada ami-ẹri wa nikan lori Pq BSC.",
+      "description": "Jọwọ yipada si Pq BSC ninu apamọwọ rẹ lati yi awọn ami-ẹri pada, tabi lọ si taabu Afara lati gbe awọn ami-ẹri laarin awọn ẹwọn."
+    }
+  },
+  "bridge": {
+    "fromChain": "Lati Pq",
+    "selectChainPlaceholder": "Yan pq",
+    "toChain": "Si Pq",
+    "selectDestinationPlaceholder": "Yan ibi-ajo",
+    "noDestination": "Ko si ibi-ajo",
+    "noBridgeableTokens": "Ko si ami-ẹri ti o le ṣe afara",
+    "bridgeButton": "Afara Awọn ami-ẹri",
+    "getFeeQuote": "Gba Iye Ọya",
+    "viewOnAxelarscan": "Wo lori Axelar Explorer",
+    "addDestinationTokenLabel": "Gbe wọle {{symbol}} lori {{chainName}} si apamọwọ",
+    "addTokenError": "Ko le fi ami-ẹri kun apamọwọ",
+    "estimatedTime": "Akoko ti a pinnu",
+    "recentTransactions": "Awọn Iṣowo Toṣẹnu",
+    "clearHistory": "Pa itan rẹ",
+    "historyStoredLocally": "Itan iṣowo ti wa ni fipamọ sori ẹrọ yii"
+  },
+  "settings": {
+    "title": "Ètò",
+    "environment": "Ayika",
+    "rpcEndpoints": "Awọn ipari RPC",
+    "rpcEndpointsHelp": "Ṣe imudojuiwọn URL RPC ti a lo fun pq kọọkan ni agbegbe ti a yan.",
+    "noChainsConfigured": "Ko si awọn ẹwọn ti a tunto fun agbegbe yii.",
+    "cancel": "Fagilee",
+    "save": "Fipamọ"
+  },
+  "wallet": {},
+  "login": {
+    "title": "Kaabo pada",
+    "subtitle": "Wọle lati tẹsiwaju si Afara Ominira",
+    "emailLabel": "Imeeli",
+    "emailPlaceholder": "orukọ@apẹẹrẹ.com",
+    "passwordLabel": "Ọrọigbaniwọle",
+    "passwordPlaceholder": "Tẹ ọrọigbaniwọle sii",
+    "rememberMe": "Ranti mi lori ẹrọ yii",
+    "submit": "Wọle",
+    "validation": {
+      "required": "Imeeli ati ọrọigbaniwọle nilo.",
+      "invalid": "Imeeli tabi ọrọigbaniwọle ti ko tọ."
+    }
+  },
+  "landing": {
+    "banner": {
+      "title": "Tuntun nibi?",
+      "message": "Kọ ẹkọ nipa Freedom Bridge ati bi o ṣe le gba ominira lati owo-ori token."
+    },
+    "hero": {
+      "badge": "Ti agbara nipasẹ Axelar",
+      "title": "Ṣiṣi <1/> <2>Awọn ohun-ini</2> Rẹ",
+      "subtitle": "Gba ominira lati awọn owo-ori idunadura atijọ. Fi awọn ami-ẹri rẹ we sinu ohun-ini interchain ti o jẹ idiwọn, ailewu, ki o si gbe larọwọto laarin awọn nẹtiwọọki.",
+      "launchApp": "Lọlẹ Ohun elo",
+      "documentation": "Awọn iwe aṣẹ"
+    },
+    "stats": {
+      "messaging": "Layer Ifiranṣẹ",
+      "networks": "Awọn nẹtiwọọki Live",
+      "fees": "Awọn idiyele Ilana",
+      "finality": "Ipari"
+    },
+    "features": {
+      "title": "Interoperability Laisi Aṣẹ",
+      "description": "Freedom Bridge nlo ilana Axelar lati fi iriri afara ti ko ni ailopin, aabo, ati ti ko ni owo-ori kọja {{count}}+ awọn bulọọki.",
+      "stopDecay": {
+        "title": "Duro Idinku",
+        "description": "Awọn ami-ẹri agba n sun 10-11% ti iye rẹ lori gbogbo rira ati tita. Wiwewe yoo da ẹjẹ yii duro lẹsẹkẹsẹ, titọju 100% agbara rira rẹ fun gbogbo idunadura.",
+        "graphLabel1": "100% Ti daduro (Ti a we)",
+        "graphLabel2": "-40% Iye (Owo-ori Atijọ 10%)"
+      },
+      "conversion": {
+        "title": "Iyipada 1:1",
+        "description": "Ipese lapapọ ko yipada lailai. Awọn ami-ẹri ti wa ni titiipa sinu apoti ailewu, ati pe aami 1:1 gangan ni a minted. Ko si afikun, ko si dilution."
+      },
+      "multichain": {
+        "title": "Pq Pupọ",
+        "description": "Ṣe atunto lẹẹkan, wọle si nibi gbogbo. Ohun-ini rẹ di ara ilu abinibi ti {{count}}+ awọn ẹwọn pẹlu Ethereum, Pq BNB, Base, ati Optimism."
+      },
+      "security": {
+        "title": "Aabo Ti o le Ṣe afiwe",
+        "description": "Ti agbara nipasẹ Axelar's modular aabo stack. Awọn ẹya Aabo Interchain (ISMs) rii daju pe awọn ifiranṣẹ rẹ ti wa ni ifọwọsi lori pq ṣaaju ki eyikeyi iye to gbe.",
+        "button": "Bẹrẹ Afara"
+      }
+    },
+    "teaser": {
+      "title": "Ṣe o fẹ awọn owo miiran?",
+      "subtitle": "Kini o ro nipa <lunc>LUNC</lunc>, <crepe>Crepe</crepe>, tabi <shiba>Shiba</shiba>??"
+    },
+    "cta": {
+      "title": "Ṣe o ti ṣetan lati gba ominira?",
+      "description": "Darapọ mọ iyipada interchain. O gba kere ju iṣẹju kan lati fi awọn ohun-ini rẹ we ki o bẹrẹ afara.",
+      "button": "Lọlẹ Ohun elo Bayi"
+    }
+  },
+  "wiki": {
+    "title": "Wiki Afara Ominira",
+    "searchPlaceholder": "Wa awọn iwe aṣẹ...",
+    "header": {
+      "title": "Awọn iwe aṣẹ",
+      "subtitle": "Kọ ẹkọ bi o ṣe le fi awọn ami-ẹri agba agba we, afara laarin awọn ẹwọn, ati ṣepọ pẹlu Afara Ominira."
+    },
+    "nav": {
+      "gettingStarted": "Bibẹrẹ",
+      "coreConcepts": "Awọn Ero Ipilẹ",
+      "developers": "Awọn oluṣe",
+      "tigerogSupply": "Ipese TigerOG",
+      "lionogSupply": "Ipese LionOG",
+      "frogogSupply": "Ipese FrogOG"
+    },
+    "articles": {
+      "whatIs": {
+        "title": "Kini Afara Ominira?",
+        "content": "Afara Ominira jẹ ilana isọdọtun ti a ṣe apẹrẹ lati gba awọn ami-ẹri agba agba silẹ lati awọn owo-ori idunadura giga ati awọn idiwọn pq kan. Nipa fifi awọn ami-ẹri ERC20 boṣewa we sinu awọn ohun-ini <strong>xERC20</strong> (cross-chain ERC20) turtą, awọn olumulo le gbe iye wọn larọwọto kọja awọn bulọọki ti o ni atilẹyin laisi sanwo awọn idiyele gbigbe ti ami-ẹri atilẹba.",
+        "taxFreeTitle": "Awọn gbigbe laisi owo-ori",
+        "taxFreeDesc": "Awọn ami-ẹri agba agba nigbagbogbo ni 10%+ owo-ori. Awọn ami-ẹri ti a we ni 0% owo-ori.",
+        "omnichainTitle": "Omnichain",
+        "omnichainDesc": "Gbe awọn ohun-ini lesekese laarin {{count}}+ awọn bulọọki."
+      },
+      "howToConvert": {
+        "title": "Bi o ṣe le Yi Awọn ami-ẹri pada",
+        "step1": "So apamọwọ rẹ pọ si pq orisun (fun apẹẹrẹ, Pq BNB).",
+        "step2": "Lọ si taabu <strong>Yi pada</strong>.",
+        "step3": "Yan ami-ẹri agba agba ti o fẹ yi pada.",
+        "step4": "Fọwọsi adehun Iṣilọ lati nawo awọn ami-ẹri rẹ.",
+        "step5": "Tẹ <strong>Yi pada</strong> lati fi awọn ami-ẹri agba agba rẹ si iṣura ati gba iye ti o dọgba ti awọn ami-ẹri \"TigerOG\".",
+        "note": "<strong>Akiyesi:</strong> Iyipada nfa owo-ori idunadura ti ami-ẹri agba agba (nigba idogo) ti ami-ẹri rẹ ba gba owo-ori lori awọn gbigbe, kii ṣe awọn rira ati titaja nikan. Sibẹsibẹ, ni kete ti a ba ti yipada, gbogbo awọn gbigbe ati awọn afara atẹle jẹ ominira lati owo-ori yii."
+      },
+      "supportedNetworks": {
+        "title": "Awọn nẹtiwọọki ti o ni atilẹyin",
+        "content": "Freedom Bridge ṣe atilẹyin ilolupo eda ti ndagba ti {{count}}+ awọn bulọọki, ti o jẹ ki interoperability laisi ailopin kọja gbogbo ilolupo eda EVM."
+      },
+      "xerc20": {
+        "title": "Iwọn xERC20",
+        "content": "Iwọn xERC20 (ERC-7281) ngbanilaaye fun awọn ti n pese ami-ẹri lati ṣetọju aṣẹ-alaṣẹ lori awọn afara wọn lakoko ti o n pese wiwo iṣọkan fun awọn gbigbe kọja-pq. Freedom Bridge nlo xERC20 lati rii daju pe nigbagbogbo wa ni oye \"ile\" ti o ni aṣẹ fun ami-ẹri lakoko ti o n ṣiṣẹ awọn idiwọn minted / burn fun aabo."
+      },
+      "axelar": {
+        "title": "Ifiranṣẹ Axelar",
+        "content": "A nlo Axelar gẹgẹbi ipilẹ interoperability wa. Axelar jẹ ilana ifiranṣẹ modular ti o fun wa laaye lati ṣeto awọn ọna opopona interchain ti ko ni aṣẹ laarin eyikeyi bulọọki. Ko dabi awọn afara ibile ti o nlo awọn olufọwọsi aringbungbun, Axelar ngbanilaaye wa lati tunto Awọn ẹya Aabo Interchain (ISMs) ti adani lati fọwọsi awọn ifiranṣẹ ni ibamu si awọn iwulo aabo wa."
+      },
+      "migration": {
+        "title": "Ilana Iṣilọ",
+        "content": "Adehun Iṣilọ ti wa ni ransọ lori pq orisun (fun apẹẹrẹ, BSC). O mu awọn ami-ẹri agba agba atilẹba mu ni itọju. Nigbati o ba ṣe igbesoke awọn ami-ẹri, o n fi sii sinu adehun Iṣilọ. Nigbati o ba ṣii (ti o ba ni atilẹyin), o n sun aṣoju TigerOG lati tu awọn ami-ẹri atilẹba silẹ. Eyi ṣe idaniloju peg 1:1 ti o ni atilẹyin muna."
+      },
+      "contracts": {
+        "title": "Awọn adirẹsi Adehun Smart",
+        "colNetwork": "Nẹtiwọọki",
+        "colType": "Iru Adehun",
+        "colAddress": "Adirẹsi"
+      },
+      "security": {
+        "title": "Awoṣe Aabo",
+        "content": "Aabo jẹ pataki julọ. A nlo ọna aabo pupọ-Layer:",
+        "point1": "<strong>Ayaworan Iṣilọ:</strong> Awọn ami-ẹri agba agba ti wa ni ipamọ ni awọn adehun smart ti a fọwọsi, ti ko le yipada.",
+        "point2": "<strong>Awọn olufọwọsi Axelar:</strong> Awọn ifiranṣẹ kọja-pq jẹ iṣeduro nipasẹ nẹtiwọọki ti a ti sọ di mimọ ti Axelar.",
+        "point3": "<strong>Ipese Iduroṣinṣin:</strong> ITS n ṣakoso minting ati sisun lati ṣetọju ipese lapapọ igbagbogbo kọja gbogbo awọn ẹwọn.",
+        "point4": "<strong>Ilana ti a ṣayẹwo:</strong> Ti a kọ lori ile-iṣẹ-boṣewa Axelar ati OpenZeppelin awọn ile-ikawe."
+      },
+      "supplyCommon": {
+        "howWeCalculated": "Bi A Ṣe Ṣiro Eyi",
+        "verification": "Ijẹrisi",
+        "verificationDesc": "Gbogbo awọn isiro ipese ni a le jẹrisi ni ominira lori-pq:",
+        "table": {
+          "category": "Ẹka",
+          "amount": "Iye",
+          "percentOfTotal": "% ti Lapapọ",
+          "originalSupply": "Ipese Lapapọ Atilẹba",
+          "deadAddress": "Adirẹsi Okú (Ti o sun)",
+          "contractBalance": "Iwontunwonsi Adehun (Ti o duro)",
+          "circulatingSupply": "Ipese ti n pin kiri"
+        },
+        "deadAddressTitle": "1. Adirẹsi Okú",
+        "contractBalanceTitle": "2. Iwontunwonsi Adehun",
+        "lpLockedTitle": "3. LP Awọn ami-ẹri titiipa"
+      },
+      "tigerogSupply": {
+        "title": "TigerOG Pipin Ipese",
+        "intro": "TigerOG ni ipese ti n pin kiri ti o wa titi lati inu ami-ẹri BNBTiger atilẹba. Iṣiro ipese n ṣe iṣiro gbogbo sisun ati awọn ami-ẹri titiipa patapata.",
+        "lpLocked": "LP Titiipa (86.18% ti LP Sisun)",
+        "deadAddressDesc": "Awọn ami-ẹri ti a firanṣẹ si <code>0x000...dEaD</code> jẹ sisun patapata ati pe ko le gba pada rara. Eyi pẹlu awọn ami-ẹri sisun nipasẹ ẹrọ owo-ori BNBTiger atilẹba.",
+        "contractBalanceDesc": "Iye kekere ti awọn ami-ẹri ti duro ninu adehun BNBTiger funrararẹ. Awọn ami-ẹri wọnyi ko ṣee wọle ati pe wọn ti yọ kuro ni imunadoko lati pin kiri.",
+        "lpLockedDesc": "Adagun omi omi PancakeSwap ni awọn ami-ẹri BNBTiger pọ pẹlu BNB. Nigbati awọn ami-ẹri LP ba sun (firanṣẹ si adirẹsi okú), awọn ami-ẹri ti o wa labẹ adagun naa yoo di titiipa patapata.",
+        "lpBurnedPercent": "Awọn ami-ẹri LP ti o sun: 86.18% ti gbogbo awọn ami-ẹri LP",
+        "lpLockedPercent": "Nitorinaa, 86.18% ti awọn ami-ẹri ninu LP ti wa ni titiipa patapata",
+        "note": "<strong>Akiyesi:</strong> TigerOG ṣe itọju ipin 1:1 pẹlu BNBTiger lakoko iṣilọ. Ipese ti n pin kiri ti TigerOG ba ipese ti n pin kiri tootọ ti BNBTiger mu lẹhin ṣiṣe iṣiro fun gbogbo sisun ati awọn ami-ẹri titiipa.",
+        "launchData": "<strong>Data Ifilọlẹ:</strong> Awọn isiro wọnyi ni a ṣe iṣiro ni ifilọlẹ. Ami-ẹri BNBTiger agba agba n tẹsiwaju lati sun awọn ami-ẹri lori gbogbo rira / tita idunadura, nitorinaa ipese ti n pin kiri gangan le jẹ kekere diẹ ju eyiti o han lọ.",
+        "legacyContract": "Adehun Àmi BNBTiger",
+        "ogContract": "Adehun Àmi TigerOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,772,706,396,234,535,780,783,775",
+          "deadPercent": "57.73%",
+          "contract": "−6,142,342,823,271,327",
+          "contractPercent": "<0.01%",
+          "lp": "−565,059,839,948,518,979,124,912",
+          "lpPercent": "5.65%",
+          "circulating": "3,662,233,757,674,602,416,819,986",
+          "circulatingPercent": "36.62%"
+        }
+      },
+      "lionogSupply": {
+        "title": "LionOG Pipin Ipese",
+        "intro": "LionOG ni ipese ti n pin kiri ti o wa titi lati inu ami-ẹri BNBLion atilẹba. Iṣiro ipese n ṣe iṣiro gbogbo sisun ati awọn ami-ẹri titiipa patapata.",
+        "lpLocked": "LP Titiipa (99.98% ti LP Sisun)",
+        "deadAddressDesc": "Awọn ami-ẹri ti a firanṣẹ si <code>0x000...dEaD</code> jẹ sisun patapata ati pe ko le gba pada rara. Eyi pẹlu awọn ami-ẹri sisun nipasẹ ẹrọ owo-ori BNBLion atilẹba.",
+        "contractBalanceDesc": "Iye kekere ti awọn ami-ẹri ti duro ninu adehun BNBLion funrararẹ. Awọn ami-ẹri wọnyi ko ṣee wọle ati pe wọn ti yọ kuro ni imunadoko lati pin kiri.",
+        "lpLockedDesc": "Adagun omi omi PancakeSwap ni awọn ami-ẹri BNBLion pọ pẹlu BNB. Nigbati awọn ami-ẹri LP ba sun (firanṣẹ si adirẹsi okú), awọn ami-ẹri ti o wa labẹ adagun naa yoo di titiipa patapata.",
+        "lpBurnedPercent": "Awọn ami-ẹri LP ti o sun: 99.98% ti gbogbo awọn ami-ẹri LP",
+        "lpLockedPercent": "Nitorinaa, 99.98% ti awọn ami-ẹri ninu LP ti wa ni titiipa patapata",
+        "note": "<strong>Akiyesi:</strong> LionOG ṣe itọju ipin 1:1 pẹlu BNBLion lakoko iṣilọ. Ipese ti n pin kiri ti LionOG ba ipese ti n pin kiri tootọ ti BNBLion mu lẹhin ṣiṣe iṣiro fun gbogbo sisun ati awọn ami-ẹri titiipa.",
+        "launchData": "<strong>Data Ifilọlẹ:</strong> Awọn isiro wọnyi ni a ṣe iṣiro ni ifilọlẹ. Ami-ẹri BNBLion agba agba n tẹsiwaju lati sun awọn ami-ẹri lori gbogbo rira / tita idunadura, nitorinaa ipese ti n pin kiri gangan le jẹ kekere diẹ ju eyiti o han lọ.",
+        "legacyContract": "Adehun Àmi BNBLion",
+        "ogContract": "Adehun Àmi LionOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,724,597,218,422,106,614,085,614",
+          "deadPercent": "57.25%",
+          "contract": "−9,219,967,745,410,740,095,290",
+          "contractPercent": "<0.01%",
+          "lp": "−442,490,152,327,271,918,655,109",
+          "lpPercent": "4.42%",
+          "circulating": "3,832,903,409,282,876,056,519,182",
+          "circulatingPercent": "38.33%"
+        }
+      },
+      "frogogSupply": {
+        "title": "FrogOG Pipin Ipese",
+        "intro": "FrogOG ni ipese ti n pin kiri ti o wa titi lati inu ami-ẹri BNBFrog atilẹba. Iṣiro ipese n ṣe iṣiro gbogbo sisun ati awọn ami-ẹri titiipa patapata.",
+        "lpLocked": "LP Titiipa (99.31% ti LP Sisun)",
+        "deadAddressDesc": "Awọn ami-ẹri ti a firanṣẹ si <code>0x000...dEaD</code> jẹ sisun patapata ati pe ko le gba pada rara. Eyi pẹlu awọn ami-ẹri sisun nipasẹ ẹrọ owo-ori BNBFrog atilẹba.",
+        "contractBalanceDesc": "Iye kekere ti awọn ami-ẹri ti duro ninu adehun BNBFrog funrararẹ. Awọn ami-ẹri wọnyi ko ṣee wọle ati pe wọn ti yọ kuro ni imunadoko lati pin kiri.",
+        "lpLockedDesc": "Adagun omi omi PancakeSwap ni awọn ami-ẹri BNBFrog pọ pẹlu BNB. Nigbati awọn ami-ẹri LP ba sun (firanṣẹ si adirẹsi okú), awọn ami-ẹri ti o wa labẹ adagun naa yoo di titiipa patapata.",
+        "lpBurnedPercent": "Awọn ami-ẹri LP ti o sun: 99.31% ti gbogbo awọn ami-ẹri LP",
+        "lpLockedPercent": "Nitorinaa, 99.31% ti awọn ami-ẹri ninu LP ti wa ni titiipa patapata",
+        "note": "<strong>Akiyesi:</strong> FrogOG ṣe itọju ipin 1:1 pẹlu BNBFrog lakoko iṣilọ. Ipese ti n pin kiri ti FrogOG ba ipese ti n pin kiri tootọ ti BNBFrog mu lẹhin ṣiṣe iṣiro fun gbogbo sisun ati awọn ami-ẹri titiipa.",
+        "launchData": "<strong>Data Ifilọlẹ:</strong> Awọn isiro wọnyi ni a ṣe iṣiro ni ifilọlẹ. Ami-ẹri BNBFrog agba agba n tẹsiwaju lati sun awọn ami-ẹri lori gbogbo rira / tita idunadura, nitorinaa ipese ti n pin kiri gangan le jẹ kekere diẹ ju eyiti o han lọ.",
+        "legacyContract": "Adehun Àmi BNBFrog",
+        "ogContract": "Adehun Àmi FrogOG",
+        "amounts": {
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−740,059,884,911,899,485,982,976",
+          "deadPercent": "7.40%",
+          "contract": "−4,036,008,092,593,983,879,741",
+          "contractPercent": "<0.01%",
+          "lp": "−874,144,424,929,004,044,398,902",
+          "lpPercent": "8.74%",
+          "circulating": "8,385,795,686,123,088,377,024,138",
+          "circulatingPercent": "83.86%"
+        }
+      }
+    }
+  },
+  "contracts": {
+    "title": "Awọn adirẹsi Adehun",
+    "header": {
+      "title": "Awọn adehun Smart",
+      "subtitle": "Awọn adirẹsi imuse osise fun awọn ami-ẹri ati awọn afara kọja gbogbo ilolupo eda Afara Ominira."
+    },
+    "tabs": {
+      "overview": "Akopọ",
+      "byToken": "Nipa Àmi",
+      "byChain": "Nipa Pq",
+      "liquidity": "Liquidity"
+    },
+    "liquidity": {
+      "title": "Awọn adagun Liquidity"
+    }
+  },
+  "faq": {
+    "title": "Atilẹyin Afara Ominira",
+    "header": "Awọn ibeere loorekoore",
+    "subtitle": "Awọn idahun si awọn ibeere ti o wọpọ nipa TigerOG, afara, ati Axelar.",
+    "cta": {
+      "title": "Ṣe o tun ni awọn ibeere?",
+      "description": "Darapọ mọ agbegbe wa lori Telegram tabi ṣayẹwo Wiki alaye fun awọn itọsọna imọ-ẹrọ.",
+      "wiki": "Ṣabẹwo Wiki",
+      "telegram": "Darapọ mọ Telegram"
+    },
+    "questions": {
+      "q1": "Kini idi ti iyipada awọn ami-ẹri mi?",
+      "a1": "Iyipada awọn ami-ẹri rẹ sinu TigerOG yọ owo-ori idunadura kuro (nigbagbogbo 10-12%) ti o ni nkan ṣe pẹlu ami-ẹri agba agba. O tun ngbanilaaye fun ọ lati ṣe afara awọn ami-ẹri wọnyi si awọn bulọọki miiran bii Ethereum, Base, ati ọpọlọpọ diẹ sii nipasẹ Axelar, ngbanilaaye iwọle si awọn ilolupo eda tuntun.",
+      "q2": "Ṣe o ailewu lati lo Afara Ominira?",
+      "a2": "Bẹẹni. Ilana naa nlo adehun Iṣilọ ti o ni aabo ati Interchain Token Service ti Axelar. Nigbati o ba yipada, BNBTiger rẹ yoo sun patapata ati pe o gba TigerOG ni ipin 1:1. Ẹrọ sisun n rii daju pe a ṣakoso ipese lapapọ daradara kọja gbogbo awọn ẹwọn.",
+      "q3": "Ṣe awọn idiyele eyikeyi wa?",
+      "a3": "Afara Ominira funrararẹ ko gba owo-ori fun iyipada. O kan san awọn idiyele gaasi bulọọki boṣewa. Afara laarin awọn ẹwọn pẹlu owo-ori gaasi interchain ti a san si Axelar lati bo awọn idiyele gbigbe.",
+      "q4": "Kini o ṣẹlẹ ti mo ba padanu awọn ami-ẹri mi?",
+      "a4": "Awọn ami-ẹri TigerOG ṣe huwa gẹgẹbi ami-ẹri ERC20 miiran. Ti o ba padanu iwọle si apamọwọ rẹ, wọn ko le gba pada. Nigbagbogbo rii daju pe o n tọju awọn bọtini ikọkọ rẹ ati awọn gbolohun ọrọ imularada ni aabo.",
+      "q5": "Ṣe Mo le yi awọn ami-ẹri TigerOG mi pada si BNBTiger?",
+      "a5": "Rara. Iṣilọ jẹ iyipada ọna kan. Nigbati o ba yi BNBTiger pada si TigerOG, awọn ami-ẹri BNBTiger rẹ yoo sun patapata (firanṣẹ si adirẹsi okú). Eyi jẹ nipasẹ apẹrẹ — TigerOG jẹ ẹya ti a ṣe igbesoke, ti ko ni owo-ori ti a pinnu lati rọpo ami-ẹri agba agba patapata.",
+      "q6": "Awọn nẹtiwọọki wo ni o ni atilẹyin?",
+      "a6": "A ṣe atilẹyin ọpọlọpọ awọn ẹwọn EVM nipasẹ Axelar, pẹlu Pq BNB, Ethereum, Base, ati diẹ sii. Ṣayẹwo Wiki fun atokọ kikun ti awọn nẹtiwọọki ti o ni atilẹyin.",
+      "q7": "Bawo ni afara ṣe pẹ to?",
+      "a7": "Iyara afara da lori akoko ipari pq orisun ati gbigbe Axelar. Nigbagbogbo, gbigbe laarin awọn ẹwọn gba to iṣẹju 2-5.",
+      "q8": "Kini awọn ipese ti n pin kiri ti awọn ami-ẹri OG?",
+      "a8": "Àmi OG kọọkan ni ipese ti n pin kiri ti o wa titi lati inu ami-ẹri BNB atilẹba rẹ, ṣiṣe iṣiro fun awọn ami-ẹri sisun, awọn iwọntunwọnsi adehun ti o duro, ati LP titiipa. TigerOG: ~3.66 septillion (36.62% ti atilẹba). LionOG: ~3.83 septillion (38.33% ti atilẹba). FrogOG: ~8.39 septillion (83.86% ti atilẹba). Wo Wiki fun awọn ipinfunni alaye ti ami-ẹri kọọkan."
+    }
+  },
+  "common": {
+    "from": "Lati",
+    "to": "Si",
+    "max": "MAX",
+    "chainId": "ID Pq",
+    "bscChain": "Pq BSC",
+    "insufficientBalance": "Iwontunwonsi ko to.",
+    "failedToSwitchNetwork": "Ko le yipada nẹtiwọọki. Jọwọ yipada pẹlu ọwọ ninu apamọwọ rẹ.",
+    "failedToFetchFeeQuote": "Ko le gba iye owo ọya.",
+    "unableToDetermineGas": "Ko le pinnu isanwo gaasi Axelar",
+    "bridgeTxFailed": "Iṣowo afara kuna",
+    "estimatedGas": "Gaasi Axelar ti a pinnu",
+    "success": "Aṣeyọri!",
+    "viewOnExplorer": "Wo lori Oluyẹwo",
+    "bridging": "Nṣe afara...",
+    "transactionFailed": "Iṣowo kuna",
+    "search": "Wa",
+    "backToApp": "Pada si Ohun elo"
+  }
+}

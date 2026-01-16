@@ -1,0 +1,364 @@
+{
+  "app": {
+    "titleFreedom": "Podul",
+    "titleBridge": "Libertății"
+  },
+  "nav": {
+    "settings": "Setări",
+    "menu": "Meniu",
+    "preferences": "Preferințe",
+    "switchTheme": "Aspect",
+    "theme": {
+      "dark": "Întunecat",
+      "light": "Luminos"
+    },
+    "switchPalette": "Schimbă paleta",
+    "wiki": "Documentație / Wiki",
+    "contracts": "Contracte",
+    "faq": "Întrebări frecvente",
+    "logout": "Deconectare",
+    "language": "Limbă",
+    "languageSearchPlaceholder": "Căutați limbi",
+    "languageNoResults": "Nu s-au găsit limbi",
+    "close": "Închide"
+  },
+  "addNetworks": {
+    "title": "Adăugați rețele",
+    "description": "Faceți clic pe un buton de mai jos pentru a adăuga rețele în portofelul dvs. Acest lucru face ușoară comutarea între lanțuri în timpul testării."
+  },
+  "tabs": {
+    "convert": "Convertește",
+    "bridge": "Pod"
+  },
+  "convert": {
+    "token": "Token",
+    "selectToken": "Selectează Token",
+    "balance": "Sold",
+    "noConvertibleTokens": "Nu există token-uri de convertit pe {{chainName}}",
+    "convert": "Convertește",
+    "addToWalletLabel": "Importă {{symbol}} de pe {{chainName}} în portofel",
+    "addToWalletButton": "Importă în portofel",
+    "addingToken": "Se adaugă...",
+    "addTokenError": "Nu s-a putut adăuga token-ul în portofel",
+    "legacyTokenMissing": "Token-ul vechi lipsește pentru acest lanț",
+    "tigerOGMissing": "Token-ul TigerOG lipsește pentru acest lanț",
+    "networkWarning": {
+      "title": "Rețea greșită",
+      "message": "Conversia token-urilor este disponibilă numai pe BSC Chain.",
+      "description": "Vă rugăm să treceți la BSC Chain în portofelul dvs. pentru a converti token-uri, sau navigați la fila Pod pentru a transfera token-uri între lanțuri."
+    }
+  },
+  "bridge": {
+    "fromChain": "De la Lanț",
+    "selectChainPlaceholder": "Selectează lanț",
+    "toChain": "Către Lanț",
+    "selectDestinationPlaceholder": "Selectează destinația",
+    "noDestination": "Fără destinație",
+    "noBridgeableTokens": "Nu există token-uri transferabile",
+    "bridgeButton": "Transferă Token-uri",
+    "getFeeQuote": "Obține cotația taxei",
+    "viewOnAxelarscan": "Vezi pe Axelarscan",
+    "addDestinationTokenLabel": "Importă {{symbol}} de pe {{chainName}} în portofel",
+    "addTokenError": "Nu s-a putut adăuga token-ul în portofel",
+    "estimatedTime": "Timp est.",
+    "recentTransactions": "Tranzacții Recente",
+    "clearHistory": "Șterge istoricul",
+    "historyStoredLocally": "Istoricul tranzacțiilor stocat local pe acest dispozitiv"
+  },
+  "settings": {
+    "title": "Setări",
+    "environment": "Mediu",
+    "rpcEndpoints": "Endpoint-uri RPC",
+    "rpcEndpointsHelp": "Actualizează URL-ul RPC utilizat pentru fiecare lanț în mediul selectat.",
+    "noChainsConfigured": "Niciun lanț configurat pentru acest mediu.",
+    "cancel": "Anulează",
+    "save": "Salvează"
+  },
+  "wallet": {},
+  "login": {
+    "title": "Bun venit înapoi",
+    "subtitle": "Conectați-vă pentru a continua la Podul Libertății",
+    "emailLabel": "Email",
+    "emailPlaceholder": "nume@exemplu.com",
+    "passwordLabel": "Parolă",
+    "passwordPlaceholder": "Introduceți parola",
+    "rememberMe": "Ține-mă minte pe acest dispozitiv",
+    "submit": "Conectare",
+    "validation": {
+      "required": "Email-ul și parola sunt obligatorii.",
+      "invalid": "Email sau parolă invalidă."
+    }
+  },
+  "landing": {
+    "banner": {
+      "title": "Nou aici?",
+      "message": "Învățați despre Podul Libertății și cum să transferați token-uri TigerOG între lanțuri."
+    },
+    "hero": {
+      "badge": "Propulsat de Axelar",
+      "title": "Dezlănțuiește-ți <1/> <2>Activele</2>",
+      "subtitle": "Transferă fără sudură token-uri TigerOG între lanțuri folosind Serviciul de Token-uri Interlanț Axelar. Sigur, rapid și fără taxe.",
+      "launchApp": "Lansează Aplicația",
+      "documentation": "Documentație"
+    },
+    "stats": {
+      "messaging": "Rețeaua Axelar",
+      "networks": "Rețele Active",
+      "fees": "Taxe Protocol",
+      "finality": "Finalitate"
+    },
+    "features": {
+      "title": "Serviciul de Token-uri Interlanț",
+      "description": "Podul Libertății utilizează Axelar ITS pentru a oferi o experiență de transfer fără sudură, sigură și fără taxe prin {{count}}+ blockchain-uri.",
+      "stopDecay": {
+        "title": "Oprește Descompunerea",
+        "description": "Token-urile vechi ard 10-11% din valoarea ta la fiecare cumpărare și vânzare. Conversia în TigerOG oprește această sângerare imediat, păstrând 100% din valoarea ta.",
+        "graphLabel1": "100% Reținut (TigerOG)",
+        "graphLabel2": "-40% Valoare (Taxă Veche 10%)"
+      },
+      "conversion": {
+        "title": "Conversie 1:1",
+        "description": "Oferta totală nu se schimbă niciodată. Token-urile sunt deținute într-un contract sigur de migrare și se utilizează exact echivalentul 1:1. Fără inflație, fără diluare."
+      },
+      "multichain": {
+        "title": "Multi-Lanț",
+        "description": "Desfășoară o dată, accesează oriunde. Activul tău devine un token interlanț nativ prin lanțuri, inclusiv Ethereum, BNB Chain, Base și altele."
+      },
+      "security": {
+        "title": "Securitate Axelar",
+        "description": "Propulsat de rețeaua descentralizată de validatori Axelar. ITS asigură că token-urile tale sunt transferate sigur și consistent prin toate rețelele conectate.",
+        "button": "Începe Transferul"
+      }
+    },
+    "teaser": {
+      "title": "Vreți alte monede?",
+      "subtitle": "Ce părere aveți despre <lunc>LUNC</lunc>, <crepe>Crepe</crepe> sau <shiba>Shiba</shiba>"
+    },
+    "cta": {
+      "title": "Gata să transferi?",
+      "description": "Alătură-te revoluției interlanț. Durează mai puțin de un minut să îți împachetezi activele și să începi transferul prin Axelar.",
+      "button": "Lansează Aplicația Acum"
+    }
+  },
+  "wiki": {
+    "title": "Wiki Podul Libertății",
+    "searchPlaceholder": "Caută documentație...",
+    "header": {
+      "title": "Documentație",
+      "subtitle": "Învață cum să convertești token-uri vechi, să transferi între lanțuri și să integrezi cu Podul Libertății."
+    },
+    "nav": {
+      "gettingStarted": "Primii Pași",
+      "coreConcepts": "Concepte De Bază",
+      "developers": "Dezvoltatori",
+      "tigerogSupply": "Ofertă TigerOG",
+      "lionogSupply": "Ofertă LionOG",
+      "frogogSupply": "Ofertă FrogOG"
+    },
+    "articles": {
+      "whatIs": {
+        "title": "Ce este Podul Libertății?",
+        "content": "Podul Libertății este un protocol de transfer descentralizat construit pe Serviciul de Token-uri Interlanț (ITS) Axelar. Este conceput pentru a elibera token-urile de limitările unui singur lanț și taxele mari de tranzacție. Prin împachetarea token-urilor standard în active compatibile interlanț, utilizatorii își pot muta valoarea liber prin blockchain-urile acceptate.",
+        "taxFreeTitle": "Transferuri Fără Taxe",
+        "taxFreeDesc": "Token-urile vechi au adesea taxe de 10%+. Token-urile TigerOG au 0% taxă.",
+        "omnichainTitle": "Interlanț",
+        "omnichainDesc": "Mută active instantaneu între {{count}}+ blockchain-uri prin Axelar."
+      },
+      "howToConvert": {
+        "title": "Cum să Convertești Token-uri",
+        "step1": "Conectează-ți portofelul la lanțul sursă (de exemplu, BNB Chain).",
+        "step2": "Navighează la fila <strong>Convertește</strong>.",
+        "step3": "Selectează token-ul vechi pe care vrei să îl convertești.",
+        "step4": "Aprobă contractul de Migrare să îți cheltuiască token-urile.",
+        "step5": "Fă clic pe <strong>Convertește</strong> pentru a depune token-urile vechi și a primi o cantitate echivalentă de token-uri \"TigerOG\".",
+        "note": "<strong>Notă:</strong> Conversia suportă taxa de tranzacție a token-ului vechi (în timpul upgrade-ului) dacă token-ul tău percepe taxă la transferuri. Totuși, odată convertit în TigerOG, toate transferurile și punțile ulterioare sunt fără taxe."
+      },
+      "supportedNetworks": {
+        "title": "Rețele Acceptate",
+        "content": "Podul Libertății acceptă un ecosistem în creștere de {{count}}+ blockchain-uri, permițând interoperabilitate fără sudură în peisajul EVM prin Axelar."
+      },
+      "xerc20": {
+        "title": "Token-uri Interlanț",
+        "content": "Serviciul de Token-uri Interlanț Axelar (ITS) permite ca token-urile să fie desfășurate pe mai multe lanțuri cu o adresă consistentă și gestionare unificată a ofertei. Podul Libertății utilizează ITS pentru a se asigura că TigerOG rămâne un activ canonic oriunde este transferat."
+      },
+      "axelar": {
+        "title": "Rețeaua Axelar",
+        "content": "Utilizăm Axelar ca stratul nostru de interoperabilitate. Axelar este o rețea descentralizată care conectează diferite blockchain-uri, permițând comunicare sigură între lanțuri și transferuri de active. Modelul de securitate al Axelar se bazează pe un set de validatori fără permisiuni, oferind securitate de înaltă calitate pentru token-urile interlanț."
+      },
+      "migration": {
+        "title": "Logica Migrării",
+        "content": "Contractul de Migrare este desfășurat pe lanțul de origine (de exemplu, BSC). Deține token-urile originale vechi în custodie. Când actualizezi token-uri, depui în contractul de Migrare. Când despachetezi (dacă este acceptat), arzi reprezentarea TigerOG pentru a elibera token-urile originale. Acest lucru asigură o paritate strictă 1:1."
+      },
+      "contracts": {
+        "title": "Adrese Contracte Inteligente",
+        "colNetwork": "Rețea",
+        "colType": "Tip Contract",
+        "colAddress": "Adresă"
+      },
+      "security": {
+        "title": "Model de Securitate",
+        "content": "Securitatea este integrată în fiecare strat al Podul Libertății:",
+        "point1": "<strong>Arhitectura Migrării:</strong> Token-urile vechi sunt deținute în contracte inteligente verificate și imuabile.",
+        "point2": "<strong>Validatori Axelar:</strong> Mesajele între lanțuri sunt verificate de rețeaua descentralizată Axelar.",
+        "point3": "<strong>Ofertă Consistentă:</strong> ITS gestionează emiterea și arderea pentru a menține o ofertă totală constantă pe toate lanțurile.",
+        "point4": "<strong>Logică Auditată:</strong> Construit pe biblioteci standard Axelar și OpenZeppelin."
+      },
+      "supplyCommon": {
+        "howWeCalculated": "Cum am calculat acest lucru",
+        "verification": "Verificare",
+        "verificationDesc": "Toate cifrele de ofertă pot fi verificate independent pe lanț:",
+        "table": {
+          "category": "Categorie",
+          "amount": "Cantitate",
+          "percentOfTotal": "% din Total",
+          "originalSupply": "Oferta Totală Originală",
+          "deadAddress": "Adresă Moartă (Ars)",
+          "contractBalance": "Sold Contract (Blocat)",
+          "circulatingSupply": "Ofertă Circulantă"
+        },
+        "deadAddressTitle": "1. Adresă Moartă",
+        "contractBalanceTitle": "2. Sold Contract",
+        "lpLockedTitle": "3. Token-uri LP Blocate"
+      },
+      "tigerogSupply": {
+        "title": "Descompunere Ofertă TigerOG",
+        "intro": "TigerOG are o ofertă circulantă fixă derivată din token-ul original BNBTiger. Calculul ofertei ia în considerare toate token-urile arse și blocate permanent.",
+        "lpLocked": "LP Blocat (86.18% din LP Ars)",
+        "deadAddressDesc": "Token-urile trimise la <code>0x000...dEaD</code> sunt arse permanent și nu pot fi recuperate niciodată. Aceasta include token-urile arse prin mecanismul original de taxare BNBTiger.",
+        "contractBalanceDesc": "O cantitate mică de token-uri sunt blocate în contractul BNBTiger însuși. Aceste token-uri sunt inaccesibile și eliminate efectiv din circulație.",
+        "lpLockedDesc": "Fondul de lichiditate PancakeSwap conține token-uri BNBTiger împerecheate cu BNB. Când token-urile LP sunt arse (trimise la adresa moartă), token-urile subiacente din fond devin blocate permanent.",
+        "lpBurnedPercent": "Token-uri LP arse: 86.18% din toate token-urile LP",
+        "lpLockedPercent": "Prin urmare, 86.18% din token-urile din LP sunt blocate permanent",
+        "note": "<strong>Notă:</strong> TigerOG menține un raport 1:1 cu BNBTiger în timpul migrării. Oferta circulantă a TigerOG se potrivește cu oferta circulantă reală a BNBTiger după contabilizarea tuturor token-urilor arse și blocate.",
+        "launchData": "<strong>Date Lansare:</strong> Aceste cifre au fost calculate la lansare. Token-ul vechi BNBTiger continuă să ardă token-uri la fiecare tranzacție de cumpărare/vânzare, astfel încât oferta circulantă reală poate fi ușor mai mică decât cea afișată.",
+        "legacyContract": "Contract Token BNBTiger",
+        "ogContract": "Contract Token TigerOG",
+        "amounts": {
+          "original": "10.000.000.000.000.000.000.000.000",
+          "dead": "−5.772.706.396.234.535.780.783.775",
+          "deadPercent": "57.73%",
+          "contract": "−6.142.342.823.271.327",
+          "contractPercent": "<0.01%",
+          "lp": "−565.059.839.948.518.979.124.912",
+          "lpPercent": "5.65%",
+          "circulating": "3.662.233.757.674.602.416.819.986",
+          "circulatingPercent": "36.62%"
+        }
+      },
+      "lionogSupply": {
+        "title": "Descompunere Ofertă LionOG",
+        "intro": "LionOG are o ofertă circulantă fixă derivată din token-ul original BNBLion. Calculul ofertei ia în considerare toate token-urile arse și blocate permanent.",
+        "lpLocked": "LP Blocat (99.98% din LP Ars)",
+        "deadAddressDesc": "Token-urile trimise la <code>0x000...dEaD</code> sunt arse permanent și nu pot fi recuperate niciodată. Aceasta include token-urile arse prin mecanismul original de taxare BNBLion.",
+        "contractBalanceDesc": "O cantitate mică de token-uri sunt blocate în contractul BNBLion însuși. Aceste token-uri sunt inaccesibile și eliminate efectiv din circulație.",
+        "lpLockedDesc": "Fondul de lichiditate PancakeSwap conține token-uri BNBLion împerecheate cu BNB. Când token-urile LP sunt arse (trimise la adresa moartă), token-urile subiacente din fond devin blocate permanent.",
+        "lpBurnedPercent": "Token-uri LP arse: 99.98% din toate token-urile LP",
+        "lpLockedPercent": "Prin urmare, 99.98% din token-urile din LP sunt blocate permanent",
+        "note": "<strong>Notă:</strong> LionOG menține un raport 1:1 cu BNBLion în timpul migrării. Oferta circulantă a LionOG se potrivește cu oferta circulantă reală a BNBLion după contabilizarea tuturor token-urilor arse și blocate.",
+        "launchData": "<strong>Date Lansare:</strong> Aceste cifre au fost calculate la lansare. Token-ul vechi BNBLion continuă să ardă token-uri la fiecare tranzacție de cumpărare/vânzare, astfel încât oferta circulantă reală poate fi ușor mai mică decât cea afișată.",
+        "legacyContract": "Contract Token BNBLion",
+        "ogContract": "Contract Token LionOG",
+        "amounts": {
+          "original": "10.000.000.000.000.000.000.000.000",
+          "dead": "−5.724.597.218.422.106.614.085.614",
+          "deadPercent": "57.25%",
+          "contract": "−9.219.967.745.410.740.095.290",
+          "contractPercent": "<0.01%",
+          "lp": "−442.490.152.327.271.918.655.109",
+          "lpPercent": "4.42%",
+          "circulating": "3.832.903.409.282.876.056.519.182",
+          "circulatingPercent": "38.33%"
+        }
+      },
+      "frogogSupply": {
+        "title": "Descompunere Ofertă FrogOG",
+        "intro": "FrogOG are o ofertă circulantă fixă derivată din token-ul original BNBFrog. Calculul ofertei ia în considerare toate token-urile arse și blocate permanent.",
+        "lpLocked": "LP Blocat (99.31% din LP Ars)",
+        "deadAddressDesc": "Token-urile trimise la <code>0x000...dEaD</code> sunt arse permanent și nu pot fi recuperate niciodată. Aceasta include token-urile arse prin mecanismul original de taxare BNBFrog.",
+        "contractBalanceDesc": "O cantitate mică de token-uri sunt blocate în contractul BNBFrog însuși. Aceste token-uri sunt inaccesibile și eliminate efectiv din circulație.",
+        "lpLockedDesc": "Fondul de lichiditate PancakeSwap conține token-uri BNBFrog împerecheate cu BNB. Când token-urile LP sunt arse (trimise la adresa moartă), token-urile subiacente din fond devin blocate permanent.",
+        "lpBurnedPercent": "Token-uri LP arse: 99.31% din toate token-urile LP",
+        "lpLockedPercent": "Prin urmare, 99.31% din token-urile din LP sunt blocate permanent",
+        "note": "<strong>Notă:</strong> FrogOG menține un raport 1:1 cu BNBFrog în timpul migrării. Oferta circulantă a FrogOG se potrivește cu oferta circulantă reală a BNBFrog după contabilizarea tuturor token-urilor arse și blocate.",
+        "launchData": "<strong>Date Lansare:</strong> Aceste cifre au fost calculate la lansare. Token-ul vechi BNBFrog continuă să ardă token-uri la fiecare tranzacție de cumpărare/vânzare, astfel încât oferta circulantă reală poate fi ușor mai mică decât cea afișată.",
+        "legacyContract": "Contract Token BNBFrog",
+        "ogContract": "Contract Token FrogOG",
+        "amounts": {
+          "original": "10.000.000.000.000.000.000.000.000",
+          "dead": "−740.059.884.911.899.485.982.976",
+          "deadPercent": "7.40%",
+          "contract": "−4.036.008.092.593.983.879.741",
+          "contractPercent": "<0.01%",
+          "lp": "−874.144.424.929.004.044.398.902",
+          "lpPercent": "8.74%",
+          "circulating": "8.385.795.686.123.088.377.024.138",
+          "circulatingPercent": "83.86%"
+        }
+      }
+    }
+  },
+  "contracts": {
+    "title": "Adrese Contracte",
+    "header": {
+      "title": "Contracte Inteligente",
+      "subtitle": "Adrese oficiale de implementare pentru token-uri și punți în ecosistemul Podul Libertății."
+    },
+    "tabs": {
+      "overview": "Prezentare Generală",
+      "byToken": "După Token",
+      "byChain": "După Lanț",
+      "liquidity": "Lichiditate"
+    },
+    "liquidity": {
+      "title": "Fonduri de Lichiditate"
+    }
+  },
+  "faq": {
+    "title": "Suport Podul Libertății",
+    "header": "Întrebări Frecvente",
+    "subtitle": "Răspunsuri la întrebări comune despre TigerOG, transfer și Axelar.",
+    "cta": {
+      "title": "Mai aveți întrebări?",
+      "description": "Alăturați-vă comunității noastre pe Telegram sau verificați Wiki-ul detaliat pentru ghiduri tehnice.",
+      "wiki": "Vizitați Wiki",
+      "telegram": "Alăturați-vă pe Telegram"
+    },
+    "questions": {
+      "q1": "Care este scopul conversiei token-urilor mele?",
+      "a1": "Conversia token-urilor tale în TigerOG elimină taxa de tranzacție (adesea 10-12%) asociată cu token-ul vechi. De asemenea, îți permite să transferi aceste token-uri către alte blockchain-uri precum Ethereum, Base și altele prin Axelar, permițând accesul la noi ecosisteme.",
+      "q2": "Este sigur să folosesc Podul Libertății?",
+      "a2": "Da. Protocolul utilizează un contract de Migrare sigur și Serviciul de Token-uri Interlanț Axelar. Când convertești, BNBTiger-ul tău este ars permanent și primești TigerOG într-un raport 1:1. Mecanismul de ardere asigură că oferta totală este gestionată corect pe toate lanțurile.",
+      "q3": "Există taxe?",
+      "a3": "Podul Libertății în sine nu percepe o taxă pentru conversie. Plătești doar taxele standard de gaz blockchain. Totuși, transferul între lanțuri implică o taxă de gaz inter-lanț plătită către Axelar pentru a acoperi costurile de transfer.",
+      "q4": "Ce se întâmplă dacă îmi pierd token-urile?",
+      "a4": "Token-urile TigerOG se comportă la fel ca orice alt token ERC20. Dacă îți pierzi accesul la portofel, ele nu pot fi recuperate. Păstrează întotdeauna cheile private și frazele de recuperare în siguranță.",
+      "q5": "Pot converti token-urile TigerOG înapoi în BNBTiger?",
+      "a5": "Nu. Migrarea este o conversie unidirecțională. Când convertești BNBTiger în TigerOG, token-urile tale BNBTiger sunt arse permanent (trimise la adresa moartă). Acest lucru este intenționat — TigerOG este versiunea actualizată, fără taxe, menită să înlocuiască complet token-ul vechi.",
+      "q6": "Ce rețele sunt acceptate?",
+      "a6": "Acceptăm mai multe lanțuri EVM prin Axelar, inclusiv BNB Chain, Ethereum, Base și altele. Verifică Wiki-ul pentru lista completă a rețelelor acceptate.",
+      "q7": "Cât durează transferul?",
+      "a7": "Viteza de transfer depinde de timpul de finalitate al lanțului sursă și de releul Axelar. De obicei, un transfer între lanțuri durează aproximativ 2-5 minute.",
+      "q8": "Care sunt ofertele circulante ale token-urilor OG?",
+      "a8": "Fiecare token OG are o ofertă circulantă fixă derivată din token-ul său original BNB, ținând cont de token-urile arse, soldurile contractelor blocate și LP-urile blocate. TigerOG: ~3.66 septilioane (36.62% din original). LionOG: ~3.83 septilioane (38.33% din original). FrogOG: ~8.39 septilioane (83.86% din original). Vezi Wiki-ul pentru descompuneri detaliate ale fiecărui token."
+    }
+  },
+  "common": {
+    "from": "De la",
+    "to": "Către",
+    "max": "MAX",
+    "chainId": "ID Lanț",
+    "bscChain": "BSC Chain",
+    "insufficientBalance": "Sold insuficient.",
+    "failedToSwitchNetwork": "Nu s-a putut schimba rețeaua. Vă rugăm să schimbați manual în portofelul dumneavoastră.",
+    "failedToFetchFeeQuote": "Nu s-a putut obține cotația taxei.",
+    "unableToDetermineGas": "Nu se poate determina plata gazului Axelar",
+    "bridgeTxFailed": "Tranzacția de transfer a eșuat",
+    "estimatedGas": "Gaz Axelar estimat",
+    "success": "Succes!",
+    "viewOnExplorer": "Vizualizează pe Explorer",
+    "bridging": "Se transferă...",
+    "transactionFailed": "Tranzacție eșuată",
+    "search": "Caută",
+    "backToApp": "Înapoi la Aplicație"
+  }
+}
