@@ -36,8 +36,8 @@ const DEFAULT_RPC: RpcState = readRpcEnvOverrides();
 const CHAIN_CONFIG_OVERRIDES = readChainConfigOverrides();
 const CHAIN_LABEL_OVERRIDES = readChainLabelOverrides();
 
-const STORAGE_ENV_KEY = "tiger-rails:env";
-const STORAGE_RPC_KEY = "tiger-rails:rpc";
+const STORAGE_ENV_KEY = "freedom-bridge:env";
+const STORAGE_RPC_KEY = "freedom-bridge:rpc";
 
 export type EnvironmentContextValue = {
   environment: EnvironmentKey;

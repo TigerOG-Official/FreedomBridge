@@ -16,7 +16,7 @@ interface LocalizationContextType {
 }
 
 const LocalizationContext = createContext<LocalizationContextType | undefined>(undefined);
-const STORAGE_KEY = 'tiger-rails-language';
+const STORAGE_KEY = 'freedom-bridge-language';
 const FEATURED_LANGUAGE_CODES: Language[] = ['en', 'es', 'zh', 'hi', 'ar'];
 
 const LANGUAGE_DATA: LanguageOption[] = [

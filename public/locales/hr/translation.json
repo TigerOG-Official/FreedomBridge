@@ -1,7 +1,7 @@
 {
   "app": {
-    "titleFreedom": "Most",
-    "titleBridge": "Slobode"
+    "titleFreedom": "Sloboda",
+    "titleBridge": "Most"
   },
   "nav": {
     "settings": "Postavke",
@@ -16,36 +16,35 @@
     "wiki": "Dokumentacija / Wiki",
     "contracts": "Ugovori",
     "faq": "ČPP",
-    "logout": "Odjavi se",
     "language": "Jezik",
     "languageSearchPlaceholder": "Pretraži jezike",
     "languageNoResults": "Nema pronađenih jezika",
     "close": "Zatvori"
   },
   "addNetworks": {
-    "title": "Dodaj mreže",
-    "description": "Kliknite gumb ispod da biste dodali mreže u svoj novčanik. To olakšava prebacivanje između lanaca tijekom testiranja."
+    "title": "Dodaj mreže u novčanik",
+    "description": "Kliknite bilo koju mrežu da biste je dodali u MetaMask, Rabby ili druge Web3 novčanike",
+    "searchPlaceholder": "Pretraži mreže...",
+    "noResults": "Nema pronađenih mreža",
+    "networkCount": "mreža"
+  },
+  "addNetwork": {
+    "connectWallet": "Molimo prvo povežite svoj novčanik",
+    "alreadyPending": "Zahtjev je već na čekanju. Provjerite svoj novčanik.",
+    "error": "Dodavanje mreže nije uspjelo. Molimo dodajte je ručno.",
+    "adding": "Dodavanje...",
+    "button": "Dodaj"
   },
   "tabs": {
     "convert": "Pretvori",
     "bridge": "Most"
   },
   "convert": {
-    "token": "Token",
-    "selectToken": "Odaberite token",
     "balance": "Saldo",
-    "noConvertibleTokens": "Nema tokena za pretvorbu na {{chainName}}",
-    "convert": "Pretvori",
-    "addToWalletLabel": "Uvezi {{symbol}} na {{chainName}} u novčanik",
     "addToWalletButton": "Uvezi u novčanik",
-    "addingToken": "Dodavanje…",
-    "addTokenError": "Nije moguće dodati token u novčanik",
-    "legacyTokenMissing": "Nedostaje stari token za ovaj lanac",
-    "tigerOGMissing": "Nedostaje TigerOG token za ovaj lanac",
     "networkWarning": {
       "title": "Pogrešna mreža",
-      "message": "Pretvorba tokena dostupna je samo na BSC lancu.",
-      "description": "Molimo prebacite na BSC lanac u svom novčaniku za pretvorbu tokena ili idite na karticu Most za prijenos tokena između lanaca."
+      "message": "Pretvorba tokena dostupna je samo na BSC lancu. Molimo prebacite na BSC za pretvorbu vaših starih tokena."
     }
   },
   "bridge": {
@@ -56,9 +55,7 @@
     "noDestination": "Nema odredišta",
     "noBridgeableTokens": "Nema tokena za premošćivanje",
     "bridgeButton": "Premosti tokene",
-    "getFeeQuote": "Dobij ponudu naknade",
-    "viewOnAxelarscan": "Prikaži na Axelar Exploreru",
-    "addDestinationTokenLabel": "Uvezi {{symbol}} na {{chainName}} u novčanik",
+    "viewOnAxelarscan": "Prikaži na Axelarscan",
     "addTokenError": "Nije moguće dodati token u novčanik",
     "estimatedTime": "Procijenjeno vrijeme",
     "recentTransactions": "Nedavne transakcije",
@@ -74,25 +71,11 @@
     "cancel": "Odustani",
     "save": "Spremi"
   },
-  "wallet": {},
-  "login": {
-    "title": "Dobrodošli natrag",
-    "subtitle": "Prijavite se za nastavak na Most Slobode",
-    "emailLabel": "E-pošta",
-    "emailPlaceholder": "ime@primjer.com",
-    "passwordLabel": "Lozinka",
-    "passwordPlaceholder": "Unesite lozinku",
-    "rememberMe": "Zapamti me na ovom uređaju",
-    "submit": "Prijavi se",
-    "validation": {
-      "required": "E-pošta i lozinka su obavezni.",
-      "invalid": "Nevažeća e-pošta ili lozinka."
-    }
-  },
   "landing": {
     "banner": {
       "title": "Novi ste ovdje?",
-      "message": "Saznajte više o Mostu Slobode i kako premostiti TigerOG tokene preko lanaca."
+      "message": "Saznajte više o Mostu Slobode i kako premostiti TigerOG tokene preko lanaca.",
+      "note": "Napomena: Pretvorba tokena je trajna i ne može se poništiti."
     },
     "hero": {
       "badge": "Pokreće Axelar",
@@ -118,7 +101,7 @@
       },
       "conversion": {
         "title": "1:1 Pretvorba",
-        "description": "Ukupna ponuda se nikada ne mijenja. Tokeni su u sigurnom migracijskom ugovoru, a koristi se točan 1:1 ekvivalent. Nema inflacije, nema razrjeđenja."
+        "description": "Ukupna ponuda se nikada ne mijenja. Tokeni su u sigurnom ugovoru za pretvorbu, a koristi se točan 1:1 ekvivalent. Nema inflacije, nema razrjeđenja."
       },
       "multichain": {
         "title": "Više-lančani",
@@ -130,14 +113,19 @@
         "button": "Započni premošćivanje"
       }
     },
-    "teaser": {
-      "title": "Želite li druge kovanice?",
-      "subtitle": "Što mislite o <lunc>LUNC</lunc>, <crepe>Crepe</crepe> ili <shiba>Shiba</shiba> ?"
-    },
     "cta": {
       "title": "Spremni za premošćivanje?",
-      "description": "Pridružite se interchain revoluciji. Potrebno je manje od minute da omotate svoju imovinu i započnete premošćivanje putem Axelara.",
+      "description": "Pridružite se interchain revoluciji. Potrebno je manje od minute da pretvorite svoju imovinu i započnete premošćivanje putem Axelara.",
       "button": "Pokreni aplikaciju sada"
+    },
+    "buyTokens": {
+      "badge": "Započnite",
+      "title": "Nabavite imovinu",
+      "description": "Nemate još tokena? Kupite osnovne tokene na PancakeSwapu, zatim ih pretvorite u nove višelančane verzije.",
+      "buyOn": "Kupite na PancakeSwapu",
+      "then": "zatim",
+      "convertTo": "Pretvorite u",
+      "buyNow": "Kupite sada"
     }
   },
   "wiki": {
@@ -145,7 +133,7 @@
     "searchPlaceholder": "Pretraži dokumentaciju...",
     "header": {
       "title": "Dokumentacija",
-      "subtitle": "Saznajte kako omotati stare tokene, premostiti preko lanaca i integrirati se s Mostom Slobode."
+      "subtitle": "Saznajte kako pretvoriti stare tokene i premostiti preko lanaca."
     },
     "nav": {
       "gettingStarted": "Početak rada",
@@ -153,12 +141,14 @@
       "developers": "Razvojni programeri",
       "tigerogSupply": "TigerOG Zaliha",
       "lionogSupply": "LionOG Zaliha",
-      "frogogSupply": "FrogOG Zaliha"
+      "frogogSupply": "FrogOG Zaliha",
+      "githubRepo": "GitHub repozitorij",
+      "axelarDocs": "Axelar ITS dokumentacija"
     },
     "articles": {
       "whatIs": {
         "title": "Što je Most Slobode?",
-        "content": "Most Slobode je decentralizirani protokol izgrađen na Axelar Interchain Token Service (ITS). Dizajniran je za oslobađanje tokena od ograničenja jednog lanca i visokih poreza na transakcije. Omotavanjem standardnih tokena u imovinu kompatibilnu s interchainom, korisnici mogu slobodno premještati svoju vrijednost preko podržanih blockchaina.",
+        "content": "Most Slobode je decentralizirani protokol za premošćivanje izgrađen na Axelar Interchain Token Service (ITS). Omogućuje vam pretvorbu starih tokena u imovinu bez poreza kompatibilnu s interchainom koja se može slobodno premještati preko podržanih blockchaina.",
         "taxFreeTitle": "Prijenosi bez poreza",
         "taxFreeDesc": "Stari tokeni često imaju poreze od 10%+. TigerOG tokeni imaju 0% poreza.",
         "omnichainTitle": "Interchain",
@@ -169,7 +159,7 @@
         "step1": "Povežite svoj novčanik s izvornim lancem (npr. BNB Chain).",
         "step2": "Idite na karticu <strong>Pretvori</strong>.",
         "step3": "Odaberite stari token koji želite pretvoriti.",
-        "step4": "Odobrite Migracijski ugovor da potroši vaše tokene.",
+        "step4": "Odobrite Ugovor za pretvorbu da potroši vaše tokene.",
         "step5": "Kliknite <strong>Pretvori</strong> za deponiranje starih tokena i primanje ekvivalentnog iznosa \"TigerOG\" tokena.",
         "note": "<strong>Napomena:</strong> Pretvorba uključuje porez na transakciju starog tokena (tijekom nadogradnje) ako vaš token naplaćuje porez na prijenose. Međutim, jednom kada su pretvoreni u TigerOG, svi naknadni prijenosi i premošćivanja su oslobođeni poreza."
       },
@@ -185,9 +175,9 @@
         "title": "Axelar Mreža",
         "content": "Koristimo Axelar kao naš sloj interoperabilnosti. Axelar je decentralizirana mreža koja povezuje različite blockchaine, omogućujući sigurnu komunikaciju i prijenos imovine preko lanaca. Axelarov sigurnosni model oslanja se na skup validatora bez dozvola, pružajući visoku razinu sigurnosti za interchain tokene."
       },
-      "migration": {
-        "title": "Logika Migracije",
-        "content": "Migracijski ugovor raspoređen je na izvornom lancu (npr. BSC). On čuva originalne stare tokene u skrbništvu. Kada nadogradite tokene, deponirate ih u Migracijski ugovor. Kada odmotate (ako je podržano), spaljujete TigerOG reprezentaciju kako biste oslobodili originalne tokene. To osigurava strogo potpomognutu 1:1 vezu."
+      "conversion": {
+        "title": "Logika Pretvorbe",
+        "content": "Ugovor za pretvorbu raspoređen je na BSC-u. Kada pretvarate, vaši stari tokeni šalju se na mrtvu adresu (trajno se spaljuju) i primate TigerOG u omjeru 1:1. Ovo je jednosmjerni proces — stari tokeni su uništeni i nikada se ne mogu povratiti."
       },
       "contracts": {
         "title": "Adrese pametnih ugovora",
@@ -198,7 +188,7 @@
       "security": {
         "title": "Sigurnosni model",
         "content": "Sigurnost je ugrađena u svaki sloj Mosta Slobode:",
-        "point1": "<strong>Arhitektura Migracije:</strong> Stari tokeni čuvaju se u provjerenim, nepromjenjivim pametnim ugovorima.",
+        "point1": "<strong>Arhitektura Pretvorbe:</strong> Stari tokeni trajno se spaljuju putem provjerenih, nepromjenjivih pametnih ugovora.",
         "point2": "<strong>Axelar Validatori:</strong> Poruke preko lanaca provjerava Axelarova decentralizirana mreža.",
         "point3": "<strong>Dosljedna Zaliha:</strong> ITS upravlja kovanjem i spaljivanjem kako bi održao konstantnu ukupnu zalihu preko svih lanaca.",
         "point4": "<strong>Provjerena Logika:</strong> Izgrađeno na industrijski standardnim bibliotekama OpenZeppelin i Axelar."
@@ -229,20 +219,20 @@
         "lpLockedDesc": "PancakeSwap likvidnosni bazen sadrži BNBTiger tokene uparene s BNB-om. Kada se LP tokeni spale (pošalju na mrtvu adresu), temeljni tokeni u bazenu postaju trajno zaključani.",
         "lpBurnedPercent": "LP tokena spaljeno: 86.18% svih LP tokena",
         "lpLockedPercent": "Stoga je 86.18% tokena u LP-u trajno zaključano",
-        "note": "<strong>Napomena:</strong> TigerOG održava omjer 1:1 s BNBTigerom tijekom migracije. Cirkulirajuća zaliha TigerOG-a odgovara stvarnoj cirkulirajućoj zalihi BNBTigera nakon što se uzmu u obzir svi spaljeni i zaključani tokeni.",
+        "note": "<strong>Napomena:</strong> TigerOG održava omjer 1:1 s BNBTigerom tijekom pretvorbe. Cirkulirajuća zaliha TigerOG-a odgovara stvarnoj cirkulirajućoj zalihi BNBTigera nakon što se uzmu u obzir svi spaljeni i zaključani tokeni.",
         "launchData": "<strong>Podaci o lansiranju:</strong> Ove brojke izračunate su pri lansiranju. Stari BNBTiger token nastavlja spaljivati tokene pri svakoj kupnji/prodaji, pa stvarna cirkulirajuća zaliha može biti nešto niža od prikazane.",
         "legacyContract": "Ugovor BNBTiger Tokena",
         "ogContract": "Ugovor TigerOG Tokena",
         "amounts": {
-          "original": "10,000,000,000,000,000,000,000,000",
-          "dead": "−5,772,706,396,234,535,780,783,775",
-          "deadPercent": "57.73%",
-          "contract": "−6,142,342,823,271,327",
-          "contractPercent": "<0.01%",
-          "lp": "−565,059,839,948,518,979,124,912",
-          "lpPercent": "5.65%",
-          "circulating": "3,662,233,757,674,602,416,819,986",
-          "circulatingPercent": "36.62%"
+          "original": "10.000.000.000.000.000.000.000.000",
+          "dead": "−5.772.706.396.234.535.780.783.775",
+          "deadPercent": "57,73%",
+          "contract": "−6.142.342.823.271.327",
+          "contractPercent": "<0,01%",
+          "lp": "−565.059.839.948.518.979.124.912",
+          "lpPercent": "5,65%",
+          "circulating": "3.662.233.757.674.602.416.819.986",
+          "circulatingPercent": "36,62%"
         }
       },
       "lionogSupply": {
@@ -254,20 +244,20 @@
         "lpLockedDesc": "PancakeSwap likvidnosni bazen sadrži BNBLion tokene uparene s BNB-om. Kada se LP tokeni spale (pošalju na mrtvu adresu), temeljni tokeni u bazenu postaju trajno zaključani.",
         "lpBurnedPercent": "LP tokena spaljeno: 99.98% svih LP tokena",
         "lpLockedPercent": "Stoga je 99.98% tokena u LP-u trajno zaključano",
-        "note": "<strong>Napomena:</strong> LionOG održava omjer 1:1 s BNBLionom tijekom migracije. Cirkulirajuća zaliha LionOG-a odgovara stvarnoj cirkulirajućoj zalihi BNBLiona nakon što se uzmu u obzir svi spaljeni i zaključani tokeni.",
+        "note": "<strong>Napomena:</strong> LionOG održava omjer 1:1 s BNBLionom tijekom pretvorbe. Cirkulirajuća zaliha LionOG-a odgovara stvarnoj cirkulirajućoj zalihi BNBLiona nakon što se uzmu u obzir svi spaljeni i zaključani tokeni.",
         "launchData": "<strong>Podaci o lansiranju:</strong> Ove brojke izračunate su pri lansiranju. Stari BNBLion token nastavlja spaljivati tokene pri svakoj kupnji/prodaji, pa stvarna cirkulirajuća zaliha može biti nešto niža od prikazane.",
         "legacyContract": "Ugovor BNBLion Tokena",
         "ogContract": "Ugovor LionOG Tokena",
         "amounts": {
-          "original": "10,000,000,000,000,000,000,000,000",
-          "dead": "−5,724,597,218,422,106,614,085,614",
-          "deadPercent": "57.25%",
-          "contract": "−9,219,967,745,410,740,095,290",
-          "contractPercent": "<0.01%",
-          "lp": "−442,490,152,327,271,918,655,109",
-          "lpPercent": "4.42%",
-          "circulating": "3,832,903,409,282,876,056,519,182",
-          "circulatingPercent": "38.33%"
+          "original": "10.000.000.000.000.000.000.000.000",
+          "dead": "−5.724.597.218.422.106.614.085.614",
+          "deadPercent": "57,25%",
+          "contract": "−9.219.967.745.410.740.095.290",
+          "contractPercent": "<0,01%",
+          "lp": "−442.490.152.327.271.918.655.109",
+          "lpPercent": "4,42%",
+          "circulating": "3.832.903.409.282.876.056.519.182",
+          "circulatingPercent": "38,33%"
         }
       },
       "frogogSupply": {
@@ -279,20 +269,20 @@
         "lpLockedDesc": "PancakeSwap likvidnosni bazen sadrži BNBFrog tokene uparene s BNB-om. Kada se LP tokeni spale (pošalju na mrtvu adresu), temeljni tokeni u bazenu postaju trajno zaključani.",
         "lpBurnedPercent": "LP tokena spaljeno: 99.31% svih LP tokena",
         "lpLockedPercent": "Stoga je 99.31% tokena u LP-u trajno zaključano",
-        "note": "<strong>Napomena:</strong> FrogOG održava omjer 1:1 s BNBFrogom tijekom migracije. Cirkulirajuća zaliha FrogOG-a odgovara stvarnoj cirkulirajućoj zalihi BNBFroga nakon što se uzmu u obzir svi spaljeni i zaključani tokeni.",
+        "note": "<strong>Napomena:</strong> FrogOG održava omjer 1:1 s BNBFrogom tijekom pretvorbe. Cirkulirajuća zaliha FrogOG-a odgovara stvarnoj cirkulirajućoj zalihi BNBFroga nakon što se uzmu u obzir svi spaljeni i zaključani tokeni.",
         "launchData": "<strong>Podaci o lansiranju:</strong> Ove brojke izračunate su pri lansiranju. Stari BNBFrog token nastavlja spaljivati tokene pri svakoj kupnji/prodaji, pa stvarna cirkulirajuća zaliha može biti nešto niža od prikazane.",
         "legacyContract": "Ugovor BNBFrog Tokena",
         "ogContract": "Ugovor FrogOG Tokena",
         "amounts": {
-          "original": "10,000,000,000,000,000,000,000,000",
-          "dead": "−740,059,884,911,899,485,982,976",
-          "deadPercent": "7.40%",
-          "contract": "−4,036,008,092,593,983,879,741",
-          "contractPercent": "<0.01%",
-          "lp": "−874,144,424,929,004,044,398,902",
-          "lpPercent": "8.74%",
-          "circulating": "8,385,795,686,123,088,377,024,138",
-          "circulatingPercent": "83.86%"
+          "original": "10.000.000.000.000.000.000.000.000",
+          "dead": "−740.059.884.911.899.485.982.976",
+          "deadPercent": "7,40%",
+          "contract": "−4.036.008.092.593.983.879.741",
+          "contractPercent": "<0,01%",
+          "lp": "−874.144.424.929.004.044.398.902",
+          "lpPercent": "8,74%",
+          "circulating": "8.385.795.686.123.088.377.024.138",
+          "circulatingPercent": "83,86%"
         }
       }
     }
@@ -301,17 +291,47 @@
     "title": "Adrese ugovora",
     "header": {
       "title": "Pametni ugovori",
-      "subtitle": "Službene adrese za implementaciju tokena, usmjerivača i likvidnosnih bazena u ekosustavu Mosta Slobode."
+      "subtitle": "Službene adrese za implementaciju tokena i mostova u ekosustavu Mosta Slobode."
     },
     "tabs": {
       "overview": "Pregled",
       "byToken": "Po tokenu",
-      "byChain": "Po lancu",
-      "liquidity": "Likvidnost"
+      "byChain": "Po lancu"
     },
-    "liquidity": {
-      "title": "Likvidnosni bazeni"
-    }
+    "overview": {
+      "interchainTokens": {
+        "title": "Interchain Tokeni",
+        "description": "Interchain tokeni implementirani putem Axelar Interchain Token Service (ITS). Ovi tokeni održavaju dosljedne adrese preko svih podržanih mreža."
+      },
+      "axelarNetwork": {
+        "title": "Axelar Mreža",
+        "description": "Temeljni protokol za razmjenu poruka koji osigurava prijenose preko lanaca i jamči integritet podataka između različitih blockchaina."
+      },
+      "conversionContracts": {
+        "title": "Ugovori za Pretvorbu",
+        "description": "Odgovorni za pretvorbu starih tokena u interchain imovinu. Ovi ugovori obrađuju logiku deponiranja i kovanja na izvornom lancu."
+      },
+      "conversionContractsTable": {
+        "title": "Adrese Ugovora za Pretvorbu",
+        "subtitle": "Ovi ugovori na BSC-u obrađuju pretvorbu iz starih tokena u interchain tokene.",
+        "token": "Token",
+        "legacyToken": "Stari Token",
+        "conversionContract": "Ugovor za Pretvorbu",
+        "newToken": "Interchain Token"
+      }
+    },
+    "filterTokens": "Filtriraj tokene...",
+    "interchainAsset": "Interchain imovina putem Axelar ITS",
+    "availableOnChains": "Dostupno na {{count}} lanaca",
+    "table": {
+      "chain": "Lanac",
+      "tokenAddress": "Adresa tokena",
+      "axelarChainName": "Axelar naziv lanca",
+      "chainId": "ID: {{id}}"
+    },
+    "axelarId": "Axelar ID: {{name}}",
+    "copied": "Kopirano!",
+    "copyAddress": "Kopiraj adresu"
   },
   "faq": {
     "title": "Podrška za Most Slobode",
@@ -325,21 +345,21 @@
     },
     "questions": {
       "q1": "Koja je svrha pretvorbe mojih tokena?",
-      "a1": "Pretvorbom vaših tokena u TigerOG uklanja se porez na transakcije (često 10-12%) povezan sa starim tokenom. Također vam omogućuje premošćivanje tih tokena na druge blockchaine poput Ethereum, Basea i drugih putem Axelara, omogućavajući pristup novim ekosustavima.",
+      "a1": "Pretvorbom vaših tokena u TigerOG uklanja se porez na transakcije (često 10-12%) povezan sa starim tokenom. Također vam omogućuje premošćivanje tih tokena na druge blockchaine poput Ethereum, Base i drugih putem Axelara, omogućavajući pristup novim ekosustavima.",
       "q2": "Je li sigurno koristiti Most Slobode?",
-      "a2": "Da. Protokol koristi siguran Migracijski ugovor i Axelar Interchain Token Service. Kada pretvarate, vaš BNBTiger se trajno spaljuje i primate TigerOG u omjeru 1:1. Mehanizam spaljivanja osigurava da se ukupnom zalihom pravilno upravlja preko svih lanaca.",
+      "a2": "Da. Protokol koristi siguran Ugovor za pretvorbu i Axelar Interchain Token Service. Kada pretvarate, vaš BNBTiger se trajno spaljuje i primate TigerOG u omjeru 1:1. Mehanizam spaljivanja osigurava da se ukupnom zalihom pravilno upravlja preko svih lanaca.",
       "q3": "Ima li ikakvih naknada?",
       "a3": "Sam Most Slobode ne naplaćuje naknadu za pretvorbu. Plaćate samo standardne naknade za plin blockchaina. Premošćivanje između lanaca uključuje naknadu za plin preko lanca plaćenu Axelaru za pokrivanje troškova prosljeđivanja.",
       "q4": "Što se događa ako izgubim svoje tokene?",
       "a4": "TigerOG tokeni ponašaju se kao i svaki drugi ERC20 token. Ako izgubite pristup svom novčaniku, oni se ne mogu povratiti. Uvijek čuvajte svoje privatne ključeve i fraze za oporavak sigurnima.",
       "q5": "Mogu li pretvoriti svoje TigerOG tokene natrag u BNBTiger?",
-      "a5": "Ne. Migracija je jednosmjerna pretvorba. Kada pretvorite BNBTiger u TigerOG, vaši BNBTiger tokeni trajno se spaljuju (šalju na mrtvu adresu). To je po dizajnu — TigerOG je nadograđena verzija bez poreza namijenjena potpunoj zamjeni starog tokena.",
+      "a5": "Ne. Pretvorba je jednosmjerna. Kada pretvorite BNBTiger u TigerOG, vaši BNBTiger tokeni trajno se spaljuju (šalju na mrtvu adresu). To je po dizajnu — TigerOG je nadograđena verzija bez poreza namijenjena potpunoj zamjeni starog tokena.",
       "q6": "Koje su mreže podržane?",
       "a6": "Podržavamo više EVM lanaca putem Axelara, uključujući BNB Chain, Ethereum, Base i druge. Provjerite Wiki za potpuni popis podržanih mreža.",
       "q7": "Koliko dugo traje premošćivanje?",
       "a7": "Brzina premošćivanja ovisi o konačnosti izvornog lanca i Axelarovom prosljeđivanju. Obično prijenos između lanaca traje oko 2-5 minuta.",
       "q8": "Koje su cirkulirajuće zalihe OG tokena?",
-      "a8": "Svaki OG token ima fiksnu cirkulirajuću zalihu izvedenu iz svog originalnog BNB tokena, uzimajući u obzir spaljene tokene, zaglavljene salde ugovora i zaključani LP. TigerOG: ~3.66 septilijuna (36.62% originala). LionOG: ~3.83 septilijuna (38.33% originala). FrogOG: ~8.39 septilijuna (83.86% originala). Pogledajte Wiki za detaljne raspodjele svakog tokena."
+      "a8": "Svaki OG token ima fiksnu cirkulirajuću zalihu izvedenu iz svog originalnog BNB tokena, uzimajući u obzir spaljene tokene, zaglavljene salde ugovora i zaključani LP. TigerOG: ~3,66 septilijuna (36,62% originala). LionOG: ~3,83 septilijuna (38,33% originala). FrogOG: ~8,39 septilijuna (83,86% originala). Pogledajte Wiki za detaljne raspodjele svakog tokena."
     }
   },
   "common": {

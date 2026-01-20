@@ -1,143 +1,131 @@
 {
   "app": {
-    "titleFreedom": "Ahofadi",
-    "titleBridge": "Nkabom"
+    "titleFreedom": "Freedom",
+    "titleBridge": "Bridge"
   },
   "nav": {
     "settings": "Nhyehyɛe",
     "menu": "Menu",
-    "preferences": "Apɛdeɛ",
-    "switchTheme": "Sesa Nsusuiɛ",
+    "preferences": "Nea Wopɛ",
+    "switchTheme": "Sesa Ɔhwɛ",
     "theme": {
       "dark": "Tuntum",
       "light": "Hann"
     },
-    "switchPalette": "Sesa Ahosu",
+    "switchPalette": "Sesa Kɔla",
     "wiki": "Nkyerɛkyerɛ / Wiki",
-    "contracts": "Apam",
-    "faq": "Nsɛmmisa a Wɔtaa Bisa",
-    "logout": "Fi adi",
+    "contracts": "Kontrakt",
+    "faq": "Nsɛmbisa",
     "language": "Kasa",
     "languageSearchPlaceholder": "Hwehwɛ kasa",
-    "languageNoResults": "Wonhuu kasa biara",
-    "close": "To mu"
+    "languageNoResults": "Yɛnhuu kasa biara",
+    "close": "Ka mu"
   },
   "addNetworks": {
-    "title": "Fa Networks Ka Ho",
-    "description": "Mia button a ɛwɔ aseɛ ha de Fa Networks ka wo wallet ho. Eyi ma no yɛ mmerɛ sɛ wobɛsesa chains ntam bere a woreyɛ nsɔhwɛ."
+    "title": "Fa Networks Ka Wo Wallet Ho",
+    "description": "Klik network biara de fa ka MetaMask, Rabby anaa Web3 wallet foforo ho",
+    "searchPlaceholder": "Hwehwɛ networks...",
+    "noResults": "Yɛnhuu network biara",
+    "networkCount": "network"
+  },
+  "addNetwork": {
+    "connectWallet": "Fa wo wallet bɔ mu kane",
+    "alreadyPending": "Wɔretwɛn dada. Hwɛ wo wallet.",
+    "error": "Antumi amfa network anka ho. Bɔ mmɔden fa ka ho wɔ wo nsa so.",
+    "adding": "Refa ka ho...",
+    "button": "Fa Ka Ho"
   },
   "tabs": {
-    "convert": "Yi fi buw mu / Fa buw mu",
-    "bridge": "Nkabom"
+    "convert": "Sesa",
+    "bridge": "Twa Mu"
   },
   "convert": {
-    "token": "Token",
-    "selectToken": "Yi Token",
-    "balance": "Nea wowɔ",
-    "noConvertibleTokens": "Token a wobɛtumi akyekyere biara nni {{chainName}} so",
-    "convert": "Kyekyere",
-    "addToWalletLabel": "Fa {{symbol}} a ɛwɔ {{chainName}} so kɔ wallet mu",
+    "balance": "Nea Wowɔ",
     "addToWalletButton": "Fa Kɔ Wallet Mu",
-    "addingToken": "ReFa aka ho...",
-    "addTokenError": "Antumi amfa token ankɔ wallet mu",
-    "legacyTokenMissing": "Tete token nni chain yi so",
-    "tigerOGMissing": "TigerOG token nni chain yi so",
     "networkWarning": {
-      "title": "Network a Ɛnteɛ",
-      "message": "Buw mu kɔ ne buw mu fi yɛ adwuma wɔ BSC Chain nko ara so.",
-      "description": "Yɛsrɛ wo kɔ BSC Chain so wɔ wo wallet mu sɛ wopɛ sɛ wokyekyere tokens, anaa kɔ Nkabom tab no so sɛ wopɛ sɛ wode tokens fi chain baako so kɔ foforo so."
+      "title": "Network Foforo",
+      "message": "Wobɛtumi asesa tokens wɔ BSC Chain nkoa so. Kɔ BSC so na sesa wo tokens tete."
     }
   },
   "bridge": {
-    "fromChain": "Efi Chain",
-    "selectChainPlaceholder": "Yi chain",
-    "toChain": "Kɔ Chain",
-    "selectDestinationPlaceholder": "Yi baabi a worekɔ",
-    "noDestination": "Baabi a worekɔ nni hɔ",
-    "noBridgeableTokens": "Token a wobɛtumi de atwa nkabom biara nni hɔ",
-    "bridgeButton": "Fa Token Twa Nkabom",
-    "getFeeQuote": "Nya Aka a Wɔbɔ",
-    "viewOnAxelarscan": "Hwɛ wɔ Axelar Explorer so",
-    "addDestinationTokenLabel": "Fa {{symbol}} a ɛwɔ {{chainName}} so kɔ wallet mu",
+    "fromChain": "Efi",
+    "selectChainPlaceholder": "Yi network",
+    "toChain": "Ɛkɔ",
+    "selectDestinationPlaceholder": "Yi baabi a ɛrekɔ",
+    "noDestination": "Baabi nni hɔ",
+    "noBridgeableTokens": "Token biara nni hɔ a yɛde bɛtwa mu",
+    "bridgeButton": "Twa Tokens Mu",
+    "viewOnAxelarscan": "Hwɛ wɔ Axelarscan",
     "addTokenError": "Antumi amfa token ankɔ wallet mu",
-    "estimatedTime": "Bere a wɔbu",
-    "recentTransactions": "Nneɛma a yɛayɛ nkyɛe",
+    "estimatedTime": "Bere a ɛbɛgye",
+    "recentTransactions": "Nea Wɔayɛ Nkyɛ Yi",
     "clearHistory": "Popa abakɔsɛm",
-    "historyStoredLocally": "Wɔkora sika ho nsɛm so wɔ mfiri yi so"
+    "historyStoredLocally": "Wɔkora abakɔsɛm wɔ wo kɔmputa yi so nkoa"
   },
   "settings": {
     "title": "Nhyehyɛe",
     "environment": "Tebea",
-    "rpcEndpoints": "RPC Awieɛ Ahorow",
-    "rpcEndpointsHelp": "Sesa RPC URL a wɔde di dwuma wɔ chain biara so wɔ tebea a woayi no mu.",
-    "noChainsConfigured": "Chain biara nni hɔ a wɔahyehyɛ ama tebea yi.",
-    "cancel": "Twa to",
-    "save": "Kora so"
-  },
-  "wallet": {},
-  "login": {
-    "title": "Akwaaba bio",
-    "subtitle": "Fa wo ho hyɛ mu na kɔ so wɔ Freedom Bridge",
-    "emailLabel": "Email",
-    "emailPlaceholder": "din@nhwɛsoɔ.com",
-    "passwordLabel": "Password",
-    "passwordPlaceholder": "Hyɛ password",
-    "rememberMe": "Kae me wɔ mfiri yi so",
-    "submit": "Fa wo ho hyɛ mu",
-    "validation": {
-      "required": "Email ne password ho hia.",
-      "invalid": "Email anaa password a ɛnteɛ."
-    }
+    "rpcEndpoints": "RPC Endpoints",
+    "rpcEndpointsHelp": "Sesa RPC URL a wɔde di dwuma wɔ network biara so.",
+    "noChainsConfigured": "Wɔnhyehyɛɛ network biara wɔ tebea yi mu.",
+    "cancel": "Gyae",
+    "save": "Sie"
   },
   "landing": {
     "banner": {
       "title": "Wofoforo ha?",
-      "message": "Sua Freedom Bridge ne sɛdeɛ wobɛyi wo ho afiri token toɔ mu."
+      "message": "Sua Freedom Bridge ho na hu sɛnea wobɛtumi de TigerOG tokens akɔ networks foforo so.",
+      "note": "Hyɛ no nsow: Sɛ wosesa tokens a, wontumi nsan annya wo sika no bio."
     },
     "hero": {
-      "badge": "Axelar na ɛhyɛ akyi",
-      "title": "Yi Wo <1/> <2>Agyapadeɛ</2> Fi Buw Mu",
-      "subtitle": "Fa TigerOG tokens twa nkabom wɔ chains ntam a ɛyɛ mmerɛ na ahobammɔ wɔ mu denam Axelar Interchain Token Service so. Ɛyɛ ntɛm na toɔ nni mu.",
-      "launchApp": "Bue App No",
+      "badge": "Axelar na Ɛhyɛ Akyi",
+      "title": "Gye Wo <1/> <2>Agyapadeɛ</2> Ahofadi",
+      "subtitle": "Fa TigerOG tokens kɔ networks foforo so a ɛyɛ mmerɛ denam Axelar Interchain Token Service so. Ahobammɔ wɔ mu, ɛyɛ ntɛm, na toɔ nni mu.",
+      "launchApp": "Bue App",
       "documentation": "Nkyerɛkyerɛ"
     },
     "stats": {
       "messaging": "Axelar Network",
       "networks": "Networks a Ɛyɛ Adwuma",
       "fees": "Protocol Aka",
-      "finality": "Awieɛ"
+      "finality": "Awieɛ Bere"
     },
     "features": {
       "title": "Interchain Token Service",
-      "description": "Freedom Bridge fa Axelar ITS adwuma de ma nkabom a ɛyɛ mmerɛ, ahobammɔ, ne toɔ a wonntua wɔ blockchains {{count}}+ so.",
+      "description": "Freedom Bridge fa Axelar ITS di dwuma de ma wo betumi de tokens atwa blockchain {{count}}+ so a ahobammɔ wɔ mu na toɔ nni mu.",
       "stopDecay": {
-        "title": "Gyae Porɔe No",
-        "description": "Tete tokens hyew wo boɔ 10-11% wɔ tɔ ne tɔn biara mu. Kyekyere gyae mogya a ɛreba no ntɛm ara, na ɛkora wo tumi a wode tɔ nneɛma so 100% ma adwuma biara.",
+        "title": "Gyae Sika Ho Ahwerase",
+        "description": "Tokens tete hyew wo sika 10-11% sɛ wotɔ anaa wotɔn a. Sesa kɔ TigerOG mu na wo sika nyinaa bɛtena hɔ.",
         "graphLabel1": "100% Wɔakora So (TigerOG)",
-        "graphLabel2": "-40% Boɔ (Tete 10% Toɔ)"
+        "graphLabel2": "-40% Wo Sika (Tete Token 10% Toɔ)"
       },
       "conversion": {
-        "title": "1:1 Nkyekyere",
-        "description": "Nea ɛwɔ hɔ nyinaa nsesa da. Wɔde Tokens to adaka a ahobammɔ wɔ mu mu, na wɔyɛ nea ɛte saa pɛpɛɛpɛ 1:1. Sika a ɛreba no nnyɛ kɛse, nsu a wɔde gu mu nni hɔ."
+        "title": "1:1 Nsesae",
+        "description": "Sika dodow no nsesa da. 1:1 pɛpɛɛpɛ na wɔde di dwuma. Inflation nni hɔ, dilution nni hɔ."
       },
       "multichain": {
-        "title": "Chains Pii",
-        "description": "Yɛ no pɛnkoro, fa di dwuma baabiara. Wo agyapadeɛ yɛ ɔman ba wɔ chains {{count}}+ so a Ethereum, BNB Chain, Base, ne Optimism ka ho."
+        "title": "Networks Pii",
+        "description": "Yɛ no pɛnkoro, fa di dwuma baabiara. Wo token bɛyɛ adwuma wɔ Ethereum, BNB Chain, Base, ne nea ɛkeka ho."
       },
       "security": {
         "title": "Axelar Ahobammɔ",
-        "description": "Axelar ahobammɔ a ɛyɛ modular na ɛhyɛ akyi. ITS hwɛ sɛ wo tokens kɔ baabi a worede kɔ no wɔ ahobammɔ mu wɔ networks nyinaa so.",
-        "button": "Fi Nkabom Ase"
+        "description": "Axelar validators a wɔahyɛ da na ɛhwɛ so. ITS hwɛ sɛ wo tokens bɛkɔ baabi a wopɛ no wɔ ahobammɔ mu.",
+        "button": "Fi Ase"
       }
     },
-    "teaser": {
-      "title": "Wopɛ sika foforo anaa?",
-      "subtitle": "Adɛn na wususuw <lunc>LUNC</lunc>, <crepe>Crepe</crepe>, anaa <shiba>Shiba</shiba>"
-    },
     "cta": {
-      "title": "Woasiesie wo ho sɛ wobɛbɔ wo ho?",
-      "description": "Fa wo ho bɔ ntam chain anigyeɛ no. Ɛgye miniti baako pɛ sɛ wobɛkyekyere wo agyapadeɛ na woafi nkabom ase.",
-      "button": "Bue App No Seesei"
+      "title": "Woayɛ krado?",
+      "description": "Fa wo ho bɔ interchain revolution no. Ɛgye miniti baako pɛ na woasesa wo tokens na woatumi de atwa mu wɔ Axelar so.",
+      "button": "Bue App Seesei"
+    },
+    "buyTokens": {
+      "badge": "Fi Ase",
+      "title": "Nya Tokens",
+      "description": "Wonni tokens bi? Kɔ tɔ tokens tete wɔ PancakeSwap so, na sesa wɔn kɔ tokens foforo a ɛkɔ networks pii so mu.",
+      "buyOn": "Tɔ wɔ PancakeSwap",
+      "then": "afei",
+      "convertTo": "Sesa kɔ",
+      "buyNow": "Tɔ Seesei"
     }
   },
   "wiki": {
@@ -145,92 +133,95 @@
     "searchPlaceholder": "Hwehwɛ nkyerɛkyerɛ...",
     "header": {
       "title": "Nkyerɛkyerɛ",
-      "subtitle": "Sua sɛdeɛ wobɛkyekyere tete tokens, fa chains ntam, na fa Freedom Bridge ka ho."
+      "subtitle": "Sua sɛnea wobɛsesa tokens tete na wode atwa networks foforo so."
     },
     "nav": {
       "gettingStarted": "Mfiase",
       "coreConcepts": "Nsusuiɛ Titiriw",
       "developers": "Adwumayɛfoɔ",
-      "tigerogSupply": "TigerOG Nkyekyɛmu",
-      "lionogSupply": "LionOG Nkyekyɛmu",
-      "frogogSupply": "FrogOG Nkyekyɛmu"
+      "tigerogSupply": "TigerOG Dodow",
+      "lionogSupply": "LionOG Dodow",
+      "frogogSupply": "FrogOG Dodow",
+      "githubRepo": "GitHub Repository",
+      "axelarDocs": "Axelar ITS Nkyerɛkyerɛ"
     },
     "articles": {
       "whatIs": {
-        "title": "Freedom Bridge yɛ deɛn?",
-        "content": "Freedom Bridge yɛ protocol a ɛnyɛ mfinimfini na wɔayɛ de aboa ma nkabom a ɛda chains ntam, na ɛyɛ adwuma wɔ Axelar Interchain Token Service (ITS) so. Wɔayɛ no sɛ ɛbɛyi tokens afi chain baako anohyetoɔ mu ne transaksie toɔ a ɛyɛ den mu. Sɛ wode tokens kɔ ntam chain agyapadeɛ mu a, wobɛtumi de wo sika akɔ baabiara a wopɛ wɔ blockchains a yɛboa no mu.",
-        "taxFreeTitle": "Nsesa a Toɔ Nni Ho",
-        "taxFreeDesc": "Tete tokens taa kura 10%+ toɔ. TigerOG tokens kura 0% toɔ.",
+        "title": "Deɛn ne Freedom Bridge?",
+        "content": "Freedom Bridge yɛ protocol a wɔde boa ma wobɛtumi asesa tokens tete akɔ tokens foforo a toɔ nni mu na wobɛtumi de akɔ blockchain biara so. Ɛyɛ adwuma wɔ Axelar Interchain Token Service (ITS) so.",
+        "taxFreeTitle": "Toɔ Nni Mu",
+        "taxFreeDesc": "Tokens tete wɔ 10%+ toɔ. TigerOG wɔ 0% toɔ.",
         "omnichainTitle": "Interchain",
-        "omnichainDesc": "Fa wo agyapadeɛ kɔ ntam blockchain {{count}}+ so ntɛm ara denam Axelar so."
+        "omnichainDesc": "Fa wo sika kɔ blockchain {{count}}+ so ntɛm wɔ Axelar so."
       },
       "howToConvert": {
-        "title": "Sɛdeɛ Wɔkyekyere Tokens",
-        "step1": "Fa wo wallet bɔ chain a wode sika no refi aseɛ (nhwɛsoɔ, BNB Chain).",
-        "step2": "Kɔ <strong>Yi fi buw mu / Fa buw mu</strong> tab no so.",
-        "step3": "Yi tete token a wopɛ sɛ wode kɔ TigerOG mu no.",
-        "step4": "Ma Migration contract no kwan sɛ ɛmfa wo tokens nni dwuma.",
-        "step5": "Mia <strong>Kyekyere</strong> de wo tete tokens no bɛto hɔ na woanya TigerOG tokens a ɛne no yɛ pɛ.",
-        "note": "<strong>Hyɛ no nsow:</strong> Wobɛtua tete token no transaksie toɔ (bere a worekyekyere no) sɛ wo token no gye toɔ wɔ nsesa mu a. Nanso, sɛ wode kɔ TigerOG mu wie a, transaksie biara a wobɛyɛ akyiri yi no toɔ biara nni mu."
+        "title": "Sɛnea Wobɛsesa Tokens",
+        "step1": "Fa wo wallet bɔ network a wode refi aseɛ no (sɛ BNB Chain).",
+        "step2": "Kɔ <strong>Sesa</strong> tab no so.",
+        "step3": "Yi token tete a wopɛ sɛ wosesa no.",
+        "step4": "Ma Conversion contract kwan sɛ ɛmfa wo tokens ndi dwuma.",
+        "step5": "Klik <strong>Sesa</strong> na woanya TigerOG tokens a ɛne nea wode bae no yɛ pɛ.",
+        "note": "<strong>Hyɛ no nsow:</strong> Sɛ wo token tete gye toɔ a, wobɛtua toɔ no bere a woresa no. Nanso woasesa wie a, toɔ biara nni mu bio."
       },
       "supportedNetworks": {
-        "title": "Networks a Ɛwɔ Hɔ",
-        "content": "Freedom Bridge boa blockchains {{count}}+ a ɛrekɔ anim, na ɛma nkabom a ɛyɛ mmerɛ ba EVM baabiara denam Axelar so."
+        "title": "Networks a Yɛboa",
+        "content": "Freedom Bridge boa blockchain {{count}}+ a ɛrekɔ anim, na ɛma wobɛtumi de tokens akɔ baabiara wɔ Axelar so."
       },
       "xerc20": {
         "title": "Interchain Tokens",
-        "content": "Axelar Interchain Token Service (ITS) ma kwan ma wɔde tokens kɔ chains pii so a address no nsesa na sika dodow no yɛ baako. Freedom Bridge fa ITS di dwuma de hwɛ sɛ TigerOG yɛ agyapadeɛ titiriw baabiara a wobɛde akɔ."
+        "content": "Axelar Interchain Token Service (ITS) ma wobɛtumi de tokens akɔ networks pii so a address no yɛ baako na sika dodow no yɛ pɛ. Freedom Bridge fa ITS di dwuma de hwɛ sɛ TigerOG bɛyɛ adwuma baabiara a wode bɛkɔ."
       },
       "axelar": {
         "title": "Axelar Network",
-        "content": "Yɛde Axelar di dwuma sɛ yɛn nkabom layer. Axelar yɛ network a ɛnyɛ mfinimfini a ɛka blockchains ahorow bom, na ɛma nkitahodi ne agyapadeɛ nsesa a ahobammɔ wɔ mu kɔ so. Axelar ahobammɔ gyina validators bi a wɔnni kwan soronko so, na ɛma ahobammɔ a ɛyɛ den ma interchain tokens."
+        "content": "Yɛde Axelar di dwuma de ka blockchains ahorow bom. Axelar yɛ network a ɛnyɛ mfinimfini a ɛma sika ne nsɛm bɛtumi atwa networks pii so wɔ ahobammɔ mu. Validators a wonni onipa biara ase na ɛhwɛ so.",
+        "point4": "<strong>Koodu a Wɔahwehwɛ Mu:</strong> Wɔde Axelar ne OpenZeppelin a yɛn nyinaa nim na ɛyɛe."
       },
-      "migration": {
-        "title": "Nkyekyere Logic",
-        "content": "Migration contract no wɔ chain a tete token no fii aseɛ (nhwɛsoɔ, BSC). Ɛkura tete tokens no mu. Sɛ wode tokens no kɔ TigerOG mu a, wode refa migration contract no mu. Sɛ woyi fi mu a, wode TigerOG tokens no rehyew na woanya tete tokens no afi migration contract no mu. Eyi hwɛ sɛ TigerOG ne tete token no dodow bɛyɛ pɛ 1:1 bere biara."
+      "conversion": {
+        "title": "Sɛnea Nsesae No Yɛ Adwuma",
+        "content": "Conversion contract no wɔ BSC so. Sɛ wosesa a, wɔde wo tokens tete kɔ dead address (wɔhyew no koraa) na wonya TigerOG 1:1. Eyi yɛ akwantu baako — wo tokens tete no asɛe na wontumi nnya bio."
       },
       "contracts": {
-        "title": "Apam Address Ahorow",
+        "title": "Smart Contract Addresses",
         "colNetwork": "Network",
-        "colType": "Apam Su",
+        "colType": "Contract Su",
         "colAddress": "Address"
       },
       "security": {
-        "title": "Ahobammɔ Model",
-        "content": "Ahobammɔ yɛ biribi a ɛhia paa wɔ Freedom Bridge:",
-        "point1": "<strong>Migration Architecture:</strong> Wɔkora tete tokens so wɔ slim kontrakts a wɔahwehwɛ mu na ɛnsesa.",
-        "point2": "<strong>Axelar Validators:</strong> Axelar network na ɛhwɛ nkrasɛm a ɛda chains ntam no so.",
-        "point3": "<strong>Sika Dodow a Ɛnsesa:</strong> ITS hwɛ sɛ dodow a wɔhyew ne nea wɔyɛ foforo no bɛyɛ pɛ na sika dodow no ansan da.",
-        "point4": "<strong>Logic a Wɔahwehwɛ Mu:</strong> Wɔde Axelar ne OpenZeppelin nhyehyɛe na ɛyɛe."
+        "title": "Ahobammɔ",
+        "content": "Ahobammɔ wɔ Freedom Bridge mu baabiara:",
+        "point1": "<strong>Conversion Architecture:</strong> Wɔhyew tokens tete koraa wɔ smart contracts a wɔahwehwɛ mu na wontumi nsesa mu.",
+        "point2": "<strong>Axelar Validators:</strong> Axelar validators hwɛ nsɛm a ɛtwa networks ntam so.",
+        "point3": "<strong>Sika Dodow a Ɛnsesa:</strong> ITS hwɛ sɛ sika dodow no bɛyɛ pɛ wɔ networks nyinaa so.",
+        "point4": "<strong>Koodu a Wɔahwehwɛ Mu:</strong> Wɔde Axelar ne OpenZeppelin a yɛn nyinaa nim na ɛyɛe."
       },
       "supplyCommon": {
-        "howWeCalculated": "Sɛdeɛ Yɛbui",
+        "howWeCalculated": "Sɛnea Yɛbui Eyi",
         "verification": "Nhwehwɛmu",
-        "verificationDesc": "Wobɛtumi ahwehwɛ sika nonta nyinaa mu wɔ chain so:",
+        "verificationDesc": "Wobɛtumi ahwehwɛ sika dodow yi nyinaa wɔ blockchain no so:",
         "table": {
           "category": "Nkyekyɛmu",
           "amount": "Dodow",
-          "percentOfTotal": "% of Ne Nyinaa",
-          "originalSupply": "Mfiase Sika Dodow",
-          "deadAddress": "Address a Awu (Wɔahyew)",
-          "contractBalance": "Contract Balance (Esi)",
-          "circulatingSupply": "Sika a Ɛredidi Mu"
+          "percentOfTotal": "% wɔ Nyinaa Mu",
+          "originalSupply": "Sika Dodow a Ɛwɔ Mfiase",
+          "deadAddress": "Dead Address (Wɔahyew)",
+          "contractBalance": "Nea Ɛsi Contract Mu",
+          "circulatingSupply": "Nea Ɛredidi Adwuma"
         },
-        "deadAddressTitle": "1. Address a Awu",
+        "deadAddressTitle": "1. Dead Address",
         "contractBalanceTitle": "2. Contract Balance",
         "lpLockedTitle": "3. LP Tokens a Wɔato Mu"
       },
       "tigerogSupply": {
-        "title": "TigerOG Nkyekyɛmu",
-        "intro": "TigerOG wɔ sika a ɛredidi mu a ɛnsesa a efi BNBTiger token a ɛwɔ hɔ dada no mu. Nkontabuo no fa tokens a wɔahyew ne nea wɔato mu koraa nyinaa ka ho.",
-        "lpLocked": "LP Wɔato Mu (86.18% of LP Wɔahyew)",
-        "deadAddressDesc": "Tokens a wɔde kɔ <code>0x000...dEaD</code> no wɔahyew no koraa na wontumi nsan nnya. Eyi kɔ BNBTiger toɔ nhyehyɛe no mu nea wɔahyew.",
-        "contractBalanceDesc": "Tokens kakraa bi asi BNBTiger contract no ankasa mu. Tokens yi nni hɔ na wɔayi afi nea ɛredidi mu.",
-        "lpLockedDesc": "PancakeSwap liquidity pool no wɔ BNBTiger tokens ne BNB. Sɛ wɔhyew LP tokens (wɔde kɔ address a awu no) a, tokens a ɛwɔ pool no mu no to mu koraa.",
-        "lpBurnedPercent": "LP tokens a wɔahyew: 86.18% of LP tokens nyinaa",
-        "lpLockedPercent": "Enti, 86.18% of tokens a ɛwɔ LP no mu no wɔato mu koraa",
-        "note": "<strong>Hyɛ no nsow:</strong> TigerOG kura 1:1 ratio ne BNBTiger wɔ nsesa no mu. TigerOG a ɛredidi mu no ne BNBTiger a ɛredidi mu nokware no yɛ pɛ bere a wɔabu nea wɔahyew ne nea wɔato mu nyinaa.",
-        "launchData": "<strong>Launch Data:</strong> Wɔbui nonta yi wɔ mfiase. BNBTiger token dedaw no kɔ so hyew tokens wɔ tɔ/tɔn biara mu, enti nea ɛredidi mu no betumi asuane kakra asene nea wɔakyerɛ no.",
+        "title": "TigerOG Sika Dodow",
+        "intro": "TigerOG wɔ sika dodow a ɛnsesa a efi BNBTiger token no mu. Yɛabu tokens a wɔahyew ne nea wɔato mu nyinaa.",
+        "lpLocked": "LP Wɔato Mu (86.18% na Wɔahyew)",
+        "deadAddressDesc": "Tokens a wɔde kɔɔ <code>0x000...dEaD</code> no wɔahyew no koraa. Wontumi nsan nnya da. BNBTiger toɔ mechanism no hyew nea ɛka ho.",
+        "contractBalanceDesc": "Tokens kakraa bi si BNBTiger contract no mu. Yɛntumi mfa nni dwuma.",
+        "lpLockedDesc": "PancakeSwap liquidity pool no wɔ BNBTiger tokens ne BNB. Sɛ wɔhyew LP tokens (wɔde kɔ dead address) a, tokens a ɛwɔ pool no mu no to mu daa.",
+        "lpBurnedPercent": "LP tokens a wɔahyew: 86.18%",
+        "lpLockedPercent": "Ɛno nti, 86.18% wɔ LP no mu no wɔato mu daa",
+        "note": "<strong>Hyɛ no nsow:</strong> TigerOG ne BNBTiger yɛ 1:1 pɛpɛɛpɛ. TigerOG a ɛredidi adwuma no ne BNBTiger a ɛredidi adwuma nokware no yɛ pɛ.",
+        "launchData": "<strong>Launch Data:</strong> Yɛbui eyi wɔ mfiase. BNBTiger tete no kɔ so hyew tokens wɔ tɔ/tɔn biara mu, enti nea ɛredidi adwuma no bɛtumi asuane kakra.",
         "legacyContract": "BNBTiger Token Contract",
         "ogContract": "TigerOG Token Contract",
         "amounts": {
@@ -246,16 +237,16 @@
         }
       },
       "lionogSupply": {
-        "title": "LionOG Nkyekyɛmu",
-        "intro": "LionOG wɔ sika a ɛredidi mu a ɛnsesa a efi BNBLion token a ɛwɔ hɔ dada no mu. Nkontabuo no fa tokens a wɔahyew ne nea wɔato mu koraa nyinaa ka ho.",
-        "lpLocked": "LP Wɔato Mu (99.98% of LP Wɔahyew)",
-        "deadAddressDesc": "Tokens a wɔde kɔ <code>0x000...dEaD</code> no wɔahyew no koraa na wontumi nsan nnya. Eyi kɔ BNBLion toɔ nhyehyɛe no mu nea wɔahyew.",
-        "contractBalanceDesc": "Tokens kakraa bi asi BNBLion contract no ankasa mu. Tokens yi nni hɔ na wɔayi afi nea ɛredidi mu.",
-        "lpLockedDesc": "PancakeSwap liquidity pool no wɔ BNBLion tokens ne BNB. Sɛ wɔhyew LP tokens (wɔde kɔ address a awu no) a, tokens a ɛwɔ pool no mu no to mu koraa.",
-        "lpBurnedPercent": "LP tokens a wɔahyew: 99.98% of LP tokens nyinaa",
-        "lpLockedPercent": "Enti, 99.98% of tokens a ɛwɔ LP no mu no wɔato mu koraa",
-        "note": "<strong>Hyɛ no nsow:</strong> LionOG kura 1:1 ratio ne BNBLion wɔ nsesa no mu. LionOG a ɛredidi mu no ne BNBLion a ɛredidi mu nokware no yɛ pɛ bere a wɔabu nea wɔahyew ne nea wɔato mu nyinaa.",
-        "launchData": "<strong>Launch Data:</strong> Wɔbui nonta yi wɔ mfiase. BNBLion token dedaw no kɔ so hyew tokens wɔ tɔ/tɔn biara mu, enti nea ɛredidi mu no betumi asuane kakra asene nea wɔakyerɛ no.",
+        "title": "LionOG Sika Dodow",
+        "intro": "LionOG wɔ sika dodow a ɛnsesa a efi BNBLion token no mu. Yɛabu tokens a wɔahyew ne nea wɔato mu nyinaa.",
+        "lpLocked": "LP Wɔato Mu (99.98% na Wɔahyew)",
+        "deadAddressDesc": "Tokens a wɔde kɔɔ <code>0x000...dEaD</code> no wɔahyew no koraa. Wontumi nsan nnya da. BNBLion toɔ mechanism no hyew nea ɛka ho.",
+        "contractBalanceDesc": "Tokens kakraa bi si BNBLion contract no mu. Yɛntumi mfa nni dwuma.",
+        "lpLockedDesc": "PancakeSwap liquidity pool no wɔ BNBLion tokens ne BNB. Sɛ wɔhyew LP tokens (wɔde kɔ dead address) a, tokens a ɛwɔ pool no mu no to mu daa.",
+        "lpBurnedPercent": "LP tokens a wɔahyew: 99.98%",
+        "lpLockedPercent": "Ɛno nti, 99.98% wɔ LP no mu no wɔato mu daa",
+        "note": "<strong>Hyɛ no nsow:</strong> LionOG ne BNBLion yɛ 1:1 pɛpɛɛpɛ. LionOG a ɛredidi adwuma no ne BNBLion a ɛredidi adwuma nokware no yɛ pɛ.",
+        "launchData": "<strong>Launch Data:</strong> Yɛbui eyi wɔ mfiase. BNBLion tete no kɔ so hyew tokens wɔ tɔ/tɔn biara mu, enti nea ɛredidi adwuma no bɛtumi asuane kakra.",
         "legacyContract": "BNBLion Token Contract",
         "ogContract": "LionOG Token Contract",
         "amounts": {
@@ -271,16 +262,16 @@
         }
       },
       "frogogSupply": {
-        "title": "FrogOG Nkyekyɛmu",
-        "intro": "FrogOG wɔ sika a ɛredidi mu a ɛnsesa a efi BNBFrog token a ɛwɔ hɔ dada no mu. Nkontabuo no fa tokens a wɔahyew ne nea wɔato mu koraa nyinaa ka ho.",
-        "lpLocked": "LP Wɔato Mu (99.31% of LP Wɔahyew)",
-        "deadAddressDesc": "Tokens a wɔde kɔ <code>0x000...dEaD</code> no wɔahyew no koraa na wontumi nsan nnya. Eyi kɔ BNBFrog toɔ nhyehyɛe no mu nea wɔahyew.",
-        "contractBalanceDesc": "Tokens kakraa bi asi BNBFrog contract no ankasa mu. Tokens yi nni hɔ na wɔayi afi nea ɛredidi mu.",
-        "lpLockedDesc": "PancakeSwap liquidity pool no wɔ BNBFrog tokens ne BNB. Sɛ wɔhyew LP tokens (wɔde kɔ address a awu no) a, tokens a ɛwɔ pool no mu no to mu koraa.",
-        "lpBurnedPercent": "LP tokens a wɔahyew: 99.31% of LP tokens nyinaa",
-        "lpLockedPercent": "Enti, 99.31% of tokens a ɛwɔ LP no mu no wɔato mu koraa",
-        "note": "<strong>Hyɛ no nsow:</strong> FrogOG kura 1:1 ratio ne BNBFrog wɔ nsesa no mu. FrogOG a ɛredidi mu no ne BNBFrog a ɛredidi mu nokware no yɛ pɛ bere a wɔabu nea wɔahyew ne nea wɔato mu nyinaa.",
-        "launchData": "<strong>Launch Data:</strong> Wɔbui nonta yi wɔ mfiase. BNBFrog token dedaw no kɔ so hyew tokens wɔ tɔ/tɔn biara mu, enti nea ɛredidi mu no betumi asuane kakra asene nea wɔakyerɛ no.",
+        "title": "FrogOG Sika Dodow",
+        "intro": "FrogOG wɔ sika dodow a ɛnsesa a efi BNBFrog token no mu. Yɛabu tokens a wɔahyew ne nea wɔato mu nyinaa.",
+        "lpLocked": "LP Wɔato Mu (99.31% na Wɔahyew)",
+        "deadAddressDesc": "Tokens a wɔde kɔɔ <code>0x000...dEaD</code> no wɔahyew no koraa. Wontumi nsan nnya da. BNBFrog toɔ mechanism no hyew nea ɛka ho.",
+        "contractBalanceDesc": "Tokens kakraa bi si BNBFrog contract no mu. Yɛntumi mfa nni dwuma.",
+        "lpLockedDesc": "PancakeSwap liquidity pool no wɔ BNBFrog tokens ne BNB. Sɛ wɔhyew LP tokens (wɔde kɔ dead address) a, tokens a ɛwɔ pool no mu no to mu daa.",
+        "lpBurnedPercent": "LP tokens a wɔahyew: 99.31%",
+        "lpLockedPercent": "Ɛno nti, 99.31% wɔ LP no mu no wɔato mu daa",
+        "note": "<strong>Hyɛ no nsow:</strong> FrogOG ne BNBFrog yɛ 1:1 pɛpɛɛpɛ. FrogOG a ɛredidi adwuma no ne BNBFrog a ɛredidi adwuma nokware no yɛ pɛ.",
+        "launchData": "<strong>Launch Data:</strong> Yɛbui eyi wɔ mfiase. BNBFrog tete no kɔ so hyew tokens wɔ tɔ/tɔn biara mu, enti nea ɛredidi adwuma no bɛtumi asuane kakra.",
         "legacyContract": "BNBFrog Token Contract",
         "ogContract": "FrogOG Token Contract",
         "amounts": {
@@ -298,67 +289,97 @@
     }
   },
   "contracts": {
-    "title": "Apam Address Ahorow",
+    "title": "Contract Addresses",
     "header": {
-      "title": "Slim Kontrakts",
-      "subtitle": "Nkabom ne tokens addresses a wɔahyehyɛ wɔ Freedom Bridge mu."
+      "title": "Smart Contracts",
+      "subtitle": "Addresses a wɔde tokens ne bridges ahyehyɛ wɔ Freedom Bridge mu."
     },
     "tabs": {
-      "overview": "Nsɛm mmaawa",
-      "byToken": "Denam Token",
-      "byChain": "Denam Chain",
-      "liquidity": "Sika a Esi Mu"
+      "overview": "Nsɛm Tiawa",
+      "byToken": "Token Biara",
+      "byChain": "Network Biara"
     },
-    "liquidity": {
-      "title": "Sika Akoraeɛ (LP)"
-    }
+    "overview": {
+      "interchainTokens": {
+        "title": "Interchain Tokens",
+        "description": "Tokens a wɔde ahyehyɛ wɔ Axelar ITS so. Wɔn address yɛ baako wɔ networks nyinaa so."
+      },
+      "axelarNetwork": {
+        "title": "Axelar Network",
+        "description": "Protocol a ɛhwɛ sɛ sika bɛtwa networks ntam wɔ ahobammɔ mu."
+      },
+      "conversionContracts": {
+        "title": "Conversion Contracts",
+        "description": "Contracts a ɛsesa tokens tete kɔ interchain tokens mu. Wɔyɛ adwuma wɔ BSC so."
+      },
+      "conversionContractsTable": {
+        "title": "Conversion Contract Addresses",
+        "subtitle": "Contracts yi wɔ BSC so na wɔsesa tokens tete kɔ interchain tokens mu.",
+        "token": "Token",
+        "legacyToken": "Token Tete",
+        "conversionContract": "Conversion Contract",
+        "newToken": "Interchain Token"
+      }
+    },
+    "filterTokens": "Hwehwɛ tokens...",
+    "interchainAsset": "Interchain Asset via Axelar ITS",
+    "availableOnChains": "Ɛwɔ networks {{count}} so",
+    "table": {
+      "chain": "Network",
+      "tokenAddress": "Token Address",
+      "axelarChainName": "Axelar Network Din",
+      "chainId": "ID: {{id}}"
+    },
+    "axelarId": "Axelar ID: {{name}}",
+    "copied": "Wɔakopi!",
+    "copyAddress": "Kopi address"
   },
   "faq": {
     "title": "Freedom Bridge Mmoa",
-    "header": "Nsɛmmisa a Wɔtaa Bisa",
-    "subtitle": "Mmuaeɛ ma nsɛmmisa a wɔtaa bisa fa TigerOG, nkabom, ne Axelar ho.",
+    "header": "Nsɛmbisa",
+    "subtitle": "Mmuae ma nsɛm a nnipa taa bisa fa TigerOG, sika a ɛtwa mu, ne Axelar ho.",
     "cta": {
-      "title": "Wopɛ sɛ wubisa biribi foforo?",
-      "description": "Fa wo ho bɔ yɛn community wɔ Telegram so anaa hwɛ Wiki no ma nkyerɛkyerɛ a ɛkɔ akyiri.",
-      "wiki": "Kɔ Wiki No So",
-      "telegram": "Fa Wo Ho Bɔ Telegram"
+      "title": "Wowɔ nsɛm foforo?",
+      "description": "Fa wo ho bɔ yɛn community wɔ Telegram so anaa hwɛ Wiki no ma nsɛm pii.",
+      "wiki": "Kɔ Wiki So",
+      "telegram": "Bɔ Telegram Mu"
     },
     "questions": {
-      "q1": "Adɛn nti na ɛsɛ sɛ mekyekyere me tokens?",
-      "a1": "Sɛ wode wo tokens kɔ TigerOG mu a, transaksie toɔ (taa yɛ 10-12%) a ɛwɔ tete token no ho no fi hɔ. Eyi nso ma kwan ma wode tokens yi kɔ blockchains foforo so te sɛ Ethereum, Base, ne nea ɛkeka ho denam Axelar so.",
-      "q2": "So ahobammɔ wɔ Freedom Bridge dwumadie mu?",
-      "a2": "Aane. Protocol no fa Migration contract a ahobammɔ wɔ mu ne Axelar Interchain Token Service adwuma. Sɛ wode kɔ TigerOG mu a, wɔhyew wo BNBTiger koraa na woanya TigerOG 1:1. Eyi hwɛ sɛ sika dodow no bɛyɛ pɛ wɔ chains nyinaa so.",
-      "q3": "So aka bi wɔ mu?",
-      "a3": "Freedom Bridge nnye sika biara wɔ nkyekyere no ho. Wotua blockchain gas aka a ɛwɔ hɔ dada no nko ara. Sɛ wode sika refi chain baako kɔ foforo so a, wotua ntam chain gas aka ma Axelar.",
-      "q4": "Sɛ me tokens yera a, dɛn na ɛbɛsi?",
-      "a4": "TigerOG tokens yɛ ERC20 tokens pɛpɛɛpɛ. Sɛ wo wallet kwan yera a, wontumi nnya sika no bio. Kae wo private keys ne recovery phrases bere biara.",
-      "q5": "So mebetumi asan de me TigerOG tokens akɔ BNBTiger mu?",
-      "a5": "Dabi. Nkyekyere yi yɛ akwantuo baako. Sɛ wode BNBTiger kɔ TigerOG mu a, wɔahyew wo BNBTiger no koraa. Wɔayɛ no saa na TigerOG adi tete token no anammu koraa a toɔ biara nni mu.",
-      "q6": "Networks bɛn na yɛboa?",
-      "a6": "Yɛboa EVM chains pii denam Axelar so, a BNB Chain, Ethereum, Base, ne nea ɛkeka ho ka ho. Hwɛ Wiki no na wubehu nyinaa.",
-      "q7": "Nkabom no gye bere dodow bɛn?",
-      "a7": "Ntɛm a nkabom no bɛyɛ no gyina chain a wode refi aseɛ no ne Axelar so. Taa ɛgye miniti 2-5.",
-      "q8": "TigerOG sika dodow a ɛredidi mu yɛ deɛn?",
-      "a8": "OG token biara wɔ sika a ɛredidi mu a ɛnsesa a efi BNB token a ɛwɔ hɔ dada no mu, a wɔabu tokens a wɔahyew, contract a asi, ne LP a wɔato mu. TigerOG: ~3.66 septillion (36.62% of original). LionOG: ~3.83 septillion (38.33% of original). FrogOG: ~8.39 septillion (83.86% of original). Hwɛ Wiki no ma nkyekyɛmu a ɛkɔ akyiri."
+      "q1": "Adɛn nti na mesesa me tokens?",
+      "a1": "Sɛ wosesa wo tokens kɔ TigerOG mu a, toɔ (taa yɛ 10-12%) a ɛwɔ token tete no ho no fi hɔ. Afei wobɛtumi de tokens yi akɔ blockchains foforo te sɛ Ethereum ne Base so wɔ Axelar so.",
+      "q2": "So Freedom Bridge yɛ safe?",
+      "a2": "Aane. Protocol no fa Conversion contract a ahobammɔ wɔ mu ne Axelar Interchain Token Service di dwuma. Sɛ wosesa a, wɔhyew wo BNBTiger koraa na wonya TigerOG 1:1. Eyi hwɛ sɛ sika dodow no bɛyɛ pɛ wɔ networks nyinaa so.",
+      "q3": "Aka bi wɔ mu?",
+      "a3": "Freedom Bridge nnye sika biara wɔ nsesae no ho. Wotua blockchain gas fees a ɛwɔ hɔ dada nkoa. Sɛ wode sika refi network baako kɔ foforo so a, wotua cross-chain gas fee ma Axelar.",
+      "q4": "Sɛ me tokens yera?",
+      "a4": "TigerOG tokens yɛ ERC20 tokens pɛpɛɛpɛ. Sɛ wo wallet yera a, wontumi nnya sika no bio. Kora wo private keys ne recovery phrases so yie.",
+      "q5": "Mɛtumi asan de TigerOG akɔ BNBTiger mu?",
+      "a5": "Dabi. Nsesae yi kɔ anim nkoa, ɛnsan akyi. Sɛ wosesa BNBTiger kɔ TigerOG mu a, wɔhyew wo BNBTiger no koraa. Wɔyɛɛ no saa na TigerOG adi token tete a toɔ wɔ mu no anammu koraa.",
+      "q6": "Networks bɛn na ɛwɔ hɔ?",
+      "a6": "Yɛboa EVM networks pii wɔ Axelar so — BNB Chain, Ethereum, Base, ne nea ɛkeka ho. Hwɛ Wiki no ma nyinaa.",
+      "q7": "Bere bɛn na ɛgye?",
+      "a7": "Bere a ɛgye no gyina network a wode refi aseɛ no ne Axelar so. Taa ɛgye miniti 2-5.",
+      "q8": "OG tokens sika dodow yɛ sɛn?",
+      "a8": "OG token biara wɔ sika dodow a ɛnsesa a efi BNB token tete mu, a wɔabu nea wɔahyew, nea ɛsi contract mu, ne LP a wɔato mu. TigerOG: ~3.66 septillion (36.62%). LionOG: ~3.83 septillion (38.33%). FrogOG: ~8.39 septillion (83.86%). Hwɛ Wiki no ma nsɛm pii."
     }
   },
   "common": {
     "from": "Fi",
     "to": "Kɔ",
-    "max": "MAKS",
-    "chainId": "Chain ID",
-    "bscChain": "BSC Chain",
-    "insufficientBalance": "Sika nso.",
+    "max": "NYINAA",
+    "chainId": "Network ID",
+    "bscChain": "BSC Network",
+    "insufficientBalance": "Wo sika nso.",
     "failedToSwitchNetwork": "Antumi ansesa network. Sesa wɔ wo wallet mu.",
-    "failedToFetchFeeQuote": "Antumi annya aka a wɔbɔ.",
-    "unableToDetermineGas": "Antumi anhu Axelar gas a wɔbetua",
-    "bridgeTxFailed": "Nkabom no ankɔ so",
-    "estimatedGas": "Axelar gas a wɔbu",
-    "success": "Anyɛ yie!",
-    "viewOnExplorer": "Hwɛ wɔ Explorer so",
-    "bridging": "Rekɔ...",
-    "transactionFailed": "Antumi anyɛ adwuma no",
+    "failedToFetchFeeQuote": "Antumi annya aka.",
+    "unableToDetermineGas": "Antumi anhu Axelar gas a wɔbɛtua",
+    "bridgeTxFailed": "Sika no antumi antwa mu",
+    "estimatedGas": "Axelar gas a yɛbu",
+    "success": "Ayɛ yie!",
+    "viewOnExplorer": "Hwɛ wɔ Explorer",
+    "bridging": "Ɛretwa mu...",
+    "transactionFailed": "Antumi anyɛ",
     "search": "Hwehwɛ",
-    "backToApp": "San Kɔ App No Mu"
+    "backToApp": "San Kɔ"
   }
 }

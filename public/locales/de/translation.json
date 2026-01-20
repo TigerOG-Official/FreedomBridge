@@ -12,11 +12,10 @@
       "dark": "Dunkel",
       "light": "Hell"
     },
-    "switchPalette": "Palette wechseln",
+    "switchPalette": "Farbpalette wechseln",
     "wiki": "Dokumentation / Wiki",
     "contracts": "Verträge",
-    "faq": "Häufig gestellte Fragen",
-    "logout": "Abmelden",
+    "faq": "Häufige Fragen",
     "language": "Sprache",
     "languageSearchPlaceholder": "Sprachen suchen",
     "languageNoResults": "Keine Sprachen gefunden",
@@ -24,28 +23,28 @@
   },
   "addNetworks": {
     "title": "Netzwerke hinzufügen",
-    "description": "Klicken Sie auf eine Schaltfläche unten, um Netzwerke zu Ihrer Wallet hinzuzufügen. Dies erleichtert den Wechsel zwischen den Ketten beim Testen."
+    "description": "Klicke auf ein Netzwerk, um es zu MetaMask, Rabby oder anderen Web3-Wallets hinzuzufügen",
+    "searchPlaceholder": "Netzwerke suchen...",
+    "noResults": "Keine Netzwerke gefunden",
+    "networkCount": "Netzwerk"
+  },
+  "addNetwork": {
+    "connectWallet": "Bitte verbinde zuerst dein Wallet",
+    "alreadyPending": "Anfrage bereits ausstehend. Prüfe dein Wallet.",
+    "error": "Netzwerk konnte nicht hinzugefügt werden. Bitte manuell hinzufügen.",
+    "adding": "Wird hinzugefügt...",
+    "button": "Hinzufügen"
   },
   "tabs": {
     "convert": "Konvertieren",
     "bridge": "Brücke"
   },
   "convert": {
-    "token": "Token",
-    "selectToken": "Token auswählen",
     "balance": "Guthaben",
-    "noConvertibleTokens": "Keine konvertierbaren Tokens auf {{chainName}}",
-    "convert": "Konvertieren",
-    "addToWalletLabel": "{{symbol}} auf {{chainName}} zur Wallet importieren",
     "addToWalletButton": "In Wallet importieren",
-    "addingToken": "Füge hinzu...",
-    "addTokenError": "Token konnte nicht zur Wallet hinzugefügt werden",
-    "legacyTokenMissing": "Legacy-Token fehlt für diese Kette",
-    "tigerOGMissing": "TigerOG-Token fehlt für diese Kette",
     "networkWarning": {
       "title": "Falsches Netzwerk",
-      "message": "Token-Konvertierung ist nur auf der BSC Chain verfügbar.",
-      "description": "Bitte wechseln Sie in Ihrer Wallet zur BSC Chain, um Tokens zu konvertieren, oder navigieren Sie zum Brücke-Tab, um Tokens zwischen Ketten zu übertragen."
+      "message": "Token-Konvertierung ist nur auf der BSC Chain verfügbar. Bitte wechsle zu BSC, um deine Legacy-Tokens zu konvertieren."
     }
   },
   "bridge": {
@@ -56,88 +55,77 @@
     "noDestination": "Kein Ziel",
     "noBridgeableTokens": "Keine überbrückbaren Tokens",
     "bridgeButton": "Tokens überbrücken",
-    "getFeeQuote": "Gebührenangebot einholen",
-    "viewOnAxelarscan": "Im Axelar Explorer ansehen",
-    "addDestinationTokenLabel": "{{symbol}} auf {{chainName}} zur Wallet importieren",
-    "addTokenError": "Token konnte nicht zur Wallet hinzugefügt werden",
+    "viewOnAxelarscan": "Auf Axelarscan ansehen",
+    "addTokenError": "Token konnte nicht zum Wallet hinzugefügt werden",
     "estimatedTime": "Geschätzte Zeit",
-    "recentTransactions": "Kürzliche Transaktionen",
+    "recentTransactions": "Letzte Transaktionen",
     "clearHistory": "Verlauf löschen",
-    "historyStoredLocally": "Transaktionsverlauf wird lokal gespeichert"
+    "historyStoredLocally": "Transaktionsverlauf wird lokal auf diesem Gerät gespeichert"
   },
   "settings": {
     "title": "Einstellungen",
     "environment": "Umgebung",
     "rpcEndpoints": "RPC-Endpunkte",
-    "rpcEndpointsHelp": "Aktualisieren Sie die RPC-URL, die für jede Kette in der ausgewählten Umgebung verwendet wird.",
+    "rpcEndpointsHelp": "Aktualisiere die RPC-URL für jede Kette in der ausgewählten Umgebung.",
     "noChainsConfigured": "Keine Ketten für diese Umgebung konfiguriert.",
     "cancel": "Abbrechen",
     "save": "Speichern"
   },
-  "wallet": {},
-  "login": {
-    "title": "Willkommen zurück",
-    "subtitle": "Melden Sie sich an, um mit Freedom Bridge fortzufahren",
-    "emailLabel": "E-Mail",
-    "emailPlaceholder": "name@example.com",
-    "passwordLabel": "Passwort",
-    "passwordPlaceholder": "Passwort eingeben",
-    "rememberMe": "Auf diesem Gerät merken",
-    "submit": "Anmelden",
-    "validation": {
-      "required": "E-Mail und Passwort sind erforderlich.",
-      "invalid": "Ungültige E-Mail oder ungültiges Passwort."
-    }
-  },
   "landing": {
     "banner": {
       "title": "Neu hier?",
-      "message": "Erfahren Sie mehr über Freedom Bridge und wie Sie TigerOG-Tokens über Ketten brücken."
+      "message": "Erfahre mehr über Freedom Bridge und wie du TigerOG-Tokens zwischen Ketten brücken kannst.",
+      "note": "Hinweis: Die Token-Konvertierung ist dauerhaft und kann nicht rückgängig gemacht werden."
     },
     "hero": {
-      "badge": "Unterstützt von Axelar",
-      "title": "Befreien Sie Ihre <1/> <2>Vermögenswerte</2>",
-      "subtitle": "Brücken Sie TigerOG-Tokens nahtlos über Ketten mit Axelars Interchain Token Service. Sicher, schnell und steuerfrei.",
+      "badge": "Powered by Axelar",
+      "title": "Befreie deine <1/> <2>Vermögenswerte</2>",
+      "subtitle": "Überbrücke TigerOG-Tokens nahtlos zwischen Ketten mit Axelars Interchain Token Service. Sicher, schnell und steuerfrei.",
       "launchApp": "App starten",
       "documentation": "Dokumentation"
     },
     "stats": {
       "messaging": "Axelar Network",
-      "networks": "Netzwerke Live",
+      "networks": "Netzwerke live",
       "fees": "Protokollgebühren",
       "finality": "Finalität"
     },
     "features": {
       "title": "Interchain Token Service",
-      "description": "Freedom Bridge nutzt Axelar ITS, um ein nahtloses, sicheres und steuerfreies Brückenerlebnis über {{count}}+ Blockchains zu bieten.",
+      "description": "Freedom Bridge nutzt Axelar ITS für ein nahtloses, sicheres und steuerfreies Brückenerlebnis über {{count}}+ Blockchains.",
       "stopDecay": {
-        "title": "Stoppen Sie den Verfall",
-        "description": "Legacy-Tokens verbrennen 10-11% Ihres Wertes bei jedem Kauf und Verkauf. Das Konvertieren in TigerOG stoppt diese Blutung sofort und bewahrt 100% Ihres Wertes.",
-        "graphLabel1": "100% Erhalten (TigerOG)",
+        "title": "Stoppe den Verfall",
+        "description": "Legacy-Tokens verbrennen 10-11% deines Wertes bei jedem Kauf und Verkauf. Mit TigerOG stoppst du diesen Verlust sofort und behältst 100% deines Wertes.",
+        "graphLabel1": "100% erhalten (TigerOG)",
         "graphLabel2": "-40% Wert (Legacy 10% Steuer)"
       },
       "conversion": {
         "title": "1:1 Konvertierung",
-        "description": "Das Gesamtangebot ändert sich nie. Tokens werden in einem sicheren Migrationsvertrag gehalten, und ein exaktes 1:1-Äquivalent wird verwendet. Keine Inflation, keine Verwässerung."
+        "description": "Das Gesamtangebot ändert sich nie. Tokens werden in einem sicheren Konvertierungsvertrag gehalten, und ein exaktes 1:1-Äquivalent wird genutzt. Keine Inflation, keine Verwässerung."
       },
       "multichain": {
         "title": "Multi-Chain",
-        "description": "Einmal bereitstellen, überall zugreifen. Ihr Asset wird ein nativer Interchain-Token über Ketten, einschließlich Ethereum, BNB Chain, Base und mehr."
+        "description": "Einmal bereitstellen, überall nutzen. Dein Asset wird zum nativen Interchain-Token auf allen Ketten, einschließlich Ethereum, BNB Chain, Base und mehr."
       },
       "security": {
-        "title": "Axelar Sicherheit",
-        "description": "Unterstützt durch das dezentrale Netzwerk von Validatoren von Axelar. ITS stellt sicher, dass Ihre Tokens sicher und konsistent über alle verbundenen Netzwerke übertragen werden.",
-        "button": "Brücken starten"
+        "title": "Axelar-Sicherheit",
+        "description": "Gesichert durch Axelars dezentrales Netzwerk von Validatoren. ITS sorgt dafür, dass deine Tokens sicher und konsistent über alle verbundenen Netzwerke übertragen werden.",
+        "button": "Jetzt brücken"
       }
-    },
-    "teaser": {
-      "title": "Möchten Sie andere Coins?",
-      "subtitle": "Was halten Sie von <lunc>LUNC</lunc>, <crepe>Crepe</crepe> oder <shiba>Shiba</shiba>?"
     },
     "cta": {
       "title": "Bereit zum Brücken?",
-      "description": "Schließen Sie sich der Interchain-Revolution an. Es dauert weniger als eine Minute, Ihre Vermögenswerte zu konvertieren und über Axelar zu brücken.",
+      "description": "Werde Teil der Interchain-Revolution. Das Konvertieren und Brücken über Axelar dauert weniger als eine Minute.",
       "button": "App jetzt starten"
+    },
+    "buyTokens": {
+      "badge": "Erste Schritte",
+      "title": "Tokens beschaffen",
+      "description": "Noch keine Tokens? Kaufe die Basis-Tokens auf PancakeSwap und konvertiere sie dann in die neuen Multichain-Versionen.",
+      "buyOn": "Auf PancakeSwap kaufen",
+      "then": "dann",
+      "convertTo": "Konvertieren zu",
+      "buyNow": "Jetzt kaufen"
     }
   },
   "wiki": {
@@ -145,49 +133,51 @@
     "searchPlaceholder": "Dokumentation durchsuchen...",
     "header": {
       "title": "Dokumentation",
-      "subtitle": "Erfahren Sie, wie Sie Legacy-Tokens konvertieren, über Ketten brücken und mit Freedom Bridge integrieren."
+      "subtitle": "Erfahre, wie du Legacy-Tokens konvertierst und zwischen Ketten brückst."
     },
     "nav": {
       "gettingStarted": "Erste Schritte",
       "coreConcepts": "Kernkonzepte",
       "developers": "Entwickler",
-      "tigerogSupply": "TigerOG Angebot",
-      "lionogSupply": "LionOG Angebot",
-      "frogogSupply": "FrogOG Angebot"
+      "tigerogSupply": "TigerOG-Angebot",
+      "lionogSupply": "LionOG-Angebot",
+      "frogogSupply": "FrogOG-Angebot",
+      "githubRepo": "GitHub-Repository",
+      "axelarDocs": "Axelar ITS-Dokumentation"
     },
     "articles": {
       "whatIs": {
         "title": "Was ist Freedom Bridge?",
-        "content": "Freedom Bridge ist ein dezentralisiertes Protokoll, das auf Axelars Interchain Token Service (ITS) aufbaut. Es wurde entwickelt, um Tokens von Einzelketten-Beschränkungen und hohen Transaktionssteuern zu befreien. Durch das Konvertieren von Standard-Tokens in interchain-kompatible Assets können Benutzer ihren Wert frei über unterstützte Blockchains bewegen.",
+        "content": "Freedom Bridge ist ein dezentrales Brückenprotokoll, das auf Axelars Interchain Token Service (ITS) aufbaut. Es ermöglicht dir, Legacy-Tokens in steuerfreie, interchain-kompatible Vermögenswerte umzuwandeln, die sich frei zwischen unterstützten Blockchains bewegen können.",
         "taxFreeTitle": "Steuerfreie Übertragungen",
         "taxFreeDesc": "Legacy-Tokens haben oft 10%+ Steuern. TigerOG-Tokens haben 0% Steuer.",
         "omnichainTitle": "Interchain",
-        "omnichainDesc": "Bewegen Sie Vermögenswerte sofort zwischen {{count}}+ Blockchains via Axelar."
+        "omnichainDesc": "Übertrage Vermögenswerte sofort zwischen {{count}}+ Blockchains via Axelar."
       },
       "howToConvert": {
-        "title": "Wie man Tokens konvertiert",
-        "step1": "Verbinden Sie Ihre Wallet mit der Quellkette (z.B. BNB Chain).",
-        "step2": "Navigieren Sie zum Tab <strong>Konvertieren</strong>.",
-        "step3": "Wählen Sie den Legacy-Token aus, den Sie konvertieren möchten.",
-        "step4": "Genehmigen Sie den Migrationsvertrag, um Ihre Tokens auszugeben.",
-        "step5": "Klicken Sie auf <strong>Konvertieren</strong>, um Ihre Legacy-Tokens einzuzahlen und eine äquivalente Menge an \"TigerOG\"-Tokens zu erhalten.",
-        "note": "<strong>Hinweis:</strong> Die Konvertierung verursacht die Transaktionssteuer des Legacy-Tokens (während des Upgrades), wenn Ihr Token Steuern auf Übertragungen erhebt. Sobald jedoch in TigerOG konvertiert, sind alle nachfolgenden Übertragungen und Brücken steuerfrei."
+        "title": "Tokens konvertieren",
+        "step1": "Verbinde dein Wallet mit der Quellkette (z.B. BNB Chain).",
+        "step2": "Navigiere zum <strong>Konvertieren</strong>-Tab.",
+        "step3": "Wähle den Legacy-Token, den du konvertieren möchtest.",
+        "step4": "Erteile dem Konvertierungsvertrag die Genehmigung, deine Tokens auszugeben.",
+        "step5": "Klicke auf <strong>Konvertieren</strong>, um deine Legacy-Tokens einzuzahlen und eine äquivalente Menge TigerOG-Tokens zu erhalten.",
+        "note": "<strong>Hinweis:</strong> Die Konvertierung löst die Transaktionssteuer des Legacy-Tokens aus (während des Upgrades), falls dein Token Steuern auf Übertragungen erhebt. Nach der Konvertierung zu TigerOG sind jedoch alle weiteren Übertragungen und Brücken steuerfrei."
       },
       "supportedNetworks": {
         "title": "Unterstützte Netzwerke",
-        "content": "Freedom Bridge unterstützt ein wachsendes Ökosystem von {{count}}+ Blockchains, was eine nahtlose Interoperabilität über die EVM-Landschaft via Axelar ermöglicht."
+        "content": "Freedom Bridge unterstützt ein wachsendes Ökosystem von {{count}}+ Blockchains und ermöglicht nahtlose Interoperabilität in der EVM-Landschaft via Axelar."
       },
       "xerc20": {
         "title": "Interchain Tokens",
-        "content": "Axelar Interchain Token Service (ITS) ermöglicht es Tokens, über mehrere Ketten mit einer konsistenten Adresse und einem einheitlichen Angebotsmanagement bereitgestellt zu werden. Freedom Bridge nutzt ITS, um sicherzustellen, dass TigerOG ein kanonisches Asset bleibt, wo immer es gebrückt wird."
+        "content": "Axelar Interchain Token Service (ITS) ermöglicht die Bereitstellung von Tokens auf mehreren Ketten mit einheitlicher Adresse und zentraler Angebotsverwaltung. Freedom Bridge nutzt ITS, damit TigerOG überall ein kanonisches Asset bleibt, wohin es auch gebrückt wird."
       },
       "axelar": {
         "title": "Axelar Network",
-        "content": "Wir verwenden Axelar als unsere Interoperabilitätsschicht. Axelar ist ein dezentrales Netzwerk, das verschiedene Blockchains verbindet und sichere Cross-Chain-Kommunikation und Vermögensübertragungen ermöglicht. Das Sicherheitsmodell von Axelar stützt sich auf einen genehmigungsfreien Satz von Validatoren, was eine hochwertige Sicherheit für Interchain-Tokens bietet."
+        "content": "Wir nutzen Axelar als Interoperabilitätsschicht. Axelar ist ein dezentrales Netzwerk, das verschiedene Blockchains verbindet und sichere Cross-Chain-Kommunikation sowie Vermögensübertragungen ermöglicht. Axelars Sicherheitsmodell basiert auf einem genehmigungsfreien Validator-Netzwerk und bietet erstklassige Sicherheit für Interchain-Tokens."
       },
-      "migration": {
-        "title": "Migrationslogik",
-        "content": "Der Migrationsvertrag wird auf der Ursprungskette (z.B. BSC) bereitgestellt. Er hält die ursprünglichen Legacy-Tokens in Verwahrung. Wenn Sie Tokens upgraden, zahlen Sie in den Migrationsvertrag ein. Wenn Sie unwrappen (falls unterstützt), verbrennen Sie die TigerOG-Darstellung, um die ursprünglichen Tokens freizugeben. Dies gewährleistet eine strikte 1:1-Deckung."
+      "conversion": {
+        "title": "Konvertierungslogik",
+        "content": "Der Konvertierungsvertrag ist auf BSC implementiert. Bei der Konvertierung werden deine Legacy-Tokens an die Dead-Adresse gesendet (dauerhaft verbrannt), und du erhältst TigerOG im Verhältnis 1:1. Dies ist ein Einwegprozess — die Legacy-Tokens werden zerstört und können nie wiederhergestellt werden."
       },
       "contracts": {
         "title": "Smart Contract-Adressen",
@@ -198,41 +188,41 @@
       "security": {
         "title": "Sicherheitsmodell",
         "content": "Sicherheit ist in jede Schicht von Freedom Bridge integriert:",
-        "point1": "<strong>Migrationsarchitektur:</strong> Legacy-Tokens werden in verifizierten, unveränderlichen Smart Contracts gehalten.",
-        "point2": "<strong>Axelar Validators:</strong> Cross-Chain-Nachrichten werden durch das dezentrale Netzwerk von Axelar verifiziert.",
+        "point1": "<strong>Konvertierungsarchitektur:</strong> Legacy-Tokens werden dauerhaft über verifizierte, unveränderliche Smart Contracts verbrannt.",
+        "point2": "<strong>Axelar-Validatoren:</strong> Cross-Chain-Nachrichten werden durch Axelars dezentrales Netzwerk verifiziert.",
         "point3": "<strong>Konsistentes Angebot:</strong> ITS verwaltet das Prägen und Verbrennen, um ein konstantes Gesamtangebot über alle Ketten hinweg aufrechtzuerhalten.",
         "point4": "<strong>Geprüfte Logik:</strong> Gebaut auf branchenüblichen Axelar- und OpenZeppelin-Bibliotheken."
       },
       "supplyCommon": {
-        "howWeCalculated": "Wie wir das berechnet haben",
+        "howWeCalculated": "So haben wir das berechnet",
         "verification": "Verifizierung",
-        "verificationDesc": "Alle Angebotszahlen können unabhängig on-chain verifiziert werden:",
+        "verificationDesc": "Alle Angebotsangaben können unabhängig on-chain verifiziert werden:",
         "table": {
           "category": "Kategorie",
           "amount": "Menge",
-          "percentOfTotal": "% vom Total",
+          "percentOfTotal": "% vom Gesamten",
           "originalSupply": "Ursprüngliches Gesamtangebot",
-          "deadAddress": "Dead-Adresse (Verbrannt)",
-          "contractBalance": "Vertragsguthaben (Feststeckend)",
+          "deadAddress": "Dead-Adresse (verbrannt)",
+          "contractBalance": "Vertragsguthaben (feststeckend)",
           "circulatingSupply": "Umlaufangebot"
         },
         "deadAddressTitle": "1. Dead-Adresse",
         "contractBalanceTitle": "2. Vertragsguthaben",
-        "lpLockedTitle": "3. LP Gesperrte Tokens"
+        "lpLockedTitle": "3. Im LP gesperrte Tokens"
       },
       "tigerogSupply": {
-        "title": "TigerOG Angebotsaufschlüsselung",
+        "title": "TigerOG-Angebotsübersicht",
         "intro": "TigerOG hat ein festes Umlaufangebot, das vom ursprünglichen BNBTiger-Token abgeleitet ist. Die Angebotsberechnung berücksichtigt alle verbrannten und dauerhaft gesperrten Tokens.",
-        "lpLocked": "LP Gesperrt (86,18% der LP verbrannt)",
-        "deadAddressDesc": "Tokens, die an <code>0x000...dEaD</code> gesendet wurden, sind dauerhaft verbrannt und können nie wiederhergestellt werden. Dies beinhaltet Tokens, die durch den ursprünglichen BNBTiger-Steuermechanismus verbrannt wurden.",
-        "contractBalanceDesc": "Eine kleine Menge an Tokens steckt im BNBTiger-Vertrag selbst fest. Diese Tokens sind unzugänglich und effektiv aus dem Umlauf entfernt.",
+        "lpLocked": "Im LP gesperrt (86,18% der LP verbrannt)",
+        "deadAddressDesc": "An <code>0x000...dEaD</code> gesendete Tokens sind dauerhaft verbrannt und können nie wiederhergestellt werden. Dies schließt Tokens ein, die durch den ursprünglichen BNBTiger-Steuermechanismus verbrannt wurden.",
+        "contractBalanceDesc": "Eine kleine Menge Tokens steckt im BNBTiger-Vertrag selbst fest. Diese Tokens sind unzugänglich und effektiv aus dem Umlauf entfernt.",
         "lpLockedDesc": "Der PancakeSwap-Liquiditätspool enthält BNBTiger-Tokens, die mit BNB gepaart sind. Wenn LP-Tokens verbrannt werden (an die Dead-Adresse gesendet), werden die zugrunde liegenden Tokens im Pool dauerhaft gesperrt.",
         "lpBurnedPercent": "LP-Tokens verbrannt: 86,18% aller LP-Tokens",
         "lpLockedPercent": "Daher sind 86,18% der Tokens im LP dauerhaft gesperrt",
-        "note": "<strong>Hinweis:</strong> TigerOG behält ein 1:1-Verhältnis mit BNBTiger während der Migration bei. Das Umlaufangebot von TigerOG entspricht dem wahren Umlaufangebot von BNBTiger nach Berücksichtigung aller verbrannten und gesperrten Tokens.",
-        "launchData": "<strong>Startdaten:</strong> Diese Zahlen wurden beim Start berechnet. Der Legacy-BNBTiger-Token verbrennt weiterhin Tokens bei jeder Kauf-/Verkaufstransaktion, sodass das tatsächliche Umlaufangebot etwas niedriger sein kann als angezeigt.",
-        "legacyContract": "BNBTiger Token-Vertrag",
-        "ogContract": "TigerOG Token-Vertrag",
+        "note": "<strong>Hinweis:</strong> TigerOG behält bei der Konvertierung ein 1:1-Verhältnis mit BNBTiger. Das Umlaufangebot von TigerOG entspricht dem tatsächlichen Umlaufangebot von BNBTiger nach Berücksichtigung aller verbrannten und gesperrten Tokens.",
+        "launchData": "<strong>Startdaten:</strong> Diese Zahlen wurden beim Start berechnet. Der Legacy-BNBTiger-Token verbrennt bei jeder Kauf-/Verkaufstransaktion weiterhin Tokens, sodass das tatsächliche Umlaufangebot etwas niedriger sein kann.",
+        "legacyContract": "BNBTiger-Token-Vertrag",
+        "ogContract": "TigerOG-Token-Vertrag",
         "amounts": {
           "original": "10.000.000.000.000.000.000.000.000",
           "dead": "−5.772.706.396.234.535.780.783.775",
@@ -246,18 +236,18 @@
         }
       },
       "lionogSupply": {
-        "title": "LionOG Angebotsaufschlüsselung",
+        "title": "LionOG-Angebotsübersicht",
         "intro": "LionOG hat ein festes Umlaufangebot, das vom ursprünglichen BNBLion-Token abgeleitet ist. Die Angebotsberechnung berücksichtigt alle verbrannten und dauerhaft gesperrten Tokens.",
-        "lpLocked": "LP Gesperrt (99,98% der LP verbrannt)",
-        "deadAddressDesc": "Tokens, die an <code>0x000...dEaD</code> gesendet wurden, sind dauerhaft verbrannt und können nie wiederhergestellt werden. Dies beinhaltet Tokens, die durch den ursprünglichen BNBLion-Steuermechanismus verbrannt wurden.",
-        "contractBalanceDesc": "Eine kleine Menge an Tokens steckt im BNBLion-Vertrag selbst fest. Diese Tokens sind unzugänglich und effektiv aus dem Umlauf entfernt.",
+        "lpLocked": "Im LP gesperrt (99,98% der LP verbrannt)",
+        "deadAddressDesc": "An <code>0x000...dEaD</code> gesendete Tokens sind dauerhaft verbrannt und können nie wiederhergestellt werden. Dies schließt Tokens ein, die durch den ursprünglichen BNBLion-Steuermechanismus verbrannt wurden.",
+        "contractBalanceDesc": "Eine kleine Menge Tokens steckt im BNBLion-Vertrag selbst fest. Diese Tokens sind unzugänglich und effektiv aus dem Umlauf entfernt.",
         "lpLockedDesc": "Der PancakeSwap-Liquiditätspool enthält BNBLion-Tokens, die mit BNB gepaart sind. Wenn LP-Tokens verbrannt werden (an die Dead-Adresse gesendet), werden die zugrunde liegenden Tokens im Pool dauerhaft gesperrt.",
         "lpBurnedPercent": "LP-Tokens verbrannt: 99,98% aller LP-Tokens",
         "lpLockedPercent": "Daher sind 99,98% der Tokens im LP dauerhaft gesperrt",
-        "note": "<strong>Hinweis:</strong> LionOG behält ein 1:1-Verhältnis mit BNBLion während der Migration bei. Das Umlaufangebot von LionOG entspricht dem wahren Umlaufangebot von BNBLion nach Berücksichtigung aller verbrannten und gesperrten Tokens.",
-        "launchData": "<strong>Startdaten:</strong> Diese Zahlen wurden beim Start berechnet. Der Legacy-BNBLion-Token verbrennt weiterhin Tokens bei jeder Kauf-/Verkaufstransaktion, sodass das tatsächliche Umlaufangebot etwas niedriger sein kann als angezeigt.",
-        "legacyContract": "BNBLion Token-Vertrag",
-        "ogContract": "LionOG Token-Vertrag",
+        "note": "<strong>Hinweis:</strong> LionOG behält bei der Konvertierung ein 1:1-Verhältnis mit BNBLion. Das Umlaufangebot von LionOG entspricht dem tatsächlichen Umlaufangebot von BNBLion nach Berücksichtigung aller verbrannten und gesperrten Tokens.",
+        "launchData": "<strong>Startdaten:</strong> Diese Zahlen wurden beim Start berechnet. Der Legacy-BNBLion-Token verbrennt bei jeder Kauf-/Verkaufstransaktion weiterhin Tokens, sodass das tatsächliche Umlaufangebot etwas niedriger sein kann.",
+        "legacyContract": "BNBLion-Token-Vertrag",
+        "ogContract": "LionOG-Token-Vertrag",
         "amounts": {
           "original": "10.000.000.000.000.000.000.000.000",
           "dead": "−5.724.597.218.422.106.614.085.614",
@@ -271,18 +261,18 @@
         }
       },
       "frogogSupply": {
-        "title": "FrogOG Angebotsaufschlüsselung",
+        "title": "FrogOG-Angebotsübersicht",
         "intro": "FrogOG hat ein festes Umlaufangebot, das vom ursprünglichen BNBFrog-Token abgeleitet ist. Die Angebotsberechnung berücksichtigt alle verbrannten und dauerhaft gesperrten Tokens.",
-        "lpLocked": "LP Gesperrt (99,31% der LP verbrannt)",
-        "deadAddressDesc": "Tokens, die an <code>0x000...dEaD</code> gesendet wurden, sind dauerhaft verbrannt und können nie wiederhergestellt werden. Dies beinhaltet Tokens, die durch den ursprünglichen BNBFrog-Steuermechanismus verbrannt wurden.",
-        "contractBalanceDesc": "Eine kleine Menge an Tokens steckt im BNBFrog-Vertrag selbst fest. Diese Tokens sind unzugänglich und effektiv aus dem Umlauf entfernt.",
+        "lpLocked": "Im LP gesperrt (99,31% der LP verbrannt)",
+        "deadAddressDesc": "An <code>0x000...dEaD</code> gesendete Tokens sind dauerhaft verbrannt und können nie wiederhergestellt werden. Dies schließt Tokens ein, die durch den ursprünglichen BNBFrog-Steuermechanismus verbrannt wurden.",
+        "contractBalanceDesc": "Eine kleine Menge Tokens steckt im BNBFrog-Vertrag selbst fest. Diese Tokens sind unzugänglich und effektiv aus dem Umlauf entfernt.",
         "lpLockedDesc": "Der PancakeSwap-Liquiditätspool enthält BNBFrog-Tokens, die mit BNB gepaart sind. Wenn LP-Tokens verbrannt werden (an die Dead-Adresse gesendet), werden die zugrunde liegenden Tokens im Pool dauerhaft gesperrt.",
         "lpBurnedPercent": "LP-Tokens verbrannt: 99,31% aller LP-Tokens",
         "lpLockedPercent": "Daher sind 99,31% der Tokens im LP dauerhaft gesperrt",
-        "note": "<strong>Hinweis:</strong> FrogOG behält ein 1:1-Verhältnis mit BNBFrog während der Migration bei. Das Umlaufangebot von FrogOG entspricht dem wahren Umlaufangebot von BNBFrog nach Berücksichtigung aller verbrannten und gesperrten Tokens.",
-        "launchData": "<strong>Startdaten:</strong> Diese Zahlen wurden beim Start berechnet. Der Legacy-BNBFrog-Token verbrennt weiterhin Tokens bei jeder Kauf-/Verkaufstransaktion, sodass das tatsächliche Umlaufangebot etwas niedriger sein kann als angezeigt.",
-        "legacyContract": "BNBFrog Token-Vertrag",
-        "ogContract": "FrogOG Token-Vertrag",
+        "note": "<strong>Hinweis:</strong> FrogOG behält bei der Konvertierung ein 1:1-Verhältnis mit BNBFrog. Das Umlaufangebot von FrogOG entspricht dem tatsächlichen Umlaufangebot von BNBFrog nach Berücksichtigung aller verbrannten und gesperrten Tokens.",
+        "launchData": "<strong>Startdaten:</strong> Diese Zahlen wurden beim Start berechnet. Der Legacy-BNBFrog-Token verbrennt bei jeder Kauf-/Verkaufstransaktion weiterhin Tokens, sodass das tatsächliche Umlaufangebot etwas niedriger sein kann.",
+        "legacyContract": "BNBFrog-Token-Vertrag",
+        "ogContract": "FrogOG-Token-Vertrag",
         "amounts": {
           "original": "10.000.000.000.000.000.000.000.000",
           "dead": "−740.059.884.911.899.485.982.976",
@@ -301,45 +291,75 @@
     "title": "Vertragsadressen",
     "header": {
       "title": "Smart Contracts",
-      "subtitle": "Offizielle Bereitstellungsadressen für Tokens und Brücken im gesamten Freedom Bridge-Ökosystem."
+      "subtitle": "Offizielle Bereitstellungsadressen für Tokens und Brücken im Freedom Bridge-Ökosystem."
     },
     "tabs": {
       "overview": "Übersicht",
       "byToken": "Nach Token",
-      "byChain": "Nach Kette",
-      "liquidity": "Liquidität"
+      "byChain": "Nach Kette"
     },
-    "liquidity": {
-      "title": "Liquiditätspools"
-    }
+    "overview": {
+      "interchainTokens": {
+        "title": "Interchain Tokens",
+        "description": "Interchain-Tokens, die über Axelar Interchain Token Service (ITS) bereitgestellt werden. Diese Tokens haben konsistente Adressen über alle unterstützten Netzwerke."
+      },
+      "axelarNetwork": {
+        "title": "Axelar Network",
+        "description": "Das zugrunde liegende Nachrichtenprotokoll, das Cross-Chain-Übertragungen absichert und die Datenintegrität zwischen verschiedenen Blockchains gewährleistet."
+      },
+      "conversionContracts": {
+        "title": "Konvertierungsverträge",
+        "description": "Verantwortlich für die Konvertierung von Legacy-Tokens in Interchain-Assets. Diese Verträge handhaben die Einzahlungs- und Prägungslogik auf der Ursprungskette."
+      },
+      "conversionContractsTable": {
+        "title": "Konvertierungsvertrag-Adressen",
+        "subtitle": "Diese Verträge auf BSC handhaben die Konvertierung von Legacy-Tokens zu Interchain-Tokens.",
+        "token": "Token",
+        "legacyToken": "Legacy-Token",
+        "conversionContract": "Konvertierungsvertrag",
+        "newToken": "Interchain-Token"
+      }
+    },
+    "filterTokens": "Tokens filtern...",
+    "interchainAsset": "Interchain-Asset via Axelar ITS",
+    "availableOnChains": "Verfügbar auf {{count}} Ketten",
+    "table": {
+      "chain": "Kette",
+      "tokenAddress": "Token-Adresse",
+      "axelarChainName": "Axelar-Kettenname",
+      "chainId": "ID: {{id}}"
+    },
+    "axelarId": "Axelar-ID: {{name}}",
+    "copied": "Kopiert!",
+    "copyAddress": "Adresse kopieren"
   },
   "faq": {
     "title": "Freedom Bridge Support",
     "header": "Häufig gestellte Fragen",
     "subtitle": "Antworten auf häufige Fragen zu TigerOG, Brücken und Axelar.",
     "cta": {
-      "title": "Haben Sie noch Fragen?",
-      "description": "Treten Sie unserer Community auf Telegram bei oder schauen Sie im detaillierten Wiki nach technischen Anleitungen.",
+      "title": "Noch Fragen?",
+      "description": "Tritt unserer Community auf Telegram bei oder schau im ausführlichen Wiki für technische Anleitungen.",
       "wiki": "Wiki besuchen",
       "telegram": "Telegram beitreten"
     },
     "questions": {
-      "q1": "Was ist der Zweck des Konvertierens meiner Tokens?",
-      "a1": "Das Konvertieren Ihrer Tokens in TigerOG entfernt die Transaktionssteuer (oft 10-12%), die mit dem Legacy-Token verbunden ist. Es ermöglicht Ihnen auch, diese Tokens auf andere Blockchains wie Ethereum, Base und mehr via Axelar zu brücken, was den Zugang zu neuen Ökosystemen ermöglicht.",
-      "q2": "Ist die Verwendung von Freedom Bridge sicher?",
-      "a2": "Ja. Das Protokoll verwendet einen sicheren Migrationsvertrag und Axelars Interchain Token Service. Wenn Sie konvertieren, wird Ihr BNBTiger dauerhaft verbrannt und Sie erhalten TigerOG im Verhältnis 1:1. Der Verbrennungsmechanismus stellt sicher, dass das Gesamtangebot über alle Ketten hinweg ordnungsgemäß verwaltet wird.",
-      "q3": "Gibt es Gebühren?",
-      "a3": "Freedom Bridge selbst erhebt keine Gebühr für das Konvertieren. Sie zahlen nur die Standard-Blockchain-Gasgebühren. Das Brücken zwischen Ketten beinhaltet eine Cross-Chain-Gasgebühr, die an Axelar gezahlt wird, um die Weiterleitungskosten zu decken.",
+      "q1": "Was bringt mir die Konvertierung meiner Tokens?",
+      "a1": "Die Konvertierung deiner Tokens zu TigerOG entfernt die Transaktionssteuer (oft 10-12%), die mit dem Legacy-Token verbunden ist. Außerdem kannst du diese Tokens über Axelar auf andere Blockchains wie Ethereum, Base und mehr brücken und so neue Ökosysteme erschließen.",
+      "q2": "Ist Freedom Bridge sicher?",
+      "a2": "Ja. Das Protokoll nutzt einen sicheren Konvertierungsvertrag und Axelars Interchain Token Service. Bei der Konvertierung wird dein BNBTiger dauerhaft verbrannt und du erhältst TigerOG im Verhältnis 1:1. Der Verbrennungsmechanismus stellt sicher, dass das Gesamtangebot über alle Ketten ordnungsgemäß verwaltet wird.",
+      "q3": "Fallen Gebühren an?",
+      "a3": "Freedom Bridge selbst erhebt keine Gebühr für die Konvertierung. Du zahlst nur die Standard-Blockchain-Gasgebühren. Beim Brücken zwischen Ketten fällt eine Cross-Chain-Gasgebühr an, die an Axelar für die Übermittlungskosten gezahlt wird.",
       "q4": "Was passiert, wenn ich meine Tokens verliere?",
-      "a4": "TigerOG-Tokens verhalten sich genau wie jeder andere ERC20-Token. Wenn Sie den Zugriff auf Ihre Wallet verlieren, können sie nicht wiederhergestellt werden. Bewahren Sie Ihre privaten Schlüssel und Wiederherstellungsphrasen immer sicher auf.",
-      "q5": "Kann ich meine TigerOG-Tokens in BNBTiger zurückkonvertieren?",
-      "a5": "Nein. Die Migration ist eine Einweg-Konvertierung. Wenn Sie BNBTiger in TigerOG konvertieren, werden Ihre BNBTiger-Tokens dauerhaft verbrannt (an die Dead-Adresse gesendet). Dies ist absichtlich so konzipiert – TigerOG ist die aktualisierte, steuerfreie Version, die den Legacy-Token vollständig ersetzen soll.",
+      "a4": "TigerOG-Tokens verhalten sich wie jeder andere ERC20-Token. Wenn du den Zugriff auf dein Wallet verlierst, können sie nicht wiederhergestellt werden. Bewahre deine privaten Schlüssel und Wiederherstellungsphrasen immer sicher auf.",
+      "q5": "Kann ich meine TigerOG-Tokens zurück in BNBTiger konvertieren?",
+      "a5": "Nein. Die Konvertierung ist ein Einwegprozess. Wenn du BNBTiger zu TigerOG konvertierst, werden deine Legacy-Tokens dauerhaft verbrannt (an die Dead-Adresse gesendet). Das ist beabsichtigt — TigerOG ist die verbesserte, steuerfreie Version, die den Legacy-Token vollständig ersetzen soll.",
       "q6": "Welche Netzwerke werden unterstützt?",
-      "a6": "Wir unterstützen mehrere EVM-Ketten via Axelar, einschließlich BNB Chain, Ethereum, Base und mehr. Überprüfen Sie das Wiki für die vollständige Liste der unterstützten Netzwerke.",
+      "a6": "Wir unterstützen mehrere EVM-Ketten via Axelar, darunter BNB Chain, Ethereum, Base und mehr. Die vollständige Liste der unterstützten Netzwerke findest du im Wiki.",
       "q7": "Wie lange dauert das Brücken?",
-      "a7": "Die Brückengeschwindigkeit hängt von der Finalität der Quellkette und der Axelar-Weiterleitung ab. Typischerweise dauert eine Übertragung zwischen Ketten etwa 2-5 Minuten.",
+      "a7": "Die Brückengeschwindigkeit hängt von der Finalität der Quellkette und der Axelar-Übermittlung ab. Typischerweise dauert eine Übertragung zwischen Ketten etwa 2-5 Minuten.",
       "q8": "Wie hoch ist das Umlaufangebot der OG-Tokens?",
-      "a8": "Jeder OG-Token hat ein festes Umlaufangebot, das von seinem ursprünglichen BNB-Token abgeleitet ist, unter Berücksichtigung von verbrannten Tokens, feststeckenden Vertragsguthaben und gesperrten LP. TigerOG: ~3,66 Septillionen (36,62% des Originals). LionOG: ~3,83 Septillionen (38,33% des Originals). FrogOG: ~8,39 Septillionen (83,86% des Originals). Siehe Wiki für detaillierte Aufschlüsselungen jedes Tokens."
+      "a8": "Jeder OG-Token hat ein festes Umlaufangebot, das von seinem ursprünglichen BNB-Token abgeleitet ist, unter Berücksichtigung von verbrannten Tokens, feststeckenden Vertragsguthaben und gesperrtem LP. TigerOG: ~3,66 Septillionen (36,62% des Originals). LionOG: ~3,83 Septillionen (38,33% des Originals). FrogOG: ~8,39 Septillionen (83,86% des Originals). Detaillierte Aufschlüsselungen jedes Tokens findest du im Wiki."
     }
   },
   "common": {
@@ -349,8 +369,8 @@
     "chainId": "Ketten-ID",
     "bscChain": "BSC Chain",
     "insufficientBalance": "Ungenügendes Guthaben.",
-    "failedToSwitchNetwork": "Netzwerkwechsel fehlgeschlagen. Bitte wechseln Sie manuell in Ihrer Wallet.",
-    "failedToFetchFeeQuote": "Fehler beim Abrufen des Gebührenangebots.",
+    "failedToSwitchNetwork": "Netzwerkwechsel fehlgeschlagen. Bitte wechsle manuell in deinem Wallet.",
+    "failedToFetchFeeQuote": "Gebührenangebot konnte nicht abgerufen werden.",
     "unableToDetermineGas": "Axelar-Gaszahlung kann nicht ermittelt werden",
     "bridgeTxFailed": "Bridge-Transaktion fehlgeschlagen",
     "estimatedGas": "Geschätztes Axelar-Gas",

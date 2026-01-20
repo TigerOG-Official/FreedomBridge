@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { ArrowLeft, Search, Book, Code, Zap, Globe2, ShieldCheck, Link as LinkIcon } from "lucide-react";
+import { ArrowLeft, Search, Book, Code, Zap, Globe2, ShieldCheck, Link as LinkIcon, ExternalLink } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "./ui/button";
 import { useState } from "react";
@@ -25,7 +25,7 @@ export default function WikiPage() {
       title: t('wiki.nav.gettingStarted'),
       icon: <RocketIcon className="w-5 h-5" />,
       articles: [
-        { title: t('wiki.articles.whatIs.title'), link: "#what-is-tiger-rails" },
+        { title: t('wiki.articles.whatIs.title'), link: "#what-is-freedom-bridge" },
         { title: t('wiki.articles.howToConvert.title'), link: "#how-to-convert" },
         { title: t('wiki.articles.supportedNetworks.title'), link: "#supported-networks" },
       ]
@@ -37,7 +37,7 @@ export default function WikiPage() {
       articles: [
         { title: t('wiki.articles.xerc20.title'), link: "#interchain-tokens" },
         { title: t('wiki.articles.axelar.title'), link: "#axelar" },
-        { title: t('wiki.articles.migration.title'), link: "#migration-logic" },
+        { title: t('wiki.articles.conversion.title'), link: "#conversion-logic" },
         { title: t('wiki.nav.tigerogSupply'), link: "#tigerog-supply" },
         { title: t('wiki.nav.lionogSupply'), link: "#lionog-supply" },
         { title: t('wiki.nav.frogogSupply'), link: "#frogog-supply" },
@@ -49,6 +49,8 @@ export default function WikiPage() {
       icon: <Code className="w-5 h-5" />,
       articles: [
         { title: t('wiki.articles.security.title'), link: "#security" },
+        { title: t('wiki.nav.githubRepo'), link: "https://github.com/TigerOG-Official/FreedomBridge", external: true },
+        { title: t('wiki.nav.axelarDocs'), link: "https://docs.axelar.dev/dev/send-tokens/interchain-tokens/intro/", external: true },
       ]
     }
   ];
@@ -153,14 +155,28 @@ export default function WikiPage() {
                 </h4>
                 <div className="grid grid-flow-row auto-rows-max text-sm">
                   {category.articles.map((article) => (
-                    <button
-                      key={article.title}
-                      onClick={() => scrollToSection(article.link)}
-                      className="group flex w-full items-center rounded-md border border-transparent px-2 py-1.5 hover:underline text-left transition-colors cursor-pointer"
-                      style={{ color: 'var(--theme-text-secondary)' }}
-                    >
-                      {article.title}
-                    </button>
+                    'external' in article && article.external ? (
+                      <a
+                        key={article.title}
+                        href={article.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group flex w-full items-center gap-1 rounded-md border border-transparent px-2 py-1.5 hover:underline text-left transition-colors cursor-pointer"
+                        style={{ color: 'var(--theme-text-secondary)' }}
+                      >
+                        {article.title}
+                        <ExternalLink className="w-3 h-3 opacity-50" />
+                      </a>
+                    ) : (
+                      <button
+                        key={article.title}
+                        onClick={() => scrollToSection(article.link)}
+                        className="group flex w-full items-center rounded-md border border-transparent px-2 py-1.5 hover:underline text-left transition-colors cursor-pointer"
+                        style={{ color: 'var(--theme-text-secondary)' }}
+                      >
+                        {article.title}
+                      </button>
+                    )
                   ))}
                 </div>
               </div>
@@ -189,7 +205,7 @@ export default function WikiPage() {
             {/* Content Sections */}
             <div className="space-y-10">
               
-              <section id="what-is-tiger-rails" className="space-y-4 scroll-mt-24">
+              <section id="what-is-freedom-bridge" className="space-y-4 scroll-mt-24">
                 <h2 
                   className="text-2xl font-bold tracking-tight"
                   style={{ fontFamily: 'var(--font-display)', color: 'var(--theme-text-primary)' }}
@@ -305,15 +321,15 @@ export default function WikiPage() {
                               </p>
                             </section>
               
-                            <section id="migration-logic" className="space-y-4 scroll-mt-24">
+                            <section id="conversion-logic" className="space-y-4 scroll-mt-24">
                               <h2
                                 className="text-2xl font-bold tracking-tight"
                                 style={{ fontFamily: 'var(--font-display)', color: 'var(--theme-text-primary)' }}
                               >
-                                {t('wiki.articles.migration.title')}
+                                {t('wiki.articles.conversion.title')}
                               </h2>
                               <p className="leading-7" style={{ color: 'var(--theme-text-secondary)' }}>
-                                {t('wiki.articles.migration.content')}
+                                {t('wiki.articles.conversion.content')}
                               </p>
                             </section>
 

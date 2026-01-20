@@ -16,36 +16,35 @@
     "wiki": "Takardun / Wiki",
     "contracts": "Kwangiloli",
     "faq": "Tambayoyin da Ake Yawan Yi",
-    "logout": "Fita",
     "language": "Harshe",
     "languageSearchPlaceholder": "Nemo harsuna",
     "languageNoResults": "Ba a sami harsuna ba",
     "close": "Rufe"
   },
   "addNetworks": {
-    "title": "Ƙara Hanyoyin Sadarwa",
-    "description": "Danna maɓallin da ke ƙasa don ƙara hanyoyin sadarwa zuwa walat ɗinka. Wannan yana sauƙaƙa canzawa tsakanin sarƙoƙi yayin gwaji."
+    "title": "Ƙara Hanyoyin Sadarwa zuwa Walat",
+    "description": "Danna kowace hanyar sadarwa don ƙara ta zuwa MetaMask, Rabby, ko wasu walat na Web3",
+    "searchPlaceholder": "Nemo hanyoyin sadarwa...",
+    "noResults": "Ba a sami hanyoyin sadarwa ba",
+    "networkCount": "hanyar sadarwa"
+  },
+  "addNetwork": {
+    "connectWallet": "Da fatan za a haɗa walat ɗinka da farko",
+    "alreadyPending": "Ana jiran buƙatar. Duba walat ɗinka.",
+    "error": "An kasa ƙara hanyar sadarwa. Da fatan za a ƙara ta da hannu.",
+    "adding": "Ana ƙarawa...",
+    "button": "Ƙara"
   },
   "tabs": {
     "convert": "Musanya",
     "bridge": "Gada"
   },
   "convert": {
-    "token": "Token",
-    "selectToken": "Zaɓi Token",
     "balance": "Ma'auni",
-    "noConvertibleTokens": "Babu tokens da za a iya musanya akan {{chainName}}",
-    "convert": "Musanya",
-    "addToWalletLabel": "Shigo da {{symbol}} akan {{chainName}} zuwa walat",
     "addToWalletButton": "Shigo da zuwa Walat",
-    "addingToken": "Ana ƙarawa…",
-    "addTokenError": "Ba a iya ƙara token zuwa walat ba",
-    "legacyTokenMissing": "Tsohon token ya ɓace don wannan sarka",
-    "tigerOGMissing": "TigerOG token ya ɓace don wannan sarka",
     "networkWarning": {
       "title": "Hanyar Sadarwa Ba Daidai Ba",
-      "message": "Musanya token yana samuwa ne kawai akan BSC Chain.",
-      "description": "Da fatan za a canja zuwa BSC Chain a walat ɗinka don musanya tokens, ko je zuwa shafin Gada don canja tokens tsakanin sarƙoƙi."
+      "message": "Musanya token yana samuwa ne kawai akan BSC Chain. Da fatan za a canja zuwa BSC don musanya tsoffin tokens ɗinka."
     }
   },
   "bridge": {
@@ -54,11 +53,9 @@
     "toChain": "Zuwa Sarkar",
     "selectDestinationPlaceholder": "Zaɓi wurin da za a nufa",
     "noDestination": "Babu wurin da za a nufa",
-    "noBridgeableTokens": "Babu alamun da za a iya gadawa",
-    "bridgeButton": "Alamar Gada",
-    "getFeeQuote": "Nemo Kuɗin Gada",
+    "noBridgeableTokens": "Babu tokens da za a iya gadawa",
+    "bridgeButton": "Gada Tokens",
     "viewOnAxelarscan": "Duba akan Axelarscan",
-    "addDestinationTokenLabel": "Shigo da {{symbol}} akan {{chainName}} zuwa walat",
     "addTokenError": "Ba a iya ƙara token zuwa walat ba",
     "estimatedTime": "Kiyasin lokaci",
     "recentTransactions": "Ma'amaloli na Kwanan nan",
@@ -74,36 +71,22 @@
     "cancel": "Soke",
     "save": "Ajiye"
   },
-  "wallet": {},
-  "login": {
-    "title": "Barka da dawowa",
-    "subtitle": "Shiga don ci gaba zuwa Freedom Bridge",
-    "emailLabel": "Imel",
-    "emailPlaceholder": "suna@misali.com",
-    "passwordLabel": "Kalmar sirri",
-    "passwordPlaceholder": "Shigar da kalmar sirri",
-    "rememberMe": "Ka tuna da ni a kan wannan na'urar",
-    "submit": "Shiga",
-    "validation": {
-      "required": "Imel da kalmar sirri suna da mahimmanci.",
-      "invalid": "Imel ko kalmar sirri ba daidai ba."
-    }
-  },
   "landing": {
     "banner": {
       "title": "Sabo ne a nan?",
-      "message": "Koyi game da Freedom Bridge da yadda za ka 'yanta daga harajin token."
+      "message": "Koyi game da Freedom Bridge da yadda za ka gada TigerOG tokens a tsakanin sarƙoƙi.",
+      "note": "Lura: Musanya token yana dindindin kuma ba za a iya dawo da shi ba."
     },
     "hero": {
       "badge": "Axelar ne ke da Iko",
       "title": "'Yanta <1/> <2>Kadara</2> naka",
-      "subtitle": "Gada TigerOG tokens ba tare da matsala ba tsakanin sarƙoƙi ta amfani da Axelar Interchain Token Service. Mai tsaro, sauri, da kyauta daga haraji.",
+      "subtitle": "Gada TigerOG tokens ba tare da matsala ba tsakanin sarƙoƙi ta amfani da Axelar Interchain Token Service. Mai tsaro, sauri, kuma kyauta daga haraji.",
       "launchApp": "Buɗe App",
       "documentation": "Takardun"
     },
     "stats": {
       "messaging": "Axelar Network",
-      "networks": "Networks Masu Raye",
+      "networks": "Hanyoyin Sadarwa Masu Aiki",
       "fees": "Kuɗin Protocol",
       "finality": "Ƙarshe"
     },
@@ -112,32 +95,37 @@
       "description": "Freedom Bridge yana amfani da Axelar ITS don samar da ingantacciyar ƙwarewar gadawa mara tsada, mai aminci, kuma kyauta a duk faɗin fiye da {{count}} blockchains.",
       "stopDecay": {
         "title": "Dakatar da Rushewa",
-        "description": "Tsoffin tokens suna ƙone 10-11% na darajar ku a kowane saye da siyarwa. Kunna zuwa TigerOG yana dakatar da wannan zub da jini nan da nan, yana kiyaye 100% na darajar ku.",
+        "description": "Tsoffin tokens suna ƙone 10-11% na darajar ku a kowane saye da siyarwa. Musanya zuwa TigerOG yana dakatar da wannan zub da jini nan da nan, yana kiyaye 100% na darajar ku.",
         "graphLabel1": "100% An Kiyaye (TigerOG)",
         "graphLabel2": "-40% Daraja (Tsohon 10% Haraji)"
       },
       "conversion": {
         "title": "1:1 Musanya",
-        "description": "Jimlar wadata ba ta canzawa. Tokens suna riƙe a cikin amintaccen kwangilar hijira, kuma ana amfani da daidai 1:1. Babu hauhawar farashi, babu raguwa."
+        "description": "Jimlar wadata ba ta canzawa. Ana riƙe tokens a cikin amintaccen kwangilar musanya, kuma ana amfani da daidai 1:1. Babu hauhawar farashi, babu raguwa."
       },
       "multichain": {
         "title": "Multi-Sarka",
-        "description": "Deploy sau ɗaya, shiga ko'ina. Kayan ku ya zama ɗan asalin ƙasar interchain token a duk faɗin sarƙoƙi ciki har da Ethereum, BNB Chain, Base, da ƙari."
+        "description": "Deploy sau ɗaya, shiga ko'ina. Kadarar ku ta zama ɗan asalin interchain token a duk faɗin sarƙoƙi ciki har da Ethereum, BNB Chain, Base, da ƙari."
       },
       "security": {
         "title": "Tsaron Axelar",
-        "description": "An kunna ta hanyar tsarin tsaro na masu tabbatarwa na Axelar. ITS na tabbatar da cewa tokens ɗinku an canja su lafiya da kuma daidai a duk faɗin hanyoyin sadarwa masu alaƙa.",
+        "description": "An kunna ta hanyar tsarin masu tabbatarwa na Axelar. ITS tana tabbatar da cewa tokens ɗinku an canja su lafiya da kuma daidai a duk faɗin hanyoyin sadarwa masu alaƙa.",
         "button": "Fara Gadawa"
       }
     },
-    "teaser": {
-      "title": "Kuna so wasu tsabar kudi?",
-      "subtitle": "Me kuke tunani game da <lunc>LUNC</lunc>, <crepe>Crepe</crepe>, ko <shiba>Shiba</shiba>žití"
-    },
     "cta": {
       "title": "Shirye don gada?",
-      "description": "Shiga juyin juya halin interchain. Yana ɗaukar ƙasa da minti ɗaya don kunna kadaran ku kuma fara gadawa ta Axelar.",
+      "description": "Shiga juyin juya halin interchain. Yana ɗaukar ƙasa da minti ɗaya don musanya kadaran ku kuma fara gadawa ta Axelar.",
       "button": "Buɗe App Yanzu"
+    },
+    "buyTokens": {
+      "badge": "Fara",
+      "title": "Sami Kadarori",
+      "description": "Ba ka da wasu tokens tukuna? Saya tokens na asali akan PancakeSwap, sannan musanya su zuwa sabbin sigogin multichain.",
+      "buyOn": "Saya akan PancakeSwap",
+      "then": "sannan",
+      "convertTo": "Musanya zuwa",
+      "buyNow": "Saya Yanzu"
     }
   },
   "wiki": {
@@ -145,7 +133,7 @@
     "searchPlaceholder": "Nemo takardun...",
     "header": {
       "title": "Takardun",
-      "subtitle": "Koyi yadda ake musanya tsoffin tokens, gada tsakanin sarƙoƙi, da haɗawa da Freedom Bridge."
+      "subtitle": "Koyi yadda ake musanya tsoffin tokens da gada tsakanin sarƙoƙi."
     },
     "nav": {
       "gettingStarted": "Farawa",
@@ -153,12 +141,14 @@
       "developers": "Masu Haɓaka",
       "tigerogSupply": "Wadata TigerOG",
       "lionogSupply": "Wadata LionOG",
-      "frogogSupply": "Wadata FrogOG"
+      "frogogSupply": "Wadata FrogOG",
+      "githubRepo": "Ma'ajiyar GitHub",
+      "axelarDocs": "Takardun Axelar ITS"
     },
     "articles": {
       "whatIs": {
         "title": "Menene Freedom Bridge?",
-        "content": "Freedom Bridge yarjejeniya ce ta raba gari wacce aka gina akan Axelar's Interchain Token Service (ITS). An tsara shi don 'yantar da tokens daga iyakokin sarka guda ɗaya da manyan harajin ciniki. Ta hanyar kunna daidaitattun tokens zuwa kadarori masu dacewa da interchain, masu amfani za su iya motsa darajar su kyauta a duk faɗin blockchains masu tallafi.",
+        "content": "Freedom Bridge yarjejeniya ce ta raba gari wacce aka gina akan Axelar's Interchain Token Service (ITS). Tana ba ku damar musanya tsoffin tokens zuwa kadarori marasa haraji masu dacewa da interchain waɗanda za su iya motsawa cikin walwala a tsakanin blockchains masu tallafi.",
         "taxFreeTitle": "Canja wurin Ba tare da Haraji ba",
         "taxFreeDesc": "Tsoffin tokens sau da yawa suna da haraji 10%+. TigerOG tokens suna da haraji 0%.",
         "omnichainTitle": "Interchain",
@@ -166,12 +156,12 @@
       },
       "howToConvert": {
         "title": "Yadda Ake Musanya Tokens",
-        "step1": "Haɗa walat ɗinka zuwa tushen sarka (misali, BSC Chain).",
+        "step1": "Haɗa walat ɗinka zuwa tushen sarka (misali, BNB Chain).",
         "step2": "Je zuwa shafin <strong>Musanya</strong>.",
         "step3": "Zaɓi tsohon token da kake son musanya.",
-        "step4": "Amincewa da kwangilar Hijira don kashe tokens ɗinka.",
+        "step4": "Amincewa da kwangilar Musanya don kashe tokens ɗinka.",
         "step5": "Danna <strong>Musanya</strong> don ajiye tsoffin tokens ɗinku da karɓar daidai adadin \"TigerOG\" tokens.",
-        "note": "<strong>Lura:</strong> Musanya yana haifar da harajin ciniki na tsohon token (yayinda ake ajiye) idan token ɗinka yana cajin haraji akan canja wuri. Duk da haka, da zarar an canza zuwa TigerOG, duk canja wuri da gadaje na gaba ba su da haraji."
+        "note": "<strong>Lura:</strong> Musanya yana haifar da harajin ciniki na tsohon token (yayin da ake haɓakawa) idan token ɗinka yana cajin haraji akan canja wuri. Duk da haka, da zarar an canza zuwa TigerOG, duk canja wuri da gadaje na gaba ba su da haraji."
       },
       "supportedNetworks": {
         "title": "Hanyoyin Sadarwa Masu Tallafi",
@@ -185,9 +175,9 @@
         "title": "Axelar Network",
         "content": "Muna amfani da Axelar a matsayin layin haɗin kai. Axelar yarjejeniya ce ta raba gari wacce ke haɗa blockchains daban-daban, tana ba da damar sadarwa mai tsaro tsakanin sarƙoƙi da canja wurin kadara. Tsarin tsaro na Axelar ya dogara da saitin masu tabbatarwa marasa izini, yana ba da babban tsaro ga interchain tokens."
       },
-      "migration": {
-        "title": "Hanyar Hijira",
-        "content": "An tura kwangilar Hijira akan tushen sarka (misali, BSC). Tana riƙe da ainihin tsoffin tokens a cikin kulawa. Lokacin da kuka inganta tokens, kuna ajiye a cikin kwangilar Hijira. Lokacin da kuka cire (idan ana tallafawa), kuna ƙone wakilcin TigerOG don fitar da ainihin tokens. Wannan yana tabbatar da daidaitaccen 1:1."
+      "conversion": {
+        "title": "Hanyar Musanya",
+        "content": "An tura kwangilar Musanya akan BSC. Lokacin da kuka musanya, ana aika tsoffin tokens ɗinku zuwa adireshin matattu (ana ƙone su har abada) kuma kuna karɓar TigerOG a rabo na 1:1. Wannan tsari ne na hanya ɗaya — ana lalata tsoffin tokens kuma ba za a iya dawo da su ba."
       },
       "contracts": {
         "title": "Adireshin Kwangiloli Masu Kaifin Baki",
@@ -198,7 +188,7 @@
       "security": {
         "title": "Tsarin Tsaro",
         "content": "An gina tsaro a cikin kowane matakin Freedom Bridge:",
-        "point1": "<strong>Tsarin Hijira:</strong> Tsoffin tokens ana riƙe su a cikin amintattun kwangiloli masu kaifin baki, marasa canzawa.",
+        "point1": "<strong>Tsarin Musanya:</strong> Ana ƙone tsoffin tokens har abada ta hanyar amintattun kwangiloli masu kaifin baki, marasa canzawa.",
         "point2": "<strong>Masu Tabbatar da Axelar:</strong> Ana tabbatar da saƙonni tsakanin sarƙoƙi ta hanyar cibiyar sadarwa ta Axelar.",
         "point3": "<strong>Wadata Mai Dorewa:</strong> ITS tana sarrafa ƙirƙira da ƙone don kiyaye jimlar wadata a duk faɗin sarƙoƙi.",
         "point4": "<strong>Kwangiloli da Aka Tantance:</strong> An gina su akan daidaitattun ɗakunan karatu na masana'antu na Axelar da OpenZeppelin."
@@ -229,7 +219,7 @@
         "lpLockedDesc": "PancakeSwap liquidity pool yana ƙunshe da BNBTiger tokens da aka haɗa da BNB. Lokacin da aka ƙone LP tokens (an aika zuwa adireshin matattu), ainihin tokens a cikin pool ɗin suna kulle har abada.",
         "lpBurnedPercent": "LP tokens da aka ƙone: 86.18% na duk LP tokens",
         "lpLockedPercent": "Saboda haka, 86.18% na tokens a cikin LP suna kulle har abada",
-        "note": "<strong>Lura:</strong> TigerOG yana riƙe da rabo na 1:1 tare da BNBTiger yayin hijira. Wadata mai yawo na TigerOG yayi daidai da ainihin wadata mai yawo na BNBTiger bayan lissafin duk tokens da aka ƙone da aka kulle.",
+        "note": "<strong>Lura:</strong> TigerOG yana riƙe da rabo na 1:1 tare da BNBTiger yayin musanya. Wadata mai yawo na TigerOG yayi daidai da ainihin wadata mai yawo na BNBTiger bayan lissafin duk tokens da aka ƙone da aka kulle.",
         "launchData": "<strong>Bayanin Kaddamarwa:</strong> Waɗannan lambobin an lissafa su a lokacin kaddamarwa. Tsohon BNBTiger token yana ci gaba da ƙone tokens a kowane ciniki na saye/siyarwa, don haka ainihin wadata mai yawo na iya zama ƙasa da yadda aka nuna.",
         "legacyContract": "Kwangilar Token BNBTiger",
         "ogContract": "Kwangilar Token TigerOG",
@@ -254,7 +244,7 @@
         "lpLockedDesc": "PancakeSwap liquidity pool yana ƙunshe da BNBLion tokens da aka haɗa da BNB. Lokacin da aka ƙone LP tokens (an aika zuwa adireshin matattu), ainihin tokens a cikin pool ɗin suna kulle har abada.",
         "lpBurnedPercent": "LP tokens da aka ƙone: 99.98% na duk LP tokens",
         "lpLockedPercent": "Saboda haka, 99.98% na tokens a cikin LP suna kulle har abada",
-        "note": "<strong>Lura:</strong> LionOG yana riƙe da rabo na 1:1 tare da BNBLion yayin hijira. Wadata mai yawo na LionOG yayi daidai da ainihin wadata mai yawo na BNBLion bayan lissafin duk tokens da aka ƙone da aka kulle.",
+        "note": "<strong>Lura:</strong> LionOG yana riƙe da rabo na 1:1 tare da BNBLion yayin musanya. Wadata mai yawo na LionOG yayi daidai da ainihin wadata mai yawo na BNBLion bayan lissafin duk tokens da aka ƙone da aka kulle.",
         "launchData": "<strong>Bayanin Kaddamarwa:</strong> Waɗannan lambobin an lissafa su a lokacin kaddamarwa. Tsohon BNBLion token yana ci gaba da ƙone tokens a kowane ciniki na saye/siyarwa, don haka ainihin wadata mai yawo na iya zama ƙasa da yadda aka nuna.",
         "legacyContract": "Kwangilar Token BNBLion",
         "ogContract": "Kwangilar Token LionOG",
@@ -279,7 +269,7 @@
         "lpLockedDesc": "PancakeSwap liquidity pool yana ƙunshe da BNBFrog tokens da aka haɗa da BNB. Lokacin da aka ƙone LP tokens (an aika zuwa adireshin matattu), ainihin tokens a cikin pool ɗin suna kulle har abada.",
         "lpBurnedPercent": "LP tokens da aka ƙone: 99.31% na duk LP tokens",
         "lpLockedPercent": "Saboda haka, 99.31% na tokens a cikin LP suna kulle har abada",
-        "note": "<strong>Lura:</strong> FrogOG yana riƙe da rabo na 1:1 tare da BNBFrog yayin hijira. Wadata mai yawo na FrogOG yayi daidai da ainihin wadata mai yawo na BNBFrog bayan lissafin duk tokens da aka ƙone da aka kulle.",
+        "note": "<strong>Lura:</strong> FrogOG yana riƙe da rabo na 1:1 tare da BNBFrog yayin musanya. Wadata mai yawo na FrogOG yayi daidai da ainihin wadata mai yawo na BNBFrog bayan lissafin duk tokens da aka ƙone da aka kulle.",
         "launchData": "<strong>Bayanin Kaddamarwa:</strong> Waɗannan lambobin an lissafa su a lokacin kaddamarwa. Tsohon BNBFrog token yana ci gaba da ƙone tokens a kowane ciniki na saye/siyarwa, don haka ainihin wadata mai yawo na iya zama ƙasa da yadda aka nuna.",
         "legacyContract": "Kwangilar Token BNBFrog",
         "ogContract": "Kwangilar Token FrogOG",
@@ -301,17 +291,47 @@
     "title": "Adireshin Kwangila",
     "header": {
       "title": "Kwangiloli Masu Kaifin Baki",
-      "subtitle": "Adireshin turawa na hukuma don tokens, routers, da tafkunan samar da kuɗi a duk faɗin tsarin halittu na Freedom Bridge."
+      "subtitle": "Adireshin turawa na hukuma don tokens da gadaje a duk faɗin tsarin halittu na Freedom Bridge."
     },
     "tabs": {
       "overview": "Bayanai",
       "byToken": "Ta Token",
-      "byChain": "Ta Sarka",
-      "liquidity": "Samar da Kuɗi"
+      "byChain": "Ta Sarka"
     },
-    "liquidity": {
-      "title": "Tafkunan Samar da Kuɗi"
-    }
+    "overview": {
+      "interchainTokens": {
+        "title": "Interchain Tokens",
+        "description": "Interchain tokens da aka tura ta Axelar Interchain Token Service (ITS). Waɗannan tokens suna da daidaitattun adireshin a duk faɗin hanyoyin sadarwa masu tallafi."
+      },
+      "axelarNetwork": {
+        "title": "Axelar Network",
+        "description": "Yarjejeniyar saƙon da ke tallafa canja wuri tsakanin sarƙoƙi da tabbatar da daidaiton bayanan tsakanin blockchains daban-daban."
+      },
+      "conversionContracts": {
+        "title": "Kwangilolin Musanya",
+        "description": "Suna da alhakin musanya tsoffin tokens zuwa kadarori na interchain. Waɗannan kwangiloli suna sarrafa ajiyar da ƙirƙirar akan tushen sarka."
+      },
+      "conversionContractsTable": {
+        "title": "Adireshin Kwangilolin Musanya",
+        "subtitle": "Waɗannan kwangiloli akan BSC suna sarrafa musanya daga tsoffin tokens zuwa interchain tokens.",
+        "token": "Token",
+        "legacyToken": "Tsohon Token",
+        "conversionContract": "Kwangilar Musanya",
+        "newToken": "Interchain Token"
+      }
+    },
+    "filterTokens": "Tace tokens...",
+    "interchainAsset": "Interchain Asset ta Axelar ITS",
+    "availableOnChains": "Yana samuwa a sarƙoƙi {{count}}",
+    "table": {
+      "chain": "Sarka",
+      "tokenAddress": "Adireshin Token",
+      "axelarChainName": "Sunan Sarkar Axelar",
+      "chainId": "ID: {{id}}"
+    },
+    "axelarId": "Axelar ID: {{name}}",
+    "copied": "An kwafe!",
+    "copyAddress": "Kwafa adireshin"
   },
   "faq": {
     "title": "Freedom Bridge Taimako",
@@ -327,13 +347,13 @@
       "q1": "Menene manufar musanya tokens dina?",
       "a1": "Musanya tokens ɗinku zuwa TigerOG yana cire harajin ciniki (sau da yawa 10-12%) da ke da alaƙa da tsohon token. Hakanan yana ba ku damar gada waɗannan tokens zuwa wasu blockchains kamar Ethereum, Base, da ƙari ta hanyar Axelar, yana ba da damar shiga sabbin tsarin halittu.",
       "q2": "Shin amintacce ne amfani da Freedom Bridge?",
-      "a2": "Haka ne. Yarjejeniyar tana amfani da amintaccen kwangilar Hijira da Axelar's Interchain Token Service. Lokacin da kuka musanya, BNBTiger ɗinku yana ƙonewa har abada kuma kuna karɓar TigerOG a rabo na 1:1. Tsarin ƙonewa yana tabbatar da cewa an sarrafa jimlar wadata daidai a duk faɗin sarƙoƙi.",
+      "a2": "Haka ne. Yarjejeniyar tana amfani da amintaccen kwangilar Musanya da Axelar's Interchain Token Service. Lokacin da kuka musanya, ana ƙone BNBTiger ɗinku har abada kuma kuna karɓar TigerOG a rabo na 1:1. Tsarin ƙonewa yana tabbatar da cewa an sarrafa jimlar wadata daidai a duk faɗin sarƙoƙi.",
       "q3": "Shin akwai wasu kuɗi?",
       "a3": "Freedom Bridge da kansa baya cajin kuɗi don musanya. Kuna biya ne kawai daidaitattun kuɗin gas na blockchain. Gadawa tsakanin sarƙoƙi yana haɗa da kuɗin gas na interchain da aka biya Axelar don rufe kuɗin turawa.",
       "q4": "Menene zai faru idan na rasa tokens dina?",
       "a4": "TigerOG tokens suna aiki kamar kowane ERC20 token. Idan ka rasa damar shiga walat ɗinka, ba za a iya dawo da su ba. Kullum ka kiyaye maɓallan sirri da kalmomin dawowa naka amintattu.",
       "q5": "Zan iya musanya tokens na TigerOG zuwa BNBTiger?",
-      "a5": "A'a. Hijirar canji ne na hanya ɗaya. Lokacin da kuka musanya BNBTiger zuwa TigerOG, tokens ɗin BNBTiger ɗinku suna ƙonewa har abada (ana aika su zuwa adireshin matattu). Wannan an tsara shi ne — TigerOG shine sigar da aka haɓaka, mara haraji da aka nufa don maye gurbin tsohon token gaba ɗaya.",
+      "a5": "A'a. Musanya canji ne na hanya ɗaya. Lokacin da kuka musanya BNBTiger zuwa TigerOG, ana ƙone tokens ɗin BNBTiger ɗinku har abada (ana aika su zuwa adireshin matattu). Wannan an tsara shi ne — TigerOG shine sigar da aka haɓaka, mara haraji da aka nufa don maye gurbin tsohon token gaba ɗaya.",
       "q6": "Wadanne hanyoyin sadarwa ne aka tallafa?",
       "a6": "Muna tallafawa sarƙoƙin EVM da yawa ta Axelar, gami da BNB Chain, Ethereum, Base, da ƙari. Bincika Wiki don cikakken jerin hanyoyin sadarwa masu tallafi.",
       "q7": "Har yaushe gadawa take ɗauka?",
@@ -347,7 +367,7 @@
     "to": "Zuwa",
     "max": "MAX",
     "chainId": "ID na Sarka",
-    "bscChain": "Sarkar BSC",
+    "bscChain": "BSC Chain",
     "insufficientBalance": "Ma'auni bai isa ba.",
     "failedToSwitchNetwork": "An kasa canja hanyar sadarwa. Da fatan za a canja da hannu a cikin walat ɗinka.",
     "failedToFetchFeeQuote": "An kasa nemo kuɗin gada.",

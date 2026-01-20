@@ -184,9 +184,14 @@ function App() {
               style={{ cursor: 'pointer', marginBottom: 0 }}
               onClick={() => navigate('/wiki')}
             >
-                <span>
-                  <strong>{t('landing.banner.title', 'New here?')}</strong> {t('landing.banner.message', 'Learn about Freedom Bridge and how to bridge TigerOG tokens across chains.')}
-                </span>
+                <div className="flex flex-col gap-1">
+                  <span>
+                    <strong>{t('landing.banner.title', 'New here?')}</strong> {t('landing.banner.message', 'Learn about Freedom Bridge and how to bridge TigerOG tokens across chains.')}
+                  </span>
+                  <span className="text-xs opacity-80">
+                    {t('landing.banner.note', 'Note: Token conversion is permanent and cannot be reversed.')}
+                  </span>
+                </div>
               <div className="banner-dismiss-btn ml-3">
                 <XIcon
                   size={22}

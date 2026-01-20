@@ -210,6 +210,7 @@ if [ "${1:-}" = "--all" ]; then
 
   # Copy dist to pkg/app for embedding
   echo "   Copying dist for embedding..."
+  mkdir -p "${SCRIPT_DIR}/pkg/app"
   rm -rf "${SCRIPT_DIR}/pkg/app/dist"
   cp -r "${DIST_DIR}" "${SCRIPT_DIR}/pkg/app/dist"
 

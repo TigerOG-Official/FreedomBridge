@@ -9,43 +9,42 @@
     "preferences": "Preferans",
     "switchTheme": "Aparans",
     "theme": {
-      "dark": "Fè nwa",
+      "dark": "Fènwa",
       "light": "Klè"
     },
     "switchPalette": "Chanje Palèt",
     "wiki": "Dokimantasyon / Wiki",
     "contracts": "Kontra",
     "faq": "FAQ",
-    "logout": "Dekonekte",
     "language": "Lang",
     "languageSearchPlaceholder": "Chèche lang",
-    "languageNoResults": "Pa gen lang",
+    "languageNoResults": "Pa jwenn okenn lang",
     "close": "Fèmen"
   },
   "addNetworks": {
-    "title": "Ajoute Rezo",
-    "description": "Klike yon bouton anba a pou Ajoute Rezo nan bous ou. Sa fè li fasil pou chanje ant chenn pandan w ap teste."
+    "title": "Ajoute Rezo nan Bous",
+    "description": "Klike sou nenpòt rezo pou ajoute l nan MetaMask, Rabby, oswa lòt bous Web3",
+    "searchPlaceholder": "Chèche rezo...",
+    "noResults": "Pa jwenn okenn rezo",
+    "networkCount": "rezo"
+  },
+  "addNetwork": {
+    "connectWallet": "Tanpri konekte bous ou dabò",
+    "alreadyPending": "Demann deja ap tann. Tcheke bous ou.",
+    "error": "Pa kapab ajoute rezo. Tanpri ajoute l manyèlman.",
+    "adding": "Ap ajoute...",
+    "button": "Ajoute"
   },
   "tabs": {
     "convert": "Konvèti",
     "bridge": "Pon"
   },
   "convert": {
-    "token": "Token",
-    "selectToken": "Chwazi Token",
     "balance": "Balans",
-    "noConvertibleTokens": "Pa gen tokens pou konvèti sou {{chainName}}",
-    "convert": "Konvèti",
-    "addToWalletLabel": "Enpòte {{symbol}} sou {{chainName}} nan bous",
     "addToWalletButton": "Enpòte nan Bous",
-    "addingToken": "Ap ajoute…",
-    "addTokenError": "Pa kapab ajoute token nan bous",
-    "legacyTokenMissing": "Token ansyen manke pou chèn sa a",
-    "tigerOGMissing": "Token TigerOG manke pou chèn sa a",
     "networkWarning": {
-      "title": "Rezo Pa Bon",
-      "message": "Konvèsyon token disponib sèlman sou BSC Chain.",
-      "description": "Tanpri chanje nan BSC Chain nan bous ou pou konvèti tokens, oswa navige nan tab Pon an pou transfere tokens ant chenn."
+      "title": "Move Rezo",
+      "message": "Konvèsyon token disponib sèlman sou BSC Chain. Tanpri chanje sou BSC pou konvèti ansyen tokens ou yo."
     }
   },
   "bridge": {
@@ -54,89 +53,79 @@
     "toChain": "Ale nan Chèn",
     "selectDestinationPlaceholder": "Chwazi destinasyon",
     "noDestination": "Pa gen destinasyon",
-    "noBridgeableTokens": "Pa gen tokens pou pon",
-    "bridgeButton": "Pon Tokens",
-    "getFeeQuote": "Jwenn Pri Frè",
+    "noBridgeableTokens": "Pa gen token pou fè pon",
+    "bridgeButton": "Fè Pon ak Token yo",
     "viewOnAxelarscan": "Gade sou Axelarscan",
-    "addDestinationTokenLabel": "Enpòte {{symbol}} sou {{chainName}} nan bous",
     "addTokenError": "Pa kapab ajoute token nan bous",
-    "estimatedTime": "Tan Est.",
+    "estimatedTime": "Tan estime",
     "recentTransactions": "Tranzaksyon Resan",
     "clearHistory": "Efase istwa",
-    "historyStoredLocally": "Istwa tranzaksyon estoke lokalman sou aparèy sa a"
+    "historyStoredLocally": "Istwa tranzaksyon yo sere lokalman sou aparèy sa a"
   },
   "settings": {
     "title": "Paramèt",
     "environment": "Anviwònman",
-    "rpcEndpoints": "Pwen Final RPC",
-    "rpcEndpointsHelp": "Mete ajou URL RPC yo itilize pou chak chèn nan anviwònman ou chwazi a.",
+    "rpcEndpoints": "Pwen Bout RPC",
+    "rpcEndpointsHelp": "Mete ajou URL RPC yo itilize pou chak chèn nan anviwònman chwazi a.",
     "noChainsConfigured": "Pa gen chèn konfigire pou anviwònman sa a.",
     "cancel": "Anile",
     "save": "Anrejistre"
   },
-  "wallet": {},
-  "login": {
-    "title": "Byenveni ankò",
-    "subtitle": "Konekte pou kontinye nan Pon Libète",
-    "emailLabel": "Imèl",
-    "emailPlaceholder": "non@egzanp.com",
-    "passwordLabel": "Modpas",
-    "passwordPlaceholder": "Antre modpas",
-    "rememberMe": "Sonje m sou aparèy sa a",
-    "submit": "Konekte",
-    "validation": {
-      "required": "Imèl ak modpas obligatwa.",
-      "invalid": "Imèl oswa modpas pa valab."
-    }
-  },
   "landing": {
     "banner": {
-      "title": "Nèf isit la?",
-      "message": "Aprann sou Pon Libète ak kijan pou fè pon tokens TigerOG atravè chenn yo."
+      "title": "Nouvo isit la?",
+      "message": "Aprann sou Pon Libète ak kijan pou fè pon token TigerOG atravè chèn yo.",
+      "note": "Nòt: Konvèsyon token pèmanan epi pa kapab defèt."
     },
     "hero": {
-      "badge": "Patwone pa Axelar",
+      "badge": "Sipòte pa Axelar",
       "title": "Libere <1/> <2>Byen</2> Ou Yo",
-      "subtitle": "Fè pon token TigerOG yo san pwoblèm atravè chenn yo lè l sèvi avèk Sèvis Token Entèchèn Axelar la. Sekirite, rapid, ak san taks.",
+      "subtitle": "Fè pon token TigerOG san pwoblèm atravè chèn yo avèk Sèvis Token Entèchèn Axelar la. Sekirize, rapid, epi san taks.",
       "launchApp": "Lanse Aplikasyon",
       "documentation": "Dokimantasyon"
     },
     "stats": {
       "messaging": "Rezo Axelar",
-      "networks": "Rezo An Dirèk",
+      "networks": "Rezo an Dirèk",
       "fees": "Frè Pwotokòl",
       "finality": "Finalite"
     },
-      "features": {
-        "title": "Sèvis Token Entèchèn",
-        "description": "Pon Libète itilize Axelar ITS pou bay yon eksperyans pon san pwoblèm, an sekirite, ak san taks atravè {{count}}+ blòkchèn.",
-        "stopDecay": {        "title": "Sispann Dekonpozisyon an",
-        "description": "Tokens ansyen yo boule 10-11% valè w nan chak acha ak vant. Konvèti an TigerOG sispann senyen sa a imedyatman, prezève 100% valè ou.",
+    "features": {
+      "title": "Sèvis Token Entèchèn",
+      "description": "Pon Libète itilize Axelar ITS pou bay yon eksperyans pon san pwoblèm, sekirize, epi san taks atravè {{count}}+ blòkchèn.",
+      "stopDecay": {
+        "title": "Sispann Degrado a",
+        "description": "Ansyen token yo boule 10-11% nan valè ou sou chak achte ak vann. Konvèti an TigerOG sispann pèt sa a imedyatman, prezève 100% valè ou.",
         "graphLabel1": "100% Konsève (TigerOG)",
-        "graphLabel2": "-40% Valè (Taks Ansyen 10%)"
+        "graphLabel2": "-40% Valè (Ansyen Taks 10%)"
       },
       "conversion": {
         "title": "Konvèsyon 1:1",
-        "description": "Pwovizyon total pa janm chanje. Tokens yo kenbe nan yon kontra migrasyon an sekirite, epi yon ekivalan egzak 1:1 itilize. Pa gen enflasyon, pa gen dilisyon."
+        "description": "Pwovizyon total pa janm chanje. Tokens kenbe nan yon kontra konvèsyon sekirize, epi yon ekivalan egzak 1:1 itilize. Pa gen enflasyon, pa gen dilisyon."
       },
       "multichain": {
         "title": "Milti-Chèn",
-        "description": "Deplwaye yon fwa, aksè toupatou. Byen w lan vin yon token entèchèn natif natal atravè chenn ki gen ladan Ethereum, BNB Chain, Base, ak plis ankò."
+        "description": "Deplwaye yon fwa, aksede toupatou. Byen ou vin yon token entèchèn natif natal atravè chèn tankou Ethereum, BNB Chain, Base, ak plis ankò."
       },
       "security": {
         "title": "Sekirite Axelar",
-        "description": "Patwone pa rezo desantralize validatè Axelar yo. ITS asire token ou yo transfere an sekirite epi regilyèman atravè tout rezo ki konekte yo.",
-        "button": "Kòmanse Pon"
+        "description": "Sipòte pa rezo desantralize validatè Axelar yo. ITS asire token ou yo transfere an sekirite epi konsistan atravè tout rezo konekte yo.",
+        "button": "Kòmanse Fè Pon"
       }
-    },
-    "teaser": {
-      "title": "Ou vle lòt pyès?",
-      "subtitle": "Kisa ou panse de <lunc>LUNC</lunc>, <crepe>Crepe</crepe>, oswa <shiba>Shiba</shiba>??"
     },
     "cta": {
       "title": "Pare pou fè pon?",
-      "description": "Antre nan revolisyon entèchèn nan. Li pran mwens pase yon minit pou vlope byen ou yo epi kòmanse pon atravè Axelar.",
+      "description": "Antre nan revolisyon entèchèn nan. Li pran mwens pase yon minit pou konvèti token ou yo epi kòmanse fè pon atravè Axelar.",
       "button": "Lanse Aplikasyon Kounye a"
+    },
+    "buyTokens": {
+      "badge": "Kòmanse",
+      "title": "Jwenn Byen",
+      "description": "Ou poko gen token? Achte ansyen token yo sou PancakeSwap, epi konvèti yo nan nouvo vèsyon milti-chèn yo.",
+      "buyOn": "Achte sou PancakeSwap",
+      "then": "epi",
+      "convertTo": "Konvèti an",
+      "buyNow": "Achte Kounye a"
     }
   },
   "wiki": {
@@ -144,7 +133,7 @@
     "searchPlaceholder": "Chèche dokimantasyon...",
     "header": {
       "title": "Dokimantasyon",
-      "subtitle": "Aprann kijan pou vlope tokens ansyen, fè pon ant chenn, ak entegre ak Pon Libète."
+      "subtitle": "Aprann kijan pou konvèti ansyen token yo epi fè pon atravè chèn yo."
     },
     "nav": {
       "gettingStarted": "Kòmanse",
@@ -152,41 +141,43 @@
       "developers": "Devlopè",
       "tigerogSupply": "Pwovizyon TigerOG",
       "lionogSupply": "Pwovizyon LionOG",
-      "frogogSupply": "Pwovizyon FrogOG"
+      "frogogSupply": "Pwovizyon FrogOG",
+      "githubRepo": "Repozitwa GitHub",
+      "axelarDocs": "Dokimantasyon Axelar ITS"
     },
     "articles": {
       "whatIs": {
         "title": "Kisa Pon Libète ye?",
-        "content": "Pon Libète se yon pwotokòl pon desantralize bati sou Sèvis Token Entèchèn Axelar (ITS). Li fèt pou libere tokens nan limitasyon yon sèl chèn ak taks tranzaksyon segondè. Lè yo vlope tokens estanda nan byen entèchèn konpatib, itilizatè yo ka deplase valè yo lib atravè blòkchèn sipòte.",
+        "content": "Pon Libète se yon pwotokòl pon desantralize ki bati sou Sèvis Token Entèchèn Axelar (ITS). Li pèmèt ou konvèti ansyen token yo nan byen san taks, konpatib ak entèchèn ki ka deplase lib atravè blòkchèn sipòte yo.",
         "taxFreeTitle": "Transfè San Taks",
-        "taxFreeDesc": "Tokens ansyen souvan gen taks 10%+. Tokens TigerOG gen 0% taks.",
+        "taxFreeDesc": "Ansyen token yo souvan gen taks 10%+. Token TigerOG yo gen 0% taks.",
         "omnichainTitle": "Entèchèn",
         "omnichainDesc": "Deplase byen imedyatman ant {{count}}+ blòkchèn atravè Axelar."
       },
       "howToConvert": {
-        "title": "Kijan pou Konvèti Tokens",
-        "step1": "Konekte bous ou a nan chèn sous la (egzanp, BNB Chain).",
-        "step2": "Navige nan tab <strong>Konvèti</strong> an.",
-        "step3": "Chwazi token ansyen ou vle konvèti a.",
-        "step4": "Apwouve kontra Migrasyon an pou depanse tokens ou yo.",
-        "step5": "Klike sou <strong>Konvèti</strong> pou depoze tokens ansyen ou yo epi resevwa yon kantite ekivalan tokens \"TigerOG\".",
-        "note": "<strong>Nòt:</strong> Konvèsyon antrene taks tranzaksyon token ansyen an (pandan amelyorasyon an) si token ou a chaje taks sou transfè. Sepandan, yon fwa konvèti an TigerOG, tout transfè ak pon ki vin apre yo gratis nan taks."
+        "title": "Kijan pou Konvèti Token",
+        "step1": "Konekte bous ou nan chèn orijin nan (egzanp, BNB Chain).",
+        "step2": "Navige nan tab <strong>Konvèti</strong> a.",
+        "step3": "Chwazi ansyen token ou vle konvèti a.",
+        "step4": "Apwouve kontra Konvèsyon an pou depanse token ou yo.",
+        "step5": "Klike sou <strong>Konvèti</strong> pou depoze ansyen token ou yo epi resevwa yon kantite ekivalan token \"TigerOG\".",
+        "note": "<strong>Nòt:</strong> Konvèsyon enpoze taks tranzaksyon ansyen token nan (pandan amelyorasyon an) si token ou a chaje taks sou transfè. Men, yon fwa konvèti an TigerOG, tout transfè ak pon ki vin apre yo gratis taks."
       },
       "supportedNetworks": {
         "title": "Rezo Sipòte",
-        "content": "Pon Libète sipòte yon ekosistèm k ap grandi nan {{count}}+ blòkchèn, ki pèmèt entèoperabilite san pwoblèm atravè peyizaj EVM nan atravè Axelar."
+        "content": "Pon Libète sipòte yon ekosistèm k ap grandi nan {{count}}+ blòkchèn, ki pèmèt entèoperabilite san pwoblèm atravè peyizaj EVM nan pa mwayen Axelar."
       },
       "xerc20": {
-        "title": "Tokens Entèchèn",
-        "content": "Sèvis Token Entèchèn Axelar (ITS) pèmèt tokens deplwaye atravè plizyè chenn ak yon adrès ki konsistan ak jesyon pwovizyon inifye. Pon Libète itilize ITS pou asire ke TigerOG rete yon byen kanonik kèlkeswa kote li fè pon."
+        "title": "Token Entèchèn",
+        "content": "Sèvis Token Entèchèn Axelar (ITS) pèmèt token yo deplwaye atravè plizyè chèn ak yon adrès konsistan ak jesyon pwovizyon inifye. Pon Libète itilize ITS pou asire TigerOG rete yon byen kanonik kèlkeswa kote li fè pon."
       },
       "axelar": {
         "title": "Rezo Axelar",
-        "content": "Nou itilize Axelar kòm kouch entèoperabilite nou an. Axelar se yon rezo desantralize ki konekte diferan blòkchèn, pèmèt kominikasyon kwaze-chèn an sekirite ak transfè byen. Modèl sekirite Axelar konte sou yon seri validatè san pèmisyon, bay sekirite wo nivo pou tokens entèchèn."
+        "content": "Nou itilize Axelar kòm kouch entèoperabilite nou an. Axelar se yon rezo desantralize ki konekte diferan blòkchèn, ki pèmèt kominikasyon kwaze-chèn sekirize ak transfè byen. Modèl sekirite Axelar la depann de yon ansanm validatè san pèmisyon, ki bay sekirite wo kalite pou token entèchèn yo."
       },
-      "migration": {
-        "title": "Lojik Migrasyon",
-        "content": "Kontra Migrasyon an deplwaye sou chèn orijin nan (egzanp, BSC). Li kenbe tokens ansyen orijinal yo nan gad. Lè ou amelyore tokens, ou ap depoze nan kontra Migrasyon an. Lè ou devlope (si sipòte), ou ap boule reprezantasyon TigerOG pou lage tokens orijinal yo. Sa asire yon sipò 1:1 estrikteman."
+      "conversion": {
+        "title": "Lojik Konvèsyon",
+        "content": "Kontra Konvèsyon an deplwaye sou BSC. Lè ou konvèti, ansyen token ou yo voye nan adrès mò a (boule pèmanaman) epi ou resevwa TigerOG nan yon rapò 1:1. Sa se yon pwosesis yon sèl sans — ansyen token yo detwi epi pa janm ka rekipere."
       },
       "contracts": {
         "title": "Adrès Kontra Entelijan",
@@ -197,9 +188,9 @@
       "security": {
         "title": "Modèl Sekirite",
         "content": "Sekirite bati nan chak kouch Pon Libète:",
-        "point1": "<strong>Achitekti Migrasyon:</strong> Tokens ansyen yo kenbe nan kontra entelijan verifye, imitab.",
+        "point1": "<strong>Achitekti Konvèsyon:</strong> Ansyen token yo boule pèmanaman atravè kontra entelijan verifye, ki pa ka chanje.",
         "point2": "<strong>Validatè Axelar:</strong> Mesaj kwaze-chèn yo verifye pa rezo desantralize Axelar la.",
-        "point3": "<strong>Pwovizyon Konsistan:</strong> ITS jere fòje ak boule pou kenbe yon pwovizyon total konstan atravè tout chenn.",
+        "point3": "<strong>Pwovizyon Konsistan:</strong> ITS jere fòjaj ak boule pou kenbe yon pwovizyon total konstan atravè tout chèn.",
         "point4": "<strong>Lojik Odite:</strong> Bati sou bibliyotèk estanda endistri Axelar ak OpenZeppelin."
       },
       "supplyCommon": {
@@ -209,89 +200,89 @@
         "table": {
           "category": "Kategori",
           "amount": "Kantite",
-          "percentOfTotal": "% de Total",
+          "percentOfTotal": "% nan Total",
           "originalSupply": "Pwovizyon Total Orijinal",
           "deadAddress": "Adrès Mò (Boule)",
-          "contractBalance": "Balans Kontra (Kole)",
+          "contractBalance": "Balans Kontra (Bloke)",
           "circulatingSupply": "Pwovizyon an Sikilasyon"
         },
         "deadAddressTitle": "1. Adrès Mò",
         "contractBalanceTitle": "2. Balans Kontra",
-        "lpLockedTitle": "3. Tokens LP Fèmen"
+        "lpLockedTitle": "3. Token LP Fèmen"
       },
       "tigerogSupply": {
         "title": "Dekonpozisyon Pwovizyon TigerOG",
-        "intro": "TigerOG gen yon pwovizyon an sikilasyon fiks ki sòti nan token BNBTiger orijinal la. Kalkil pwovizyon an kont pou tout tokens boule ak fèmen nèt ale.",
-        "lpLocked": "LP Fèmen (86.18% nan LP Boule)",
-        "deadAddressDesc": "Tokens voye nan <code>0x000...dEaD</code> yo boule nèt ale epi yo pa janm ka refè. Sa gen ladan tokens boule atravè mekanis taks orijinal BNBTiger la.",
-        "contractBalanceDesc": "Yon ti kantite tokens kole nan kontra BNBTiger la li menm. Tokens sa yo inaksesib epi efektivman retire nan sikilasyon.",
-        "lpLockedDesc": "Pisin likidite PancakeSwap la gen tokens BNBTiger pè ak BNB. Lè tokens LP yo boule (voye nan adrès mò a), tokens ki kache nan pisin lan vin fèmen nèt ale.",
-        "lpBurnedPercent": "Tokens LP boule: 86.18% nan tout tokens LP",
-        "lpLockedPercent": "Kidonk, 86.18% nan tokens nan LP yo fèmen nèt ale",
-        "note": "<strong>Nòt:</strong> TigerOG kenbe yon rapò 1:1 ak BNBTiger pandan migrasyon an. Pwovizyon an sikilasyon TigerOG matche ak vrè pwovizyon an sikilasyon BNBTiger apre li fin kont pou tout tokens boule ak fèmen.",
-        "launchData": "<strong>Done Lansman:</strong> Chif sa yo te kalkile nan lansman an. Token ansyen BNBTiger la kontinye boule tokens sou chak tranzaksyon achte/vann, kidonk pwovizyon an sikilasyon aktyèl la ka yon ti kras pi ba pase sa ki parèt.",
+        "intro": "TigerOG gen yon pwovizyon an sikilasyon fiks ki soti nan token BNBTiger orijinal la. Kalkil pwovizyon an konte pou tout token boule ak fèmen pèmanaman yo.",
+        "lpLocked": "LP Fèmen (86,18% nan LP Boule)",
+        "deadAddressDesc": "Token yo voye nan <code>0x000...dEaD</code> boule pèmanaman epi pa janm ka rekipere. Sa gen ladan token yo ki te boule atravè mekanis taks orijinal BNBTiger la.",
+        "contractBalanceDesc": "Yon ti kantite token bloke nan kontra BNBTiger la li menm. Token sa yo pa aksesib epi efektivman retire nan sikilasyon.",
+        "lpLockedDesc": "Pisin likidite PancakeSwap la gen token BNBTiger pè ak BNB. Lè token LP yo boule (voye nan adrès mò a), token ki anba nan pisin lan vin fèmen pèmanaman.",
+        "lpBurnedPercent": "Token LP boule: 86,18% nan tout token LP",
+        "lpLockedPercent": "Kidonk, 86,18% nan token nan LP yo fèmen pèmanaman",
+        "note": "<strong>Nòt:</strong> TigerOG kenbe yon rapò 1:1 ak BNBTiger pandan konvèsyon an. Pwovizyon an sikilasyon TigerOG koresponn ak vrè pwovizyon an sikilasyon BNBTiger apre li fin konte pou tout token boule ak fèmen.",
+        "launchData": "<strong>Done Lansman:</strong> Chif sa yo te kalkile nan lansman an. Ansyen token BNBTiger la kontinye boule token sou chak tranzaksyon achte/vann, kidonk pwovizyon an sikilasyon aktyèl la ka yon ti kras pi ba pase sa ki parèt.",
         "legacyContract": "Kontra Token BNBTiger",
         "ogContract": "Kontra Token TigerOG",
         "amounts": {
-          "original": "10,000,000,000,000,000,000,000,000",
-          "dead": "−5,772,706,396,234,535,780,783,775",
-          "deadPercent": "57.73%",
-          "contract": "−6,142,342,823,271,327",
-          "contractPercent": "<0.01%",
-          "lp": "−565,059,839,948,518,979,124,912",
-          "lpPercent": "5.65%",
-          "circulating": "3,662,233,757,674,602,416,819,986",
-          "circulatingPercent": "36.62%"
+          "original": "10 000 000 000 000 000 000 000 000",
+          "dead": "−5 772 706 396 234 535 780 783 775",
+          "deadPercent": "57,73%",
+          "contract": "−6 142 342 823 271 327",
+          "contractPercent": "<0,01%",
+          "lp": "−565 059 839 948 518 979 124 912",
+          "lpPercent": "5,65%",
+          "circulating": "3 662 233 757 674 602 416 819 986",
+          "circulatingPercent": "36,62%"
         }
       },
       "lionogSupply": {
         "title": "Dekonpozisyon Pwovizyon LionOG",
-        "intro": "LionOG gen yon pwovizyon an sikilasyon fiks ki sòti nan token BNBLion orijinal la. Kalkil pwovizyon an kont pou tout tokens boule ak fèmen nèt ale.",
-        "lpLocked": "LP Fèmen (99.98% nan LP Boule)",
-        "deadAddressDesc": "Tokens voye nan <code>0x000...dEaD</code> yo boule nèt ale epi yo pa janm ka refè. Sa gen ladan tokens boule atravè mekanis taks orijinal BNBLion la.",
-        "contractBalanceDesc": "Yon ti kantite tokens kole nan kontra BNBLion la li menm. Tokens sa yo inaksesib epi efektivman retire nan sikilasyon.",
-        "lpLockedDesc": "Pisin likidite PancakeSwap la gen tokens BNBLion pè ak BNB. Lè tokens LP yo boule (voye nan adrès mò a), tokens ki kache nan pisin lan vin fèmen nèt ale.",
-        "lpBurnedPercent": "Tokens LP boule: 99.98% nan tout tokens LP",
-        "lpLockedPercent": "Kidonk, 99.98% nan tokens nan LP yo fèmen nèt ale",
-        "note": "<strong>Nòt:</strong> LionOG kenbe yon rapò 1:1 ak BNBLion pandan migrasyon an. Pwovizyon an sikilasyon LionOG matche ak vrè pwovizyon an sikilasyon BNBLion apre li fin kont pou tout tokens boule ak fèmen.",
-        "launchData": "<strong>Done Lansman:</strong> Chif sa yo te kalkile nan lansman an. Token ansyen BNBLion la kontinye boule tokens sou chak tranzaksyon achte/vann, kidonk pwovizyon an sikilasyon aktyèl la ka yon ti kras pi ba pase sa ki parèt.",
+        "intro": "LionOG gen yon pwovizyon an sikilasyon fiks ki soti nan token BNBLion orijinal la. Kalkil pwovizyon an konte pou tout token boule ak fèmen pèmanaman yo.",
+        "lpLocked": "LP Fèmen (99,98% nan LP Boule)",
+        "deadAddressDesc": "Token yo voye nan <code>0x000...dEaD</code> boule pèmanaman epi pa janm ka rekipere. Sa gen ladan token yo ki te boule atravè mekanis taks orijinal BNBLion la.",
+        "contractBalanceDesc": "Yon ti kantite token bloke nan kontra BNBLion la li menm. Token sa yo pa aksesib epi efektivman retire nan sikilasyon.",
+        "lpLockedDesc": "Pisin likidite PancakeSwap la gen token BNBLion pè ak BNB. Lè token LP yo boule (voye nan adrès mò a), token ki anba nan pisin lan vin fèmen pèmanaman.",
+        "lpBurnedPercent": "Token LP boule: 99,98% nan tout token LP",
+        "lpLockedPercent": "Kidonk, 99,98% nan token nan LP yo fèmen pèmanaman",
+        "note": "<strong>Nòt:</strong> LionOG kenbe yon rapò 1:1 ak BNBLion pandan konvèsyon an. Pwovizyon an sikilasyon LionOG koresponn ak vrè pwovizyon an sikilasyon BNBLion apre li fin konte pou tout token boule ak fèmen.",
+        "launchData": "<strong>Done Lansman:</strong> Chif sa yo te kalkile nan lansman an. Ansyen token BNBLion la kontinye boule token sou chak tranzaksyon achte/vann, kidonk pwovizyon an sikilasyon aktyèl la ka yon ti kras pi ba pase sa ki parèt.",
         "legacyContract": "Kontra Token BNBLion",
         "ogContract": "Kontra Token LionOG",
         "amounts": {
-          "original": "10,000,000,000,000,000,000,000,000",
-          "dead": "−5,724,597,218,422,106,614,085,614",
-          "deadPercent": "57.25%",
-          "contract": "−9,219,967,745,410,740,095,290",
-          "contractPercent": "<0.01%",
-          "lp": "−442,490,152,327,271,918,655,109",
-          "lpPercent": "4.42%",
-          "circulating": "3,832,903,409,282,876,056,519,182",
-          "circulatingPercent": "38.33%"
+          "original": "10 000 000 000 000 000 000 000 000",
+          "dead": "−5 724 597 218 422 106 614 085 614",
+          "deadPercent": "57,25%",
+          "contract": "−9 219 967 745 410 740 095 290",
+          "contractPercent": "<0,01%",
+          "lp": "−442 490 152 327 271 918 655 109",
+          "lpPercent": "4,42%",
+          "circulating": "3 832 903 409 282 876 056 519 182",
+          "circulatingPercent": "38,33%"
         }
       },
       "frogogSupply": {
         "title": "Dekonpozisyon Pwovizyon FrogOG",
-        "intro": "FrogOG gen yon pwovizyon an sikilasyon fiks ki sòti nan token BNBFrog orijinal la. Kalkil pwovizyon an kont pou tout tokens boule ak fèmen nèt ale.",
-        "lpLocked": "LP Fèmen (99.31% nan LP Boule)",
-        "deadAddressDesc": "Tokens voye nan <code>0x000...dEaD</code> yo boule nèt ale epi yo pa janm ka refè. Sa gen ladan tokens boule atravè mekanis taks orijinal BNBFrog la.",
-        "contractBalanceDesc": "Yon ti kantite tokens kole nan kontra BNBFrog la li menm. Tokens sa yo inaksesib epi efektivman retire nan sikilasyon.",
-        "lpLockedDesc": "Pisin likidite PancakeSwap la gen tokens BNBFrog pè ak BNB. Lè tokens LP yo boule (voye nan adrès mò a), tokens ki kache nan pisin lan vin fèmen nèt ale.",
-        "lpBurnedPercent": "Tokens LP boule: 99.31% nan tout tokens LP",
-        "lpLockedPercent": "Kidonk, 99.31% nan tokens nan LP yo fèmen nèt ale",
-        "note": "<strong>Nòt:</strong> FrogOG kenbe yon rapò 1:1 ak BNBFrog pandan migrasyon an. Pwovizyon an sikilasyon FrogOG matche ak vrè pwovizyon an sikilasyon BNBFrog apre li fin kont pou tout tokens boule ak fèmen.",
-        "launchData": "<strong>Done Lansman:</strong> Chif sa yo te kalkile nan lansman an. Token ansyen BNBFrog la kontinye boule tokens sou chak tranzaksyon achte/vann, kidonk pwovizyon an sikilasyon aktyèl la ka yon ti kras pi ba pase sa ki parèt.",
+        "intro": "FrogOG gen yon pwovizyon an sikilasyon fiks ki soti nan token BNBFrog orijinal la. Kalkil pwovizyon an konte pou tout token boule ak fèmen pèmanaman yo.",
+        "lpLocked": "LP Fèmen (99,31% nan LP Boule)",
+        "deadAddressDesc": "Token yo voye nan <code>0x000...dEaD</code> boule pèmanaman epi pa janm ka rekipere. Sa gen ladan token yo ki te boule atravè mekanis taks orijinal BNBFrog la.",
+        "contractBalanceDesc": "Yon ti kantite token bloke nan kontra BNBFrog la li menm. Token sa yo pa aksesib epi efektivman retire nan sikilasyon.",
+        "lpLockedDesc": "Pisin likidite PancakeSwap la gen token BNBFrog pè ak BNB. Lè token LP yo boule (voye nan adrès mò a), token ki anba nan pisin lan vin fèmen pèmanaman.",
+        "lpBurnedPercent": "Token LP boule: 99,31% nan tout token LP",
+        "lpLockedPercent": "Kidonk, 99,31% nan token nan LP yo fèmen pèmanaman",
+        "note": "<strong>Nòt:</strong> FrogOG kenbe yon rapò 1:1 ak BNBFrog pandan konvèsyon an. Pwovizyon an sikilasyon FrogOG koresponn ak vrè pwovizyon an sikilasyon BNBFrog apre li fin konte pou tout token boule ak fèmen.",
+        "launchData": "<strong>Done Lansman:</strong> Chif sa yo te kalkile nan lansman an. Ansyen token BNBFrog la kontinye boule token sou chak tranzaksyon achte/vann, kidonk pwovizyon an sikilasyon aktyèl la ka yon ti kras pi ba pase sa ki parèt.",
         "legacyContract": "Kontra Token BNBFrog",
         "ogContract": "Kontra Token FrogOG",
         "amounts": {
-          "original": "10,000,000,000,000,000,000,000,000",
-          "dead": "−740,059,884,911,899,485,982,976",
-          "deadPercent": "7.40%",
-          "contract": "−4,036,008,092,593,983,879,741",
-          "contractPercent": "<0.01%",
-          "lp": "−874,144,424,929,004,044,398,902",
-          "lpPercent": "8.74%",
-          "circulating": "8,385,795,686,123,088,377,024,138",
-          "circulatingPercent": "83.86%"
+          "original": "10 000 000 000 000 000 000 000 000",
+          "dead": "−740 059 884 911 899 485 982 976",
+          "deadPercent": "7,40%",
+          "contract": "−4 036 008 092 593 983 879 741",
+          "contractPercent": "<0,01%",
+          "lp": "−874 144 424 929 004 044 398 902",
+          "lpPercent": "8,74%",
+          "circulating": "8 385 795 686 123 088 377 024 138",
+          "circulatingPercent": "83,86%"
         }
       }
     }
@@ -300,45 +291,75 @@
     "title": "Adrès Kontra",
     "header": {
       "title": "Kontra Entelijan",
-      "subtitle": "Adrès deplwaman ofisyèl pou tokens ak pon atravè ekosistèm Pon Libète a."
+      "subtitle": "Adrès deplwaman ofisyèl pou token ak pon atravè ekosistèm Pon Libète a."
     },
     "tabs": {
       "overview": "Apèsi",
       "byToken": "Pa Token",
-      "byChain": "Pa Chèn",
-      "liquidity": "Likidite"
+      "byChain": "Pa Chèn"
     },
-    "liquidity": {
-      "title": "Pisin Likidite"
-    }
+    "overview": {
+      "interchainTokens": {
+        "title": "Token Entèchèn",
+        "description": "Token entèchèn deplwaye atravè Sèvis Token Entèchèn Axelar (ITS). Token sa yo kenbe adrès konsistan atravè tout rezo sipòte yo."
+      },
+      "axelarNetwork": {
+        "title": "Rezo Axelar",
+        "description": "Pwotokòl mesajri ki anba a ki sekirize transfè kwaze-chèn epi asire entegrite done ant diferan blòkchèn."
+      },
+      "conversionContracts": {
+        "title": "Kontra Konvèsyon",
+        "description": "Responsab pou konvèti ansyen token yo nan byen entèchèn. Kontra sa yo jere lojik depo ak fòjaj sou chèn orijin nan."
+      },
+      "conversionContractsTable": {
+        "title": "Adrès Kontra Konvèsyon",
+        "subtitle": "Kontra sa yo sou BSC jere konvèsyon ansyen token yo an token entèchèn.",
+        "token": "Token",
+        "legacyToken": "Ansyen Token",
+        "conversionContract": "Kontra Konvèsyon",
+        "newToken": "Token Entèchèn"
+      }
+    },
+    "filterTokens": "Filtre token...",
+    "interchainAsset": "Byen Entèchèn atravè Axelar ITS",
+    "availableOnChains": "Disponib sou {{count}} chèn",
+    "table": {
+      "chain": "Chèn",
+      "tokenAddress": "Adrès Token",
+      "axelarChainName": "Non Chèn Axelar",
+      "chainId": "ID: {{id}}"
+    },
+    "axelarId": "ID Axelar: {{name}}",
+    "copied": "Kopye!",
+    "copyAddress": "Kopye adrès"
   },
   "faq": {
     "title": "Sipò Pon Libète",
     "header": "Kesyon yo Poze Souvan",
-    "subtitle": "Repons pou kesyon komen sou TigerOG, pon, ak Axelar.",
+    "subtitle": "Repons pou kesyon komen sou TigerOG, fè pon, ak Axelar.",
     "cta": {
       "title": "Ou toujou gen kesyon?",
-      "description": "Antre nan kominote nou an sou Telegram oswa tcheke Wiki detaye pou gid teknik.",
+      "description": "Antre nan kominote nou an sou Telegram oswa tcheke Wiki detaye a pou gid teknik.",
       "wiki": "Vizite Wiki",
       "telegram": "Antre nan Telegram"
     },
     "questions": {
-      "q1": "Ki objektif konvèti tokens mwen yo?",
-      "a1": "Konvèti tokens ou yo an TigerOG retire taks tranzaksyon (souvan 10-12%) ki asosye ak token ansyen an. Li pèmèt ou tou pon tokens sa yo nan lòt blòkchèn tankou Ethereum, Base, ak plis ankò atravè Axelar, pèmèt aksè nan nouvo ekosistèm.",
-      "q2": "Èske li an sekirite pou itilize Pon Libète?",
-      "a2": "Wi. Pwotokòl la itilize yon kontra Migrasyon an sekirite ak Sèvis Token Entèchèn Axelar la. Lè ou konvèti, BNBTiger ou a boule nèt ale epi ou resevwa TigerOG nan yon rapò 1:1. Mekanis boule a asire pwovizyon total la jere kòrèkteman atravè tout chenn.",
+      "q1": "Kisa objektif konvèti token mwen yo?",
+      "a1": "Konvèti token ou yo an TigerOG retire taks tranzaksyon (souvan 10-12%) ki asosye ak ansyen token nan. Li pèmèt ou tou fè pon token sa yo nan lòt blòkchèn tankou Ethereum, Base, ak plis ankò atravè Axelar, ki pèmèt aksè nan nouvo ekosistèm.",
+      "q2": "Èske li san danje pou itilize Pon Libète?",
+      "a2": "Wi. Pwotokòl la itilize yon kontra Konvèsyon sekirize ak Sèvis Token Entèchèn Axelar la. Lè ou konvèti, BNBTiger ou a boule pèmanaman epi ou resevwa TigerOG nan yon rapò 1:1. Mekanis boule a asire pwovizyon total la jere kòrèkteman atravè tout chèn.",
       "q3": "Èske gen frè?",
-      "a3": "Pon Libète li menm pa chaje frè pou konvèti. Ou sèlman peye frè gaz blòkchèn estanda. Pon ant chenn enplike yon frè gaz kwaze-chèn peye a Axelar pou kouvri depans relè yo.",
-      "q4": "Kisa ki rive si mwen pèdi tokens mwen yo?",
-      "a4": "Tokens TigerOG konpòte yo menm jan ak nenpòt lòt token ERC20. Si ou pèdi aksè a bous ou, yo pa ka refè. Toujou kenbe kle prive ou ak fraz rekiperasyon an sekirite.",
-      "q5": "Èske mwen ka konvèti tokens TigerOG mwen yo tounen an BNBTiger?",
-      "a5": "Non. Migrasyon an se yon konvèsyon yon sèl sans. Lè ou konvèti BNBTiger an TigerOG, tokens BNBTiger ou yo boule nèt ale (voye nan adrès mò a). Sa fèt espre — TigerOG se vèsyon amelyore, san taks ki fèt pou ranplase token ansyen an nèt.",
+      "a3": "Pon Libète li menm pa chaje frè pou konvèti. Ou sèlman peye frè gaz blòkchèn estanda. Fè pon ant chèn enplike yon frè gaz kwaze-chèn yo peye Axelar pou kouvri depans relè yo.",
+      "q4": "Kisa ki rive si mwen pèdi token mwen yo?",
+      "a4": "Token TigerOG yo konpòte menm jan ak nenpòt lòt token ERC20. Si ou pèdi aksè nan bous ou, yo pa ka rekipere. Toujou kenbe kle prive ou ak fraz rekiperasyon an sekirite.",
+      "q5": "Èske mwen ka konvèti token TigerOG mwen yo retounen an BNBTiger?",
+      "a5": "Non. Konvèsyon an se yon sèl sans. Lè ou konvèti BNBTiger an TigerOG, ansyen token ou yo boule pèmanaman (voye nan adrès mò a). Sa fèt ekspre — TigerOG se vèsyon amelyore, san taks ki fèt pou ranplase ansyen token nan nèt.",
       "q6": "Ki rezo ki sipòte?",
-      "a6": "Nou sipòte plizyè chenn EVM atravè Axelar, ki gen ladan BNB Chain, Ethereum, Base, ak plis ankò. Tcheke Wiki a pou lis konplè rezo sipòte yo.",
-      "q7": "Konbyen tan pon an pran?",
-      "a7": "Vitès pon an depann de finalite chèn sous la ak relè Axelar a. Tipikman, yon transfè ant chenn pran apeprè 2-5 minit.",
+      "a6": "Nou sipòte plizyè chèn EVM atravè Axelar, ki gen ladan BNB Chain, Ethereum, Base, ak plis ankò. Tcheke Wiki a pou lis konplè rezo sipòte yo.",
+      "q7": "Konbyen tan fè pon an pran?",
+      "a7": "Vitès fè pon an depann de finalite chèn orijin nan ak relè Axelar la. Tipikman, yon transfè ant chèn pran anviwon 2-5 minit.",
       "q8": "Ki pwovizyon an sikilasyon token OG yo?",
-      "a8": "Chak token OG gen yon pwovizyon an sikilasyon fiks ki sòti nan token BNB orijinal li a, ki kont pou tokens boule, balans kontra kole, ak LP fèmen. TigerOG: ~3.66 septillion (36.62% nan orijinal). LionOG: ~3.83 septillion (38.33% nan orijinal). FrogOG: ~8.39 septillion (83.86% nan orijinal). Gade Wiki a pou dekonpozisyon detaye chak token."
+      "a8": "Chak token OG gen yon pwovizyon an sikilasyon fiks ki soti nan token BNB orijinal li a, ki konte pou token boule, balans kontra bloke, ak LP fèmen. TigerOG: ~3,66 sektilyon (36,62% nan orijinal). LionOG: ~3,83 sektilyon (38,33% nan orijinal). FrogOG: ~8,39 sektilyon (83,86% nan orijinal). Gade Wiki a pou dekonpozisyon detaye chak token."
     }
   },
   "common": {
@@ -353,9 +374,9 @@
     "unableToDetermineGas": "Pa kapab detèmine peman gaz Axelar",
     "bridgeTxFailed": "Tranzaksyon pon echwe",
     "estimatedGas": "Gaz Axelar estime",
-    "success": "Siksè!",
+    "success": "Reyisi!",
     "viewOnExplorer": "Gade sou Eksploratè",
-    "bridging": "Ap pon...",
+    "bridging": "Ap fè pon...",
     "transactionFailed": "Tranzaksyon echwe",
     "search": "Chèche",
     "backToApp": "Retounen nan Aplikasyon"

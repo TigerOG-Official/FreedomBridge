@@ -9,8 +9,28 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "./ui/
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import { Input } from "./ui/input";
 
+// Chain icons
+import BnbIcon from "../assets/chain-icons/BNB.png";
+import EthereumIcon from "../assets/chain-icons/Ethereum.png";
+import BaseIcon from "../assets/chain-icons/Base.png";
+import LineaIcon from "../assets/chain-icons/Linea.png";
+import XrpevmIcon from "../assets/chain-icons/Xrpevm.png";
+import PolygonIcon from "../assets/chain-icons/Polygon.png";
+import AvalancheIcon from "../assets/chain-icons/Avalanche.png";
+
+// Map chain IDs to their icons
+const CHAIN_ICONS: Record<number, string> = {
+  56: BnbIcon,        // BNB Chain
+  1: EthereumIcon,    // Ethereum
+  8453: BaseIcon,     // Base
+  59144: LineaIcon,   // Linea
+  1440000: XrpevmIcon, // XRPL EVM
+  137: PolygonIcon,   // Polygon
+  43114: AvalancheIcon, // Avalanche
+};
+
 // Helper component for copy button
-function CopyButton({ text, className }: { text: string; className?: string }) {
+function CopyButton({ text, className, copiedText, copyText }: { text: string; className?: string; copiedText: string; copyText: string }) {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
@@ -23,12 +43,49 @@ function CopyButton({ text, className }: { text: string; className?: string }) {
     <button
       onClick={handleCopy}
       className={`text-muted-foreground hover:text-primary transition-colors ${className}`}
-      title={copied ? "Copied!" : "Copy address"}
+      title={copied ? copiedText : copyText}
     >
       {copied ? <Check className="w-3 h-3 text-green-500" /> : <Copy className="w-3 h-3" />}
     </button>
   );
 }
+
+// Token display order
+const TOKEN_ORDER = ['tigerog', 'lionog', 'frogog'];
+
+// Conversion contracts on BSC (chainId 56)
+const CONVERSION_CONTRACTS = [
+  {
+    id: "tigerog",
+    name: "TigerOG",
+    symbol: "TIGEROG",
+    legacyName: "BNBTiger",
+    legacySymbol: "BNBTIGER",
+    legacyAddress: "0xAC68931B666E086E9de380CFDb0Fb5704a35dc2D",
+    conversionAddress: "0x18b2AeD6Aa6aE20A70be57739F8B5C26706Ff2af",
+    newAddress: "0xCF7Fc0De71238c9EC45EC2Fd24FDc8521345dbB5",
+  },
+  {
+    id: "lionog",
+    name: "LionOG",
+    symbol: "LIONOG",
+    legacyName: "BNBLion",
+    legacySymbol: "BNBLION",
+    legacyAddress: "0xdA1689C5557564d06E2A546F8FD47350b9D44a73",
+    conversionAddress: "0x4272b9EeBde520Dfb9cFc3C16bBfc8d3868b467b",
+    newAddress: "0x6731F2d7ADF86cfba30d15c4D10113Ce98f3492A",
+  },
+  {
+    id: "frogog",
+    name: "FrogOG",
+    symbol: "FROGOG",
+    legacyName: "BNBFrog",
+    legacySymbol: "BNBFROG",
+    legacyAddress: "0x64da67A12a46f1DDF337393e2dA12eD0A507Ad3D",
+    conversionAddress: "0xbF4b1F662247147afCefecbdEa5590fd103dF1FB",
+    newAddress: "0x0E3b564bdD09348840811C7e1106BbD0e98b5b4f",
+  },
+];
 
 export default function ContractsPage() {
   const navigate = useNavigate();
@@ -48,15 +105,24 @@ export default function ContractsPage() {
     return `${address.slice(0, 6)}...${address.slice(-4)}`;
   };
 
-  // Filter tokens based on search
+  // Filter and sort tokens based on search
   const filteredTokens = useMemo(() => {
-    return Object.entries(tokens).filter(([key, data]) => {
+    const filtered = Object.entries(tokens).filter(([key, data]) => {
       const searchLower = searchQuery.toLowerCase();
       return (
         key.toLowerCase().includes(searchLower) ||
         data.token.name.toLowerCase().includes(searchLower) ||
         data.token.symbol.toLowerCase().includes(searchLower)
       );
+    });
+    // Sort by TOKEN_ORDER
+    return filtered.sort((a, b) => {
+      const indexA = TOKEN_ORDER.indexOf(a[0].toLowerCase());
+      const indexB = TOKEN_ORDER.indexOf(b[0].toLowerCase());
+      if (indexA === -1 && indexB === -1) return 0;
+      if (indexA === -1) return 1;
+      if (indexB === -1) return -1;
+      return indexA - indexB;
     });
   }, [tokens, searchQuery]);
 
@@ -127,26 +193,26 @@ export default function ContractsPage() {
                    <CardHeader>
                      <CardTitle className="flex items-center gap-2">
                        <Globe className="w-5 h-5 text-blue-500" />
-                       Interchain Tokens
+                       {t('contracts.overview.interchainTokens.title')}
                      </CardTitle>
                    </CardHeader>
                    <CardContent>
                      <p className="text-muted-foreground text-sm">
-                       Omnichain-capable tokens deployed via Axelar Interchain Token Service (ITS). These tokens maintain consistent addresses across all supported networks.
+                       {t('contracts.overview.interchainTokens.description')}
                      </p>
                    </CardContent>
                  </Card>
-                 
+
                  <Card className="border-muted bg-card">
                    <CardHeader>
                      <CardTitle className="flex items-center gap-2">
                        <Layers className="w-5 h-5 text-amber-500" />
-                       Axelar Network
+                       {t('contracts.overview.axelarNetwork.title')}
                      </CardTitle>
                    </CardHeader>
                    <CardContent>
                      <p className="text-muted-foreground text-sm">
-                       The underlying messaging protocol that secures cross-chain transfers and ensures data integrity between different blockchains.
+                       {t('contracts.overview.axelarNetwork.description')}
                      </p>
                    </CardContent>
                  </Card>
@@ -155,23 +221,87 @@ export default function ContractsPage() {
                    <CardHeader>
                      <CardTitle className="flex items-center gap-2">
                        <ShieldCheck className="w-5 h-5 text-green-500" />
-                       Migration Contracts
+                       {t('contracts.overview.conversionContracts.title')}
                      </CardTitle>
                    </CardHeader>
                    <CardContent>
                      <p className="text-muted-foreground text-sm">
-                       Responsible for upgrading legacy tokens into new TigerOG interchain assets. These contracts handle the lock/mint or burn/mint logic on the origin chain.
+                       {t('contracts.overview.conversionContracts.description')}
                      </p>
                    </CardContent>
                  </Card>
                </div>
+
+               {/* Conversion Contracts Table */}
+               <Card className="overflow-hidden border-muted bg-card">
+                 <CardHeader className="bg-muted/20 pb-4">
+                   <CardTitle className="text-xl">{t('contracts.overview.conversionContractsTable.title')}</CardTitle>
+                   <CardDescription>{t('contracts.overview.conversionContractsTable.subtitle')}</CardDescription>
+                 </CardHeader>
+                 <CardContent className="p-0">
+                   <div className="overflow-x-auto">
+                     <table className="w-full text-sm text-left">
+                       <thead className="text-xs uppercase bg-muted/50 border-b">
+                         <tr>
+                           <th className="px-6 py-3 font-medium text-muted-foreground">{t('contracts.overview.conversionContractsTable.token')}</th>
+                           <th className="px-6 py-3 font-medium text-muted-foreground">{t('contracts.overview.conversionContractsTable.legacyToken')}</th>
+                           <th className="px-6 py-3 font-medium text-muted-foreground">{t('contracts.overview.conversionContractsTable.conversionContract')}</th>
+                           <th className="px-6 py-3 font-medium text-muted-foreground">{t('contracts.overview.conversionContractsTable.newToken')}</th>
+                         </tr>
+                       </thead>
+                       <tbody className="divide-y divide-border">
+                         {CONVERSION_CONTRACTS.map((contract) => (
+                           <tr key={contract.id} className="hover:bg-muted/10 transition-colors">
+                             <td className="px-6 py-3 font-medium">
+                               <div className="flex flex-col">
+                                 <span>{contract.name}</span>
+                                 <span className="text-xs text-muted-foreground">{contract.symbol}</span>
+                               </div>
+                             </td>
+                             <td className="px-6 py-3 font-mono text-xs">
+                               <div className="flex flex-col gap-1">
+                                 <span className="text-muted-foreground">{contract.legacyName}</span>
+                                 <div className="flex items-center gap-2">
+                                   {truncateAddress(contract.legacyAddress)}
+                                   <CopyButton text={contract.legacyAddress} copiedText={t('contracts.copied')} copyText={t('contracts.copyAddress')} />
+                                   <a href={`https://bscscan.com/address/${contract.legacyAddress}`} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
+                                     <ExternalLink className="w-3 h-3" />
+                                   </a>
+                                 </div>
+                               </div>
+                             </td>
+                             <td className="px-6 py-3 font-mono text-xs">
+                               <div className="flex items-center gap-2">
+                                 {truncateAddress(contract.conversionAddress)}
+                                 <CopyButton text={contract.conversionAddress} copiedText={t('contracts.copied')} copyText={t('contracts.copyAddress')} />
+                                 <a href={`https://bscscan.com/address/${contract.conversionAddress}`} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
+                                   <ExternalLink className="w-3 h-3" />
+                                 </a>
+                               </div>
+                             </td>
+                             <td className="px-6 py-3 font-mono text-xs">
+                               <div className="flex items-center gap-2">
+                                 {truncateAddress(contract.newAddress)}
+                                 <CopyButton text={contract.newAddress} copiedText={t('contracts.copied')} copyText={t('contracts.copyAddress')} />
+                                 <a href={`https://bscscan.com/address/${contract.newAddress}`} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
+                                   <ExternalLink className="w-3 h-3" />
+                                 </a>
+                               </div>
+                             </td>
+                           </tr>
+                         ))}
+                       </tbody>
+                     </table>
+                   </div>
+                 </CardContent>
+               </Card>
             </TabsContent>
 
             <TabsContent value="by-token" className="space-y-6">
               <div className="flex items-center space-x-2 mb-4">
                  <Search className="w-4 h-4 text-muted-foreground" />
-                 <Input 
-                   placeholder="Filter tokens..." 
+                 <Input
+                   placeholder={t('contracts.filterTokens')}
                    className="max-w-xs"
                    value={searchQuery}
                    onChange={(e) => setSearchQuery(e.target.value)}
@@ -184,10 +314,10 @@ export default function ContractsPage() {
                     <div className="flex items-center justify-between">
                       <div>
                         <CardTitle className="text-xl">{data.token.name} ({data.token.symbol})</CardTitle>
-                        <CardDescription>Interchain Asset via Axelar ITS</CardDescription>
+                        <CardDescription>{t('contracts.interchainAsset')}</CardDescription>
                       </div>
                       <div className="text-right text-xs text-muted-foreground">
-                        Available on {Object.keys(data.chains).length} chains
+                        {t('contracts.availableOnChains', { count: Object.keys(data.chains).length })}
                       </div>
                     </div>
                   </CardHeader>
@@ -196,25 +326,34 @@ export default function ContractsPage() {
                       <table className="w-full text-sm text-left">
                         <thead className="text-xs uppercase bg-muted/50 border-b">
                           <tr>
-                            <th className="px-6 py-3 font-medium text-muted-foreground">Chain</th>
-                            <th className="px-6 py-3 font-medium text-muted-foreground">Token Address</th>
-                            <th className="px-6 py-3 font-medium text-muted-foreground">Axelar Chain Name</th>
+                            <th className="px-6 py-3 font-medium text-muted-foreground">{t('contracts.table.chain')}</th>
+                            <th className="px-6 py-3 font-medium text-muted-foreground">{t('contracts.table.tokenAddress')}</th>
+                            <th className="px-6 py-3 font-medium text-muted-foreground">{t('contracts.table.axelarChainName')}</th>
                           </tr>
                         </thead>
                         <tbody className="divide-y divide-border">
                           {Object.entries(data.chains).map(([chainId, chainData]) => (
                             <tr key={chainId} className="hover:bg-muted/10 transition-colors">
                               <td className="px-6 py-3 font-medium">
-                                <div className="flex flex-col">
-                                  <span>{getChainName(chainId)}</span>
-                                  <span className="text-xs text-muted-foreground font-mono">ID: {chainId}</span>
+                                <div className="flex items-center gap-3">
+                                  {CHAIN_ICONS[Number(chainId)] && (
+                                    <img
+                                      src={CHAIN_ICONS[Number(chainId)]}
+                                      alt={getChainName(chainId)}
+                                      className="w-6 h-6 rounded-full"
+                                    />
+                                  )}
+                                  <div className="flex flex-col">
+                                    <span>{getChainName(chainId)}</span>
+                                    <span className="text-xs text-muted-foreground font-mono">{t('contracts.table.chainId', { id: chainId })}</span>
+                                  </div>
                                 </div>
                               </td>
                               <td className="px-6 py-3 font-mono text-xs">
                                 <div className="flex items-center gap-2">
                                   {truncateAddress(chainData.tokenAddress)}
                                   {chainData.tokenAddress && (
-                                    <CopyButton text={chainData.tokenAddress} />
+                                    <CopyButton text={chainData.tokenAddress} copiedText={t('contracts.copied')} copyText={t('contracts.copyAddress')} />
                                   )}
                                 </div>
                               </td>
@@ -238,16 +377,32 @@ export default function ContractsPage() {
                  {Object.entries(chainMetadata)
                    .sort((a, b) => a[1].chain.name.localeCompare(b[1].chain.name))
                    .map(([chainId, meta]) => {
-                     const chainTokens = Object.entries(tokens).filter(([_, tData]) => tData.chains[Number(chainId)]);
-                     
+                     const chainTokens = Object.entries(tokens)
+                       .filter(([_, tData]) => tData.chains[Number(chainId)])
+                       .sort((a, b) => {
+                         const indexA = TOKEN_ORDER.indexOf(a[0].toLowerCase());
+                         const indexB = TOKEN_ORDER.indexOf(b[0].toLowerCase());
+                         if (indexA === -1 && indexB === -1) return 0;
+                         if (indexA === -1) return 1;
+                         if (indexB === -1) return -1;
+                         return indexA - indexB;
+                       });
+
                      return (
                        <Card key={chainId} className="border-muted bg-card h-full">
                          <CardHeader className="pb-3 border-b border-border/40">
                            <CardTitle className="text-lg flex items-center gap-2">
+                             {CHAIN_ICONS[Number(chainId)] && (
+                               <img
+                                 src={CHAIN_ICONS[Number(chainId)]}
+                                 alt={meta.chain.name}
+                                 className="w-6 h-6 rounded-full"
+                               />
+                             )}
                              {meta.chain.name}
                            </CardTitle>
                            <CardDescription className="font-mono text-xs">
-                             Axelar ID: {meta.axelarChainName}
+                             {t('contracts.axelarId', { name: meta.axelarChainName })}
                            </CardDescription>
                          </CardHeader>
                          <CardContent className="pt-4 space-y-4">
@@ -262,7 +417,7 @@ export default function ContractsPage() {
                                  <div className="text-xs font-mono bg-muted/30 p-2 rounded border border-border/50 flex justify-between items-center group">
                                    <span className="truncate">{cData.tokenAddress}</span>
                                    {cData.tokenAddress && (
-                                     <CopyButton text={cData.tokenAddress} className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity" />
+                                     <CopyButton text={cData.tokenAddress} className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity" copiedText={t('contracts.copied')} copyText={t('contracts.copyAddress')} />
                                    )}
                                  </div>
                                </div>

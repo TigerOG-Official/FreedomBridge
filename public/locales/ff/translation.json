@@ -1,143 +1,131 @@
 {
   "app": {
-    "titleFreedom": "Freedom",
-    "titleBridge": "Bridge"
+    "titleFreedom": "Ndimaagu",
+    "titleBridge": "Pont"
   },
   "nav": {
-    "settings": "Toɓɓe",
+    "settings": "Teelte",
     "menu": "Doggol",
-    "preferences": "Cuɓagol",
+    "preferences": "Cuɓe",
     "switchTheme": "Waylu natal",
     "theme": {
-      "dark": "Ɓaleeri",
-      "light": "Raneeri"
+      "dark": "Niɓɓo",
+      "light": "Jalbo"
     },
-    "switchPalette": "Waylu Color",
+    "switchPalette": "Waylu noore",
     "wiki": "Binndanɗe / Wiki",
     "contracts": "Kontooji",
-    "faq": "FAQ",
-    "logout": "Yaltu",
+    "faq": "Naamne Keewɗe",
     "language": "Ɗemngal",
     "languageSearchPlaceholder": "Yiylo ɗemɗe",
     "languageNoResults": "Alaa ɗemɗe tawaaɗe",
     "close": "Uddu"
   },
   "addNetworks": {
-    "title": "Ɓeydu Rajooji",
-    "description": "Doba butoŋ les ɗoo ngam ɓeydude Rajooji e wallet maa. Ɗum ina newna waylude hakkunde chains so aɗa ƴeewa."
+    "title": "Ɓeydu Rajooji e Wallet",
+    "description": "Dobo rajo fof ngam ɓeydude ɗum e MetaMask, Rabby, walla Web3 wallets goɗɗi",
+    "searchPlaceholder": "Yiylo rajooji...",
+    "noResults": "Alaa rajooji tawaaɗe",
+    "networkCount": "rajo"
+  },
+  "addNetwork": {
+    "connectWallet": "Tiiɗno jokku wallet maa taho",
+    "alreadyPending": "Ɗaɓɓo ina jokkii. Ƴeew wallet maa.",
+    "error": "Ɓeydude rajo waɗaani. Tiiɗno ɓeydu ɗum e junngo.",
+    "adding": "Ina ɓeyda...",
+    "button": "Ɓeydu"
   },
   "tabs": {
     "convert": "Waylu",
     "bridge": "Pont"
   },
   "convert": {
-    "token": "Token",
-    "selectToken": "Suɓo Token",
     "balance": "Ceede",
-    "noConvertibleTokens": "Alah tokenji waylotooɗi dow {{chainName}}",
-    "convert": "Waylu",
-    "addToWalletLabel": "Naatnu {{symbol}} dow {{chainName}} e wallet",
     "addToWalletButton": "Naatnu e Wallet",
-    "addingToken": "E ɓeydude…",
-    "addTokenError": "Waawaa ɓeydude token e wallet",
-    "legacyTokenMissing": "Legacy token alaa ngam chain o",
-    "tigerOGMissing": "TigerOG token alaa ngam chain o",
     "networkWarning": {
-      "title": "Network Bonɗo",
-      "message": "Waylude token ko dow BSC Chain tan waɗata.",
-      "description": "Tiiɗno waylu fayde BSC Chain e wallet maa ngam waylude tokens, walla yahu to Pont tab ngam transfer tokens hakkunde chains."
+      "title": "Rajo Bonɗo",
+      "message": "Waylude token ko dow BSC Chain tan waɗata. Tiiɗno waylu fayde BSC ngam waylude legacy tokens maa."
     }
   },
   "bridge": {
     "fromChain": "Daga Chain",
     "selectChainPlaceholder": "Suɓo chain",
-    "toChain": "To Chain",
+    "toChain": "Fayde Chain",
     "selectDestinationPlaceholder": "Suɓo nokkuure",
-    "noDestination": "Alah nokkuure",
-    "noBridgeableTokens": "Alah tokenji pontotooɗi",
-    "bridgeButton": "Pont Tokenji",
-    "getFeeQuote": "Heɓu njoɓdi",
+    "noDestination": "Alaa nokkuure",
+    "noBridgeableTokens": "Alaa tokenji pontotooɗi",
+    "bridgeButton": "Pontu Tokenji",
     "viewOnAxelarscan": "Yiylo e Axelarscan",
-    "addDestinationTokenLabel": "Naatnu {{symbol}} dow {{chainName}} e wallet",
     "addTokenError": "Waawaa ɓeydude token e wallet",
     "estimatedTime": "Waktu ɓesmaaɗo",
-    "recentTransactions": "Transactions Ɓennuɗe",
+    "recentTransactions": "Kuuɗe Ɓennuɗe",
     "clearHistory": "Momtu daartol",
-    "historyStoredLocally": "Daartol transactions ina reenaa e ngal kuutorgal"
+    "historyStoredLocally": "Daartol kuuɗe ina reenaa e ngal kuutorgal"
   },
   "settings": {
-    "title": "Toɓɓe",
+    "title": "Teelte",
     "environment": "Nokkuure",
     "rpcEndpoints": "RPC Endpoints",
     "rpcEndpointsHelp": "Hesɗitina RPC URL huutoraaɗo ngam kala chain nder nokkuure suɓaaɗe.",
-    "noChainsConfigured": "Alah chainji toɓɓaaɗi ngam nokkuure ndee.",
+    "noChainsConfigured": "Alaa chainji toɓɓaaɗi ngam nokkuure ndee.",
     "cancel": "Haɗu",
     "save": "Danndu"
   },
-  "wallet": {},
-  "login": {
-    "title": "A artii",
-    "subtitle": "Naatana ngam jokkude to Freedom Bridge",
-    "emailLabel": "E-mail",
-    "emailPlaceholder": "innde@misal.com",
-    "passwordLabel": "Finnde",
-    "passwordPlaceholder": "Naatana finnde",
-    "rememberMe": "Mi siftoroo dow kuutorgal ngal",
-    "submit": "Naatana",
-    "validation": {
-      "required": "E-mail e finnde ina haani.",
-      "invalid": "E-mail walla finnde bonɗe."
-    }
-  },
   "landing": {
     "banner": {
-      "title": "Hesɗii ɗoo?",
-      "message": "Janno Freedom Bridge e no mbaɗaa pont TigerOG tokens hakkunde chains."
+      "title": "Aɗa hesɗii ɗoo?",
+      "message": "Janno ko Freedom Bridge, e no mbaɗaa pontu TigerOG tokenji hakkunde chains.",
+      "note": "Tesko: Waylude token ko duumiiɗo, waawaa artireede."
     },
     "hero": {
       "badge": "Axelar wallitoo",
       "title": "Yoofu <1/> <2>Galu</2> Maa",
-      "subtitle": "Pont TigerOG tokens e nder chains tawa alaa caɗeele, huutoraade Axelar Interchain Token Service. Ina reeni, ina yaawi, te alaa tax.",
-      "launchApp": "Ummita App",
+      "subtitle": "Pontu TigerOG tokenji hakkunde chains huutoraade Axelar Interchain Token Service. Ina reeni, ina yaawi, alaa tax.",
+      "launchApp": "Uddit App",
       "documentation": "Binndanɗe"
     },
     "stats": {
       "messaging": "Axelar Network",
-      "networks": "Networks Guurɗi",
-      "fees": "Protocol Fees",
+      "networks": "Rajooji Gollotooɗi",
+      "fees": "Njoɓɗi Protocol",
       "finality": "Finality"
     },
     "features": {
       "title": "Interchain Token Service",
-      "description": "Freedom Bridge huutortoo Axelar ITS ngam addude experience bridging mo alaa njoɓdi, mo yamiraa, hakkunde {{count}}+ blockchains.",
+      "description": "Freedom Bridge ina huutoroo Axelar ITS ngam addude pontu experience mo alaa caɗeele, mo reeni, mo alaa tax, hakkunde {{count}}+ blockchains.",
       "stopDecay": {
-        "title": "Haɗu Bonannde",
-        "description": "Legacy tokens ina duppa 10-11% e value maa e kala coodgu e yeeygu. Waylude e TigerOG ina haɗa ɗum ɗoon e ɗoon, ina reena 100% e value maa.",
+        "title": "Dartinde Bonannde",
+        "description": "Legacy tokens ina duppa 10-11% e soodorɗi maa e kala coodgu e yeeygu. Waylude e TigerOG ina dartina ɗum ɗoon e ɗoon, ina reena 100% e soodorɗi maa.",
         "graphLabel1": "100% Reenaama (TigerOG)",
-        "graphLabel2": "-40% Value (Legacy 10% Tax)"
+        "graphLabel2": "-40% Soodorɗi (Legacy 10% Tax)"
       },
       "conversion": {
         "title": "1:1 Waylude",
-        "description": "Total supply waylataako. Tokens ina cokaa nder migration contract, te 1:1 equivalent ina waɗee. Alaa inflation, alaa dilution."
+        "description": "Limoore fof waylataako. Tokenji ina jogaa nder conversion contract mo reeni, te 1:1 potɗo ina waɗaa. Alaa inflation, alaa dilution."
       },
       "multichain": {
         "title": "Multi-Chain",
-        "description": "Deploy once, access everywhere. Asset maa ina wonta native interchain token e chains ina jeyaa heen Ethereum, BNB Chain, Base, e ko nanndi heen."
+        "description": "Deploy laawol gootol, heɓ kala nokku. Galu maa ina wonta native interchain token dow chains hono Ethereum, BNB Chain, Base, e ko nanndi heen."
       },
       "security": {
         "title": "Axelar Security",
-        "description": "Axelar's decentralized network of validators wallitoo. ITS ina laaɓa wonde tokens maa ina transferaa no haanirta e kala networks.",
-        "button": "Fuɗɗo Bridging"
+        "description": "Axelar's decentralized network of validators wallitoo. ITS ina laaɓa wonde tokenji maa ina transfer-ee no haanirta e kala rajooji jokkondirɗi.",
+        "button": "Fuɗɗo Pontude"
       }
-    },
-    "teaser": {
-      "title": "Aɗa yiɗi coins goɗɗi?",
-      "subtitle": "Hol ko miijotoɗaa e <lunc>LUNC</lunc>, <crepe>Crepe</crepe>, walla <shiba>Shiba</shiba> ?"
     },
     "cta": {
       "title": "A hebijii ngam pontude?",
-      "description": "Naatu e interchain revolution. Ina ƴetta les minti ngam ñiiɓde assets maa e fuɗɗaade bridging via Axelar.",
-      "button": "Ummita App Jooni"
+      "description": "Naatu e interchain revolution. Ina ƴetta les minti ngam waylude tokenji maa te fuɗɗaade pontude via Axelar.",
+      "button": "Uddit App Jooni"
+    },
+    "buyTokens": {
+      "badge": "Fuɗɗo Ɗoo",
+      "title": "Heɓu Galu",
+      "description": "Alaa tokenji taho? Soodo base tokens dow PancakeSwap, caggal ɗum waylu ɗi fayde versions kese multichain.",
+      "buyOn": "Soodo dow PancakeSwap",
+      "then": "caggal",
+      "convertTo": "Waylu fayde",
+      "buyNow": "Soodo Jooni"
     }
   },
   "wiki": {
@@ -145,91 +133,93 @@
     "searchPlaceholder": "Yiylo binndanɗe...",
     "header": {
       "title": "Binndanɗe",
-      "subtitle": "Janno no ñiiɓirtaa legacy tokens, bridge hakkunde chains, e integrate e Freedom Bridge."
+      "subtitle": "Janno no waylirtaa legacy tokens te pontirtaa hakkunde chains."
     },
     "nav": {
       "gettingStarted": "Fuɗɗaade",
-      "coreConcepts": "Faamduyiiji Teskinɗi",
-      "developers": "Topitooɓe",
+      "coreConcepts": "Miijooji Teskinɗi",
+      "developers": "Topitiiɓe",
       "tigerogSupply": "Limoore TigerOG",
       "lionogSupply": "Limoore LionOG",
-      "frogogSupply": "Limoore FrogOG"
+      "frogogSupply": "Limoore FrogOG",
+      "githubRepo": "GitHub Repository",
+      "axelarDocs": "Binndanɗe Axelar ITS"
     },
     "articles": {
       "whatIs": {
-        "title": "Hol ko woni Freedom Bridge?",
-        "content": "Freedom Bridge ko decentralized bridging protocol mo feewnaa e Axelar's Interchain Token Service (ITS). Ina feewnaa ngam rimbinde tokens e single-chain limitations e high transaction taxes. So a ñiiɓii standard tokens nder interchain-compatible assets, users ina mbaawi dillinde value maɓɓe hakkunde blockchains tawaaɗi.",
+        "title": "Ko woni Freedom Bridge?",
+        "content": "Freedom Bridge ko decentralized pontu protocol feewnaaɗo dow Axelar's Interchain Token Service (ITS). Ina newna maa waylude legacy tokens fayde galu alaa tax mo waawi dillude hakkunde blockchains tawaaɗi.",
         "taxFreeTitle": "Transfers Alaa Tax",
         "taxFreeDesc": "Legacy tokens ina keewi 10%+ taxes. TigerOG tokens ko 0% tax.",
         "omnichainTitle": "Interchain",
-        "omnichainDesc": "Dillin assets hakkunde {{count}}+ blockchains via Axelar."
+        "omnichainDesc": "Dillin galu hakkunde {{count}}+ blockchains via Axelar."
       },
       "howToConvert": {
         "title": "No Waylirtaa Tokens",
-        "step1": "Jokku wallet maa e source chain (e.g., BNB Chain).",
+        "step1": "Jokku wallet maa e source chain (mis. BNB Chain).",
         "step2": "Yahu to <strong>Waylu</strong> tab.",
         "step3": "Suɓo legacy token mo njiɗɗaa waylude.",
-        "step4": "Approve Migration contract ngam spendude tokens maa.",
-        "step5": "Doba <strong>Waylu</strong> ngam deposit legacy tokens maa te heɓaa equivalent amount of \"TigerOG\" tokens.",
-        "note": "<strong>Tesko:</strong> Waylude ina adda legacy token's transaction tax (during the upgrade) so token maa ina ƴetta tax e transfers. Kono, so waylaama e TigerOG, kala transfers e bridges garooji alaa ɗum tax."
+        "step4": "Yamir Conversion contract ngam huutoraade tokenji maa.",
+        "step5": "Dobo <strong>Waylu</strong> ngam nelde legacy tokens maa te heɓaa limoore potɗe e \"TigerOG\" tokens.",
+        "note": "<strong>Tesko:</strong> Waylude ina adda legacy token's transaction tax (nder upgrade) so token maa ina ƴetta tax e transfers. Kono, so waylaaɗa fayde TigerOG, kala transfers e ponts garooji alaa ɗum tax."
       },
       "supportedNetworks": {
-        "title": "Networks Tawaaɗi",
-        "content": "Freedom Bridge ina wallita ecosystem mawɗo {{count}}+ blockchains, ina newna seamless interoperability e nder EVM landscape via Axelar."
+        "title": "Rajooji Tawaaɗi",
+        "content": "Freedom Bridge ina wallita ecosystem mawɗo {{count}}+ blockchains, ina newna interoperability hakkunde EVM landscape via Axelar."
       },
       "xerc20": {
         "title": "Interchain Tokens",
-        "content": "Axelar Interchain Token Service (ITS) ina newna tokens deploy-eede e chains heewɗi e address gooto e unified supply management. Freedom Bridge ina huutoroo ITS ngam laaɓa wonde TigerOG ina heddii canonical asset kala ɗo pontaa."
+        "content": "Axelar Interchain Token Service (ITS) ina newna tokens deploy-eede dow chains keewɗi e address gooto e unified supply management. Freedom Bridge ina huutoroo ITS ngam laaɓa wonde TigerOG ina heddii canonical asset kala ɗo pontaa."
       },
       "axelar": {
         "title": "Axelar Network",
-        "content": "Min kuutortoo Axelar ngam interoperability layer amen. Axelar ko decentralized network mo newnata blockchains ceertuɗi jokkondirde, ina newna secure cross-chain communication e asset transfers. Axelar's security model ina pawaa e permissionless set of validators, ina rokka high-grade security ngam interchain tokens."
+        "content": "Min kuutortoo Axelar ngam interoperability layer amen. Axelar ko decentralized network mo newnata blockchains ceertuɗi jokkondirde, ina newna secure cross-chain communication e galu transfers. Axelar's security model ina pawaa e permissionless set of validators, ina rokka high-grade security ngam interchain tokens."
       },
-      "migration": {
-        "title": "Migration Logic",
-        "content": "Migration contract ko deployed e origin chain (e.g., BSC). Ina jogii original legacy tokens e custody. So a upgrade tokens, aɗa deposit nder Migration contract. So a unwrap (so ina woodi), aɗa burn TigerOG representation ngam release original tokens. Ɗum ina laaɓa wonde 1:1 peg ina woodi."
+      "conversion": {
+        "title": "Conversion Logic",
+        "content": "Conversion contract ina deploy-aa dow BSC. So a waylii, legacy tokenji maa ina nelaa to dead address (ina burn-aa haa abada) te a heɓa TigerOG e ratio 1:1. Ɗum ko laawol gootal — legacy tokenji ina bonnaa te mbaawaa heɓteede abada."
       },
       "contracts": {
-        "title": "Smart Contract Addresses",
-        "colNetwork": "Network",
-        "colType": "Contract Type",
-        "colAddress": "Address"
+        "title": "Adresiiji Smart Contract",
+        "colNetwork": "Rajo",
+        "colType": "Fannu Contract",
+        "colAddress": "Adres"
       },
       "security": {
         "title": "Security Model",
-        "content": "Security ɓuri himmude. Min kuutortoo multi-layer security approach:",
-        "point1": "<strong>Migration Architecture:</strong> Legacy tokens ina jogaa nder verified, immutable smart contracts.",
+        "content": "Security ina feewnaa e kala layer Freedom Bridge:",
+        "point1": "<strong>Conversion Architecture:</strong> Legacy tokens ina burn-aa haa abada via smart contracts verifyaaɗi e immutable.",
         "point2": "<strong>Axelar Validators:</strong> Cross-chain messages ina verify-ee e Axelar's decentralized network.",
-        "point3": "<strong>Consistent Supply:</strong> ITS ina manage minting e burning ngam maintain constant total supply e kala chains.",
-        "point4": "<strong>Audited Logic:</strong> Feewnaa e industry-standard Axelar e OpenZeppelin libraries."
+        "point3": "<strong>Consistent Supply:</strong> ITS ina manage minting e burning ngam maintainude constant total supply dow kala chains.",
+        "point4": "<strong>Audited Logic:</strong> Feewnaa dow industry-standard Axelar e OpenZeppelin libraries."
       },
       "supplyCommon": {
         "howWeCalculated": "No min limiri ɗum",
         "verification": "Verification",
-        "verificationDesc": "Kala supply figures ina waawi verify-eede independently on-chain:",
+        "verificationDesc": "Kala limoore supply ina waawi verify-eede independently on-chain:",
         "table": {
-          "category": "Category",
+          "category": "Fannu",
           "amount": "Limoore",
-          "percentOfTotal": "% e Total",
+          "percentOfTotal": "% e Fof",
           "originalSupply": "Original Total Supply",
-          "deadAddress": "Address Mayɗo (Burned)",
+          "deadAddress": "Dead Address (Burned)",
           "contractBalance": "Contract Balance (Stuck)",
           "circulatingSupply": "Circulating Supply"
         },
-        "deadAddressTitle": "1. Address Mayɗo",
+        "deadAddressTitle": "1. Dead Address",
         "contractBalanceTitle": "2. Contract Balance",
         "lpLockedTitle": "3. LP Locked Tokens"
       },
       "tigerogSupply": {
         "title": "TigerOG Supply Breakdown",
-        "intro": "TigerOG ina jogii fixed circulating supply derived daga BNBTiger token. Limoore ndee ina ƴeewa kala burned e permanently locked tokens.",
+        "intro": "TigerOG ina jogii fixed circulating supply takkaaɗo daga original BNBTiger token. Limoore ndee ina ƴeewa kala burned e permanently locked tokens.",
         "lpLocked": "LP Locked (86.18% e LP Burned)",
-        "deadAddressDesc": "Tokens nelaaɗi e <code>0x000...dEaD</code> ina burn-aa haa abada te mbaawaa heɓteede. Ɗum ina jeyaa heen tokens burned via original BNBTiger tax mechanism.",
+        "deadAddressDesc": "Tokens nelaaɗi to <code>0x000...dEaD</code> ina burn-aa haa abada te mbaawaa heɓteede. Ɗum ina jeyaa heen tokens burn-aaɗi via original BNBTiger tax mechanism.",
         "contractBalanceDesc": "Limoore famarde e tokens ina stuck nder BNBTiger contract. Ɗii tokens mbaawaa heɓteede te ittiraama e circulation.",
         "lpLockedDesc": "PancakeSwap liquidity pool ina jogii BNBTiger tokens paired e BNB. So LP tokens burn-aama (nelaa to dead address), underlying tokens nder pool ina lock-aa haa abada.",
         "lpBurnedPercent": "LP tokens burned: 86.18% e kala LP tokens",
         "lpLockedPercent": "Ko ɗum waɗi, 86.18% e tokens nder LP ina locked haa abada",
-        "note": "<strong>Tesko:</strong> TigerOG ina jogii 1:1 ratio e BNBTiger e sahaa migration. Circulating supply mo TigerOG ina foti e true circulating supply mo BNBTiger caggal nde burned e locked tokens ittaa.",
+        "note": "<strong>Tesko:</strong> TigerOG ina jogii 1:1 ratio e BNBTiger nder conversion. Circulating supply mo TigerOG ina foti e true circulating supply mo BNBTiger caggal nde burned e locked tokens ittaa.",
         "launchData": "<strong>Launch Data:</strong> Ɗii limoore limiraa ko e launch. Legacy BNBTiger token ina jokki e burn-ude tokens e kala buy/sell transaction, so actual circulating supply ina waawi lesɗude seeɗa e ko hollaa.",
         "legacyContract": "BNBTiger Token Contract",
         "ogContract": "TigerOG Token Contract",
@@ -247,14 +237,14 @@
       },
       "lionogSupply": {
         "title": "LionOG Supply Breakdown",
-        "intro": "LionOG ina jogii fixed circulating supply derived daga BNBLion token. Limoore ndee ina ƴeewa kala burned e permanently locked tokens.",
+        "intro": "LionOG ina jogii fixed circulating supply takkaaɗo daga original BNBLion token. Limoore ndee ina ƴeewa kala burned e permanently locked tokens.",
         "lpLocked": "LP Locked (99.98% e LP Burned)",
-        "deadAddressDesc": "Tokens nelaaɗi e <code>0x000...dEaD</code> ina burn-aa haa abada te mbaawaa heɓteede. Ɗum ina jeyaa heen tokens burned via original BNBLion tax mechanism.",
+        "deadAddressDesc": "Tokens nelaaɗi to <code>0x000...dEaD</code> ina burn-aa haa abada te mbaawaa heɓteede. Ɗum ina jeyaa heen tokens burn-aaɗi via original BNBLion tax mechanism.",
         "contractBalanceDesc": "Limoore famarde e tokens ina stuck nder BNBLion contract. Ɗii tokens mbaawaa heɓteede te ittiraama e circulation.",
         "lpLockedDesc": "PancakeSwap liquidity pool ina jogii BNBLion tokens paired e BNB. So LP tokens burn-aama (nelaa to dead address), underlying tokens nder pool ina lock-aa haa abada.",
         "lpBurnedPercent": "LP tokens burned: 99.98% e kala LP tokens",
         "lpLockedPercent": "Ko ɗum waɗi, 99.98% e tokens nder LP ina locked haa abada",
-        "note": "<strong>Tesko:</strong> LionOG ina jogii 1:1 ratio e BNBLion e sahaa migration. Circulating supply mo LionOG ina foti e true circulating supply mo BNBLion caggal nde burned e locked tokens ittaa.",
+        "note": "<strong>Tesko:</strong> LionOG ina jogii 1:1 ratio e BNBLion nder conversion. Circulating supply mo LionOG ina foti e true circulating supply mo BNBLion caggal nde burned e locked tokens ittaa.",
         "launchData": "<strong>Launch Data:</strong> Ɗii limoore limiraa ko e launch. Legacy BNBLion token ina jokki e burn-ude tokens e kala buy/sell transaction, so actual circulating supply ina waawi lesɗude seeɗa e ko hollaa.",
         "legacyContract": "BNBLion Token Contract",
         "ogContract": "LionOG Token Contract",
@@ -272,14 +262,14 @@
       },
       "frogogSupply": {
         "title": "FrogOG Supply Breakdown",
-        "intro": "FrogOG ina jogii fixed circulating supply derived daga BNBFrog token. Limoore ndee ina ƴeewa kala burned e permanently locked tokens.",
+        "intro": "FrogOG ina jogii fixed circulating supply takkaaɗo daga original BNBFrog token. Limoore ndee ina ƴeewa kala burned e permanently locked tokens.",
         "lpLocked": "LP Locked (99.31% e LP Burned)",
-        "deadAddressDesc": "Tokens nelaaɗi e <code>0x000...dEaD</code> ina burn-aa haa abada te mbaawaa heɓteede. Ɗum ina jeyaa heen tokens burned via original BNBFrog tax mechanism.",
+        "deadAddressDesc": "Tokens nelaaɗi to <code>0x000...dEaD</code> ina burn-aa haa abada te mbaawaa heɓteede. Ɗum ina jeyaa heen tokens burn-aaɗi via original BNBFrog tax mechanism.",
         "contractBalanceDesc": "Limoore famarde e tokens ina stuck nder BNBFrog contract. Ɗii tokens mbaawaa heɓteede te ittiraama e circulation.",
         "lpLockedDesc": "PancakeSwap liquidity pool ina jogii BNBFrog tokens paired e BNB. So LP tokens burn-aama (nelaa to dead address), underlying tokens nder pool ina lock-aa haa abada.",
         "lpBurnedPercent": "LP tokens burned: 99.31% e kala LP tokens",
         "lpLockedPercent": "Ko ɗum waɗi, 99.31% e tokens nder LP ina locked haa abada",
-        "note": "<strong>Tesko:</strong> FrogOG ina jogii 1:1 ratio e BNBFrog e sahaa migration. Circulating supply mo FrogOG ina foti e true circulating supply mo BNBFrog caggal nde burned e locked tokens ittaa.",
+        "note": "<strong>Tesko:</strong> FrogOG ina jogii 1:1 ratio e BNBFrog nder conversion. Circulating supply mo FrogOG ina foti e true circulating supply mo BNBFrog caggal nde burned e locked tokens ittaa.",
         "launchData": "<strong>Launch Data:</strong> Ɗii limoore limiraa ko e launch. Legacy BNBFrog token ina jokki e burn-ude tokens e kala buy/sell transaction, so actual circulating supply ina waawi lesɗude seeɗa e ko hollaa.",
         "legacyContract": "BNBFrog Token Contract",
         "ogContract": "FrogOG Token Contract",
@@ -298,67 +288,97 @@
     }
   },
   "contracts": {
-    "title": "Adresiiji Kontooji",
+    "title": "Adresiiji Contract",
     "header": {
-      "title": "Kontooji Smart",
-      "subtitle": "Adresiiji deployment laawɗuɗi ngam tokens e ponts e nder ecosystem Freedom Bridge."
+      "title": "Smart Contracts",
+      "subtitle": "Adresiiji deployment laawɗuɗi ngam tokens e ponts nder ecosystem Freedom Bridge."
     },
     "tabs": {
-      "overview": "Njiyra",
+      "overview": "Jiytugol",
       "byToken": "Sabu Token",
-      "byChain": "Sabu Chain",
-      "liquidity": "Liquidity"
+      "byChain": "Sabu Chain"
     },
-    "liquidity": {
-      "title": "Liquidity Pools"
-    }
+    "overview": {
+      "interchainTokens": {
+        "title": "Interchain Tokens",
+        "description": "Interchain tokens deploy-aaɗi via Axelar Interchain Token Service (ITS). Ɗii tokens ina jogii adresiiji potɗi dow kala rajooji tawaaɗi."
+      },
+      "axelarNetwork": {
+        "title": "Axelar Network",
+        "description": "Messaging protocol mo reeni cross-chain transfers te laaɓa data integrity hakkunde blockchains ceertuɗi."
+      },
+      "conversionContracts": {
+        "title": "Conversion Contracts",
+        "description": "Ina waylu legacy tokens fayde interchain assets. Ɗii contracts ina tabitina deposit e minting logic dow origin chain."
+      },
+      "conversionContractsTable": {
+        "title": "Adresiiji Conversion Contract",
+        "subtitle": "Ɗii contracts dow BSC ina tabitina waylude daga legacy tokens fayde interchain tokens.",
+        "token": "Token",
+        "legacyToken": "Legacy Token",
+        "conversionContract": "Conversion Contract",
+        "newToken": "Interchain Token"
+      }
+    },
+    "filterTokens": "Filter tokens...",
+    "interchainAsset": "Interchain Asset via Axelar ITS",
+    "availableOnChains": "Ina woodi dow {{count}} chains",
+    "table": {
+      "chain": "Chain",
+      "tokenAddress": "Token Address",
+      "axelarChainName": "Axelar Chain Name",
+      "chainId": "ID: {{id}}"
+    },
+    "axelarId": "Axelar ID: {{name}}",
+    "copied": "Copii-aama!",
+    "copyAddress": "Copii adres"
   },
   "faq": {
     "title": "Wallitorde Freedom Bridge",
-    "header": "Naamne Duumiiɗe",
-    "subtitle": "Jaabawuuji e ɗii naamne ko faati e TigerOG, bridging, e Axelar.",
+    "header": "Naamne Keewɗe",
+    "subtitle": "Jaabawuuji e naamne keewɗe faati e TigerOG, pontude, e Axelar.",
     "cta": {
       "title": "Aɗa jogii naamne goɗɗe?",
-      "description": "Naatu e community amen e Telegram walla ƴeew detailed Wiki ngam technical guides.",
+      "description": "Naatu e community amen dow Telegram walla ƴeew Wiki ngam guides technical.",
       "wiki": "Yilla Wiki",
       "telegram": "Naatu Telegram"
     },
     "questions": {
-      "q1": "Hol ko woni faayiida waylude tokens am?",
-      "a1": "Waylude tokens maa e TigerOG ina momta transaction tax (ko ɓuri 10-12%) associated e legacy token. Ina newna maa kadi bridge ɗii tokens fayde blockchains goɗɗi hono Ethereum, Base, e ko nanndi heen via Axelar, ina newna access e ecosystem kesi.",
+      "q1": "Ko woni faayiida waylude tokens am?",
+      "a1": "Waylude tokens maa fayde TigerOG ina momta transaction tax (ko ɓuri 10-12%) jokkondirɗo e legacy token. Ina newna maa kadi pontude ɗii tokens fayde blockchains goɗɗi hono Ethereum, Base, e ko nanndi heen via Axelar, ina newna access e ecosystems kese.",
       "q2": "Mbele ina laaɓi huutoraade Freedom Bridge?",
-      "a2": "Eey. Protocol o ina huutoroo secure Migration contract e Axelar's Interchain Token Service. So a waylii, BNBTiger maa ina burn-aa haa abada te a heɓa TigerOG e ratio 1:1. Burn mechanism o ina laaɓa wonde total supply ina manage-aa no haanirta e kala chains.",
-      "q3": "Mbele ina woodi fees?",
-      "a3": "Freedom Bridge e hoore mum ƴettataa fee ngam waylude. A yoɓata tan ko standard blockchain gas fees. Bridging hakkunde chains ina adda cross-chain gas fee yoɓeteeɗo Axelar ngam cover relaying costs.",
+      "a2": "Eey. Protocol o ina huutoroo secure Conversion contract e Axelar's Interchain Token Service. So a waylii, BNBTiger maa ina burn-aa haa abada te a heɓa TigerOG e ratio 1:1. Burn mechanism o ina laaɓa wonde total supply ina manage-aa no haanirta dow kala chains.",
+      "q3": "Mbele ina woodi njoɓɗi?",
+      "a3": "Freedom Bridge e hoore mum ƴettataa njoɓdi ngam waylude. A yoɓata tan ko standard blockchain gas fees. Pontude hakkunde chains ina adda cross-chain gas fee yoɓeteeɗo Axelar ngam cover relaying costs.",
       "q4": "Ko waɗata so mi lalkii tokens am?",
-      "a4": "TigerOG tokens ina gollira hono kala ERC20 token goɗɗo. So a lalkii access e wallet maa, ɗi mbaawaa heɓteede. Kala sahaa reenu private keys maa e recovery phrases.",
-      "q5": "Mbele mi waawi waylude TigerOG tokens am fayde BNBTiger?",
-      "a5": "Alaa. Migration ko one-way conversion. So a waylii BNBTiger fayde TigerOG, tokens BNBTiger maa ina burn-aa haa abada (nelaa to dead address). Ɗum feewnaa nii — TigerOG ko upgraded, tax-free version mo foti replace-ude legacy token o fof.",
-      "q6": "Hol networks tawaaɗi?",
-      "a6": "Min mballitotoo multiple EVM chains via Axelar, ina jeyaa heen BNB Chain, Ethereum, Base, e ko nanndi heen. Ƴeew Wiki ngam full list networks tawaaɗi.",
-      "q7": "Bridging ƴettata ko waktuuji foti?",
-      "a7": "Bridging speed ina pawaa e source chain's finality e Axelar's relaying. Ko ɓuri heewde, transfer hakkunde chains ina ƴetta 2-5 minti.",
-      "q8": "Hol ko woni circulating supplies e OG tokens?",
-      "a8": "Kala OG token ina jogii fixed circulating supply derived daga original BNB token, e nder ƴeewde burned tokens, stuck contract balances, e locked LP. TigerOG: ~3.66 septillion (36.62% e original). LionOG: ~3.83 septillion (38.33% e original). FrogOG: ~8.39 septillion (83.86% e original). Ƴeew Wiki ngam breakdowns detailed e kala token."
+      "a4": "TigerOG tokens ina gollira hono kala ERC20 token goɗɗo. So a lalkii access e wallet maa, mbaawaa heɓteede. Kala sahaa reenu private keys maa e recovery phrases.",
+      "q5": "Mbele mi waawi artirde TigerOG tokens am fayde BNBTiger?",
+      "a5": "Alaa. Conversion ko laawol gootal. So a waylii BNBTiger fayde TigerOG, BNBTiger tokens maa ina burn-aa haa abada (nelaa to dead address). Ɗum feewnaa nii — TigerOG ko upgraded, tax-free version mo foti lomtaade legacy token o fof.",
+      "q6": "Hol rajooji tawaaɗi?",
+      "a6": "Min mballitotoo multiple EVM chains via Axelar, ina jeyaa heen BNB Chain, Ethereum, Base, e ko nanndi heen. Ƴeew Wiki ngam list cakkitiɗo rajooji tawaaɗi.",
+      "q7": "Pontude ƴettata ko waktuuji foti?",
+      "a7": "Pontude yaawde ina pawaa e source chain's finality e Axelar's relaying. Ko ɓuri heewde, transfer hakkunde chains ina ƴetta 2-5 minti.",
+      "q8": "Ko woni circulating supplies e OG tokens?",
+      "a8": "Kala OG token ina jogii fixed circulating supply takkaaɗo daga original BNB token, nder ƴeewde burned tokens, stuck contract balances, e locked LP. TigerOG: ~3.66 septillion (36.62% e original). LionOG: ~3.83 septillion (38.33% e original). FrogOG: ~8.39 septillion (83.86% e original). Ƴeew Wiki ngam breakdowns cakkitiɗe e kala token."
     }
   },
   "common": {
     "from": "Daga",
-    "to": "To",
+    "to": "Fayde",
     "max": "MAX",
     "chainId": "Chain ID",
     "bscChain": "BSC Chain",
     "insufficientBalance": "Ceede ɗuuɗaani.",
-    "failedToSwitchNetwork": "Waylude network waɗaani. Jooɗɗo, waylu e wallet maaɗa.",
+    "failedToSwitchNetwork": "Waylude rajo waɗaani. Tiiɗno waylu e wallet maa.",
     "failedToFetchFeeQuote": "Heɓude njoɓdi waɗaani.",
     "unableToDetermineGas": "Waawaa anndude njoɓdi Axelar gas",
     "bridgeTxFailed": "Transaction pont waɗaani",
     "estimatedGas": "Njoɓdi Axelar gas ɓesmaaɗi",
-    "success": "Jaɓɓaama!",
+    "success": "Moƴƴii!",
     "viewOnExplorer": "Yiylo e Explorer",
-    "bridging": "Pontude...",
+    "bridging": "Ina ponta...",
     "transactionFailed": "Transaction waɗaani",
     "search": "Yiylo",
-    "backToApp": "Rutto to App"
+    "backToApp": "Rutto e App"
   }
 }

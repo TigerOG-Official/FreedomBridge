@@ -175,7 +175,8 @@ const BridgeForm = () => {
     }
   }, [destinationOptions, destinationChainId]);
 
-  const publicClient = usePublicClient({ chainId: sourceChainId });
+  // Only request publicClient for valid chain IDs that exist in our metadata
+  const publicClient = usePublicClient(sourceChainId && sourceChainMeta ? { chainId: sourceChainId } : undefined);
   const { data: walletClient } = useWalletClient();
 
   const amountBigInt = useMemo(() => {
@@ -188,7 +189,7 @@ const BridgeForm = () => {
   }, [amount, sourceTokenConfig]);
 
   useEffect(() => {
-    if (!publicClient || !address || !sourceTokenConfig || !sourceChainId || chainId !== sourceChainId) {
+    if (!publicClient || !address || !sourceTokenConfig || !sourceChainId || chainId !== sourceChainId || !sourceChainMeta) {
       setTokenBalance(0n);
       return;
     }
@@ -197,14 +198,15 @@ const BridgeForm = () => {
     const fetchBalance = async () => {
       setBalanceLoading(true);
       try {
-        const balance = await publicClient.readContract({ 
-            address: sourceTokenConfig.tokenAddress, 
-            abi: erc20Abi, 
-            functionName: "balanceOf", 
-            args: [address] 
+        const balance = await publicClient.readContract({
+            address: sourceTokenConfig.tokenAddress,
+            abi: erc20Abi,
+            functionName: "balanceOf",
+            args: [address]
         }) as bigint;
         if (!cancelled) {setTokenBalance(balance);}
-      } catch {
+      } catch (err) {
+        console.warn("Failed to fetch source balance:", err);
         if (!cancelled) {setTokenBalance(0n);}
       } finally {
         if (!cancelled) {setBalanceLoading(false);}
@@ -219,13 +221,14 @@ const BridgeForm = () => {
     sourceChainId,
     chainId,
     sourceTokenConfig?.tokenAddress,
+    sourceChainMeta,
     refreshBalanceCounter,
   ]);
 
-  const destinationPublicClient = usePublicClient({ chainId: destinationChainId });
+  const destinationPublicClient = usePublicClient(destinationChainId && destinationChainMeta ? { chainId: destinationChainId } : undefined);
 
   useEffect(() => {
-    if (!destinationPublicClient || !address || !destinationTokenConfig || !destinationChainId) {
+    if (!destinationPublicClient || !address || !destinationTokenConfig || !destinationChainId || !destinationChainMeta) {
       setDestinationTokenBalance(0n);
       return;
     }
@@ -234,14 +237,15 @@ const BridgeForm = () => {
     const fetchDestinationBalance = async () => {
       setDestinationBalanceLoading(true);
       try {
-        const balance = await destinationPublicClient.readContract({ 
-            address: destinationTokenConfig.tokenAddress, 
-            abi: erc20Abi, 
-            functionName: "balanceOf", 
-            args: [address] 
+        const balance = await destinationPublicClient.readContract({
+            address: destinationTokenConfig.tokenAddress,
+            abi: erc20Abi,
+            functionName: "balanceOf",
+            args: [address]
         }) as bigint;
         if (!cancelled) {setDestinationTokenBalance(balance);}
-      } catch {
+      } catch (err) {
+        console.warn("Failed to fetch destination balance:", err);
         if (!cancelled) {setDestinationTokenBalance(0n);}
       } finally {
         if (!cancelled) {setDestinationBalanceLoading(false);}
@@ -255,6 +259,7 @@ const BridgeForm = () => {
     address,
     destinationChainId,
     destinationTokenConfig?.tokenAddress,
+    destinationChainMeta,
     refreshBalanceCounter,
   ]);
 
@@ -343,10 +348,7 @@ const BridgeForm = () => {
     if (!walletClient || !destinationTokenConfig?.tokenAddress || !destinationChainId) {return;}
     try {
       setAddingDestinationToken(true);
-      const originalChainId = chainId;
-      if (switchChainAsync && chainId !== destinationChainId) {
-        await switchChainAsync({ chainId: destinationChainId });
-      }
+      // watchAsset doesn't require being on the same chain - just add the token directly
       await walletClient.watchAsset({
         type: "ERC20",
         options: {
@@ -355,11 +357,12 @@ const BridgeForm = () => {
           symbol: destinationDisplaySymbol,
         },
       });
-      if (switchChainAsync && originalChainId && originalChainId !== destinationChainId) {
-        await switchChainAsync({ chainId: originalChainId });
-      }
     } catch (err) {
-      setError(extractErrorMessage(err) ?? t('bridge.addTokenError'));
+      // User likely rejected the request - don't show error for user rejections
+      const message = extractErrorMessage(err);
+      if (message && !message.toLowerCase().includes('reject') && !message.toLowerCase().includes('denied')) {
+        setError(message ?? t('bridge.addTokenError'));
+      }
     } finally {
       setAddingDestinationToken(false);
     }

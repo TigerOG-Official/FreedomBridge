@@ -12,19 +12,28 @@
       "dark": "Mørk",
       "light": "Lys"
     },
-    "switchPalette": "Skift Palet",
+    "switchPalette": "Skift palet",
     "wiki": "Dokumentation / Wiki",
     "contracts": "Kontrakter",
     "faq": "FAQ",
-    "logout": "Log ud",
     "language": "Sprog",
     "languageSearchPlaceholder": "Søg efter sprog",
     "languageNoResults": "Ingen sprog fundet",
     "close": "Luk"
   },
   "addNetworks": {
-    "title": "Tilføj Netværk",
-    "description": "Klik på en knap nedenfor for at tilføje netværk til din tegnebog. Dette gør det nemt at skifte mellem kæder under test."
+    "title": "Tilføj netværk til tegnebog",
+    "description": "Klik på et netværk for at tilføje det til MetaMask, Rabby eller andre Web3-tegnebøger",
+    "searchPlaceholder": "Søg netværk...",
+    "noResults": "Ingen netværk fundet",
+    "networkCount": "netværk"
+  },
+  "addNetwork": {
+    "connectWallet": "Tilslut venligst din tegnebog først",
+    "alreadyPending": "Anmodning afventer allerede. Tjek din tegnebog.",
+    "error": "Kunne ikke tilføje netværk. Tilføj det venligst manuelt.",
+    "adding": "Tilføjer...",
+    "button": "Tilføj"
   },
   "tabs": {
     "convert": "Konverter",
@@ -32,112 +41,102 @@
   },
   "convert": {
     "token": "Token",
-    "selectToken": "Vælg Token",
+    "selectToken": "Vælg token",
     "balance": "Saldo",
     "noConvertibleTokens": "Ingen tokens at konvertere på {{chainName}}",
     "convert": "Konverter",
-    "addToWalletLabel": "Importer {{symbol}} på {{chainName}} til tegnebog",
-    "addToWalletButton": "Importer til Tegnebog",
-    "addingToken": "Tilføjer…",
+    "addToWalletLabel": "Importér {{symbol}} på {{chainName}} til tegnebog",
+    "addToWalletButton": "Importér til tegnebog",
+    "addingToken": "Tilføjer...",
     "addTokenError": "Kunne ikke tilføje token til tegnebog",
     "legacyTokenMissing": "Legacy token mangler for denne kæde",
     "tigerOGMissing": "TigerOG token mangler for denne kæde",
     "networkWarning": {
-      "title": "Forkert Netværk",
-      "message": "Token konvertering er kun tilgængelig på BSC Chain.",
-      "description": "Skift venligst til BSC Chain i din tegnebog for at konvertere tokens, eller gå til Bro-fanen for at overføre tokens mellem kæder."
+      "title": "Forkert netværk",
+      "message": "Token-konvertering er kun tilgængelig på BSC Chain. Skift venligst til BSC for at konvertere dine legacy tokens."
     }
   },
   "bridge": {
-    "fromChain": "Fra Kæde",
+    "fromChain": "Fra kæde",
     "selectChainPlaceholder": "Vælg kæde",
-    "toChain": "Til Kæde",
+    "toChain": "Til kæde",
     "selectDestinationPlaceholder": "Vælg destination",
     "noDestination": "Ingen destination",
-    "noBridgeableTokens": "Ingen brobare tokens",
-    "bridgeButton": "Bro Tokens",
-    "getFeeQuote": "Få Gebyr Tilbud",
+    "noBridgeableTokens": "Ingen overførbare tokens",
+    "bridgeButton": "Overfør tokens",
+    "getFeeQuote": "Få gebyroverslag",
     "viewOnAxelarscan": "Vis på Axelarscan",
-    "addDestinationTokenLabel": "Importer {{symbol}} på {{chainName}} til tegnebog",
+    "addDestinationTokenLabel": "Importér {{symbol}} på {{chainName}} til tegnebog",
     "addTokenError": "Kunne ikke tilføje token til tegnebog",
     "estimatedTime": "Est. tid",
-    "recentTransactions": "Seneste Transaktioner",
+    "recentTransactions": "Seneste transaktioner",
     "clearHistory": "Ryd historik",
-    "historyStoredLocally": "Transaktionshistorik gemt lokalt på denne enhed"
+    "historyStoredLocally": "Transaktionshistorik gemmes lokalt på denne enhed"
   },
   "settings": {
     "title": "Indstillinger",
     "environment": "Miljø",
     "rpcEndpoints": "RPC-endepunkter",
-    "rpcEndpointsHelp": "Opdater RPC URL brugt til hver kæde i det valgte miljø.",
+    "rpcEndpointsHelp": "Opdater RPC URL for hver kæde i det valgte miljø.",
     "noChainsConfigured": "Ingen kæder konfigureret til dette miljø.",
     "cancel": "Annuller",
     "save": "Gem"
   },
-  "wallet": {},
-  "login": {
-    "title": "Velkommen tilbage",
-    "subtitle": "Log ind for at fortsætte til Freedom Bridge",
-    "emailLabel": "E-mail",
-    "emailPlaceholder": "navn@eksempel.com",
-    "passwordLabel": "Adgangskode",
-    "passwordPlaceholder": "Indtast adgangskode",
-    "rememberMe": "Husk mig på denne enhed",
-    "submit": "Log ind",
-    "validation": {
-      "required": "E-mail og adgangskode er påkrævet.",
-      "invalid": "Ugyldig e-mail eller adgangskode."
-    }
-  },
   "landing": {
     "banner": {
       "title": "Ny her?",
-      "message": "Lær om Freedom Bridge og hvordan du bygger bro med TigerOG tokens på tværs af kæder."
+      "message": "Lær om Freedom Bridge og hvordan du overfører TigerOG tokens på tværs af kæder.",
+      "note": "Bemærk: Token-konvertering er permanent og kan ikke fortrydes."
     },
     "hero": {
       "badge": "Drevet af Axelar",
-      "title": "Frigør Dine <1/> <2>Aktiver</2>",
-      "subtitle": "Byg sømløst bro med TigerOG tokens på tværs af kæder ved hjælp af Axelars Interchain Token Service. Sikker, hurtig og skattefri.",
-      "launchApp": "Start App",
+      "title": "Frigør dine <1/> <2>aktiver</2>",
+      "subtitle": "Overfør TigerOG tokens på tværs af kæder uden besvær med Axelars Interchain Token Service. Sikkert, hurtigt og skattefrit.",
+      "launchApp": "Start app",
       "documentation": "Dokumentation"
     },
     "stats": {
-      "messaging": "Axelar Netværk",
-      "networks": "Netværk Live",
+      "messaging": "Axelar-netværk",
+      "networks": "Aktive netværk",
       "fees": "Protokolgebyrer",
       "finality": "Finalitet"
     },
     "features": {
       "title": "Interchain Token Service",
-      "description": "Freedom Bridge udnytter Axelar ITS til at levere en sømløs, sikker og skattefri brooplevelse på tværs af {{count}}+ blockchains.",
+      "description": "Freedom Bridge bruger Axelar ITS til at levere en problemfri, sikker og skattefri overførselsoplevelse på tværs af {{count}}+ blockchains.",
       "stopDecay": {
-        "title": "Stop Forfaldet",
-        "description": "Legacy tokens brænder 10-11% af din værdi ved hvert køb og salg. Indpakning til TigerOG stopper denne blødning øjeblikkeligt og bevarer 100% af din værdi.",
-        "graphLabel1": "100% Bevaret (TigerOG)",
-        "graphLabel2": "-40% Værdi (Legacy 10% Skat)"
+        "title": "Stop forfaldet",
+        "description": "Legacy tokens brænder 10-11% af din værdi ved hvert køb og salg. Konvertering til TigerOG stopper denne blødning øjeblikkeligt og bevarer 100% af din værdi.",
+        "graphLabel1": "100% bevaret (TigerOG)",
+        "graphLabel2": "-40% værdi (legacy 10% skat)"
       },
       "conversion": {
-        "title": "1:1 Konvertering",
-        "description": "Den samlede forsyning ændres aldrig. Tokens er låst i en sikker migrationskontrakt, og en nøjagtig 1:1 ækvivalent bruges. Ingen inflation, ingen udvanding."
+        "title": "1:1 konvertering",
+        "description": "Den samlede forsyning ændres aldrig. Tokens indsættes i en sikker konverteringskontrakt, og en nøjagtig 1:1 ækvivalent bruges. Ingen inflation, ingen udvanding."
       },
       "multichain": {
-        "title": "Multi-Chain",
-        "description": "Implementer én gang, få adgang overalt. Dit aktiv bliver en indfødt interchain token på tværs af kæder, herunder Ethereum, BNB Chain, Base og mere."
+        "title": "Multi-chain",
+        "description": "Implementér én gang, få adgang overalt. Dit aktiv bliver en native interchain token på tværs af kæder, herunder Ethereum, BNB Chain, Base og flere."
       },
       "security": {
-        "title": "Axelar Sikkerhed",
+        "title": "Axelar-sikkerhed",
         "description": "Drevet af Axelars decentraliserede netværk af validatorer. ITS sikrer, at dine tokens overføres sikkert og konsistent på tværs af alle forbundne netværk.",
-        "button": "Start Brobygning"
+        "button": "Begynd at overføre"
       }
     },
-    "teaser": {
-      "title": "Vil du have andre mønter?",
-      "subtitle": "Hvad synes du om <lunc>LUNC</lunc>, <crepe>Crepe</crepe> eller <shiba>Shiba</shiba>??"
-    },
     "cta": {
-      "title": "Klar til at bygge bro?",
-      "description": "Deltag i interchain-revolutionen. Det tager mindre end et minut at indpakke dine aktiver og begynde at bygge bro via Axelar.",
-      "button": "Start App Nu"
+      "title": "Klar til at overføre?",
+      "description": "Deltag i interchain-revolutionen. Det tager mindre end et minut at konvertere dine tokens og begynde at overføre via Axelar.",
+      "button": "Start app nu"
+    },
+    "buyTokens": {
+      "badge": "Kom i gang",
+      "title": "Anskaf aktiver",
+      "description": "Har du ikke nogen tokens endnu? Køb base tokens på PancakeSwap, og konvertér dem derefter til de nye multichain-versioner.",
+      "buyOn": "Køb på PancakeSwap",
+      "then": "derefter",
+      "convertTo": "Konvertér til",
+      "buyNow": "Køb nu"
     }
   },
   "wiki": {
@@ -145,63 +144,65 @@
     "searchPlaceholder": "Søg i dokumentation...",
     "header": {
       "title": "Dokumentation",
-      "subtitle": "Lær hvordan du indpakker legacy tokens, bygger bro på tværs af kæder og integrerer med Freedom Bridge."
+      "subtitle": "Lær hvordan du konverterer legacy tokens og overfører på tværs af kæder."
     },
     "nav": {
-      "gettingStarted": "Kom Godt I Gang",
+      "gettingStarted": "Kom godt i gang",
       "coreConcepts": "Kernekoncepter",
       "developers": "Udviklere",
-      "tigerogSupply": "TigerOG Forsyning",
-      "lionogSupply": "LionOG Forsyning",
-      "frogogSupply": "FrogOG Forsyning"
+      "tigerogSupply": "TigerOG-forsyning",
+      "lionogSupply": "LionOG-forsyning",
+      "frogogSupply": "FrogOG-forsyning",
+      "githubRepo": "GitHub-repository",
+      "axelarDocs": "Axelar ITS-dokumentation"
     },
     "articles": {
       "whatIs": {
         "title": "Hvad er Freedom Bridge?",
-        "content": "Freedom Bridge er en decentraliseret broprotokol bygget på Axelars Interchain Token Service (ITS). Den er designet til at frigøre tokens fra enkeltkæde-begrænsninger og høje transaktionsskatter. Ved at indpakke standard tokens til interchain-kompatible aktiver, kan brugere flytte deres værdi frit på tværs af understøttede blockchains.",
-        "taxFreeTitle": "Skattefrie Overførsler",
+        "content": "Freedom Bridge er en decentraliseret broprotokol bygget på Axelars Interchain Token Service (ITS). Den lader dig konvertere legacy tokens til skattefrie, interchain-kompatible aktiver, der kan bevæge sig frit på tværs af understøttede blockchains.",
+        "taxFreeTitle": "Skattefrie overførsler",
         "taxFreeDesc": "Legacy tokens har ofte 10%+ skatter. TigerOG tokens har 0% skat.",
         "omnichainTitle": "Interchain",
         "omnichainDesc": "Flyt aktiver øjeblikkeligt mellem {{count}}+ blockchains via Axelar."
       },
       "howToConvert": {
-        "title": "Sådan Konverteres Tokens",
+        "title": "Sådan konverterer du tokens",
         "step1": "Tilslut din tegnebog til kildekæden (f.eks. BNB Chain).",
         "step2": "Gå til fanen <strong>Konverter</strong>.",
         "step3": "Vælg det legacy token, du vil konvertere.",
-        "step4": "Godkend Migrationskontrakten til at bruge dine tokens.",
-        "step5": "Klik på <strong>Konverter</strong> for at indbetale dine legacy tokens og modtage en tilsvarende mængde \"TigerOG\" tokens.",
-        "note": "<strong>Bemærk:</strong> Konvertering pådrager sig legacy tokenets transaktionsskat (under opgraderingen), hvis dit token opkræver skat på overførsler. Men når de først er konverteret til TigerOG, er alle efterfølgende overførsler og brobygninger skattefrie."
+        "step4": "Godkend konverteringskontrakten til at bruge dine tokens.",
+        "step5": "Klik på <strong>Konverter</strong> for at indsætte dine legacy tokens og modtage en tilsvarende mængde \"TigerOG\" tokens.",
+        "note": "<strong>Bemærk:</strong> Konvertering udløser legacy tokenets transaktionsskat (under opgraderingen), hvis dit token opkræver skat på overførsler. Men når de først er konverteret til TigerOG, er alle efterfølgende overførsler skattefrie."
       },
       "supportedNetworks": {
-        "title": "Understøttede Netværk",
-        "content": "Freedom Bridge understøtter et voksende økosystem af {{count}}+ blockchains, hvilket muliggør sømløs interoperabilitet på tværs af EVM-landskabet via Axelar."
+        "title": "Understøttede netværk",
+        "content": "Freedom Bridge understøtter et voksende økosystem af {{count}}+ blockchains, hvilket muliggør problemfri interoperabilitet på tværs af EVM-landskabet via Axelar."
       },
       "xerc20": {
-        "title": "Interchain Tokens",
-        "content": "Axelar Interchain Token Service (ITS) tillader tokens at blive implementeret på tværs af flere kæder med en konsistent adresse og forenet forsyningsstyring. Freedom Bridge bruger ITS til at sikre, at TigerOG forbliver et kanonisk aktiv, uanset hvor det bygges bro til."
+        "title": "Interchain tokens",
+        "content": "Axelar Interchain Token Service (ITS) tillader tokens at blive implementeret på tværs af flere kæder med en konsistent adresse og forenet forsyningsstyring. Freedom Bridge bruger ITS til at sikre, at TigerOG forbliver et kanonisk aktiv, uanset hvor det overføres til."
       },
       "axelar": {
-        "title": "Axelar Netværk",
-        "content": "Vi bruger Axelar som vores interoperabilitetslag. Axelar er et decentraliseret netværk, der forbinder forskellige blockchains, hvilket muliggør sikker cross-chain kommunikation og aktivoverførsler. Axelars sikkerhedsmodel er afhængig af et tilladelsesfrit sæt af validatorer, hvilket giver høj sikkerhed for interchain tokens."
+        "title": "Axelar-netværk",
+        "content": "Vi bruger Axelar som vores interoperabilitetslag. Axelar er et decentraliseret netværk, der forbinder forskellige blockchains og muliggør sikker cross-chain kommunikation og aktivoverførsler. Axelars sikkerhedsmodel er baseret på et tilladelsesfrit sæt af validatorer, hvilket giver høj sikkerhed for interchain tokens."
       },
-      "migration": {
-        "title": "Migrationslogik",
-        "content": "Migrationskontrakten er implementeret på oprindelseskæden (f.eks. BSC). Den opbevarer de originale legacy tokens i forvaring. Når du opgraderer tokens, indbetaler du til Migrationskontrakten. Når du udpakker (hvis understøttet), brænder du TigerOG-repræsentationen for at frigive de originale tokens. Dette sikrer en strengt bakket 1:1 binding."
+      "conversion": {
+        "title": "Konverteringslogik",
+        "content": "Konverteringskontrakten er implementeret på BSC. Når du konverterer, sendes dine legacy tokens til den døde adresse (brændes permanent), og du modtager TigerOG i et 1:1 forhold. Dette er en envejsproces — legacy tokens ødelægges og kan aldrig gendannes."
       },
       "contracts": {
-        "title": "Smart Kontrakt Adresser",
+        "title": "Smart kontrakt-adresser",
         "colNetwork": "Netværk",
-        "colType": "Kontrakt Type",
+        "colType": "Kontrakttype",
         "colAddress": "Adresse"
       },
       "security": {
         "title": "Sikkerhedsmodel",
         "content": "Sikkerhed er indbygget i hvert lag af Freedom Bridge:",
-        "point1": "<strong>Migrationsarkitektur:</strong> Legacy tokens opbevares i verificerede, uforanderlige smart kontrakter.",
-        "point2": "<strong>Axelar Validators:</strong> Cross-chain beskeder verificeres af Axelars decentraliserede netværk.",
-        "point3": "<strong>Konsistent Forsyning:</strong> ITS styrer møntning og afbrænding for at opretholde en konstant samlet forsyning på tværs af alle kæder.",
-        "point4": "<strong>Revideret Logik:</strong> Bygget på industristandard Axelar og OpenZeppelin biblioteker."
+        "point1": "<strong>Konverteringsarkitektur:</strong> Legacy tokens brændes permanent via verificerede, uforanderlige smart kontrakter.",
+        "point2": "<strong>Axelar-validatorer:</strong> Cross-chain beskeder verificeres af Axelars decentraliserede netværk.",
+        "point3": "<strong>Konsistent forsyning:</strong> ITS styrer minting og brænding for at opretholde en konstant samlet forsyning på tværs af alle kæder.",
+        "point4": "<strong>Revideret logik:</strong> Bygget på industristandard Axelar og OpenZeppelin biblioteker."
       },
       "supplyCommon": {
         "howWeCalculated": "Hvordan vi beregnede dette",
@@ -210,113 +211,143 @@
         "table": {
           "category": "Kategori",
           "amount": "Beløb",
-          "percentOfTotal": "% af Total",
-          "originalSupply": "Original Total Forsyning",
-          "deadAddress": "Død Adresse (Brændt)",
-          "contractBalance": "Kontrakt Saldo (Fastlåst)",
-          "circulatingSupply": "Cirkulerende Forsyning"
+          "percentOfTotal": "% af total",
+          "originalSupply": "Original totalforsyning",
+          "deadAddress": "Død adresse (brændt)",
+          "contractBalance": "Kontraktsaldo (fastlåst)",
+          "circulatingSupply": "Cirkulerende forsyning"
         },
-        "deadAddressTitle": "1. Død Adresse",
-        "contractBalanceTitle": "2. Kontrakt Saldo",
-        "lpLockedTitle": "3. LP Låst Tokens"
+        "deadAddressTitle": "1. Død adresse",
+        "contractBalanceTitle": "2. Kontraktsaldo",
+        "lpLockedTitle": "3. LP-låste tokens"
       },
       "tigerogSupply": {
-        "title": "TigerOG Forsyningsfordeling",
+        "title": "TigerOG-forsyningsfordeling",
         "intro": "TigerOG har en fast cirkulerende forsyning afledt af den originale BNBTiger token. Forsyningsberegningen tager højde for alle brændte og permanent låste tokens.",
-        "lpLocked": "LP Låst (86.18% af LP Brændt)",
+        "lpLocked": "LP låst (86,18% af LP brændt)",
         "deadAddressDesc": "Tokens sendt til <code>0x000...dEaD</code> er permanent brændt og kan aldrig gendannes. Dette inkluderer tokens brændt gennem den originale BNBTiger skattemekanisme.",
         "contractBalanceDesc": "En lille mængde tokens sidder fast i selve BNBTiger-kontrakten. Disse tokens er utilgængelige og effektivt fjernet fra cirkulation.",
         "lpLockedDesc": "PancakeSwap likviditetspuljen indeholder BNBTiger tokens parret med BNB. Når LP tokens brændes (sendes til den døde adresse), bliver de underliggende tokens i puljen permanent låst.",
-        "lpBurnedPercent": "LP tokens brændt: 86.18% af alle LP tokens",
-        "lpLockedPercent": "Derfor er 86.18% af tokens i LP'en permanent låst",
-        "note": "<strong>Bemærk:</strong> TigerOG opretholder et 1:1 forhold med BNBTiger under migration. Den cirkulerende forsyning af TigerOG matcher den sande cirkulerende forsyning af BNBTiger efter at have taget højde for alle brændte og låste tokens.",
+        "lpBurnedPercent": "LP tokens brændt: 86,18% af alle LP tokens",
+        "lpLockedPercent": "Derfor er 86,18% af tokens i LP'en permanent låst",
+        "note": "<strong>Bemærk:</strong> TigerOG opretholder et 1:1 forhold med BNBTiger under konvertering. Den cirkulerende forsyning af TigerOG matcher den sande cirkulerende forsyning af BNBTiger efter at have taget højde for alle brændte og låste tokens.",
         "launchData": "<strong>Lanceringsdata:</strong> Disse tal blev beregnet ved lanceringen. Det gamle BNBTiger token fortsætter med at brænde tokens ved hver køb/salg transaktion, så den faktiske cirkulerende forsyning kan være lidt lavere end vist.",
-        "legacyContract": "BNBTiger Token Kontrakt",
-        "ogContract": "TigerOG Token Kontrakt",
+        "legacyContract": "BNBTiger token-kontrakt",
+        "ogContract": "TigerOG token-kontrakt",
         "amounts": {
-          "original": "10,000,000,000,000,000,000,000,000",
-          "dead": "−5,772,706,396,234,535,780,783,775",
-          "deadPercent": "57.73%",
-          "contract": "−6,142,342,823,271,327",
-          "contractPercent": "<0.01%",
-          "lp": "−565,059,839,948,518,979,124,912",
-          "lpPercent": "5.65%",
-          "circulating": "3,662,233,757,674,602,416,819,986",
-          "circulatingPercent": "36.62%"
+          "original": "10.000.000.000.000.000.000.000.000",
+          "dead": "−5.772.706.396.234.535.780.783.775",
+          "deadPercent": "57,73%",
+          "contract": "−6.142.342.823.271.327",
+          "contractPercent": "<0,01%",
+          "lp": "−565.059.839.948.518.979.124.912",
+          "lpPercent": "5,65%",
+          "circulating": "3.662.233.757.674.602.416.819.986",
+          "circulatingPercent": "36,62%"
         }
       },
       "lionogSupply": {
-        "title": "LionOG Forsyningsfordeling",
+        "title": "LionOG-forsyningsfordeling",
         "intro": "LionOG har en fast cirkulerende forsyning afledt af den originale BNBLion token. Forsyningsberegningen tager højde for alle brændte og permanent låste tokens.",
-        "lpLocked": "LP Låst (99.98% af LP Brændt)",
+        "lpLocked": "LP låst (99,98% af LP brændt)",
         "deadAddressDesc": "Tokens sendt til <code>0x000...dEaD</code> er permanent brændt og kan aldrig gendannes. Dette inkluderer tokens brændt gennem den originale BNBLion skattemekanisme.",
         "contractBalanceDesc": "En lille mængde tokens sidder fast i selve BNBLion-kontrakten. Disse tokens er utilgængelige og effektivt fjernet fra cirkulation.",
         "lpLockedDesc": "PancakeSwap likviditetspuljen indeholder BNBLion tokens parret med BNB. Når LP tokens brændes (sendes til den døde adresse), bliver de underliggende tokens i puljen permanent låst.",
-        "lpBurnedPercent": "LP tokens brændt: 99.98% af alle LP tokens",
-        "lpLockedPercent": "Derfor er 99.98% af tokens i LP'en permanent låst",
-        "note": "<strong>Bemærk:</strong> LionOG opretholder et 1:1 forhold med BNBLion under migration. Den cirkulerende forsyning af LionOG matcher den sande cirkulerende forsyning af BNBLion efter at have taget højde for alle brændte og låste tokens.",
+        "lpBurnedPercent": "LP tokens brændt: 99,98% af alle LP tokens",
+        "lpLockedPercent": "Derfor er 99,98% af tokens i LP'en permanent låst",
+        "note": "<strong>Bemærk:</strong> LionOG opretholder et 1:1 forhold med BNBLion under konvertering. Den cirkulerende forsyning af LionOG matcher den sande cirkulerende forsyning af BNBLion efter at have taget højde for alle brændte og låste tokens.",
         "launchData": "<strong>Lanceringsdata:</strong> Disse tal blev beregnet ved lanceringen. Det gamle BNBLion token fortsætter med at brænde tokens ved hver køb/salg transaktion, så den faktiske cirkulerende forsyning kan være lidt lavere end vist.",
-        "legacyContract": "BNBLion Token Kontrakt",
-        "ogContract": "LionOG Token Kontrakt",
+        "legacyContract": "BNBLion token-kontrakt",
+        "ogContract": "LionOG token-kontrakt",
         "amounts": {
-          "original": "10,000,000,000,000,000,000,000,000",
-          "dead": "−5,724,597,218,422,106,614,085,614",
-          "deadPercent": "57.25%",
-          "contract": "−9,219,967,745,410,740,095,290",
-          "contractPercent": "<0.01%",
-          "lp": "−442,490,152,327,271,918,655,109",
-          "lpPercent": "4.42%",
-          "circulating": "3,832,903,409,282,876,056,519,182",
-          "circulatingPercent": "38.33%"
+          "original": "10.000.000.000.000.000.000.000.000",
+          "dead": "−5.724.597.218.422.106.614.085.614",
+          "deadPercent": "57,25%",
+          "contract": "−9.219.967.745.410.740.095.290",
+          "contractPercent": "<0,01%",
+          "lp": "−442.490.152.327.271.918.655.109",
+          "lpPercent": "4,42%",
+          "circulating": "3.832.903.409.282.876.056.519.182",
+          "circulatingPercent": "38,33%"
         }
       },
       "frogogSupply": {
-        "title": "FrogOG Forsyningsfordeling",
+        "title": "FrogOG-forsyningsfordeling",
         "intro": "FrogOG har en fast cirkulerende forsyning afledt af den originale BNBFrog token. Forsyningsberegningen tager højde for alle brændte og permanent låste tokens.",
-        "lpLocked": "LP Låst (99.31% af LP Brændt)",
+        "lpLocked": "LP låst (99,31% af LP brændt)",
         "deadAddressDesc": "Tokens sendt til <code>0x000...dEaD</code> er permanent brændt og kan aldrig gendannes. Dette inkluderer tokens brændt gennem den originale BNBFrog skattemekanisme.",
         "contractBalanceDesc": "En lille mængde tokens sidder fast i selve BNBFrog-kontrakten. Disse tokens er utilgængelige og effektivt fjernet fra cirkulation.",
         "lpLockedDesc": "PancakeSwap likviditetspuljen indeholder BNBFrog tokens parret med BNB. Når LP tokens brændes (sendes til den døde adresse), bliver de underliggende tokens i puljen permanent låst.",
-        "lpBurnedPercent": "LP tokens brændt: 99.31% af alle LP tokens",
-        "lpLockedPercent": "Derfor er 99.31% af tokens i LP'en permanent låst",
-        "note": "<strong>Bemærk:</strong> FrogOG opretholder et 1:1 forhold med BNBFrog under migration. Den cirkulerende forsyning af FrogOG matcher den sande cirkulerende forsyning af BNBFrog efter at have taget højde for alle brændte og låste tokens.",
+        "lpBurnedPercent": "LP tokens brændt: 99,31% af alle LP tokens",
+        "lpLockedPercent": "Derfor er 99,31% af tokens i LP'en permanent låst",
+        "note": "<strong>Bemærk:</strong> FrogOG opretholder et 1:1 forhold med BNBFrog under konvertering. Den cirkulerende forsyning af FrogOG matcher den sande cirkulerende forsyning af BNBFrog efter at have taget højde for alle brændte og låste tokens.",
         "launchData": "<strong>Lanceringsdata:</strong> Disse tal blev beregnet ved lanceringen. Det gamle BNBFrog token fortsætter med at brænde tokens ved hver køb/salg transaktion, så den faktiske cirkulerende forsyning kan være lidt lavere end vist.",
-        "legacyContract": "BNBFrog Token Kontrakt",
-        "ogContract": "FrogOG Token Kontrakt",
+        "legacyContract": "BNBFrog token-kontrakt",
+        "ogContract": "FrogOG token-kontrakt",
         "amounts": {
-          "original": "10,000,000,000,000,000,000,000,000",
-          "dead": "−740,059,884,911,899,485,982,976",
-          "deadPercent": "7.40%",
-          "contract": "−4,036,008,092,593,983,879,741",
-          "contractPercent": "<0.01%",
-          "lp": "−874,144,424,929,004,044,398,902",
-          "lpPercent": "8.74%",
-          "circulating": "8,385,795,686,123,088,377,024,138",
-          "circulatingPercent": "83.86%"
+          "original": "10.000.000.000.000.000.000.000.000",
+          "dead": "−740.059.884.911.899.485.982.976",
+          "deadPercent": "7,40%",
+          "contract": "−4.036.008.092.593.983.879.741",
+          "contractPercent": "<0,01%",
+          "lp": "−874.144.424.929.004.044.398.902",
+          "lpPercent": "8,74%",
+          "circulating": "8.385.795.686.123.088.377.024.138",
+          "circulatingPercent": "83,86%"
         }
       }
     }
   },
   "contracts": {
-    "title": "Kontrakt Adresser",
+    "title": "Kontraktadresser",
     "header": {
-      "title": "Smart Kontrakter",
-      "subtitle": "Officielle implementeringsadresser for tokens og broer på tværs af Freedom Bridge økosystemet."
+      "title": "Smart kontrakter",
+      "subtitle": "Officielle implementeringsadresser for tokens og broer på tværs af Freedom Bridge-økosystemet."
     },
     "tabs": {
       "overview": "Oversigt",
-      "byToken": "Efter Token",
-      "byChain": "Efter Kæde",
-      "liquidity": "Likviditet"
+      "byToken": "Efter token",
+      "byChain": "Efter kæde"
     },
-    "liquidity": {
-      "title": "Likviditetspuljer"
-    }
+    "overview": {
+      "interchainTokens": {
+        "title": "Interchain tokens",
+        "description": "Interchain tokens implementeret via Axelar Interchain Token Service (ITS). Disse tokens bevarer konsistente adresser på tværs af alle understøttede netværk."
+      },
+      "axelarNetwork": {
+        "title": "Axelar-netværk",
+        "description": "Den underliggende beskedprotokol, der sikrer cross-chain overførsler og garanterer dataintegritet mellem forskellige blockchains."
+      },
+      "conversionContracts": {
+        "title": "Konverteringskontrakter",
+        "description": "Ansvarlige for at konvertere legacy tokens til interchain-aktiver. Disse kontrakter håndterer indsætnings- og minting-logik på oprindelseskæden."
+      },
+      "conversionContractsTable": {
+        "title": "Konverteringskontraktadresser",
+        "subtitle": "Disse kontrakter på BSC håndterer konvertering fra legacy tokens til interchain tokens.",
+        "token": "Token",
+        "legacyToken": "Legacy token",
+        "conversionContract": "Konverteringskontrakt",
+        "newToken": "Interchain token"
+      }
+    },
+    "filterTokens": "Filtrer tokens...",
+    "interchainAsset": "Interchain-aktiv via Axelar ITS",
+    "availableOnChains": "Tilgængelig på {{count}} kæder",
+    "table": {
+      "chain": "Kæde",
+      "tokenAddress": "Token-adresse",
+      "axelarChainName": "Axelar-kædenavn",
+      "chainId": "ID: {{id}}"
+    },
+    "axelarId": "Axelar ID: {{name}}",
+    "copied": "Kopieret!",
+    "copyAddress": "Kopiér adresse"
   },
   "faq": {
-    "title": "Freedom Bridge Support",
-    "header": "Ofte Stillede Spørgsmål",
-    "subtitle": "Svar på almindelige spørgsmål om TigerOG, brobygning og Axelar.",
+    "title": "Freedom Bridge support",
+    "header": "Ofte stillede spørgsmål",
+    "subtitle": "Svar på almindelige spørgsmål om TigerOG, overførsel og Axelar.",
     "cta": {
       "title": "Har du stadig spørgsmål?",
       "description": "Deltag i vores fællesskab på Telegram eller tjek den detaljerede Wiki for tekniske vejledninger.",
@@ -325,21 +356,21 @@
     },
     "questions": {
       "q1": "Hvad er formålet med at konvertere mine tokens?",
-      "a1": "Konvertering af dine tokens til TigerOG fjerner transaktionsskatten (ofte 10-12%), der er forbundet med legacy tokenet. Det giver dig også mulighed for at bygge bro med disse tokens til andre blockchains som Ethereum, Base og mere via Axelar, hvilket giver adgang til nye økosystemer.",
+      "a1": "Konvertering af dine tokens til TigerOG fjerner transaktionsskatten (ofte 10-12%), der er forbundet med legacy tokenet. Det giver dig også mulighed for at overføre disse tokens til andre blockchains som Ethereum, Base og flere via Axelar, hvilket giver adgang til nye økosystemer.",
       "q2": "Er det sikkert at bruge Freedom Bridge?",
-      "a2": "Ja. Protokollen bruger en sikker Migrationskontrakt og Axelars Interchain Token Service. Når du konverterer, bliver din BNBTiger permanent brændt, og du modtager TigerOG i et 1:1 forhold. Brændingsmekanismen sikrer, at den samlede forsyning styres korrekt på tværs af alle kæder.",
+      "a2": "Ja. Protokollen bruger en sikker konverteringskontrakt og Axelars Interchain Token Service. Når du konverterer, bliver din BNBTiger permanent brændt, og du modtager TigerOG i et 1:1 forhold. Brændingsmekanismen sikrer, at den samlede forsyning styres korrekt på tværs af alle kæder.",
       "q3": "Er der nogen gebyrer?",
-      "a3": "Freedom Bridge opkræver ikke selv et gebyr for konvertering. Du betaler kun standard blockchain gasgebyrer. Brobygning mellem kæder indebærer et cross-chain gasgebyr betalt til Axelar for at dække relæomkostningerne.",
+      "a3": "Freedom Bridge opkræver ikke gebyr for konvertering. Du betaler kun standard blockchain-gasgebyrer. Overførsel mellem kæder indebærer et cross-chain gasgebyr betalt til Axelar for at dække relæomkostningerne.",
       "q4": "Hvad sker der, hvis jeg mister mine tokens?",
-      "a4": "TigerOG tokens opfører sig ligesom enhver anden ERC20 token. Hvis du mister adgangen til din tegnebog, kan de ikke gendannes. Hold altid dine private nøgler og gendannelsesfraser sikre.",
+      "a4": "TigerOG tokens opfører sig som enhver anden ERC20 token. Hvis du mister adgangen til din tegnebog, kan de ikke gendannes. Hold altid dine private nøgler og gendannelsesfraser sikre.",
       "q5": "Kan jeg konvertere mine TigerOG tokens tilbage til BNBTiger?",
-      "a5": "Nej. Migrationen er en envejskonvertering. Når du konverterer BNBTiger til TigerOG, bliver dine BNBTiger tokens permanent brændt (sendt til den døde adresse). Dette er efter design — TigerOG er den opgraderede, skattefrie version beregnet til at erstatte legacy tokenet helt.",
+      "a5": "Nej. Konvertering er envejs. Når du konverterer BNBTiger til TigerOG, brændes dine legacy tokens permanent (sendes til den døde adresse). Dette er med vilje — TigerOG er den opgraderede, skattefrie version, der er beregnet til helt at erstatte legacy tokenet.",
       "q6": "Hvilke netværk understøttes?",
-      "a6": "Vi understøtter flere EVM-kæder via Axelar, herunder BNB Chain, Ethereum, Base og mere. Tjek Wiki for den fulde liste over understøttede netværk.",
-      "q7": "Hvor lang tid tager brobygning?",
-      "a7": "Brobygningshastigheden afhænger af kildekædens finalitet og Axelars relæ. Typisk tager en overførsel mellem kæder omkring 2-5 minutter.",
+      "a6": "Vi understøtter flere EVM-kæder via Axelar, herunder BNB Chain, Ethereum, Base og flere. Tjek Wiki for den fulde liste over understøttede netværk.",
+      "q7": "Hvor lang tid tager overførsel?",
+      "a7": "Overførselshastigheden afhænger af kildekædens finalitet og Axelars relæ. Typisk tager en overførsel mellem kæder omkring 2-5 minutter.",
       "q8": "Hvad er de cirkulerende forsyninger af OG tokens?",
-      "a8": "Hver OG token har en fast cirkulerende forsyning afledt af dens originale BNB token, der tager højde for brændte tokens, fastlåste kontraktsaldi og låst LP. TigerOG: ~3.66 septillion (36.62% af original). LionOG: ~3.83 septillion (38.33% af original). FrogOG: ~8.39 septillion (83.86% af original). Se Wiki for detaljerede fordelinger af hver token."
+      "a8": "Hver OG token har en fast cirkulerende forsyning afledt af dens originale BNB token, der tager højde for brændte tokens, fastlåste kontraktsaldi og låst LP. TigerOG: ~3,66 septillion (36,62% af original). LionOG: ~3,83 septillion (38,33% af original). FrogOG: ~8,39 septillion (83,86% af original). Se Wiki for detaljerede fordelinger af hver token."
     }
   },
   "common": {
@@ -350,15 +381,15 @@
     "bscChain": "BSC Chain",
     "insufficientBalance": "Utilstrækkelig saldo.",
     "failedToSwitchNetwork": "Kunne ikke skifte netværk. Skift venligst manuelt i din tegnebog.",
-    "failedToFetchFeeQuote": "Kunne ikke hente gebyr tilbud.",
+    "failedToFetchFeeQuote": "Kunne ikke hente gebyroverslag.",
     "unableToDetermineGas": "Kan ikke bestemme Axelar gas-betaling",
-    "bridgeTxFailed": "Brotransaktion mislykkedes",
-    "estimatedGas": "Estimeret Axelar gas",
+    "bridgeTxFailed": "Overførselstransaktion mislykkedes",
+    "estimatedGas": "Estimeret Axelar-gas",
     "success": "Succes!",
-    "viewOnExplorer": "Vis på Udforsker",
-    "bridging": "Broforbindelse...",
+    "viewOnExplorer": "Vis på Explorer",
+    "bridging": "Overfører...",
     "transactionFailed": "Transaktion mislykkedes",
     "search": "Søg",
-    "backToApp": "Tilbage til App"
+    "backToApp": "Tilbage til app"
   }
 }

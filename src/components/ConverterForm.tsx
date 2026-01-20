@@ -83,13 +83,10 @@ const ConverterForm = () => {
   const availableTokenPairs = TOKEN_PAIRS[chainId as keyof typeof TOKEN_PAIRS] ?? [];
   const isBSC = chainId === 56;
 
-  // Selected token pair state - default to first available pair with valid addresses
-  const [selectedPairId, setSelectedPairId] = useState<string>(() => {
-    const validPair = availableTokenPairs.find(
-      p => p.migrationAddress !== "0x0000000000000000000000000000000000000000"
-    );
-    return validPair?.id ?? availableTokenPairs[0]?.id ?? "";
-  });
+  // Selected token pair state - default to first available pair
+  const [selectedPairId, setSelectedPairId] = useState<string>(
+    () => availableTokenPairs[0]?.id ?? ""
+  );
 
   // Get selected token pair
   const selectedPair = availableTokenPairs.find(p => p.id === selectedPairId) ?? availableTokenPairs[0];
@@ -104,10 +101,10 @@ const ConverterForm = () => {
   const [error, setError] = useState<string | null>(null);
 
   // Get addresses from selected pair
-  const LEGACY_ADDRESS = selectedPair?.legacyAddress ?? "0x0000000000000000000000000000000000000000";
-  const NEW_TOKEN_ADDRESS = selectedPair?.newAddress ?? "0x0000000000000000000000000000000000000000";
-  const MIGRATION_ADDRESS = selectedPair?.migrationAddress ?? "0x0000000000000000000000000000000000000000";
-  const BSC_EXPLORER = EXPLORERS[chainId] ?? EXPLORERS[97];
+  const LEGACY_ADDRESS = selectedPair?.legacyAddress;
+  const NEW_TOKEN_ADDRESS = selectedPair?.newAddress;
+  const MIGRATION_ADDRESS = selectedPair?.migrationAddress;
+  const BSC_EXPLORER = EXPLORERS[56];
 
   // Reset amount when token pair changes
   useEffect(() => {
@@ -118,7 +115,7 @@ const ConverterForm = () => {
 
   // Fetch balances
   useEffect(() => {
-    if (!publicClient || !address || !selectedPair) {
+    if (!publicClient || !address || !selectedPair || !LEGACY_ADDRESS || !NEW_TOKEN_ADDRESS || !MIGRATION_ADDRESS) {
       setLegacyBalance(0n);
       setNewTokenBalance(0n);
       return;
@@ -128,50 +125,25 @@ const ConverterForm = () => {
     const fetchBalances = async () => {
       setBalanceLoading(true);
       try {
-        const promises: Promise<bigint>[] = [];
-
-        // Fetch legacy token balance
-        if (LEGACY_ADDRESS !== "0x0000000000000000000000000000000000000000") {
-          promises.push(
-            publicClient.readContract({
-              address: LEGACY_ADDRESS,
-              abi: erc20Abi,
-              functionName: "balanceOf",
-              args: [address],
-            }) as Promise<bigint>
-          );
-        } else {
-          promises.push(Promise.resolve(0n));
-        }
-
-        // Fetch new token balance
-        if (NEW_TOKEN_ADDRESS !== "0x0000000000000000000000000000000000000000") {
-          promises.push(
-            publicClient.readContract({
-              address: NEW_TOKEN_ADDRESS,
-              abi: erc20Abi,
-              functionName: "balanceOf",
-              args: [address],
-            }) as Promise<bigint>
-          );
-        } else {
-          promises.push(Promise.resolve(0n));
-        }
-
-        // Fetch migration available
-        if (MIGRATION_ADDRESS !== "0x0000000000000000000000000000000000000000") {
-          promises.push(
-            publicClient.readContract({
-              address: MIGRATION_ADDRESS,
-              abi: migrationAbi,
-              functionName: "availableForUpgrade",
-            }) as Promise<bigint>
-          );
-        } else {
-          promises.push(Promise.resolve(0n));
-        }
-
-        const [legacy, newToken, available] = await Promise.all(promises);
+        const [legacy, newToken, available] = await Promise.all([
+          publicClient.readContract({
+            address: LEGACY_ADDRESS,
+            abi: erc20Abi,
+            functionName: "balanceOf",
+            args: [address],
+          }) as Promise<bigint>,
+          publicClient.readContract({
+            address: NEW_TOKEN_ADDRESS,
+            abi: erc20Abi,
+            functionName: "balanceOf",
+            args: [address],
+          }) as Promise<bigint>,
+          publicClient.readContract({
+            address: MIGRATION_ADDRESS,
+            abi: migrationAbi,
+            functionName: "availableForUpgrade",
+          }) as Promise<bigint>,
+        ]);
 
         if (!cancelled) {
           setLegacyBalance(legacy);
@@ -214,8 +186,7 @@ const ConverterForm = () => {
     amountBigInt > 0n &&
     !converting &&
     !exceedsBalance &&
-    !exceedsAvailable &&
-    MIGRATION_ADDRESS !== "0x0000000000000000000000000000000000000000";
+    !exceedsAvailable;
 
   const ensureApproval = async (): Promise<boolean> => {
     if (!publicClient || !walletClient || !address) return false;
@@ -297,9 +268,9 @@ const ConverterForm = () => {
       <div className="bridge-form-container">
         <Alert className="warning-alert">
           <AlertDescription>
-            <div className="font-semibold mb-1">Wrong Network</div>
+            <div className="font-semibold mb-1">{t('convert.networkWarning.title')}</div>
             <div className="text-sm">
-              Token conversion is only available on BSC Chain. Please switch to BSC to convert your legacy tokens.
+              {t('convert.networkWarning.message')}
             </div>
           </AlertDescription>
         </Alert>
@@ -341,17 +312,8 @@ const ConverterForm = () => {
               </SelectTrigger>
               <SelectContent className="shadcn-select-content">
                 {availableTokenPairs.map((pair) => (
-                  <SelectItem
-                    key={pair.id}
-                    value={pair.id}
-                    disabled={pair.migrationAddress === "0x0000000000000000000000000000000000000000"}
-                  >
-                    <div className="flex items-center gap-2">
-                      <span>{pair.legacyName} ({pair.legacySymbol})</span>
-                      {pair.migrationAddress === "0x0000000000000000000000000000000000000000" && (
-                        <span className="text-xs text-muted-foreground">(Coming Soon)</span>
-                      )}
-                    </div>
+                  <SelectItem key={pair.id} value={pair.id}>
+                    <span>{pair.legacyName} ({pair.legacySymbol})</span>
                   </SelectItem>
                 ))}
               </SelectContent>
@@ -459,14 +421,6 @@ const ConverterForm = () => {
         <Alert className="warning-alert">
           <AlertDescription>
             Amount exceeds available {selectedPair?.newSymbol} in migration contract ({formatLargeNumber(formatUnits(availableForUpgrade, DECIMALS)).formatted})
-          </AlertDescription>
-        </Alert>
-      )}
-
-      {MIGRATION_ADDRESS === "0x0000000000000000000000000000000000000000" && (
-        <Alert className="warning-alert">
-          <AlertDescription>
-            Migration contract not yet deployed. Coming soon!
           </AlertDescription>
         </Alert>
       )}

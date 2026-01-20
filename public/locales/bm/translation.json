@@ -7,45 +7,44 @@
     "settings": "Labɛnni",
     "menu": "Kunnafoni",
     "preferences": "Sago",
-    "switchTheme": "Kalan Yɛlɛma",
+    "switchTheme": "Ɲɛ Yɛlɛma",
     "theme": {
       "dark": "Dibi",
       "light": "Yeelen"
     },
-    "switchPalette": "Kalan Yɛlɛma",
+    "switchPalette": "Kulow Yɛlɛma",
     "wiki": "Sɛbɛn / Wiki",
-    "contracts": "Ladan",
+    "contracts": "Ladanw",
     "faq": "Ɲininiw",
-    "logout": "Bɔ",
     "language": "Kan",
-    "languageSearchPlaceholder": "Kan ɲinini",
-    "languageNoResults": "Kan si sɔrɔla",
+    "languageSearchPlaceholder": "Kan ɲini",
+    "languageNoResults": "Kan si ma sɔrɔ",
     "close": "Datugu"
   },
   "addNetworks": {
-    "title": "Sɛgɛsɛgɛli Kura Fara",
-    "description": "Butɔn dɔ digi duguma ka Sɛgɛsɛgɛli fara i ka bɔrɔsiɲɛbara kan. Nin b'a nɔgɔya ka taa sɛgɛsɛgɛli wɛrɛ la n'i bɛ kɔrɔbɔli la."
+    "title": "Sɛgɛsɛgɛliw Fara Bɔrɔsiɲɛbara Kan",
+    "description": "Sɛgɛsɛgɛli dɔ digi ka a fara MetaMask, Rabby, walima Web3 bɔrɔsiɲɛbara wɛrɛw kan",
+    "searchPlaceholder": "Sɛgɛsɛgɛli ɲini...",
+    "noResults": "Sɛgɛsɛgɛli si ma sɔrɔ",
+    "networkCount": "sɛgɛsɛgɛli"
+  },
+  "addNetwork": {
+    "connectWallet": "I ka bɔrɔsiɲɛbara fara fɔlɔ",
+    "alreadyPending": "Deli bɛ sinsinni na ka kɛ. I ka bɔrɔsiɲɛbara lajɛ.",
+    "error": "Sɛgɛsɛgɛli fara ma ɲɛ. A fara ni bolo ye.",
+    "adding": "Ka fara...",
+    "button": "Fara"
   },
   "tabs": {
-    "convert": "Bɔli / Datugu",
+    "convert": "Yɛlɛma",
     "bridge": "Jago"
   },
   "convert": {
-    "token": "Token",
-    "selectToken": "Token sugandi",
     "balance": "Jateden",
-    "noConvertibleTokens": "Token minw bɛ se ka dugu te yen {{chainName}} kan",
-    "convert": "Dugu",
-    "addToWalletLabel": "{{symbol}} fara bɔrɔsiɲɛbara kan {{chainName}} kan",
-    "addToWalletButton": "Fara Bɔrɔsiɲɛbara Kan",
-    "addingToken": "Ka fara...",
-    "addTokenError": "Token ma se ka fara bɔrɔsiɲɛbara kan",
-    "legacyTokenMissing": "Token kɔrɔ tɛ yen nin sɛgɛsɛgɛli kama",
-    "tigerOGMissing": "TigerOG token tɛ yen nin sɛgɛsɛgɛli kama",
+    "addToWalletButton": "Bila Bɔrɔsiɲɛbara Kɔnɔ",
     "networkWarning": {
       "title": "Sɛgɛsɛgɛli Tiɲɛnen",
-      "message": "Datugu ni Bɔli bɛ sɔrɔ BSC Chain dɔrɔn kan.",
-      "description": "Aw ye taa BSC Chain kan aw ka bɔrɔsiɲɛbara kɔnɔ ka tokenw datugu, walima aw ye taa Jago tab kan ka tokenw taa sɛgɛsɛgɛli wɛrɛ la."
+      "message": "Token yɛlɛma bɛ sɔrɔ BSC dɔrɔn kan. I ka yɛlɛma ka taa BSC ka i ka token kɔrɔw yɛlɛma."
     }
   },
   "bridge": {
@@ -54,140 +53,131 @@
     "toChain": "Ka Taa Sɛgɛsɛgɛli La",
     "selectDestinationPlaceholder": "Yɔrɔ sugandi",
     "noDestination": "Yɔrɔ Tɛ",
-    "noBridgeableTokens": "Token minw bɛ se ka jago te yen",
-    "bridgeButton": "Token Jago",
-    "getFeeQuote": "Sara Kɔfɛ Sɔrɔ",
-    "viewOnAxelarscan": "A lajɛ Axelar Explorer kan",
-    "addDestinationTokenLabel": "{{symbol}} fara bɔrɔsiɲɛbara kan {{chainName}} kan",
+    "noBridgeableTokens": "Token minw bɛ se ka jago tɛ yen",
+    "bridgeButton": "Tokenw Jago",
+    "viewOnAxelarscan": "A lajɛ Axelarscan kan",
     "addTokenError": "Token ma se ka fara bɔrɔsiɲɛbara kan",
     "estimatedTime": "Waati Jatenya",
     "recentTransactions": "Baara Kɔfɛw",
-    "clearHistory": "Tɔgɔla Josi",
-    "historyStoredLocally": "Baara tɔgɔla maralen bɛ minɛn in kɔnɔ"
+    "clearHistory": "Tɔgɔla Jɔsi",
+    "historyStoredLocally": "Baara tɔgɔla maralen bɛ nin minɛn kɔnɔ"
   },
   "settings": {
     "title": "Labɛnni",
     "environment": "Sigida",
-    "rpcEndpoints": "RPC laban yɔrɔw",
-    "rpcEndpointsHelp": "RPC URL kura min bɛ kɛ sɛgɛsɛgɛli bɛɛ ye sigida sugandilen na.",
-    "noChainsConfigured": "Sɛgɛsɛgɛli si labɛnna nin sigida kama.",
+    "rpcEndpoints": "RPC Laban Yɔrɔw",
+    "rpcEndpointsHelp": "RPC URL kura min bɛ kɛ sɛgɛsɛgɛli kelen-kelen bɛɛ ye sigida sugandilen na.",
+    "noChainsConfigured": "Sɛgɛsɛgɛli si ma labɛn nin sigida kɔnɔ.",
     "cancel": "Bali",
     "save": "Mara"
   },
-  "wallet": {},
-  "login": {
-    "title": "I Sɛgɛnna Ɲuman",
-    "subtitle": "Don walasa ka taa Hɔrɔnya Jago la",
-    "emailLabel": "Bataki",
-    "emailPlaceholder": "tɔgɔ@misali.bm",
-    "passwordLabel": "Daɲɛgafe",
-    "passwordPlaceholder": "Daɲɛgafe don",
-    "rememberMe": "N hakili to n na nin minɛn in na",
-    "submit": "Don",
-    "validation": {
-      "required": "Bataki ni daɲɛgafe ka kan ka kɛ.",
-      "invalid": "Bataki walima daɲɛgafe tɛ tiɲɛ."
-    }
-  },
   "landing": {
     "banner": {
-      "title": "I fɔlɔ la yan wa?",
-      "message": "A dɔn Hɔrɔnya Jago kan ani i bɛ se ka bɔ token sarali la cogo min na."
+      "title": "I fɔlɔ ye yan wa?",
+      "message": "A dɔn Freedom Bridge kan ani cogo min na i bɛ se ka TigerOG tokenw jago sɛgɛsɛgɛliw cɛ.",
+      "note": "A dɔn: Token yɛlɛma ye tɛmɛnen ye, a tɛ se ka sɛgin."
     },
     "hero": {
-      "badge": "Axelar ka baara",
-      "title": "I Ka <1/> <2>Nafenfɛnw</2> Bɔ",
-      "subtitle": "Bɔ token sarali kɔrɔw la. I ka tokenw dugu sɛgɛsɛgɛli cɛla nafenfɛn kɔrɔlen ni lafiya ye ani ka taa cogo lafiya la sɛgɛsɛgɛliw cɛ.",
-      "launchApp": "App Boli",
+      "badge": "Axelar Bɛ A Baara",
+      "title": "I Ka <1/> <2>Nafenfɛnw</2> Hɔrɔnya",
+      "subtitle": "TigerOG tokenw jago sɛgɛsɛgɛliw cɛ ni Axelar Interchain Token Service ye. Kɔrɔlen, teliman, sara tɛ a la.",
+      "launchApp": "App Daminɛ",
       "documentation": "Sɛbɛn"
     },
     "stats": {
-      "messaging": "Cira Tɔn",
-      "networks": "Sɛgɛsɛgɛli Boli",
-      "fees": "Sara Sariya",
+      "messaging": "Axelar Sɛgɛsɛgɛli",
+      "networks": "Sɛgɛsɛgɛli Boliw",
+      "fees": "Sariya Sara",
       "finality": "Laban"
     },
     "features": {
-      "title": "Yamaruya Tɛ Interoperability",
-      "description": "Hɔrɔnya Jago bɛ Axelar sariya ta ka jago lafiya, kɔrɔlen ani sara t'a la di {{count}}+ sɛgɛsɛgɛli cɛ.",
+      "title": "Interchain Token Service",
+      "description": "Freedom Bridge bɛ Axelar ITS ta ka jago lafiya, kɔrɔlen, ani sara tɛ a la di {{count}}+ sɛgɛsɛgɛli cɛ.",
       "stopDecay": {
         "title": "Tiɲɛni Lɔ",
-        "description": "Token kɔrɔw bɛ 10-11% jɛni i ka nafa la san ni feere bɛɛ la. Dugu bɛ nin joli lɔ joona, ka i ka san fanga 100% mara baara bɛɛ la.",
-        "graphLabel1": "100% Maralen (Dugulen)",
+        "description": "Token kɔrɔw bɛ 10-11% jɛni i ka nafa la san ni feere bɛɛ la. Yɛlɛma ka taa TigerOG bɛ nin joli lɔ joona, ka i ka nafa 100% mara.",
+        "graphLabel1": "100% Maralen (TigerOG)",
         "graphLabel2": "-40% Nafa (Kɔrɔ 10% Sara)"
       },
       "conversion": {
-        "title": "1:1 Dugu",
-        "description": "Di bɛɛ tɛ yɛlɛma abada. Tokenw datugulen bɛ mara lafiya la, ani 1:1 bɛ dilan. Yiriwali tɛ, jɛya tɛ."
+        "title": "1:1 Yɛlɛma",
+        "description": "Hakɛ bɛɛ tɛ yɛlɛma abada. Tokenw bɛ mara yɛlɛma ladan kɔrɔlen kɔnɔ, ani 1:1 ɲɔgɔnye bɛ kɛ. Yiriwali tɛ, jɛya tɛ."
       },
       "multichain": {
         "title": "Sɛgɛsɛgɛli Caman",
-        "description": "Dilan siɲɛ kelen, sɔrɔ yɔrɔ bɛɛ. I ka nafenfɛn bɛ kɛ dugu den ye {{count}}+ sɛgɛsɛgɛli kan, Ethereum, BNB Chain, Base, ani Optimism bɛ a la."
+        "description": "Bila siɲɛ kelen, sɔrɔ yɔrɔ bɛɛ. I ka nafenfɛn bɛ kɛ interchain token ye sɛgɛsɛgɛliw bɛɛ kan, Ethereum, BNB Chain, Base, ani wɛrɛw bɛ a la."
       },
       "security": {
-        "title": "Kɔrɔlen Sɛgɛ",
-        "description": "Axelar ka kɔrɔlen tɔn bɛ a la. Sɛgɛsɛgɛli Cɛ Kɔrɔlen (ISMs) b'a to i ka cira bɛ sɛgɛsɛgɛ sɛgɛsɛgɛli kan sani nafa si ka taa.",
+        "title": "Axelar Kɔrɔlen",
+        "description": "Axelar ka sɛgɛsɛgɛbaga jama tɛ cɛmancɛ bɛ a baara. ITS b'a lajɛ ko i ka tokenw bɛ jago ni kɔrɔlen ani tɛmɛnisɛbɛn ye sɛgɛsɛgɛli bɛɛ kan.",
         "button": "Jago Daminɛ"
       }
     },
-    "teaser": {
-      "title": "I bɛ wari wɛrɛw fɛ wa?",
-      "subtitle": "I hakili bɛ mun na <lunc>LUNC</lunc>, <crepe>Crepe</crepe>, walima <shiba>Shiba</shiba> kan?"
-    },
     "cta": {
-      "title": "I labɛnna ka bɔ wa?",
-      "description": "Fara sɛgɛsɛgɛli cɛ yɛlɛmali kan. A bɛ miniti kelen ta ka i ka nafenfɛnw dugu ani ka jago daminɛ.",
-      "button": "App Boli Sisan"
+      "title": "I labɛnna ka jago wa?",
+      "description": "Fara interchain yɛlɛmali kan. A bɛ miniti kelen dɔrɔn ta ka i ka tokenw yɛlɛma ani ka jago daminɛ ni Axelar ye.",
+      "button": "App Daminɛ Sisan"
+    },
+    "buyTokens": {
+      "badge": "Daminɛ",
+      "title": "Nafenfɛnw Sɔrɔ",
+      "description": "I ka tokenw tɛ yen fɔlɔ wa? Token fɔlɔw san PancakeSwap kan, o kɔ i ka olu yɛlɛma ka kɛ sɛgɛsɛgɛli-caman sugya kura ye.",
+      "buyOn": "San PancakeSwap Kan",
+      "then": "o kɔ",
+      "convertTo": "Yɛlɛma ka kɛ",
+      "buyNow": "San Sisan"
     }
   },
   "wiki": {
-    "title": "Hɔrɔnya Jago Wiki",
+    "title": "Freedom Bridge Wiki",
     "searchPlaceholder": "Sɛbɛn ɲini...",
     "header": {
       "title": "Sɛbɛn",
-      "subtitle": "A dɔn token kɔrɔw dugu cogo, jago sɛgɛsɛgɛli cɛ, ani fara Hɔrɔnya Jago kan."
+      "subtitle": "A dɔn token kɔrɔw yɛlɛma cogo ani jago sɛgɛsɛgɛliw cɛ."
     },
     "nav": {
       "gettingStarted": "Daminɛ",
-      "coreConcepts": "Hakilila Kɔrɔba",
-      "developers": "Yirisɔbagaw",
+      "coreConcepts": "Hakilila Kɔrɔw",
+      "developers": "Dilanbagaw",
       "tigerogSupply": "TigerOG Hakɛ",
       "lionogSupply": "LionOG Hakɛ",
-      "frogogSupply": "FrogOG Hakɛ"
+      "frogogSupply": "FrogOG Hakɛ",
+      "githubRepo": "GitHub Marayɔrɔ",
+      "axelarDocs": "Axelar ITS Sɛbɛn"
     },
     "articles": {
       "whatIs": {
-        "title": "Mun ye Hɔrɔnya Jago ye?",
-        "content": "Hɔrɔnya Jago ye sariya tɛ cɛmancɛ ye min dilanna ka token kɔrɔw bɔ baara sarali belebele ani sɛgɛsɛgɛli kelen dan la. Ka ERC20 tokenw dugu <strong>xERC20</strong> (sɛgɛsɛgɛli cɛ ERC20) nafenfɛn na, mɔgɔw bɛ se ka u ka nafa taa lafiya la sɛgɛsɛgɛli minw bɛ sɔrɔ u kan sani ka token fɔlɔ taali saraw ta.",
-        "taxFreeTitle": "Taali Sara T'a La",
-        "taxFreeDesc": "Token kɔrɔw ka teli ka 10%+ sara ta. Token dugulenw bɛ 0% sara ta.",
-        "omnichainTitle": "Sɛgɛsɛgɛli Bɛɛ",
-        "omnichainDesc": "Nafenfɛnw taa joona {{count}}+ sɛgɛsɛgɛli cɛ."
+        "title": "Mun Ye Freedom Bridge Ye?",
+        "content": "Freedom Bridge ye jago sariya ye min dilanna Axelar Interchain Token Service (ITS) kan. A b'a to i bɛ token kɔrɔw yɛlɛma ka kɛ nafenfɛnw ye minw sara tɛ ani minw bɛ se ka taa lafiya la sɛgɛsɛgɛli sɔrɔlenw bɛɛ kan.",
+        "taxFreeTitle": "Taali Sara Tɛ",
+        "taxFreeDesc": "Token kɔrɔw teli ka 10%+ sara ta. TigerOG tokenw bɛ 0% sara ta.",
+        "omnichainTitle": "Interchain",
+        "omnichainDesc": "Nafenfɛnw taa joona {{count}}+ sɛgɛsɛgɛli cɛ ni Axelar ye."
       },
       "howToConvert": {
-        "title": "Tokenw Dugu Cogo",
-        "step1": "I ka bɔrɔsiɲɛbara fara bɔ yɔrɔ sɛgɛsɛgɛli kan (misali, BNB Chain).",
-        "step2": "Taa <strong>Bɔli / Datugu</strong> tab kan.",
-        "step3": "Token kɔrɔ sugandi i b'a fɛ ka min dugu.",
-        "step4": "Lockbox ladan sɔn ka i ka tokenw fite.",
-        "step5": "Digi <strong>Dugu</strong> kan ka i ka token kɔrɔw bila ani ka \"OG\" token hakɛ kelen sɔrɔ.",
-        "note": "<strong>A dɔn:</strong> Dugu bɛ token kɔrɔ baara sara ta (bila tuma) n'i ka token bɛ sara ta taali la, ka tɛmɛ san ni feere kan. Nka, n'a dugula, taali ni jago bɛɛ minw bɛ na o kɔ, u bɔra nin sara la."
+        "title": "Tokenw Yɛlɛma Cogo",
+        "step1": "I ka bɔrɔsiɲɛbara fara bɔyɔrɔ sɛgɛsɛgɛli kan (misali, BNB Chain).",
+        "step2": "Taa <strong>Yɛlɛma</strong> tab kan.",
+        "step3": "Token kɔrɔ sugandi i b'a fɛ ka min yɛlɛma.",
+        "step4": "Yɛlɛma ladan sɔn ka i ka tokenw fite.",
+        "step5": "Digi <strong>Yɛlɛma</strong> kan ka i ka token kɔrɔw bila ani ka \"TigerOG\" token hakɛ kelen sɔrɔ.",
+        "note": "<strong>A dɔn:</strong> Yɛlɛma bɛ token kɔrɔ sara ta (yɛlɛma tuma) n'i ka token bɛ sara ta taali la. Nka, ni TigerOG sɔrɔla, taali ni jago bɛɛ minw bɛ na o kɔ, sara tɛ olu la."
       },
       "supportedNetworks": {
         "title": "Sɛgɛsɛgɛli Sɔrɔlenw",
-        "content": "Hɔrɔnya Jago bɛ {{count}}+ sɛgɛsɛgɛli kura sɔrɔ, ka baara lafiya to EVM kɔnɔ."
+        "content": "Freedom Bridge bɛ {{count}}+ sɛgɛsɛgɛli sɔrɔ min bɛ yiriwali la, ka baara lafiya di EVM sigida kɔnɔ ni Axelar ye."
       },
       "xerc20": {
-        "title": "xERC20 Sariya",
-        "content": "xERC20 sariya (EIP-7281) b'a to token dilanbagaw bɛ se ka u ka jago mara u yɛrɛ ye sani ka ɲɛ kelen di sɛgɛsɛgɛli cɛ taali kama. Hɔrɔnya Jago bɛ xERC20 ta ka a lajɛ ko \"so\" hakilila bɛ yen token kama tuma bɛɛ sani ka dilan/jɛni dan bila kɔrɔlen kama."
+        "title": "Interchain Tokenw",
+        "content": "Axelar Interchain Token Service (ITS) b'a to tokenw bɛ se ka bila sɛgɛsɛgɛli caman kan ni adirɛsi kelen ani hakɛ mara kelen ye. Freedom Bridge bɛ ITS ta ka a lajɛ ko TigerOG bɛ to nafenfɛn tiɲɛ ye a jagolen yɔrɔ bɛɛ."
       },
       "axelar": {
-        "title": "Axelar Cira",
-        "content": "An bɛ Axelar ta an ka baara cɛ la. Axelar ye cira sariya ye min b'a to an bɛ se ka yamaruya tɛ sɛgɛsɛgɛli cɛ sira dilan sɛgɛsɛgɛli bɛɛ cɛ. Ka tɛmɛ jago kɔrɔw kan minw bɛ la sɛgɛsɛgɛbaga cɛmancɛw la, Axelar b'a to an bɛ Sɛgɛsɛgɛli Cɛ Kɔrɔlen (ISMs) dilan ka cira sɛgɛsɛgɛ an ka kɔrɔlen mako la."
+        "title": "Axelar Sɛgɛsɛgɛli",
+        "content": "An bɛ Axelar ta an ka baara-cɛ tɔn ye. Axelar ye sɛgɛsɛgɛli ye min tɛ cɛmancɛ, a bɛ sɛgɛsɛgɛli suguya caman fara ɲɔgɔn na, ka cira kɔrɔlen ni nafenfɛn taali di sɛgɛsɛgɛliw cɛ. Axelar ka kɔrɔlen cogoya bɛ la sɛgɛsɛgɛbaga jama kan minw yamaruya tɛ, ka kɔrɔlen gɛlɛn di interchain tokenw ma."
       },
-      "migration": {
-        "title": "Lockbox Baara",
-        "content": "Lockbox ye ladan hakilima ye min bɛ bɔ yɔrɔ sɛgɛsɛgɛli kan (misali, BSC). A bɛ token kɔrɔw mara. N'i bɛ tokenw dugu, i bɛ bila Lockbox kɔnɔ. N'i bɛ dajɛ, i bɛ xERC20 jɛni ka token fɔlɔw bɔ Lockbox kɔnɔ. Nin bɛ 1:1 mara tuma bɛɛ."
+      "conversion": {
+        "title": "Yɛlɛma Cogoya",
+        "content": "Yɛlɛma ladan bɛ BSC kan. N'i bɛ yɛlɛma, i ka token kɔrɔw bɛ ci adirɛsi safunen ma (u bɛ jɛni abada) ani i bɛ TigerOG sɔrɔ 1:1 la. Nin ye sira kelen baara ye — token kɔrɔw bɛ tiɲɛ ani u tɛ se ka sɔrɔ abada."
       },
       "contracts": {
         "title": "Ladan Hakilima Adirɛsiw",
@@ -197,24 +187,24 @@
       },
       "security": {
         "title": "Kɔrɔlen Cogoya",
-        "content": "Kɔrɔlen ka kɔrɔ. An bɛ kɔrɔlen tɔn caman ta:",
-        "point1": "<strong>Lockbox Lɔcogo:</strong> Token kɔrɔw bɛ mara ladan hakilima sɛgɛsɛgɛlen ni yɛlɛmabali kɔnɔ.",
-        "point2": "<strong>Axelar Validators:</strong> Sɛgɛsɛgɛli Cɛ Kɔrɔlen bɛ cira sɛgɛsɛgɛ sɛgɛsɛgɛli cɛ.",
-        "point3": "<strong>Dan Bila:</strong> Dilan ni jɛni dan gɛlɛn bɛ dilan dan tɛ ban bali.",
-        "point4": "<strong>Ladan Sɛgɛsɛgɛlen:</strong> Dilannen OpenZeppelin ni Axelar sariya tɔn kan."
+        "content": "Kɔrɔlen bɛ Freedom Bridge tɔn bɛɛ kɔnɔ:",
+        "point1": "<strong>Yɛlɛma Lɔcogo:</strong> Token kɔrɔw bɛ jɛni abada ni ladan hakilima sɛgɛsɛgɛlen minw tɛ yɛlɛma ye.",
+        "point2": "<strong>Axelar Sɛgɛsɛgɛbagaw:</strong> Sɛgɛsɛgɛli cɛ ciraw bɛ sɛgɛsɛgɛ ni Axelar sɛgɛsɛgɛli tɛ cɛmancɛ ye.",
+        "point3": "<strong>Hakɛ Kelen:</strong> ITS bɛ dilan ni jɛni mara ka hakɛ bɛɛ kelen to sɛgɛsɛgɛliw bɛɛ kan.",
+        "point4": "<strong>Ladan Sɛgɛsɛgɛlen:</strong> Dilanna Axelar ni OpenZeppelin sariya tɔn kan."
       },
       "supplyCommon": {
         "howWeCalculated": "An Y'a Jate Cogo Min",
         "verification": "Sɛgɛsɛgɛli",
-        "verificationDesc": "Hakɛ jatedenw bɛɛ bɛ se ka sɛgɛsɛgɛ sariya kan:",
+        "verificationDesc": "Hakɛ jatedenw bɛɛ bɛ se ka sɛgɛsɛgɛ sɛgɛsɛgɛli kan:",
         "table": {
           "category": "Sugya",
           "amount": "Hakɛ",
-          "percentOfTotal": "Bɛɛ la %",
-          "originalSupply": "Hakɛ Kɔrɔ Bɛɛ",
+          "percentOfTotal": "Bɛɛ La %",
+          "originalSupply": "Hakɛ Fɔlɔ Bɛɛ",
           "deadAddress": "Adirɛsi Safunen (Jɛninen)",
           "contractBalance": "Ladan Kɔnɔna (Minɛnen)",
-          "circulatingSupply": "Min Bɛ Yen"
+          "circulatingSupply": "Hakɛ Min Bɛ Yen"
         },
         "deadAddressTitle": "1. Adirɛsi Safunen",
         "contractBalanceTitle": "2. Ladan Kɔnɔna",
@@ -222,14 +212,14 @@
       },
       "tigerogSupply": {
         "title": "TigerOG Hakɛ Jateden",
-        "intro": "TigerOG hakɛ bɛ bɔ BNBTiger token kɔrɔ la. Jateden bɛ token jɛninenw ni maralenw bɛɛ ta.",
+        "intro": "TigerOG hakɛ maralen bɛ bɔ BNBTiger token fɔlɔ la. Jateden bɛ token jɛninenw ni maralenw bɛɛ ta kɔnɔ.",
         "lpLocked": "LP Maralen (86.18% LP Jɛninen)",
-        "deadAddressDesc": "Token minw cira <code>0x000...dEaD</code> ma, olu jɛnina abada, u tɛ se ka sɔrɔ tuguni. Nin bɛ token jɛninenw ta BNBTiger sara sira fɛ.",
-        "contractBalanceDesc": "Token dɔɔnin minɛna BNBTiger ladan kɔnɔ. Olu tɛ se ka sɔrɔ, u bɔra jago la.",
-        "lpLockedDesc": "PancakeSwap wari yɔrɔ bɛ BNBTiger ni BNB tokenw mara. N'a LP tokenw jɛnina (ka ci adirɛsi safunen ma), token minw bɛ wari yɔrɔ kɔnɔ, olu bɛ mara abada.",
+        "deadAddressDesc": "Token minw cira <code>0x000...dEaD</code> ma, olu jɛnina abada ani u tɛ se ka sɔrɔ. Nin bɛ token jɛninenw ta BNBTiger sara sira fɛ.",
+        "contractBalanceDesc": "Token dɔɔnin minɛna BNBTiger ladan kɔnɔ. Olu tɛ se ka sɔrɔ ani u bɔra jago la.",
+        "lpLockedDesc": "PancakeSwap wari yɔrɔ bɛ BNBTiger tokenw mara ni BNB ye. Ni LP tokenw jɛnina (ka ci adirɛsi safunen ma), token minw bɛ wari yɔrɔ kɔnɔ, olu bɛ mara abada.",
         "lpBurnedPercent": "LP token jɛninen: 86.18% LP token bɛɛ la",
         "lpLockedPercent": "O la, 86.18% tokenw wari yɔrɔ kɔnɔ marala abada",
-        "note": "<strong>A dɔn:</strong> TigerOG bɛ 1:1 mara ni BNBTiger ye yɛlɛmali tuma. TigerOG hakɛ bɛ bɛn BNBTiger hakɛ tiɲɛ ma, jɛninenw ni maralenw bɔlen kɔ.",
+        "note": "<strong>A dɔn:</strong> TigerOG bɛ 1:1 mara ni BNBTiger ye yɛlɛma tuma. TigerOG hakɛ bɛ bɛn BNBTiger hakɛ tiɲɛ ma, jɛninenw ni maralenw bɔlen kɔ.",
         "launchData": "<strong>Daminɛ Jateden:</strong> Nin jatedenw kɛra daminɛ tuma. BNBTiger token kɔrɔ bɛ tɛmɛ ka jɛni san/feere bɛɛ la, o la hakɛ tiɲɛ bɛ se ka dɔgɔya dɔɔnin.",
         "legacyContract": "BNBTiger Token Ladan",
         "ogContract": "TigerOG Token Ladan",
@@ -247,14 +237,14 @@
       },
       "lionogSupply": {
         "title": "LionOG Hakɛ Jateden",
-        "intro": "LionOG hakɛ bɛ bɔ BNBLion token kɔrɔ la. Jateden bɛ token jɛninenw ni maralenw bɛɛ ta.",
+        "intro": "LionOG hakɛ maralen bɛ bɔ BNBLion token fɔlɔ la. Jateden bɛ token jɛninenw ni maralenw bɛɛ ta kɔnɔ.",
         "lpLocked": "LP Maralen (99.98% LP Jɛninen)",
-        "deadAddressDesc": "Token minw cira <code>0x000...dEaD</code> ma, olu jɛnina abada, u tɛ se ka sɔrɔ tuguni. Nin bɛ token jɛninenw ta BNBLion sara sira fɛ.",
-        "contractBalanceDesc": "Token dɔɔnin minɛna BNBLion ladan kɔnɔ. Olu tɛ se ka sɔrɔ, u bɔra jago la.",
-        "lpLockedDesc": "PancakeSwap wari yɔrɔ bɛ BNBLion tokenw mara. N'a LP tokenw jɛnina (ka ci adirɛsi safunen ma), token minw bɛ wari yɔrɔ kɔnɔ, olu bɛ mara abada.",
+        "deadAddressDesc": "Token minw cira <code>0x000...dEaD</code> ma, olu jɛnina abada ani u tɛ se ka sɔrɔ. Nin bɛ token jɛninenw ta BNBLion sara sira fɛ.",
+        "contractBalanceDesc": "Token dɔɔnin minɛna BNBLion ladan kɔnɔ. Olu tɛ se ka sɔrɔ ani u bɔra jago la.",
+        "lpLockedDesc": "PancakeSwap wari yɔrɔ bɛ BNBLion tokenw mara ni BNB ye. Ni LP tokenw jɛnina (ka ci adirɛsi safunen ma), token minw bɛ wari yɔrɔ kɔnɔ, olu bɛ mara abada.",
         "lpBurnedPercent": "LP token jɛninen: 99.98% LP token bɛɛ la",
         "lpLockedPercent": "O la, 99.98% tokenw wari yɔrɔ kɔnɔ marala abada",
-        "note": "<strong>A dɔn:</strong> LionOG bɛ 1:1 mara ni BNBLion ye yɛlɛmali tuma. LionOG hakɛ bɛ bɛn BNBLion hakɛ tiɲɛ ma, jɛninenw ni maralenw bɔlen kɔ.",
+        "note": "<strong>A dɔn:</strong> LionOG bɛ 1:1 mara ni BNBLion ye yɛlɛma tuma. LionOG hakɛ bɛ bɛn BNBLion hakɛ tiɲɛ ma, jɛninenw ni maralenw bɔlen kɔ.",
         "launchData": "<strong>Daminɛ Jateden:</strong> Nin jatedenw kɛra daminɛ tuma. BNBLion token kɔrɔ bɛ tɛmɛ ka jɛni san/feere bɛɛ la, o la hakɛ tiɲɛ bɛ se ka dɔgɔya dɔɔnin.",
         "legacyContract": "BNBLion Token Ladan",
         "ogContract": "LionOG Token Ladan",
@@ -272,14 +262,14 @@
       },
       "frogogSupply": {
         "title": "FrogOG Hakɛ Jateden",
-        "intro": "FrogOG hakɛ bɛ bɔ BNBFrog token kɔrɔ la. Jateden bɛ token jɛninenw ni maralenw bɛɛ ta.",
+        "intro": "FrogOG hakɛ maralen bɛ bɔ BNBFrog token fɔlɔ la. Jateden bɛ token jɛninenw ni maralenw bɛɛ ta kɔnɔ.",
         "lpLocked": "LP Maralen (99.31% LP Jɛninen)",
-        "deadAddressDesc": "Token minw cira <code>0x000...dEaD</code> ma, olu jɛnina abada, u tɛ se ka sɔrɔ tuguni. Nin bɛ token jɛninenw ta BNBFrog sara sira fɛ.",
-        "contractBalanceDesc": "Token dɔɔnin minɛna BNBFrog ladan kɔnɔ. Olu tɛ se ka sɔrɔ, u bɔra jago la.",
-        "lpLockedDesc": "PancakeSwap wari yɔrɔ bɛ BNBFrog tokenw mara. N'a LP tokenw jɛnina (ka ci adirɛsi safunen ma), token minw bɛ wari yɔrɔ kɔnɔ, olu bɛ mara abada.",
+        "deadAddressDesc": "Token minw cira <code>0x000...dEaD</code> ma, olu jɛnina abada ani u tɛ se ka sɔrɔ. Nin bɛ token jɛninenw ta BNBFrog sara sira fɛ.",
+        "contractBalanceDesc": "Token dɔɔnin minɛna BNBFrog ladan kɔnɔ. Olu tɛ se ka sɔrɔ ani u bɔra jago la.",
+        "lpLockedDesc": "PancakeSwap wari yɔrɔ bɛ BNBFrog tokenw mara ni BNB ye. Ni LP tokenw jɛnina (ka ci adirɛsi safunen ma), token minw bɛ wari yɔrɔ kɔnɔ, olu bɛ mara abada.",
         "lpBurnedPercent": "LP token jɛninen: 99.31% LP token bɛɛ la",
         "lpLockedPercent": "O la, 99.31% tokenw wari yɔrɔ kɔnɔ marala abada",
-        "note": "<strong>A dɔn:</strong> FrogOG bɛ 1:1 mara ni BNBFrog ye yɛlɛmali tuma. FrogOG hakɛ bɛ bɛn BNBFrog hakɛ tiɲɛ ma, jɛninenw ni maralenw bɔlen kɔ.",
+        "note": "<strong>A dɔn:</strong> FrogOG bɛ 1:1 mara ni BNBFrog ye yɛlɛma tuma. FrogOG hakɛ bɛ bɛn BNBFrog hakɛ tiɲɛ ma, jɛninenw ni maralenw bɔlen kɔ.",
         "launchData": "<strong>Daminɛ Jateden:</strong> Nin jatedenw kɛra daminɛ tuma. BNBFrog token kɔrɔ bɛ tɛmɛ ka jɛni san/feere bɛɛ la, o la hakɛ tiɲɛ bɛ se ka dɔgɔya dɔɔnin.",
         "legacyContract": "BNBFrog Token Ladan",
         "ogContract": "FrogOG Token Ladan",
@@ -300,46 +290,76 @@
   "contracts": {
     "title": "Ladan Adirɛsiw",
     "header": {
-      "title": "Ladan Hakilima",
-      "subtitle": "Boli adirɛsiw tokenw, taayɔrɔw, ani wari bɛ yen yɔrɔw Hɔrɔnya Jago kɔnɔ."
+      "title": "Ladan Hakilimaw",
+      "subtitle": "Bila adirɛsi tiɲɛnenw tokenw ni jagow kama Freedom Bridge kɔnɔ."
     },
     "tabs": {
       "overview": "Jɛ",
       "byToken": "Token Fɛ",
-      "byChain": "Sɛgɛsɛgɛli Fɛ",
-      "liquidity": "Wari bɛ yen"
+      "byChain": "Sɛgɛsɛgɛli Fɛ"
     },
-    "liquidity": {
-      "title": "Wari bɛ yen Yɔrɔw"
-    }
+    "overview": {
+      "interchainTokens": {
+        "title": "Interchain Tokenw",
+        "description": "Interchain tokenw minw bilara ni Axelar Interchain Token Service (ITS) ye. Nin tokenw bɛ adirɛsi kelen mara sɛgɛsɛgɛli sɔrɔlenw bɛɛ kan."
+      },
+      "axelarNetwork": {
+        "title": "Axelar Sɛgɛsɛgɛli",
+        "description": "Cira sariya min bɛ jago sɛgɛsɛgɛliw cɛ kɔrɔ ani ka jateden tiɲɛya lajɛ sɛgɛsɛgɛliw cɛ."
+      },
+      "conversionContracts": {
+        "title": "Yɛlɛma Ladanw",
+        "description": "Minw bɛ token kɔrɔw yɛlɛma ka kɛ interchain nafenfɛnw ye. Nin ladanw bɛ bila ni dilan cogoya mara bɔyɔrɔ sɛgɛsɛgɛli kan."
+      },
+      "conversionContractsTable": {
+        "title": "Yɛlɛma Ladan Adirɛsiw",
+        "subtitle": "Nin ladanw BSC kan bɛ yɛlɛma mara ka bɔ token kɔrɔw la ka taa interchain tokenw la.",
+        "token": "Token",
+        "legacyToken": "Token Kɔrɔ",
+        "conversionContract": "Yɛlɛma Ladan",
+        "newToken": "Interchain Token"
+      }
+    },
+    "filterTokens": "Tokenw sɔgɔ...",
+    "interchainAsset": "Interchain Nafenfɛn ni Axelar ITS ye",
+    "availableOnChains": "Bɛ sɔrɔ {{count}} sɛgɛsɛgɛli kan",
+    "table": {
+      "chain": "Sɛgɛsɛgɛli",
+      "tokenAddress": "Token Adirɛsi",
+      "axelarChainName": "Axelar Sɛgɛsɛgɛli Tɔgɔ",
+      "chainId": "ID: {{id}}"
+    },
+    "axelarId": "Axelar ID: {{name}}",
+    "copied": "A Kopi Kɛra!",
+    "copyAddress": "Adirɛsi Kopi"
   },
   "faq": {
-    "title": "Hɔrɔnya Jago Dɛmɛ",
-    "header": "Ɲininiw",
-    "subtitle": "Jaabiw ɲininiw kan dugu, jago, ani kɔrɔlen kan.",
+    "title": "Freedom Bridge Dɛmɛ",
+    "header": "Ɲinini Camanw",
+    "subtitle": "Jaabi TigerOG, jago, ani Axelar ɲininiw kan.",
     "cta": {
       "title": "I ka ɲininiw bɛ yen halisa?",
-      "description": "Fara an ka jama kan Discord kan walima Wiki lajɛ ka baara ɲɛfɔli sɔrɔ.",
+      "description": "Fara an ka jama kan Telegram kan walima Wiki lajɛ ka baara ɲɛfɔli sɔrɔ.",
       "wiki": "Wiki Lajɛ",
       "telegram": "Fara Telegram Kan"
     },
     "questions": {
-      "q1": "Mun ye n ka tokenw dugu kun ye?",
-      "a1": "I ka tokenw dugu Hɔrɔnya Jago sariya (xERC20) la bɛ baara sara bɔ (teli ka kɛ 10-12%) token kɔrɔ la. A b'a to fana i bɛ se ka nin tokenw jago ka taa sɛgɛsɛgɛli wɛrɛw la i n'a fɔ Base, Ethereum, ani caman wɛrɛ, ka DeFi ni wari bɛ yen sɔrɔ yɔrɔ bɛɛ.",
-      "q2": "Hɔrɔnya Jago baara ka lafiya wa?",
-      "a2": "Awɔ. Sariya bɛ Lockbox baara sɛgɛsɛgɛlen jama fɛ ani OpenZeppelin ladan sariya ta. I ka token fɔlɔw bɛ datugu ladan hakilima kɔnɔ bɔ yɔrɔ sɛgɛsɛgɛli kan, ani 1:1 bɛ dilan. I bɛ se ka i ka token fɔlɔw sɔrɔ tuma bɛɛ n'i ye dugu sugya jɛni.",
+      "q1": "Mun ye n ka tokenw yɛlɛma kun ye?",
+      "a1": "I ka tokenw yɛlɛma ka kɛ TigerOG ye bɛ baara sara bɔ (teli ka kɛ 10-12%) token kɔrɔ la. A b'a to fana i bɛ se ka nin tokenw jago ka taa sɛgɛsɛgɛli wɛrɛw la i n'a fɔ Ethereum, Base, ani wɛrɛw ni Axelar ye, ka yɔrɔ kura sɔrɔ.",
+      "q2": "Freedom Bridge baara ka lafiya wa?",
+      "a2": "Awɔ. Sariya bɛ yɛlɛma ladan kɔrɔlen ni Axelar Interchain Token Service ta. N'i bɛ yɛlɛma, i ka BNBTiger bɛ jɛni abada ani i bɛ TigerOG sɔrɔ 1:1 la. Jɛni cogoya b'a lajɛ ko hakɛ bɛɛ bɛ mara ɲuman na sɛgɛsɛgɛliw bɛɛ kan.",
       "q3": "Sara bɛ yen wa?",
-      "a3": "Hɔrɔnya Jago sariya yɛrɛ tɛ sara ta dugu walima dajɛ la. I bɛ sɛgɛsɛgɛli gazi sara dɔrɔn sara. Nka, jago sɛgɛsɛgɛli cɛ (misali, BSC ka taa Base) bɛ sara dɔɔnin ta ka cira sɛgɛsɛgɛli cɛ sara Axelar fɛ.",
-      "q4": "Mun bɛ kɛ n'n ye n ka token dugulenw tunun?",
-      "a4": "Token dugulenw bɛ kɛ i n'a fɔ ERC20 token wɛrɛ. N'i ye i ka bɔrɔsiɲɛbara tunun walima k'a ci adirɛsi tiɲɛnen ma, u tɛ se ka sɔrɔ. A lajɛ tuma bɛɛ ko i bɛ ci adirɛsi ɲuman ma ani i ka kɔnɔna kilew mara.",
-      "q5": "N bɛ se ka n ka tokenw dajɛ ka segin fɔlɔ ma wa?",
-      "a5": "Awɔ. I bɛ se ka i ka \"OG\" (dugulen) tokenw dajɛ ka segin token kɔrɔ ma tuma bɛɛ bɔ yɔrɔ sɛgɛsɛgɛli kan. Baara bɛ token dugulen jɛni ani ka fɔlɔ bɔ Lockbox kɔnɔ.",
+      "a3": "Freedom Bridge yɛrɛ tɛ sara ta yɛlɛma la. I bɛ sɛgɛsɛgɛli gazi sara dɔrɔn sara. Jago sɛgɛsɛgɛliw cɛ bɛ sɛgɛsɛgɛli cɛ gazi sara ta min bɛ sara Axelar ma ka cira saraw ta.",
+      "q4": "Mun bɛ kɛ n'i ye n ka tokenw tunun?",
+      "a4": "TigerOG tokenw bɛ kɛ i n'a fɔ ERC20 token wɛrɛ bɛɛ. N'i ye i ka bɔrɔsiɲɛbara sira tunun, u tɛ se ka sɔrɔ. I ka kɔnɔna kilew ni sɔrɔ daɲɛw mara tuma bɛɛ.",
+      "q5": "N bɛ se ka n ka TigerOG tokenw sɛgin BNBTiger ma wa?",
+      "a5": "Ayi. Yɛlɛma ye sira kelen ye. N'i ye BNBTiger yɛlɛma ka kɛ TigerOG ye, i ka token kɔrɔw bɛ jɛni abada (u bɛ ci adirɛsi safunen ma). Nin ye kun ye — TigerOG ye sugya kura ye min sara tɛ, a dilanna ka token kɔrɔ nɔ ta pewu.",
       "q6": "Sɛgɛsɛgɛli jumaw bɛ sɔrɔ?",
-      "a6": "An bɛ sɛgɛsɛgɛli 50 ni kɔ sɔrɔ Ethereum, BNB Chain, Base, Arbitrum, Optimism, Polygon, Avalanche, ani caman wɛrɛ bɛ a la. Wiki lajɛ ka sɛgɛsɛgɛli sɔrɔlenw bɛɛ ye.",
+      "a6": "An bɛ EVM sɛgɛsɛgɛli caman sɔrɔ ni Axelar ye, BNB Chain, Ethereum, Base, ani wɛrɛw bɛ a la. Wiki lajɛ ka sɛgɛsɛgɛli sɔrɔlenw bɛɛ ye.",
       "q7": "Jago bɛ waati jumɛn ta?",
-      "a7": "Jago teliya bɛ bɔ yɔrɔ sɛgɛsɛgɛli laban waati ni Axelar cira tɔn kan. Teli ka kɛ, taali ka bɔ BSC ka taa sɛgɛsɛgɛli wɛrɛ la bɛ ta miniti 1-3.",
+      "a7": "Jago teliya bɛ bɔ bɔyɔrɔ sɛgɛsɛgɛli laban waati ni Axelar cira tɔn kan. Teli ka kɛ, taali sɛgɛsɛgɛliw cɛ bɛ ta miniti 2-5.",
       "q8": "OG tokenw hakɛ jumɛn bɛ yen?",
-      "a8": "OG token kelen-kelen bɛɛ hakɛ bɛ bɔ a ka BNB token kɔrɔ la, ka token jɛninenw, ladan kɔnɔna wari, ani LP maralenw ta. TigerOG: ~3.66 septillion (36.62% kɔrɔ la). LionOG: ~3.83 septillion (38.33% kɔrɔ la). FrogOG: ~8.39 septillion (83.86% kɔrɔ la). Wiki lajɛ ka a ɲɛfɔli bɛɛ ye."
+      "a8": "OG token kelen-kelen bɛɛ hakɛ maralen bɛ bɔ a ka BNB token fɔlɔ la, ka token jɛninenw, ladan kɔnɔna wari, ani LP maralenw ta. TigerOG: ~3.66 septillion (36.62% fɔlɔ la). LionOG: ~3.83 septillion (38.33% fɔlɔ la). FrogOG: ~8.39 septillion (83.86% fɔlɔ la). Wiki lajɛ ka ɲɛfɔli bɛɛ ye."
     }
   },
   "common": {
@@ -349,16 +369,16 @@
     "chainId": "Sɛgɛsɛgɛli ID",
     "bscChain": "BSC Sɛgɛsɛgɛli",
     "insufficientBalance": "Jateden tɛ ban.",
-    "failedToSwitchNetwork": "Sɛgɛsɛgɛli yɛlɛma tiɲɛna. I k'a yɛlɛma ni bolo ye i ka bɔrɔsiɲɛbara kɔnɔ.",
-    "failedToFetchFeeQuote": "Sara kɔfɛ sɔrɔ tiɲɛna.",
-    "unableToDetermineGas": "A tɛ se ka Axelar gazi sara ɲɛfɔ",
+    "failedToSwitchNetwork": "Sɛgɛsɛgɛli yɛlɛma tiɲɛna. A yɛlɛma ni bolo ye i ka bɔrɔsiɲɛbara kɔnɔ.",
+    "failedToFetchFeeQuote": "Sara jateden sɔrɔ tiɲɛna.",
+    "unableToDetermineGas": "Axelar gazi sara tɛ se ka ɲɛfɔ",
     "bridgeTxFailed": "Jago baara tiɲɛna",
-    "estimatedGas": "Axelar Gazi Jatenya",
-    "success": "Ɲɛtaa!",
-    "viewOnExplorer": "A lajɛ Explorer kan",
+    "estimatedGas": "Axelar Gazi Jateden",
+    "success": "A Ɲɛtaa!",
+    "viewOnExplorer": "A Lajɛ Explorer Kan",
     "bridging": "Ka jago...",
     "transactionFailed": "Baara Tiɲɛna",
-    "search": "Ɲinini",
-    "backToApp": "Segin App Ma"
+    "search": "Ɲini",
+    "backToApp": "Sɛgin App Ma"
   }
 }

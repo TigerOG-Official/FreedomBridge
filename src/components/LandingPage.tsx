@@ -277,12 +277,12 @@ export default function LandingPage() {
             className="inline-block mb-4"
           >
             <span className="py-1 px-3 rounded-full bg-[var(--theme-percent-25-bg)] border border-[var(--theme-card-border)] text-[var(--accent-primary)] text-xs font-bold tracking-widest uppercase">
-              Get Started
+              {t('landing.buyTokens.badge')}
             </span>
           </motion.div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 feature-title">{t('landing.buyTokens.title', 'Acquire Assets')}</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 feature-title">{t('landing.buyTokens.title')}</h2>
           <p className="text-lg feature-text max-w-2xl mx-auto font-light">
-            {t('landing.buyTokens.description', 'Don\'t have any tokens yet? Buy the base tokens on PancakeSwap, then convert them to the new multichain versions.')}
+            {t('landing.buyTokens.description')}
           </p>
         </div>
 
@@ -309,12 +309,12 @@ export default function LandingPage() {
               <div className="h-px w-12 bg-[var(--theme-card-border)] my-4" />
               
               <p className="feature-text mb-8 text-sm leading-relaxed">
-                {t('landing.buyTokens.buyOn', 'Buy on PancakeSwap')} <br/>
-                <span className="text-[var(--accent-primary)] font-bold">then</span> {t('landing.buyTokens.convertTo', 'Convert to')} TigerOG
+                {t('landing.buyTokens.buyOn')} <br/>
+                <span className="text-[var(--accent-primary)] font-bold">{t('landing.buyTokens.then')}</span> {t('landing.buyTokens.convertTo')} TigerOG
               </p>
 
               <div className="mt-auto flex items-center gap-2 btn-secondary-glass px-6 py-2 h-auto rounded-full text-sm group/btn">
-                <span>Buy Now</span>
+                <span>{t('landing.buyTokens.buyNow')}</span>
                 <ExternalLink className="w-3 h-3 group-hover/btn:translate-x-0.5 transition-transform" />
               </div>
             </div>
@@ -342,12 +342,12 @@ export default function LandingPage() {
               <div className="h-px w-12 bg-[var(--theme-card-border)] my-4" />
               
               <p className="feature-text mb-8 text-sm leading-relaxed">
-                {t('landing.buyTokens.buyOn', 'Buy on PancakeSwap')} <br/>
-                <span className="text-[var(--accent-secondary)] font-bold">then</span> {t('landing.buyTokens.convertTo', 'Convert to')} LionOG
+                {t('landing.buyTokens.buyOn')} <br/>
+                <span className="text-[var(--accent-secondary)] font-bold">{t('landing.buyTokens.then')}</span> {t('landing.buyTokens.convertTo')} LionOG
               </p>
 
               <div className="mt-auto flex items-center gap-2 btn-secondary-glass px-6 py-2 h-auto rounded-full text-sm group/btn">
-                <span>Buy Now</span>
+                <span>{t('landing.buyTokens.buyNow')}</span>
                 <ExternalLink className="w-3 h-3 group-hover/btn:translate-x-0.5 transition-transform" />
               </div>
             </div>
@@ -375,12 +375,12 @@ export default function LandingPage() {
               <div className="h-px w-12 bg-[var(--theme-card-border)] my-4" />
               
               <p className="feature-text mb-8 text-sm leading-relaxed">
-                {t('landing.buyTokens.buyOn', 'Buy on PancakeSwap')} <br/>
-                <span className="text-[var(--accent-signal)] font-bold">then</span> {t('landing.buyTokens.convertTo', 'Convert to')} FrogOG
+                {t('landing.buyTokens.buyOn')} <br/>
+                <span className="text-[var(--accent-signal)] font-bold">{t('landing.buyTokens.then')}</span> {t('landing.buyTokens.convertTo')} FrogOG
               </p>
 
               <div className="mt-auto flex items-center gap-2 btn-secondary-glass px-6 py-2 h-auto rounded-full text-sm group/btn">
-                <span>Buy Now</span>
+                <span>{t('landing.buyTokens.buyNow')}</span>
                 <ExternalLink className="w-3 h-3 group-hover/btn:translate-x-0.5 transition-transform" />
               </div>
             </div>
