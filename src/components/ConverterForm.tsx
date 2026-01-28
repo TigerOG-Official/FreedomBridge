@@ -10,6 +10,7 @@ import {
   DialogFooter,
 } from "@/components/ui/dialog";
 import { ArrowDown, Loader2, CheckCircle, ExternalLink, AlertTriangle } from "lucide-react";
+import WalletIcon from "./icons/WalletIcon";
 import { useAccount, useChainId, usePublicClient, useWalletClient } from "wagmi";
 import { formatUnits, parseUnits } from "viem";
 import { migrationAbi } from "../abi/migration";
@@ -109,6 +110,7 @@ const ConverterForm = () => {
   const [error, setError] = useState<string | null>(null);
   const [showConfirmModal, setShowConfirmModal] = useState(false);
   const [showFinalConfirmModal, setShowFinalConfirmModal] = useState(false);
+  const [addingToken, setAddingToken] = useState(false);
 
   // Get addresses from selected pair
   const LEGACY_ADDRESS = selectedPair?.legacyAddress;
@@ -279,6 +281,25 @@ const ConverterForm = () => {
     }
   };
 
+  const addTokenToWallet = async () => {
+    if (!walletClient || !NEW_TOKEN_ADDRESS || !selectedPair) return;
+    try {
+      setAddingToken(true);
+      await walletClient.watchAsset({
+        type: "ERC20",
+        options: {
+          address: NEW_TOKEN_ADDRESS,
+          decimals: DECIMALS,
+          symbol: selectedPair.newSymbol,
+        },
+      });
+    } catch {
+      // User likely rejected - no error needed
+    } finally {
+      setAddingToken(false);
+    }
+  };
+
   const legacyFormatted = formatLargeNumber(formatUnits(legacyBalance, DECIMALS));
   const newTokenFormatted = formatLargeNumber(formatUnits(newTokenBalance, DECIMALS));
   const amountFormatted = formatLargeNumber(amount || "0");
@@ -406,8 +427,20 @@ const ConverterForm = () => {
           <div className="asset-input-large">
             {amount.length > 0 ? formatInputWithCommas(amount) : '0'}
           </div>
-          <div className="asset-token-pill cursor-default hover:transform-none hover:shadow-none">
-            <span className="font-bold text-lg">{selectedPair?.newSymbol ?? 'New Token'}</span>
+          <div className="flex items-center gap-2">
+            <div className="asset-token-pill cursor-default hover:transform-none hover:shadow-none">
+              <span className="font-bold text-lg">{selectedPair?.newSymbol ?? 'New Token'}</span>
+            </div>
+            {NEW_TOKEN_ADDRESS && (
+              <Button
+                className="wallet-icon-button"
+                onClick={addTokenToWallet}
+                disabled={addingToken}
+                title={t('convert.addToWalletButton')}
+              >
+                {addingToken ? <Loader2 className="h-4 w-4 animate-spin" /> : <WalletIcon className="h-4 w-4" />}
+              </Button>
+            )}
           </div>
         </div>
 
@@ -469,6 +502,31 @@ const ConverterForm = () => {
                     {t('common.viewOnExplorer')}
                   </a>
                 </div>
+
+                {NEW_TOKEN_ADDRESS && selectedPair && (
+                  <button
+                    type="button"
+                    className="wallet-add-card"
+                    onClick={addTokenToWallet}
+                    disabled={addingToken}
+                  >
+                    <div className="wallet-add-details">
+                      <span className="wallet-add-title">
+                        {t('convert.addToWalletButton')} {selectedPair.newSymbol}
+                      </span>
+                      <span className="wallet-add-subtitle">
+                        on BSC Chain
+                      </span>
+                    </div>
+                    <div className="wallet-add-icon-wrapper">
+                      {addingToken ? (
+                        <Loader2 className="w-4 h-4 animate-spin" />
+                      ) : (
+                        <WalletIcon />
+                      )}
+                    </div>
+                  </button>
+                )}
               </div>
             </div>
           </AlertDescription>
