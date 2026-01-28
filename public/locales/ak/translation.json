@@ -4,6 +4,7 @@
     "titleBridge": "Bridge"
   },
   "nav": {
+    "home": "Fie",
     "settings": "Nhyehyɛe",
     "menu": "Menu",
     "preferences": "Nea Wopɛ",
@@ -45,12 +46,26 @@
     "networkWarning": {
       "title": "Network Foforo",
       "message": "Wobɛtumi asesa tokens wɔ BSC Chain nkoa so. Kɔ BSC so na sesa wo tokens tete."
+    },
+    "confirmModal": {
+      "title": "Gye Nsesae No Tom",
+      "warning": "Worebɛsesa wo tokens. Yɛsrɛ wo, kenkan nea edidi so yi yie ansa na woakɔ so.",
+      "irreversible": "Sɛ woyɛ wei a, wontumi nsesa no bio!",
+      "burnExplanation": "Wɔbɛhyew wo {{legacySymbol}} tokens no koraa na wɔbɛ mint {{newSymbol}} tokens dodow koro no ara akɔ wo wallet mu. Wontumi nsan nsakra eyi.",
+      "positiveNote": "Nea ɛyɛ: {{newSymbol}} nni tax biara — tax a ɛboro 10%+ biara nni transaction biara so bio.",
+      "confirmQuestion": "Sesa {{amount}} {{legacySymbol}} kɔ {{newSymbol}}?",
+      "confirmButton": "Mete Ase, Sesa"
+    },
+    "finalConfirmModal": {
+      "title": "Woadi Woho Ni?",
+      "message": "Eyi ne bere a etwa to a wobɛtumi agyae. Sɛ wogye tom a, wɔbɛsesa {{legacySymbol}} akɔ {{newSymbol}} na wontumi nsesa mma no mmra akyi bio.",
+      "confirmButton": "Aane, Sesa Seesei"
     }
   },
   "bridge": {
-    "fromChain": "Efi",
+    "fromChain": "Efi Network",
     "selectChainPlaceholder": "Yi network",
-    "toChain": "Ɛkɔ",
+    "toChain": "Kɔ Network",
     "selectDestinationPlaceholder": "Yi baabi a ɛrekɔ",
     "noDestination": "Baabi nni hɔ",
     "noBridgeableTokens": "Token biara nni hɔ a yɛde bɛtwa mu",
@@ -87,7 +102,7 @@
     "stats": {
       "messaging": "Axelar Network",
       "networks": "Networks a Ɛyɛ Adwuma",
-      "fees": "Protocol Aka",
+      "fees": "Platform Aka",
       "finality": "Awieɛ Bere"
     },
     "features": {
@@ -150,7 +165,7 @@
         "title": "Deɛn ne Freedom Bridge?",
         "content": "Freedom Bridge yɛ protocol a wɔde boa ma wobɛtumi asesa tokens tete akɔ tokens foforo a toɔ nni mu na wobɛtumi de akɔ blockchain biara so. Ɛyɛ adwuma wɔ Axelar Interchain Token Service (ITS) so.",
         "taxFreeTitle": "Toɔ Nni Mu",
-        "taxFreeDesc": "Tokens tete wɔ 10%+ toɔ. TigerOG wɔ 0% toɔ.",
+        "taxFreeDesc": "Tokens tete wɔ 10%+ toɔ. TigerOG tokens wɔ 0% toɔ.",
         "omnichainTitle": "Interchain",
         "omnichainDesc": "Fa wo sika kɔ blockchain {{count}}+ so ntɛm wɔ Axelar so."
       },
@@ -173,8 +188,7 @@
       },
       "axelar": {
         "title": "Axelar Network",
-        "content": "Yɛde Axelar di dwuma de ka blockchains ahorow bom. Axelar yɛ network a ɛnyɛ mfinimfini a ɛma sika ne nsɛm bɛtumi atwa networks pii so wɔ ahobammɔ mu. Validators a wonni onipa biara ase na ɛhwɛ so.",
-        "point4": "<strong>Koodu a Wɔahwehwɛ Mu:</strong> Wɔde Axelar ne OpenZeppelin a yɛn nyinaa nim na ɛyɛe."
+        "content": "Yɛde Axelar di dwuma de ka blockchains ahorow bom. Axelar yɛ network a ɛnyɛ mfinimfini a ɛma sika ne nsɛm bɛtumi atwa networks pii so wɔ ahobammɔ mu."
       },
       "conversion": {
         "title": "Sɛnea Nsesae No Yɛ Adwuma",
@@ -297,7 +311,12 @@
     "tabs": {
       "overview": "Nsɛm Tiawa",
       "byToken": "Token Biara",
-      "byChain": "Network Biara"
+      "byChain": "Network Biara",
+      "liquidity": "Sika Wɔ Mu"
+    },
+    "liquidity": {
+      "poolAddress": "Pool Address",
+      "tradeOn": "Tɔn Wɔ"
     },
     "overview": {
       "interchainTokens": {
@@ -319,6 +338,18 @@
         "legacyToken": "Token Tete",
         "conversionContract": "Conversion Contract",
         "newToken": "Interchain Token"
+      },
+      "liquidityPools": {
+        "title": "Liquidity Pools",
+        "description": "DEX liquidity pools a wobɛtumi atɔn OG tokens wɔ networks ahorow so."
+      },
+      "liquidityPoolsTable": {
+        "title": "Liquidity Pools",
+        "subtitle": "DEX pools ma OG tokens tɔn",
+        "token": "Token",
+        "chain": "Network",
+        "dex": "DEX",
+        "poolAddress": "Pool Address"
       }
     },
     "filterTokens": "Hwehwɛ tokens...",
@@ -338,6 +369,13 @@
     "title": "Freedom Bridge Mmoa",
     "header": "Nsɛmbisa",
     "subtitle": "Mmuae ma nsɛm a nnipa taa bisa fa TigerOG, sika a ɛtwa mu, ne Axelar ho.",
+    "sections": {
+      "gettingStarted": "Mfiase",
+      "convertingTrading": "Nsesae ne Tɔn",
+      "bridging": "Twa Mu",
+      "technical": "Technical",
+      "securityRisks": "Ahobammɔ ne Risks"
+    },
     "cta": {
       "title": "Wowɔ nsɛm foforo?",
       "description": "Fa wo ho bɔ yɛn community wɔ Telegram so anaa hwɛ Wiki no ma nsɛm pii.",
@@ -360,13 +398,100 @@
       "q7": "Bere bɛn na ɛgye?",
       "a7": "Bere a ɛgye no gyina network a wode refi aseɛ no ne Axelar so. Taa ɛgye miniti 2-5.",
       "q8": "OG tokens sika dodow yɛ sɛn?",
-      "a8": "OG token biara wɔ sika dodow a ɛnsesa a efi BNB token tete mu, a wɔabu nea wɔahyew, nea ɛsi contract mu, ne LP a wɔato mu. TigerOG: ~3.66 septillion (36.62%). LionOG: ~3.83 septillion (38.33%). FrogOG: ~8.39 septillion (83.86%). Hwɛ Wiki no ma nsɛm pii."
+      "a8": "OG token biara wɔ sika dodow a ɛnsesa a efi BNB token tete mu, a wɔabu nea wɔahyew, nea ɛsi contract mu, ne LP a wɔato mu. TigerOG: ~3.66 septillion (36.62%). LionOG: ~3.83 septillion (38.33%). FrogOG: ~8.39 septillion (83.86%). Hwɛ Wiki no ma nsɛm pii.",
+      "q9": "Adɛn nti na wɔnyɛɛ renounce ma OG contract no?",
+      "a9": "Sɛ yɛyɛ renounce ma contract no a, yɛntumi nyɛ nsesae anaa mfa networks foforo nka ho bio. Ɛwom sɛ yɛremfa contract no mma obiara seesei, nanso ɛho hia nsaano pii ansa na yɛatumi ayɛ nsesae biara. Afei, yɛmmaa kwan mmaa team no nnye tokens anaa toɔ biara.",
+      "q10": "Adɛn nti na yɛbɛtumi ayɛ minting ma OG contract no?",
+      "a10": "Cross-chain bridging hia mint/burn — wɔhyew tokens sɛ ɛrefi network bi so, na wɔyɛ mint sɛ ɛredu network foforo so. Eyi ma sika dodow no yɛ pɛ wɔ networks nyinaa so. Multisig Safe wallet na ɛhwɛ minting no so.",
+      "q11": "So TigerOG refi BNB Chain akɔ Axelar?",
+      "a11": "Dabi. Axelar nyɛ blockchain — ɛyɛ bridging protocol a ɛka networks bom. BNB Chain da so yɛ origin chain a wosesa tokens tete wɔ so. Axelar ma kwan ma wo tokens tumi kɔ BNB, Ethereum, Base ne networks foforo so.",
+      "q12": "Me tokens no wɔ he?",
+      "a12": "Hwɛ sɛ woafa network ne token address aka wo wallet ho. Wobɛhu contract addresses nyinaa wɔ Contracts page no so. Tiger team no de Rabby wallet na ɛdi dwuma, ɛboa ma networks pii yɛ mmerɛ.",
+      "q13": "Adɛn nti na bridging a efi Ethereum anaa Base kyɛ saa?",
+      "a13": "Ethereum hia epochs mmienu ansa na agye atom koraa ma ahobammɔ. Esiane sɛ Base yɛ settlement wɔ Ethereum so nti, ɛno nso kyɛ. Eyi yɛ ma ahobammɔ — wo tokens wɔ safe, nya abotare.",
+      "q14": "Sɛ mehyɛ me token tete mu na mansesa nso ɛ?",
+      "a14": "Ɛnyɛ nhyɛ sɛ wosesa. BNBTiger ne TigerOG benya liquidity pools, market cap ne nea ɛkeka ho a ɛyɛ soronko. Nanso BNBTiger wɔ toɔ kɛse, na TigerOG nni toɔ biara. Esiane sɛ yɛmfa toɔ no nyɛ adwuma mma project no nti, CTO team no na ɛyɛ development ma TigerOG. Freedom Bridge ne multi-chain yɛ ma TigerOG nkoa.",
+      "q15": "Toɔ wɔ hɔ ma nsesae? So TigerOG wɔ toɔ?",
+      "a15": "Dabi. Wotua gas fee nkoa na wode asesa na woatɔn. Toɔ biara nni ho, na TigerOG nni toɔ biara.",
+      "q16": "Mɛtumi atɔ na matɔn TigerOG seesei?",
+      "a16": "Ennya nyɛe. Team no nnyee toɔ biara a wɔde bɛyɛ liquidity pools akɛse. Sɛ wopɛ TigerOG seesei a, gye sɛ wotɔ anaa wowɔ nea ɛwɔ hɔ dada no na woasesa. Sɛ wonya TigerOG a, ɛbɛyɛ den sɛ wobɛtɔn kosi sɛ investors bɛba abɛyɛ liquidity.",
+      "q17": "Adɛn nti na TigerOG market cap yɛ kɛse saa?",
+      "a17": "Sɛ liquidity pool yɛ ketewa a, trade ketewa biara tumi sesa market cap no kɛse. Sɛ investors ba bɛyɛ liquidity providers a, ɛbɛyɛ yie.",
+      "q18": "Audit bɛn na wɔayɛ?",
+      "a18": "Freedom Bridge nyɛɛ third-party audit biara. Nanso, converter contract code no gyina SHx converter a Stronghold team (XRP ne Stellar developers dedaw) yɛe no so. Axelar na ɛhwɛ bridging infrastructure no so, na wɔayɛ security audits pii.",
+      "q19": "Sɛn na Freedom Bridge bɔ ne ho ban fi hacks ho?",
+      "a19": "Yɛahyehyɛ nneɛma pii:\n\n• Converter no kura sika a ɛhia nkoa — tokens biara nni hɔ a wɔbɛtumi awia\n• Converter no ntumi nyɛ mint\n• Contract code nyinaa wɔ chain so na obiara tumi hwɛ\n• Token permissions wɔ Safe.global multisig wallet mu\n• Axelar infrastructure a yɛagye atom na ɛhwɛ bridging so",
+      "q20": "So bridging yɛ irreversibe? Sɛ transfer bi fail a?",
+      "a20": "Ɛtɔ da bi a bridge transfers tumi kyɛ esiane gas anaa network mu. Sɛ ɛba saa a, wobɛtumi ahwɛ wo transaction wɔ Axelarscan so na woafa wo nsa aka gas ho ma awie. Axelar wɔ tools a wɔde gye transactions — wo sika rempa.",
+      "q21": "Risks bɛn na ɛwɔ Freedom Bridge a yɛde di dwuma mu?",
+      "a21": "Sɛnea DeFi protocol biara te no, risks wɔ hɔ te sɛ smart contract risk, bridge risk, ne market mu nsesae. Yɛtu wo fo sɛ yɛ woara wo nhwehwɛmu (DYOR) na fa sika a wobɛtumi ahwere di dwuma. Hwɛ yɛn legal disclaimer ma nsɛm pii.",
+      "q22": "Mɛtumi asesa BNB Tiger Inu contract foforo (September 2025) no?",
+      "a22": "Dabi. Freedom Bridge boa BNB Tiger token tete a ɛbaa mfe pii a atwam no — ɛnyɛ contract foforo a wɔyɛɛ no September 2025 no. Wɔyɛɛ Freedom Bridge maa community takeover (CTO) a ɛwɔ Tiger, Lion, ne Frog tokens tete no.",
+      "q23": "Sɛn na mefa liquidity ka ho?",
+      "a23": "Liquidity a wɔde ka ho yɛ DeFi dwumadi a risks wɔ mu. Sɛ wowɔ experience wɔ liquidity a wɔde kɔ DEXs te sɛ PancakeSwap anaa Uniswap so a, ɛyɛ pɛ — fa OG token no ka base asset ho. Video yi bɛtumi aboa wo: https://www.youtube.com/watch?v=oiylIHvwMik&list=PL_ujg_v1hZ5iGtiuhT8NkSMqEOaLAgmUu",
+      "q24": "Team no betumi ayɛ rug pull?",
+      "a24": "Dabi. Ɔkwan biara nni hɔ ma rug pull. Token anaa tax biara nni hɔ a wɔde ama team no, na yɛnnye bridging fees biara — ɛno kɔ Axelar ma relaying cost. Team no yɛ holders te sɛ wo, a yɛyɛ eyi wɔ yɛn ankasa ho ka so. Wallet koro a team no wɔ yɛ marketing wallet a ɛda adi a community donations na ɛhyɛ mu. Multisig Safe wallet no na ɛkontrol contract permissions te sɛ chains a wɔde kɔ no a wɔtumi gyina no emergency mu, nanso ɛntumi nnya anaa nsesa users sika."
     }
+  },
+  "footer": {
+    "wiki": "Wiki",
+    "contracts": "Contracts",
+    "faq": "FAQ",
+    "disclaimer": "Disclaimer",
+    "github": "GitHub"
+  },
+  "disclaimer": {
+    "title": "Legal Disclaimer",
+    "header": "Legal Notice Titiriw",
+    "subtitle": "Yɛsrɛ wo, kenkan disclaimer yi yie ansa na woadi Freedom Bridge dwuma.",
+    "sections": {
+      "noInvestmentAdvice": {
+        "title": "Ennyɛ Investment Advice",
+        "content": "Nsɛm a ɛwɔ Freedom Bridge no nyɛ investment, financial, trading, anaa advice foforo biara. Ɛnsɛ sɛ wofa no saa. Freedom Bridge ntu fo sɛ wotɔ, wotɔn, anaa wokura cryptocurrency biara. Yɛ woara wo nhwehwɛmu na kasa kyerɛ wo financial advisor ansa na woasi gyinae biara."
+      },
+      "risksOfUse": {
+        "title": "Risks a Ɛwɔ Mu",
+        "content": "Cryptocurrency markets ngyina faako. Sɛ wodi Freedom Bridge dwuma a, wogye tom sɛ:\n\n• Smart contracts betumi anya bugs a ɛma sika yera\n• Cross-chain bridges wɔ risks te sɛ oracle failures, validator issues, ne network congestion\n• Token values betumi asesa kɛse na wobɛtumi ahwere wo sika\n• Transactions wɔ blockchain so ntumi nsan akyi\n• Network fees ne gas costs nyɛ yɛn na yɛhwɛ so"
+      },
+      "noWarranties": {
+        "title": "Warranties Nni Hɔ",
+        "content": "Wɔde Freedom Bridge ma \"sɛnea ɛte\" a warranties biara nni ho. Yɛnhyɛ bɔ sɛ service no renhaw, ɛbɛyɛ safe, anaa mfomso biara remma. Yɛnhyɛ bɔ sɛ nsɛm a yɛde ma no yɛ nokware anaa ɛyɛ pɛ."
+      },
+      "limitationOfLiability": {
+        "title": "Asodi",
+        "content": "Sɛnea mmara ma kwan no, Freedom Bridge, developers, contributors, ne affiliates nni asodi wɔ sika a wobɛhwere, data a ebewu, anaa cryptocurrency assets a ɛbeyera wɔ platform no a wode di dwuma no ho."
+      },
+      "thirdPartyServices": {
+        "title": "Third-Party Services",
+        "content": "Freedom Bridge ne third-party services te sɛ Axelar Network di dwuma. Yɛnni asodi wɔ nea wɔyɛ, nsɛm a wɔde ma, anaa data a wɔkura ho. Sɛ wodi third-party services dwuma a, ɛwɔ sɛ wodi wɔn mmara so."
+      },
+      "regulatoryCompliance": {
+        "title": "Mmara",
+        "content": "Cryptocurrency mmara sesa wɔ mmeae ahorow. Wo na ɛwɔ sɛ wohwɛ sɛ wodi mmara a ɛwɔ wo mpɔtam so. Freedom Bridge nka sɛ services no yɛ legal wɔ baabiara."
+      },
+      "dyor": {
+        "title": "Yɛ Woara Wo Nhwehwɛmu",
+        "content": "Yɛ woara wo nhwehwɛmu (DYOR) bere biara a wode DeFi protocol redi dwuma. Hwɛ contract addresses, te token biara ase, na mfa sika a wontumi nhwere nni dwuma."
+      }
+    },
+    "acknowledgment": "Sɛ wodi Freedom Bridge dwuma a, wogye tom sɛ woakenkan, woate ase, na woapene disclaimer yi so.",
+    "lastUpdated": "Nsesae a etwa to: January 2026"
+  },
+  "disclaimerModal": {
+    "title": "Disclaimer Titiriw",
+    "subtitle": "Yɛsrɛ wo, kenkan na gye tom ansa na woakɔ so.",
+    "noAdvice": "Freedom Bridge mma investment, financial, anaa trading advice. Cryptocurrency investments yɛ risk.",
+    "risks": "Sɛ wodi platform yi dwuma a, wogye tom sɛ smart contracts betumi anya mfomso, cross-chain bridges wɔ risks, na transactions ntumi nsan akyi.",
+    "dyor": "Yɛ woara wo nhwehwɛmu (DYOR) na fa sika a wobɛtumi ahwere di dwuma.",
+    "fullDisclaimer": "Hwɛ nea ɛka ho nyinaa wɔ",
+    "fullDisclaimerLink": "Legal Disclaimer",
+    "accept": "Mete Ase na Megye Tom"
   },
   "common": {
     "from": "Fi",
     "to": "Kɔ",
     "max": "NYINAA",
+    "cancel": "Gyae",
     "chainId": "Network ID",
     "bscChain": "BSC Network",
     "insufficientBalance": "Wo sika nso.",

@@ -4,6 +4,7 @@
     "titleBridge": "Silta"
   },
   "nav": {
+    "home": "Etusivu",
     "settings": "Asetukset",
     "menu": "Valikko",
     "preferences": "Asetukset",
@@ -45,6 +46,20 @@
     "networkWarning": {
       "title": "Väärä verkko",
       "message": "Tokenien muunnos on saatavilla vain BSC-ketjussa. Vaihda BSC:hen muuntaaksesi vanhat tokenisi."
+    },
+    "confirmModal": {
+      "title": "Vahvista muunnos",
+      "warning": "Olet muuntamassa tokeneitasi. Lue seuraava huolellisesti ennen jatkamista.",
+      "irreversible": "Tämä toiminto on peruuttamaton!",
+      "burnExplanation": "{{legacySymbol}}-tokenisi poltetaan pysyvästi ja vastaava määrä {{newSymbol}}-tokeneita lyödään lompakkoosi. Tätä ei voi peruuttaa.",
+      "positiveNote": "Hyvä puoli: {{newSymbol}} on täysin veroton — ei enää yli 10 % veroja jokaisesta transaktiosta.",
+      "confirmQuestion": "Muunna {{amount}} {{legacySymbol}} → {{newSymbol}}?",
+      "confirmButton": "Ymmärrän, Muunna"
+    },
+    "finalConfirmModal": {
+      "title": "Oletko todella varma?",
+      "message": "Tämä on viimeinen mahdollisuutesi peruuttaa. Vahvistuksen jälkeen {{legacySymbol}} muunnetaan {{newSymbol}}:ksi eikä sitä voi muuntaa takaisin.",
+      "confirmButton": "Kyllä, Muunna nyt"
     }
   },
   "bridge": {
@@ -74,42 +89,42 @@
   "landing": {
     "banner": {
       "title": "Uusi täällä?",
-      "message": "Lue lisää Freedom Bridgestä ja TigerOG-tokenien siltaamisesta ketjujen välillä.",
+      "message": "Opi Freedom Bridgestä ja kuinka siltata TigerOG-tokeneita ketjujen välillä.",
       "note": "Huom: Tokenien muunnos on pysyvä eikä sitä voi peruuttaa."
     },
     "hero": {
       "badge": "Axelarin voimalla",
-      "title": "Vapauta <1/> <2>varasi</2>",
-      "subtitle": "Siltaa TigerOG-tokeneita saumattomasti ketjujen välillä Axelarin Interchain Token Servicellä. Turvallinen, nopea ja veroton.",
+      "title": "Vapauta <1/> <2>Varasi</2>",
+      "subtitle": "Siltaa TigerOG-tokeneita saumattomasti ketjujen välillä Axelarin Interchain Token Servicen avulla. Turvallinen, nopea ja veroton.",
       "launchApp": "Käynnistä sovellus",
       "documentation": "Dokumentaatio"
     },
     "stats": {
       "messaging": "Axelar-verkko",
-      "networks": "Verkot käytössä",
-      "fees": "Protokollamaksut",
+      "networks": "Aktiiviset verkot",
+      "fees": "Alustan maksu",
       "finality": "Lopullisuus"
     },
     "features": {
       "title": "Interchain Token Service",
-      "description": "Freedom Bridge hyödyntää Axelar ITS:ää tarjotakseen saumattoman, turvallisen ja verottoman siltauskokemuksen yli {{count}}+ lohkoketjun.",
+      "description": "Freedom Bridge hyödyntää Axelar ITS:ää tarjotakseen saumattoman, turvallisen ja verottoman siltauskokemuksen yli {{count}} lohkoketjun välillä.",
       "stopDecay": {
-        "title": "Pysäytä arvonmenetys",
+        "title": "Pysäytä rappeutuminen",
         "description": "Vanhat tokenit polttavat 10–11 % arvostasi jokaisessa ostossa ja myynnissä. Muuntaminen TigerOG:ksi pysäyttää tämän välittömästi ja säilyttää 100 % arvostasi.",
-        "graphLabel1": "100 % säilytetty (TigerOG)",
-        "graphLabel2": "-40 % arvo (vanha 10 % vero)"
+        "graphLabel1": "100 % Säilytetty (TigerOG)",
+        "graphLabel2": "-40 % Arvo (Vanha 10 % vero)"
       },
       "conversion": {
-        "title": "1:1-muunnos",
-        "description": "Kokonaistarjonta ei koskaan muutu. Tokenit säilytetään turvallisessa muunnossopimuksessa, ja käytetään tarkka 1:1-vastine. Ei inflaatiota, ei laimennusta."
+        "title": "1:1 Muunnos",
+        "description": "Kokonaistarjonta ei koskaan muutu. Tokenit säilytetään turvallisessa muunnossopimuksessa ja tarkka 1:1-vastaavuus käytetään. Ei inflaatiota, ei laimennusta."
       },
       "multichain": {
-        "title": "Moniketjuinen",
-        "description": "Käyttöönota kerran, käytä kaikkialla. Varastasi tulee natiivi interchain-token ketjuissa kuten Ethereum, BNB Chain, Base ja muut."
+        "title": "Moniketju",
+        "description": "Ota käyttöön kerran, käytä kaikkialla. Varasi muuttuu natiiviksi interchain-tokeniksi ketjuissa mukaan lukien Ethereum, BNB Chain, Base ja muut."
       },
       "security": {
-        "title": "Axelar-turvallisuus",
-        "description": "Axelarin hajautettu validaattoriverkosto takana. ITS varmistaa, että tokenisi siirretään turvallisesti ja johdonmukaisesti kaikkien yhdistettyjen verkkojen välillä.",
+        "title": "Axelarin turvallisuus",
+        "description": "Axelarin hajautetun validaattoriverkoston voimalla. ITS varmistaa, että tokenisi siirretään turvallisesti ja johdonmukaisesti kaikissa yhdistetyissä verkoissa.",
         "button": "Aloita siltaus"
       }
     },
@@ -119,10 +134,10 @@
       "button": "Käynnistä sovellus nyt"
     },
     "buyTokens": {
-      "badge": "Aloita tästä",
-      "title": "Hanki tokeneita",
-      "description": "Eikö sinulla ole vielä tokeneita? Osta perustokenit PancakeSwapissa ja muunna ne sitten uusiksi moniketjuversioiksi.",
-      "buyOn": "Osta PancakeSwapissa",
+      "badge": "Aloita",
+      "title": "Hanki varoja",
+      "description": "Ei vielä tokeneita? Osta alkuperäiset tokenit PancakeSwapista ja muunna ne sitten uusiksi moniketjuversioiksi.",
+      "buyOn": "Osta PancakeSwapista",
       "then": "sitten",
       "convertTo": "Muunna muotoon",
       "buyNow": "Osta nyt"
@@ -136,7 +151,7 @@
       "subtitle": "Opi muuntamaan vanhoja tokeneita ja siltaamaan ketjujen välillä."
     },
     "nav": {
-      "gettingStarted": "Aloittaminen",
+      "gettingStarted": "Aloitus",
       "coreConcepts": "Ydinkäsitteet",
       "developers": "Kehittäjät",
       "tigerogSupply": "TigerOG-tarjonta",
@@ -148,36 +163,36 @@
     "articles": {
       "whatIs": {
         "title": "Mikä on Freedom Bridge?",
-        "content": "Freedom Bridge on hajautettu siltaprotokolla, joka on rakennettu Axelarin Interchain Token Servicen (ITS) päälle. Se mahdollistaa vanhojen tokenien muuntamisen verottomiksi, interchain-yhteensopiviksi varoiksi, jotka voivat liikkua vapaasti tuettujen lohkoketjujen välillä.",
+        "content": "Freedom Bridge on hajautettu siltausprotokolla, joka on rakennettu Axelarin Interchain Token Servicen (ITS) päälle. Se mahdollistaa vanhojen tokenien muuntamisen verottomiksi, interchain-yhteensopiviksi varoiksi, jotka voivat liikkua vapaasti tuettujen lohkoketjujen välillä.",
         "taxFreeTitle": "Verottomat siirrot",
-        "taxFreeDesc": "Vanhoissa tokeneissa on usein yli 10 % verot. TigerOG-tokeneissa on 0 % vero.",
+        "taxFreeDesc": "Vanhoissa tokeneissa on usein yli 10 % veroja. TigerOG-tokeneissa on 0 % veroa.",
         "omnichainTitle": "Interchain",
-        "omnichainDesc": "Siirrä varoja välittömästi {{count}}+ lohkoketjun välillä Axelarin kautta."
+        "omnichainDesc": "Siirrä varoja välittömästi yli {{count}} lohkoketjun välillä Axelarin kautta."
       },
       "howToConvert": {
-        "title": "Tokenien muuntaminen",
-        "step1": "Yhdistä lompakkosi lähtöketjuun (esim. BNB Chain).",
+        "title": "Kuinka muuntaa tokeneita",
+        "step1": "Yhdistä lompakkosi lähdeketjuun (esim. BNB Chain).",
         "step2": "Siirry <strong>Muunna</strong>-välilehdelle.",
         "step3": "Valitse vanha token, jonka haluat muuntaa.",
-        "step4": "Hyväksy muunnossopimukselle oikeus käyttää tokeneitasi.",
-        "step5": "Napsauta <strong>Muunna</strong> tallettaaksesi vanhat tokenisi ja saadaksesi vastaavan määrän TigerOG-tokeneita.",
-        "note": "<strong>Huom:</strong> Muunnos sisältää vanhan tokenin transaktiomaksun (päivityksen aikana), jos tokenissasi on siirtomaksu. Muunnoksen jälkeen kaikki TigerOG-siirrot ja -siltaukset ovat kuitenkin verottomia."
+        "step4": "Hyväksy muunnossopimus käyttämään tokeneitasi.",
+        "step5": "Napsauta <strong>Muunna</strong> tallettaaksesi vanhat tokenisi ja vastaanottaaksesi vastaavan määrän \"TigerOG\"-tokeneita.",
+        "note": "<strong>Huom:</strong> Jos tokenistasi peritään vero siirroissa, muunnos sisältää vanhan tokenin transaktiomaksun (päivityksen aikana). Kuitenkin TigerOG:ksi muuntamisen jälkeen kaikki myöhemmät siirrot ja siltaukset ovat verottomia."
       },
       "supportedNetworks": {
         "title": "Tuetut verkot",
-        "content": "Freedom Bridge tukee kasvavaa {{count}}+ lohkoketjun ekosysteemiä, mahdollistaen saumattoman yhteentoimivuuden EVM-ympäristössä Axelarin kautta."
+        "content": "Freedom Bridge tukee kasvavaa ekosysteemiä yli {{count}} lohkoketjusta, mahdollistaen saumattoman yhteentoimivuuden EVM-maisemassa Axelarin kautta."
       },
       "xerc20": {
         "title": "Interchain-tokenit",
-        "content": "Axelar Interchain Token Service (ITS) mahdollistaa tokenien käyttöönoton useissa ketjuissa yhtenäisellä osoitteella ja hallitulla tarjonnalla. Freedom Bridge käyttää ITS:ää varmistaakseen, että TigerOG pysyy kanonisena varana missä tahansa se onkaan sillattu."
+        "content": "Axelarin Interchain Token Service (ITS) mahdollistaa tokenien käyttöönoton useissa ketjuissa yhtenäisellä osoitteella ja yhtenäisellä tarjontahallinnalla. Freedom Bridge hyödyntää ITS:ää varmistaakseen, että TigerOG pysyy kanonisena varana missä tahansa se sillataan."
       },
       "axelar": {
         "title": "Axelar-verkko",
-        "content": "Käytämme Axelaria yhteentoimivuuskerroksenamme. Axelar on hajautettu verkko, joka yhdistää eri lohkoketjuja mahdollistaen turvallisen ketjujen välisen viestinnän ja varojen siirron. Axelarin turvallisuusmalli perustuu avoimeen validaattorijoukkoon, tarjoten korkean tason turvallisuuden interchain-tokeneille."
+        "content": "Käytämme Axelaria yhteentoimivuuskerroksemme. Axelar on hajautettu verkko, joka yhdistää eri lohkoketjut mahdollistaen turvallisen ketjujen välisen viestinnän ja varojen siirron. Axelarin turvallisuusmalli perustuu lupavapaaseen validaattorijoukkoon, joka tarjoaa korkealuokkaisen turvallisuuden interchain-tokeneille."
       },
       "conversion": {
         "title": "Muunnoslogiikka",
-        "content": "Muunnossopimus on käytössä BSC:ssä. Kun muunnat, vanhat tokenisi lähetetään kuolleeseen osoitteeseen (poltetaan pysyvästi) ja saat TigerOG:ta suhteessa 1:1. Tämä on yksisuuntainen prosessi — vanhat tokenit tuhotaan eikä niitä voi koskaan palauttaa."
+        "content": "Muunnossopimus on otettu käyttöön BSC:ssä. Muuntaessasi vanhat tokenisi lähetetään kuolleeseen osoitteeseen (poltetaan pysyvästi) ja saat TigerOG:ta suhteessa 1:1. Tämä on yksisuuntainen prosessi — vanhat tokenit tuhoutuvat eikä niitä voi koskaan palauttaa."
       },
       "contracts": {
         "title": "Älysopimusosoitteet",
@@ -189,38 +204,38 @@
         "title": "Turvallisuusmalli",
         "content": "Turvallisuus on rakennettu Freedom Bridgen jokaiseen kerrokseen:",
         "point1": "<strong>Muunnosarkkitehtuuri:</strong> Vanhat tokenit poltetaan pysyvästi varmennettujen, muuttumattomien älysopimusten kautta.",
-        "point2": "<strong>Axelar-validaattorit:</strong> Ketjujen väliset viestit varmennetaan Axelarin hajautetulla verkolla.",
-        "point3": "<strong>Johdonmukainen tarjonta:</strong> ITS hallinnoi luontia ja polttoa ylläpitääkseen vakiota kokonaistarjontaa kaikissa ketjuissa.",
-        "point4": "<strong>Auditoitu logiikka:</strong> Rakennettu alan standardien Axelarin ja OpenZeppelinin kirjastoille."
+        "point2": "<strong>Axelar-validaattorit:</strong> Ketjujen väliset viestit varmennetaan Axelarin hajautetun verkoston toimesta.",
+        "point3": "<strong>Yhtenäinen tarjonta:</strong> ITS hallitsee lyöntiä ja polttamista ylläpitäen vakion kokonaistarjonnan kaikissa ketjuissa.",
+        "point4": "<strong>Auditoitu logiikka:</strong> Rakennettu teollisuusstandardien Axelar- ja OpenZeppelin-kirjastojen päälle."
       },
       "supplyCommon": {
-        "howWeCalculated": "Miten laskimme tämän",
+        "howWeCalculated": "Kuinka laskimme tämän",
         "verification": "Varmennus",
         "verificationDesc": "Kaikki tarjontaluvut voidaan varmentaa itsenäisesti ketjussa:",
         "table": {
           "category": "Kategoria",
           "amount": "Määrä",
-          "percentOfTotal": "% kokonaismäärästä",
+          "percentOfTotal": "% kokonais.",
           "originalSupply": "Alkuperäinen kokonaistarjonta",
           "deadAddress": "Kuollut osoite (poltettu)",
-          "contractBalance": "Sopimuksen saldo (jumissa)",
+          "contractBalance": "Sopimussaldo (jumissa)",
           "circulatingSupply": "Kiertävä tarjonta"
         },
         "deadAddressTitle": "1. Kuollut osoite",
-        "contractBalanceTitle": "2. Sopimuksen saldo",
-        "lpLockedTitle": "3. LP-lukitut tokenit"
+        "contractBalanceTitle": "2. Sopimussaldo",
+        "lpLockedTitle": "3. LP:n lukitut tokenit"
       },
       "tigerogSupply": {
         "title": "TigerOG-tarjonnan erittely",
-        "intro": "TigerOG:lla on kiinteä kiertävä tarjonta, joka on johdettu alkuperäisestä BNBTiger-tokenista. Tarjontalaskelma ottaa huomioon kaikki poltetut ja pysyvästi lukitut tokenit.",
+        "intro": "TigerOG:lla on kiinteä kiertävä tarjonta, joka on johdettu alkuperäisestä BNBTiger-tokenista. Tarjontalaskelma huomioi kaikki poltetut ja pysyvästi lukitut tokenit.",
         "lpLocked": "LP lukittu (86,18 % LP:stä poltettu)",
-        "deadAddressDesc": "Osoitteeseen <code>0x000...dEaD</code> lähetetyt tokenit on poltettu pysyvästi eikä niitä voi koskaan palauttaa. Tämä sisältää alkuperäisen BNBTiger-veromekanismin kautta poltetut tokenit.",
-        "contractBalanceDesc": "Pieni määrä tokeneita on jumissa itse BNBTiger-sopimuksessa. Nämä tokenit ovat saavuttamattomissa ja tehokkaasti poistettu kierrosta.",
-        "lpLockedDesc": "PancakeSwap-likviditeettipooli sisältää BNBTiger-tokeneita parina BNB:n kanssa. Kun LP-tokeneita poltetaan (lähetetään kuolleeseen osoitteeseen), poolin tokenit lukittuvat pysyvästi.",
+        "deadAddressDesc": "Osoitteeseen <code>0x000...dEaD</code> lähetetyt tokenit on pysyvästi poltettu eikä niitä voi koskaan palauttaa. Tämä sisältää alkuperäisen BNBTigerin veromekanismin kautta poltetut tokenit.",
+        "contractBalanceDesc": "Pieni määrä tokeneita on jumissa itse BNBTiger-sopimuksessa. Nämä tokenit ovat saavuttamattomissa ja käytännössä poistettu kierrosta.",
+        "lpLockedDesc": "PancakeSwapin likviditeettipooli sisältää BNBTiger-tokeneita paritettuna BNB:n kanssa. Kun LP-tokenit poltetaan (lähetetään kuolleeseen osoitteeseen), poolin alla olevat tokenit lukittuvat pysyvästi.",
         "lpBurnedPercent": "LP-tokeneita poltettu: 86,18 % kaikista LP-tokeneista",
         "lpLockedPercent": "Siksi 86,18 % LP:n tokeneista on pysyvästi lukittu",
-        "note": "<strong>Huom:</strong> TigerOG ylläpitää 1:1-suhdetta BNBTigeriin muunnoksen aikana. TigerOG:n kiertävä tarjonta vastaa BNBTigerin todellista kiertävää tarjontaa kaikkien poltettujen ja lukittujen tokenien huomioinnin jälkeen.",
-        "launchData": "<strong>Julkaisutiedot:</strong> Nämä luvut laskettiin julkaisuhetkellä. Vanha BNBTiger-token jatkaa tokenien polttamista jokaisessa osto-/myyntitapahtumassa, joten todellinen kiertävä tarjonta voi olla hieman näytettyä pienempi.",
+        "note": "<strong>Huom:</strong> TigerOG ylläpitää 1:1-suhdetta BNBTigeriin muunnoksen aikana. TigerOG:n kiertävä tarjonta vastaa BNBTigerin todellista kiertävää tarjontaa kaikkien poltettujen ja lukittujen tokenien huomioimisen jälkeen.",
+        "launchData": "<strong>Julkaisutiedot:</strong> Nämä luvut laskettiin julkaisun yhteydessä. Vanha BNBTiger-token polttaa edelleen tokeneita jokaisessa osto-/myyntitransaktiossa, joten todellinen kiertävä tarjonta voi olla hieman näytettyä pienempi.",
         "legacyContract": "BNBTiger Token -sopimus",
         "ogContract": "TigerOG Token -sopimus",
         "amounts": {
@@ -237,15 +252,15 @@
       },
       "lionogSupply": {
         "title": "LionOG-tarjonnan erittely",
-        "intro": "LionOG:lla on kiinteä kiertävä tarjonta, joka on johdettu alkuperäisestä BNBLion-tokenista. Tarjontalaskelma ottaa huomioon kaikki poltetut ja pysyvästi lukitut tokenit.",
+        "intro": "LionOG:lla on kiinteä kiertävä tarjonta, joka on johdettu alkuperäisestä BNBLion-tokenista. Tarjontalaskelma huomioi kaikki poltetut ja pysyvästi lukitut tokenit.",
         "lpLocked": "LP lukittu (99,98 % LP:stä poltettu)",
-        "deadAddressDesc": "Osoitteeseen <code>0x000...dEaD</code> lähetetyt tokenit on poltettu pysyvästi eikä niitä voi koskaan palauttaa. Tämä sisältää alkuperäisen BNBLion-veromekanismin kautta poltetut tokenit.",
-        "contractBalanceDesc": "Pieni määrä tokeneita on jumissa itse BNBLion-sopimuksessa. Nämä tokenit ovat saavuttamattomissa ja tehokkaasti poistettu kierrosta.",
-        "lpLockedDesc": "PancakeSwap-likviditeettipooli sisältää BNBLion-tokeneita parina BNB:n kanssa. Kun LP-tokeneita poltetaan (lähetetään kuolleeseen osoitteeseen), poolin tokenit lukittuvat pysyvästi.",
+        "deadAddressDesc": "Osoitteeseen <code>0x000...dEaD</code> lähetetyt tokenit on pysyvästi poltettu eikä niitä voi koskaan palauttaa. Tämä sisältää alkuperäisen BNBLionin veromekanismin kautta poltetut tokenit.",
+        "contractBalanceDesc": "Pieni määrä tokeneita on jumissa itse BNBLion-sopimuksessa. Nämä tokenit ovat saavuttamattomissa ja käytännössä poistettu kierrosta.",
+        "lpLockedDesc": "PancakeSwapin likviditeettipooli sisältää BNBLion-tokeneita paritettuna BNB:n kanssa. Kun LP-tokenit poltetaan (lähetetään kuolleeseen osoitteeseen), poolin alla olevat tokenit lukittuvat pysyvästi.",
         "lpBurnedPercent": "LP-tokeneita poltettu: 99,98 % kaikista LP-tokeneista",
         "lpLockedPercent": "Siksi 99,98 % LP:n tokeneista on pysyvästi lukittu",
-        "note": "<strong>Huom:</strong> LionOG ylläpitää 1:1-suhdetta BNBLioniin muunnoksen aikana. LionOG:n kiertävä tarjonta vastaa BNBLionin todellista kiertävää tarjontaa kaikkien poltettujen ja lukittujen tokenien huomioinnin jälkeen.",
-        "launchData": "<strong>Julkaisutiedot:</strong> Nämä luvut laskettiin julkaisuhetkellä. Vanha BNBLion-token jatkaa tokenien polttamista jokaisessa osto-/myyntitapahtumassa, joten todellinen kiertävä tarjonta voi olla hieman näytettyä pienempi.",
+        "note": "<strong>Huom:</strong> LionOG ylläpitää 1:1-suhdetta BNBLioniin muunnoksen aikana. LionOG:n kiertävä tarjonta vastaa BNBLionin todellista kiertävää tarjontaa kaikkien poltettujen ja lukittujen tokenien huomioimisen jälkeen.",
+        "launchData": "<strong>Julkaisutiedot:</strong> Nämä luvut laskettiin julkaisun yhteydessä. Vanha BNBLion-token polttaa edelleen tokeneita jokaisessa osto-/myyntitransaktiossa, joten todellinen kiertävä tarjonta voi olla hieman näytettyä pienempi.",
         "legacyContract": "BNBLion Token -sopimus",
         "ogContract": "LionOG Token -sopimus",
         "amounts": {
@@ -262,15 +277,15 @@
       },
       "frogogSupply": {
         "title": "FrogOG-tarjonnan erittely",
-        "intro": "FrogOG:lla on kiinteä kiertävä tarjonta, joka on johdettu alkuperäisestä BNBFrog-tokenista. Tarjontalaskelma ottaa huomioon kaikki poltetut ja pysyvästi lukitut tokenit.",
+        "intro": "FrogOG:lla on kiinteä kiertävä tarjonta, joka on johdettu alkuperäisestä BNBFrog-tokenista. Tarjontalaskelma huomioi kaikki poltetut ja pysyvästi lukitut tokenit.",
         "lpLocked": "LP lukittu (99,31 % LP:stä poltettu)",
-        "deadAddressDesc": "Osoitteeseen <code>0x000...dEaD</code> lähetetyt tokenit on poltettu pysyvästi eikä niitä voi koskaan palauttaa. Tämä sisältää alkuperäisen BNBFrog-veromekanismin kautta poltetut tokenit.",
-        "contractBalanceDesc": "Pieni määrä tokeneita on jumissa itse BNBFrog-sopimuksessa. Nämä tokenit ovat saavuttamattomissa ja tehokkaasti poistettu kierrosta.",
-        "lpLockedDesc": "PancakeSwap-likviditeettipooli sisältää BNBFrog-tokeneita parina BNB:n kanssa. Kun LP-tokeneita poltetaan (lähetetään kuolleeseen osoitteeseen), poolin tokenit lukittuvat pysyvästi.",
+        "deadAddressDesc": "Osoitteeseen <code>0x000...dEaD</code> lähetetyt tokenit on pysyvästi poltettu eikä niitä voi koskaan palauttaa. Tämä sisältää alkuperäisen BNBFrogin veromekanismin kautta poltetut tokenit.",
+        "contractBalanceDesc": "Pieni määrä tokeneita on jumissa itse BNBFrog-sopimuksessa. Nämä tokenit ovat saavuttamattomissa ja käytännössä poistettu kierrosta.",
+        "lpLockedDesc": "PancakeSwapin likviditeettipooli sisältää BNBFrog-tokeneita paritettuna BNB:n kanssa. Kun LP-tokenit poltetaan (lähetetään kuolleeseen osoitteeseen), poolin alla olevat tokenit lukittuvat pysyvästi.",
         "lpBurnedPercent": "LP-tokeneita poltettu: 99,31 % kaikista LP-tokeneista",
         "lpLockedPercent": "Siksi 99,31 % LP:n tokeneista on pysyvästi lukittu",
-        "note": "<strong>Huom:</strong> FrogOG ylläpitää 1:1-suhdetta BNBFrogiin muunnoksen aikana. FrogOG:n kiertävä tarjonta vastaa BNBFrogin todellista kiertävää tarjontaa kaikkien poltettujen ja lukittujen tokenien huomioinnin jälkeen.",
-        "launchData": "<strong>Julkaisutiedot:</strong> Nämä luvut laskettiin julkaisuhetkellä. Vanha BNBFrog-token jatkaa tokenien polttamista jokaisessa osto-/myyntitapahtumassa, joten todellinen kiertävä tarjonta voi olla hieman näytettyä pienempi.",
+        "note": "<strong>Huom:</strong> FrogOG ylläpitää 1:1-suhdetta BNBFrogiin muunnoksen aikana. FrogOG:n kiertävä tarjonta vastaa BNBFrogin todellista kiertävää tarjontaa kaikkien poltettujen ja lukittujen tokenien huomioimisen jälkeen.",
+        "launchData": "<strong>Julkaisutiedot:</strong> Nämä luvut laskettiin julkaisun yhteydessä. Vanha BNBFrog-token polttaa edelleen tokeneita jokaisessa osto-/myyntitransaktiossa, joten todellinen kiertävä tarjonta voi olla hieman näytettyä pienempi.",
         "legacyContract": "BNBFrog Token -sopimus",
         "ogContract": "FrogOG Token -sopimus",
         "amounts": {
@@ -295,29 +310,46 @@
     },
     "tabs": {
       "overview": "Yleiskatsaus",
-      "byToken": "Tokeneittain",
-      "byChain": "Ketjuittain"
+      "byToken": "Tokenin mukaan",
+      "byChain": "Ketjun mukaan",
+      "liquidity": "Likviditeetti"
+    },
+    "liquidity": {
+      "poolAddress": "Poolin osoite",
+      "tradeOn": "Vaihda kohteessa"
     },
     "overview": {
       "interchainTokens": {
         "title": "Interchain-tokenit",
-        "description": "Axelar Interchain Token Servicen (ITS) kautta käyttöönotetut interchain-tokenit. Näillä tokeneilla on yhtenäiset osoitteet kaikissa tuetuissa verkoissa."
+        "description": "Axelarin Interchain Token Servicen (ITS) kautta käyttöönotetut interchain-tokenit. Nämä tokenit ylläpitävät yhtenäisiä osoitteita kaikissa tuetuissa verkoissa."
       },
       "axelarNetwork": {
         "title": "Axelar-verkko",
-        "description": "Taustalla toimiva viestintäprotokolla, joka turvaa ketjujen väliset siirrot ja varmistaa datan eheyden eri lohkoketjujen välillä."
+        "description": "Taustalla oleva viestintäprotokolla, joka turvaa ketjujen väliset siirrot ja varmistaa tietojen eheyden eri lohkoketjujen välillä."
       },
       "conversionContracts": {
         "title": "Muunnossopimukset",
-        "description": "Vastuussa vanhojen tokenien muuntamisesta interchain-varoiksi. Nämä sopimukset käsittelevät talletus- ja luontilogiikan alkuperäisessä ketjussa."
+        "description": "Vastuussa vanhojen tokenien muuntamisesta interchain-varoiksi. Nämä sopimukset hallitsevat talletus- ja lyöntilogiikkaa lähdeketjussa."
       },
       "conversionContractsTable": {
-        "title": "Muunnossopimuksen osoitteet",
-        "subtitle": "Nämä BSC:n sopimukset käsittelevät muunnoksen vanhoista tokeneista interchain-tokeneiksi.",
+        "title": "Muunnossopimusten osoitteet",
+        "subtitle": "Nämä BSC:n sopimukset hallitsevat muunnosta vanhoista tokeneista interchain-tokeneiksi.",
         "token": "Token",
         "legacyToken": "Vanha token",
         "conversionContract": "Muunnossopimus",
         "newToken": "Interchain-token"
+      },
+      "liquidityPools": {
+        "title": "Likviditeettipoolit",
+        "description": "DEX-likviditeettipoolit, joissa voit vaihtaa OG-tokeneita eri ketjuissa."
+      },
+      "liquidityPoolsTable": {
+        "title": "Likviditeettipoolit",
+        "subtitle": "DEX-poolit OG-tokenien vaihtamiseen",
+        "token": "Token",
+        "chain": "Ketju",
+        "dex": "DEX",
+        "poolAddress": "Poolin osoite"
       }
     },
     "filterTokens": "Suodata tokeneita...",
@@ -337,6 +369,13 @@
     "title": "Freedom Bridge -tuki",
     "header": "Usein kysytyt kysymykset",
     "subtitle": "Vastauksia yleisiin kysymyksiin TigerOG:sta, siltaamisesta ja Axelarista.",
+    "sections": {
+      "gettingStarted": "Aloitus",
+      "convertingTrading": "Muuntaminen ja kaupankäynti",
+      "bridging": "Siltaaminen",
+      "technical": "Tekninen",
+      "securityRisks": "Turvallisuus ja riskit"
+    },
     "cta": {
       "title": "Onko sinulla vielä kysyttävää?",
       "description": "Liity yhteisöömme Telegramissa tai tutustu yksityiskohtaiseen Wikiin teknisiä oppaita varten.",
@@ -351,21 +390,108 @@
       "q3": "Onko maksuja?",
       "a3": "Freedom Bridge ei itse veloita muunnosmaksua. Maksat vain standardit lohkoketjun kaasumaksut. Ketjujen välisestä siltaamisesta peritään ketjujen välinen kaasumaksu, joka maksetaan Axelarille siirtokustannusten kattamiseksi.",
       "q4": "Mitä tapahtuu, jos menetän tokenini?",
-      "a4": "TigerOG-tokenit toimivat kuten mikä tahansa muu ERC20-token. Jos menetät pääsyn lompakkoosi, niitä ei voi palauttaa. Säilytä aina yksityiset avaimesi ja palautuslausekkeesi turvallisesti.",
+      "a4": "TigerOG-tokenit toimivat kuten mikä tahansa muu ERC20/BEP20-token. Jos menetät pääsyn lompakkoosi, niitä ei voi palauttaa. Säilytä aina yksityiset avaimesi ja palautuslausekkeesi turvallisesti.",
       "q5": "Voinko muuntaa TigerOG-tokenini takaisin BNBTigeriksi?",
-      "a5": "Et. Muunnos on yksisuuntainen. Kun muunnat BNBTigerin TigerOG:ksi, BNBTiger-tokenisi poltetaan pysyvästi (lähetetään kuolleeseen osoitteeseen). Tämä on tarkoituksellista — TigerOG on päivitetty, veroton versio, joka on tarkoitettu korvaamaan vanha token kokonaan.",
+      "a5": "Et. Muunnos on yksisuuntainen. Kun muunnat BNBTigerin TigerOG:ksi, vanhat tokenisi lukitaan pysyvästi muunnossopimukseen. Tämä on tarkoituksellista — TigerOG on päivitetty, veroton versio, joka on tarkoitettu korvaamaan vanha token kokonaan.",
       "q6": "Mitä verkkoja tuetaan?",
       "a6": "Tuemme useita EVM-ketjuja Axelarin kautta, mukaan lukien BNB Chain, Ethereum, Base ja muut. Katso Wikistä täydellinen lista tuetuista verkoista.",
       "q7": "Kuinka kauan siltaus kestää?",
-      "a7": "Siltausnopeus riippuu lähdeketjun lopullisuudesta ja Axelarin siirrosta. Tyypillisesti ketjujen välinen siirto kestää noin 2–5 minuuttia.",
+      "a7": "Siltausnopeus riippuu lähdeketjusta:\n\n• Ethereum: 15–20 min (vaatii enemmän vahvistuksia)\n• BSC ja Avalanche: 2–4 min (nopein)\n• Base, Linea, Polygon: 3–5 min\n\nSovellus näyttää arvioidun ajan ennen siltausta.",
       "q8": "Mitkä ovat OG-tokenien kiertävät tarjonnat?",
-      "a8": "Jokaisella OG-tokenilla on kiinteä kiertävä tarjonta, joka on johdettu alkuperäisestä BNB-tokenista ottaen huomioon poltetut tokenit, jumissa olevat sopimussaldot ja lukitut LP:t. TigerOG: ~3,66 septiljoonaa (36,62 % alkuperäisestä). LionOG: ~3,83 septiljoonaa (38,33 % alkuperäisestä). FrogOG: ~8,39 septiljoonaa (83,86 % alkuperäisestä). Katso Wikistä yksityiskohtaiset erittelyt kullekin tokenille."
+      "a8": "Jokaisella OG-tokenilla on kiinteä kiertävä tarjonta, joka on johdettu alkuperäisestä BNB-tokenista ottaen huomioon poltetut tokenit, jumissa olevat sopimussaldot ja lukitut LP:t:\n\n• TigerOG: ~3,66 septiljoonaa (36,62 % alkuperäisestä)\n• LionOG: ~3,83 septiljoonaa (38,33 % alkuperäisestä)\n• FrogOG: ~8,39 septiljoonaa (83,86 % alkuperäisestä)\n\nKatso Wikistä yksityiskohtaiset erittelyt.",
+      "q9": "Miksi OG-sopimusta ei ole luovutettu?",
+      "a9": "Sopimuksen luovuttaminen poistaisi mahdollisuuden kehittää ja lisätä uusia ketjuja tulevaisuudessa. Vaikka sopimusta ei luovuteta lähitulevaisuudessa, muutosten tekeminen vaatii useita allekirjoituksia. Lisäksi tiimille ei ole osoitettu tokeneita tai veroja.",
+      "q10": "Miksi OG-sopimus on lyötävissä?",
+      "a10": "Ketjujen välinen siltaus vaatii lyönti-/polttotoiminnallisuuden — tokenit poltetaan poistuessaan ketjusta ja lyödään saapuessaan. Tämä pitää kokonaistarjonnan vakiona kaikissa verkoissa. Lyöntiä hallitsee multisig Safe -lompakko.",
+      "q11": "Lähteekö TigerOG BNB Chainilta Axelarille?",
+      "a11": "Ei. Axelar ei ole lohkoketju — se on siltausprotokolla, joka yhdistää ketjut. BNB Chain pysyy lähdeketjuna, jossa muunnat vanhat tokenit. Axelar yksinkertaisesti mahdollistaa tokeniesi liikkumisen BNB:n, Ethereumin, Basen ja muiden tuettujen verkkojen välillä.",
+      "q12": "Missä tokenini ovat?",
+      "a12": "Varmista, että olet lisännyt ketjun ja tokenin osoitteen lompakkoosi. Löydät kaikki sopimusosoitteet Sopimukset-sivulta. Tiger-tiimi käyttää Rabby-lompakkoa, joka tekee useiden ketjujen hallinnasta helpompaa.",
+      "q13": "Miksi siltaus Ethereumista tai Basesta kestää niin kauan?",
+      "a13": "Ethereum vaatii kaksi epochia ennen transaktioiden viimeistelyä maksimaalisen turvallisuuden takaamiseksi. Koska Base selvitetään Ethereumissa, se perii tämän viiveen. Tämä priorisoi turvallisuutta nopeuden edelle — tokenisi ovat turvassa, ole vain kärsivällinen.",
+      "q14": "Mitä tapahtuu, jos pysyn alkuperäisessä tokenissa enkä muunna?",
+      "a14": "Muuntamiseen ei ole kiirettä. BNBTigerillä ja TigerOG:lla on aina erilliset likviditeettipoolit, markkina-arvot ja niin edelleen. Mutta BNBTigerillä on korkea vero ja TigerOG:lla ei ole veroa kaupankäynnissä. Koska alkuperäisen veroja ei käytetä projektin tukemiseen, kehitystä tekee CTO-tiimi TigerOG:lle. Freedom Bridge ja moniketjuisuus on vain TigerOG:lle.",
+      "q15": "Onko muuntamisessa veroa? Onko TigerOG:ssa veroa?",
+      "a15": "Ei. Muuntaminen ja kaupankäynti vaativat vain normaalin kaasumaksun. Ei ole lisäveroja tai -maksuja, ja TigerOG on veroton sopimus.",
+      "q16": "Voinko ostaa ja vaihtaa TigerOG:ta suoraan?",
+      "a16": "Ei vielä. Tiimi ei ole kerännyt maksuja ja veroja voidakseen rahoittaa tarpeeksi suuria likviditeettipooleja. Saadaksesi TigerOG:ta nyt, sinun täytyy ostaa tai omistaa alkuperäinen ja muuntaa. Kun omistat TigerOG:ta, sitä ei voi helposti vaihtaa ennen kuin sijoittajat tulevat lisäämään likviditeettipooliin.",
+      "q17": "Miksi TigerOG:n markkina-arvo näyttää niin suurelta?",
+      "a17": "Mitä pienempi likviditeettipooli, sitä suurempi vaikutus jokaisella pienellä kaupalla on näytettyyn markkina-arvoon. Tämä ratkeaa, kun sijoittajat tulevat likviditeetin tarjoajiksi.",
+      "q18": "Mitä turvallisuusauditointeja on tehty?",
+      "a18": "Freedom Bridgelle ei ole tehty virallista kolmannen osapuolen auditointia. Kuitenkin muunnossopimuksen koodi perustuu Stronghold-tiimin (entiset XRP- ja Stellar-kehittäjät, jotka esittivät äskettäin Davosissa) rakentamaan SHx-muuntimeen. Siltausinfrastruktuuria ylläpitää Axelar, jolle on tehty useita turvallisuusauditointeja.",
+      "q19": "Kuinka Freedom Bridge suojaa hakkeroinneilta tai hyökkäyksiltä?",
+      "a19": "Useita toimenpiteitä on käytössä:\n\n• Muunnin pitää hallussaan vain tarkalleen tarvittavan kiertävän tarjonnan — ei ylimääräisiä tokeneita hyökkäysten kohteeksi\n• Muuntimella ei ole lyöntioikeuksia\n• Kaikki sopimuskoodi on varmennettu ketjussa ja avointa lähdekoodia\n• Token-oikeudet on turvattu Safe.global multisig -lompakossa\n• Siltausta hallitsee Axelarin taistelutestattua infrastruktuuri",
+      "q20": "Onko siltaus peruuttamaton? Mitä jos siirto epäonnistuu?",
+      "a20": "Siltasiirrot voivat harvoin juuttua riittämättömän kaasun tai verkon ruuhkautumisen vuoksi. Jos näin käy, voit seurata transaktiotasi Axelarscanissa ja lisätä kaasua manuaalisesti sen loppuun saattamiseksi. Axelar tarjoaa transaktioiden palautustyökaluja — et menetä tokeneitasi.",
+      "q21": "Mitkä ovat Freedom Bridgen käyttöön liittyvät riskit?",
+      "a21": "Kuten missä tahansa DeFi-protokollassa, sisäisiä riskejä ovat älysopimusriski, siltariski ja markkinoiden volatiliteetti. Suosittelemme tekemään omat tutkimuksesi (DYOR) ja käyttämään vain varoja, joiden menetyksen voit kestää. Katso oikeudellinen vastuuvapauslausekkeemme lisätietoja varten.",
+      "q22": "Voinko muuntaa uuden BNB Tiger Inu -sopimuksen (syyskuu 2025)?",
+      "a22": "Et. Freedom Bridge tukee alkuperäistä/vanhaa BNB Tiger -tokenia, joka julkaistiin useita vuosia sitten — ei syyskuussa 2025 luotua uutta sopimusta. Freedom Bridge rakennettiin alkuperäisten Tiger-, Lion- ja Frog-tokenien yhteisöhaltuunotoon (CTO).",
+      "q23": "Kuinka lisätä likviditeettiä?",
+      "a23": "Likviditeetin lisääminen on edistynyt DeFi-toiminto, johon liittyy riskejä mukaan lukien pysyvä tappio. Jos olet kokenut likviditeetin tarjoamisessa DEXeissä kuten PancakeSwap tai Uniswap, prosessi on sama — parittele OG-token perusvarallisuuden kanssa. Tässä on loistava opetussarja likviditeetistä, jos haluat oppia lisää: https://www.youtube.com/watch?v=oiylIHvwMik&list=PL_ujg_v1hZ5iGtiuhT8NkSMqEOaLAgmUu",
+      "q24": "Voiko tiimi vetää maton alta?",
+      "a24": "Ei. Maton vetämiselle ei ole mekanismia. Tiimille ei ole osoitettu tokeneita tai veroja, emmekä kerää siltausmaksuja — ne menevät Axelarille siirtokustannusten kattamiseksi. Tiimi on tokenihaltijoita aivan kuten sinä, ja rakentaa tätä omalla kustannuksellaan. Ainoa tiimin lompakko on julkinen markkinointilompakko, jota rahoitetaan yhteisön lahjoituksilla. Multisig Safe -lompakko hallitsee sopimusoikeuksia, kuten lähetyksen keskeyttämistä ketjuihin hätätilanteessa, mutta ei voi käyttää tai ohjata käyttäjien varoja."
     }
+  },
+  "footer": {
+    "wiki": "Wiki",
+    "contracts": "Sopimukset",
+    "faq": "UKK",
+    "disclaimer": "Vastuuvapauslauseke",
+    "github": "GitHub"
+  },
+  "disclaimer": {
+    "title": "Oikeudellinen vastuuvapauslauseke",
+    "header": "Tärkeä oikeudellinen ilmoitus",
+    "subtitle": "Lue tämä vastuuvapauslauseke huolellisesti ennen Freedom Bridgen käyttöä.",
+    "sections": {
+      "noInvestmentAdvice": {
+        "title": "Ei sijoitusneuvontaa",
+        "content": "Freedom Bridgessä tarjotut tiedot eivät muodosta sijoitusneuvontaa, talousneuvontaa, kaupankäyntineuvontaa tai mitään muuta neuvontaa. Sinun ei tulisi kohdella mitään sisältöä sellaisena. Freedom Bridge ei suosittele minkään kryptovaluutan ostamista, myymistä tai hallussapitoa. Tee oma huolellisuustarkistuksesi ja konsultoi taloudellista neuvonantajaasi ennen sijoituspäätöksiä."
+      },
+      "risksOfUse": {
+        "title": "Käytön riskit",
+        "content": "Kryptovaluuttamarkkinat ovat epävakaita ja ennustamattomia. Käyttämällä Freedom Bridgeä hyväksyt, että:\n\n• Älysopimukset voivat sisältää virheitä tai haavoittuvuuksia, jotka voivat johtaa varojen menetykseen\n• Ketjujen väliset sillat sisältävät sisäisiä riskejä mukaan lukien: oraakelin vikaantuminen, validaattorien yhteistyö ja verkon ruuhkautuminen\n• Tokenien arvot voivat vaihdella dramaattisesti ja voit menettää osan tai kaikki sijoituksestasi\n• Lohkoketjuverkoissa tehdyt transaktiot ovat peruuttamattomia\n• Verkkomaksut ja kaasukustannukset ovat hallintamme ulkopuolella ja voivat vaihdella merkittävästi"
+      },
+      "noWarranties": {
+        "title": "Ei takuita",
+        "content": "Freedom Bridge tarjotaan \"sellaisenaan\" ja \"saatavissa olevana\" ilman minkäänlaisia takuita, nimenomaisia tai oletettuja. Emme takaa, että palvelu on keskeytyksetön, turvallinen tai virheetön. Emme anna takuita alustan kautta tarjottujen tietojen tarkkuudesta, luotettavuudesta tai täydellisyydestä."
+      },
+      "limitationOfLiability": {
+        "title": "Vastuun rajoitus",
+        "content": "Lain sallimassa enimmäislaajuudessa Freedom Bridge, sen kehittäjät, avustajat ja tytäryhtiöt eivät ole vastuussa mistään suorista, epäsuorista, satunnaisista, erityisistä, välillisistä tai rangaistusvahingoista, jotka johtuvat tai liittyvät alustan käyttöösi, mukaan lukien voittojen menetys, tietojen menetys tai kryptovaluuttavarojen menetys."
+      },
+      "thirdPartyServices": {
+        "title": "Kolmannen osapuolen palvelut",
+        "content": "Freedom Bridge integroituu kolmannen osapuolen palveluihin, mukaan lukien Axelar-verkko ketjujen väliseen siltaamiseen. Emme ole vastuussa näiden kolmansien osapuolten toimista, sisällöstä, tiedoista tai datasta. Kolmannen osapuolen palvelujen käyttösi on niiden omien ehtojen alaista."
+      },
+      "regulatoryCompliance": {
+        "title": "Sääntelynmukaisuus",
+        "content": "Kryptovaluuttasäännökset vaihtelevat lainkäyttöalueittain. Olet yksin vastuussa siitä, että Freedom Bridgen käyttösi noudattaa kaikkia sovellettavia lakeja ja säännöksiä lainkäyttöalueellasi. Freedom Bridge ei anna minkäänlaisia vakuutuksia palvelujen laillisuudesta missään lainkäyttöalueella."
+      },
+      "dyor": {
+        "title": "Tee omat tutkimuksesi",
+        "content": "Tee aina omat tutkimuksesi (DYOR) ennen minkään DeFi-protokollan käyttöä. Varmenna sopimusosoitteet, ymmärrä jokaisen tokenin mekanismit ja älä koskaan sijoita enemmän kuin sinulla on varaa menettää."
+      }
+    },
+    "acknowledgment": "Käyttämällä Freedom Bridgeä hyväksyt, että olet lukenut, ymmärtänyt ja sitoudut noudattamaan tätä vastuuvapauslauseketta.",
+    "lastUpdated": "Viimeksi päivitetty: tammikuu 2026"
+  },
+  "disclaimerModal": {
+    "title": "Tärkeä vastuuvapauslauseke",
+    "subtitle": "Lue ja hyväksy ennen jatkamista.",
+    "noAdvice": "Freedom Bridge ei tarjoa sijoitus-, talous- tai kaupankäyntineuvontaa. Kryptovaluuttasijoitukset ovat epävakaita ja riskialttiita.",
+    "risks": "Käyttämällä tätä alustaa hyväksyt, että älysopimuksissa voi olla haavoittuvuuksia, ketjujen välisillä silloilla on sisäisiä riskejä ja transaktiot ovat peruuttamattomia.",
+    "dyor": "Tee aina omat tutkimuksesi (DYOR) ja käytä vain varoja, joiden menetyksen voit kestää.",
+    "fullDisclaimer": "Täydelliset tiedot löydät",
+    "fullDisclaimerLink": "oikeudellisesta vastuuvapauslausekkeesta",
+    "accept": "Ymmärrän ja hyväksyn"
   },
   "common": {
     "from": "Mistä",
     "to": "Mihin",
     "max": "MAKS",
+    "cancel": "Peruuta",
     "chainId": "Ketju-ID",
     "bscChain": "BSC-ketju",
     "insufficientBalance": "Saldo ei riitä.",

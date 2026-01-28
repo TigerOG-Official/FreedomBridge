@@ -4,6 +4,7 @@
     "titleBridge": "Ponte"
   },
   "nav": {
+    "home": "Home",
     "settings": "Impostazioni",
     "menu": "Menu",
     "preferences": "Preferenze",
@@ -45,6 +46,21 @@
     "networkWarning": {
       "title": "Rete Errata",
       "message": "La conversione dei token è disponibile solo su BSC Chain. Passa alla BSC per convertire i tuoi token legacy."
+    },
+    "confirmModal": {
+      "title": "Conferma Conversione",
+      "warning": "Stai per convertire i tuoi token. Leggi attentamente quanto segue prima di procedere.",
+      "irreversible": "Questa azione è irreversibile!",
+      "burnExplanation": "I tuoi token {{legacySymbol}} verranno bruciati permanentemente inviandoli all'indirizzo morto e verranno coniati token {{newSymbol}} equivalenti. Non possono essere recuperati o riconvertiti.",
+      "positiveNote": "Lato positivo: {{newSymbol}} è completamente esente da tasse, permettendoti di trasferire, scambiare o fare bridge liberamente senza commissioni fiscali.",
+      "confirmQuestion": "Convertire {{amount}} {{legacySymbol}} in {{newSymbol}}?",
+      "confirmButton": "Ho Capito, Converti"
+    },
+    "finalConfirmModal": {
+      "title": "Conferma Finale",
+      "message": "Questo è il passaggio finale. Una volta confermato, i tuoi token {{legacySymbol}} verranno bruciati permanentemente e non potranno essere recuperati.",
+      "confirm": "Sì, Converti Ora",
+      "cancel": "Annulla"
     }
   },
   "bridge": {
@@ -296,7 +312,8 @@
     "tabs": {
       "overview": "Panoramica",
       "byToken": "Per Token",
-      "byChain": "Per Chain"
+      "byChain": "Per Chain",
+      "liquidity": "Pool di Liquidità"
     },
     "overview": {
       "interchainTokens": {
@@ -318,7 +335,36 @@
         "legacyToken": "Token Legacy",
         "conversionContract": "Contratto di Conversione",
         "newToken": "Token Interchain"
+      },
+      "liquidityPools": {
+        "title": "Pool di Liquidità",
+        "description": "Pool di liquidità per il trading di token OG su PancakeSwap e altri exchange decentralizzati."
+      },
+      "liquidityPoolsTable": {
+        "title": "Indirizzi Pool di Liquidità",
+        "subtitle": "Pool di liquidità disponibili per ogni token OG.",
+        "token": "Token",
+        "pair": "Coppia",
+        "exchange": "Exchange",
+        "poolAddress": "Indirizzo Pool"
       }
+    },
+    "liquidity": {
+      "title": "Informazioni Pool di Liquidità",
+      "description": "Visualizza le pool di liquidità disponibili per i token OG. Queste pool abilitano il trading dei token su exchange decentralizzati.",
+      "availablePools": "Pool Disponibili",
+      "pool": {
+        "pair": "Coppia",
+        "exchange": "Exchange",
+        "chain": "Chain",
+        "poolAddress": "Indirizzo Pool",
+        "tokenAddress": "Indirizzo Token",
+        "lpBurned": "LP Bruciato",
+        "viewOnExplorer": "Visualizza su Explorer",
+        "trade": "Trading"
+      },
+      "noPoolsFound": "Nessuna pool trovata per questo token",
+      "lpBurnedExplanation": "LP Bruciato indica la percentuale di token liquidity provider inviati all'indirizzo morto, bloccando permanentemente i token sottostanti."
     },
     "filterTokens": "Filtra token...",
     "interchainAsset": "Asset Interchain via Axelar ITS",
@@ -337,6 +383,12 @@
     "title": "Supporto Freedom Bridge",
     "header": "Domande Frequenti",
     "subtitle": "Risposte alle domande comuni su TigerOG, bridging e Axelar.",
+    "sections": {
+      "general": "Generale",
+      "conversion": "Conversione",
+      "bridging": "Bridging",
+      "security": "Sicurezza"
+    },
     "cta": {
       "title": "Hai ancora domande?",
       "description": "Unisciti alla nostra community su Telegram o controlla la Wiki dettagliata per guide tecniche.",
@@ -359,13 +411,140 @@
       "q7": "Quanto tempo richiede il bridging?",
       "a7": "La velocità del bridging dipende dalla finalità della chain di origine e dall'inoltro di Axelar. Tipicamente, un trasferimento tra chain richiede circa 2-5 minuti.",
       "q8": "Quali sono le offerte circolanti dei token OG?",
-      "a8": "Ogni token OG ha un'offerta circolante fissa derivata dal suo token BNB originale, tenendo conto dei token bruciati, dei saldi bloccati nei contratti e della LP bloccata. TigerOG: ~3,66 settilioni (36,62% dell'originale). LionOG: ~3,83 settilioni (38,33% dell'originale). FrogOG: ~8,39 settilioni (83,86% dell'originale). Vedi la Wiki per i dettagli di ogni token."
+      "a8": "Ogni token OG ha un'offerta circolante fissa derivata dal suo token BNB originale, tenendo conto dei token bruciati, dei saldi bloccati nei contratti e della LP bloccata. TigerOG: ~3,66 settilioni (36,62% dell'originale). LionOG: ~3,83 settilioni (38,33% dell'originale). FrogOG: ~8,39 settilioni (83,86% dell'originale). Vedi la Wiki per i dettagli di ogni token.",
+      "q9": "Cos'è l'Axelar Interchain Token Service (ITS)?",
+      "a9": "Axelar ITS è un framework che permette ai token di muoversi liberamente tra diverse blockchain mantenendo indirizzi e offerta coerenti. Gestisce il minting e il burning per garantire che i tuoi token esistano e rimangano sicuri su tutte le reti.",
+      "q10": "Come funziona tecnicamente la conversione?",
+      "a10": "Quando converti, i tuoi token legacy vengono inviati all'indirizzo morto (0x...dEaD), bruciandoli permanentemente. Il contratto di conversione conia una quantità corrispondente di TigerOG in rapporto 1:1 nel tuo wallet. Questo processo è permanente e irreversibile.",
+      "q11": "Perché i token legacy vengono bruciati invece di essere custoditi?",
+      "a11": "Il burning rimuove completamente i token legacy dalla circolazione, garantendo che nessuno possa usarli per trading o inflazione dell'offerta. Questo fornisce una sicurezza più forte rispetto alla custodia, poiché i token bruciati non possono mai essere recuperati.",
+      "q12": "Posso convertire un importo parziale?",
+      "a12": "Sì, puoi convertire qualsiasi importo desideri. Non devi convertire tutto il tuo saldo in una volta. Tuttavia, ogni conversione richiede una transazione su BSC.",
+      "q13": "Cosa succede se i miei token sono su una chain diversa?",
+      "a13": "La conversione è disponibile solo su BSC. Se i tuoi token sono su una chain diversa, dovrai prima fare bridge su BSC prima della conversione. Una volta convertiti in TigerOG, puoi fare bridge verso altre chain.",
+      "q14": "Perché devo avere TigerOG su BSC prima di fare bridge?",
+      "a14": "Il contratto di conversione opera su BSC, dove esistono i token legacy. TigerOG viene coniato prima su BSC, poi può essere trasferito su altre chain usando Axelar ITS.",
+      "q15": "Quanto tempo richiede la conversione?",
+      "a15": "La conversione richiede tipicamente 1-2 minuti per essere elaborata, a seconda della congestione della rete BSC. Vedrai il tuo TigerOG nel wallet una volta confermata la transazione.",
+      "q16": "Quali chain sono supportate per il bridging?",
+      "a16": "Freedom Bridge supporta il bridging tra BNB Chain, Ethereum, Base, Arbitrum, Optimism, Polygon, Avalanche, Fantom e altre. Controlla l'app per la lista più aggiornata.",
+      "q17": "Perché il bridging richiede commissioni gas cross-chain?",
+      "a17": "Il bridging richiede transazioni sia sulla chain di origine che su quella di destinazione. La commissione gas di Axelar copre i costi di inoltro dei messaggi e di esecuzione delle transazioni su entrambi i lati.",
+      "q18": "Cosa succede se il mio bridge fallisce?",
+      "a18": "I trasferimenti Axelar sono atomici — completano interamente o falliscono completamente. Se la tua transazione fallisce, i tuoi token non lasceranno il tuo wallet di origine. Puoi riprovare o controllare Axelarscan per lo stato.",
+      "q19": "Posso fare bridge dei miei token verso il mio wallet?",
+      "a19": "Sì, puoi fare bridge dei tuoi token verso qualsiasi wallet che supporti la chain di destinazione. I token appariranno una volta completato il trasferimento cross-chain.",
+      "q20": "Quali misure di sicurezza usa Axelar?",
+      "a20": "Axelar usa un set di validatori permissionless con molteplici aziende di sicurezza che producono i suoi blocchi. La rete ha elaborato milioni di transazioni senza incidenti di sicurezza.",
+      "q21": "Posso fidarmi degli smart contract?",
+      "a21": "I contratti di Conversione usano pattern standard OpenZeppelin e chiamano solo funzioni ITS di Axelar verificate. Non ci sono funzioni admin, nessun proxy e nessuna capacità di prelevare token.",
+      "q22": "Cosa succede se Axelar va offline?",
+      "a22": "I tuoi token rimangono sulla chain dove si trovano attualmente. Il bridging richiede la rete Axelar, quindi se è inattiva, non potrai fare bridge finché non torna online. I tuoi token rimangono al sicuro nel tuo wallet.",
+      "q23": "Come posso verificare le mie transazioni?",
+      "a23": "Puoi verificare le transazioni di conversione su BSCScan e le transazioni di bridging su Axelarscan. L'app fornisce link per tracciare facilmente le tue transazioni.",
+      "q24": "Questo è una truffa o un rug pull?",
+      "a24": "No. Freedom Bridge è un'app di bridging legittima che si integra con Axelar ITS — uno standard industriale per i trasferimenti di token cross-chain. Non c'è controllo admin sui contratti. I token legacy vengono bruciati permanentemente, non custoditi. I nuovi token vengono coniati in rapporto 1:1 esatto. Tutto il codice è open source e verificato. Pensala così: usiamo Axelar come Stripe o PayPal — un'infrastruttura comprovata che ci permette di spostare asset senza problemi. Freedom Bridge è semplicemente un'interfaccia per la community per aggiornare alla versione TigerOG senza tasse."
     }
+  },
+  "footer": {
+    "built": "Costruito su Axelar",
+    "rights": "Tutti i diritti riservati.",
+    "docs": "Documentazione",
+    "github": "GitHub",
+    "twitter": "Twitter",
+    "telegram": "Telegram"
+  },
+  "disclaimer": {
+    "title": "Disclaimer",
+    "lastUpdated": "Ultimo aggiornamento: Gennaio 2025",
+    "introduction": {
+      "title": "Introduzione",
+      "content": "Utilizzando Freedom Bridge (\"l'App\"), riconosci di aver letto, compreso e accettato questo disclaimer. Se non accetti questo disclaimer, per favore non usare l'App."
+    },
+    "noFinancialAdvice": {
+      "title": "Nessun Consiglio Finanziario",
+      "content": "Il contenuto di questa App è solo a scopo informativo ed educativo e non costituisce consulenza finanziaria, di investimento, fiscale o legale. Dovresti consultare consulenti qualificati prima di prendere qualsiasi decisione finanziaria."
+    },
+    "risksInvolved": {
+      "title": "Rischi Coinvolti",
+      "content": "Le transazioni in criptovalute e gli investimenti in finanza decentralizzata (DeFi) comportano rischi significativi, inclusi ma non limitati a:",
+      "risks": {
+        "marketVolatility": "Volatilità del mercato e potenziali perdite finanziarie",
+        "smartContractRisks": "Bug o vulnerabilità degli smart contract",
+        "regulatoryUncertainty": "Incertezza normativa o azioni governative",
+        "technicalFailures": "Guasti tecnici o rischi di sicurezza",
+        "thirdPartyRisks": "Rischi da servizi terzi come Axelar Network"
+      }
+    },
+    "noWarranty": {
+      "title": "Nessuna Garanzia",
+      "content": "L'App viene fornita \"così com'è\" e \"come disponibile\" senza garanzie di alcun tipo, espresse o implicite. Non garantiamo che l'App sarà priva di errori, sicura o adatta alle tue esigenze."
+    },
+    "limitationOfLiability": {
+      "title": "Limitazione di Responsabilità",
+      "content": "In nessun caso saremo responsabili per danni derivanti dall'uso di questa App, inclusi ma non limitati a perdite finanziarie, perdita di dati o interruzione dell'attività."
+    },
+    "thirdPartyServices": {
+      "title": "Servizi di Terze Parti",
+      "content": "L'App si integra con servizi di terze parti tra cui Axelar Network, vari wallet e blockchain. Non abbiamo alcun controllo su questi servizi e non siamo responsabili dei loro fallimenti o delle perdite derivanti dal loro utilizzo."
+    },
+    "userResponsibility": {
+      "title": "Responsabilità dell'Utente",
+      "content": "Sei responsabile di:",
+      "responsibilities": {
+        "ownResearch": "Condurre la tua ricerca prima di qualsiasi transazione",
+        "secureWallet": "Proteggere le chiavi del tuo wallet e le frasi di recupero",
+        "verifyTransactions": "Verificare tutti i dettagli delle transazioni prima della conferma",
+        "understandRisks": "Comprendere i rischi associati alle transazioni di token e ai bridge",
+        "complyWithLaws": "Rispettare le leggi applicabili nella tua giurisdizione"
+      }
+    },
+    "irreversibleTransactions": {
+      "title": "Transazioni Irreversibili",
+      "content": "Tutte le transazioni blockchain, incluse le conversioni di token e i bridge, sono permanenti e non possono essere annullate. Verifica attentamente tutti i dettagli prima di confermare qualsiasi transazione."
+    },
+    "jurisdiction": {
+      "title": "Giurisdizione",
+      "content": "Gli utenti sono responsabili di assicurarsi che il loro uso dell'App sia conforme a tutte le leggi applicabili nella loro giurisdizione. Alcune giurisdizioni potrebbero vietare o limitare l'uso di questa App o di alcune delle sue funzionalità."
+    },
+    "changesToDisclaimer": {
+      "title": "Modifiche a Questo Disclaimer",
+      "content": "Potremmo aggiornare questo disclaimer in qualsiasi momento senza preavviso. L'uso continuato dell'App dopo le modifiche costituisce accettazione del disclaimer aggiornato."
+    },
+    "contactInfo": {
+      "title": "Informazioni di Contatto",
+      "content": "Se hai domande su questo disclaimer, contattaci attraverso i nostri canali della community."
+    },
+    "acceptance": {
+      "title": "Accettazione del Disclaimer",
+      "content": "Utilizzando Freedom Bridge, accetti completamente questo disclaimer."
+    }
+  },
+  "disclaimerModal": {
+    "title": "Avviso Importante",
+    "subtitle": "Per favore leggi attentamente prima di procedere",
+    "requirements": {
+      "notProhibited": "Non ti trovi in una giurisdizione dove DeFi o bridging sono vietati",
+      "legalAge": "Hai la maggiore età nella tua giurisdizione",
+      "understandRisks": "Comprendi che le transazioni blockchain sono irreversibili",
+      "ownRisk": "Accetti di usare questa app a tuo rischio"
+    },
+    "buttons": {
+      "agree": "Accetto, Procedi",
+      "decline": "Rifiuto"
+    },
+    "declined": {
+      "title": "Accesso Negato",
+      "message": "Devi accettare i termini per accedere a Freedom Bridge.",
+      "tryAgain": "Riprova"
+    },
+    "readMore": "Leggi il disclaimer completo"
   },
   "common": {
     "from": "Da",
     "to": "A",
     "max": "MAX",
+    "cancel": "Annulla",
     "chainId": "ID Chain",
     "bscChain": "BSC Chain",
     "insufficientBalance": "Saldo insufficiente.",

@@ -4,6 +4,7 @@
     "titleBridge": "Jago"
   },
   "nav": {
+    "home": "Soyɔrɔ",
     "settings": "Labɛnni",
     "menu": "Kunnafoni",
     "preferences": "Sago",
@@ -45,6 +46,20 @@
     "networkWarning": {
       "title": "Sɛgɛsɛgɛli Tiɲɛnen",
       "message": "Token yɛlɛma bɛ sɔrɔ BSC dɔrɔn kan. I ka yɛlɛma ka taa BSC ka i ka token kɔrɔw yɛlɛma."
+    },
+    "confirmModal": {
+      "title": "Yɛlɛma Dajɛ",
+      "warning": "I bɛna i ka tokenw yɛlɛma. I ka nɛɛ kalan ɲuman na ka sɔrɔ ka tɛmɛ.",
+      "irreversible": "Nin baara tɛ se ka sɛgin!",
+      "burnExplanation": "I ka {{legacySymbol}} tokenw bɛna jɛni abada ani {{newSymbol}} token hakɛ kelen bɛna dilan i ka bɔrɔsiɲɛbara kɔnɔ. Nin tɛ se ka sɛgin.",
+      "positiveNote": "A ɲuman: {{newSymbol}} sara tɛ pewu — 10%+ sara tɛ baara si la tun.",
+      "confirmQuestion": "{{amount}} {{legacySymbol}} yɛlɛma ka kɛ {{newSymbol}} ye?",
+      "confirmButton": "N Ye A Faamu, Yɛlɛma"
+    },
+    "finalConfirmModal": {
+      "title": "I Dalen B'a La Tiɲɛ Na?",
+      "message": "Nin ye i ka laban waati ye ka bali. N'i ye dajɛ, i ka {{legacySymbol}} bɛna yɛlɛma ka kɛ {{newSymbol}} ye ani a tɛ se ka sɛgin.",
+      "confirmButton": "Awɔ, Yɛlɛma Sisan"
     }
   },
   "bridge": {
@@ -296,7 +311,12 @@
     "tabs": {
       "overview": "Jɛ",
       "byToken": "Token Fɛ",
-      "byChain": "Sɛgɛsɛgɛli Fɛ"
+      "byChain": "Sɛgɛsɛgɛli Fɛ",
+      "liquidity": "Wari Yɔrɔ"
+    },
+    "liquidity": {
+      "poolAddress": "Wari Yɔrɔ Adirɛsi",
+      "tradeOn": "Jago Kɛ"
     },
     "overview": {
       "interchainTokens": {
@@ -318,6 +338,18 @@
         "legacyToken": "Token Kɔrɔ",
         "conversionContract": "Yɛlɛma Ladan",
         "newToken": "Interchain Token"
+      },
+      "liquidityPools": {
+        "title": "Wari Yɔrɔw",
+        "description": "DEX wari yɔrɔw i bɛ se ka OG tokenw jago sɛgɛsɛgɛli caman kan."
+      },
+      "liquidityPoolsTable": {
+        "title": "Wari Yɔrɔw",
+        "subtitle": "DEX yɔrɔw OG token jago kama",
+        "token": "Token",
+        "chain": "Sɛgɛsɛgɛli",
+        "dex": "DEX",
+        "poolAddress": "Yɔrɔ Adirɛsi"
       }
     },
     "filterTokens": "Tokenw sɔgɔ...",
@@ -337,6 +369,13 @@
     "title": "Freedom Bridge Dɛmɛ",
     "header": "Ɲinini Camanw",
     "subtitle": "Jaabi TigerOG, jago, ani Axelar ɲininiw kan.",
+    "sections": {
+      "gettingStarted": "Daminɛ",
+      "convertingTrading": "Yɛlɛma ni Jago",
+      "bridging": "Jago Sɛgɛsɛgɛliw Cɛ",
+      "technical": "Baarakɛcogo",
+      "securityRisks": "Kɔrɔlen ni Farati"
+    },
     "cta": {
       "title": "I ka ɲininiw bɛ yen halisa?",
       "description": "Fara an ka jama kan Telegram kan walima Wiki lajɛ ka baara ɲɛfɔli sɔrɔ.",
@@ -357,15 +396,102 @@
       "q6": "Sɛgɛsɛgɛli jumaw bɛ sɔrɔ?",
       "a6": "An bɛ EVM sɛgɛsɛgɛli caman sɔrɔ ni Axelar ye, BNB Chain, Ethereum, Base, ani wɛrɛw bɛ a la. Wiki lajɛ ka sɛgɛsɛgɛli sɔrɔlenw bɛɛ ye.",
       "q7": "Jago bɛ waati jumɛn ta?",
-      "a7": "Jago teliya bɛ bɔ bɔyɔrɔ sɛgɛsɛgɛli laban waati ni Axelar cira tɔn kan. Teli ka kɛ, taali sɛgɛsɛgɛliw cɛ bɛ ta miniti 2-5.",
+      "a7": "Jago teliya bɛ bɔ sɛgɛsɛgɛli min i bɛ CI la kan:\n\n• Ethereum: miniti 15-20 (sɛgɛsɛgɛli caman mago bɛ a la)\n• BSC ni Avalanche: miniti 2-4 (teliman)\n• Base, Linea, Polygon: miniti 3-5\n\nApp bɛ waati jatenya jira ka sɔrɔ ka jago.",
       "q8": "OG tokenw hakɛ jumɛn bɛ yen?",
-      "a8": "OG token kelen-kelen bɛɛ hakɛ maralen bɛ bɔ a ka BNB token fɔlɔ la, ka token jɛninenw, ladan kɔnɔna wari, ani LP maralenw ta. TigerOG: ~3.66 septillion (36.62% fɔlɔ la). LionOG: ~3.83 septillion (38.33% fɔlɔ la). FrogOG: ~8.39 septillion (83.86% fɔlɔ la). Wiki lajɛ ka ɲɛfɔli bɛɛ ye."
+      "a8": "OG token kelen-kelen bɛɛ hakɛ maralen bɛ bɔ a ka BNB token fɔlɔ la, ka token jɛninenw, ladan kɔnɔna wari, ani LP maralenw ta:\n\n• TigerOG: ~3.66 septillion (36.62% fɔlɔ la)\n• LionOG: ~3.83 septillion (38.33% fɔlɔ la)\n• FrogOG: ~8.39 septillion (83.86% fɔlɔ la)\n\nWiki lajɛ ka ɲɛfɔli bɛɛ ye.",
+      "q9": "Mun na OG ladan ma bɔ bolo la (renounce)?",
+      "a9": "Ladan bɔli bolo la bɛna se bɔ ka yiriwali kɛ ani ka sɛgɛsɛgɛli kuraw fara. Hali ni ladan tɛna bɔ bolo la waati min bɛ se ka ye, bolo caman mago bɛ a la ka yɛlɛma si kɛ. Wa, token ni sara si ma di jɛkulu ma.",
+      "q10": "Mun na OG ladan bɛ se ka dilan (mint)?",
+      "a10": "Jago sɛgɛsɛgɛliw cɛ mago bɛ dilan/jɛni baara la — tokenw bɛ jɛni ni u bɛ bɔ sɛgɛsɛgɛli la, u bɛ dilan ni u bɛ se. Nin b'a to hakɛ bɛɛ bɛ to kelen sɛgɛsɛgɛliw bɛɛ kan. Dilan bɛ kontrol ni multisig Safe bɔrɔsiɲɛbara ye.",
+      "q11": "TigerOG bɛ BNB Chain to ka taa Axelar ma wa?",
+      "a11": "Ayi. Axelar tɛ sɛgɛsɛgɛli ye — a ye jago sariya ye min bɛ sɛgɛsɛgɛliw fara ɲɔgɔn na. BNB Chain bɛ to bɔyɔrɔ sɛgɛsɛgɛli ye i bɛ token kɔrɔw yɛlɛma yɔrɔ min na. Axelar dɔrɔn b'a to i ka tokenw bɛ se ka taa BNB, Ethereum, Base, ani sɛgɛsɛgɛli sɔrɔlen wɛrɛw cɛ.",
+      "q12": "N ka tokenw bɛ min?",
+      "a12": "A lajɛ ko i ye sɛgɛsɛgɛli ni token adirɛsi fara i ka bɔrɔsiɲɛbara kan. I bɛ se ka ladan adirɛsi bɛɛ sɔrɔ Ladanw ɲɛ kan. Tiger jɛkulu bɛ Rabby bɔrɔsiɲɛbara ta min b'a to sɛgɛsɛgɛli caman mara ka nɔgɔya.",
+      "q13": "Mun na jago ka bɔ Ethereum walima Base bɛ mɛɛn kojugu?",
+      "a13": "Ethereum mago bɛ waati fila la ka sɔrɔ ka baara laban ka lafiya gɛlɛn sɔrɔ. Komi Base bɛ laban Ethereum kan, a bɛ nin mɛɛnni ta. Nin bɛ lafiya bila teliya ɲɛ — i ka tokenw lafiyalen don, muɲu dɔɔnin.",
+      "q14": "Mun bɛ kɛ n'i tora n ka token fɔlɔ la ani n ma yɛlɛma?",
+      "a14": "Gansan tɛ yɛlɛma la. BNBTiger ni TigerOG bɛna wari yɔrɔ suguya, dɔgɔkun nafa, ani wɛrɛw wɛrɛ sɔrɔ tuma bɛɛ. Nka BNBTiger sara ka gɛlɛn, TigerOG sara tɛ jago la. Komi token kɔrɔ saraw tɛ kɛ ka porozɛ dɛmɛ, yiriwali bɛ kɛ CTO jɛkulu fɛ TigerOG ye. Freedom Bridge ni sɛgɛsɛgɛli-caman ye TigerOG dɔrɔn ye.",
+      "q15": "Sara bɛ yɛlɛma la wa? TigerOG sara bɛ yen wa?",
+      "a15": "Ayi. Gazi sara bɛɲuman dɔrɔn bɛ yɛlɛma ni jago la. Sara wɛrɛ si tɛ, ani TigerOG ye ladan ye min sara tɛ.",
+      "q16": "N bɛ se ka TigerOG san ani jago kɛ a la directeman wa?",
+      "a16": "Fɔlɔ tɛ. Jɛkulu ma sara ni saraw lajɛ ka se ka wari yɔrɔ belebele di. Ka TigerOG sɔrɔ sisan, i ka kan ka fɔlɔ san walima ka a sɔrɔ ka sɔrɔ ani ka yɛlɛma. N'i ye TigerOG sɔrɔ, a jago tɛna nɔgɔya fo warijɛlaw bɛ na ka fara wari yɔrɔ kan.",
+      "q17": "Mun na TigerOG dɔgɔkun nafa bɛ iko a ka bɛ kojugu?",
+      "a17": "Wari yɔrɔ ka dɔgɔ kɛra, jago dɔɔnin si bɛ ɲɛ dɔgɔkun nafa jiralen kan. Nin bɛ ɲɛ ni warijɛlaw nana ka kɛ wari yɔrɔ dibagaw ye.",
+      "q18": "Kɔrɔlen sɛgɛsɛgɛli jumaw kɛra?",
+      "a18": "Freedom Bridge ma tɛmɛ kɔrɔlen sɛgɛsɛgɛli tiɲɛnen fɛ. Nka, yɛlɛma ladan koodi bɛ la SHx yɛlɛma kan min dilanna Stronghold jɛkulu fɛ (XRP ni Stellar dilanbaga kɔrɔw minw ye baara jira Davos la). Jago sɔgɔma bɛ Axelar baara min ye kɔrɔlen sɛgɛsɛgɛli caman tɛmɛ.",
+      "q19": "Freedom Bridge bɛ tanga cogo di hack walima exploit ma?",
+      "a19": "Cogoya caman bɛ yen:\n\n• Yɛlɛma ladan bɛ hakɛ tiɲɛ dɔrɔn mara — token caman tɛ yen minw bɛ se ka exploit\n• Yɛlɛma ladan tɛ dilan yamaruya sɔrɔ\n• Ladan koodi bɛɛ sɛgɛsɛgɛlen don sɛgɛsɛgɛli kan ani a yɛrɛ ye kɔnɔbɔ ye\n• Token yamaru bɛ mara Safe.global multisig bɔrɔsiɲɛbara kɔnɔ\n• Jago bɛ Axelar sɔgɔma sɛgɛsɛgɛlen fɛ",
+      "q20": "Jago tɛ se ka sɛgin wa? Mun bɛ kɛ ni taali tiɲɛna?",
+      "a20": "Jago taaliw bɛ se ka lɔ gazi dɛsɛ walima sɛgɛsɛgɛli faralen kosɔn. Ni nin kɛra, i bɛ se ka i ka baara sɛgɛsɛgɛ Axelarscan kan ani ka gazi fara ni bolo ye ka a laban. Axelar bɛ baara sɔrɔli minɛnw di — i tɛna i ka tokenw tunun.",
+      "q21": "Farati jumaw bɛ Freedom Bridge baara la?",
+      "a21": "I n'a fɔ DeFi sariya bɛɛ, farati bɛ yen i n'a fɔ ladan hakilima farati, jago farati, ani sɔrɔyɔrɔ yɛlɛma. An b'a fɔ i ka i yɛrɛ ka ɲinini kɛ (DYOR) ani ka wari ta i bɛ se ka min tunun dɔrɔn. An ka sariya lajɛ ka kunnafoni caman sɔrɔ.",
+      "q22": "N bɛ se ka BNB Tiger Inu ladan kura (Sɛtanburu 2025) yɛlɛma wa?",
+      "a22": "Ayi. Freedom Bridge bɛ BNB Tiger token fɔlɔ/kɔrɔ dɛmɛ min daminɛna san caman tɛmɛnen — a tɛ ladan kura ye min dilanna Sɛtanburu 2025 la. Freedom Bridge dilanna jama ka sɔrɔ (CTO) Tiger, Lion, ani Frog token fɔlɔw kama.",
+      "q23": "Wari yɔrɔ (liquidity) fara cogo?",
+      "a23": "Wari yɔrɔ farali ye DeFi baara gɛlɛn ye farati bɛ a la. N'i bɛ wari yɔrɔ di DEXw kan i n'a fɔ PancakeSwap walima Uniswap, cogoya ye kelen ye — OG token fara nafenfɛn fɔlɔ kan. Video ɲuman bɛ yan wari yɔrɔ kan n'i b'a fɛ ka dɔn a la ka ɲɛ: https://www.youtube.com/watch?v=oiylIHvwMik&list=PL_ujg_v1hZ5iGtiuhT8NkSMqEOaLAgmUu",
+      "q24": "Jɛkulu bɛ se ka rug pull kɛ wa?",
+      "a24": "Ayi. Sira si tɛ yen rug pull kama. Token ni sara si ma di jɛkulu ma, an tɛ jago sara si lajɛ — olu bɛ taa Axelar ma cira saraw kama. Jɛkulu ye tokenw tigɛlaw ye i n'a fɔ aw, an bɛ nin dila an yɛrɛ ka sara kan. Jɛkulu ka bɔrɔsiɲɛbara kelen min bɛ yen ye marketing bɔrɔsiɲɛbara ye min bɛ ɲɛ la, jama bolomafara bɛ a fa. Multisig Safe bɔrɔsiɲɛbara bɛ ladan yamaru kontrol i n'a fɔ sɛgɛsɛgɛli ci lɔli gansan tuma, nka a tɛ se ka baarakɛlaw ka wari sɔrɔ walima ka a yɛlɛma."
     }
+  },
+  "footer": {
+    "wiki": "Wiki",
+    "contracts": "Ladanw",
+    "faq": "Ɲininiw",
+    "disclaimer": "Sariya Kunnafoni",
+    "github": "GitHub"
+  },
+  "disclaimer": {
+    "title": "Sariya Kunnafoni",
+    "header": "Sariya Kunnafoni Nafama",
+    "subtitle": "I ka nin kalan ɲuman na ka sɔrɔ ka Freedom Bridge baara.",
+    "sections": {
+      "noInvestmentAdvice": {
+        "title": "Warijɛ Ladili Tɛ",
+        "content": "Kunnafoni min bɛ Freedom Bridge la tɛ warijɛ, wari, jago, walima ladili wɛrɛ si ye. I ka kan ka kunnafoni si ta ten. Freedom Bridge tɛ a fɔ ko cryptocurrency si ka kan ka san, feere, walima mara. I yɛrɛ ka ɲinini kɛ ani i ka wari ladilibaga ɲininka ka sɔrɔ ka warijɛ si kɛ."
+      },
+      "risksOfUse": {
+        "title": "Baara Farati",
+        "content": "Cryptocurrency sɔrɔyɔrɔw bɛ yɛlɛma ani u tɛ se ka dɔn. Ka Freedom Bridge baara, i b'a dajɛ ko:\n\n• Ladan hakilimaw bɛ se ka fili walima dɛsɛ sɔrɔ minw bɛ se ka wari tunun\n• Jago sɛgɛsɛgɛliw cɛ farati bɛ a la i n'a fɔ: oracle tiɲɛni, sɛgɛsɛgɛbaga jɛɲɔgɔnya, ani sɛgɛsɛgɛli farali\n• Token nafaw bɛ se ka yɛlɛma kojugu ani i bɛ se ka i ka wari dɔ walima a bɛɛ tunun\n• Sɛgɛsɛgɛli baara tɛ se ka sɛgin\n• Sɛgɛsɛgɛli saraw ni gazi saraw tɛ an ka kontrol la"
+      },
+      "noWarranties": {
+        "title": "Taamasiyɛn Tɛ",
+        "content": "Freedom Bridge bɛ di \"a bɛ cogo min na\" taamasiyɛn si tɛ a la. An tɛ taamasiyɛn di ko baara tɛna lɔ, a ka lafiya, walima fili tɛ a la. An tɛ taamasiyɛn di kunnafoni tiɲɛya, danmaya, walima dafalen kan."
+      },
+      "limitationOfLiability": {
+        "title": "Jalaki Dantigɛli",
+        "content": "Ka sariya se dafa, Freedom Bridge, a dilanbagaw, dɛmɛbagaw, ani u ɲɔgɔnw tɛna jalaki ta tiɲɛni si la min bɛ bɔ i ka baara la, nafa tununi, jateden tununi, walima cryptocurrency nafenfɛn tununi bɛ a la."
+      },
+      "thirdPartyServices": {
+        "title": "Mɔgɔ Wɛrɛ Baaraw",
+        "content": "Freedom Bridge bɛ baara ni mɔgɔ wɛrɛ baaraw ye i n'a fɔ Axelar Network jago kama. An tɛ jalaki ta nin mɔgɔ wɛrɛw ka baara, kunnafoni, walima jateden la. I ka nin baaraw ta u ka sariyaw kɔnɔ."
+      },
+      "regulatoryCompliance": {
+        "title": "Sariya Bɛɲɔgɔnya",
+        "content": "Cryptocurrency sariyaw bɛ wɛrɛ wɛrɛ yɔrɔ kelen-kelen bɛɛ la. I kelen bɛ jalaki ta ka a lajɛ ko i ka Freedom Bridge baara bɛ bɛn sariya bɛɛ ma i ka yɔrɔ la. Freedom Bridge tɛ kuma fɔ baara sariyama kan yɔrɔ si la."
+      },
+      "dyor": {
+        "title": "I Yɛrɛ Ka Ɲinini Kɛ",
+        "content": "I yɛrɛ ka ɲinini kɛ (DYOR) tuma bɛɛ ka sɔrɔ ka DeFi sariya si baara. Ladan adirɛsiw sɛgɛsɛgɛ, token cogoya faamu, ani wari fara i bɛ se ka min tunun dɔrɔn."
+      }
+    },
+    "acknowledgment": "Ka Freedom Bridge baara, i b'a dajɛ ko i ye nin sariya kunnafoni kalan, faamu, ani sɔn.",
+    "lastUpdated": "Laban Kura: Zanwiye 2026"
+  },
+  "disclaimerModal": {
+    "title": "Sariya Kunnafoni Nafama",
+    "subtitle": "I ka kalan ani dajɛ ka sɔrɔ ka tɛmɛ.",
+    "noAdvice": "Freedom Bridge tɛ warijɛ, wari, walima jago ladili di. Cryptocurrency warijɛw bɛ yɛlɛma ani farati bɛ a la.",
+    "risks": "Ka nin baara, i b'a dajɛ ko ladan hakilimaw bɛ se ka dɛsɛ sɔrɔ, jago sɛgɛsɛgɛliw cɛ farati bɛ a la, ani baara tɛ se ka sɛgin.",
+    "dyor": "I yɛrɛ ka ɲinini kɛ (DYOR) tuma bɛɛ ani wari ta i bɛ se ka min tunun dɔrɔn.",
+    "fullDisclaimer": "Ka kunnafoni bɛɛ sɔrɔ, an ka lajɛ",
+    "fullDisclaimerLink": "Sariya Kunnafoni",
+    "accept": "N Ye A Faamu ani N Sɔnna"
   },
   "common": {
     "from": "Ka Bɔ",
     "to": "Ka Taa",
     "max": "CAMAN",
+    "cancel": "Bali",
     "chainId": "Sɛgɛsɛgɛli ID",
     "bscChain": "BSC Sɛgɛsɛgɛli",
     "insufficientBalance": "Jateden tɛ ban.",

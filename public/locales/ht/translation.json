@@ -4,6 +4,7 @@
     "titleBridge": "Pon"
   },
   "nav": {
+    "home": "Akèy",
     "settings": "Paramèt",
     "menu": "Meni",
     "preferences": "Preferans",
@@ -45,6 +46,23 @@
     "networkWarning": {
       "title": "Move Rezo",
       "message": "Konvèsyon token disponib sèlman sou BSC Chain. Tanpri chanje sou BSC pou konvèti ansyen tokens ou yo."
+    },
+    "confirmModal": {
+      "title": "Konfime Konvèsyon",
+      "warning": "Ou pral konvèti token ou yo. Tanpri li sa ki anba a avèk atansyon anvan ou kontinye.",
+      "irreversible": "Aksyon sa a pa ka defèt!",
+      "burnExplanation": "Token {{legacySymbol}} ou yo pral boule pèmanaman lè yo voye nan adrès mò a epi token {{newSymbol}} ekivalan yo pral fòje. Yo pa ka rekipere oswa konvèti retounen.",
+      "positiveNote": "Pwen pozitif: {{newSymbol}} konplètman san taks, ki pèmèt ou transfere, fè komès, oswa fè pon lib san okenn frè taks.",
+      "confirmQuestion": "Konvèti {{amount}} {{legacySymbol}} an {{newSymbol}}?",
+      "confirmButton": "Mwen Konprann, Konvèti"
+    },
+    "finalConfirmModal": {
+      "title": "Konfimasyon Final",
+      "message": "Tape <1>konfime</1> anba a pou kontinye ak konvèsyon an.",
+      "inputPlaceholder": "Tape 'konfime' pou kontinye",
+      "confirmWord": "konfime",
+      "confirmButton": "Konfime Konvèsyon",
+      "converting": "Ap konvèti..."
     }
   },
   "bridge": {
@@ -296,7 +314,8 @@
     "tabs": {
       "overview": "Apèsi",
       "byToken": "Pa Token",
-      "byChain": "Pa Chèn"
+      "byChain": "Pa Chèn",
+      "liquidity": "Likidite"
     },
     "overview": {
       "interchainTokens": {
@@ -318,7 +337,35 @@
         "legacyToken": "Ansyen Token",
         "conversionContract": "Kontra Konvèsyon",
         "newToken": "Token Entèchèn"
+      },
+      "liquidityPools": {
+        "title": "Pisin Likidite",
+        "description": "Pisin likidite bay pwofondè komès pou token OG yo sou chèn sipòte yo. Pisin sa yo pèmèt achte ak vann san itilize pon."
+      },
+      "liquidityPoolsTable": {
+        "title": "Pisin Likidite Aktif",
+        "subtitle": "Pisin likidite verifye pou token OG yo sou DEX sipòte yo.",
+        "token": "Token",
+        "chain": "Chèn",
+        "dex": "DEX",
+        "pair": "Pè",
+        "poolAddress": "Adrès Pisin"
       }
+    },
+    "liquidity": {
+      "title": "Pisin Likidite",
+      "subtitle": "Likidite pwofon atravè chèn sipòte yo",
+      "description": "Token OG yo gen pisin likidite sou plizyè chèn, ki pèmèt fè komès san bezwen fè pon. Pisin sa yo bay pwofondè pou achte ak vann dirèkteman sou chak chèn.",
+      "availablePools": "Pisin Disponib",
+      "token": "Token",
+      "chain": "Chèn",
+      "dex": "DEX",
+      "pair": "Pè",
+      "poolAddress": "Adrès Pisin",
+      "trade": "Fè Komès",
+      "noPools": "Pa gen pisin likidite disponib pou token sa a.",
+      "addLiquidity": "Ajoute Likidite",
+      "removeLiquidity": "Retire Likidite"
     },
     "filterTokens": "Filtre token...",
     "interchainAsset": "Byen Entèchèn atravè Axelar ITS",
@@ -337,6 +384,12 @@
     "title": "Sipò Pon Libète",
     "header": "Kesyon yo Poze Souvan",
     "subtitle": "Repons pou kesyon komen sou TigerOG, fè pon, ak Axelar.",
+    "sections": {
+      "general": "Jeneral",
+      "conversion": "Konvèsyon",
+      "bridging": "Fè Pon",
+      "security": "Sekirite"
+    },
     "cta": {
       "title": "Ou toujou gen kesyon?",
       "description": "Antre nan kominote nou an sou Telegram oswa tcheke Wiki detaye a pou gid teknik.",
@@ -359,13 +412,101 @@
       "q7": "Konbyen tan fè pon an pran?",
       "a7": "Vitès fè pon an depann de finalite chèn orijin nan ak relè Axelar la. Tipikman, yon transfè ant chèn pran anviwon 2-5 minit.",
       "q8": "Ki pwovizyon an sikilasyon token OG yo?",
-      "a8": "Chak token OG gen yon pwovizyon an sikilasyon fiks ki soti nan token BNB orijinal li a, ki konte pou token boule, balans kontra bloke, ak LP fèmen. TigerOG: ~3,66 sektilyon (36,62% nan orijinal). LionOG: ~3,83 sektilyon (38,33% nan orijinal). FrogOG: ~8,39 sektilyon (83,86% nan orijinal). Gade Wiki a pou dekonpozisyon detaye chak token."
+      "a8": "Chak token OG gen yon pwovizyon an sikilasyon fiks ki soti nan token BNB orijinal li a, ki konte pou token boule, balans kontra bloke, ak LP fèmen. TigerOG: ~3,66 sektilyon (36,62% nan orijinal). LionOG: ~3,83 sektilyon (38,33% nan orijinal). FrogOG: ~8,39 sektilyon (83,86% nan orijinal). Gade Wiki a pou dekonpozisyon detaye chak token.",
+      "q9": "Kisa Axelar ye?",
+      "a9": "Axelar se yon rezo entèoperabilite desantralize ki konekte blòkchèn yo, ki pèmèt kominikasyon sekirize ak transfè byen atravè chèn yo. Li sipòte Freedom Bridge pou fè pon token ant rezo yo.",
+      "q10": "Kijan fè pon an travay?",
+      "a10": "Lè ou fè pon token yo, yo boule sou chèn orijin nan epi fòje sou chèn destinasyon an atravè Sèvis Token Entèchèn Axelar. Sa kenbe yon pwovizyon total konsistan atravè tout chèn.",
+      "q11": "Èske mwen bezwen ETH/BNB pou frè gaz?",
+      "a11": "Wi, ou bezwen lajan natif chèn nan pou frè gaz. Pou BSC, ou bezwen BNB. Pou Ethereum, ou bezwen ETH. Fè pon mande tou gaz sou chèn destinasyon an ki peye davans.",
+      "q12": "Kisa ki rive si tranzaksyon mwen an bloke?",
+      "a12": "Tranzaksyon Axelar yo tipikman fini nan 2-5 minit. Si tranzaksyon ou rete an atant plis tan, ou ka tcheke estati a sou Axelarscan avèk hash tranzaksyon an. Pifò pwoblèm rezoud pou kont yo pandan validatè yo trete mesaj la.",
+      "q13": "Èske mwen ka fè pon retounen sou BSC?",
+      "a13": "Wi! Fè pon an bidireksyonèl. Ou ka fè pon TigerOG soti nan nenpòt chèn sipòte retounen sou BSC oswa sou nenpòt lòt chèn sipòte.",
+      "q14": "Poukisa mwen ta dwe fè pon sou yon lòt chèn?",
+      "a14": "Fè pon bay aksè nan diferan ekosistèm DeFi, potansyèlman frè gaz pi ba, ak nouvo opòtinite komès. Chak chèn gen avantaj inik ak kominote.",
+      "q15": "Èske gen yon kantite minimòm pou fè pon?",
+      "a15": "Pa gen minimòm pwotokòl la enpoze, men tranzaksyon an dwe kouvri frè gaz. Kantite trè piti ka pa vo lapenn fè pon akòz pri gaz.",
+      "q16": "Èske kontra yo verifye?",
+      "a16": "Wi, tout kontra entelijan yo itilize nan Freedom Bridge verifye epi disponib pou revize sou eksploratè blòkchèn yo. Yo itilize bibliyotèk estanda OpenZeppelin ak aplikasyon Axelar ITS.",
+      "q17": "Ki moun ki kontwole Freedom Bridge?",
+      "a17": "Freedom Bridge itilize kontra konvèsyon ki pa ka chanje ak rezo validatè desantralize Axelar la. Pa gen yon antite santralize ki kontwole fè pon oswa konvèsyon yo.",
+      "q18": "Kisa ki rive si Axelar tonbe?",
+      "a18": "Axelar se yon rezo desantralize avèk plizyè validatè. Menm si kèk validatè pa an liy, rezo a kontinye fonksyone. Men, konjesyon tanporè ta ka ralanti tretman tranzaksyon.",
+      "q19": "Èske konvèsyon an ka defèt?",
+      "a19": "Non. Konvèsyon an pèmanan epi pa ka defèt. Ansyen token ou yo boule (voye nan adrès mò a) epi pa janm ka rekipere. Verifye kantite yo anvan konfime.",
+      "q20": "Kijan mwen ka ajoute TigerOG nan bous mwen?",
+      "a20": "Itilize bouton 'Enpòte nan Bous' apre konvèsyon, oswa ajoute adrès token nan manyèlman nan paj Kontra yo. Adrès la menm sou tout chèn EVM yo.",
+      "q21": "Poukisa mwen ta vle TigerOG olye BNBTiger?",
+      "a21": "TigerOG pa gen taks tranzaksyon (BNBTiger gen ~10% taks), li ka fè pon sou plizyè chèn, epi li gen yon aplikasyon token modèn. Sa fè fè komès, fè pon, ak itilizasyon pi bon mache.",
+      "q22": "Èske balans mwen ap grandi atravè refleksyon?",
+      "a22": "Non. TigerOG pa itilize mekanis refleksyon kontrèman ak ansyen token BNBTiger la. Balans ou rete fiks sof si ou fè komès oswa fè pon aktivman.",
+      "q23": "Èske mwen ka achte TigerOG dirèkteman?",
+      "a23": "TigerOG ka fè komès sou pisin likidite sou chèn sipòte yo. Tcheke tab Likidite nan paj Kontra yo pou pè komès disponib yo.",
+      "q24": "Èske sa se yon rug pull?",
+      "a24": "Non. Freedom Bridge itilize kontra transparan, verifye san fonksyon admin pou manipile fon yo. Kontra konvèsyon yo pa ka chanje epi likidite a fèmen. Tout kòd la louvri epi verifye sou blòkchèn nan."
     }
+  },
+  "footer": {
+    "builtWith": "Bati avèk",
+    "by": "pa",
+    "rights": "Tout dwa rezève.",
+    "github": "GitHub",
+    "twitter": "Twitter",
+    "telegram": "Telegram",
+    "dextools": "DexTools"
+  },
+  "disclaimer": {
+    "title": "Avètisman",
+    "subtitle": "Enfòmasyon enpòtan sou itilizasyon Freedom Bridge",
+    "sections": {
+      "noFinancialAdvice": {
+        "title": "Pa Gen Konsèy Finansye",
+        "content": "Enfòmasyon yo bay atravè Freedom Bridge se pou enfòmasyon sèlman epi yo pa konstitye konsèy finansye, envestisman, legal, oswa lòt konsèy pwofesyonèl. Toujou fè pwòp rechèch ou epi konsilte pwofesyonèl kalifye anvan ou pran nenpòt desizyon finansye."
+      },
+      "useAtOwnRisk": {
+        "title": "Itilize sou Pwòp Risk Ou",
+        "content": "Itilizasyon Freedom Bridge antyèman sou pwòp risk ou. Pwotokòl la bay 'jan li ye' ak 'jan li disponib' san okenn garanti, eksprime oswa souzantandi. Nou pa garanti aksè kontini, san entèripsyon, oswa sekirize nan sèvis nou yo."
+      },
+      "smartContractRisks": {
+        "title": "Risk Kontra Entelijan",
+        "content": "Entèraksyon avèk kontra entelijan pote risk ki gen ladan, men pa limite a, erè kòd, vilnerabilite, ak eksplwatasyon. Pandan kontra nou yo verifye ak teste, tout risk pa ka elimine. Pa janm envesti plis pase sa ou ka pèmèt pèdi."
+      },
+      "irreversibleTransactions": {
+        "title": "Tranzaksyon ki Pa Ka Defèt",
+        "content": "Tout tranzaksyon blòkchèn, ki gen ladan konvèsyon ak fè pon, final epi pa ka defèt. Verifye tout detay tranzaksyon anvan konfime. Token pèdi oswa mal voye ka pa kapab rekipere."
+      },
+      "thirdPartyServices": {
+        "title": "Sèvis Twazyèm Pati",
+        "content": "Freedom Bridge depann de sèvis twazyèm pati, ki gen ladan Axelar Network pou fè pon atravè chèn. Nou pa responsab pou okenn pwoblèm, reta, oswa pèt ki soti nan sèvis ekstèn sa yo."
+      },
+      "regulatoryCompliance": {
+        "title": "Konfòmite Regilasyon",
+        "content": "Itilizatè yo sèl responsab pou asire konfòmite ak lwa ak règleman aplikab nan jiridiksyon yo. Freedom Bridge ka pa disponib nan tout rejyon, epi itilizatè yo dwe verifye legalite aksè nan zòn yo."
+      }
+    },
+    "lastUpdated": "Dènye Mizajou",
+    "agreement": "Lè ou itilize Freedom Bridge, ou rekonèt ke ou te li, konprann, epi dakò ak avètisman sa a."
+  },
+  "disclaimerModal": {
+    "title": "Avètisman",
+    "description": "Tanpri li avèk atansyon anvan ou kontinye.",
+    "openSource": "Freedom Bridge se yon lojisyèl kòd ouvè. Lè ou itilize pwotokòl sa a, ou aksepte sa ki annapre yo:",
+    "noGuarantees": "Pa Gen Garanti",
+    "noGuaranteesText": "Lojisyèl sa a bay 'jan li ye' san okenn garanti. Itilize sou pwòp risk ou.",
+    "irreversible": "Aksyon ki Pa Ka Defèt",
+    "irreversibleText": "Konvèsyon token ak fè pon pèmanan epi pa ka defèt. Verifye tout detay yo.",
+    "userResponsibility": "Responsablite Itilizatè",
+    "userResponsibilityText": "Ou sèl responsab pou tranzaksyon ou yo ak konfòmite avèk lwa lokal yo.",
+    "readMore": "Li Plis",
+    "checkboxLabel": "Mwen konprann epi aksepte kondisyon sa yo",
+    "continueButton": "Kontinye"
   },
   "common": {
     "from": "Soti nan",
     "to": "Ale nan",
     "max": "MAKS",
+    "cancel": "Anile",
     "chainId": "ID Chèn",
     "bscChain": "BSC Chain",
     "insufficientBalance": "Balans pa ase.",

@@ -1,9 +1,10 @@
 {
   "app": {
-    "titleFreedom": "Kalayaan",
-    "titleBridge": "Tulay"
+    "titleFreedom": "Freedom",
+    "titleBridge": "Bridge"
   },
   "nav": {
+    "home": "Home",
     "settings": "Mga Setting",
     "menu": "Menu",
     "preferences": "Mga Kagustuhan",
@@ -16,36 +17,49 @@
     "wiki": "Dokumentasyon / Wiki",
     "contracts": "Mga Kontrata",
     "faq": "FAQ",
-    "logout": "Mag-log out",
     "language": "Wika",
     "languageSearchPlaceholder": "Maghanap ng mga wika",
     "languageNoResults": "Walang nahanap na wika",
     "close": "Isara"
   },
   "addNetworks": {
-    "title": "Magdagdag ng mga Network",
-    "description": "Mag-click ng button sa ibaba upang magdagdag ng mga Network sa iyong wallet. Ginagawa nitong madali ang paglipat sa pagitan ng mga chain habang sinusubukan."
+    "title": "Magdagdag ng mga Network sa Wallet",
+    "description": "I-click ang anumang network upang idagdag ito sa MetaMask, Rabby, o iba pang Web3 wallet",
+    "searchPlaceholder": "Maghanap ng mga network...",
+    "noResults": "Walang nahanap na network",
+    "networkCount": "network"
+  },
+  "addNetwork": {
+    "connectWallet": "Mangyaring ikonekta muna ang iyong wallet",
+    "alreadyPending": "Nakabinbin na ang kahilingan. Suriin ang iyong wallet.",
+    "error": "Nabigong magdagdag ng network. Mangyaring idagdag ito nang manu-mano.",
+    "adding": "Nagdadagdag...",
+    "button": "Magdagdag"
   },
   "tabs": {
     "convert": "I-convert",
     "bridge": "Tulay"
   },
   "convert": {
-    "token": "Token",
-    "selectToken": "Pumili ng Token",
     "balance": "Balanse",
-    "noConvertibleTokens": "Walang ma-convert na token sa {{chainName}}",
-    "convert": "I-convert",
-    "addToWalletLabel": "I-import ang {{symbol}} sa {{chainName}} sa wallet",
     "addToWalletButton": "I-import sa Wallet",
-    "addingToken": "Nagdadagdag...",
-    "addTokenError": "Hindi maidagdag ang token sa wallet",
-    "legacyTokenMissing": "Nawawala ang legacy token para sa chain na ito",
-    "tigerOGMissing": "Nawawala ang TigerOG token para sa chain na ito",
     "networkWarning": {
       "title": "Maling Network",
-      "message": "Ang pag-convert ng token ay magagamit lamang sa BSC Chain.",
-      "description": "Mangyaring lumipat sa BSC Chain sa iyong wallet upang i-convert ang mga token, o mag-navigate sa Bridge tab upang maglipat ng mga token sa pagitan ng mga chain."
+      "message": "Ang pag-convert ng token ay magagamit lamang sa BSC Chain. Mangyaring lumipat sa BSC upang i-convert ang iyong mga legacy token."
+    },
+    "confirmModal": {
+      "title": "Kumpirmahin ang Conversion",
+      "warning": "Iko-convert mo na ang iyong mga token. Mangyaring basahin nang mabuti ang sumusunod bago magpatuloy.",
+      "irreversible": "Ang aksyon na ito ay hindi maibabalik!",
+      "burnExplanation": "Ang iyong mga {{legacySymbol}} token ay permanenteng susunugin at ang katumbas na halaga ng {{newSymbol}} token ay i-mimint sa iyong wallet. Hindi na ito maibabalik.",
+      "positiveNote": "Ang magandang balita: Ang {{newSymbol}} ay ganap na walang buwis — wala nang 10%+ na buwis sa bawat transaksyon.",
+      "confirmQuestion": "I-convert ang {{amount}} {{legacySymbol}} sa {{newSymbol}}?",
+      "confirmButton": "Naiintindihan Ko, I-convert"
+    },
+    "finalConfirmModal": {
+      "title": "Sigurado Ka Ba Talaga?",
+      "message": "Ito na ang huling pagkakataon mong kanselahin. Sa sandaling kumpirmahin mo, ang iyong {{legacySymbol}} ay iko-convert sa {{newSymbol}} at hindi na maibabalik.",
+      "confirmButton": "Oo, I-convert Ngayon"
     }
   },
   "bridge": {
@@ -56,9 +70,7 @@
     "noDestination": "Walang destinasyon",
     "noBridgeableTokens": "Walang ma-bridge na token",
     "bridgeButton": "I-bridge ang mga Token",
-    "getFeeQuote": "Kumuha ng Quote ng Bayad",
-    "viewOnAxelarscan": "Tingnan sa Axelar Explorer",
-    "addDestinationTokenLabel": "I-import ang {{symbol}} sa {{chainName}} sa wallet",
+    "viewOnAxelarscan": "Tingnan sa Axelarscan",
     "addTokenError": "Hindi maidagdag ang token sa wallet",
     "estimatedTime": "Tinatayang oras",
     "recentTransactions": "Mga Kamakailang Transaksyon",
@@ -74,25 +86,11 @@
     "cancel": "Kanselahin",
     "save": "I-save"
   },
-  "wallet": {},
-  "login": {
-    "title": "Maligayang pagdating muli",
-    "subtitle": "Mag-sign in upang magpatuloy sa Freedom Bridge",
-    "emailLabel": "Email",
-    "emailPlaceholder": "pangalan@halimbawa.com",
-    "passwordLabel": "Password",
-    "passwordPlaceholder": "Ilagay ang password",
-    "rememberMe": "Tandaan ako sa device na ito",
-    "submit": "Mag-sign in",
-    "validation": {
-      "required": "Kinakailangan ang email at password.",
-      "invalid": "Di-wastong email o password."
-    }
-  },
   "landing": {
     "banner": {
       "title": "Bago dito?",
-      "message": "Alamin ang tungkol sa Freedom Bridge at kung paano i-bridge ang mga TigerOG token sa mga chain."
+      "message": "Alamin ang tungkol sa Freedom Bridge at kung paano i-bridge ang mga TigerOG token sa mga chain.",
+      "note": "Tandaan: Ang pag-convert ng token ay permanente at hindi na maibabalik."
     },
     "hero": {
       "badge": "Pinapagana ng Axelar",
@@ -104,7 +102,7 @@
     "stats": {
       "messaging": "Axelar Network",
       "networks": "Mga Network Live",
-      "fees": "Mga Bayarin sa Protocol",
+      "fees": "Platform Fee",
       "finality": "Finality"
     },
     "features": {
@@ -112,13 +110,13 @@
       "description": "Ginagamit ng Freedom Bridge ang Axelar ITS upang maghatid ng tuluy-tuloy, secure, at walang buwis na karanasan sa pag-bridge sa {{count}}+ blockchain.",
       "stopDecay": {
         "title": "Itigil ang Pagkabulok",
-        "description": "Sinusunog ng mga legacy token ang 10-11% ng iyong halaga sa bawat pagbili at pagbebenta. Ang pag-wrap sa TigerOG ay agad na humihinto sa pagdurugo na ito, na pinapanatili ang 100% ng iyong halaga.",
+        "description": "Sinusunog ng mga legacy token ang 10-11% ng iyong halaga sa bawat pagbili at pagbebenta. Ang pag-convert sa TigerOG ay agad na humihinto sa pagdurugo na ito, na pinapanatili ang 100% ng iyong halaga.",
         "graphLabel1": "100% Napanatili (TigerOG)",
         "graphLabel2": "-40% Halaga (Legacy 10% Buwis)"
       },
       "conversion": {
         "title": "1:1 Conversion",
-        "description": "Ang kabuuang supply ay hindi nagbabago. Ang mga token ay hawak sa isang secure na migration contract, at isang eksaktong 1:1 na katumbas ay ginagamit. Walang inflation, walang dilution."
+        "description": "Ang kabuuang supply ay hindi nagbabago. Ang mga token ay hawak sa isang secure na conversion contract, at isang eksaktong 1:1 na katumbas ay ginagamit. Walang inflation, walang dilution."
       },
       "multichain": {
         "title": "Multi-Chain",
@@ -130,14 +128,19 @@
         "button": "Simulan ang Pag-bridge"
       }
     },
-    "teaser": {
-      "title": "Gusto mo ba ng ibang barya?",
-      "subtitle": "Ano sa tingin mo ang <lunc>LUNC</lunc>, <crepe>Crepe</crepe>, o <shiba>Shiba</shiba>?"
-    },
     "cta": {
       "title": "Handa nang mag-bridge?",
-      "description": "Sumali sa interchain revolution. Tumatagal nang wala pang isang minuto upang i-wrap ang iyong mga asset at simulan ang pag-bridge sa pamamagitan ng Axelar.",
+      "description": "Sumali sa interchain revolution. Tumatagal nang wala pang isang minuto upang i-convert ang iyong mga token at simulan ang pag-bridge sa pamamagitan ng Axelar.",
       "button": "Ilunsad ang App Ngayon"
+    },
+    "buyTokens": {
+      "badge": "Magsimula",
+      "title": "Kumuha ng mga Asset",
+      "description": "Wala pang mga token? Bilhin ang mga orihinal na token sa PancakeSwap, pagkatapos ay i-convert ang mga ito sa mga bagong multichain na bersyon.",
+      "buyOn": "Bumili sa PancakeSwap",
+      "then": "tapos",
+      "convertTo": "I-convert sa",
+      "buyNow": "Bumili Ngayon"
     }
   },
   "wiki": {
@@ -145,7 +148,7 @@
     "searchPlaceholder": "Maghanap ng dokumentasyon...",
     "header": {
       "title": "Dokumentasyon",
-      "subtitle": "Alamin kung paano i-wrap ang mga legacy token, i-bridge sa mga chain, at isama sa Freedom Bridge."
+      "subtitle": "Alamin kung paano i-convert ang mga legacy token at i-bridge sa mga chain."
     },
     "nav": {
       "gettingStarted": "Pagsisimula",
@@ -153,12 +156,14 @@
       "developers": "Mga Developer",
       "tigerogSupply": "Supply ng TigerOG",
       "lionogSupply": "Supply ng LionOG",
-      "frogogSupply": "Supply ng FrogOG"
+      "frogogSupply": "Supply ng FrogOG",
+      "githubRepo": "GitHub Repository",
+      "axelarDocs": "Axelar ITS Documentation"
     },
     "articles": {
       "whatIs": {
         "title": "Ano ang Freedom Bridge?",
-        "content": "Ang Freedom Bridge ay isang desentralisadong protocol ng bridging na binuo sa Interchain Token Service (ITS) ng Axelar. Idinisenyo ito upang palayain ang mga token mula sa mga limitasyon ng iisang chain at mataas na buwis sa transaksyon. Sa pamamagitan ng pag-wrap ng mga karaniwang token sa mga asset na katugma sa interchain, malayang maililipat ng mga user ang kanilang halaga sa mga suportadong blockchain.",
+        "content": "Ang Freedom Bridge ay isang desentralisadong protocol ng bridging na binuo sa Interchain Token Service (ITS) ng Axelar. Idinisenyo ito upang palayain ang mga token mula sa mga limitasyon ng iisang chain at mataas na buwis sa transaksyon. Sa pamamagitan ng pag-convert ng mga legacy token sa mga asset na katugma sa interchain, malayang maililipat ng mga user ang kanilang halaga sa mga suportadong blockchain.",
         "taxFreeTitle": "Mga Paglilipat na Walang Buwis",
         "taxFreeDesc": "Ang mga legacy token ay madalas na may 10%+ na buwis. Ang mga token ng TigerOG ay may 0% na buwis.",
         "omnichainTitle": "Interchain",
@@ -169,7 +174,7 @@
         "step1": "Ikonekta ang iyong wallet sa source chain (hal., BNB Chain).",
         "step2": "Mag-navigate sa tab na <strong>I-convert</strong>.",
         "step3": "Piliin ang legacy token na gusto mong i-convert.",
-        "step4": "Aprubahan ang kontrata ng Migration upang gastusin ang iyong mga token.",
+        "step4": "Aprubahan ang kontrata ng Conversion upang gastusin ang iyong mga token.",
         "step5": "I-click ang <strong>I-convert</strong> upang ideposito ang iyong mga legacy token at makatanggap ng katumbas na halaga ng \"TigerOG\" token.",
         "note": "<strong>Tandaan:</strong> Ang conversion ay nagkakaroon ng buwis sa transaksyon ng legacy token (sa panahon ng pag-upgrade) kung ang iyong token ay naniningil ng buwis sa mga paglilipat. Gayunpaman, kapag na-convert na sa TigerOG, ang lahat ng kasunod na paglilipat at bridge ay libre sa buwis."
       },
@@ -185,9 +190,9 @@
         "title": "Axelar Network",
         "content": "Ginagamit namin ang Axelar bilang aming interoperability layer. Ang Axelar ay isang desentralisadong network na nag-uugnay sa iba't ibang blockchain, na nagpapagana ng secure na komunikasyon sa cross-chain at paglilipat ng asset. Ang modelo ng seguridad ng Axelar ay umaasa sa isang hanay ng mga validator na walang pahintulot, na nagbibigay ng mataas na antas ng seguridad para sa mga interchain token."
       },
-      "migration": {
-        "title": "Lohika ng Migration",
-        "content": "Ang kontrata ng Migration ay naka-deploy sa origin chain (hal., BSC). Hawak nito ang orihinal na mga legacy token sa kustodiya. Kapag nag-upgrade ka ng mga token, nagdedeposito ka sa kontrata ng Migration. Kapag nag-unwrap ka (kung suportado), sinusunog mo ang representasyon ng TigerOG upang ilabas ang orihinal na mga token. Tinitiyak nito ang mahigpit na 1:1 backing."
+      "conversion": {
+        "title": "Lohika ng Conversion",
+        "content": "Ang kontrata ng Conversion ay naka-deploy sa BSC. Kapag nag-convert ka, ang iyong mga legacy token ay ipinapadala sa dead address (permanenteng sinusunog) at makakatanggap ka ng TigerOG sa 1:1 ratio. Ito ay isang one-way na proseso — ang mga legacy token ay nawawasak at hindi na mababawi."
       },
       "contracts": {
         "title": "Mga Address ng Smart Contract",
@@ -198,7 +203,7 @@
       "security": {
         "title": "Modelo ng Seguridad",
         "content": "Ang seguridad ay binuo sa bawat layer ng Freedom Bridge:",
-        "point1": "<strong>Arkitektura ng Migration:</strong> Ang mga legacy token ay hawak sa mga na-verify, hindi nababagong smart contract.",
+        "point1": "<strong>Arkitektura ng Conversion:</strong> Ang mga legacy token ay permanenteng sinusunog sa pamamagitan ng mga na-verify, hindi nababagong smart contract.",
         "point2": "<strong>Mga Validator ng Axelar:</strong> Ang mga mensahe sa cross-chain ay bine-verify ng desentralisadong network ng Axelar.",
         "point3": "<strong>Pare-parehong Supply:</strong> Pinamamahalaan ng ITS ang pag-mint at pag-burn upang mapanatili ang isang pare-parehong kabuuang supply sa lahat ng chain.",
         "point4": "<strong>Na-audit na Lohika:</strong> Binuo sa mga karaniwang library ng OpenZeppelin at Axelar."
@@ -229,7 +234,7 @@
         "lpLockedDesc": "Ang PancakeSwap liquidity pool ay naglalaman ng mga token ng BNBTiger na ipinares sa BNB. Kapag ang mga LP token ay sinunog (ipinadala sa patay na address), ang mga pinagbabatayan na token sa pool ay nagiging permanenteng naka-lock.",
         "lpBurnedPercent": "Mga LP token na sinunog: 86.18% ng lahat ng LP token",
         "lpLockedPercent": "Samakatuwid, 86.18% ng mga token sa LP ay permanenteng naka-lock",
-        "note": "<strong>Tandaan:</strong> Ang TigerOG ay nagpapanatili ng 1:1 na ratio sa BNBTiger sa panahon ng migration. Ang umiikot na supply ng TigerOG ay tumutugma sa tunay na umiikot na supply ng BNBTiger pagkatapos isaalang-alang ang lahat ng sinunog at naka-lock na mga token.",
+        "note": "<strong>Tandaan:</strong> Ang TigerOG ay nagpapanatili ng 1:1 na ratio sa BNBTiger sa panahon ng conversion. Ang umiikot na supply ng TigerOG ay tumutugma sa tunay na umiikot na supply ng BNBTiger pagkatapos isaalang-alang ang lahat ng sinunog at naka-lock na mga token.",
         "launchData": "<strong>Data ng Paglunsad:</strong> Ang mga numerong ito ay kinalkula sa paglunsad. Ang legacy BNBTiger token ay patuloy na nagsusunog ng mga token sa bawat transaksyon ng pagbili/pagbebenta, kaya ang aktwal na umiikot na supply ay maaaring bahagyang mas mababa kaysa sa ipinakita.",
         "legacyContract": "Kontrata ng BNBTiger Token",
         "ogContract": "Kontrata ng TigerOG Token",
@@ -254,7 +259,7 @@
         "lpLockedDesc": "Ang PancakeSwap liquidity pool ay naglalaman ng mga token ng BNBLion na ipinares sa BNB. Kapag ang mga LP token ay sinunog (ipinadala sa patay na address), ang mga pinagbabatayan na token sa pool ay nagiging permanenteng naka-lock.",
         "lpBurnedPercent": "Mga LP token na sinunog: 99.98% ng lahat ng LP token",
         "lpLockedPercent": "Samakatuwid, 99.98% ng mga token sa LP ay permanenteng naka-lock",
-        "note": "<strong>Tandaan:</strong> Ang LionOG ay nagpapanatili ng 1:1 na ratio sa BNBLion sa panahon ng migration. Ang umiikot na supply ng LionOG ay tumutugma sa tunay na umiikot na supply ng BNBLion pagkatapos isaalang-alang ang lahat ng sinunog at naka-lock na mga token.",
+        "note": "<strong>Tandaan:</strong> Ang LionOG ay nagpapanatili ng 1:1 na ratio sa BNBLion sa panahon ng conversion. Ang umiikot na supply ng LionOG ay tumutugma sa tunay na umiikot na supply ng BNBLion pagkatapos isaalang-alang ang lahat ng sinunog at naka-lock na mga token.",
         "launchData": "<strong>Data ng Paglunsad:</strong> Ang mga numerong ito ay kinalkula sa paglunsad. Ang legacy BNBLion token ay patuloy na nagsusunog ng mga token sa bawat transaksyon ng pagbili/pagbebenta, kaya ang aktwal na umiikot na supply ay maaaring bahagyang mas mababa kaysa sa ipinakita.",
         "legacyContract": "Kontrata ng BNBLion Token",
         "ogContract": "Kontrata ng LionOG Token",
@@ -279,7 +284,7 @@
         "lpLockedDesc": "Ang PancakeSwap liquidity pool ay naglalaman ng mga token ng BNBFrog na ipinares sa BNB. Kapag ang mga LP token ay sinunog (ipinadala sa patay na address), ang mga pinagbabatayan na token sa pool ay nagiging permanenteng naka-lock.",
         "lpBurnedPercent": "Mga LP token na sinunog: 99.31% ng lahat ng LP token",
         "lpLockedPercent": "Samakatuwid, 99.31% ng mga token sa LP ay permanenteng naka-lock",
-        "note": "<strong>Tandaan:</strong> Ang FrogOG ay nagpapanatili ng 1:1 na ratio sa BNBFrog sa panahon ng migration. Ang umiikot na supply ng FrogOG ay tumutugma sa tunay na umiikot na supply ng BNBFrog pagkatapos isaalang-alang ang lahat ng sinunog at naka-lock na mga token.",
+        "note": "<strong>Tandaan:</strong> Ang FrogOG ay nagpapanatili ng 1:1 na ratio sa BNBFrog sa panahon ng conversion. Ang umiikot na supply ng FrogOG ay tumutugma sa tunay na umiikot na supply ng BNBFrog pagkatapos isaalang-alang ang lahat ng sinunog at naka-lock na mga token.",
         "launchData": "<strong>Data ng Paglunsad:</strong> Ang mga numerong ito ay kinalkula sa paglunsad. Ang legacy BNBFrog token ay patuloy na nagsusunog ng mga token sa bawat transaksyon ng pagbili/pagbebenta, kaya ang aktwal na umiikot na supply ay maaaring bahagyang mas mababa kaysa sa ipinakita.",
         "legacyContract": "Kontrata ng BNBFrog Token",
         "ogContract": "Kontrata ng FrogOG Token",
@@ -301,7 +306,7 @@
     "title": "Mga Address ng Kontrata",
     "header": {
       "title": "Mga Smart Contract",
-      "subtitle": "Mga opisyal na address ng deployment para sa mga token, router, at liquidity pool sa buong ecosystem ng Freedom Bridge."
+      "subtitle": "Mga opisyal na address ng deployment para sa mga token at bridge sa buong ecosystem ng Freedom Bridge."
     },
     "tabs": {
       "overview": "Pangkalahatang-ideya",
@@ -310,13 +315,67 @@
       "liquidity": "Liquidity"
     },
     "liquidity": {
-      "title": "Mga Liquidity Pool"
-    }
+      "poolAddress": "Pool Address",
+      "tradeOn": "Mag-trade sa"
+    },
+    "overview": {
+      "interchainTokens": {
+        "title": "Interchain Tokens",
+        "description": "Mga interchain token na na-deploy sa pamamagitan ng Axelar Interchain Token Service (ITS). Ang mga token na ito ay nagpapanatili ng pare-parehong mga address sa lahat ng suportadong network."
+      },
+      "axelarNetwork": {
+        "title": "Axelar Network",
+        "description": "Ang pinagbabatayan na protocol ng pagmemensahe na nagsisiguro sa mga paglilipat sa cross-chain at nagsisiguro ng integridad ng data sa pagitan ng iba't ibang mga blockchain."
+      },
+      "conversionContracts": {
+        "title": "Mga Kontrata ng Conversion",
+        "description": "Responsable para sa pag-convert ng mga legacy token sa mga interchain asset. Pinangangasiwaan ng mga kontratang ito ang logic ng deposito at pag-mint sa origin chain."
+      },
+      "conversionContractsTable": {
+        "title": "Mga Address ng Kontrata ng Conversion",
+        "subtitle": "Ang mga kontratang ito sa BSC ay humahawak ng conversion mula sa mga legacy token patungo sa mga interchain token.",
+        "token": "Token",
+        "legacyToken": "Legacy Token",
+        "conversionContract": "Kontrata ng Conversion",
+        "newToken": "Interchain Token"
+      },
+      "liquidityPools": {
+        "title": "Mga Liquidity Pool",
+        "description": "Mga DEX liquidity pool kung saan maaari kang mag-trade ng mga OG token sa iba't ibang chain."
+      },
+      "liquidityPoolsTable": {
+        "title": "Mga Liquidity Pool",
+        "subtitle": "Mga DEX pool para sa pag-trade ng mga OG token",
+        "token": "Token",
+        "chain": "Chain",
+        "dex": "DEX",
+        "poolAddress": "Pool Address"
+      }
+    },
+    "filterTokens": "I-filter ang mga token...",
+    "interchainAsset": "Interchain Asset sa pamamagitan ng Axelar ITS",
+    "availableOnChains": "Magagamit sa {{count}} na chain",
+    "table": {
+      "chain": "Chain",
+      "tokenAddress": "Address ng Token",
+      "axelarChainName": "Pangalan ng Axelar Chain",
+      "chainId": "ID: {{id}}"
+    },
+    "axelarId": "Axelar ID: {{name}}",
+    "copied": "Kinopya!",
+    "copyAddress": "Kopyahin ang address"
   },
   "faq": {
     "title": "Suporta ng Freedom Bridge",
     "header": "Mga Madalas Itanong",
     "subtitle": "Mga sagot sa mga karaniwang tanong tungkol sa TigerOG, pag-bridge, at Axelar.",
+    "sections": {
+      "gettingStarted": "Pagsisimula",
+      "convertingTrading": "Pag-convert at Pag-trade",
+      "bridging": "Pag-bridge",
+      "technical": "Teknikal",
+      "securityRisks": "Seguridad at Mga Panganib"
+    },
     "cta": {
       "title": "May mga tanong pa ba?",
       "description": "Sumali sa aming komunidad sa Telegram o tingnan ang detalyadong Wiki para sa mga teknikal na gabay.",
@@ -327,25 +386,112 @@
       "q1": "Ano ang layunin ng pag-convert ng aking mga token?",
       "a1": "Ang pag-convert ng iyong mga token sa TigerOG ay nag-aalis ng buwis sa transaksyon (kadalasang 10-12%) na nauugnay sa legacy token. Pinapayagan ka rin nitong i-bridge ang mga token na ito sa iba pang mga blockchain tulad ng Ethereum, Base, at higit pa sa pamamagitan ng Axelar, na nagpapagana ng access sa mga bagong ecosystem.",
       "q2": "Ligtas bang gamitin ang Freedom Bridge?",
-      "a2": "Oo. Gumagamit ang protocol ng secure na Migration contract at Axelar Interchain Token Service. Kapag nag-convert ka, ang iyong BNBTiger ay permanenteng sinusunog at natatanggap mo ang TigerOG sa 1:1 na ratio. Tinitiyak ng mekanismo ng pagsunog na ang kabuuang supply ay maayos na pinamamahalaan sa lahat ng chain.",
+      "a2": "Oo. Gumagamit ang protocol ng secure na Conversion contract at Axelar Interchain Token Service. Kapag nag-convert ka, ang iyong BNBTiger ay permanenteng sinusunog at natatanggap mo ang TigerOG sa 1:1 na ratio. Tinitiyak ng mekanismo ng pagsunog na ang kabuuang supply ay maayos na pinamamahalaan sa lahat ng chain.",
       "q3": "Mayroon bang mga bayarin?",
       "a3": "Ang Freedom Bridge mismo ay hindi naniningil ng bayad para sa pag-convert. Babayaran mo lang ang karaniwang mga bayarin sa gas ng blockchain. Ang pag-bridge sa pagitan ng mga chain ay nagsasangkot ng cross-chain gas fee na binabayaran sa Axelar upang masakop ang mga gastos sa pag-relay.",
       "q4": "Ano ang mangyayari kung mawala ko ang aking mga token?",
       "a4": "Ang mga token ng TigerOG ay kumikilos tulad ng anumang iba pang ERC20 token. Kung mawalan ka ng access sa iyong wallet, hindi na mababawi ang mga ito. Laging panatilihing secure ang iyong mga pribadong key at mga recovery phrase.",
       "q5": "Maaari ko bang i-convert ang aking mga TigerOG token pabalik sa BNBTiger?",
-      "a5": "Hindi. Ang migration ay isang one-way na conversion. Kapag na-convert mo ang BNBTiger sa TigerOG, ang iyong mga BNBTiger token ay permanenteng sinusunog (ipinadala sa patay na address). Ito ay sa pamamagitan ng disenyo — ang TigerOG ay ang na-upgrade, walang buwis na bersyon na nilalayong palitan nang buo ang legacy token.",
+      "a5": "Hindi. Ang conversion ay one-way. Kapag na-convert mo ang BNBTiger sa TigerOG, ang iyong mga legacy token ay permanenteng naka-lock sa kontrata ng conversion. Ito ay sa pamamagitan ng disenyo — ang TigerOG ay ang na-upgrade, walang buwis na bersyon na nilalayong palitan nang buo ang legacy token.",
       "q6": "Aling mga network ang suportado?",
       "a6": "Sinusuportahan namin ang maraming EVM chain sa pamamagitan ng Axelar, kabilang ang BNB Chain, Ethereum, Base, at higit pa. Tingnan ang Wiki para sa buong listahan ng mga suportadong network.",
       "q7": "Gaano katagal ang pag-bridge?",
-      "a7": "Ang bilis ng pag-bridge ay depende sa finality ng source chain at pag-relay ng Axelar. Karaniwan, ang paglipat sa pagitan ng mga chain ay tumatagal ng humigit-kumulang 2-5 minuto.",
+      "a7": "Ang oras ng pag-bridge ay depende sa kung saang chain ka magpapadala MULA:\n\n• Ethereum: 15-20 min (nangangailangan ng higit pang mga kumpirmasyon)\n• BSC & Avalanche: 2-4 min (pinakamabilis)\n• Base, Linea, Polygon: 3-5 min\n\nIpinapakita ng app ang tinatayang oras bago ka mag-bridge.",
       "q8": "Ano ang mga umiikot na supply ng mga OG token?",
-      "a8": "Ang bawat OG token ay may nakapirming umiikot na supply na nagmula sa orihinal nitong BNB token, na isinasaalang-alang ang mga sinunog na token, naipit na balanse ng kontrata, at naka-lock na LP. TigerOG: ~3.66 septillion (36.62% ng orihinal). LionOG: ~3.83 septillion (38.33% ng orihinal). FrogOG: ~8.39 septillion (83.86% ng orihinal). Tingnan ang Wiki para sa mga detalyadong pagkasira ng bawat token."
+      "a8": "Ang bawat OG token ay may nakapirming umiikot na supply na nagmula sa orihinal nitong BNB token, na isinasaalang-alang ang mga sinunog na token, naipit na balanse ng kontrata, at naka-lock na LP:\n\n• TigerOG: ~3.66 septillion (36.62% ng orihinal)\n• LionOG: ~3.83 septillion (38.33% ng orihinal)\n• FrogOG: ~8.39 septillion (83.86% ng orihinal)\n\nTingnan ang Wiki para sa mga detalyadong pagkasira.",
+      "q9": "Bakit hindi renounced ang OG contract?",
+      "a9": "Ang pag-renounce sa kontrata ay mag-aalis ng kakayahang bumuo at magdagdag ng mga bagong chain sa hinaharap. Habang ang kontrata ay hindi i-renounce sa nakikinita na hinaharap, maraming pirma ang kinakailangan upang gumawa ng anumang mga pagbabago. Gayundin, walang mga token o buwis ang inilalaan sa team.",
+      "q10": "Bakit mintable ang OG contract?",
+      "a10": "Ang cross-chain bridging ay nangangailangan ng mint/burn functionality - ang mga token ay sinusunog kapag umaalis sa isang chain at mini-mint kapag dumating. Pinapanatili nitong pare-pareho ang kabuuang supply sa lahat ng network. Ang pag-mint ay kinokontrol ng isang multisig Safe wallet.",
+      "q11": "Aalis ba ang TigerOG sa BNB Chain para sa Axelar?",
+      "a11": "Hindi. Ang Axelar ay hindi isang blockchain - ito ang bridging protocol na nag-uugnay sa mga chain. Ang BNB Chain ay nananatiling origin chain kung saan mo iko-convert ang mga legacy token. Binibigyang-daan lang ng Axelar ang iyong mga token na lumipat sa pagitan ng BNB, Ethereum, Base, at iba pang suportadong network.",
+      "q12": "Nasaan ang aking mga token?",
+      "a12": "Tiyaking idagdag ang chain at address ng token sa iyong wallet. Mahahanap mo ang lahat ng address ng kontrata sa pahina ng Mga Kontrata. Ang Tiger team ay gumagamit ng Rabby wallet na nagpapadali sa pamamahala ng maraming chain.",
+      "q13": "Bakit ang tagal ng pag-bridge mula sa Ethereum o Base?",
+      "a13": "Nangangailangan ang Ethereum ng dalawang epoch bago i-finalize ang mga transaksyon para sa maximum na seguridad. Dahil ang Base ay nagse-settle sa Ethereum, namamana nito ang pagkaantala na ito. Inuuna nito ang seguridad kaysa bilis - ligtas ang iyong mga token, maging matiyaga lang.",
+      "q14": "Ano ang mangyayari kung mananatili ako sa aking orihinal na token at hindi mag-convert?",
+      "a14": "Walang pagmamadali sa pag-convert. Ang BNBTiger at TigerOG ay palaging magkakaroon ng magkakaibang liquidity pool, market cap, at iba pa. Ngunit ang BNBTiger ay may mataas na buwis at ang TigerOG ay walang buwis para sa pag-trade. Dahil ang mga buwis sa orihinal ay hindi ginagamit upang suportahan ang proyekto, ang pag-unlad ay ginagawa ng CTO team para sa TigerOG. Ang Freedom Bridge at multi-chain ay para lamang sa TigerOG.",
+      "q15": "Mayroon bang buwis sa pag-convert? May buwis ba ang TigerOG?",
+      "a15": "Wala. Nagkakahalaga lang ito ng normal na gas fee para mag-convert at mag-trade. Walang karagdagang buwis o bayarin, at ang TigerOG ay isang kontratang walang buwis.",
+      "q16": "Maaari ko bang bilhin at i-trade ang TigerOG nang direkta?",
+      "a16": "Hindi pa. Hindi nangolekta ang team ng mga bayarin at buwis upang mapondohan ang sapat na malalaking liquidity pool. Upang makakuha ng TigerOG ngayon, kailangan mong bumili o nagmamay-ari na ng orihinal at mag-convert. Kapag nagmamay-ari ka na ng TigerOG, hindi ito madaling ma-trade hanggang sa dumating ang mga mamumuhunan upang magdagdag sa liquidity pool.",
+      "q17": "Bakit mukhang napalaki ang market cap ng TigerOG?",
+      "a17": "Kung mas maliit ang liquidity pool, mas malaki ang epekto ng anumang maliit na trade sa ipinapakitang market cap. Nalulutas ito kapag dumating ang mga mamumuhunan upang maging mga liquidity provider.",
+      "q18": "Anong mga pag-audit sa seguridad ang ginawa?",
+      "a18": "Ang Freedom Bridge ay hindi sumailalim sa isang pormal na third-party audit. Gayunpaman, ang code ng converter contract ay batay sa SHx converter na binuo ng Stronghold team (mga dating developer ng XRP at Stellar na nagpresenta kamakailan sa Davos). Ang imprastraktura ng bridging ay pinapagana ng Axelar, na sumailalim sa maraming pag-audit sa seguridad.",
+      "q19": "Paano pinoprotektahan ng Freedom Bridge laban sa mga hack o pagsasamantala?",
+      "a19": "Maraming hakbang ang nakalagay:\n\n• Ang converter ay may hawak lamang ng eksaktong umiikot na supply na kailangan - walang labis na mga token na maaaring pagsamantalahan\n• Ang converter ay walang mga pahintulot sa pag-mint\n• Ang lahat ng code ng kontrata ay na-verify on-chain at open source\n• Ang mga pahintulot ng token ay na-secure sa isang Safe.global multisig wallet\n• Ang pag-bridge ay pinangangasiwaan ng subok na imprastraktura ng Axelar",
+      "q20": "Hindi ba maibabalik ang pag-bridge? Paano kung mabigo ang paglilipat?",
+      "a20": "Ang mga paglilipat ng bridge ay bihirang maipit dahil sa hindi sapat na gas o pagsisikip ng network. Kung mangyari ito, maaari mong subaybayan ang iyong transaksyon sa Axelarscan at manu-manong magdagdag ng gas upang makumpleto ito. Nagbibigay ang Axelar ng mga tool sa pagbawi ng transaksyon - hindi mawawala ang iyong mga token.",
+      "q21": "Ano ang mga panganib na nauugnay sa paggamit ng Freedom Bridge?",
+      "a21": "Tulad ng anumang protocol ng DeFi, may mga likas na panganib kabilang ang panganib sa smart contract, panganib sa bridge, at pagkasumpungin ng merkado. Inirerekomenda naming gawin ang iyong sariling pananaliksik (DYOR) at gumamit lamang ng mga pondo na kaya mong mawala. Tingnan ang aming legal na pagtatatuwa para sa higit pang impormasyon.",
+      "q22": "Maaari ko bang i-convert ang bagong kontrata ng BNB Tiger Inu (Setyembre 2025)?",
+      "a22": "Hindi. Sinusuportahan ng Freedom Bridge ang orihinal/legacy na BNB Tiger token na inilunsad ilang taon na ang nakakaraan - hindi ang bagong kontrata na ginawa noong Setyembre 2025. Ang Freedom Bridge ay binuo para sa community takeover (CTO) ng mga orihinal na token ng Tiger, Lion, at Frog.",
+      "q23": "Paano ako magdaragdag ng liquidity?",
+      "a23": "Ang pagdaragdag ng liquidity ay isang advanced na aktibidad ng DeFi na may mga panganib kabilang ang impermanent loss. Kung may karanasan ka sa pagbibigay ng liquidity sa mga DEX tulad ng PancakeSwap o Uniswap, pareho ang proseso - ipares ang OG token sa isang base asset.",
+      "q24": "Maaari bang mag-rug pull ang team?",
+      "a24": "Hindi. Walang mekanismo para sa rug pull. Walang mga token o buwis ang inilalaan sa team, at hindi kami nangongolekta ng anumang mga bayarin sa pag-bridge — ang mga iyon ay napupunta sa Axelar para sa mga gastos sa pag-relay. Ang team ay mga may hawak na tulad mo, na binubuo ito sa personal na gastos. Ang tanging wallet ng team ay isang pampublikong marketing wallet na pinondohan ng mga donasyon ng komunidad. Kinokontrol ng multisig Safe wallet ang mga pahintulot ng kontrata tulad ng pag-pause ng pagpapadala sa mga chain sakaling magkaroon ng emergency, ngunit hindi ma-access o ma-redirect ang mga pondo ng user."
     }
+  },
+  "footer": {
+    "wiki": "Wiki",
+    "contracts": "Mga Kontrata",
+    "faq": "FAQ",
+    "disclaimer": "Pagtatatuwa",
+    "github": "GitHub"
+  },
+  "disclaimer": {
+    "title": "Legal na Pagtatatuwa",
+    "header": "Mahalagang Legal na Paunawa",
+    "subtitle": "Mangyaring basahin nang mabuti ang pagtatatuwa na ito bago gamitin ang Freedom Bridge.",
+    "sections": {
+      "noInvestmentAdvice": {
+        "title": "Walang Payo sa Pamumuhunan",
+        "content": "Ang impormasyong ibinigay sa Freedom Bridge ay hindi bumubuo ng payo sa pamumuhunan, payo sa pananalapi, payo sa pangangalakal, o anumang iba pang uri ng payo. Hindi mo dapat ituring ang alinman sa nilalaman bilang ganoon. Hindi inirerekomenda ng Freedom Bridge na ang anumang cryptocurrency ay dapat bilhin, ibenta, o hawakan mo. Gawin ang iyong sariling due diligence at kumunsulta sa iyong tagapayo sa pananalapi bago gumawa ng anumang mga desisyon sa pamumuhunan."
+      },
+      "risksOfUse": {
+        "title": "Mga Panganib ng Paggamit",
+        "content": "Ang mga merkado ng cryptocurrency ay pabagu-bago at hindi mahuhulaan. Sa pamamagitan ng paggamit ng Freedom Bridge, kinikilala at tinatanggap mo na:\n\n• Ang mga smart contract ay maaaring maglaman ng mga bug o kahinaan na maaaring magresulta sa pagkawala ng mga pondo\n• Ang mga cross-chain bridge ay nagdadala ng mga likas na panganib kabilang ang ngunit hindi limitado sa: mga pagkabigo ng oracle, pakikipagsabwatan ng validator, at pagsisikip ng network\n• Ang mga halaga ng token ay maaaring magbago nang husto at maaari mong mawala ang ilan o lahat ng iyong pamumuhunan\n• Ang mga transaksyon sa mga network ng blockchain ay hindi maibabalik\n• Ang mga bayarin sa network at mga gastos sa gas ay lampas sa aming kontrol at maaaring mag-iba nang malaki"
+      },
+      "noWarranties": {
+        "title": "Walang Mga Garantiya",
+        "content": "Ang Freedom Bridge ay ibinibigay nang \"as is\" at \"as available\" nang walang anumang mga garantiya ng anumang uri, ipinahayag man o ipinahiwatig. Hindi namin ginagarantiya na ang serbisyo ay hindi maaantala, secure, o walang error. Wala kaming ginagawang mga garantiya tungkol sa katumpakan, pagiging maaasahan, o pagkakumpleto ng anumang impormasyon na ibinigay sa pamamagitan ng platform."
+      },
+      "limitationOfLiability": {
+        "title": "Limitasyon ng Pananagutan",
+        "content": "Sa pinakamataas na lawak na pinahihintulutan ng batas, ang Freedom Bridge, ang mga developer, contributor, at affiliate nito ay hindi mananagot para sa anumang direkta, hindi direkta, incidental, espesyal, kinahinatnan, o punitive na pinsala na nagmumula sa o nauugnay sa iyong paggamit ng platform, kabilang ang ngunit hindi limitado sa pagkawala ng kita, pagkawala ng data, o pagkawala ng mga asset ng cryptocurrency."
+      },
+      "thirdPartyServices": {
+        "title": "Mga Serbisyo ng Third-Party",
+        "content": "Ang Freedom Bridge ay nagsasama sa mga serbisyo ng third-party kabilang ang Axelar Network para sa cross-chain bridging. Hindi kami responsable para sa mga aksyon, nilalaman, impormasyon, o data ng mga third party na ito. Ang iyong paggamit ng mga serbisyo ng third-party ay napapailalim sa kani-kanilang mga tuntunin at kundisyon."
+      },
+      "regulatoryCompliance": {
+        "title": "Pagsunod sa Regulasyon",
+        "content": "Ang mga regulasyon ng cryptocurrency ay nag-iiba ayon sa hurisdiksyon. Ikaw ang tanging responsable sa pagtiyak na ang iyong paggamit ng Freedom Bridge ay sumusunod sa lahat ng naaangkop na batas at regulasyon sa iyong hurisdiksyon. Ang Freedom Bridge ay hindi gumagawa ng anumang mga representasyon tungkol sa legalidad ng mga serbisyo sa anumang hurisdiksyon."
+      },
+      "dyor": {
+        "title": "Gawin ang Iyong Sariling Pananaliksik",
+        "content": "Laging gawin ang iyong sariling pananaliksik (DYOR) bago makipag-ugnayan sa anumang protocol ng DeFi. I-verify ang mga address ng kontrata, unawain ang mga mekanika ng anumang token na nakikipag-ugnayan ka, at huwag mamuhunan nang higit pa sa kaya mong mawala."
+      }
+    },
+    "acknowledgment": "Sa pamamagitan ng paggamit ng Freedom Bridge, kinikilala mo na nabasa, naunawaan, at sumasang-ayon kang sumunod sa pagtatatuwa na ito.",
+    "lastUpdated": "Huling na-update: Enero 2026"
+  },
+  "disclaimerModal": {
+    "title": "Mahalagang Pagtatatuwa",
+    "subtitle": "Mangyaring basahin at kilalanin bago magpatuloy.",
+    "noAdvice": "Ang Freedom Bridge ay hindi nagbibigay ng payo sa pamumuhunan, pananalapi, o pangangalakal. Ang mga pamumuhunan sa cryptocurrency ay pabagu-bago at mapanganib.",
+    "risks": "Sa pamamagitan ng paggamit ng platform na ito, kinikilala mo na ang mga smart contract ay maaaring maglaman ng mga kahinaan, ang mga cross-chain bridge ay nagdadala ng mga likas na panganib, at ang mga transaksyon ay hindi maibabalik.",
+    "dyor": "Laging gawin ang iyong sariling pananaliksik (DYOR) at gumamit lamang ng mga pondo na kaya mong mawala.",
+    "fullDisclaimer": "Para sa buong detalye, tingnan ang aming",
+    "fullDisclaimerLink": "Legal na Pagtatatuwa",
+    "accept": "Naiintindihan Ko at Tinatanggap"
   },
   "common": {
     "from": "Mula sa",
     "to": "Patungo sa",
     "max": "MAX",
+    "cancel": "Kanselahin",
     "chainId": "Chain ID",
     "bscChain": "BSC Chain",
     "insufficientBalance": "Hindi sapat na balanse.",
@@ -360,5 +506,6 @@
     "transactionFailed": "Nabigo ang transaksyon",
     "search": "Maghanap",
     "backToApp": "Bumalik sa App"
-  }
+  },
+  "file_path": "public/locales/tl/translation.json"
 }

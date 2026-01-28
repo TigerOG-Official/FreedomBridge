@@ -1,6 +1,6 @@
 import { useState, useMemo } from "react";
 import { motion } from "motion/react";
-import { ArrowLeft, Search, Copy, Check, ExternalLink, Layers, ShieldCheck, Globe } from "lucide-react";
+import { ArrowLeft, Search, Copy, Check, ExternalLink, Layers, ShieldCheck, Globe, Droplets } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "./ui/button";
 import { useTranslation } from "react-i18next";
@@ -84,6 +84,94 @@ const CONVERSION_CONTRACTS = [
     legacyAddress: "0x64da67A12a46f1DDF337393e2dA12eD0A507Ad3D",
     conversionAddress: "0xbF4b1F662247147afCefecbdEa5590fd103dF1FB",
     newAddress: "0x0E3b564bdD09348840811C7e1106BbD0e98b5b4f",
+  },
+];
+
+// Liquidity pools
+const LIQUIDITY_POOLS = [
+  // TigerOG
+  {
+    token: "TigerOG",
+    chainId: 56,
+    chainName: "BNB Chain",
+    dex: "PancakeSwap",
+    poolAddress: "0x26ceae47acb9aab7c70b7021e6e5118dd1da1fb3",
+    explorerUrl: "https://bscscan.com/address/0x26ceae47acb9aab7c70b7021e6e5118dd1da1fb3",
+    dexUrl: "https://pancakeswap.finance/info/v2/pairs/0x26ceae47acb9aab7c70b7021e6e5118dd1da1fb3",
+  },
+  {
+    token: "TigerOG",
+    chainId: 1,
+    chainName: "Ethereum",
+    dex: "Uniswap",
+    poolAddress: "0x0f29973c9117f287177efa54d0feb371cf578885",
+    explorerUrl: "https://etherscan.io/address/0x0f29973c9117f287177efa54d0feb371cf578885",
+    dexUrl: "https://app.uniswap.org/explore/pools/ethereum/0x0f29973c9117f287177efa54d0feb371cf578885",
+  },
+  {
+    token: "TigerOG",
+    chainId: 8453,
+    chainName: "Base",
+    dex: "Uniswap",
+    poolAddress: "0x6b9667bf054d3d7f48c411b261e35a0dff3c5d77",
+    explorerUrl: "https://basescan.org/address/0x6b9667bf054d3d7f48c411b261e35a0dff3c5d77",
+    dexUrl: "https://app.uniswap.org/explore/pools/base/0x6b9667bf054d3d7f48c411b261e35a0dff3c5d77",
+  },
+  // LionOG
+  {
+    token: "LionOG",
+    chainId: 56,
+    chainName: "BNB Chain",
+    dex: "PancakeSwap",
+    poolAddress: "0xec5c0d52feddd893569bd07ff1fa1b9703b04a7c",
+    explorerUrl: "https://bscscan.com/address/0xec5c0d52feddd893569bd07ff1fa1b9703b04a7c",
+    dexUrl: "https://pancakeswap.finance/info/v2/pairs/0xec5c0d52feddd893569bd07ff1fa1b9703b04a7c",
+  },
+  {
+    token: "LionOG",
+    chainId: 1,
+    chainName: "Ethereum",
+    dex: "Uniswap",
+    poolAddress: "0x20f0f72f518026ef8c11401fb12ab0bcae85ce87",
+    explorerUrl: "https://etherscan.io/address/0x20f0f72f518026ef8c11401fb12ab0bcae85ce87",
+    dexUrl: "https://app.uniswap.org/explore/pools/ethereum/0x20f0f72f518026ef8c11401fb12ab0bcae85ce87",
+  },
+  {
+    token: "LionOG",
+    chainId: 8453,
+    chainName: "Base",
+    dex: "Uniswap",
+    poolAddress: "0x5a6d4769463c8aeb188aa45363f999a6f807e9e9",
+    explorerUrl: "https://basescan.org/address/0x5a6d4769463c8aeb188aa45363f999a6f807e9e9",
+    dexUrl: "https://app.uniswap.org/explore/pools/base/0x5a6d4769463c8aeb188aa45363f999a6f807e9e9",
+  },
+  // FrogOG
+  {
+    token: "FrogOG",
+    chainId: 56,
+    chainName: "BNB Chain",
+    dex: "PancakeSwap",
+    poolAddress: "0x575c344853bc3d258b4c2d1e57b93aa26a457350",
+    explorerUrl: "https://bscscan.com/address/0x575c344853bc3d258b4c2d1e57b93aa26a457350",
+    dexUrl: "https://pancakeswap.finance/info/v2/pairs/0x575c344853bc3d258b4c2d1e57b93aa26a457350",
+  },
+  {
+    token: "FrogOG",
+    chainId: 1,
+    chainName: "Ethereum",
+    dex: "Uniswap",
+    poolAddress: "0xc92a638a4e29d05caa40a201fb0c92acd83ef805",
+    explorerUrl: "https://etherscan.io/address/0xc92a638a4e29d05caa40a201fb0c92acd83ef805",
+    dexUrl: "https://app.uniswap.org/explore/pools/ethereum/0xc92a638a4e29d05caa40a201fb0c92acd83ef805",
+  },
+  {
+    token: "FrogOG",
+    chainId: 8453,
+    chainName: "Base",
+    dex: "Uniswap",
+    poolAddress: "0x2524ec2b91a6566a6df0260a8a80989e4b556cb4",
+    explorerUrl: "https://basescan.org/address/0x2524ec2b91a6566a6df0260a8a80989e4b556cb4",
+    dexUrl: "https://app.uniswap.org/explore/pools/base/0x2524ec2b91a6566a6df0260a8a80989e4b556cb4",
   },
 ];
 
@@ -181,10 +269,11 @@ export default function ContractsPage() {
           </section>
 
           <Tabs defaultValue="overview" className="space-y-6" onValueChange={setActiveTab}>
-            <TabsList className="grid w-full grid-cols-3 lg:w-[300px]">
+            <TabsList className="grid w-full grid-cols-4 lg:w-[400px]">
               <TabsTrigger value="overview">{t('contracts.tabs.overview', 'Overview')}</TabsTrigger>
               <TabsTrigger value="by-token">{t('contracts.tabs.byToken', 'By Token')}</TabsTrigger>
               <TabsTrigger value="by-chain">{t('contracts.tabs.byChain', 'By Chain')}</TabsTrigger>
+              <TabsTrigger value="liquidity">{t('contracts.tabs.liquidity', 'Liquidity')}</TabsTrigger>
             </TabsList>
 
             <TabsContent value="overview" className="space-y-6">
@@ -295,6 +384,7 @@ export default function ContractsPage() {
                    </div>
                  </CardContent>
                </Card>
+
             </TabsContent>
 
             <TabsContent value="by-token" className="space-y-6">
@@ -427,6 +517,60 @@ export default function ContractsPage() {
                        </Card>
                      );
                    })}
+              </div>
+            </TabsContent>
+
+            <TabsContent value="liquidity" className="space-y-6">
+              <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+                {LIQUIDITY_POOLS.map((pool, index) => (
+                  <Card key={index} className="border-muted bg-card h-full">
+                    <CardHeader className="pb-3 border-b border-border/40">
+                      <CardTitle className="text-lg flex items-center gap-2">
+                        {CHAIN_ICONS[pool.chainId] && (
+                          <img
+                            src={CHAIN_ICONS[pool.chainId]}
+                            alt={pool.chainName}
+                            className="w-6 h-6 rounded-full"
+                          />
+                        )}
+                        {pool.token} on {pool.chainName}
+                      </CardTitle>
+                      <CardDescription className="text-xs">
+                        {pool.dex}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent className="pt-4 space-y-4">
+                      <div className="space-y-1">
+                        <div className="font-medium text-sm text-foreground flex justify-between">
+                          <span>{t('contracts.liquidity.poolAddress', 'Pool Address')}</span>
+                        </div>
+                        <div className="text-xs font-mono bg-muted/30 p-2 rounded border border-border/50 flex justify-between items-center group">
+                          <span className="truncate">{pool.poolAddress}</span>
+                          <CopyButton text={pool.poolAddress} className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity" copiedText={t('contracts.copied')} copyText={t('contracts.copyAddress')} />
+                        </div>
+                      </div>
+                      <div className="flex gap-2 pt-2">
+                        <a
+                          href={pool.dexUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex-1 inline-flex items-center justify-center gap-2 px-3 py-2 text-sm font-medium rounded-md bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
+                        >
+                          <Droplets className="w-4 h-4" />
+                          {t('contracts.liquidity.tradeOn', 'Trade on')} {pool.dex}
+                        </a>
+                        <a
+                          href={pool.explorerUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center justify-center gap-2 px-3 py-2 text-sm font-medium rounded-md border border-border hover:bg-muted/50 transition-colors"
+                        >
+                          <ExternalLink className="w-4 h-4" />
+                        </a>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
               </div>
             </TabsContent>
           </Tabs>

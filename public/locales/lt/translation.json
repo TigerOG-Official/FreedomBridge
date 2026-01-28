@@ -4,6 +4,7 @@
     "titleBridge": "Tiltas"
   },
   "nav": {
+    "home": "Pagrindinis",
     "settings": "Nustatymai",
     "menu": "Meniu",
     "preferences": "Nuostatos",
@@ -16,36 +17,49 @@
     "wiki": "Dokumentacija / Wiki",
     "contracts": "Sutartys",
     "faq": "DUK",
-    "logout": "Atsijungti",
     "language": "Kalba",
     "languageSearchPlaceholder": "Ieškoti kalbų",
     "languageNoResults": "Kalbų nerasta",
     "close": "Uždaryti"
   },
   "addNetworks": {
-    "title": "Pridėti Tinklus",
-    "description": "Spustelėkite mygtuką žemiau, kad pridėtumėte Tinklus į savo piniginę. Tai palengvina perjungimą tarp grandinių testavimo metu."
+    "title": "Pridėti Tinklus į Piniginę",
+    "description": "Spustelėkite bet kurį tinklą, kad pridėtumėte jį į MetaMask, Rabby ar kitas Web3 pinigines",
+    "searchPlaceholder": "Ieškoti tinklų...",
+    "noResults": "Tinklų nerasta",
+    "networkCount": "tinklas"
+  },
+  "addNetwork": {
+    "connectWallet": "Pirmiausia prijunkite savo piniginę",
+    "alreadyPending": "Užklausa jau laukiama. Patikrinkite savo piniginę.",
+    "error": "Nepavyko pridėti tinklo. Prašome pridėti rankiniu būdu.",
+    "adding": "Pridedama...",
+    "button": "Pridėti"
   },
   "tabs": {
     "convert": "Konvertuoti",
     "bridge": "Tiltas"
   },
   "convert": {
-    "token": "Žetonas",
-    "selectToken": "Pasirinkite Žetoną",
     "balance": "Likutis",
-    "noConvertibleTokens": "{{chainName}} nėra konvertuojamų žetonų",
-    "convert": "Konvertuoti",
-    "addToWalletLabel": "Importuoti {{symbol}} iš {{chainName}} į piniginę",
     "addToWalletButton": "Importuoti į Piniginę",
-    "addingToken": "Pridedama…",
-    "addTokenError": "Nepavyko pridėti žetono į piniginę",
-    "legacyTokenMissing": "Trūksta senojo žetono šiai grandinei",
-    "tigerOGMissing": "Trūksta TigerOG žetono šiai grandinei",
     "networkWarning": {
       "title": "Neteisingas Tinklas",
-      "message": "Žetonų konversija galima tik BSC Grandinėje.",
-      "description": "Prašome perjungti į BSC Grandinę savo piniginėje, kad konvertuotumėte žetonus, arba eikite į Tilto skirtuką, kad pervestumėte žetonus tarp grandinių."
+      "message": "Žetonų konversija galima tik BSC Grandinėje. Prašome perjungti į BSC, kad konvertuotumėte senuosius žetonus."
+    },
+    "confirmModal": {
+      "title": "Patvirtinti Konversiją",
+      "warning": "Jūs ruošiatės konvertuoti savo žetonus. Prašome atidžiai perskaityti prieš tęsiant.",
+      "irreversible": "Šis veiksmas yra negrįžtamas!",
+      "burnExplanation": "Jūsų {{legacySymbol}} žetonai bus visam laikui sudeginti nusiunčiant juos į mirusį adresą. Jų negalima atkurti ar konvertuoti atgal.",
+      "positiveNote": "Privalumas: {{newSymbol}} yra visiškai be mokesčių — jokių 10%+ mokesčių kiekvienai transakcijai.",
+      "confirmQuestion": "Konvertuoti {{amount}} {{legacySymbol}} į {{newSymbol}}?",
+      "confirmButton": "Aš Suprantu, Konvertuoti"
+    },
+    "finalConfirmModal": {
+      "title": "Ar Tikrai Esate Tikri?",
+      "message": "Tai jūsų paskutinė galimybė atšaukti. Patvirtinus, jūsų {{legacySymbol}} bus konvertuoti į {{newSymbol}} ir negalės būti konvertuoti atgal.",
+      "confirmButton": "Taip, Konvertuoti Dabar"
     }
   },
   "bridge": {
@@ -55,10 +69,8 @@
     "selectDestinationPlaceholder": "Pasirinkite paskirties vietą",
     "noDestination": "Nėra paskirties vietos",
     "noBridgeableTokens": "Nėra tilto žetonų",
-    "bridgeButton": "Tilto Žetonai",
-    "getFeeQuote": "Gauti Mokesčio Pasiūlymą",
-    "viewOnAxelarscan": "Peržiūrėti Axelar Explorer",
-    "addDestinationTokenLabel": "Importuoti {{symbol}} iš {{chainName}} į piniginę",
+    "bridgeButton": "Perkelti Žetonus",
+    "viewOnAxelarscan": "Peržiūrėti Axelarscan",
     "addTokenError": "Nepavyko pridėti žetono į piniginę",
     "estimatedTime": "Numatomas laikas",
     "recentTransactions": "Naujausios transakcijos",
@@ -74,70 +86,61 @@
     "cancel": "Atšaukti",
     "save": "Išsaugoti"
   },
-  "wallet": {},
-  "login": {
-    "title": "Sveiki sugrįžę",
-    "subtitle": "Prisijunkite, kad tęstumėte Laisvės Tiltą",
-    "emailLabel": "El. paštas",
-    "emailPlaceholder": "vardas@pavyzdys.com",
-    "passwordLabel": "Slaptažodis",
-    "passwordPlaceholder": "Įveskite slaptažodį",
-    "rememberMe": "Prisiminti mane šiame įrenginyje",
-    "submit": "Prisijungti",
-    "validation": {
-      "required": "El. paštas ir slaptažodis yra privalomi.",
-      "invalid": "Neteisingas el. paštas arba slaptažodis."
-    }
-  },
   "landing": {
     "banner": {
       "title": "Naujas čia?",
-      "message": "Sužinokite apie Freedom Bridge ir kaip išsilaisvinti nuo žetonų mokesčių."
+      "message": "Sužinokite apie Freedom Bridge ir kaip perkelti TigerOG žetonus tarp grandinių.",
+      "note": "Pastaba: Žetonų konversija yra nuolatinė ir negrįžtama."
     },
     "hero": {
       "badge": "Palaiko Axelar",
       "title": "Išlaisvinkite Savo <1/> <2>Turtą</2>",
-      "subtitle": "Išsilaisvinkite nuo senų sandorių mokesčių. Suvyniokite savo žetonus į standartizuotą, saugų tarptinklinį turtą ir laisvai judėkite tarp tinklų.",
+      "subtitle": "Sklandžiai perkelkite TigerOG žetonus tarp grandinių naudodami Axelar Interchain Token Service. Saugu, greita ir be mokesčių.",
       "launchApp": "Paleisti Programą",
       "documentation": "Dokumentacija"
     },
     "stats": {
-      "messaging": "Pranešimų Sluoksnis",
-      "networks": "Gyvi Tinklai",
-      "fees": "Protokolo Mokesčiai",
+      "messaging": "Axelar Tinklas",
+      "networks": "Aktyvūs Tinklai",
+      "fees": "Platformos Mokestis",
       "finality": "Užbaigimas"
     },
     "features": {
-      "title": "Beleidiminis Sąveikumas",
-      "description": "Freedom Bridge naudoja Axelar protokolą, kad suteiktų sklandžią, saugią ir be mokesčių tiltavimo patirtį per {{count}}+ blokų grandinių.",
+      "title": "Tarptinklinė Žetonų Paslauga",
+      "description": "Freedom Bridge naudoja Axelar ITS, kad suteiktų sklandžią, saugią ir be mokesčių perkėlimo patirtį per {{count}}+ blokų grandinių.",
       "stopDecay": {
-        "title": "Sustabdykite Nuvykimą",
-        "description": "Senieji žetonai sudegina 10-11% jūsų vertės kiekvieną kartą perkant ir parduodant. Suvyniojimas nedelsiant sustabdo šį nutekėjimą, išsaugodamas 100% jūsų perkamąją galią kiekvienam sandoriui.",
-        "graphLabel1": "100% Išsaugota (Suvyniota)",
+        "title": "Sustabdykite Vertės Praradimą",
+        "description": "Senieji žetonai sudegina 10-11% jūsų vertės kiekvieną kartą perkant ir parduodant. Konversija į TigerOG nedelsiant sustabdo šį nutekėjimą, išsaugodamas 100% jūsų vertės.",
+        "graphLabel1": "100% Išsaugota (TigerOG)",
         "graphLabel2": "-40% Vertė (Senasis 10% Mokestis)"
       },
       "conversion": {
         "title": "1:1 Konversija",
-        "description": "Bendra pasiūla niekada nesikeičia. Žetonai yra užrakinti saugioje saugykloje, ir nukalamas tikslus 1:1 ekvivalentas. Jokios infliacijos, jokio atskiedimo."
+        "description": "Bendra pasiūla niekada nesikeičia. Žetonai yra laikomi saugioje konversijos sutartyje, ir naudojamas tikslus 1:1 ekvivalentas. Jokios infliacijos, jokio atskiedimo."
       },
       "multichain": {
         "title": "Daugiagrandininis",
-        "description": "Diekite vieną kartą, pasiekite visur. Jūsų turtas tampa vietiniu {{count}}+ grandinių piliečiu, įskaitant Ethereum, BNB Chain, Base ir Optimism."
+        "description": "Diekite vieną kartą, pasiekite visur. Jūsų turtas tampa vietiniu tarptinkliniu žetonu grandinėse, įskaitant Ethereum, BNB Chain, Base ir daugiau."
       },
       "security": {
-        "title": "Patikrinamas Saugumas",
-        "description": "Palaiko Axelar modulinis saugumo stekas. Tarptinkliniai Saugumo Moduliai (ISM) užtikrina, kad jūsų pranešimai būtų patikrinti grandinėje prieš perkeliant bet kokią vertę.",
-        "button": "Pradėti Tiltavimą"
+        "title": "Axelar Saugumas",
+        "description": "Palaiko Axelar decentralizuotas validatorių tinklas. ITS užtikrina, kad jūsų žetonai būtų perkeliami saugiai ir nuosekliai per visus prijungtus tinklus.",
+        "button": "Pradėti Perkėlimą"
       }
     },
-    "teaser": {
-      "title": "Norite kitų monetų?",
-      "subtitle": "Ką manote apie <lunc>LUNC</lunc>, <crepe>Crepe</crepe>, arba <shiba>Shiba</shiba>?"
-    },
     "cta": {
-      "title": "Pasirengę išsilaisvinti?",
-      "description": "Prisijunkite prie tarptinklinės revoliucijos. Tai užtrunka mažiau nei minutę suvynioti savo turtą ir pradėti tiltavimą.",
+      "title": "Pasirengę perkelti?",
+      "description": "Prisijunkite prie tarptinklinės revoliucijos. Tai užtrunka mažiau nei minutę konvertuoti savo žetonus ir pradėti perkėlimą per Axelar.",
       "button": "Paleisti Programą Dabar"
+    },
+    "buyTokens": {
+      "badge": "Pradėti",
+      "title": "Įsigyti Turto",
+      "description": "Dar neturite jokių žetonų? Įsigykite originalius žetonus PancakeSwap, tada konvertuokite juos į naujas daugiagrandinines versijas.",
+      "buyOn": "Pirkti PancakeSwap",
+      "then": "tada",
+      "convertTo": "Konvertuoti į",
+      "buyNow": "Pirkti Dabar"
     }
   },
   "wiki": {
@@ -145,7 +148,7 @@
     "searchPlaceholder": "Ieškoti dokumentacijoje...",
     "header": {
       "title": "Dokumentacija",
-      "subtitle": "Sužinokite, kaip suvynioti senuosius žetonus, tiltuoti tarp grandinių ir integruotis su Freedom Bridge."
+      "subtitle": "Sužinokite, kaip konvertuoti senuosius žetonus ir perkelti juos tarp grandinių."
     },
     "nav": {
       "gettingStarted": "Pradžia",
@@ -153,41 +156,43 @@
       "developers": "Kūrėjai",
       "tigerogSupply": "TigerOG Pasiūla",
       "lionogSupply": "LionOG Pasiūla",
-      "frogogSupply": "FrogOG Pasiūla"
+      "frogogSupply": "FrogOG Pasiūla",
+      "githubRepo": "GitHub Repozitorija",
+      "axelarDocs": "Axelar ITS Dokumentacija"
     },
     "articles": {
       "whatIs": {
         "title": "Kas yra Freedom Bridge?",
-        "content": "Freedom Bridge yra decentralizuotas protokolas, sukurtas išlaisvinti senuosius žetonus nuo didelių sandorių mokesčių ir vienos grandinės apribojimų. Suvyniojant standartinius ERC20 žetonus į <strong>xERC20</strong> (tarptinkliniai ERC20) turtą, vartotojai gali laisvai perkelti savo vertę per palaikomas blokų grandines be pradinio žetono pervedimo mokesčių.",
+        "content": "Freedom Bridge yra decentralizuotas perkėlimo protokolas, sukurtas ant Axelar Interchain Token Service (ITS). Tai leidžia jums konvertuoti senuosius žetonus į be mokesčių, tarptinklinį turtą, kuris gali laisvai judėti per palaikomas blokų grandines.",
         "taxFreeTitle": "Pervedimai Be Mokesčių",
-        "taxFreeDesc": "Senieji žetonai dažnai turi 10%+ mokesčius. Suvynioti žetonai turi 0% mokestį.",
-        "omnichainTitle": "Interchain",
-        "omnichainDesc": "Perkelkite turtą akimirksniu tarp {{count}}+ blokų grandinių."
+        "taxFreeDesc": "Senieji žetonai dažnai turi 10%+ mokesčius. TigerOG žetonai turi 0% mokestį.",
+        "omnichainTitle": "Tarptinklinis",
+        "omnichainDesc": "Perkelkite turtą akimirksniu tarp {{count}}+ blokų grandinių per Axelar."
       },
       "howToConvert": {
         "title": "Kaip Konvertuoti Žetonus",
         "step1": "Prijunkite savo piniginę prie šaltinio grandinės (pvz., BNB Chain).",
         "step2": "Eikite į <strong>Konvertuoti</strong> skirtuką.",
         "step3": "Pasirinkite senąjį žetoną, kurį norite konvertuoti.",
-        "step4": "Patvirtinkite Migracijos sutartį, kad galėtumėte išleisti savo žetonus.",
+        "step4": "Patvirtinkite Konversijos sutartį, kad galėtumėte išleisti savo žetonus.",
         "step5": "Spustelėkite <strong>Konvertuoti</strong>, kad įneštumėte savo senuosius žetonus ir gautumėte lygiavertį \"TigerOG\" žetonų kiekį.",
-        "note": "<strong>Pastaba:</strong> Konversija sukelia senojo žetono sandorio mokestį (atnaujinimo metu), jei jūsų žetonas taiko mokestį pervedimams, o ne tik pirkimams ir pardavimams. Tačiau, kai konvertuota į TigerOG, visi vėlesni pervedimai ir tiltavimai yra be šio mokesčio."
+        "note": "<strong>Pastaba:</strong> Konversija sukelia senojo žetono sandorio mokestį (atnaujinimo metu), jei jūsų žetonas taiko mokestį pervedimams. Tačiau, kai konvertuota į TigerOG, visi vėlesni pervedimai ir perkėlimai yra be šio mokesčio."
       },
       "supportedNetworks": {
         "title": "Palaikomi Tinklai",
-        "content": "Freedom Bridge palaiko augančią {{count}}+ blokų grandinių ekosistemą, leidžiančią sklandų sąveikumą visame EVM kraštovaizdyje."
+        "content": "Freedom Bridge palaiko augančią {{count}}+ blokų grandinių ekosistemą, leidžiančią sklandų sąveikumą visame EVM kraštovaizdyje per Axelar."
       },
       "xerc20": {
         "title": "Tarptinkliniai Žetonai",
-        "content": "Axelar Interchain Token Service (ITS) leidžia žetonus diegti keliose grandinėse su nuosekliu adresu ir vieningu pasiūlos valdymu. Freedom Bridge naudoja ITS, kad užtikrintų, jog TigerOG liktų kanoniniu turtu, nesvarbu, kur jis būtų tiltuojamas."
+        "content": "Axelar Interchain Token Service (ITS) leidžia žetonus diegti keliose grandinėse su nuosekliu adresu ir vieningu pasiūlos valdymu. Freedom Bridge naudoja ITS, kad užtikrintų, jog TigerOG liktų kanoniniu turtu, nesvarbu, kur jis būtų perkeltas."
       },
       "axelar": {
         "title": "Axelar Tinklas",
         "content": "Mes naudojame Axelar kaip savo sąveikumo sluoksnį. Axelar yra decentralizuotas tinklas, jungiantis skirtingas blokų grandines, leidžiantis saugų tarptinklinį ryšį ir turto pervedimą. Axelar saugumo modelis remiasi beleidiminių validatorių rinkiniu, užtikrinančiu aukšto lygio saugumą tarptinkliniams žetonams."
       },
-      "migration": {
-        "title": "Migracijos Loģika",
-        "content": "Migracijos sutartis diegiama kilmės grandinėje (pvz., BSC). Ji saugo originalius senuosius žetonus. Kai atnaujinate žetonus, įnešate lėšas į Migracijos sutartį. Kai atvyniojate (jei palaikoma), sudeginate TigerOG atvaizdą, kad atlaisvintumėte originalius žetonus. Tai užtikrina griežtai palaikomą 1:1 susiejimą."
+      "conversion": {
+        "title": "Konversijos Logika",
+        "content": "Konversijos sutartis diegiama BSC. Kai konvertuojate, jūsų senieji žetonai siunčiami į mirusį adresą (visam laikui sudeginami), o jūs gaunate TigerOG santykiu 1:1. Tai yra vienkryptis procesas — senieji žetonai sunaikinami ir negali būti atkurti."
       },
       "contracts": {
         "title": "Išmaniųjų Sutarčių Adresai",
@@ -198,10 +203,10 @@
       "security": {
         "title": "Saugumo Modelis",
         "content": "Saugumas yra integruotas į kiekvieną Freedom Bridge sluoksnį:",
-        "point1": "<strong>Migracijos Architektūra:</strong> Senieji žetonai saugomi patikrintose, nekintamose išmaniosiose sutartyse.",
+        "point1": "<strong>Konversijos Architektūra:</strong> Senieji žetonai visam laikui sudeginami per patikrintas, nekintamas išmaniąsias sutartis.",
         "point2": "<strong>Axelar Validatoriai:</strong> Tarptinkliniai pranešimai tikrinami Axelar decentralizuoto tinklo.",
         "point3": "<strong>Nuosekli Pasiūla:</strong> ITS valdo kalybą ir deginimą, kad išlaikytų pastovią bendrą pasiūlą visose grandinėse.",
-        "point4": "<strong>Audituota Loģika:</strong> Sukurta naudojant pramonės standartų Axelar ir OpenZeppelin bibliotekas."
+        "point4": "<strong>Audituota Logika:</strong> Sukurta naudojant pramonės standartų Axelar ir OpenZeppelin bibliotekas."
       },
       "supplyCommon": {
         "howWeCalculated": "Kaip Mes Tai Apskaičiavome",
@@ -229,7 +234,7 @@
         "lpLockedDesc": "PancakeSwap likvidumo fonde yra BNBTiger žetonų, suporuotų su BNB. Kai LP žetonai sudeginami (išsiunčiami į mirusiųjų adresą), fonde esantys žetonai tampa užrakinti visam laikui.",
         "lpBurnedPercent": "Sudeginti LP žetonai: 86,18% visų LP žetonų",
         "lpLockedPercent": "Todėl 86,18% LP esančių žetonų yra užrakinti visam laikui",
-        "note": "<strong>Pastaba:</strong> TigerOG išlaiko 1:1 santykį su BNBTiger migracijos metu. Cirkuliuojanti TigerOG pasiūla atitinka tikrąją cirkuliuojančią BNBTiger pasiūlą, įvertinus visus sudegintus ir užrakintus žetonus.",
+        "note": "<strong>Pastaba:</strong> TigerOG išlaiko 1:1 santykį su BNBTiger konversijos metu. Cirkuliuojanti TigerOG pasiūla atitinka tikrąją cirkuliuojančią BNBTiger pasiūlą, įvertinus visus sudegintus ir užrakintus žetonus.",
         "launchData": "<strong>Paleidimo Duomenys:</strong> Šie skaičiai buvo apskaičiuoti paleidimo metu. Senasis BNBTiger žetonas toliau degina žetonus kiekvieno pirkimo/pardavimo sandorio metu, todėl tikroji cirkuliuojanti pasiūla gali būti šiek tiek mažesnė nei nurodyta.",
         "legacyContract": "BNBTiger Žetono Sutartis",
         "ogContract": "TigerOG Žetono Sutartis",
@@ -254,7 +259,7 @@
         "lpLockedDesc": "PancakeSwap likvidumo fonde yra BNBLion žetonų, suporuotų su BNB. Kai LP žetonai sudeginami (išsiunčiami į mirusiųjų adresą), fonde esantys žetonai tampa užrakinti visam laikui.",
         "lpBurnedPercent": "Sudeginti LP žetonai: 99,98% visų LP žetonų",
         "lpLockedPercent": "Todėl 99,98% LP esančių žetonų yra užrakinti visam laikui",
-        "note": "<strong>Pastaba:</strong> LionOG išlaiko 1:1 santykį su BNBLion migracijos metu. Cirkuliuojanti LionOG pasiūla atitinka tikrąją cirkuliuojančią BNBLion pasiūlą, įvertinus visus sudegintus ir užrakintus žetonus.",
+        "note": "<strong>Pastaba:</strong> LionOG išlaiko 1:1 santykį su BNBLion konversijos metu. Cirkuliuojanti LionOG pasiūla atitinka tikrąją cirkuliuojančią BNBLion pasiūlą, įvertinus visus sudegintus ir užrakintus žetonus.",
         "launchData": "<strong>Paleidimo Duomenys:</strong> Šie skaičiai buvo apskaičiuoti paleidimo metu. Senasis BNBLion žetonas toliau degina žetonus kiekvieno pirkimo/pardavimo sandorio metu, todėl tikroji cirkuliuojanti pasiūla gali būti šiek tiek mažesnė nei nurodyta.",
         "legacyContract": "BNBLion Žetono Sutartis",
         "ogContract": "LionOG Žetono Sutartis",
@@ -279,7 +284,7 @@
         "lpLockedDesc": "PancakeSwap likvidumo fonde yra BNBFrog žetonų, suporuotų su BNB. Kai LP žetonai sudeginami (išsiunčiami į mirusiųjų adresą), fonde esantys žetonai tampa užrakinti visam laikui.",
         "lpBurnedPercent": "Sudeginti LP žetonai: 99,31% visų LP žetonų",
         "lpLockedPercent": "Todėl 99,31% LP esančių žetonų yra užrakinti visam laikui",
-        "note": "<strong>Pastaba:</strong> FrogOG išlaiko 1:1 santykį su BNBFrog migracijos metu. Cirkuliuojanti FrogOG pasiūla atitinka tikrąją cirkuliuojančią BNBFrog pasiūlą, įvertinus visus sudegintus ir užrakintus žetonus.",
+        "note": "<strong>Pastaba:</strong> FrogOG išlaiko 1:1 santykį su BNBFrog konversijos metu. Cirkuliuojanti FrogOG pasiūla atitinka tikrąją cirkuliuojančią BNBFrog pasiūlą, įvertinus visus sudegintus ir užrakintus žetonus.",
         "launchData": "<strong>Paleidimo Duomenys:</strong> Šie skaičiai buvo apskaičiuoti paleidimo metu. Senasis BNBFrog žetonas toliau degina žetonus kiekvieno pirkimo/pardavimo sandorio metu, todėl tikroji cirkuliuojanti pasiūla gali būti šiek tiek mažesnė nei nurodyta.",
         "legacyContract": "BNBFrog Žetono Sutartis",
         "ogContract": "FrogOG Žetono Sutartis",
@@ -301,7 +306,7 @@
     "title": "Sutarčių Adresai",
     "header": {
       "title": "Išmaniosios Sutartys",
-      "subtitle": "Oficialūs žetonų, maršrutizatorių ir likvidumo fondų diegimo adresai visoje Freedom Bridge ekosistemoje."
+      "subtitle": "Oficialūs žetonų ir tiltų diegimo adresai visoje Freedom Bridge ekosistemoje."
     },
     "tabs": {
       "overview": "Apžvalga",
@@ -310,13 +315,67 @@
       "liquidity": "Likvidumas"
     },
     "liquidity": {
-      "title": "Likvidumo Fondai"
-    }
+      "poolAddress": "Fondo Adresas",
+      "tradeOn": "Prekiauti"
+    },
+    "overview": {
+      "interchainTokens": {
+        "title": "Tarptinkliniai Žetonai",
+        "description": "Tarptinkliniai žetonai, įdiegti per Axelar Interchain Token Service (ITS). Šie žetonai išlaiko nuoseklius adresus visuose palaikomuose tinkluose."
+      },
+      "axelarNetwork": {
+        "title": "Axelar Tinklas",
+        "description": "Pagrindinis pranešimų protokolas, kuris užtikrina saugius perkėlimus tarp grandinių ir duomenų vientisumą tarp skirtingų blokų grandinių."
+      },
+      "conversionContracts": {
+        "title": "Konversijos Sutartys",
+        "description": "Atsakingos už senuosius žetonus konvertavimą į tarptinklinį turtą. Šios sutartys valdo įnešimo ir kalybos logiką kilmės grandinėje."
+      },
+      "conversionContractsTable": {
+        "title": "Konversijos Sutarčių Adresai",
+        "subtitle": "Šios sutartys BSC grandinėje valdo konversiją iš senųjų žetonų į tarptinklinius žetonus.",
+        "token": "Žetonas",
+        "legacyToken": "Senasis Žetonas",
+        "conversionContract": "Konversijos Sutartis",
+        "newToken": "Tarptinklinis Žetonas"
+      },
+      "liquidityPools": {
+        "title": "Likvidumo Fondai",
+        "description": "DEX likvidumo fondai, kuriuose galite prekiauti OG žetonais įvairiose grandinėse."
+      },
+      "liquidityPoolsTable": {
+        "title": "Likvidumo Fondai",
+        "subtitle": "DEX fondai prekybai OG žetonais",
+        "token": "Žetonas",
+        "chain": "Grandinė",
+        "dex": "DEX",
+        "poolAddress": "Fondo Adresas"
+      }
+    },
+    "filterTokens": "Filtruoti žetonus...",
+    "interchainAsset": "Tarptinklinis Turtas per Axelar ITS",
+    "availableOnChains": "Pasiekiama {{count}} grandinėse",
+    "table": {
+      "chain": "Grandinė",
+      "tokenAddress": "Žetono Adresas",
+      "axelarChainName": "Axelar Grandinės Pavadinimas",
+      "chainId": "ID: {{id}}"
+    },
+    "axelarId": "Axelar ID: {{name}}",
+    "copied": "Nukopijuota!",
+    "copyAddress": "Kopijuoti adresą"
   },
   "faq": {
     "title": "Freedom Bridge Pagalba",
     "header": "Dažnai Užduodami Klausimai",
-    "subtitle": "Atsakymai į dažniausiai užduodamus klausimus apie TigerOG, tiltavimą ir Axelar.",
+    "subtitle": "Atsakymai į dažniausiai užduodamus klausimus apie TigerOG, perkėlimą ir Axelar.",
+    "sections": {
+      "gettingStarted": "Pradžia",
+      "convertingTrading": "Konvertavimas ir Prekyba",
+      "bridging": "Perkėlimas (Bridging)",
+      "technical": "Techniniai Klausimai",
+      "securityRisks": "Saugumas ir Rizikos"
+    },
     "cta": {
       "title": "Vis dar turite klausimų?",
       "description": "Prisijunkite prie mūsų bendruomenės Telegram arba peržiūrėkite išsamų Wiki techniniams vadovams.",
@@ -325,27 +384,114 @@
     },
     "questions": {
       "q1": "Koks yra mano žetonų konvertavimo tikslas?",
-      "a1": "Konvertuojant savo žetonus į TigerOG pašalinamas sandorio mokestis (dažnai 10-12%), susijęs su senuoju žetonu. Tai taip pat leidžia jums tiltuoti šiuos žetonus į kitas blokų grandines, tokias kaip Base, Ethereum ir kt. per Axelar, suteikiant prieigą prie naujų ekosistemų.",
+      "a1": "Konvertuojant savo žetonus į TigerOG pašalinamas sandorio mokestis (dažnai 10-12%), susijęs su senuoju žetonu. Tai taip pat leidžia jums perkelti šiuos žetonus į kitas blokų grandines, tokias kaip Ethereum, Base ir kt. per Axelar, suteikiant prieigą prie naujų ekosistemų.",
       "q2": "Ar saugu naudoti Freedom Bridge?",
-      "a2": "Taip. Protokolas naudoja saugią Migracijos sutartį ir Axelar Interchain Token Service. Kai konvertuojate, jūsų BNBTiger yra visam laikui sudeginami, ir gaunate TigerOG santykiu 1:1. Deginimo mechanizmas užtikrina, kad bendra pasiūla būtų tinkamai valdoma visose grandinėse.",
+      "a2": "Taip. Protokolas naudoja saugią Konversijos sutartį ir Axelar Interchain Token Service. Kai konvertuojate, jūsų BNBTiger yra visam laikui sudeginami, ir gaunate TigerOG santykiu 1:1. Deginimo mechanizmas užtikrina, kad bendra pasiūla būtų tinkamai valdoma visose grandinėse.",
       "q3": "Ar yra kokių nors mokesčių?",
-      "a3": "Freedom Bridge protokolas pats neima mokesčio už konvertavimą. Mokate tik standartinius blokų grandinės dujų mokesčius. Tiltavimas tarp grandinių apima tarptinklinį dujų mokestį, sumokamą Axelar, kad padengtų perdavimo išlaidas.",
+      "a3": "Freedom Bridge protokolas pats neima mokesčio už konvertavimą. Mokate tik standartinius blokų grandinės dujų mokesčius. Perkėlimas tarp grandinių apima tarptinklinį dujų mokestį, sumokamą Axelar, kad padengtų perdavimo išlaidas.",
       "q4": "Kas nutiks, jei prarasiu savo žetonus?",
-      "a4": "TigerOG žetonai elgiasi kaip bet kuris kitas ERC20 žetonas. Jei prarasite prieigą prie savo piniginės, jų negalima atkurti. Visada saugokite savo privačius raktus ir atkūrimo frazes.",
+      "a4": "TigerOG žetonai elgiasi kaip bet kuris kitas ERC20/BEP20 žetonas. Jei prarasite prieigą prie savo piniginės, jų negalima atkurti. Visada saugokite savo privačius raktus ir atkūrimo frazes.",
       "q5": "Ar galiu konvertuoti savo TigerOG žetoną atgal į BNBTiger?",
-      "a5": "Ne. Migracija yra vienkryptė konversija. Kai konvertuojate BNBTiger į TigerOG, jūsų BNBTiger žetonai yra visam laikui sudeginami (išsiunčiami į mirusį adresą). Tai yra pagal dizainą — TigerOG yra atnaujinta, be mokesčių versija, skirta visiškai pakeisti senąjį žetoną.",
+      "a5": "Ne. Konversija yra vienkryptė. Kai konvertuojate BNBTiger į TigerOG, jūsų senieji žetonai yra visam laikui užrakinti konversijos sutartyje (ir sudeginami). Tai yra pagal dizainą — TigerOG yra atnaujinta, be mokesčių versija, skirta visiškai pakeisti senąjį žetoną.",
       "q6": "Kokie tinklai palaikomi?",
       "a6": "Mes palaikome daugybę EVM grandinių per Axelar, įskaitant BNB Chain, Ethereum, Base ir kt. Peržiūrėkite Wiki visą palaikomų tinklų sąrašą.",
-      "q7": "Kiek laiko užtrunka tiltavimas?",
-      "a7": "Tiltavimo greitis priklauso nuo šaltinio grandinės užbaigimo laiko ir Axelar perdavimo. Paprastai pervedimas tarp grandinių užtrunka apie 2-5 minutes.",
+      "q7": "Kiek laiko užtrunka perkėlimas?",
+      "a7": "Perkėlimo laikas priklauso nuo grandinės, IŠ kurios siunčiate:\n\n• Ethereum: 15-20 min (reikia daugiau patvirtinimų)\n• BSC & Avalanche: 2-4 min (greičiausi)\n• Base, Linea, Polygon: 3-5 min\n\nProgramėlė rodo numatomą laiką prieš pradedant perkėlimą.",
       "q8": "Kokia yra cirkuliuojanti OG žetonų pasiūla?",
-      "a8": "Kiekvienas OG žetonas turi fiksuotą cirkuliuojančią pasiūlą, gautą iš jo pradinio BNB žetono, įvertinus sudegintus žetonus, įstrigusius sutarčių likučius ir užrakintą LP. TigerOG: ~3,66 septilijonai (36,62% pradinės). LionOG: ~3,83 septilijonai (38,33% pradinės). FrogOG: ~8,39 septilijonai (83,86% pradinės). Išsamų kiekvieno žetono suskirstymą rasite Wiki."
+      "a8": "Kiekvienas OG žetonas turi fiksuotą cirkuliuojančią pasiūlą, gautą iš jo pradinio BNB žetono, įvertinus sudegintus žetonus, įstrigusius sutarčių likučius ir užrakintą LP:\n\n• TigerOG: ~3,66 septilijonai (36,62% pradinės)\n• LionOG: ~3,83 septilijonai (38,33% pradinės)\n• FrogOG: ~8,39 septilijonai (83,86% pradinės)\n\nIšsamų kiekvieno žetono suskirstymą rasite Wiki.",
+      "q9": "Kodėl OG sutarties nuosavybė nėra atsisakyta (Renounced)?",
+      "a9": "Atsisakius sutarties nuosavybės, ateityje nebūtų galima vystyti ir pridėti naujų grandinių. Nors sutarties nuosavybė nebus atsisakyta artimiausioje ateityje, bet kokiems pakeitimams atlikti reikalingi keli parašai (Multisig). Be to, jokie žetonai ar mokesčiai nėra skiriami komandai.",
+      "q10": "Kodėl OG sutartis yra kalama (Mintable)?",
+      "a10": "Perkėlimui tarp grandinių reikalinga kalybos/deginimo funkcija – žetonai sudeginami paliekant grandinę ir nukalami atvykus. Tai išlaiko bendrą pasiūlą pastovią visuose tinkluose. Kalybą valdo multisig Safe piniginė.",
+      "q11": "Ar TigerOG palieka BNB Chain dėl Axelar?",
+      "a11": "Ne. Axelar nėra blokų grandinė – tai tiltų protokolas, jungiantis grandines. BNB Chain išlieka kilmės grandinė, kurioje konvertuojate senuosius žetonus. Axelar tiesiog leidžia jūsų žetonams judėti tarp BNB, Ethereum, Base ir kitų palaikomų tinklų.",
+      "q12": "Kur yra mano žetonai?",
+      "a12": "Įsitikinkite, kad pridėjote grandinę ir žetono adresą į savo piniginę. Visus sutarčių adresus galite rasti Sutarčių puslapyje. Tiger komanda naudoja Rabby piniginę, kuri palengvina kelių grandinių valdymą.",
+      "q13": "Kodėl perkėlimas iš Ethereum ar Base trunka taip ilgai?",
+      "a13": "Ethereum reikalauja dviejų epochų, kad transakcijos būtų galutinai patvirtintos maksimaliam saugumui. Kadangi Base veikia ant Ethereum, ji paveldi šį delsimą. Tai teikia pirmenybę saugumui, o ne greičiui – jūsų žetonai yra saugūs, tiesiog būkite kantrūs.",
+      "q14": "Kas nutiks, jei pasiliksiu prie savo originalaus žetono ir nekonvertuosiu?",
+      "a14": "Nėra skubos konvertuoti. BNBTiger ir TigerOG visada turės skirtingus likvidumo fondus, rinkos kapitalizaciją ir t.t. Tačiau BNBTiger turi didelį mokestį, o TigerOG prekybai mokesčių netaiko. Kadangi mokesčiai už originalą nėra naudojami projektui remti, vystymą vykdo CTO komanda TigerOG žetonui. Freedom Bridge ir daugiagrandininis funkcionalumas skirtas tik TigerOG.",
+      "q15": "Ar yra mokestis už konvertavimą? Ar TigerOG turi mokestį?",
+      "a15": "Ne. Tai kainuoja tik įprastą dujų mokestį konvertuoti ir prekiauti. Nėra jokių papildomų mokesčių, o TigerOG yra be mokesčių sutartis.",
+      "q16": "Ar galiu tiesiog nusipirkti ir prekiauti TigerOG tiesiogiai?",
+      "a16": "Dar ne. Komanda nerinko mokesčių, kad galėtų finansuoti pakankamai didelius likvidumo fondus. Norint gauti TigerOG dabar, turite nusipirkti arba jau turėti originalą ir jį konvertuoti. Kai turėsite TigerOG, juo nebus lengva prekiauti, kol investuotojai neatneš lėšų į likvidumo fondą.",
+      "q17": "Kodėl TigerOG rinkos kapitalizacija atrodo tokia išpūsta?",
+      "a17": "Kuo mažesnis likvidumo fondas, tuo bet koks mažas sandoris daro didžiulę įtaką rodomai rinkos kapitalizacijai. Tai išsispręs, kai investuotojai taps likvidumo teikėjais.",
+      "q18": "Kokie saugumo auditai buvo atlikti?",
+      "a18": "Freedom Bridge neatliko oficialaus trečiosios šalies audito. Tačiau konverterio sutarties kodas pagrįstas SHx konverteriu, kurį sukūrė Stronghold komanda (buvę XRP ir Stellar kūrėjai). Tilto infrastruktūrą valdo Axelar, kuri atliko daugybę saugumo auditų.",
+      "q19": "Kaip Freedom Bridge apsisaugo nuo įsilaužimų ar eksploitų?",
+      "a19": "Taikomos kelios priemonės:\n\n• Konverteris laiko tik tikslią reikalingą cirkuliuojančią pasiūlą – jokių perteklinių žetonų, kuriuos būtų galima pasisavinti\n• Konverteris neturi kalybos (mint) teisių\n• Visas sutarties kodas yra patikrintas grandinėje ir atviras\n• Žetonų leidimai apsaugoti Safe.global multisig piniginėje\n• Perkėlimą valdo Axelar mūšyje išbandyta infrastruktūra",
+      "q20": "Ar perkėlimas yra negrįžtamas? Kas, jei pervedimas nepavyksta?",
+      "a20": "Tilto pervedimai retai gali įstrigti dėl nepakankamo dujų kiekio ar tinklo perkrovos. Jei taip atsitiks, galite sekti savo transakciją Axelarscan ir rankiniu būdu pridėti dujų, kad ją užbaigtumėte. Axelar teikia transakcijų atkūrimo įrankius – jūs neprarasite savo žetonų.",
+      "q21": "Kokia rizika susijusi su Freedom Bridge naudojimu?",
+      "a21": "Kaip ir bet kuriame DeFi protokole, yra neišvengiama rizika, įskaitant išmaniosios sutarties riziką, tilto riziką ir rinkos svyravimus. Rekomenduojame atlikti savo tyrimą (DYOR) ir naudoti tik tas lėšas, kurias galite sau leisti prarasti. Daugiau informacijos rasite mūsų teisiniame atsakomybės atsisakyme.",
+      "q22": "Ar galiu konvertuoti naują BNB Tiger Inu sutartį (2025 m. rugsėjis)?",
+      "a22": "Ne. Freedom Bridge palaiko originalų/senąjį BNB Tiger žetoną, kuris startavo prieš kelerius metus – ne naują sutartį, sukurtą 2025 m. rugsėjį. Freedom Bridge buvo sukurtas originalių Tiger, Lion ir Frog žetonų bendruomenės perėmimui (CTO).",
+      "q23": "Kaip pridėti likvidumo?",
+      "a23": "Likvidumo pridėjimas yra pažangi DeFi veikla su rizika, įskaitant laikiną praradimą (impermanent loss). Jei turite patirties teikiant likvidumą DEX, pvz., PancakeSwap ar Uniswap, procesas yra tas pats – suporuokite OG žetoną su baziniu turtu.",
+      "q24": "Ar komanda gali atlikti \"Rug Pull\" sukčiavimą?",
+      "a24": "Ne. Nėra mechanizmo \"Rug Pull\" sukčiavimui. Jokie žetonai ar mokesčiai nėra skiriami komandai, ir mes nerenkame jokių perkėlimo mokesčių — jie atitenka Axelar už perdavimo išlaidas. Komanda yra tokie patys turėtojai kaip ir jūs, kuriantys tai savo lėšomis. Vienintelė komandos piniginė yra vieša rinkodaros piniginė, finansuojama bendruomenės aukomis. Multisig Safe piniginė valdo sutarties leidimus, pvz., siuntimo į grandines sustabdymą avarijos atveju, bet negali pasiekti ar nukreipti vartotojų lėšų."
     }
+  },
+  "footer": {
+    "wiki": "Wiki",
+    "contracts": "Sutartys",
+    "faq": "DUK",
+    "disclaimer": "Atsakomybės atsisakymas",
+    "github": "GitHub"
+  },
+  "disclaimer": {
+    "title": "Teisinis Atsakomybės Atsisakymas",
+    "header": "Svarbus Teisinis Pranešimas",
+    "subtitle": "Prašome atidžiai perskaityti šį atsakomybės atsisakymą prieš naudojant Freedom Bridge.",
+    "sections": {
+      "noInvestmentAdvice": {
+        "title": "Jokių Investavimo Patarimų",
+        "content": "Informacija, pateikta Freedom Bridge, nėra investavimo patarimas, finansinis patarimas, prekybos patarimas ar bet koks kitas patarimas. Neturėtumėte traktuoti jokio turinio kaip tokio. Freedom Bridge nerekomenduoja pirkti, parduoti ar laikyti jokios kriptovaliutos. Prieš priimdami bet kokius investavimo sprendimus, atlikite savo išsamų patikrinimą ir pasitarkite su savo finansų patarėju."
+      },
+      "risksOfUse": {
+        "title": "Naudojimo Rizika",
+        "content": "Kriptovaliutų rinkos yra nepastovios ir nenuspėjamos. Naudodami Freedom Bridge, jūs pripažįstate ir sutinkate, kad:\n\n• Išmaniosios sutartys gali turėti klaidų ar pažeidžiamumų, dėl kurių gali būti prarastos lėšos\n• Tarptinkliniai tiltai turi neišvengiamą riziką, įskaitant, bet neapsiribojant: orakulo gedimus, validatorių susitarimus ir tinklo perkrovas\n• Žetonų vertės gali drastiškai svyruoti, ir jūs galite prarasti dalį ar visas savo investicijas\n• Transakcijos blokų grandinės tinkluose yra negrįžtamos\n• Tinklo mokesčiai ir dujų kainos yra už mūsų kontrolės ribų ir gali labai skirtis"
+      },
+      "noWarranties": {
+        "title": "Jokių Garantijų",
+        "content": "Freedom Bridge teikiama \"tokia, kokia yra\" ir \"kaip prieinama\" be jokių garantijų, nei išreikštų, nei numanomų. Mes negarantuojame, kad paslauga bus nepertraukiama, saugi ar be klaidų. Mes neteikiame jokių garantijų dėl bet kokios informacijos, pateiktos per platformą, tikslumo, patikimumo ar išsamumo."
+      },
+      "limitationOfLiability": {
+        "title": "Atsakomybės Ribojimas",
+        "content": "Kiek tai leidžia įstatymai, Freedom Bridge, jos kūrėjai, bendradarbiai ir partneriai neatsako už jokią tiesioginę, netiesioginę, atsitiktinę, specialią, pasekminę ar baudžiamąją žalą, kylančią iš jūsų naudojimosi platforma, įskaitant, bet neapsiribojant pelno praradimu, duomenų praradimu ar kriptovaliutų turto praradimu."
+      },
+      "thirdPartyServices": {
+        "title": "Trečiųjų Šalių Paslaugos",
+        "content": "Freedom Bridge integruojasi su trečiųjų šalių paslaugomis, įskaitant Axelar Network tarptinkliniam perkėlimui. Mes nesame atsakingi už šių trečiųjų šalių veiksmus, turinį, informaciją ar duomenis. Jūsų naudojimuisi trečiųjų šalių paslaugomis taikomos jų atitinkamos sąlygos ir nuostatos."
+      },
+      "regulatoryCompliance": {
+        "title": "Teisinis Atitikimas",
+        "content": "Kriptovaliutų reglamentavimas skiriasi priklausomai nuo jurisdikcijos. Jūs esate visiškai atsakingi už tai, kad jūsų naudojimasis Freedom Bridge atitiktų visus taikomus įstatymus ir reglamentus jūsų jurisdikcijoje. Freedom Bridge neteikia jokių pareiškimų dėl paslaugų teisėtumo bet kurioje jurisdikcijoje."
+      },
+      "dyor": {
+        "title": "Atlikite Savo Tyrimą",
+        "content": "Visada atlikite savo tyrimą (DYOR) prieš sąveikaudami su bet kuriuo DeFi protokolu. Patikrinkite sutarčių adresus, supraskite bet kurio žetono, su kuriuo sąveikaujate, mechaniką ir niekada neinvestuokite daugiau, nei galite sau leisti prarasti."
+      }
+    },
+    "acknowledgment": "Naudodami Freedom Bridge, jūs patvirtinate, kad perskaitėte, supratote ir sutinkate laikytis šio atsakomybės atsisakymo.",
+    "lastUpdated": "Paskutinį kartą atnaujinta: 2026 m. sausis"
+  },
+  "disclaimerModal": {
+    "title": "Svarbus Atsakomybės Atsisakymas",
+    "subtitle": "Prašome perskaityti ir patvirtinti prieš tęsiant.",
+    "noAdvice": "Freedom Bridge neteikia investavimo, finansinių ar prekybos patarimų. Kriptovaliutų investicijos yra nepastovios ir rizikingos.",
+    "risks": "Naudodami šią platformą, jūs pripažįstate, kad išmaniosios sutartys gali turėti pažeidžiamumų, tarptinkliniai tiltai turi neišvengiamą riziką, o transakcijos yra negrįžtamos.",
+    "dyor": "Visada atlikite savo tyrimą (DYOR) ir naudokite tik tas lėšas, kurias galite sau leisti prarasti.",
+    "fullDisclaimer": "Visą informaciją rasite mūsų",
+    "fullDisclaimerLink": "Teisiniame Atsakomybės Atsisakyme",
+    "accept": "Aš Suprantu ir Sutinku"
   },
   "common": {
     "from": "Iš",
     "to": "Į",
     "max": "MAKS",
+    "cancel": "Atšaukti",
     "chainId": "Grandinės ID",
     "bscChain": "BSC Grandinė",
     "insufficientBalance": "Nepakankamas likutis.",
@@ -356,7 +502,7 @@
     "estimatedGas": "Numatomas Axelar dujų mokestis",
     "success": "Sėkmė!",
     "viewOnExplorer": "Peržiūrėti Explorer",
-    "bridging": "Tiltuojama...",
+    "bridging": "Perkeliama...",
     "transactionFailed": "Sandoris nepavyko",
     "search": "Paieška",
     "backToApp": "Grįžti į programėlę"

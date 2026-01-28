@@ -4,6 +4,7 @@
     "titleBridge": "桥"
   },
   "nav": {
+    "home": "首页",
     "settings": "设置",
     "menu": "菜单",
     "preferences": "偏好",
@@ -16,36 +17,49 @@
     "wiki": "文档 / Wiki",
     "contracts": "合约",
     "faq": "常见问题",
-    "logout": "退出",
     "language": "语言",
     "languageSearchPlaceholder": "搜索语言",
     "languageNoResults": "未找到语言",
     "close": "关闭"
   },
   "addNetworks": {
-    "title": "添加网络",
-    "description": "点击下方按钮将网络添加到您的钱包。这使得在测试时切换链变得容易。"
+    "title": "添加网络到钱包",
+    "description": "点击任何网络将其添加到 MetaMask、Rabby 或其他 Web3 钱包",
+    "searchPlaceholder": "搜索网络...",
+    "noResults": "未找到网络",
+    "networkCount": "网络"
+  },
+  "addNetwork": {
+    "connectWallet": "请先连接您的钱包",
+    "alreadyPending": "请求已挂起。请检查您的钱包。",
+    "error": "添加网络失败。请手动添加。",
+    "adding": "正在添加...",
+    "button": "添加"
   },
   "tabs": {
     "convert": "转换",
     "bridge": "跨链"
   },
   "convert": {
-    "token": "代币",
-    "selectToken": "选择代币",
     "balance": "余额",
-    "noConvertibleTokens": "此网络上没有可转换的代币",
-    "convert": "转换",
-    "addToWalletLabel": "将 {{chainName}} 上的 {{symbol}} 导入钱包",
     "addToWalletButton": "导入钱包",
-    "addingToken": "添加中…",
-    "addTokenError": "无法将代币添加到钱包",
-    "legacyTokenMissing": "此链缺少旧版代币",
-    "tigerOGMissing": "此链缺少 TigerOG 代币",
     "networkWarning": {
       "title": "错误的网络",
-      "message": "代币转换仅在 BSC 链上可用。",
-      "description": "请在您的钱包中切换到 BSC 链以转换代币，或导航到跨链选项卡以在链之间转移代币。"
+      "message": "代币转换仅在 BSC 链上可用。请切换到 BSC 以转换您的旧版代币。"
+    },
+    "confirmModal": {
+      "title": "确认转换",
+      "warning": "您即将转换您的代币。请在继续之前仔细阅读以下内容。",
+      "irreversible": "此操作不可逆！",
+      "burnExplanation": "您的 {{legacySymbol}} 代币将被永久销毁，等量的 {{newSymbol}} 代币将铸造到您的钱包中。此操作无法撤销。",
+      "positiveNote": "优点：{{newSymbol}} 完全免税 — 不再有每笔交易 10%以上的税费。",
+      "confirmQuestion": "将 {{amount}} {{legacySymbol}} 转换为 {{newSymbol}}？",
+      "confirmButton": "我明白，转换"
+    },
+    "finalConfirmModal": {
+      "title": "您真的确定吗？",
+      "message": "这是您取消的最后机会。一旦确认，您的 {{legacySymbol}} 将转换为 {{newSymbol}} 且无法转回。",
+      "confirmButton": "是的，立即转换"
     }
   },
   "bridge": {
@@ -56,9 +70,7 @@
     "noDestination": "无目的地",
     "noBridgeableTokens": "无跨链代币",
     "bridgeButton": "跨链代币",
-    "getFeeQuote": "获取费用报价",
     "viewOnAxelarscan": "在 Axelarscan 上查看",
-    "addDestinationTokenLabel": "将 {{chainName}} 上的 {{symbol}} 导入钱包",
     "addTokenError": "无法将代币添加到钱包",
     "estimatedTime": "预计时间",
     "recentTransactions": "最近交易",
@@ -74,25 +86,11 @@
     "cancel": "取消",
     "save": "保存"
   },
-  "wallet": {},
-  "login": {
-    "title": "欢迎回来",
-    "subtitle": "登录以继续使用自由之桥",
-    "emailLabel": "电子邮件",
-    "emailPlaceholder": "name@example.com",
-    "passwordLabel": "密码",
-    "passwordPlaceholder": "输入密码",
-    "rememberMe": "在此设备上记住我",
-    "submit": "登录",
-    "validation": {
-      "required": "电子邮件和密码是必需的。",
-      "invalid": "电子邮件或密码无效。"
-    }
-  },
   "landing": {
     "banner": {
       "title": "新用户？",
-      "message": "了解 Freedom Bridge 以及如何跨链 TigerOG 代币。"
+      "message": "了解 Freedom Bridge 以及如何跨链 TigerOG 代币。",
+      "note": "注意：代币转换是永久性的，无法逆转。"
     },
     "hero": {
       "badge": "由 Axelar 提供支持",
@@ -104,7 +102,7 @@
     "stats": {
       "messaging": "Axelar 网络",
       "networks": "实时网络",
-      "fees": "协议费用",
+      "fees": "平台费用",
       "finality": "最终性"
     },
     "features": {
@@ -130,14 +128,19 @@
         "button": "开始跨链"
       }
     },
-    "teaser": {
-      "title": "您想要其他代币吗？",
-      "subtitle": "您怎么看 <lunc>LUNC</lunc>、<crepe>Crepe</crepe> 或 <shiba>Shiba</shiba>？"
-    },
     "cta": {
       "title": "准备好跨链了吗？",
       "description": "加入跨链革命。只需不到一分钟即可封装您的资产并开始通过 Axelar 跨链。",
       "button": "立即启动应用"
+    },
+    "buyTokens": {
+      "badge": "开始使用",
+      "title": "获取资产",
+      "description": "还没有代币？在 PancakeSwap 上购买原始代币，然后将其转换为新的多链版本。",
+      "buyOn": "在 PancakeSwap 上购买",
+      "then": "然后",
+      "convertTo": "转换为",
+      "buyNow": "立即购买"
     }
   },
   "wiki": {
@@ -145,7 +148,7 @@
     "searchPlaceholder": "搜索文档...",
     "header": {
       "title": "文档",
-      "subtitle": "了解如何封装旧版代币、跨链桥接以及与 Freedom Bridge 集成。"
+      "subtitle": "了解如何转换旧版代币和跨链桥接。"
     },
     "nav": {
       "gettingStarted": "入门",
@@ -153,12 +156,14 @@
       "developers": "开发者",
       "tigerogSupply": "TigerOG 供应量",
       "lionogSupply": "LionOG 供应量",
-      "frogogSupply": "FrogOG 供应量"
+      "frogogSupply": "FrogOG 供应量",
+      "githubRepo": "GitHub 仓库",
+      "axelarDocs": "Axelar ITS 文档"
     },
     "articles": {
       "whatIs": {
         "title": "什么是 Freedom Bridge？",
-        "content": "Freedom Bridge 是建立在 Axelar 的 Interchain Token Service (ITS) 之上的去中心化跨链协议。它旨在将代币从单链限制和高昂的交易税中解放出来。通过将标准代币封装为跨链兼容资产，用户可以在支持的区块链之间自由移动其价值。",
+        "content": "Freedom Bridge 是建立在 Axelar 的 Interchain Token Service (ITS) 之上的去中心化跨链协议。它使您能够将旧版代币转换为免税、跨链兼容的资产，这些资产可以在支持的区块链之间自由移动。",
         "taxFreeTitle": "免税转账",
         "taxFreeDesc": "旧版代币通常有 10%+ 的税。TigerOG 代币有 0% 的税。",
         "omnichainTitle": "全链",
@@ -185,9 +190,9 @@
         "title": "Axelar 网络",
         "content": "我们使用 Axelar 作为我们的互操作层。Axelar 是一个去中心化网络，连接不同的区块链，实现安全的跨链通信和资产转移。Axelar 的安全模型依赖于一组无需许可的验证者，为跨链代币提供高级别的安全性。"
       },
-      "migration": {
-        "title": "迁移逻辑",
-        "content": "迁移合约部署在原链（例如 BSC）上。它保管原始旧版代币。当您升级代币时，您是在存入迁移合约。当您解封装（如果支持）时，您是在销毁 TigerOG 表示以释放原始代币。这确保持续严格支持 1:1 挂钩。"
+      "conversion": {
+        "title": "转换逻辑",
+        "content": "转换合约部署在 BSC 上。当您转换时，您的旧版代币将被发送到黑洞地址（永久销毁），并且您将以 1:1 的比例收到 TigerOG。这是一个单向过程 — 旧版代币被销毁且永远无法恢复。"
       },
       "contracts": {
         "title": "智能合约地址",
@@ -198,7 +203,7 @@
       "security": {
         "title": "安全模型",
         "content": "安全性内置于 Freedom Bridge 的每一层：",
-        "point1": "<strong>迁移架构：</strong> 旧版代币保存在经过验证、不可变的智能合约中。",
+        "point1": "<strong>转换架构：</strong> 旧版代币通过经过验证、不可变的智能合约被永久销毁。",
         "point2": "<strong>Axelar 验证者：</strong> 跨链消息由 Axelar 的去中心化网络验证。",
         "point3": "<strong>一致的供应：</strong> ITS 管理铸造和销毁，以保持所有链上的总供应量恒定。",
         "point4": "<strong>经审计的逻辑：</strong> 建立在行业标准 Axelar 和 OpenZeppelin 库之上。"
@@ -229,7 +234,7 @@
         "lpLockedDesc": "PancakeSwap 流动性池包含与 BNB 配对的 BNBTiger 代币。当 LP 代币被销毁（发送到黑洞地址）时，池中的基础代币将被永久锁定。",
         "lpBurnedPercent": "LP 代币已销毁：所有 LP 代币的 86.18%",
         "lpLockedPercent": "因此，LP 中 86.18% 的代币被永久锁定",
-        "note": "<strong>注意：</strong> TigerOG 在迁移期间与 BNBTiger 保持 1:1 的比例。在考虑所有已销毁和锁定的代币后，TigerOG 的流通供应量与 BNBTiger 的真实流通供应量相匹配。",
+        "note": "<strong>注意：</strong> TigerOG 在转换期间与 BNBTiger 保持 1:1 的比例。在考虑所有已销毁和锁定的代币后，TigerOG 的流通供应量与 BNBTiger 的真实流通供应量相匹配。",
         "launchData": "<strong>发布数据：</strong> 这些数字是在发布时计算的。旧版 BNBTiger 代币在每笔买卖交易中继续销毁代币，因此实际流通供应量可能略低于所示。",
         "legacyContract": "BNBTiger 代币合约",
         "ogContract": "TigerOG 代币合约",
@@ -254,7 +259,7 @@
         "lpLockedDesc": "PancakeSwap 流动性池包含与 BNB 配对的 BNBLion 代币。当 LP 代币被销毁（发送到黑洞地址）时，池中的基础代币将被永久锁定。",
         "lpBurnedPercent": "LP 代币已销毁：所有 LP 代币的 99.98%",
         "lpLockedPercent": "因此，LP 中 99.98% 的代币被永久锁定",
-        "note": "<strong>注意：</strong> LionOG 在迁移期间与 BNBLion 保持 1:1 的比例。在考虑所有已销毁和锁定的代币后，LionOG 的流通供应量与 BNBLion 的真实流通供应量相匹配。",
+        "note": "<strong>注意：</strong> LionOG 在转换期间与 BNBLion 保持 1:1 的比例。LionOG 的流通供应量与 BNBLion 的真实流通供应量相匹配。",
         "launchData": "<strong>发布数据：</strong> 这些数字是在发布时计算的。旧版 BNBLion 代币在每笔买卖交易中继续销毁代币，因此实际流通供应量可能略低于所示。",
         "legacyContract": "BNBLion 代币合约",
         "ogContract": "LionOG 代币合约",
@@ -279,7 +284,7 @@
         "lpLockedDesc": "PancakeSwap 流动性池包含与 BNB 配对的 BNBFrog 代币。当 LP 代币被销毁（发送到黑洞地址）时，池中的基础代币将被永久锁定。",
         "lpBurnedPercent": "LP 代币已销毁：所有 LP 代币的 99.31%",
         "lpLockedPercent": "因此，LP 中 99.31% 的代币被永久锁定",
-        "note": "<strong>注意：</strong> FrogOG 在迁移期间与 BNBFrog 保持 1:1 的比例。在考虑所有已销毁和锁定的代币后，FrogOG 的流通供应量与 BNBFrog 的真实流通供应量相匹配。",
+        "note": "<strong>注意：</strong> FrogOG 在转换期间与 BNBFrog 保持 1:1 的比例。FrogOG 的流通供应量与 BNBFrog 的真实流通供应量相匹配。",
         "launchData": "<strong>发布数据：</strong> 这些数字是在发布时计算的。旧版 BNBFrog 代币在每笔买卖交易中继续销毁代币，因此实际流通供应量可能略低于所示。",
         "legacyContract": "BNBFrog 代币合约",
         "ogContract": "FrogOG 代币合约",
@@ -310,13 +315,67 @@
       "liquidity": "流动性"
     },
     "liquidity": {
-      "title": "流动性池"
-    }
+      "poolAddress": "池地址",
+      "tradeOn": "交易于"
+    },
+    "overview": {
+      "interchainTokens": {
+        "title": "跨链代币",
+        "description": "通过 Axelar Interchain Token Service (ITS) 部署的跨链代币。这些代币在所有支持的网络上保持一致的地址。"
+      },
+      "axelarNetwork": {
+        "title": "Axelar 网络",
+        "description": "保护跨链转移并确保不同区块链之间数据完整性的底层消息传递协议。"
+      },
+      "conversionContracts": {
+        "title": "转换合约",
+        "description": "负责将旧版代币转换为跨链资产。这些合约处理原链上的存款和铸造逻辑。"
+      },
+      "conversionContractsTable": {
+        "title": "转换合约地址",
+        "subtitle": "BSC 上的这些合约处理从旧版代币到跨链代币的转换。",
+        "token": "代币",
+        "legacyToken": "旧版代币",
+        "conversionContract": "转换合约",
+        "newToken": "跨链代币"
+      },
+      "liquidityPools": {
+        "title": "流动性池",
+        "description": "您可以在各种链上交易 OG 代币的 DEX 流动性池。"
+      },
+      "liquidityPoolsTable": {
+        "title": "流动性池",
+        "subtitle": "用于交易 OG 代币的 DEX 池",
+        "token": "代币",
+        "chain": "链",
+        "dex": "DEX",
+        "poolAddress": "池地址"
+      }
+    },
+    "filterTokens": "过滤代币...",
+    "interchainAsset": "通过 Axelar ITS 的跨链资产",
+    "availableOnChains": "在 {{count}} 条链上可用",
+    "table": {
+      "chain": "链",
+      "tokenAddress": "代币地址",
+      "axelarChainName": "Axelar 链名称",
+      "chainId": "ID: {{id}}"
+    },
+    "axelarId": "Axelar ID: {{name}}",
+    "copied": "已复制！",
+    "copyAddress": "复制地址"
   },
   "faq": {
     "title": "Freedom Bridge 支持",
     "header": "常见问题",
     "subtitle": "关于 TigerOG、跨链和 Axelar 的常见问题解答。",
+    "sections": {
+      "gettingStarted": "入门",
+      "convertingTrading": "转换与交易",
+      "bridging": "跨链",
+      "technical": "技术",
+      "securityRisks": "安全与风险"
+    },
     "cta": {
       "title": "还有问题吗？",
       "description": "加入我们在 Telegram 上的社区或查看详细的 Wiki 以获取技术指南。",
@@ -327,25 +386,112 @@
       "q1": "转换我的代币有什么目的？",
       "a1": "将您的代币转换为 TigerOG 可消除与旧版代币相关的交易税（通常为 10-12%）。它还允许您通过 Axelar 将这些代币跨链到其他区块链，如 Ethereum、Base 等，从而访问新的生态系统。",
       "q2": "使用 Freedom Bridge 安全吗？",
-      "a2": "是的。该协议使用安全的迁移合约和 Axelar 的 Interchain Token Service。当您转换时，您的 BNBTiger 将被永久销毁，您将以 1:1 的比例收到 TigerOG。销毁机制确保在所有链上正确管理总供应量。",
+      "a2": "是的。该协议使用安全的转换合约和 Axelar 的 Interchain Token Service。当您转换时，您的 BNBTiger 将被永久销毁，您将以 1:1 的比例收到 TigerOG。销毁机制确保在所有链上正确管理总供应量。",
       "q3": "有任何费用吗？",
       "a3": "Freedom Bridge 本身不收取转换费用。您只需支付标准的区块链燃气费。跨链包括支付给 Axelar 的跨链燃气费，用于支付中继成本。",
       "q4": "如果我丢失了代币会怎样？",
       "a4": "TigerOG 代币的行为就像任何其他 ERC20 代币一样。如果您丢失了对钱包的访问权限，则无法恢复。始终确保您的私钥和助记词安全。",
       "q5": "我可以将 TigerOG 代币转换回 BNBTiger 吗？",
-      "a5": "不能。迁移是单向转换。当您将 BNBTiger 转换为 TigerOG 时，您的 BNBTiger 代币将被永久销毁（发送到黑洞地址）。这是有意设计的 — TigerOG 是升级后的免税版本，旨在完全取代旧版代币。",
+      "a5": "不能。转换是单向转换。当您将 BNBTiger 转换为 TigerOG 时，您的旧版代币将永久锁定在转换合约中。这是有意设计的 — TigerOG 是升级后的免税版本，旨在完全取代旧版代币。",
       "q6": "支持哪些网络？",
       "a6": "我们通过 Axelar 支持多条 EVM 链，包括 BNB Chain、Ethereum、Base 等等。查看 Wiki 获取支持网络的完整列表。",
       "q7": "跨链需要多长时间？",
-      "a7": "跨链速度取决于源链的最终性以及 Axelar 的中继。通常，链之间的转账大约需要 2-5 分钟。",
+      "a7": "跨链时间取决于您从哪条链发送：\n\n• Ethereum: 15-20 分钟（需要更多确认）\n• BSC & Avalanche: 2-4 分钟（最快）\n• Base, Linea, Polygon: 3-5 分钟\n\n应用程序会在您跨链前显示预计时间。",
       "q8": "OG 代币的流通供应量是多少？",
-      "a8": "每个 OG 代币都有源自其原始 BNB 代币的固定流通供应量，考虑了已销毁代币、滞留合约余额和锁定 LP。TigerOG：~3.66 septillion（原始的 36.62%）。LionOG：~3.83 septillion（原始的 38.33%）。FrogOG：~8.39 septillion（原始的 83.86%）。查看 Wiki 获取每个代币的详细明细。"
+      "a8": "每个 OG 代币都有源自其原始 BNB 代币的固定流通供应量，考虑了已销毁代币、滞留合约余额和锁定 LP：\n\n• TigerOG: ~3.66 septillion（原始的 36.62%）\n• LionOG: ~3.83 septillion（原始的 38.33%）\n• FrogOG: ~8.39 septillion（原始的 83.86%）\n\n查看 Wiki 获取详细明细。",
+      "q9": "为什么 OG 合约没有放弃所有权？",
+      "a9": "放弃合约将失去未来开发和添加新链的能力。虽然在可预见的未来不会放弃合约，但进行任何更改都需要多重签名。此外，没有代币或税收分配给团队。",
+      "q10": "为什么 OG 合约是可铸造的？",
+      "a10": "跨链桥接需要铸造/销毁功能——代币在离开链时销毁，在到达时铸造。这保持了所有网络上的总供应量恒定。铸造由多签 Safe 钱包控制。",
+      "q11": "TigerOG 是为了 Axelar 离开 BNB 链吗？",
+      "a11": "不是。Axelar 不是区块链——它是连接链的桥接协议。BNB 链仍然是您转换旧版代币的源链。Axelar 只是让您的代币能够在 BNB、Ethereum、Base 和其他支持的网络之间移动。",
+      "q12": "我的代币在哪里？",
+      "a12": "确保您已将链和代币地址添加到您的钱包中。您可以在“合约”页面找到所有合约地址。Tiger 团队使用 Rabby 钱包，这使得管理多链变得更容易。",
+      "q13": "为什么从 Ethereum 或 Base 跨链需要这么长时间？",
+      "a13": "为了最大程度的安全性，Ethereum 需要两个时期（epochs）才能最终确认交易。由于 Base 在 Ethereum 上结算，它继承了这种延迟。这是安全性优先于速度——您的代币是安全的，请耐心等待。",
+      "q14": "如果我保留原始代币不转换会怎样？",
+      "a14": "没有转换的紧迫性。BNBTiger 和 TigerOG 将始终拥有不同的流动性池、市值等。但 BNBTiger 税费高，而 TigerOG 交易无税。由于原始代币的税收不用于支持项目，开发由 CTO 团队为 TigerOG 进行。Freedom Bridge 和多链仅适用于 TigerOG。",
+      "q15": "转换有税吗？TigerOG 有税吗？",
+      "a15": "没有。转换和交易只花费正常的 Gas 费。没有额外的税费，TigerOG 是免税合约。",
+      "q16": "我可以直接购买和交易 TigerOG 吗？",
+      "a16": "还不行。团队尚未收集费用和税收以资助足够大的流动性池。现在要获得 TigerOG，您必须购买或已经拥有原始代币并进行转换。一旦您拥有 TigerOG，在投资者加入流动性池之前，它将不易交易。",
+      "q17": "为什么 TigerOG 市值看起来如此膨胀？",
+      "a17": "流动性池越小，任何小额交易对显示市值的影响就越大。一旦投资者成为流动性提供者，这个问题就会解决。",
+      "q18": "做了哪些安全审计？",
+      "a18": "Freedom Bridge 尚未经过正式的第三方审计。但是，转换器合约代码基于 Stronghold 团队（前 XRP 和 Stellar 开发人员，最近在达沃斯发表演讲）构建的 SHx 转换器。桥接基础设施由 Axelar 提供支持，Axelar 已通过多次安全审计。",
+      "q19": "Freedom Bridge 如何防止黑客攻击或漏洞利用？",
+      "a19": "已采取多项措施：\n\n• 转换器仅持有所需的确切流通供应量——没有多余的代币可供利用\n• 转换器没有铸造权限\n• 所有合约代码均在链上验证并开源\n• 代币权限在 Safe.global 多签钱包中得到保护\n• 桥接由 Axelar 经过实战检验的基础设施处理",
+      "q20": "跨链是不可逆的吗？如果转账失败怎么办？",
+      "a20": "由于 Gas 不足或网络拥堵，跨链转账极少会卡住。如果发生这种情况，您可以在 Axelarscan 上跟踪您的交易并手动添加 Gas 以完成它。Axelar 提供交易恢复工具——您不会丢失代币。",
+      "q21": "使用 Freedom Bridge 有哪些风险？",
+      "a21": "与任何 DeFi 协议一样，存在固有风险，包括智能合约风险、桥接风险和市场波动。我们建议您自行研究 (DYOR) 并仅使用您能承受损失的资金。有关更多信息，请参阅我们的法律免责声明。",
+      "q22": "我可以转换新的 BNB Tiger Inu 合约（2025 年 9 月）吗？",
+      "a22": "不能。Freedom Bridge 支持几年前推出的原始/旧版 BNB Tiger 代币——而不是 2025 年 9 月创建的新合约。Freedom Bridge 是为原始 Tiger、Lion 和 Frog 代币的社区接管 (CTO) 建立的。",
+      "q23": "如何添加流动性？",
+      "a23": "添加流动性是一项高级 DeFi 活动，存在包括无常损失在内的风险。如果您有在 PancakeSwap 或 Uniswap 等 DEX 上提供流动性的经验，过程是一样的——将 OG 代币与基础资产配对。如果您想了解更多信息，这里有一个关于流动性的精彩教育系列：https://www.youtube.com/watch?v=oiylIHvwMik&list=PL_ujg_v1hZ5iGtiuhT8NkSMqEOaLAgmUu",
+      "q24": "团队会跑路（Rug Pull）吗？",
+      "a24": "不会。没有跑路的机制。没有代币或税收分配给团队，我们也不收取任何桥接费用——这些费用归 Axelar 用于支付中继成本。团队和您一样是持有人，自费建立这个项目。唯一的团队钱包是由社区捐赠资助的公共营销钱包。多签 Safe 钱包控制合约权限，例如在紧急情况下暂停发送到链，但无法访问或重定向用户资金。"
     }
+  },
+  "footer": {
+    "wiki": "Wiki",
+    "contracts": "合约",
+    "faq": "常见问题",
+    "disclaimer": "免责声明",
+    "github": "GitHub"
+  },
+  "disclaimer": {
+    "title": "法律免责声明",
+    "header": "重要法律声明",
+    "subtitle": "在使用 Freedom Bridge 之前，请仔细阅读本免责声明。",
+    "sections": {
+      "noInvestmentAdvice": {
+        "title": "无投资建议",
+        "content": "Freedom Bridge 上提供的信息不构成投资建议、财务建议、交易建议或任何其他类型的建议。您不应将任何内容视为此类建议。Freedom Bridge 不建议您购买、出售或持有任何加密货币。在做出任何投资决定之前，请自行进行尽职调查并咨询您的财务顾问。"
+      },
+      "risksOfUse": {
+        "title": "使用风险",
+        "content": "加密货币市场波动且不可预测。使用 Freedom Bridge 即表示您承认并接受：\n\n• 智能合约可能包含可能导致资金损失的错误或漏洞\n• 跨链桥接具有固有风险，包括但不限于：预言机故障、验证者串通和网络拥堵\n• 代币价值可能会大幅波动，您可能会损失部分或全部投资\n• 区块链网络上的交易是不可逆的\n• 网络费用和燃气成本超出我们的控制范围，可能会有很大差异"
+      },
+      "noWarranties": {
+        "title": "无担保",
+        "content": "Freedom Bridge 按“原样”和“可用”提供，不提供任何形式的明示或暗示保证。我们不保证服务不会中断、安全或无错误。我们不对通过平台提供的任何信息的准确性、可靠性或完整性做出任何保证。"
+      },
+      "limitationOfLiability": {
+        "title": "责任限制",
+        "content": "在法律允许的最大范围内，Freedom Bridge、其开发者、贡献者和关联公司对因您使用平台而引起或与之相关的任何直接、间接、附带、特殊、后果性或惩罚性损害概不负责，包括但不限于利润损失、数据丢失或加密货币资产损失。"
+      },
+      "thirdPartyServices": {
+        "title": "第三方服务",
+        "content": "Freedom Bridge 与包括 Axelar Network 在内的第三方服务集成以进行跨链桥接。我们不对这些第三方的行为、内容、信息或数据负责。您对第三方服务的使用受其各自条款和条件的约束。"
+      },
+      "regulatoryCompliance": {
+        "title": "监管合规",
+        "content": "加密货币法规因司法管辖区而异。您全权负责确保您对 Freedom Bridge 的使用符合您所在司法管辖区的所有适用法律和法规。Freedom Bridge 不对服务在任何司法管辖区的合法性做出任何陈述。"
+      },
+      "dyor": {
+        "title": "自行研究 (DYOR)",
+        "content": "在与任何 DeFi 协议交互之前，请务必自行研究 (DYOR)。验证合约地址，了解您交互的任何代币的机制，切勿投资超过您能承受损失的金额。"
+      }
+    },
+    "acknowledgment": "使用 Freedom Bridge 即表示您承认您已阅读、理解并同意受本免责声明的约束。",
+    "lastUpdated": "最后更新：2026 年 1 月"
+  },
+  "disclaimerModal": {
+    "title": "重要免责声明",
+    "subtitle": "请在继续之前阅读并确认。",
+    "noAdvice": "Freedom Bridge 不提供投资、财务或交易建议。加密货币投资具有波动性和风险。",
+    "risks": "使用此平台即表示您承认智能合约可能包含漏洞，跨链桥接具有固有风险，且交易不可逆。",
+    "dyor": "始终自行研究 (DYOR) 并仅使用您能承受损失的资金。",
+    "fullDisclaimer": "有关完整详细信息，请参阅我们的",
+    "fullDisclaimerLink": "法律免责声明",
+    "accept": "我理解并接受"
   },
   "common": {
     "from": "从",
     "to": "到",
     "max": "最大",
+    "cancel": "取消",
     "chainId": "链 ID",
     "bscChain": "BSC 链",
     "insufficientBalance": "余额不足。",

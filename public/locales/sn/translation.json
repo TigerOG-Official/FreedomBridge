@@ -4,6 +4,7 @@
     "titleBridge": "Rerusununguko"
   },
   "nav": {
+    "home": "Kumba",
     "settings": "Zvirongwa",
     "menu": "Menyu",
     "preferences": "Zvaunofarira",
@@ -15,7 +16,7 @@
     "switchPalette": "Chinja Palette",
     "wiki": "Gwaro / Wiki",
     "contracts": "Zvibvumirano",
-    "faq": "FAQ",
+    "faq": "Mibvunzo Inowanzobvunzwa",
     "logout": "Buda",
     "language": "Mutauro",
     "languageSearchPlaceholder": "Tsvaga mitauro",
@@ -23,29 +24,43 @@
     "close": "Vhara"
   },
   "addNetworks": {
-    "title": "Wedzera Manetiweki",
-    "description": "Dzvanya bhatani pazasi kuti uwedzere Manetiweki kuchikwama chako. Izvi zvinoita kuti zvive nyore kushandura pakati pemaketani uchiyedza."
+    "title": "Wedzera Manetiweki kuChikwama",
+    "description": "Dzvanya chero netiweki kuti uiwedzere kuMetaMask, Rabby, kana mamwe maWeb3 wallet",
+    "searchPlaceholder": "Tsvaga manetiweki...",
+    "noResults": "Hapana manetiweki awanikwa",
+    "networkCount": "netiweki"
+  },
+  "addNetwork": {
+    "connectWallet": "Ndapota batanidza chikwama chako kutanga",
+    "alreadyPending": "Chikumbiro chiri kutogadziriswa. Tarisa chikwama chako.",
+    "error": "Kutadza kuwedzera netiweki. Ndapota iwedzere nemaoko.",
+    "adding": "Kuwedzera...",
+    "button": "Wedzera"
   },
   "tabs": {
     "convert": "Shandura",
     "bridge": "Zambuko"
   },
   "convert": {
-    "token": "Chiratidzo",
-    "selectToken": "Sarudza Chiratidzo",
     "balance": "Chiyero",
-    "noConvertibleTokens": "Hapana zviratidzo zvekushandura pa {{chainName}}",
-    "convert": "Shandura",
-    "addToWalletLabel": "Tumira {{symbol}} pa {{chainName}} kuchikwama",
     "addToWalletButton": "Tumira kuChikwama",
-    "addingToken": "Kuwedzera…",
-    "addTokenError": "Kutadza kuwedzera chiratidzo kuchikwama",
-    "legacyTokenMissing": "Chiratidzo chekare chisipo pacheni iyi",
-    "tigerOGMissing": "TigerOG chiratidzo chisipo pacheni iyi",
     "networkWarning": {
       "title": "Netiweki isiri iyo",
-      "message": "Kushandura chiratidzo kunowanikwa chete paBSC Cheni.",
-      "description": "Ndapota chinja kuBSC Cheni muchikwama chako kuti ushandure zviratidzo, kana enda kuZambuko tab kuti utumire zviratidzo pakati pemaketani."
+      "message": "Kushandura chiratidzo kunowanikwa chete paBSC Cheni. Ndapota chinja kuBSC kuti ushandure zviratidzo zvako zvekare."
+    },
+    "confirmModal": {
+      "title": "Simbisa Shanduko",
+      "warning": "Wava kuda kushandura zviratidzo zvako. Ndapota verenga zvinotevera nemazvo usati waenderera mberi.",
+      "irreversible": "Chiito ichi hachigoni kudzoserwa shure!",
+      "burnExplanation": "Zviratidzo zvako zve {{legacySymbol}} zvichapiswa zvachose uye huwandu hwe {{newSymbol}} hwakaenzana huchagadzirwa muchikwama chako. Izvi hazvigoni kudzoserwa.",
+      "positiveNote": "Rutivi rwakanaka: {{newSymbol}} haibhadhariswe mutero zvachose — hapachina mitero ye10%+ pane yega yega yekutengeserana.",
+      "confirmQuestion": "Shandura {{amount}} {{legacySymbol}} kuita {{newSymbol}}?",
+      "confirmButton": "Ndinonzwisisa, Shandura"
+    },
+    "finalConfirmModal": {
+      "title": "Une Chokwadi Here?",
+      "message": "Uyu ndiwo mukana wako wekupedzisira wekudzima. Ukangosimbisa, {{legacySymbol}} yako ichashandurwa kuita {{newSymbol}} uye haigoni kushandurwa kudzokera kumashure.",
+      "confirmButton": "Hongu, Shandura Iye Zvino"
     }
   },
   "bridge": {
@@ -56,9 +71,7 @@
     "noDestination": "Hapana kwauri kuenda",
     "noBridgeableTokens": "Hapana zviratidzo zvinogona kuyambuka",
     "bridgeButton": "Yambuka Zviratidzo",
-    "getFeeQuote": "Tora Mutengo weMari",
     "viewOnAxelarscan": "Tarisa paAxelarscan",
-    "addDestinationTokenLabel": "Tumira {{symbol}} pa {{chainName}} kuchikwama",
     "addTokenError": "Kutadza kuwedzera chiratidzo kuchikwama",
     "estimatedTime": "Nguva inofungidzirwa",
     "recentTransactions": "Maitiro achangoburwa",
@@ -74,25 +87,11 @@
     "cancel": "Kanzura",
     "save": "Sevha"
   },
-  "wallet": {},
-  "login": {
-    "title": "Tikugashirei zvakare",
-    "subtitle": "Pinda kuti uenderere mberi kuRusungunuko Zambuko",
-    "emailLabel": "Email",
-    "emailPlaceholder": "zita@muenzaniso.com",
-    "passwordLabel": "Pasiwedhi",
-    "passwordPlaceholder": "Pinda pasiwedhi",
-    "rememberMe": "Ndirangarire pachigadzirwa ichi",
-    "submit": "Pinda",
-    "validation": {
-      "required": "Email nepasiwedhi zvinodiwa.",
-      "invalid": "Email kana pasiwedhi zvisirizvo."
-    }
-  },
   "landing": {
     "banner": {
       "title": "Mutsva pano?",
-      "message": "Dzidza nezve Freedom Bridge uye maitiro ekuyambuka TigerOG tokens mumaketani."
+      "message": "Dzidza nezve Freedom Bridge uye maitiro ekuyambuka TigerOG tokens mumaketani.",
+      "note": "Cherechedza: Kushandura chiratidzo ndekwechigarire uye hakugoni kudzoserwa."
     },
     "hero": {
       "badge": "Inofambiswa neAxelar",
@@ -130,14 +129,19 @@
         "button": "Tanga Kuyambuka"
       }
     },
-    "teaser": {
-      "title": "Unoda mamwe marii here?",
-      "subtitle": "Unofungei nezve <lunc>LUNC</lunc>, <crepe>Crepe</crepe>, kana <shiba>Shiba</shiba>??"
-    },
     "cta": {
       "title": "Wagadzirira kuyambuka?",
       "description": "Joinha shanduko yepakati pemaketani. Zvinotora isingasviki miniti kupeta midziyo yako uye kutanga kuyambuka kuburikidza neAxelar.",
       "button": "Tanga App Iye Zvino"
+    },
+    "buyTokens": {
+      "badge": "Tanga",
+      "title": "Wana Midziyo",
+      "description": "Hausati uine zviratidzo here? Tenga zviratidzo zvepakutanga paPancakeSwap, wozvishandura kuita shanduro itsva dzemaketani akawanda.",
+      "buyOn": "Tenga paPancakeSwap",
+      "then": "obva",
+      "convertTo": "Shandura kuita",
+      "buyNow": "Tenga Iye Zvino"
     }
   },
   "wiki": {
@@ -145,23 +149,25 @@
     "searchPlaceholder": "Tsvaga magwaro...",
     "header": {
       "title": "Gwaro",
-      "subtitle": "Dzidza kupeta ma token ekare, kuyambuka pakati pemaketani, uye kubatanidza neFreedom Bridge."
+      "subtitle": "Dzidza kupeta ma token ekare uye kuyambuka pakati pemaketani."
     },
     "nav": {
       "gettingStarted": "Kutanga",
       "coreConcepts": "Pfungwa Huru",
       "developers": "Vagadziri",
-      "tigerOGSupply": "TigerOG Kupa",
-      "lionOGSupply": "LionOG Kupa",
-      "frogOGSupply": "FrogOG Kupa"
+      "tigerogSupply": "TigerOG Kupa",
+      "lionogSupply": "LionOG Kupa",
+      "frogogSupply": "FrogOG Kupa",
+      "githubRepo": "GitHub Repository",
+      "axelarDocs": "Axelar ITS Gwaro"
     },
     "articles": {
       "whatIs": {
         "title": "Chii chinonzi Freedom Bridge?",
-        "content": "Freedom Bridge iprotokol yakagovaniswa yekuyambuka yakavakirwa paAxelar's Interchain Token Service (ITS). Yakagadzirirwa kusunungura ma token kubva kune ganhuriro yecheni imwe uye mitero yepamusoro yekutengeserana. Nekupeta ma token akajairwa kuita midziyo inoenderana nepakati pemaketani, vashandisi vanogona kufambisa kukosha kwavo vakasununguka pama blockchains anotsigirwa.",
+        "content": "Freedom Bridge iprotokol yakagovaniswa yekuyambuka yakavakirwa paAxelar's Interchain Token Service (ITS). Inokubvumira kushandura ma token ekare kuita midziyo isingabhadharwi mutero, inoenderana nepakati pemaketani inogona kufamba yakasununguka pama blockchains anotsigirwa.",
         "taxFreeTitle": "Kutumira Kusingabhadharwi Mutero",
         "taxFreeDesc": "Ma token ekare anowanzoita mitero ye10%+. TigerOG tokens ane 0% mutero.",
-        "omnichainTitle": "Omnichain",
+        "omnichainTitle": "Interchain",
         "omnichainDesc": "Fambisa midziyo ipapo ipapo pakati pe {{count}}+ blockchains kuburikidza neAxelar."
       },
       "howToConvert": {
@@ -169,7 +175,7 @@
         "step1": "Batanidza chikwama chako kune cheni sosi (semuenzaniso, BNB Chain).",
         "step2": "Enda ku <strong>Shandura</strong> tab.",
         "step3": "Sarudza chiratidzo chekare chaunoda kushandura.",
-        "step4": "Bvumidza chibvumirano cheKutama kushandisa ma token ako.",
+        "step4": "Bvumidza chibvumirano cheKushandura kushandisa ma token ako.",
         "step5": "Dzvanya <strong>Shandura</strong> kuti uise ma token ako ekare uye kugamuchira huwandu hwe \"TigerOG\" tokens hwakaenzana.",
         "note": "<strong>Cherechedza:</strong> Shanduko inoda mutero wekutengeserana wechiratidzo chekare (panguva yekuvandudza) kana chiratidzo chako chichibhadharisa mitero pakutumira. Zvisinei, kana washandurwa kuita TigerOG, kutumira kwese nekuyambuka kwese kunotevera hakuna mutero uyu."
       },
@@ -185,9 +191,9 @@
         "title": "Axelar Network",
         "content": "Tinoshandisa Axelar sechinhu chedu chekushanda pamwe chete. Axelar inetiweki yakagovaniswa inobatanidza blockchains akasiyana, ichigonesa kutaurirana kwakachengeteka kwepakati pemaketani uye kutamiswa kwemidziyo. Iyo Axelar chengetedzo modhi inovimba neseti yevachengeti vasina mvumo, ichipa yakakwira-giredhi chengetedzo ye interchain tokens."
       },
-      "migration": {
-        "title": "Logic yekutama",
-        "content": "Chibvumirano cheKutama chakaiswa pacheni yekutanga (semuenzaniso, BSC). Inochengetedza ma token ekare ekutanga mukuchengetedza. Paunovandudza ma token, uri kuisa muchibvumirano cheKutama. Paunotsunungura (kana zvichitsigirwa), uri kupisa TigerOG inomiririra kuburitsa ma token ekutanga. Izvi zvinovimbisa kutsigira kwakasimba kwe1:1."
+      "conversion": {
+        "title": "Logic yeShanduko",
+        "content": "Chibvumirano cheKushandura chakaiswa paBSC. Paunoshandura, ma token ako ekare anotumirwa kukero yakafa (akapiswa zvachose) uye unogamuchira TigerOG pachiyero che1:1. Iyi inzira imwe chete — ma token ekare anoparadzwa uye haagoni kudzoserwa."
       },
       "contracts": {
         "title": "Kero dzeZvibvumirano",
@@ -198,7 +204,7 @@
       "security": {
         "title": "Muenzaniso weChengetedzo",
         "content": "Chengetedzo yakavakirwa mumutsetse wega wega weFreedom Bridge:",
-        "point1": "<strong>Architecture yekutama:</strong> Ma token ekare anochengetwa muzvibvumirano zvakangwara zvakasimbiswa, zvisingachinjike.",
+        "point1": "<strong>Architecture yeShanduko:</strong> Ma token ekare anopiswa zvachose kuburikidza nezvibvumirano zvakangwara zvakasimbiswa, zvisingachinjike.",
         "point2": "<strong>Axelar Validators:</strong> Mameseji epakati pemaketani anosimbiswa neAxelar's decentralized network.",
         "point3": "<strong>Kupa Kunoenderana:</strong> ITS inotonga kugadzira nekupisa kuchengetedza kupa kwese nguva dzose pama cheni ese.",
         "point4": "<strong>Logic Yakaongororwa:</strong> Yakavakwa paindustry-standard Axelar neOpenZeppelin mabhuku."
@@ -220,7 +226,7 @@
         "contractBalanceTitle": "2. Chiyero cheChibvumirano",
         "lpLockedTitle": "3. LP Yakakiiwa Tokens"
       },
-      "tigerOGSupply": {
+      "tigerogSupply": {
         "title": "TigerOG Kupa Kupatsanurwa",
         "intro": "TigerOG ine kupa kwakagadziriswa kuri kutenderera kunobva kune yekutanga BNBTiger token. Kuverenga kwekupa kunoverengera ese akapiswa uye akakiiwa zvachose ma token.",
         "lpLocked": "LP Yakakiiwa (86.18% yeLP Yakapiswa)",
@@ -229,7 +235,7 @@
         "lpLockedDesc": "Dziva remari rePancakeSwap rine BNBTiger tokens yakapetwa neBNB. Kana LP tokens akapiswa (akatumirwa kukero yakafa), ma token epasi mudziva anova akakiiwa zvachose.",
         "lpBurnedPercent": "LP tokens akapiswa: 86.18% yema LP tokens ese",
         "lpLockedPercent": "Saka, 86.18% yema token muLP akakiiwa zvachose",
-        "note": "<strong>Cherechedza:</strong> TigerOG inochengetedza 1:1 chiyero neBNBTiger panguva yekutama. Kupa kuri kutenderera kweTigerOG kunoenderana nechokwadi kupa kuri kutenderera kweBNBTiger mushure mekuverenga ese akapiswa uye akakiiwa ma token.",
+        "note": "<strong>Cherechedza:</strong> TigerOG inochengetedza 1:1 chiyero neBNBTiger panguva yekushandura. Kupa kuri kutenderera kweTigerOG kunoenderana nechokwadi kupa kuri kutenderera kweBNBTiger mushure mekuverenga ese akapiswa uye akakiiwa ma token.",
         "launchData": "<strong>Launch Data:</strong> Nhamba idzi dzakaverengwa pakutanga. Chiratidzo chekare cheBNBTiger chinoenderera mberi kupisa ma token pane yega yega yekutenga/kutengesa transaction, saka kupa chaiko kuri kutenderera kunogona kuve kwakaderera zvishoma pane kwakaratidzwa.",
         "legacyContract": "BNBTiger Token Chibvumirano",
         "ogContract": "TigerOG Token Chibvumirano",
@@ -245,7 +251,7 @@
           "circulatingPercent": "36.62%"
         }
       },
-      "lionOGSupply": {
+      "lionogSupply": {
         "title": "LionOG Kupa Kupatsanurwa",
         "intro": "LionOG ine kupa kwakagadziriswa kuri kutenderera kunobva kune yekutanga BNBLion token. Kuverenga kwekupa kunoverengera ese akapiswa uye akakiiwa zvachose ma token.",
         "lpLocked": "LP Yakakiiwa (99.98% yeLP Yakapiswa)",
@@ -254,7 +260,7 @@
         "lpLockedDesc": "Dziva remari rePancakeSwap rine BNBLion tokens yakapetwa neBNB. Kana LP tokens akapiswa (akatumirwa kukero yakafa), ma token epasi mudziva anova akakiiwa zvachose.",
         "lpBurnedPercent": "LP tokens akapiswa: 99.98% yema LP tokens ese",
         "lpLockedPercent": "Saka, 99.98% yema token muLP akakiiwa zvachose",
-        "note": "<strong>Cherechedza:</strong> LionOG inochengetedza 1:1 chiyero neBNBLion panguva yekutama. Kupa kuri kutenderera kweLionOG kunoenderana nechokwadi kupa kuri kutenderera kweBNBLion mushure mekuverenga ese akapiswa uye akakiiwa ma token.",
+        "note": "<strong>Cherechedza:</strong> LionOG inochengetedza 1:1 chiyero neBNBLion panguva yekushandura. Kupa kuri kutenderera kweLionOG kunoenderana nechokwadi kupa kuri kutenderera kweBNBLion mushure mekuverenga ese akapiswa uye akakiiwa ma token.",
         "launchData": "<strong>Launch Data:</strong> Nhamba idzi dzakaverengwa pakutanga. Chiratidzo chekare cheBNBLion chinoenderera mberi kupisa ma token pane yega yega yekutenga/kutengesa transaction, saka kupa chaiko kuri kutenderera kunogona kuve kwakaderera zvishoma pane kwakaratidzwa.",
         "legacyContract": "BNBLion Token Chibvumirano",
         "ogContract": "LionOG Token Chibvumirano",
@@ -270,7 +276,7 @@
           "circulatingPercent": "38.33%"
         }
       },
-      "frogOGSupply": {
+      "frogogSupply": {
         "title": "FrogOG Kupa Kupatsanurwa",
         "intro": "FrogOG ine kupa kwakagadziriswa kuri kutenderera kunobva kune yekutanga BNBFrog token. Kuverenga kwekupa kunoverengera ese akapiswa uye akakiiwa zvachose ma token.",
         "lpLocked": "LP Yakakiiwa (99.31% yeLP Yakapiswa)",
@@ -279,7 +285,7 @@
         "lpLockedDesc": "Dziva remari rePancakeSwap rine BNBFrog tokens yakapetwa neBNB. Kana LP tokens akapiswa (akatumirwa kukero yakafa), ma token epasi mudziva anova akakiiwa zvachose.",
         "lpBurnedPercent": "LP tokens akapiswa: 99.31% yema LP tokens ese",
         "lpLockedPercent": "Saka, 99.31% yema token muLP akakiiwa zvachose",
-        "note": "<strong>Cherechedza:</strong> FrogOG inochengetedza 1:1 chiyero neBNBFrog panguva yekutama. Kupa kuri kutenderera kweFrogOG kunoenderana nechokwadi kupa kuri kutenderera kweBNBFrog mushure mekuverenga ese akapiswa uye akakiiwa ma token.",
+        "note": "<strong>Cherechedza:</strong> FrogOG inochengetedza 1:1 chiyero neBNBFrog panguva yekushandura. Kupa kuri kutenderera kweFrogOG kunoenderana nechokwadi kupa kuri kutenderera kweBNBFrog mushure mekuverenga ese akapiswa uye akakiiwa ma token.",
         "launchData": "<strong>Launch Data:</strong> Nhamba idzi dzakaverengwa pakutanga. Chiratidzo chekare cheBNBFrog chinoenderera mberi kupisa ma token pane yega yega yekutenga/kutengesa transaction, saka kupa chaiko kuri kutenderera kunogona kuve kwakaderera zvishoma pane kwakaratidzwa.",
         "legacyContract": "BNBFrog Token Chibvumirano",
         "ogContract": "FrogOG Token Chibvumirano",
@@ -310,13 +316,67 @@
       "liquidity": "Mari"
     },
     "liquidity": {
-      "title": "Madziva eMari"
-    }
+      "poolAddress": "Kero yeDziva",
+      "tradeOn": "Tengesera pa"
+    },
+    "overview": {
+      "interchainTokens": {
+        "title": "Interchain Tokens",
+        "description": "Interchain tokens akaiswa kuburikidza neAxelar Interchain Token Service (ITS). Aya ma token anochengetedza kero inoenderana mumanetiweki ese anotsigirwa."
+      },
+      "axelarNetwork": {
+        "title": "Axelar Network",
+        "description": "Iyo yepasi meseji protocol inochengetedza kutamiswa kwepakati pemaketani uye inova nechokwadi chekuchengetedzwa kwedata pakati peakasiyana blockchains."
+      },
+      "conversionContracts": {
+        "title": "Zvibvumirano zveKushandura",
+        "description": "Zvine basa rekushandura ma token ekare kuita midziyo ye interchain. Zvibvumirano izvi zvinobata dhipoziti uye kugadzira logic pacheni yekutanga."
+      },
+      "conversionContractsTable": {
+        "title": "Kero dzeChibvumirano cheKushandura",
+        "subtitle": "Zvibvumirano izvi paBSC zvinobata shanduko kubva kuma token ekare kuenda kuma interchain tokens.",
+        "token": "Chiratidzo",
+        "legacyToken": "Chiratidzo chekare",
+        "conversionContract": "Chibvumirano cheKushandura",
+        "newToken": "Interchain Token"
+      },
+      "liquidityPools": {
+        "title": "Madziva eMari",
+        "description": "DEX liquidity pools kwaunogona kutengesa ma OG token pamaketani akasiyana."
+      },
+      "liquidityPoolsTable": {
+        "title": "Madziva eMari",
+        "subtitle": "DEX madziva ekutengesa ma OG token",
+        "token": "Chiratidzo",
+        "chain": "Cheni",
+        "dex": "DEX",
+        "poolAddress": "Kero yeDziva"
+      }
+    },
+    "filterTokens": "Sefa zviratidzo...",
+    "interchainAsset": "Interchain Asset via Axelar ITS",
+    "availableOnChains": "Inowanikwa pa {{count}} maketani",
+    "table": {
+      "chain": "Cheni",
+      "tokenAddress": "Kero yeChiratidzo",
+      "axelarChainName": "Zita reAxelar Cheni",
+      "chainId": "ID: {{id}}"
+    },
+    "axelarId": "Axelar ID: {{name}}",
+    "copied": "Zvakopewa!",
+    "copyAddress": "Kopa kero"
   },
   "faq": {
     "title": "Rutsigiro rweFreedom Bridge",
     "header": "Mibvunzo Inowanzobvunzwa",
     "subtitle": "Mhinduro kumibvunzo yakajairika nezve TigerOG, kuyambuka, uye Axelar.",
+    "sections": {
+      "gettingStarted": "Kutanga",
+      "convertingTrading": "Kushandura & Kutengeserana",
+      "bridging": "Kuyambuka",
+      "technical": "Tekiniki",
+      "securityRisks": "Chengetedzo & Njodzi"
+    },
     "cta": {
       "title": "Uchiri nemibvunzo here?",
       "description": "Joinha nharaunda yedu paTelegram kana tarisa Wiki yakadzama yeanotungamira ehunyanzvi.",
@@ -325,33 +385,120 @@
     },
     "questions": {
       "q1": "Chii chinangwa chekushandura ma token angu?",
-      "a1": "Kushandura ma token ako kuita TigerOG kunobvisa mutero wekutengeserana (kazhinji 10-12%) une chekuita nechiratidzo chekare. Inokubvumirawo kuyambuka ma token aya kune mamwe blockchains seEthereum, Base, uye zvimwe kuburikidza neAxelar, zvichiita kuti uwane ecosystems matsva.",
+      "a1": "Kushandura ma token ako kuita TigerOG kunobvisa mutero wekutengeserana (kazhinji 10-12%) une chekuita nechiratidzo chekare. Inokubvumirawo kuyambuka ma token aya kune mamwe blockchains se Ethereum, Base, uye zvimwe kuburikidza neAxelar, zvichiita kuti uwane ecosystems matsva.",
       "q2": "Zvakachengeteka here kushandisa Freedom Bridge?",
-      "a2": "Ehe. Protocol inoshandisa chibvumirano chekutama chakachengeteka uye Axelar's Interchain Token Service. Paunoshandura, BNBTiger yako inopiswa zvachose uye unogamuchira TigerOG muchiyero che1:1. Mechanism yekupisa inova nechokwadi chekuti kupa kwese kunochengetwa nemazvo pama cheni ese.",
+      "a2": "Ehe. Protocol inoshandisa chibvumirano chekushandura chakachengeteka uye Axelar's Interchain Token Service. Paunoshandura, BNBTiger yako inopiswa zvachose uye unogamuchira TigerOG muchiyero che1:1. Mechanism yekupisa inova nechokwadi chekuti kupa kwese kunochengetwa nemazvo pama cheni ese.",
       "q3": "Pane mari here?",
       "a3": "Freedom Bridge pachayo haibhadharise mari yekushandura. Unongobhadhara mari yakajairwa yeblockchain gasi. Kuyambuka pakati pemaketani kunosanganisira mari yekuyambuka gasi inobhadharwa kuAxelar kuvhara mari yekutumira.",
       "q4": "Chii chinoitika kana ndikarasikirwa nema token angu?",
       "a4": "TigerOG tokens anoita semamwe maERC20 token. Kana ukarasikirwa nekuwana chikwama chako, haagoni kudzoserwa. Gara uchichengetedza makiyi ako ega uye mitsara yekudzosa yakachengeteka.",
       "q5": "Ndinogona here kushandura ma TigerOG token angu kudzokera kuBNBTiger?",
-      "a5": "Kwete. Kutama ishanduko yeimwe nzira. Paunoshandura BNBTiger kuita TigerOG, ma BNBTiger token ako anopiswa zvachose (akatumirwa kukero yakafa). Izvi ndezvekugadzira - TigerOG ivhezheni yakavandudzwa, isina mutero yakagadzirirwa kutsiva chiratidzo chekare zvachose.",
+      "a5": "Kwete. Kushandura ishanduko yeimwe nzira. Paunoshandura BNBTiger kuita TigerOG, ma BNBTiger token ako anopiswa zvachose (akatumirwa kukero yakafa). Izvi ndezvekugadzira - TigerOG ivhezheni yakavandudzwa, isina mutero yakagadzirirwa kutsiva chiratidzo chekare zvachose.",
       "q6": "Ndeapi manetiweki anotsigirwa?",
       "a6": "Tinotsigira akawanda EVM cheni kuburikidza neAxelar, kusanganisira BNB Chain, Ethereum, Base, uye zvimwe. Tarisa Wiki kune rondedzero izere yemanetiweki anotsigirwa.",
       "q7": "Kuyambuka kunotora nguva yakareba sei?",
       "a7": "Kumhanya kwekuyambuka kunoenderana nenguva yekupedzisira yecheni sosi uye kutumira kweAxelar. Kazhinji, kutamiswa pakati pemaketani kunotora anenge maminetsi 2-5.",
       "q8": "Ndeapi kupa kuri kutenderera kweOG tokens?",
-      "a8": "Imwe neimwe OG token ine kupa kwakagadziriswa kuri kutenderera kunobva kune yayo yekutanga BNB token, ichiverengera akapiswa tokens, akaomeswa chibvumirano zviyero, uye yakakiiwa LP. TigerOG: ~3.66 seputiriyoni (36.62% yepakutanga). LionOG: ~3.83 seputiriyoni (38.33% yepakutanga). FrogOG: ~8.39 seputiriyoni (83.86% yepakutanga). Ona Wiki kuti uwane kupatsanurwa kwakadzama kwechiratidzo chimwe nechimwe."
+      "a8": "Imwe neimwe OG token ine kupa kwakagadziriswa kuri kutenderera kunobva kune yayo yekutanga BNB token, ichiverengera akapiswa tokens, akaomeswa chibvumirano zviyero, uye yakakiiwa LP. TigerOG: ~3.66 seputiriyoni (36.62% yepakutanga). LionOG: ~3.83 seputiriyoni (38.33% yepakutanga). FrogOG: ~8.39 seputiriyoni (83.86% yepakutanga). Ona Wiki kuti uwane kupatsanurwa kwakadzama kwechiratidzo chimwe nechimwe.",
+      "q9": "Sei chibvumirano cheOG chisina kurambwa (renounced)?",
+      "a9": "Kuramba chibvumirano kunobvisa kugona kugadzira nekuwedzera maketani matsva mune ramangwana. Kunyange chibvumirano chisingazorambwi munguva pfupi iri kutevera, masiginecha akawanda anodiwa kuti pave neshanduko. Zvakare, hapana ma token kana mitero yakapihwa kuchikwata.",
+      "q10": "Sei chibvumirano cheOG chichigona kugadzirwa (mintable)?",
+      "a10": "Kuyambuka pakati pemaketani kunoda kugona kugadzira/kupisa - ma token anopiswa kana achibva pacheni uye anogadzirwa kana achisvika. Izvi zvinochengetedza kupa kwese nguva dzose pamanetiweki ese. Kugadzira kunodzorwa nemultisig Safe wallet.",
+      "q11": "TigerOG irikubva paBNB Chain kuenda kuAxelar here?",
+      "a11": "Kwete. Axelar haisi blockchain - iprotokol yezambuko inobatanidza maketani pamwechete. BNB Chain inoramba iri cheni yekutanga kwaunoshandura ma token ekare. Axelar inongobvumira ma token ako kufamba pakati peBNB, Ethereum, Base, uye mamwe manetiweki anotsigirwa.",
+      "q12": "Ma token angu ari kupi?",
+      "a12": "Ita shuwa kuti wawedzera cheni nekero yechiratidzo kuchikwama chako. Unogona kuwana kero dzese dzezvibvumirano papeji reZvibvumirano. Chikwata cheTiger chinoshandisa Rabby wallet inoita kuti kutonga maketani akawanda kuve nyore.",
+      "q13": "Sei kuyambuka kubva kuEthereum kana Base kuchitora nguva yakareba?",
+      "a13": "Ethereum inoda nguva mbiri (epochs) isati yapedza kutengeserana kuti ive nechengetedzo yakanyanya. Sezvo Base ichigadziriswa paEthereum, inogara ichinonoka uku. Izvi zvinokoshesa chengetedzo pamusoro pekumhanya - ma token ako akachengeteka, iva nemoyo murefu.",
+      "q14": "Chii chinoitika kana ndikagara muchiratidzo changu chepakutanga ndikasashandura?",
+      "a14": "Hapana chikonzero chekukurumidza kushandura. BNBTiger neTigerOG zvichagara zvine madziva emari akasiyana, misika caps, zvichingodaro. Asi BNBTiger ine mutero wakakura uye TigerOG haina mutero wekutengeserana. Sezvo mitero yepakutanga isingashandiswe kutsigira chirongwa, kusimudzira kunoitwa nechikwata cheCTO cheTigerOG. Freedom Bridge uye multi-chain ndeye TigerOG chete.",
+      "q15": "Pane mutero wekushandura here? TigerOG ine mutero here?",
+      "a15": "Kwete. Zvinongoda mari yegasi yakajairika kushandura nekutengesa. Hapana mimwe mitero kana mari, uye TigerOG ichibvumirano chisina mutero.",
+      "q16": "Ndinogona here kutenga nekutengesa TigerOG zvakananga?",
+      "a16": "Kwete parizvino. Chikwata hachisati chatora mari nemitero yekukwanisa kutsigira madziva emari makuru zvakakwana. Kuti uwane TigerOG ikozvino, unofanirwa kutenga kana kutova neyekutanga woshandura. Ukangova neTigerOG, haizovi nyore kutengeswa kusvika investa vauya kuzowedzera kudziva remari.",
+      "q17": "Sei TigerOG market cap ichitaridzika kunge yakakwira zvakanyanya?",
+      "a17": "Kudiki dziva remari, ndiko kuwanda kwekutengeserana chero kupi zvako kunoita kukanganisa kukuru pamarket cap inoratidzwa. Izvi zvinogadziriswa kana investa vauya kuzove vapeji vemari.",
+      "q18": "Ndeapi maongororo echengetedzo akaitwa?",
+      "a18": "Freedom Bridge haina kuita ongororo yechitatu yepamutemo. Zvisinei, kodhi yechibvumirano chekushandura yakavakirwa paSHx converter yakavakwa nechikwata cheStronghold (vaimbova vagadziri veXRP neStellar vakapa mharidzo kuDavos nguva pfupi yadarika). Infrastrucuture yekuyambuka inofambiswa neAxelar, iyo yakaita ongororo dzakawanda dzechengetedzo.",
+      "q19": "Freedom Bridge inodzivirira sei kubva kune hackers kana exploits?",
+      "a19": "Matanho akati wandei aripo:\n\n• Mushanduri anobata chete kupa chaiko kunodiwa kutenderera - hapana ma token akawandisa anogona kushandiswa zvisizvo\n• Mushanduri haana mvumo yekugadzira\n• Kodhi yese yechibvumirano inosimbiswa pacheni uye yakavhurika sosi\n• Mvumo dzechiratidzo dzakachengetedzwa muSafe.global multisig wallet\n• Kuyambuka kunobatwa neAxelar's hondo-yakaedzwa zvivakwa",
+      "q20": "Kuyambuka hakugoni kudzoserwa here? Ko kana kutumira kukatadza?",
+      "a20": "Kutumira kwebhiriji kunogona kumboomerera nekuda kwegasi risina kukwana kana kuzara kwenetiweki. Kana izvi zvikaitika, unogona kutevedzera transaction yako paAxelarscan uye kuwedzera gasi nemaoko kuti upedze. Axelar inopa maturusi ekudzoreredza kutengeserana - hauzorasikirwa nema token ako.",
+      "q21": "Ndedzipi njodzi dzine chekuita nekushandisa Freedom Bridge?",
+      "a21": "Sezvakangoita chero DeFi protocol, pane njodzi dziripo dzinosanganisira njodzi yechibvumirano chakangwara, njodzi yebhiriji, uye kusagadzikana kwemusika. Tinokurudzira kuita tsvakiridzo yako (DYOR) uye kushandisa mari chete yaunokwanisa kurasikirwa nayo. Ona chirevo chedu chepamutemo kuti uwane rumwe ruzivo.",
+      "q22": "Ndinogona here kushandura chibvumirano chitsva cheBNB Tiger Inu (Gunyana 2025)?",
+      "a22": "Kwete. Freedom Bridge inotsigira chete chiratidzo chepakutanga/chekare cheBNB Tiger chakatangwa makore akati wandei apfuura - kwete chibvumirano chitsva chakagadzirwa muna Gunyana 2025. Freedom Bridge yakavakirwa kutora nharaunda (CTO) yezviratidzo zvepakutanga zveTiger, Lion, neFrog.",
+      "q23": "Ndinowedzera sei mari (liquidity)?",
+      "a23": "Kuwedzera mari chiitiko cheDeFi chepamusoro chine njodzi dzinosanganisira kurasikirwa kusingaperi. Kana uine ruzivo rwekupa mari paDEXs sePancakeSwap kana Uniswap, maitiro acho akafanana - batanidza OG token neasset yepasi. Heino yakanaka dzidzo yakatevedzana nezve mari kana uchida kudzidza zvakawanda: https://www.youtube.com/watch?v=oiylIHvwMik&list=PL_ujg_v1hZ5iGtiuhT8NkSMqEOaLAgmUu",
+      "q24": "Chikwata chinogona kuita rug pull here?",
+      "a24": "Kwete. Hapana nzira yerug pull. Hapana ma token kana mitero yakapihwa kuchikwata, uye hatitore chero mari yekuyambuka — iyo inoenda kuAxelar yekutumira mari. Chikwata ndechevaridzi seni, vari kuvaka izvi nemari yavo. Chikwata chega wallet iwallet yeruzhinji yekushambadzira inotsigirwa nemipiro yenharaunda. Multisig Safe wallet inodzora mvumo yechibvumirano sekumisa kutumira kumaketani kana paine njodzi, asi haigoni kuwana kana kutungamira mari dzevashandisi."
     }
+  },
+  "footer": {
+    "wiki": "Wiki",
+    "contracts": "Zvibvumirano",
+    "faq": "FAQ",
+    "disclaimer": "Disikeirima",
+    "github": "GitHub"
+  },
+  "disclaimer": {
+    "title": "Mutemo weDisikeirima",
+    "header": "Chiziviso Chakakosha Chepamutemo",
+    "subtitle": "Ndapota verenga disikeirima iyi nemazvo usati washandisa Freedom Bridge.",
+    "sections": {
+      "noInvestmentAdvice": {
+        "title": "Hapana Zano Rekudyara",
+        "content": "Ruzivo rwunopihwa paFreedom Bridge harusi zano rekudyara, zano remari, zano rekutengeserana, kana chero imwe mhando yezano. Haufanirwe kubata chero zvirimo saizvozvo. Freedom Bridge haikurudzire kuti chero cryptocurrency inofanirwa kutengwa, kutengeswa, kana kuchengetwa newe. Ita kushingaira kwako uye bvunza chipangamazano wako wemari usati waita sarudzo dzekudyara."
+      },
+      "risksOfUse": {
+        "title": "Njodzi dzekushandisa",
+        "content": "Misika yeCryptocurrency inoshanduka uye haifungidziriki. Nekushandisa Freedom Bridge, unobvuma uye unobvuma kuti:\n\n• Zvibvumirano zvakangwara zvinogona kuve nezvikanganiso kana kusatadza zvinogona kukonzera kurasikirwa kwemari\n• Mabhiriji epakati pemaketani anotakura njodzi dziripo dzinosanganisira asi dzisina kuganhurirwa ku: kutadza kweoracle, kubatana kwevasimbisi, uye kuzara kwenetiweki\n• Kukosha kwechiratidzo kunogona kuchinja zvakanyanya uye unogona kurasikirwa neimwe kana mari yako yese\n• Kutengeserana pamanetiweki eblockchain hakugoni kudzoserwa\n• Mari dzenetiweki uye mari dzegasi dziri kunze kwekutonga kwedu uye dzinogona kusiyana zvakanyanya"
+      },
+      "noWarranties": {
+        "title": "Hapana Mawaranti",
+        "content": "Freedom Bridge inopihwa \"sezvairi\" uye \"sezvainowanikwa\" pasina chero mawaranti erudzi chero rupi zvake, angave akataurwa kana kurehwa. Hativimbise kuti sevhisi ichave isingakanganiswe, yakachengeteka, kana isina zvikanganiso. Hatiite mawaranti maererano nekururama, kuvimbika, kana kukwana kweruzivo rwunopihwa kuburikidza nepuratifomu."
+      },
+      "limitationOfLiability": {
+        "title": "Kuganhurirwa kweMhosva",
+        "content": "Kusvika pakukura kunotenderwa nemutemo, Freedom Bridge, vagadziri vayo, vapi, uye vanobatana navo havazovi nemhosva yechero yakananga, isina kunanga, yetsaona, yakakosha, inotevera, kana yekuranga kukuvadzwa kunobva kana kune chekuita nekushandisa kwako puratifomu, kusanganisira asi kwete kuganhurirwa kurasikirwa kwepurofiti, kurasikirwa kwedata, kana kurasikirwa kwemidziyo yecryptocurrency."
+      },
+      "thirdPartyServices": {
+        "title": "Masevhisi eBato Rechitatu",
+        "content": "Freedom Bridge inobatanidza nemasevhisi ebato rechitatu kusanganisira Axelar Network yekuyambuka pakati pemaketani. Hatina mhosva yezviito, zvirimo, ruzivo, kana data remapato aya echitatu. Kushandisa kwako masevhisi ebato rechitatu kuri pasi pemitemo nemamiriro avo."
+      },
+      "regulatoryCompliance": {
+        "title": "Kutevedzera Mitemo",
+        "content": "Mitemo yecryptocurrency inosiyana nedare. Iwe uri wega une mhosva yekuona kuti kushandisa kwako Freedom Bridge kunoenderana nemitemo yese inoshanda nemirairo mudare rako. Freedom Bridge haiite chero kumiririra maererano nekutemwa kwemasevhisi mune chero dare."
+      },
+      "dyor": {
+        "title": "Ita Tsvakiridzo Yako (DYOR)",
+        "content": "Gara uchiita tsvakiridzo yako (DYOR) usati wataurirana nechero DeFi protocol. Simbisa kero dzezvibvumirano, nzwisisa makanika echiratidzo chero chipi zvacho chaunotaurirana nacho, uye usamboisa mari yakawanda kupfuura yaunokwanisa kurasikirwa nayo."
+      }
+    },
+    "acknowledgment": "Nekushandisa Freedom Bridge, unobvuma kuti waverenga, wanzwisisa, uye unobvuma kusungwa nedisikeirima iyi.",
+    "lastUpdated": "Yakagadziriswa: Ndira 2026"
+  },
+  "disclaimerModal": {
+    "title": "Disikeirima Yakakosha",
+    "subtitle": "Ndapota verenga uye bvuma usati waenderera mberi.",
+    "noAdvice": "Freedom Bridge haipi zano rekudyara, remari, kana rekutengeserana. Kudyara mucryptocurrency hakuna kugadzikana uye kune njodzi.",
+    "risks": "Nekushandisa puratifomu iyi, unobvuma kuti zvibvumirano zvakangwara zvinogona kuve nezvikanganiso, mabhiriji epakati pemaketani ane njodzi dziripo, uye kutengeserana hakugoni kudzoserwa.",
+    "dyor": "Gara uchiita tsvakiridzo yako (DYOR) uye shandisa mari chete yaunokwanisa kurasikirwa nayo.",
+    "fullDisclaimer": "Kuti uwane ruzivo rwakazara, ona yedu",
+    "fullDisclaimerLink": "Mutemo weDisikeirima",
+    "accept": "Ndinonzwisisa uye Ndinobvuma"
   },
   "common": {
     "from": "Kubva",
     "to": "Ku",
     "max": "MAX",
+    "cancel": "Kanzura",
     "chainId": "Cheni ID",
     "bscChain": "BSC Cheni",
     "insufficientBalance": "Chiyero chisina kukwana.",
     "failedToSwitchNetwork": "Kukundikana kuchinja network. Ndapota chinja nemaoko muchikwama chako.",
     "failedToFetchFeeQuote": "Kukundikana kutora mutengo wemari.",
-    "unableToDetermineGas": "Kukundikana kuona muripo weAxelar gasi",
+    "unableToDetermineGas": "Kutadza kuona muripo weAxelar gasi",
     "bridgeTxFailed": "Transaction yeZambuko yakakundikana",
     "estimatedGas": "Gasi reAxelar rinofungidzirwa",
     "success": "Kubudirira!",

@@ -1,7 +1,15 @@
 import { useEffect, useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Alert, AlertDescription } from "@/components/ui/alert";
-import { ArrowDown, Loader2, CheckCircle, ExternalLink } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogFooter,
+} from "@/components/ui/dialog";
+import { ArrowDown, Loader2, CheckCircle, ExternalLink, AlertTriangle } from "lucide-react";
 import { useAccount, useChainId, usePublicClient, useWalletClient } from "wagmi";
 import { formatUnits, parseUnits } from "viem";
 import { migrationAbi } from "../abi/migration";
@@ -99,6 +107,8 @@ const ConverterForm = () => {
   const [converting, setConverting] = useState(false);
   const [txHash, setTxHash] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [showConfirmModal, setShowConfirmModal] = useState(false);
+  const [showFinalConfirmModal, setShowFinalConfirmModal] = useState(false);
 
   // Get addresses from selected pair
   const LEGACY_ADDRESS = selectedPair?.legacyAddress;
@@ -218,9 +228,20 @@ const ConverterForm = () => {
     }
   };
 
-  const handleConvert = async () => {
+  const handleConvertClick = () => {
+    if (!canConvert) return;
+    setShowConfirmModal(true);
+  };
+
+  const handleFirstConfirm = () => {
+    setShowConfirmModal(false);
+    setShowFinalConfirmModal(true);
+  };
+
+  const handleConfirmedConvert = async () => {
     if (!publicClient || !walletClient || !canConvert) return;
 
+    setShowFinalConfirmModal(false);
     setError(null);
     setTxHash(null);
     setConverting(true);
@@ -266,10 +287,12 @@ const ConverterForm = () => {
   if (!isBSC) {
     return (
       <div className="bridge-form-container">
-        <Alert className="warning-alert">
+        <Alert className="warning-alert" style={{ color: 'var(--theme-text-primary)' }}>
           <AlertDescription>
-            <div className="font-semibold mb-1">{t('convert.networkWarning.title')}</div>
-            <div className="text-sm">
+            <div className="font-semibold mb-1" style={{ color: 'var(--theme-text-primary)' }}>
+              {t('convert.networkWarning.title')}
+            </div>
+            <div className="text-sm" style={{ color: 'var(--theme-text-secondary)' }}>
               {t('convert.networkWarning.message')}
             </div>
           </AlertDescription>
@@ -454,7 +477,7 @@ const ConverterForm = () => {
 
       {/* Convert Button */}
       <div className="flex flex-col gap-2 pt-2">
-        <Button onClick={handleConvert} disabled={!canConvert} className="bridge-button w-full h-12 text-lg">
+        <Button onClick={handleConvertClick} disabled={!canConvert} className="bridge-button w-full h-12 text-lg">
           {converting ? (
             <>
               <Loader2 className="mr-2 h-5 w-5 animate-spin" />
@@ -465,6 +488,100 @@ const ConverterForm = () => {
           )}
         </Button>
       </div>
+
+      {/* Confirmation Modal */}
+      <Dialog open={showConfirmModal} onOpenChange={setShowConfirmModal}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader>
+            <div className="flex items-center gap-3 mb-2">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-amber-500/20">
+                <AlertTriangle className="h-5 w-5 text-amber-500" />
+              </div>
+              <DialogTitle className="text-xl">{t('convert.confirmModal.title')}</DialogTitle>
+            </div>
+            <DialogDescription className="text-left space-y-3 pt-2">
+              <p className="text-base text-foreground/90">
+                {t('convert.confirmModal.warning')}
+              </p>
+              <div className="rounded-lg bg-amber-500/10 border border-amber-500/20 p-3 space-y-2">
+                <p className="text-sm text-amber-200/90 font-medium">
+                  {t('convert.confirmModal.irreversible')}
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  {t('convert.confirmModal.burnExplanation', {
+                    legacySymbol: selectedPair?.legacySymbol,
+                    newSymbol: selectedPair?.newSymbol
+                  })}
+                </p>
+                <p className="text-sm text-green-400/90">
+                  {t('convert.confirmModal.positiveNote', {
+                    newSymbol: selectedPair?.newSymbol
+                  })}
+                </p>
+              </div>
+              <p className="text-sm text-muted-foreground pt-1">
+                {t('convert.confirmModal.confirmQuestion', {
+                  amount: formatInputWithCommas(amount),
+                  legacySymbol: selectedPair?.legacySymbol,
+                  newSymbol: selectedPair?.newSymbol
+                })}
+              </p>
+            </DialogDescription>
+          </DialogHeader>
+          <DialogFooter className="flex flex-col sm:flex-row gap-2 pt-4">
+            <Button
+              variant="outline"
+              onClick={() => setShowConfirmModal(false)}
+              className="flex-1"
+            >
+              {t('common.cancel')}
+            </Button>
+            <Button
+              onClick={handleFirstConfirm}
+              className="flex-1 bg-amber-600 hover:bg-amber-700 text-white"
+            >
+              {t('convert.confirmModal.confirmButton')}
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      {/* Final Confirmation Modal */}
+      <Dialog open={showFinalConfirmModal} onOpenChange={setShowFinalConfirmModal}>
+        <DialogContent className="sm:max-w-md border-red-500/30">
+          <DialogHeader>
+            <div className="flex items-center gap-3 mb-2">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-red-500/20">
+                <AlertTriangle className="h-5 w-5 text-red-500" />
+              </div>
+              <DialogTitle className="text-xl text-red-400">{t('convert.finalConfirmModal.title')}</DialogTitle>
+            </div>
+            <DialogDescription className="text-left space-y-3 pt-2">
+              <p className="text-base text-foreground/90">
+                {t('convert.finalConfirmModal.message', {
+                  legacySymbol: selectedPair?.legacySymbol,
+                  newSymbol: selectedPair?.newSymbol
+                })}
+              </p>
+            </DialogDescription>
+          </DialogHeader>
+          <DialogFooter className="flex flex-col sm:flex-row gap-2 pt-4">
+            <Button
+              variant="outline"
+              onClick={() => setShowFinalConfirmModal(false)}
+              className="flex-1"
+            >
+              {t('common.cancel')}
+            </Button>
+            <Button
+              onClick={handleConfirmedConvert}
+              className="flex-1 bg-red-600 hover:bg-red-700 text-white"
+            >
+              {t('convert.finalConfirmModal.confirmButton')}
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };

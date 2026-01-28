@@ -5,47 +5,95 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { useTranslation } from "react-i18next";
 
+// Converts URLs in text to clickable links
+function linkifyText(text: string): React.ReactNode {
+  const urlRegex = /(https?:\/\/[^\s]+)/g;
+  const parts = text.split(urlRegex);
+
+  return parts.map((part, index) => {
+    if (urlRegex.test(part)) {
+      // Reset regex lastIndex since we're reusing it
+      urlRegex.lastIndex = 0;
+      return (
+        <a
+          key={index}
+          href={part}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:opacity-80 transition-opacity"
+          style={{ color: 'var(--primary)' }}
+        >
+          {part}
+        </a>
+      );
+    }
+    return part;
+  });
+}
+
 interface FAQItem {
   question: string;
   answer: React.ReactNode;
+}
+
+interface FAQSection {
+  title: string;
+  items: FAQItem[];
 }
 
 export default function FAQPage() {
   const navigate = useNavigate();
   const { t } = useTranslation();
   
-  const faqs: FAQItem[] = [
+  const faqSections: FAQSection[] = [
     {
-      question: t('faq.questions.q1'),
-      answer: t('faq.questions.a1')
+      title: t('faq.sections.gettingStarted'),
+      items: [
+        { question: t('faq.questions.q12'), answer: t('faq.questions.a12') }, // Where are my tokens?
+        { question: t('faq.questions.q1'), answer: t('faq.questions.a1') },   // What is the purpose of converting?
+        { question: t('faq.questions.q14'), answer: t('faq.questions.a14') }, // What if I don't convert?
+        { question: t('faq.questions.q15'), answer: t('faq.questions.a15') }, // Is there a tax?
+        { question: t('faq.questions.q3'), answer: t('faq.questions.a3') },   // Are there any fees?
+        { question: t('faq.questions.q2'), answer: t('faq.questions.a2') },   // Is it safe?
+        { question: t('faq.questions.q4'), answer: t('faq.questions.a4') },   // What if I lose my tokens?
+      ]
     },
     {
-      question: t('faq.questions.q2'),
-      answer: t('faq.questions.a2')
+      title: t('faq.sections.convertingTrading'),
+      items: [
+        { question: t('faq.questions.q5'), answer: t('faq.questions.a5') },   // Can I convert back?
+        { question: t('faq.questions.q16'), answer: t('faq.questions.a16') }, // Can I buy TigerOG directly?
+        { question: t('faq.questions.q17'), answer: t('faq.questions.a17') }, // Why is market cap inflated?
+        { question: t('faq.questions.q8'), answer: t('faq.questions.a8') },   // Circulating supplies
+        { question: t('faq.questions.q22'), answer: t('faq.questions.a22') }, // New Tiger contract (Sept 2025)
+        { question: t('faq.questions.q23'), answer: t('faq.questions.a23') }, // How to add liquidity
+      ]
     },
     {
-      question: t('faq.questions.q3'),
-      answer: t('faq.questions.a3')
+      title: t('faq.sections.bridging'),
+      items: [
+        { question: t('faq.questions.q6'), answer: t('faq.questions.a6') },   // Which networks?
+        { question: t('faq.questions.q7'), answer: t('faq.questions.a7') },   // How long does bridging take?
+        { question: t('faq.questions.q13'), answer: t('faq.questions.a13') }, // Why is Eth/Base slow?
+        { question: t('faq.questions.q20'), answer: t('faq.questions.a20') }, // Bridging failures
+        { question: t('faq.questions.q11'), answer: t('faq.questions.a11') }, // Is TigerOG leaving BNB for Axelar?
+      ]
     },
     {
-      question: t('faq.questions.q4'),
-      answer: t('faq.questions.a4')
+      title: t('faq.sections.technical'),
+      items: [
+        { question: t('faq.questions.q9'), answer: t('faq.questions.a9') },   // Why not renounced?
+        { question: t('faq.questions.q10'), answer: t('faq.questions.a10') }, // Why mintable?
+      ]
     },
     {
-      question: t('faq.questions.q5'),
-      answer: t('faq.questions.a5')
-    },
-    {
-      question: t('faq.questions.q6'),
-      answer: t('faq.questions.a6')
-    },
-    {
-      question: t('faq.questions.q7'),
-      answer: t('faq.questions.a7')
-    },
-    {
-      question: t('faq.questions.q8'),
-      answer: t('faq.questions.a8')
+      title: t('faq.sections.securityRisks'),
+      items: [
+        { question: t('faq.questions.q24'), answer: t('faq.questions.a24') }, // Can the team rug pull?
+        { question: t('faq.questions.q18'), answer: t('faq.questions.a18') }, // Security audits
+        { question: t('faq.questions.q19'), answer: t('faq.questions.a19') }, // Protection against exploits
+        { question: t('faq.questions.q21'), answer: t('faq.questions.a21') }, // Risks disclaimer
+      ]
     }
   ];
 
@@ -107,9 +155,21 @@ export default function FAQPage() {
           </p>
         </div>
 
-        <div className="space-y-4">
-          {faqs.map((faq, index) => (
-            <FAQItem key={index} question={faq.question} answer={faq.answer} />
+        <div className="space-y-8">
+          {faqSections.map((section, sectionIndex) => (
+            <div key={sectionIndex}>
+              <h2
+                className="text-2xl font-bold mb-4"
+                style={{ fontFamily: 'var(--font-display)', color: 'var(--theme-text-primary)' }}
+              >
+                {section.title}
+              </h2>
+              <div className="space-y-4">
+                {section.items.map((faq, index) => (
+                  <FAQItem key={index} question={faq.question} answer={faq.answer} />
+                ))}
+              </div>
+            </div>
           ))}
         </div>
 
@@ -179,15 +239,15 @@ function FAQItem({ question, answer }: { question: string, answer: React.ReactNo
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.2 }}
           >
-            <div 
-              className="p-4 pt-0 leading-relaxed border-t"
-              style={{ 
+            <div
+              className="p-4 pt-0 leading-relaxed border-t whitespace-pre-line"
+              style={{
                 color: 'var(--theme-text-secondary)',
                 borderColor: 'var(--theme-section-border)',
                 backgroundColor: 'var(--theme-section-bg)'
               }}
             >
-              {answer}
+              {typeof answer === 'string' ? linkifyText(answer) : answer}
             </div>
           </motion.div>
         )}

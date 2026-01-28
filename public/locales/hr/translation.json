@@ -4,6 +4,7 @@
     "titleBridge": "Most"
   },
   "nav": {
+    "home": "Početna",
     "settings": "Postavke",
     "menu": "Izbornik",
     "preferences": "Preferencije",
@@ -45,6 +46,23 @@
     "networkWarning": {
       "title": "Pogrešna mreža",
       "message": "Pretvorba tokena dostupna je samo na BSC lancu. Molimo prebacite na BSC za pretvorbu vaših starih tokena."
+    },
+    "confirmModal": {
+      "title": "Potvrdi Pretvorbu",
+      "warning": "Spremate se pretvoriti svoje tokene. Molimo pažljivo pročitajte sljedeće prije nastavka.",
+      "irreversible": "Ova radnja je nepovratna!",
+      "burnExplanation": "Vaši {{legacySymbol}} tokeni bit će trajno spaljeni slanjem na mrtvu adresu i kovat će se ekvivalentni {{newSymbol}} tokeni. Ne mogu se povratiti ili pretvoriti natrag.",
+      "positiveNote": "Pozitivno: {{newSymbol}} je potpuno oslobođen poreza, omogućujući vam slobodno prebacivanje, trgovanje ili premošćivanje bez poreznih troškova.",
+      "confirmQuestion": "Pretvoriti {{amount}} {{legacySymbol}} u {{newSymbol}}?",
+      "confirmButton": "Razumijem, Pretvori"
+    },
+    "finalConfirmModal": {
+      "title": "Finalna Potvrda",
+      "message": "Upišite <1>potvrdi</1> u nastavku za nastavak pretvorbe.",
+      "inputPlaceholder": "Upišite 'potvrdi' za nastavak",
+      "confirmWord": "potvrdi",
+      "confirmButton": "Potvrdi Pretvorbu",
+      "converting": "Pretvaranje..."
     }
   },
   "bridge": {
@@ -296,7 +314,8 @@
     "tabs": {
       "overview": "Pregled",
       "byToken": "Po tokenu",
-      "byChain": "Po lancu"
+      "byChain": "Po lancu",
+      "liquidity": "Likvidnost"
     },
     "overview": {
       "interchainTokens": {
@@ -318,7 +337,35 @@
         "legacyToken": "Stari Token",
         "conversionContract": "Ugovor za Pretvorbu",
         "newToken": "Interchain Token"
+      },
+      "liquidityPools": {
+        "title": "Likvidnosni Bazeni",
+        "description": "Likvidnosni bazeni pružaju dubinu trgovanja za OG tokene na podržanim lancima. Ti bazeni omogućuju kupnju i prodaju bez korištenja mosta."
+      },
+      "liquidityPoolsTable": {
+        "title": "Aktivni Likvidnosni Bazeni",
+        "subtitle": "Provjereni likvidnosni bazeni za OG tokene na podržanim DEX-ovima.",
+        "token": "Token",
+        "chain": "Lanac",
+        "dex": "DEX",
+        "pair": "Par",
+        "poolAddress": "Adresa Bazena"
       }
+    },
+    "liquidity": {
+      "title": "Likvidnosni Bazeni",
+      "subtitle": "Duboka likvidnost na podržanim lancima",
+      "description": "OG tokeni imaju likvidnosne bazene na više lanaca, omogućujući trgovanje bez potrebe za premošćivanjem. Ti bazeni pružaju dubinu za kupnju i prodaju izravno na svakom lancu.",
+      "availablePools": "Dostupni Bazeni",
+      "token": "Token",
+      "chain": "Lanac",
+      "dex": "DEX",
+      "pair": "Par",
+      "poolAddress": "Adresa Bazena",
+      "trade": "Trguj",
+      "noPools": "Nema dostupnih likvidnosnih bazena za ovaj token.",
+      "addLiquidity": "Dodaj Likvidnost",
+      "removeLiquidity": "Ukloni Likvidnost"
     },
     "filterTokens": "Filtriraj tokene...",
     "interchainAsset": "Interchain imovina putem Axelar ITS",
@@ -337,6 +384,12 @@
     "title": "Podrška za Most Slobode",
     "header": "Često postavljana pitanja",
     "subtitle": "Odgovori na uobičajena pitanja o TigerOG-u, premošćivanju i Axelaru.",
+    "sections": {
+      "general": "Općenito",
+      "conversion": "Pretvorba",
+      "bridging": "Premošćivanje",
+      "security": "Sigurnost"
+    },
     "cta": {
       "title": "Imate li još pitanja?",
       "description": "Pridružite se našoj zajednici na Telegramu ili provjerite detaljan Wiki za tehničke vodiče.",
@@ -359,13 +412,101 @@
       "q7": "Koliko dugo traje premošćivanje?",
       "a7": "Brzina premošćivanja ovisi o konačnosti izvornog lanca i Axelarovom prosljeđivanju. Obično prijenos između lanaca traje oko 2-5 minuta.",
       "q8": "Koje su cirkulirajuće zalihe OG tokena?",
-      "a8": "Svaki OG token ima fiksnu cirkulirajuću zalihu izvedenu iz svog originalnog BNB tokena, uzimajući u obzir spaljene tokene, zaglavljene salde ugovora i zaključani LP. TigerOG: ~3,66 septilijuna (36,62% originala). LionOG: ~3,83 septilijuna (38,33% originala). FrogOG: ~8,39 septilijuna (83,86% originala). Pogledajte Wiki za detaljne raspodjele svakog tokena."
+      "a8": "Svaki OG token ima fiksnu cirkulirajuću zalihu izvedenu iz svog originalnog BNB tokena, uzimajući u obzir spaljene tokene, zaglavljene salde ugovora i zaključani LP. TigerOG: ~3,66 septilijuna (36,62% originala). LionOG: ~3,83 septilijuna (38,33% originala). FrogOG: ~8,39 septilijuna (83,86% originala). Pogledajte Wiki za detaljne raspodjele svakog tokena.",
+      "q9": "Što je Axelar?",
+      "a9": "Axelar je decentralizirana mreža interoperabilnosti koja povezuje blockchaine, omogućujući sigurnu komunikaciju i prijenos imovine preko lanaca. Pokreće Freedom Bridge za premošćivanje tokena između mreža.",
+      "q10": "Kako radi premošćivanje?",
+      "a10": "Kada premošćujete tokene, oni se spaljuju na izvornom lancu i kove na odredišnom lancu putem Axelar Interchain Token Service. To održava dosljednu ukupnu zalihu preko svih lanaca.",
+      "q11": "Trebam li ETH/BNB za naknade za plin?",
+      "a11": "Da, trebate izvornu valutu lanca za naknade za plin. Za BSC vam treba BNB. Za Ethereum vam treba ETH. Premošćivanje također zahtijeva plin na odredišnom lancu koji se plaća unaprijed.",
+      "q12": "Što ako moja transakcija zapne?",
+      "a12": "Axelar transakcije obično se dovršavaju u roku od 2-5 minuta. Ako vaša transakcija ostane na čekanju dulje, možete provjeriti status na Axelarscan pomoću haša transakcije. Većina problema se sama riješi dok validatori obrade poruku.",
+      "q13": "Mogu li premostiti natrag na BSC?",
+      "a13": "Da! Premošćivanje je dvosmjerno. Možete premostiti TigerOG s bilo kojeg podržanog lanca natrag na BSC ili na bilo koji drugi podržani lanac.",
+      "q14": "Zašto bih trebao premostiti na drugi lanac?",
+      "a14": "Premošćivanje omogućuje pristup različitim DeFi ekosustavima, potencijalno niže naknade za plin, i nove mogućnosti trgovanja. Svaki lanac ima jedinstvene prednosti i zajednice.",
+      "q15": "Postoji li minimalni iznos za premošćivanje?",
+      "a15": "Ne postoji minimalni iznos nametnut od protokola, ali transakcija treba pokriti naknade za plin. Vrlo mali iznosi možda neće biti isplativi za premošćivanje zbog troškova plina.",
+      "q16": "Jesu li ugovori verificirani?",
+      "a16": "Da, svi pametni ugovori korišteni u Freedom Bridge su verificirani i mogu se pregledati na blockchain explorerima. Koriste standardne OpenZeppelin biblioteke i Axelar ITS implementacije.",
+      "q17": "Tko kontrolira Freedom Bridge?",
+      "a17": "Freedom Bridge koristi nepromjenjive ugovore za pretvorbu i Axelarovu decentraliziranu mrežu validatora. Ne postoji centralizirano tijelo koje kontrolira premošćivanje ili pretvorbe.",
+      "q18": "Što ako je Axelar nedostupan?",
+      "a18": "Axelar je decentralizirana mreža s više validatora. Čak i ako su neki validatori offline, mreža nastavlja funkcionirati. Međutim, privremeno zagušenje moglo bi usporiti obradu transakcija.",
+      "q19": "Može li se pretvorba poništiti?",
+      "a19": "Ne. Pretvorba je trajna i nepovratna. Vaši stari tokeni se spaljuju (šalju na mrtvu adresu) i nikada se ne mogu povratiti. Provjerite iznose prije potvrđivanja.",
+      "q20": "Kako mogu dodati TigerOG u svoj novčanik?",
+      "a20": "Koristite gumb 'Uvezi u novčanik' nakon pretvorbe, ili ručno dodajte adresu tokena s stranice Ugovori. Adresa je ista na svim EVM lancima.",
+      "q21": "Zašto bi mi trebao TigerOG umjesto BNBTigera?",
+      "a21": "TigerOG nema porez na transakcije (BNBTiger ima ~10% poreza), može se premostiti na više lanaca, i ima modernu implementaciju tokena. To čini trgovanje, premošćivanje i korištenje znatno jeftinijim.",
+      "q22": "Hoće li se moje stanje povećavati putem refleksija?",
+      "a22": "Ne. TigerOG ne koristi mehanizam refleksija za razliku od starog BNBTiger tokena. Vaše stanje ostaje fiksno osim ako aktivno trgujete ili premošćujete.",
+      "q23": "Mogu li kupiti TigerOG izravno?",
+      "a23": "TigerOG se može trgovati na likvidnosnim bazenima na podržanim lancima. Provjerite karticu Likvidnost na stranici Ugovori za dostupne parove za trgovanje.",
+      "q24": "Je li ovo rug pull?",
+      "a24": "Ne. Freedom Bridge koristi transparentne, verificirane ugovore bez administratorskih ovlasti za manipulaciju sredstvima. Ugovori za pretvorbu su nepromjenjivi, a likvidnost je zaključana. Sav kod je otvorenog koda i verificiran na blockchainu."
     }
+  },
+  "footer": {
+    "builtWith": "Izgrađeno s",
+    "by": "od strane",
+    "rights": "Sva prava pridržana.",
+    "github": "GitHub",
+    "twitter": "Twitter",
+    "telegram": "Telegram",
+    "dextools": "DexTools"
+  },
+  "disclaimer": {
+    "title": "Odricanje od odgovornosti",
+    "subtitle": "Važne informacije o korištenju Freedom Bridgea",
+    "sections": {
+      "noFinancialAdvice": {
+        "title": "Nema financijskog savjeta",
+        "content": "Informacije pružene putem Freedom Bridgea su samo informativne prirode i ne predstavljaju financijski, investicijski, pravni ili drugi profesionalni savjet. Uvijek provedite vlastito istraživanje i konzultirajte se s kvalificiranim stručnjacima prije donošenja bilo kakvih financijskih odluka."
+      },
+      "useAtOwnRisk": {
+        "title": "Koristite na vlastiti rizik",
+        "content": "Korištenje Freedom Bridgea je u potpunosti na vaš vlastiti rizik. Protokol se pruža 'kakav jest' i 'kako je dostupan' bez ikakvih jamstava, izričitih ili impliciranih. Ne jamčimo kontinuiran, neprekinut ili siguran pristup našim uslugama."
+      },
+      "smartContractRisks": {
+        "title": "Rizici pametnih ugovora",
+        "content": "Interakcija s pametnim ugovorima nosi inherentne rizike, uključujući, ali ne ograničavajući se na, greške u kodu, ranjivosti i eksploatacije. Iako su naši ugovori verificirani i testirani, ne može se eliminirati sav rizik. Nikada ne investirajte više nego što možete priuštiti izgubiti."
+      },
+      "irreversibleTransactions": {
+        "title": "Nepovratne transakcije",
+        "content": "Sve transakcije na blockchainu, uključujući pretvorbe i premošćivanja, su konačne i nepovratne. Provjerite sve detalje transakcije prije potvrde. Izgubljeni ili pogrešno poslani tokeni možda neće moći biti povraćeni."
+      },
+      "thirdPartyServices": {
+        "title": "Usluge trećih strana",
+        "content": "Freedom Bridge se oslanja na usluge trećih strana, uključujući Axelar Network za premošćivanje preko lanaca. Nismo odgovorni za bilo kakve probleme, kašnjenja ili gubitke koji proizlaze iz ovih vanjskih usluga."
+      },
+      "regulatoryCompliance": {
+        "title": "Regulatorna usklađenost",
+        "content": "Korisnici su isključivo odgovorni za osiguravanje usklađenosti s primjenjivim zakonima i propisima u svojoj jurisdikciji. Freedom Bridge možda nije dostupan u svim regijama, a korisnici moraju provjeriti legalnost pristupa u svom području."
+      }
+    },
+    "lastUpdated": "Zadnje ažurirano",
+    "agreement": "Korištenjem Freedom Bridgea potvrđujete da ste pročitali, razumjeli i pristali na ovo odricanje od odgovornosti."
+  },
+  "disclaimerModal": {
+    "title": "Odricanje od odgovornosti",
+    "description": "Molimo pažljivo pročitajte prije nastavka.",
+    "openSource": "Freedom Bridge je softver otvorenog koda. Korištenjem ovog protokola prihvaćate sljedeće:",
+    "noGuarantees": "Nema jamstava",
+    "noGuaranteesText": "Ovaj softver se pruža 'kakav jest' bez bilo kakvih jamstava. Korištenje na vlastiti rizik.",
+    "irreversible": "Nepovratne radnje",
+    "irreversibleText": "Pretvorbe i premošćivanja tokena su trajna i ne mogu se poništiti. Provjerite sve detalje.",
+    "userResponsibility": "Odgovornost korisnika",
+    "userResponsibilityText": "Isključivo ste odgovorni za svoje transakcije i usklađenost s lokalnim zakonima.",
+    "readMore": "Čitaj više",
+    "checkboxLabel": "Razumijem i prihvaćam ove uvjete",
+    "continueButton": "Nastavi"
   },
   "common": {
     "from": "Od",
     "to": "Do",
     "max": "MAKS",
+    "cancel": "Odustani",
     "chainId": "ID Lanca",
     "bscChain": "BSC Lanac",
     "insufficientBalance": "Nedovoljan saldo.",

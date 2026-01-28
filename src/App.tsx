@@ -10,6 +10,8 @@ import LandingPage from "./components/LandingPage";
 import WikiPage from "./components/WikiPage";
 import ContractsPage from "./components/ContractsPage";
 import FAQPage from "./components/FAQPage";
+import DisclaimerPage from "./components/DisclaimerPage";
+import DisclaimerModal, { useDisclaimerAccepted } from "./components/DisclaimerModal";
 import { useTheme, ThemeStyle } from "./context/ThemeContext";
 import { externalPaletteOptions } from "./themes/registry";
 import { MoonIcon } from "./components/ui/moon";
@@ -18,6 +20,7 @@ import { MenuIcon } from "./components/ui/menu";
 import { LanguagesIcon } from "./components/ui/languages";
 import { SettingsIcon } from "./components/ui/settings-icon";
 import { CircleHelpIcon } from "./components/ui/circle-help-icon";
+import { HomeIcon } from "./components/ui/home-icon";
 import { XIcon } from "./components/ui/x-icon";
 import { PaletteIcon } from "./components/ui/palette-icon";
 import { Button } from "./components/ui/button";
@@ -83,6 +86,7 @@ function App() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [languageQuery, setLanguageQuery] = useState("");
   const [showInfoBanner, setShowInfoBanner] = useState<boolean>(true);
+  const { accepted: disclaimerAccepted, acceptDisclaimer } = useDisclaimerAccepted();
   const location = useLocation();
   const navigate = useNavigate();
   const { setTheme, resolvedTheme, style, setStyle } = useTheme();
@@ -175,6 +179,7 @@ function App() {
 
   const appInterfaceContent = (formContent: React.ReactNode) => (
     <div className="container mx-auto px-4 py-4 md:py-5">
+      {!disclaimerAccepted && <DisclaimerModal onAccept={acceptDisclaimer} />}
       {showInfoBanner && (
         <div className="flex justify-center mb-3">
           <div className="w-full md:w-full lg:w-11/12 xl:w-10/12 2xl:w-9/12">
@@ -386,6 +391,14 @@ function App() {
             <div className="flex-1 overflow-y-auto py-2 min-h-0">
               <div className="px-2 space-y-1">
                 <MenuButton
+                  icon={<HomeIcon size={20} />}
+                  label={t('nav.home')}
+                  onClick={() => {
+                    setShowMobileMenu(false);
+                    navigate("/");
+                  }}
+                />
+                <MenuButton
                   icon={<BookIcon size={20} />}
                   label={t('nav.wiki')}
                   onClick={() => {
@@ -567,6 +580,7 @@ function App() {
           <Route path="/wiki" element={<WikiPage />} />
           <Route path="/contracts" element={<ContractsPage />} />
           <Route path="/faq" element={<FAQPage />} />
+          <Route path="/disclaimer" element={<DisclaimerPage />} />
           <Route path={`/${Page.Convert}`} element={appInterfaceContent(<ConverterForm />)} />
           <Route path={`/${Page.Bridge}`} element={appInterfaceContent(<BridgeForm />)} />
           <Route path="*" element={<Navigate to="/" replace />} />
@@ -576,24 +590,53 @@ function App() {
         <AddNetworksModal show={showAddNetworks} onClose={() => setShowAddNetworks(false)} />
 
         <footer
-          className="py-6 border-t flex items-center justify-center gap-4 text-base mt-auto"
+          className="py-6 border-t flex flex-col items-center gap-3 text-sm mt-auto"
           style={{
             borderColor: 'var(--theme-card-border)',
             color: 'var(--theme-text-secondary)'
           }}
         >
-          <span>v{import.meta.env.VITE_APP_VERSION}</span>
-          <span style={{ opacity: 0.4 }}>|</span>
-          <a
-            href="https://github.com/TigerOG-Official/FreedomBridge"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 transition-colors hover:opacity-80"
-            style={{ color: 'var(--theme-text-secondary)' }}
-          >
-            <Github className="w-5 h-5" />
-            <span>GitHub</span>
-          </a>
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <span
+              className="cursor-pointer hover:opacity-80 transition-opacity"
+              onClick={() => navigate('/wiki')}
+            >
+              {t('footer.wiki')}
+            </span>
+            <span style={{ opacity: 0.4 }}>|</span>
+            <span
+              className="cursor-pointer hover:opacity-80 transition-opacity"
+              onClick={() => navigate('/contracts')}
+            >
+              {t('footer.contracts')}
+            </span>
+            <span style={{ opacity: 0.4 }}>|</span>
+            <span
+              className="cursor-pointer hover:opacity-80 transition-opacity"
+              onClick={() => navigate('/faq')}
+            >
+              {t('footer.faq')}
+            </span>
+            <span style={{ opacity: 0.4 }}>|</span>
+            <span
+              className="cursor-pointer hover:opacity-80 transition-opacity"
+              onClick={() => navigate('/disclaimer')}
+            >
+              {t('footer.disclaimer')}
+            </span>
+            <span style={{ opacity: 0.4 }}>|</span>
+            <a
+              href="https://github.com/TigerOG-Official/FreedomBridge"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 transition-opacity hover:opacity-80"
+              style={{ color: 'var(--theme-text-secondary)' }}
+            >
+              <Github className="w-4 h-4" />
+              <span>{t('footer.github')}</span>
+            </a>
+          </div>
+          <span className="text-xs opacity-60">v{import.meta.env.VITE_APP_VERSION}</span>
         </footer>
       </div>
     </>

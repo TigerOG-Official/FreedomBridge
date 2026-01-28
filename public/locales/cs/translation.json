@@ -4,6 +4,7 @@
     "titleBridge": "Most"
   },
   "nav": {
+    "home": "Domů",
     "settings": "Nastavení",
     "menu": "Menu",
     "preferences": "Předvolby",
@@ -40,20 +41,25 @@
     "bridge": "Most"
   },
   "convert": {
-    "token": "Token",
-    "selectToken": "Vybrat token",
     "balance": "Zůstatek",
-    "noConvertibleTokens": "Žádné tokeny k převodu na {{chainName}}",
-    "convert": "Převést",
-    "addToWalletLabel": "Importovat {{symbol}} na {{chainName}} do peněženky",
     "addToWalletButton": "Importovat do peněženky",
-    "addingToken": "Přidávání...",
-    "addTokenError": "Nelze přidat token do peněženky",
-    "legacyTokenMissing": "Starší token pro tento řetězec chybí",
-    "tigerOGMissing": "TigerOG token pro tento řetězec chybí",
     "networkWarning": {
       "title": "Špatná síť",
       "message": "Konverze tokenů je dostupná pouze na BSC Chain. Přepněte prosím na BSC pro převod vašich starších tokenů."
+    },
+    "confirmModal": {
+      "title": "Potvrdit konverzi",
+      "warning": "Chystáte se převést své tokeny. Než budete pokračovat, přečtěte si prosím pečlivě následující.",
+      "irreversible": "Tato akce je nevratná!",
+      "burnExplanation": "Vaše {{legacySymbol}} tokeny budou trvale spáleny a stejné množství {{newSymbol}} tokenů bude vyraženo do vaší peněženky. Tuto akci nelze vrátit zpět.",
+      "positiveNote": "Výhoda: {{newSymbol}} je zcela bez daní — žádné další 10%+ daně z každé transakce.",
+      "confirmQuestion": "Převést {{amount}} {{legacySymbol}} na {{newSymbol}}?",
+      "confirmButton": "Rozumím, převést"
+    },
+    "finalConfirmModal": {
+      "title": "Jste si opravdu jisti?",
+      "message": "Toto je vaše poslední šance na zrušení. Jakmile potvrdíte, vaše {{legacySymbol}} budou převedeny na {{newSymbol}} a nelze je vrátit zpět.",
+      "confirmButton": "Ano, převést nyní"
     }
   },
   "bridge": {
@@ -64,9 +70,7 @@
     "noDestination": "Žádný cíl",
     "noBridgeableTokens": "Žádné přenositelné tokeny",
     "bridgeButton": "Přenést tokeny",
-    "getFeeQuote": "Získat odhad poplatku",
     "viewOnAxelarscan": "Zobrazit na Axelarscan",
-    "addDestinationTokenLabel": "Importovat {{symbol}} na {{chainName}} do peněženky",
     "addTokenError": "Nelze přidat token do peněženky",
     "estimatedTime": "Odhadovaný čas",
     "recentTransactions": "Nedávné transakce",
@@ -171,7 +175,7 @@
         "step2": "Přejděte na kartu <strong>Převést</strong>.",
         "step3": "Vyberte starší token, který chcete převést.",
         "step4": "Schvalte konverzní smlouvu, aby mohla utrácet vaše tokeny.",
-        "step5": "Klikněte na <strong>Převést</strong> pro vložení vašich starších tokenů a obdržení ekvivalentního množství „TigerOG" tokenů.",
+        "step5": "Klikněte na <strong>Převést</strong> pro vložení vašich starších tokenů a obdržení ekvivalentního množství „TigerOG\u201d tokenů.",
         "note": "<strong>Poznámka:</strong> Konverze vyvolá transakční daň staršího tokenu (během upgradu), pokud váš token účtuje daň při převodech. Jakmile je však převeden na TigerOG, všechny následné převody a přenosy jsou bez daně."
       },
       "supportedNetworks": {
@@ -307,7 +311,12 @@
     "tabs": {
       "overview": "Přehled",
       "byToken": "Podle tokenu",
-      "byChain": "Podle řetězce"
+      "byChain": "Podle řetězce",
+      "liquidity": "Likvidita"
+    },
+    "liquidity": {
+      "poolAddress": "Adresa fondu",
+      "tradeOn": "Obchodovat na"
     },
     "overview": {
       "interchainTokens": {
@@ -329,6 +338,18 @@
         "legacyToken": "Starší token",
         "conversionContract": "Konverzní smlouva",
         "newToken": "Interchain token"
+      },
+      "liquidityPools": {
+        "title": "Fondy likvidity",
+        "description": "DEX fondy likvidity, kde můžete obchodovat OG tokeny v různých řetězcích."
+      },
+      "liquidityPoolsTable": {
+        "title": "Fondy likvidity",
+        "subtitle": "DEX fondy pro obchodování s OG tokeny",
+        "token": "Token",
+        "chain": "Řetězec",
+        "dex": "DEX",
+        "poolAddress": "Adresa fondu"
       }
     },
     "filterTokens": "Filtrovat tokeny...",
@@ -348,6 +369,13 @@
     "title": "Podpora Freedom Bridge",
     "header": "Časté dotazy",
     "subtitle": "Odpovědi na běžné otázky týkající se TigerOG, přenosů a Axelar.",
+    "sections": {
+      "gettingStarted": "Začínáme",
+      "convertingTrading": "Konverze a obchodování",
+      "bridging": "Přenos",
+      "technical": "Technické",
+      "securityRisks": "Bezpečnost a rizika"
+    },
     "cta": {
       "title": "Máte stále otázky?",
       "description": "Připojte se k naší komunitě na Telegramu nebo se podívejte na podrobnou Wiki pro technické průvodce.",
@@ -370,13 +398,100 @@
       "q7": "Jak dlouho trvá přenos?",
       "a7": "Rychlost přenosu závisí na konečnosti zdrojového řetězce a přenosu Axelar. Obvykle přenos mezi řetězci trvá asi 2–5 minut.",
       "q8": "Jaké jsou obíhající nabídky OG tokenů?",
-      "a8": "Každý OG token má fixní obíhající nabídku odvozenou od původního BNB tokenu, s ohledem na spálené tokeny, uvízlé zůstatky smluv a uzamčené LP. TigerOG: ~3,66 septilionu (36,62 % původního). LionOG: ~3,83 septilionu (38,33 % původního). FrogOG: ~8,39 septilionu (83,86 % původního). Podívejte se na Wiki pro podrobné rozpisy každého tokenu."
+      "a8": "Každý OG token má fixní obíhající nabídku odvozenou od původního BNB tokenu, s ohledem na spálené tokeny, uvízlé zůstatky smluv a uzamčené LP. TigerOG: ~3,66 septilionu (36,62 % původního). LionOG: ~3,83 septilionu (38,33 % původního). FrogOG: ~8,39 septilionu (83,86 % původního). Podívejte se na Wiki pro podrobné rozpisy každého tokenu.",
+      "q9": "Proč není OG smlouva vzdána (renounced)?",
+      "a9": "Vzdání se smlouvy by odstranilo schopnost v budoucnu vyvíjet a přidávat nové řetězce. Ačkoli se smlouvy v dohledné době nevzdáme, k provedení jakýchkoli změn je vyžadováno více podpisů. Týmu také nejsou přidělovány žádné tokeny ani daně.",
+      "q10": "Proč je OG smlouva razitelná (mintable)?",
+      "a10": "Přenos mezi řetězci vyžaduje funkci ražby/pálení - tokeny jsou spáleny při opuštění řetězce a vyraženy při příjezdu. To udržuje celkovou nabídku konstantní napříč všemi sítěmi. Ražba je kontrolována multisig peněženkou Safe.",
+      "q11": "Opouští TigerOG BNB Chain pro Axelar?",
+      "a11": "Ne. Axelar není blockchain - je to mostní protokol, který propojuje řetězce. BNB Chain zůstává zdrojovým řetězcem, kde převádíte starší tokeny. Axelar jednoduše umožňuje vašim tokenům pohybovat se mezi BNB, Ethereem, Base a dalšími podporovanými sítěmi.",
+      "q12": "Kde jsou mé tokeny?",
+      "a12": "Ujistěte se, že jste do své peněženky přidali řetězec a adresu tokenu. Všechny adresy smluv najdete na stránce Smlouvy. Tým Tiger používá peněženku Rabby, která usnadňuje správu více řetězců.",
+      "q13": "Proč přenos z Etherea nebo Base trvá tak dlouho?",
+      "a13": "Ethereum vyžaduje dvě epochy před finalizací transakcí pro maximální bezpečnost. Protože se Base vypořádává na Ethereu, dědí toto zpoždění. To upřednostňuje bezpečnost před rychlostí - vaše tokeny jsou v bezpečí, jen buďte trpěliví.",
+      "q14": "Co se stane, když zůstanu u svého původního tokenu a nepřevedu ho?",
+      "a14": "S konverzí není třeba spěchat. BNBTiger a TigerOG budou mít vždy různé fondy likvidity, tržní kapitalizaci atd. Ale BNBTiger má vysokou daň a TigerOG nemá žádnou daň pro obchodování. Protože daně z originálu nejsou používány k podpoře projektu, vývoj provádí tým CTO pro TigerOG. Freedom Bridge a multi-chain je pouze pro TigerOG.",
+      "q15": "Existuje daň za konverzi? Má TigerOG daň?",
+      "a15": "Ne. Konverze a obchodování stojí pouze běžný poplatek za plyn. Neexistují žádné další daně ani poplatky a TigerOG je smlouva bez daně.",
+      "q16": "Mohu prostě koupit a obchodovat TigerOG přímo?",
+      "a16": "Zatím ne. Tým nevybral poplatky a daně, aby mohl financovat dostatečně velké fondy likvidity. Chcete-li získat TigerOG nyní, musíte koupit nebo již vlastnit originál a převést ho. Jakmile budete vlastnit TigerOG, nebude snadné jej obchodovat, dokud nepřijdou investoři, aby přidali do fondu likvidity.",
+      "q17": "Proč tržní kapitalizace TigerOG vypadá tak nafouknutě?",
+      "a17": "Čím menší je fond likvidity, tím větší dopad má jakýkoli malý obchod na zobrazenou tržní kapitalizaci. To se vyřeší, jakmile přijdou investoři jako poskytovatelé likvidity.",
+      "q18": "Jaké bezpečnostní audity byly provedeny?",
+      "a18": "Freedom Bridge neprošel formálním auditem třetí strany. Kód konverzní smlouvy je však založen na převodníku SHx vytvořeném týmem Stronghold (bývalí vývojáři XRP a Stellar, kteří nedávno prezentovali v Davosu). Infrastruktura mostu je poháněna Axelarem, který prošel několika bezpečnostními audity.",
+      "q19": "Jak Freedom Bridge chrání před hacky nebo exploity?",
+      "a19": "Je zavedeno několik opatření:\n\n• Převodník drží pouze přesnou potřebnou obíhající nabídku - žádné přebytečné tokeny, které by mohly být zneužity\n• Převodník nemá oprávnění k ražbě\n• Veškerý kód smluv je ověřen on-chain a je open source\n• Oprávnění k tokenům jsou zabezpečena v multisig peněžence Safe.global\n• Přenos je řešen osvědčenou infrastrukturou Axelar",
+      "q20": "Je přenos nevratný? Co když přenos selže?",
+      "a20": "Přenosy mostu se zřídka mohou zaseknout kvůli nedostatku plynu nebo přetížení sítě. Pokud se to stane, můžete svou transakci sledovat na Axelarscanu a ručně přidat plyn pro její dokončení. Axelar poskytuje nástroje pro obnovu transakcí - o své tokeny nepřijdete.",
+      "q21": "Jaká jsou rizika spojená s používáním Freedom Bridge?",
+      "a21": "Stejně jako u jakéhokoli protokolu DeFi existují inherentní rizika včetně rizika chytrých smluv, rizika mostu a volatility trhu. Doporučujeme provést vlastní průzkum (DYOR) a používat pouze prostředky, které si můžete dovolit ztratit. Více informací naleznete v našem právním prohlášení.",
+      "q22": "Mohu převést novou smlouvu BNB Tiger Inu (září 2025)?",
+      "a22": "Ne. Freedom Bridge podporuje původní/starší token BNB Tiger, který byl spuštěn před několika lety - ne novou smlouvu vytvořenou v září 2025. Freedom Bridge byl postaven pro komunitní převzetí (CTO) původních tokenů Tiger, Lion a Frog.",
+      "q23": "Jak přidám likviditu?",
+      "a23": "Přidání likvidity je pokročilá aktivita DeFi s riziky včetně nestálé ztráty. Pokud máte zkušenosti s poskytováním likvidity na DEXech jako PancakeSwap nebo Uniswap, proces je stejný - spárujte OG token se základním aktivem. Zde je vynikající vzdělávací série o likviditě, pokud se chcete dozvědět více: https://www.youtube.com/watch?v=oiylIHvwMik&list=PL_ujg_v1hZ5iGtiuhT8NkSMqEOaLAgmUu",
+      "q24": "Může tým provést rug pull?",
+      "a24": "Ne. Neexistuje žádný mechanismus pro rug pull. Týmu nejsou přiděleny žádné tokeny ani daně a nevybíráme žádné poplatky za přenos — ty jdou Axelaru na pokrytí nákladů na přenos. Tým jsou držitelé stejně jako vy, budují to na vlastní náklady. Jedinou týmovou peněženkou je veřejná marketingová peněženka financovaná komunitními dary. Multisig peněženka Safe kontroluje oprávnění smluv, jako je pozastavení odesílání do řetězců v případě nouzové situace, ale nemůže přistupovat k uživatelským prostředkům ani je přesměrovat."
     }
+  },
+  "footer": {
+    "wiki": "Wiki",
+    "contracts": "Smlouvy",
+    "faq": "Časté dotazy",
+    "disclaimer": "Prohlášení",
+    "github": "GitHub"
+  },
+  "disclaimer": {
+    "title": "Právní prohlášení",
+    "header": "Důležité právní upozornění",
+    "subtitle": "Před použitím Freedom Bridge si prosím pečlivě přečtěte toto prohlášení.",
+    "sections": {
+      "noInvestmentAdvice": {
+        "title": "Žádné investiční poradenství",
+        "content": "Informace poskytované na Freedom Bridge nepředstavují investiční, finanční, obchodní ani žádné jiné poradenství. S žádným obsahem byste neměli takto nakládat. Freedom Bridge nedoporučuje, abyste kupovali, prodávali nebo drželi jakoukoli kryptoměnu. Před jakýmkoli investičním rozhodnutím proveďte vlastní hloubkovou kontrolu a poraďte se se svým finančním poradcem."
+      },
+      "risksOfUse": {
+        "title": "Rizika používání",
+        "content": "Trhy s kryptoměnami jsou volatilní a nepředvídatelné. Používáním Freedom Bridge berete na vědomí a souhlasíte s tím, že:\n\n• Chytré smlouvy mohou obsahovat chyby nebo zranitelnosti, které by mohly vést ke ztrátě finančních prostředků\n• Mosty mezi řetězci nesou inherentní rizika, včetně, ale bez omezení na: selhání orákulů, tajné dohody validátorů a přetížení sítě\n• Hodnoty tokenů mohou dramaticky kolísat a můžete ztratit část nebo celou svou investici\n• Transakce v blockchainových sítích jsou nevratné\n• Síťové poplatky a náklady na plyn jsou mimo naši kontrolu a mohou se výrazně lišit"
+      },
+      "noWarranties": {
+        "title": "Žádné záruky",
+        "content": "Freedom Bridge je poskytován \u201Etak, jak je\u201D a \u201Ejak je k dispozici\u201D bez jakýchkoli záruk jakéhokoli druhu, ať už výslovných nebo předpokládaných. Nezaručujeme, že služba bude nepřerušovaná, bezpečná nebo bezchybná. Neposkytujeme žádné záruky týkající se přesnosti, spolehlivosti nebo úplnosti jakýchkoli informací poskytovaných prostřednictvím platformy."
+      },
+      "limitationOfLiability": {
+        "title": "Omezení odpovědnosti",
+        "content": "V maximálním rozsahu povoleném zákonem nenese Freedom Bridge, jeho vývojáři, přispěvatelé a přidružené společnosti odpovědnost za jakékoli přímé, nepřímé, náhodné, zvláštní, následné nebo represivní škody vyplývající z nebo související s vaším používáním platformy, včetně, ale bez omezení na ztrátu zisku, ztrátu dat nebo ztrátu kryptoměnových aktiv."
+      },
+      "thirdPartyServices": {
+        "title": "Služby třetích stran",
+        "content": "Freedom Bridge se integruje se službami třetích stran, včetně sítě Axelar pro přenos mezi řetězci. Nejsme zodpovědní za akce, obsah, informace nebo data těchto třetích stran. Vaše používání služeb třetích stran podléhá jejich příslušným podmínkám."
+      },
+      "regulatoryCompliance": {
+        "title": "Regulační soulad",
+        "content": "Předpisy týkající se kryptoměn se liší podle jurisdikce. Jste výhradně odpovědní za zajištění toho, že vaše používání Freedom Bridge je v souladu se všemi platnými zákony a předpisy ve vaší jurisdikci. Freedom Bridge nečiní žádná prohlášení o zákonnosti služeb v jakékoli jurisdikci."
+      },
+      "dyor": {
+        "title": "Proveďte vlastní průzkum",
+        "content": "Před interakcí s jakýmkoli protokolem DeFi vždy proveďte vlastní průzkum (DYOR). Ověřte adresy smluv, pochopte mechaniku jakéhokoli tokenu, se kterým interagujete, a nikdy neinvestujte více, než si můžete dovolit ztratit."
+      }
+    },
+    "acknowledgment": "Používáním Freedom Bridge potvrzujete, že jste si přečetli, porozuměli a souhlasíte s tím, že budete vázáni tímto prohlášením.",
+    "lastUpdated": "Poslední aktualizace: Leden 2026"
+  },
+  "disclaimerModal": {
+    "title": "Důležité prohlášení",
+    "subtitle": "Prosím, přečtěte si a potvrďte před pokračováním.",
+    "noAdvice": "Freedom Bridge neposkytuje investiční, finanční ani obchodní poradenství. Investice do kryptoměn jsou volatilní a rizikové.",
+    "risks": "Používáním této platformy berete na vědomí, že chytré smlouvy mohou obsahovat zranitelnosti, mosty mezi řetězci nesou inherentní rizika a transakce jsou nevratné.",
+    "dyor": "Vždy proveďte vlastní průzkum (DYOR) a používejte pouze prostředky, které si můžete dovolit ztratit.",
+    "fullDisclaimer": "Pro úplné podrobnosti viz naše",
+    "fullDisclaimerLink": "Právní prohlášení",
+    "accept": "Rozumím a přijímám"
   },
   "common": {
     "from": "Z",
     "to": "Do",
     "max": "MAX",
+    "cancel": "Zrušit",
     "chainId": "ID řetězce",
     "bscChain": "BSC Chain",
     "insufficientBalance": "Nedostatečný zůstatek.",

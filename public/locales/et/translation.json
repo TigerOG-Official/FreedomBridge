@@ -4,6 +4,7 @@
     "titleBridge": "Sild"
   },
   "nav": {
+    "home": "Avaleht",
     "settings": "Seaded",
     "menu": "Menüü",
     "preferences": "Eelistused",
@@ -45,6 +46,20 @@
     "networkWarning": {
       "title": "Vale võrk",
       "message": "Tokenite teisendamine on saadaval ainult BSC ahelas. Palun vaheta BSC-le, et teisendada oma pärandtokeneid."
+    },
+    "confirmModal": {
+      "title": "Kinnita teisendamine",
+      "warning": "Oled oma tokeneid teisendamas. Palun loe järgnevat hoolikalt enne jätkamist.",
+      "irreversible": "See tegevus on pöördumatu!",
+      "burnExplanation": "Sinu {{legacySymbol}} tokenid põletatakse püsivalt ja võrdne kogus {{newSymbol}} tokeneid vermitakse sinu rahakotti. Seda ei saa tagasi pöörata.",
+      "positiveNote": "Hea pool: {{newSymbol}} on täiesti maksuvaba — enam ei mingit 10%+ maksu igal tehingul.",
+      "confirmQuestion": "Teisenda {{amount}} {{legacySymbol}} {{newSymbol}}-ks?",
+      "confirmButton": "Mõistan, teisenda"
+    },
+    "finalConfirmModal": {
+      "title": "Kas oled tõesti kindel?",
+      "message": "See on sinu viimane võimalus tühistada. Kui kinnitad, teisendatakse sinu {{legacySymbol}} {{newSymbol}}-ks ja seda ei saa tagasi pöörata.",
+      "confirmButton": "Jah, teisenda kohe"
     }
   },
   "bridge": {
@@ -160,7 +175,7 @@
         "step2": "Mine vahekaardile <strong>Teisenda</strong>.",
         "step3": "Vali pärandtoken, mida soovid teisendada.",
         "step4": "Kinnita teisenduslepingule luba oma tokenite kulutamiseks.",
-        "step5": "Klõpsa <strong>Teisenda</strong>, et hoiustada oma pärandtokenid ja saada samaväärne kogus TigerOG tokeneid.",
+        "step5": "Klõpsa <strong>Teisenda</strong>, et hoiustada oma pärandtokenid ja saada samaväärne kogus \"TigerOG\" tokeneid.",
         "note": "<strong>Märkus:</strong> Teisendamine käivitab pärandtokeni tehingumaksu (uuendamise ajal), kui sinu token võtab ülekannete eest maksu. Kuid pärast TigerOG-ks teisendamist on kõik järgnevad ülekanded ja sildamised maksuvabad."
       },
       "supportedNetworks": {
@@ -177,7 +192,7 @@
       },
       "conversion": {
         "title": "Teisenduse loogika",
-        "content": "Teisenduslepingon juurutatud BSC-s. Teisendamisel saadetakse sinu pärandtokenid surnud aadressile (põletatakse püsivalt) ja saad TigerOG 1:1 suhtes. See on ühesuunaline protsess — pärandtokenid hävitatakse ja neid ei saa kunagi taastada."
+        "content": "Teisendusleping on juurutatud BSC-s. Teisendamisel saadetakse sinu pärandtokenid surnud aadressile (põletatakse püsivalt) ja saad TigerOG 1:1 suhtes. See on ühesuunaline protsess — pärandtokenid hävitatakse ja neid ei saa kunagi taastada."
       },
       "contracts": {
         "title": "Nutilepingu aadressid",
@@ -296,7 +311,12 @@
     "tabs": {
       "overview": "Ülevaade",
       "byToken": "Tokeni järgi",
-      "byChain": "Ahela järgi"
+      "byChain": "Ahela järgi",
+      "liquidity": "Likviidsus"
+    },
+    "liquidity": {
+      "poolAddress": "Basseini aadress",
+      "tradeOn": "Kauple"
     },
     "overview": {
       "interchainTokens": {
@@ -318,6 +338,18 @@
         "legacyToken": "Pärandtoken",
         "conversionContract": "Teisenduslepingu",
         "newToken": "Interchain token"
+      },
+      "liquidityPools": {
+        "title": "Likviidsusbasseinid",
+        "description": "DEX likviidsusbasseinid, kus saad OG tokenitega kaubelda erinevates ahelates."
+      },
+      "liquidityPoolsTable": {
+        "title": "Likviidsusbasseinid",
+        "subtitle": "DEX basseinid OG tokenitega kauplemiseks",
+        "token": "Token",
+        "chain": "Ahel",
+        "dex": "DEX",
+        "poolAddress": "Basseini aadress"
       }
     },
     "filterTokens": "Filtreeri tokeneid...",
@@ -337,6 +369,13 @@
     "title": "Freedom Bridge tugi",
     "header": "Korduma kippuvad küsimused",
     "subtitle": "Vastused levinud küsimustele TigerOG, sildamise ja Axelari kohta.",
+    "sections": {
+      "gettingStarted": "Alustamine",
+      "convertingTrading": "Teisendamine ja kauplemine",
+      "bridging": "Sildamine",
+      "technical": "Tehniline",
+      "securityRisks": "Turvalisus ja riskid"
+    },
     "cta": {
       "title": "Ikka on küsimusi?",
       "description": "Liitu meie kogukonnaga Telegramis või vaata üksikasjalikku Wikit tehniliste juhendite jaoks.",
@@ -353,19 +392,106 @@
       "q4": "Mis juhtub, kui ma kaotan oma tokenid?",
       "a4": "TigerOG tokenid käituvad nagu iga teine ERC20 token. Kui kaotad juurdepääsu oma rahakotile, ei saa neid taastada. Hoia alati oma privaatvõtmed ja taastefraasid turvalisena.",
       "q5": "Kas ma saan oma TigerOG tokenid tagasi BNBTigeriks teisendada?",
-      "a5": "Ei. Teisendamine on ühesuunaline. Kui teisendam BNBTigeri TigerOG-ks, põletatakse sinu pärandtokenid püsivalt (saadetakse surnud aadressile). See on tahtlik — TigerOG on uuendatud, maksuvaba versioon, mis on mõeldud pärandtokeni täielikuks asendamiseks.",
+      "a5": "Ei. Teisendamine on ühesuunaline. Kui teisendad BNBTigeri TigerOG-ks, põletatakse sinu pärandtokenid püsivalt (saadetakse surnud aadressile). See on tahtlik — TigerOG on uuendatud, maksuvaba versioon, mis on mõeldud pärandtokeni täielikuks asendamiseks.",
       "q6": "Milliseid võrke toetatakse?",
       "a6": "Me toetame mitmeid EVM ahelaid Axelari kaudu, sealhulgas BNB Chain, Ethereum, Base ja teised. Vaata Wikist toetatud võrkude täielikku loendit.",
       "q7": "Kui kaua võtab sildamine aega?",
       "a7": "Sildamise kiirus sõltub lähteahela lõplikkusest ja Axelari edastamisest. Tavaliselt võtab ülekanne ahelate vahel aega umbes 2-5 minutit.",
       "q8": "Millised on OG tokenite ringluses olevad varud?",
-      "a8": "Igal OG tokenil on fikseeritud ringluses olev varu, mis tuleneb selle algsest BNB tokenist, võttes arvesse põletatud tokeneid, kinni jäänud lepingusaldosid ja lukustatud LP-d. TigerOG: ~3,66 septiljonit (36,62% algsest). LionOG: ~3,83 septiljonit (38,33% algsest). FrogOG: ~8,39 septiljonit (83,86% algsest). Vaata Wikist iga tokeni üksikasjalikku jaotust."
+      "a8": "Igal OG tokenil on fikseeritud ringluses olev varu, mis tuleneb selle algsest BNB tokenist, võttes arvesse põletatud tokeneid, kinni jäänud lepingusaldosid ja lukustatud LP-d. TigerOG: ~3,66 septiljonit (36,62% algsest). LionOG: ~3,83 septiljonit (38,33% algsest). FrogOG: ~8,39 septiljonit (83,86% algsest). Vaata Wikist iga tokeni üksikasjalikku jaotust.",
+      "q9": "Miks pole OG lepingut loovutatud (renounced)?",
+      "a9": "Lepingu loovutamine eemaldaks võimaluse arendada ja lisada tulevikus uusi ahelaid. Kuigi lepingut ei loovutata lähitulevikus, on mis tahes muudatuste tegemiseks vaja mitut allkirja. Samuti ei eraldata meeskonnale tokeneid ega makse.",
+      "q10": "Miks on OG leping vermitav (mintable)?",
+      "a10": "Ahelatevaheline sildamine nõuab vermimise/põletamise funktsionaalsust — tokeneid põletatakse ahelast lahkumisel ja vermitakse saabumisel. See hoiab kogupakkumise kõigis võrkudes konstantsena. Vermimist kontrollib multisig Safe rahakott.",
+      "q11": "Kas TigerOG lahkub BNB Chainilt Axelarisse?",
+      "a11": "Ei. Axelar ei ole plokiahel — see on sildamisprotokoll, mis ühendab ahelaid. BNB Chain jääb päritoluahelaks, kus teisendad pärandtokeneid. Axelar lihtsalt võimaldab sinu tokenitel liikuda BNB, Ethereumi, Base'i ja teiste toetatud võrkude vahel.",
+      "q12": "Kus on minu tokenid?",
+      "a12": "Veendu, et lisasid ahela ja tokeni aadressi oma rahakotti. Kõik lepingu aadressid leiad lehelt Lepingud. Tiger meeskond kasutab Rabby rahakotti, mis teeb mitme ahela haldamise lihtsamaks.",
+      "q13": "Miks võtab Ethereumist või Base'ist sildamine nii kaua?",
+      "a13": "Ethereum nõuab kahte epohhi enne tehingute lõplikustamist maksimaalse turvalisuse tagamiseks. Kuna Base arveldab Ethereumis, pärib see selle viivituse. See seab turvalisuse kiirusest ettepoole — sinu tokenid on turvalised, lihtsalt ole kannatlik.",
+      "q14": "Mis juhtub, kui jään oma algse tokeni juurde ja ei teisenda?",
+      "a14": "Teisendamisega pole kiiret. BNBTigeril ja TigerOG-l on alati erinevad likviidsusbasseinid, turukapitalisatsioonid jne. Kuid BNBTigeril on kõrge maks ja TigerOG-l pole kauplemise maksu. Kuna algse maksud ei kasutata projekti toetamiseks, teeb CTO meeskond arendustööd TigerOG jaoks. Freedom Bridge ja multi-chain on ainult TigerOG jaoks.",
+      "q15": "Kas teisendamisel on maks? Kas TigerOG-l on maks?",
+      "a15": "Ei. Teisendamine ja kauplemine maksab ainult tavalist gaasitasu. Lisatasusid ega -makse pole ja TigerOG on maksuvaba leping.",
+      "q16": "Kas ma saan lihtsalt TigerOG-d otse osta ja kaubelda?",
+      "a16": "Veel mitte. Meeskond pole kogunud tasusid ja makse piisavalt suurte likviidsusbasseinide rahastamiseks. TigerOG saamiseks pead praegu ostma või juba omama algset ja teisendama. Kui omad TigerOG-d, ei ole see lihtsalt kaubeldav, kuni investorid tulevad likviidsusbasseini lisama.",
+      "q17": "Miks TigerOG turukapitalisatsioon tundub nii üle paisutatud?",
+      "a17": "Mida väiksem on likviidsusbassein, seda rohkem mõjutab iga väike tehing kuvatud turukapitalisatsiooni. See laheneb, kui investorid tulevad likviidsuse pakkujatena.",
+      "q18": "Milliseid turvaauditeid on tehtud?",
+      "a18": "Freedom Bridge pole läbinud ametlikku kolmanda osapoole auditit. Siiski põhineb teisenduslepingu kood SHx konverteril, mille ehitas Strongholdi meeskond (endised XRP ja Stellari arendajad, kes esinesid hiljuti Davosis). Sildamise infrastruktuuri haldab Axelar, mis on läbinud mitu turvaauditit.",
+      "q19": "Kuidas kaitseb Freedom Bridge häkkimise või ärakasutamise eest?",
+      "a19": "Mitu meedet on paigas:\n\n• Konverter hoiab ainult täpselt vajalikku ringluses olevat varu — ei mingit ülejääki, mida saaks ära kasutada\n• Konverteril pole vermimise õigusi\n• Kogu lepingukood on ahelas verifitseeritud ja avatud lähtekoodiga\n• Tokeni õigused on turvatud Safe.global multisig rahakotis\n• Sildamist haldab Axelari lahingutest läbinud infrastruktuur",
+      "q20": "Kas sildamine on pöördumatu? Mis juhtub, kui ülekanne ebaõnnestub?",
+      "a20": "Sillaülekanded võivad harva kinni jääda ebapiisava gaasi või võrgu ülekoormuse tõttu. Kui see juhtub, saad oma tehingut jälgida Axelarscanis ja käsitsi gaasi lisada selle lõpetamiseks. Axelar pakub tehingute taastamise tööriistu — sa ei kaota oma tokeneid.",
+      "q21": "Millised on Freedom Bridge'i kasutamisega seotud riskid?",
+      "a21": "Nagu iga DeFi protokolliga, on olemas loomupärased riskid, sealhulgas nutilepingu risk, silla risk ja turu volatiilsus. Soovitame teha oma uuringud (DYOR) ja kasutada ainult vahendeid, mille kaotust saad endale lubada. Lisateavet leiad meie õiguslikust vastutusest loobumisest.",
+      "q22": "Kas ma saan teisendada uue BNB Tiger Inu lepingu (september 2025)?",
+      "a22": "Ei. Freedom Bridge toetab algset/pärand BNB Tiger tokenit, mis käivitati mitu aastat tagasi — mitte uut lepingut, mis loodi septembris 2025. Freedom Bridge ehitati algse Tiger, Lion ja Frog tokenite kogukonna ülevõtmiseks (CTO).",
+      "q23": "Kuidas lisada likviidsust?",
+      "a23": "Likviidsuse lisamine on edasijõudnute DeFi tegevus riskidega, sealhulgas ajutine kaotus. Kui sul on kogemus likviidsuse pakkumisega DEX-ides nagu PancakeSwap või Uniswap, on protsess sama — seo OG token baasvara külge. Siin on suurepärane õppesari likviidsuse kohta, kui soovid rohkem teada saada: https://www.youtube.com/watch?v=oiylIHvwMik&list=PL_ujg_v1hZ5iGtiuhT8NkSMqEOaLAgmUu",
+      "q24": "Kas meeskond saab rug pulli teha?",
+      "a24": "Ei. Rug pulli jaoks pole mehhanismi. Meeskonnale ei eraldata tokeneid ega makse ja me ei kogu sildamistasusid — need lähevad Axelarile ülekandekulude katmiseks. Meeskond on hoidjad nagu teie, ehitades seda isiklikul kulul. Ainus meeskonna rahakott on avalik turundusrahakott, mida rahastatakse kogukonna annetustest. Multisig Safe rahakott kontrollib lepingu õigusi nagu ahelatesse saatmise peatamine hädaolukorras, kuid ei saa kasutajate vahenditele ligi pääseda ega neid ümber suunata."
     }
+  },
+  "footer": {
+    "wiki": "Wiki",
+    "contracts": "Lepingud",
+    "faq": "KKK",
+    "disclaimer": "Vastutusest loobumine",
+    "github": "GitHub"
+  },
+  "disclaimer": {
+    "title": "Õiguslik vastutusest loobumine",
+    "header": "Oluline õiguslik teatis",
+    "subtitle": "Palun loe seda vastutusest loobumist hoolikalt enne Freedom Bridge'i kasutamist.",
+    "sections": {
+      "noInvestmentAdvice": {
+        "title": "Ei mingit investeerimisnõu",
+        "content": "Freedom Bridge'is pakutav teave ei kujuta endast investeerimis-, finants-, kauplemis- ega muud nõuannet. Sa ei peaks sisu sellisena käsitlema. Freedom Bridge ei soovita, et sa ostaksid, müüksid või hoiaksid mingit krüptovaluutat. Tee oma hoolsuskohustus ja konsulteeri oma finantsnõustajaga enne investeerimisotsuste tegemist."
+      },
+      "risksOfUse": {
+        "title": "Kasutamise riskid",
+        "content": "Krüptovaluutaturgud on volatiilsed ja ettearvamatud. Freedom Bridge'i kasutamisel tunnustad ja nõustud, et:\n\n• Nutilepingud võivad sisaldada vigu või haavatavusi, mis võivad kaasa tuua vahendite kaotuse\n• Ahelatevahelistel sildadel on loomupärased riskid, sealhulgas, kuid mitte ainult: oraakli tõrked, valideerijate kokkumäng ja võrgu ülekoormus\n• Tokenite väärtused võivad dramaatiliselt kõikuda ja sa võid kaotada osa või kogu oma investeeringu\n• Tehingud plokiahela võrkudes on pöördumatud\n• Võrgutasud ja gaasikulud on meie kontrolli alt väljas ja võivad märkimisväärselt varieeruda"
+      },
+      "noWarranties": {
+        "title": "Ei mingeid garantiisid",
+        "content": "Freedom Bridge pakutakse \"nii nagu on\" ja \"nii nagu saadaval\" ilma igasuguste otseste või kaudsete garantiideta. Me ei garanteeri, et teenus on katkematu, turvaline või vigadeta. Me ei anna garantiisid platvormi kaudu pakutava teabe täpsuse, usaldusväärsuse ega täielikkuse kohta."
+      },
+      "limitationOfLiability": {
+        "title": "Vastutuse piiramine",
+        "content": "Seadusega lubatud maksimaalses ulatuses ei vastuta Freedom Bridge, selle arendajad, kaastöötajad ja sidusettevõtted mis tahes otseste, kaudsete, juhuslike, eriliste, kaudsete või karistuslike kahjude eest, mis tulenevad sinu platvormi kasutamisest või on sellega seotud, sealhulgas, kuid mitte ainult, kasumi kaotus, andmete kaotus või krüptovarade kaotus."
+      },
+      "thirdPartyServices": {
+        "title": "Kolmandate osapoolte teenused",
+        "content": "Freedom Bridge integreerub kolmandate osapoolte teenustega, sealhulgas Axelar Networkiga ahelatevaheliseks sildamiseks. Me ei vastuta nende kolmandate osapoolte tegevuste, sisu, teabe ega andmete eest. Kolmandate osapoolte teenuste kasutamisel kehtivad nende vastavad tingimused."
+      },
+      "regulatoryCompliance": {
+        "title": "Regulatiivne vastavus",
+        "content": "Krüptovaluuta regulatsioonid varieeruvad jurisdiktsiooniti. Sina vastutad ainuisikuliselt selle eest, et sinu Freedom Bridge'i kasutamine vastab kõigile kohaldatavatele seadustele ja määrustele sinu jurisdiktsioonis. Freedom Bridge ei anna mingeid kinnitusi teenuste seaduslikkuse kohta üheski jurisdiktsioonis."
+      },
+      "dyor": {
+        "title": "Tee oma uuringud",
+        "content": "Tee alati oma uuringud (DYOR) enne mis tahes DeFi protokolliga suhtlemist. Verifitseeri lepinguaadressid, mõista iga tokeni mehhanisme, millega suhtled, ja ära kunagi investeeri rohkem, kui saad endale lubada kaotada."
+      }
+    },
+    "acknowledgment": "Freedom Bridge'i kasutamisel tunnustad, et oled selle vastutusest loobumise läbi lugenud, mõistnud ja nõustud sellega seotuks olema.",
+    "lastUpdated": "Viimati uuendatud: jaanuar 2026"
+  },
+  "disclaimerModal": {
+    "title": "Oluline vastutusest loobumine",
+    "subtitle": "Palun loe ja kinnita enne jätkamist.",
+    "noAdvice": "Freedom Bridge ei paku investeerimis-, finants- ega kauplemisnõuandeid. Krüptovaluuta investeeringud on volatiilsed ja riskantsed.",
+    "risks": "Seda platvormi kasutades tunnustad, et nutilepingud võivad sisaldada haavatavusi, ahelatevahelistel sildadel on loomupärased riskid ja tehingud on pöördumatud.",
+    "dyor": "Tee alati oma uuringud (DYOR) ja kasuta ainult vahendeid, mille kaotust saad endale lubada.",
+    "fullDisclaimer": "Täielikud üksikasjad leiad meie",
+    "fullDisclaimerLink": "Õiguslik vastutusest loobumine",
+    "accept": "Mõistan ja nõustun"
   },
   "common": {
     "from": "Kust",
     "to": "Kuhu",
     "max": "MAX",
+    "cancel": "Tühista",
     "chainId": "Ahela ID",
     "bscChain": "BSC Chain",
     "insufficientBalance": "Ebapiisav saldo.",

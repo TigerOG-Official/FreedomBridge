@@ -4,6 +4,7 @@
     "titleBridge": "Brygga"
   },
   "nav": {
+    "home": "Hem",
     "settings": "Inställningar",
     "menu": "Meny",
     "preferences": "Inställningar",
@@ -16,36 +17,50 @@
     "wiki": "Dokumentation / Wiki",
     "contracts": "Kontrakt",
     "faq": "FAQ",
-    "logout": "Logga ut",
     "language": "Språk",
     "languageSearchPlaceholder": "Sök språk",
     "languageNoResults": "Inga språk hittades",
-    "close": "Stäng"
+    "close": "Stäng",
+    "logout": "Logga ut"
   },
   "addNetworks": {
-    "title": "Lägg till Nätverk",
-    "description": "Klicka på en knapp nedan för att lägga till Nätverk i din plånbok. Detta gör det enkelt att byta mellan kedjor under testning."
+    "title": "Lägg till Nätverk i Plånbok",
+    "description": "Klicka på ett nätverk för att lägga till det i MetaMask, Rabby eller andra Web3-plånböcker",
+    "searchPlaceholder": "Sök nätverk...",
+    "noResults": "Inga nätverk hittades",
+    "networkCount": "nätverk"
+  },
+  "addNetwork": {
+    "connectWallet": "Vänligen anslut din plånbok först",
+    "alreadyPending": "Förfrågan väntar redan. Kontrollera din plånbok.",
+    "error": "Kunde inte lägga till nätverk. Vänligen lägg till det manuellt.",
+    "adding": "Lägger till...",
+    "button": "Lägg till"
   },
   "tabs": {
     "convert": "Konvertera",
     "bridge": "Brygga"
   },
   "convert": {
-    "token": "Token",
-    "selectToken": "Välj Token",
     "balance": "Saldo",
-    "noConvertibleTokens": "Inga tokens att konvertera på {{chainName}}",
-    "convert": "Konvertera",
-    "addToWalletLabel": "Importera {{symbol}} på {{chainName}} till plånbok",
     "addToWalletButton": "Importera till Plånbok",
-    "addingToken": "Lägger till…",
-    "addTokenError": "Kunde inte lägga till token i plånbok",
-    "legacyTokenMissing": "Gammal token saknas för denna kedja",
-    "tigerOGMissing": "TigerOG-token saknas för denna kedja",
     "networkWarning": {
       "title": "Fel Nätverk",
-      "message": "Token-konvertering är endast tillgänglig på BSC-kedjan.",
-      "description": "Vänligen byt till BSC-kedjan i din plånbok för att konvertera tokens, eller navigera till Brygga-fliken för att överföra tokens mellan kedjor."
+      "message": "Token-konvertering är endast tillgänglig på BSC-kedjan. Vänligen byt till BSC för att konvertera dina gamla tokens."
+    },
+    "confirmModal": {
+      "title": "Bekräfta Konvertering",
+      "warning": "Du håller på att konvertera dina tokens. Vänligen läs följande noggrant innan du fortsätter.",
+      "irreversible": "Denna åtgärd är oåterkallelig!",
+      "burnExplanation": "Dina {{legacySymbol}}-tokens kommer att brännas permanent och en lika stor mängd {{newSymbol}}-tokens kommer att präglas till din plånbok. Detta kan inte ångras.",
+      "positiveNote": "Fördelen: {{newSymbol}} är helt skattefri — inga fler 10%+ skatter på varje transaktion.",
+      "confirmQuestion": "Konvertera {{amount}} {{legacySymbol}} till {{newSymbol}}?",
+      "confirmButton": "Jag Förstår, Konvertera"
+    },
+    "finalConfirmModal": {
+      "title": "Är Du Verkligen Säker?",
+      "message": "Detta är din sista chans att avbryta. När du bekräftar kommer dina {{legacySymbol}} att konverteras till {{newSymbol}} och kan inte konverteras tillbaka.",
+      "confirmButton": "Ja, Konvertera Nu"
     }
   },
   "bridge": {
@@ -56,9 +71,7 @@
     "noDestination": "Ingen destination",
     "noBridgeableTokens": "Inga bryggbara tokens",
     "bridgeButton": "Brygga Tokens",
-    "getFeeQuote": "Hämta avgiftsuppskattning",
     "viewOnAxelarscan": "Visa på Axelarscan",
-    "addDestinationTokenLabel": "Importera {{symbol}} på {{chainName}} till plånbok",
     "addTokenError": "Kunde inte lägga till token i plånbok",
     "estimatedTime": "Ber. tid",
     "recentTransactions": "Senaste Transaktioner",
@@ -74,37 +87,23 @@
     "cancel": "Avbryt",
     "save": "Spara"
   },
-  "wallet": {},
-  "login": {
-    "title": "Välkommen tillbaka",
-    "subtitle": "Logga in för att fortsätta till Freedom Bridge",
-    "emailLabel": "E-post",
-    "emailPlaceholder": "namn@exempel.com",
-    "passwordLabel": "Lösenord",
-    "passwordPlaceholder": "Ange lösenord",
-    "rememberMe": "Kom ihåg mig på denna enhet",
-    "submit": "Logga in",
-    "validation": {
-      "required": "E-post och lösenord krävs.",
-      "invalid": "Ogiltig e-post eller lösenord."
-    }
-  },
   "landing": {
     "banner": {
       "title": "Ny här?",
-      "message": "Lär dig mer om Freedom Bridge och hur du bryggar TigerOG-tokens mellan kedjor."
+      "message": "Lär dig om Freedom Bridge och hur man bryggar TigerOG-tokens över kedjor.",
+      "note": "Obs: Token-konvertering är permanent och kan inte ångras."
     },
     "hero": {
       "badge": "Drivs av Axelar",
-      "title": "Frigör Dina <1/> <2>Tillgångar</2>",
-      "subtitle": "Brygga sömlöst TigerOG-tokens mellan kedjor med Axelars Interchain Token Service. Säkert, snabbt och skattefritt.",
+      "title": "Släpp loss Dina <1/> <2>Tillgångar</2>",
+      "subtitle": "Brygga sömlöst TigerOG-tokens över kedjor med Axelars Interchain Token Service. Säkert, snabbt och skattefritt.",
       "launchApp": "Starta App",
       "documentation": "Dokumentation"
     },
     "stats": {
       "messaging": "Axelar-nätverk",
-      "networks": "Aktiva Nätverk",
-      "fees": "Protokollavgifter",
+      "networks": "Nätverk Live",
+      "fees": "Plattformsavgift",
       "finality": "Slutgiltighet"
     },
     "features": {
@@ -112,17 +111,17 @@
       "description": "Freedom Bridge utnyttjar Axelar ITS för att leverera en sömlös, säker och skattefri bryggupplevelse över {{count}}+ blockkedjor.",
       "stopDecay": {
         "title": "Stoppa Förfallet",
-        "description": "Gamla tokens bränner 10-11% av ditt värde vid varje köp och sälj. Inslagning till TigerOG stoppar denna blödning omedelbart och bevarar 100% av ditt värde.",
+        "description": "Gamla tokens bränner 10-11% av ditt värde vid varje köp och sälj. Konvertering till TigerOG stoppar denna blödning omedelbart och bevarar 100% av ditt värde.",
         "graphLabel1": "100% Bevarad (TigerOG)",
         "graphLabel2": "-40% Värde (Gammal 10% Skatt)"
       },
       "conversion": {
         "title": "1:1 Konvertering",
-        "description": "Total utbud förändras aldrig. Tokens hålls i ett säkert migrationskontrakt, och en exakt 1:1 motsvarighet används. Ingen inflation, ingen utspädning."
+        "description": "Total utbud förändras aldrig. Tokens hålls i ett säkert konverteringskontrakt, och en exakt 1:1 motsvarighet används. Ingen inflation, ingen utspädning."
       },
       "multichain": {
         "title": "Multi-Kedja",
-        "description": "Distribuera en gång, få åtkomst överallt. Din tillgång blir en infödd interchain-token i kedjor inklusive Ethereum, BNB Chain, Base och fler."
+        "description": "Distribuera en gång, få åtkomst överallt. Din tillgång blir en infödd interchain-token över kedjor inklusive Ethereum, BNB Chain, Base och mer."
       },
       "security": {
         "title": "Axelar-säkerhet",
@@ -130,14 +129,19 @@
         "button": "Börja Brygga"
       }
     },
-    "teaser": {
-      "title": "Vill du ha andra mynt?",
-      "subtitle": "Vad tycker du om <lunc>LUNC</lunc>, <crepe>Crepe</crepe>, eller <shiba>Shiba</shiba>??"
-    },
     "cta": {
       "title": "Redo att brygga?",
-      "description": "Gå med i interchain-revolutionen. Det tar mindre än en minut att slå in dina tillgångar och börja brygga via Axelar.",
+      "description": "Gå med i interchain-revolutionen. Det tar mindre än en minut att konvertera dina tokens och börja brygga via Axelar.",
       "button": "Starta App Nu"
+    },
+    "buyTokens": {
+      "badge": "Kom Igång",
+      "title": "Skaffa Tillgångar",
+      "description": "Har du inga tokens än? Köp de ursprungliga tokens på PancakeSwap, konvertera dem sedan till de nya multichain-versionerna.",
+      "buyOn": "Köp på PancakeSwap",
+      "then": "sedan",
+      "convertTo": "Konvertera till",
+      "buyNow": "Köp Nu"
     }
   },
   "wiki": {
@@ -145,31 +149,33 @@
     "searchPlaceholder": "Sök dokumentation...",
     "header": {
       "title": "Dokumentation",
-      "subtitle": "Lär dig hur du slår in gamla tokens, bryggar över kedjor och integrerar med Freedom Bridge."
+      "subtitle": "Lär dig hur du konverterar gamla tokens och bryggar över kedjor."
     },
     "nav": {
       "gettingStarted": "Kom Igång",
       "coreConcepts": "Kärnkoncept",
       "developers": "Utvecklare",
-      "tigerogSupply": "TigerOG-utbud",
-      "lionogSupply": "LionOG-utbud",
-      "frogogSupply": "FrogOG-utbud"
+      "tigerogSupply": "TigerOG Utbud",
+      "lionogSupply": "LionOG Utbud",
+      "frogogSupply": "FrogOG Utbud",
+      "githubRepo": "GitHub Repository",
+      "axelarDocs": "Axelar ITS Dokumentation"
     },
     "articles": {
       "whatIs": {
         "title": "Vad är Freedom Bridge?",
-        "content": "Freedom Bridge är ett decentraliserat bryggprotokoll byggt på Axelars Interchain Token Service (ITS). Det är utformat för att frigöra tokens från begränsningar för enskilda kedjor och höga transaktionsskatter. Genom att slå in standardtokens till interchain-kompatibla tillgångar kan användare flytta sitt värde fritt över stödda blockkedjor.",
+        "content": "Freedom Bridge är ett decentraliserat bryggprotokoll byggt på Axelars Interchain Token Service (ITS). Det gör det möjligt för dig att konvertera gamla tokens till skattefria, interchain-kompatibla tillgångar som kan röra sig fritt över stödda blockkedjor.",
         "taxFreeTitle": "Skattefria Överföringar",
         "taxFreeDesc": "Gamla tokens har ofta 10%+ skatter. TigerOG-tokens har 0% skatt.",
         "omnichainTitle": "Interchain",
         "omnichainDesc": "Flytta tillgångar omedelbart mellan {{count}}+ blockkedjor via Axelar."
       },
       "howToConvert": {
-        "title": "Hur man konverterar tokens",
+        "title": "Hur man Konverterar Tokens",
         "step1": "Anslut din plånbok till källkedjan (t.ex. BNB Chain).",
         "step2": "Navigera till fliken <strong>Konvertera</strong>.",
         "step3": "Välj den gamla token du vill konvertera.",
-        "step4": "Godkänn migrationskontraktet för att spendera dina tokens.",
+        "step4": "Godkänn Konverteringskontraktet för att spendera dina tokens.",
         "step5": "Klicka på <strong>Konvertera</strong> för att deponera dina gamla tokens och ta emot en motsvarande mängd \"TigerOG\"-tokens.",
         "note": "<strong>Obs:</strong> Konvertering medför den gamla tokens transaktionsskatt (under uppgraderingen) om din token tar ut skatt på överföringar. Men när de väl är konverterade till TigerOG är alla efterföljande överföringar och bryggningar skattefria."
       },
@@ -185,9 +191,9 @@
         "title": "Axelar-nätverk",
         "content": "Vi använder Axelar som vårt interoperabilitetslager. Axelar är ett decentraliserat nätverk som kopplar samman olika blockkedjor, vilket möjliggör säker kommunikation mellan kedjor och överföring av tillgångar. Axelars säkerhetsmodell bygger på en uppsättning validatorer utan tillstånd, vilket ger högklassig säkerhet för interchain-tokens."
       },
-      "migration": {
-        "title": "Migrationslogik",
-        "content": "Migrationskontraktet är distribuerat på ursprungskedjan (t.ex. BSC). Det håller de ursprungliga gamla tokens i förvar. När du uppgraderar tokens deponerar du i migrationskontraktet. När du packar upp (om det stöds) bränner du TigerOG-representationen för att frigöra de ursprungliga tokens. Detta säkerställer en strikt backad 1:1-koppling."
+      "conversion": {
+        "title": "Konverteringslogik",
+        "content": "Konverteringskontraktet är distribuerat på BSC. När du konverterar skickas dina gamla tokens till den döda adressen (permanent brända) och du får TigerOG i ett 1:1-förhållande. Detta är en enkelriktad process — de gamla tokens förstörs och kan aldrig återställas."
       },
       "contracts": {
         "title": "Smarta Kontraktsadresser",
@@ -198,13 +204,13 @@
       "security": {
         "title": "Säkerhetsmodell",
         "content": "Säkerhet är inbyggt i varje lager av Freedom Bridge:",
-        "point1": "<strong>Migrationsarkitektur:</strong> Gamla tokens hålls i verifierade, oföränderliga smarta kontrakt.",
-        "point2": "<strong>Axelar Validators:</strong> Meddelanden mellan kedjor verifieras av Axelars decentraliserade nätverk.",
+        "point1": "<strong>Konverteringsarkitektur:</strong> Gamla tokens bränns permanent via verifierade, oföränderliga smarta kontrakt.",
+        "point2": "<strong>Axelar Validatorer:</strong> Meddelanden mellan kedjor verifieras av Axelars decentraliserade nätverk.",
         "point3": "<strong>Konsekvent Utbud:</strong> ITS hanterar prägling och bränning för att upprätthålla ett konstant totalt utbud över alla kedjor.",
         "point4": "<strong>Granskad Logik:</strong> Byggd på industristandard Axelar- och OpenZeppelin-bibliotek."
       },
       "supplyCommon": {
-        "howWeCalculated": "Hur vi beräknade detta",
+        "howWeCalculated": "Hur Vi Beräknade Detta",
         "verification": "Verifiering",
         "verificationDesc": "Alla utbudssiffror kan verifieras oberoende on-chain:",
         "table": {
@@ -221,78 +227,78 @@
         "lpLockedTitle": "3. LP-låsta Tokens"
       },
       "tigerogSupply": {
-        "title": "TigerOG-utbudsnedbrytning",
+        "title": "TigerOG Utbudsnedbrytning",
         "intro": "TigerOG har ett fast cirkulerande utbud som härrör från den ursprungliga BNBTiger-token. Utbudsberäkningen tar hänsyn till alla brända och permanent låsta tokens.",
-        "lpLocked": "LP-låst (86,18% av LP Bränd)",
+        "lpLocked": "LP Låst (86.18% av LP Bränd)",
         "deadAddressDesc": "Tokens som skickas till <code>0x000...dEaD</code> bränns permanent och kan aldrig återställas. Detta inkluderar tokens som bränns genom den ursprungliga BNBTiger-skattemekanismen.",
         "contractBalanceDesc": "En liten mängd tokens har fastnat i själva BNBTiger-kontraktet. Dessa tokens är oåtkomliga och effektivt borttagna från cirkulation.",
-        "lpLockedDesc": "PancakeSwap-likviditetspoolen innehåller BNBTiger-tokens parat med BNB. När LP-tokens bränns (skickas till den döda adressen), blir de underliggende tokens i poolen permanent låsta.",
-        "lpBurnedPercent": "LP-tokens brända: 86,18% av alla LP-tokens",
-        "lpLockedPercent": "Därför är 86,18% av tokens i LP:n permanent låsta",
-        "note": "<strong>Obs:</strong> TigerOG upprätthåller ett 1:1-förhållande med BNBTiger under migration. Det cirkulerande utbudet av TigerOG matchar det verkliga cirkulerande utbudet av BNBTiger efter att ha tagit hänsyn till alla brända och låsta tokens.",
+        "lpLockedDesc": "PancakeSwap-likviditetspoolen innehåller BNBTiger-tokens parat med BNB. När LP-tokens bränns (skickas till den döda adressen), blir de underliggande tokens i poolen permanent låsta.",
+        "lpBurnedPercent": "LP-tokens brända: 86.18% av alla LP-tokens",
+        "lpLockedPercent": "Därför är 86.18% av tokens i LP:n permanent låsta",
+        "note": "<strong>Obs:</strong> TigerOG upprätthåller ett 1:1-förhållande med BNBTiger under konvertering. Det cirkulerande utbudet av TigerOG matchar det verkliga cirkulerande utbudet av BNBTiger efter att ha tagit hänsyn till alla brända och låsta tokens.",
         "launchData": "<strong>Lanseringsdata:</strong> Dessa siffror beräknades vid lanseringen. Den gamla BNBTiger-token fortsätter att bränna tokens vid varje köp/säljtransaktion, så det faktiska cirkulerande utbudet kan vara något lägre än vad som visas.",
         "legacyContract": "BNBTiger Tokenkontrakt",
         "ogContract": "TigerOG Tokenkontrakt",
         "amounts": {
-          "original": "10 000 000 000 000 000 000 000 000",
-          "dead": "−5 772 706 396 234 535 780 783 775",
-          "deadPercent": "57,73%",
-          "contract": "−6 142 342 823 271 327",
-          "contractPercent": "<0,01%",
-          "lp": "−565 059 839 948 518 979 124 912",
-          "lpPercent": "5,65%",
-          "circulating": "3 662 233 757 674 602 416 819 986",
-          "circulatingPercent": "36,62%"
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,772,706,396,234,535,780,783,775",
+          "deadPercent": "57.73%",
+          "contract": "−6,142,342,823,271,327",
+          "contractPercent": "<0.01%",
+          "lp": "−565,059,839,948,518,979,124,912",
+          "lpPercent": "5.65%",
+          "circulating": "3,662,233,757,674,602,416,819,986",
+          "circulatingPercent": "36.62%"
         }
       },
       "lionogSupply": {
-        "title": "LionOG-utbudsnedbrytning",
+        "title": "LionOG Utbudsnedbrytning",
         "intro": "LionOG har ett fast cirkulerande utbud som härrör från den ursprungliga BNBLion-token. Utbudsberäkningen tar hänsyn till alla brända och permanent låsta tokens.",
-        "lpLocked": "LP-låst (99,98% av LP Bränd)",
+        "lpLocked": "LP Låst (99.98% av LP Bränd)",
         "deadAddressDesc": "Tokens som skickas till <code>0x000...dEaD</code> bränns permanent och kan aldrig återställas. Detta inkluderar tokens som bränns genom den ursprungliga BNBLion-skattemekanismen.",
         "contractBalanceDesc": "En liten mängd tokens har fastnat i själva BNBLion-kontraktet. Dessa tokens är oåtkomliga och effektivt borttagna från cirkulation.",
-        "lpLockedDesc": "PancakeSwap-likviditetspoolen innehåller BNBLion-tokens parat med BNB. När LP-tokens bränns (skickas till den döda adressen), blir de underliggende tokens i poolen permanent låsta.",
-        "lpBurnedPercent": "LP-tokens brända: 99,98% av alla LP-tokens",
-        "lpLockedPercent": "Därför är 99,98% av tokens i LP:n permanent låsta",
-        "note": "<strong>Obs:</strong> LionOG upprätthåller ett 1:1-förhållande med BNBLion under migration. Det cirkulerande utbudet av LionOG matchar det verkliga cirkulerande utbudet av BNBLion efter att ha tagit hänsyn till alla brända och låsta tokens.",
+        "lpLockedDesc": "PancakeSwap-likviditetspoolen innehåller BNBLion-tokens parat med BNB. När LP-tokens bränns (skickas till den döda adressen), blir de underliggande tokens i poolen permanent låsta.",
+        "lpBurnedPercent": "LP-tokens brända: 99.98% av alla LP-tokens",
+        "lpLockedPercent": "Därför är 99.98% av tokens i LP:n permanent låsta",
+        "note": "<strong>Obs:</strong> LionOG upprätthåller ett 1:1-förhållande med BNBLion under konvertering. Det cirkulerande utbudet av LionOG matchar det verkliga cirkulerande utbudet av BNBLion efter att ha tagit hänsyn till alla brända och låsta tokens.",
         "launchData": "<strong>Lanseringsdata:</strong> Dessa siffror beräknades vid lanseringen. Den gamla BNBLion-token fortsätter att bränna tokens vid varje köp/säljtransaktion, så det faktiska cirkulerande utbudet kan vara något lägre än vad som visas.",
         "legacyContract": "BNBLion Tokenkontrakt",
         "ogContract": "LionOG Tokenkontrakt",
         "amounts": {
-          "original": "10 000 000 000 000 000 000 000 000",
-          "dead": "−5 724 597 218 422 106 614 085 614",
-          "deadPercent": "57,25%",
-          "contract": "−9 219 967 745 410 740 095 290",
-          "contractPercent": "<0,01%",
-          "lp": "−442 490 152 327 271 918 655 109",
-          "lpPercent": "4,42%",
-          "circulating": "3 832 903 409 282 876 056 519 182",
-          "circulatingPercent": "38,33%"
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−5,724,597,218,422,106,614,085,614",
+          "deadPercent": "57.25%",
+          "contract": "−9,219,967,745,410,740,095,290",
+          "contractPercent": "<0.01%",
+          "lp": "−442,490,152,327,271,918,655,109",
+          "lpPercent": "4.42%",
+          "circulating": "3,832,903,409,282,876,056,519,182",
+          "circulatingPercent": "38.33%"
         }
       },
       "frogogSupply": {
-        "title": "FrogOG-utbudsnedbrytning",
+        "title": "FrogOG Utbudsnedbrytning",
         "intro": "FrogOG har ett fast cirkulerande utbud som härrör från den ursprungliga BNBFrog-token. Utbudsberäkningen tar hänsyn till alla brända och permanent låsta tokens.",
-        "lpLocked": "LP-låst (99,31% av LP Bränd)",
-        "deadAddressDesc": "Tokens som skickas till <code>0x000...dEaD</code> bränns permanent och kan aldrig återställas. Detta inkluderer tokens som bränns genom den ursprungliga BNBFrog-skattemekanismen.",
+        "lpLocked": "LP Låst (99.31% av LP Bränd)",
+        "deadAddressDesc": "Tokens som skickas till <code>0x000...dEaD</code> bränns permanent och kan aldrig återställas. Detta inkluderar tokens som bränns genom den ursprungliga BNBFrog-skattemekanismen.",
         "contractBalanceDesc": "En liten mängd tokens har fastnat i själva BNBFrog-kontraktet. Dessa tokens är oåtkomliga och effektivt borttagna från cirkulation.",
-        "lpLockedDesc": "PancakeSwap-likviditetspoolen innehåller BNBFrog-tokens parat med BNB. När LP-tokens bränns (skickas till den döda adressen), blir de underliggende tokens i poolen permanent låsta.",
-        "lpBurnedPercent": "LP-tokens brända: 99,31% av alla LP-tokens",
-        "lpLockedPercent": "Därför är 99,31% av tokens i LP:n permanent låsta",
-        "note": "<strong>Obs:</strong> FrogOG upprätthåller ett 1:1-förhållande med BNBFrog under migration. Det cirkulerande utbudet av FrogOG matchar det verkliga cirkulerande utbudet av BNBFrog efter att ha tagit hänsyn till alla brända och låsta tokens.",
+        "lpLockedDesc": "PancakeSwap-likviditetspoolen innehåller BNBFrog-tokens parat med BNB. När LP-tokens bränns (skickas till den döda adressen), blir de underliggande tokens i poolen permanent låsta.",
+        "lpBurnedPercent": "LP-tokens brända: 99.31% av alla LP-tokens",
+        "lpLockedPercent": "Därför är 99.31% av tokens i LP:n permanent låsta",
+        "note": "<strong>Obs:</strong> FrogOG upprätthåller ett 1:1-förhållande med BNBFrog under konvertering. Det cirkulerande utbudet av FrogOG matchar det verkliga cirkulerande utbudet av BNBFrog efter att ha tagit hänsyn till alla brända och låsta tokens.",
         "launchData": "<strong>Lanseringsdata:</strong> Dessa siffror beräknades vid lanseringen. Den gamla BNBFrog-token fortsätter att bränna tokens vid varje köp/säljtransaktion, så det faktiska cirkulerande utbudet kan vara något lägre än vad som visas.",
         "legacyContract": "BNBFrog Tokenkontrakt",
         "ogContract": "FrogOG Tokenkontrakt",
         "amounts": {
-          "original": "10 000 000 000 000 000 000 000 000",
-          "dead": "−740 059 884 911 899 485 982 976",
-          "deadPercent": "7,40%",
-          "contract": "−4 036 008 092 593 983 879 741",
-          "contractPercent": "<0,01%",
-          "lp": "−874 144 424 929 004 044 398 902",
-          "lpPercent": "8,74%",
-          "circulating": "8,385 795 686 123 088 377 024 138",
-          "circulatingPercent": "83,86%"
+          "original": "10,000,000,000,000,000,000,000,000",
+          "dead": "−740,059,884,911,899,485,982,976",
+          "deadPercent": "7.40%",
+          "contract": "−4,036,008,092,593,983,879,741",
+          "contractPercent": "<0.01%",
+          "lp": "−874,144,424,929,004,044,398,902",
+          "lpPercent": "8.74%",
+          "circulating": "8,385,795,686,123,088,377,024,138",
+          "circulatingPercent": "83.86%"
         }
       }
     }
@@ -310,13 +316,67 @@
       "liquidity": "Likviditet"
     },
     "liquidity": {
-      "title": "Likviditetspooler"
-    }
+      "poolAddress": "Pooladress",
+      "tradeOn": "Handla på"
+    },
+    "overview": {
+      "interchainTokens": {
+        "title": "Interchain-tokens",
+        "description": "Interchain-tokens distribuerade via Axelar Interchain Token Service (ITS). Dessa tokens behåller konsekventa adresser över alla stödda nätverk."
+      },
+      "axelarNetwork": {
+        "title": "Axelar-nätverk",
+        "description": "Det underliggande meddelandeprotokollet som säkrar överföringar mellan kedjor och säkerställer dataintegritet mellan olika blockkedjor."
+      },
+      "conversionContracts": {
+        "title": "Konverteringskontrakt",
+        "description": "Ansvarar för att konvertera gamla tokens till interchain-tillgångar. Dessa kontrakt hanterar insättnings- och präglingslogiken på ursprungskedjan."
+      },
+      "conversionContractsTable": {
+        "title": "Konverteringskontraktsadresser",
+        "subtitle": "Dessa kontrakt på BSC hanterar konverteringen från gamla tokens till interchain-tokens.",
+        "token": "Token",
+        "legacyToken": "Gammal Token",
+        "conversionContract": "Konverteringskontrakt",
+        "newToken": "Interchain-token"
+      },
+      "liquidityPools": {
+        "title": "Likviditetspooler",
+        "description": "DEX-likviditetspooler där du kan handla OG-tokens på olika kedjor."
+      },
+      "liquidityPoolsTable": {
+        "title": "Likviditetspooler",
+        "subtitle": "DEX-pooler för handel med OG-tokens",
+        "token": "Token",
+        "chain": "Kedja",
+        "dex": "DEX",
+        "poolAddress": "Pooladress"
+      }
+    },
+    "filterTokens": "Filtrera tokens...",
+    "interchainAsset": "Interchain-tillgång via Axelar ITS",
+    "availableOnChains": "Tillgänglig på {{count}} kedjor",
+    "table": {
+      "chain": "Kedja",
+      "tokenAddress": "Tokenadress",
+      "axelarChainName": "Axelar Kedjenamn",
+      "chainId": "ID: {{id}}"
+    },
+    "axelarId": "Axelar ID: {{name}}",
+    "copied": "Kopierad!",
+    "copyAddress": "Kopiera adress"
   },
   "faq": {
     "title": "Freedom Bridge Support",
     "header": "Vanliga Frågor",
     "subtitle": "Svar på vanliga frågor om TigerOG, bryggning och Axelar.",
+    "sections": {
+      "gettingStarted": "Kom Igång",
+      "convertingTrading": "Konvertering & Handel",
+      "bridging": "Bryggning",
+      "technical": "Teknisk",
+      "securityRisks": "Säkerhet & Risker"
+    },
     "cta": {
       "title": "Har du fortfarande frågor?",
       "description": "Gå med i vår community på Telegram eller kolla den detaljerade Wikin för tekniska guider.",
@@ -327,25 +387,112 @@
       "q1": "Vad är syftet med att konvertera mina tokens?",
       "a1": "Att konvertera dina tokens till TigerOG tar bort transaktionsskatten (ofta 10-12%) som är kopplad till den gamla token. Det gör det också möjligt för dig att brygga dessa tokens till andra blockkedjor som Ethereum, Base och fler via Axelar, vilket ger tillgång till nya ekosystem.",
       "q2": "Är det säkert att använda Freedom Bridge?",
-      "a2": "Ja. Protokollet använder ett säkert migrationskontrakt och Axelars Interchain Token Service. När du konverterar bränns din BNBTiger permanent och du får TigerOG i ett 1:1-förhållande. Bränningsmekanismen säkerställer att det totala utbudet hanteras korrekt över alla kedjor.",
+      "a2": "Ja. Protokollet använder ett säkert Konverteringskontrakt och Axelars Interchain Token Service. När du konverterar bränns din BNBTiger permanent och du får TigerOG i ett 1:1-förhållande. Bränningsmekanismen säkerställer att det totala utbudet hanteras korrekt över alla kedjor.",
       "q3": "Finns det några avgifter?",
       "a3": "Freedom Bridge själv tar inte ut någon avgift för konvertering. Du betalar bara standard blockkedje-gasavgifter. Bryggning mellan kedjor innebär en gasavgift för cross-chain som betalas till Axelar för att täcka stafettkostnaderna.",
       "q4": "Vad händer om jag förlorar mina tokens?",
       "a4": "TigerOG-tokens beter sig som alla andra ERC20-tokens. Om du förlorar åtkomst till din plånbok kan de inte återställas. Se alltid till att förvara dina privata nycklar och återställningsfraser säkert.",
       "q5": "Kan jag konvertera mina TigerOG-tokens tillbaka till BNBTiger?",
-      "a5": "Nej. Migrationen är en envägskonvertering. När du konverterar BNBTiger till TigerOG bränns dina BNBTiger-tokens permanent (skickas till den döda adressen). Detta är avsiktligt — TigerOG är den uppgraderade, skattefria versionen som är avsedd att helt ersätta den gamla token.",
+      "a5": "Nej. Konvertering är en envägsprocess. När du konverterar BNBTiger till TigerOG låses dina BNBTiger-tokens permanent i konverteringskontraktet (bränns). Detta är avsiktligt — TigerOG är den uppgraderade, skattefria versionen som är avsedd att helt ersätta den gamla token.",
       "q6": "Vilka nätverk stöds?",
       "a6": "Vi stöder flera EVM-kedjor via Axelar, inklusive BNB Chain, Ethereum, Base och fler. Kolla Wikin för den fullständiga listan över stödda nätverk.",
       "q7": "Hur lång tid tar bryggning?",
-      "a7": "Bryggningshastigheten beror på slutförandetiden för källkedjan och Axelars stafett. Vanligtvis tar en överföring mellan kedjor cirka 2-5 minuter.",
+      "a7": "Bryggningstiden beror på vilken kedja du skickar FRÅN:\n\n• Ethereum: 15-20 min (behöver fler bekräftelser)\n• BSC & Avalanche: 2-4 min (snabbast)\n• Base, Linea, Polygon: 3-5 min\n\nAppen visar den uppskattade tiden innan du bryggar.",
       "q8": "Vad är det cirkulerande utbudet för OG-tokens?",
-      "a8": "Varje OG-token har ett fast cirkulerande utbud som härrör från dess ursprungliga BNB-token, med hänsyn till brända tokens, fastnade kontraktssaldon och låst LP. TigerOG: ~3,66 septillioner (36,62% av ursprungligt). LionOG: ~3,83 septillioner (38,33% av ursprungligt). FrogOG: ~8,39 septillioner (83,86% of original). Se Wikin för detaljerade sammanställningar för varje token."
+      "a8": "Varje OG-token har ett fast cirkulerande utbud som härrör från dess ursprungliga BNB-token, med hänsyn till brända tokens, fastnade kontraktssaldon och låst LP:\n\n• TigerOG: ~3,66 septillioner (36,62% av ursprungligt)\n• LionOG: ~3,83 septillioner (38,33% av ursprungligt)\n• FrogOG: ~8,39 septillioner (83,86% av ursprungligt)\n\nSe Wikin för detaljerade sammanställningar.",
+      "q9": "Varför avsägs (renounced) inte OG-kontraktet?",
+      "a9": "Att avsäga sig kontraktet skulle ta bort möjligheten att utveckla och lägga till nya kedjor i framtiden. Även om kontraktet inte kommer att avsägas inom överskådlig framtid, krävs flera signaturer för att göra några ändringar. Dessutom tilldelas inga tokens eller skatter till teamet.",
+      "q10": "Varför är OG-kontraktet präglingsbart (mintable)?",
+      "a10": "Bryggning mellan kedjor kräver präglings-/bränningsfunktionalitet - tokens bränns när de lämnar en kedja och präglas när de anländer. Detta håller totalt utbud konstant över alla nätverk. Prägling styrs av en multisig Safe-plånbok.",
+      "q11": "Lämnar TigerOG BNB Chain för Axelar?",
+      "a11": "Nej. Axelar är inte en blockkedja - det är bryggprotokollet som kopplar samman kedjor. BNB Chain förblir ursprungskedjan där du konverterar gamla tokens. Axelar gör det helt enkelt möjligt för dina tokens att flytta mellan BNB, Ethereum, Base och andra stödda nätverk.",
+      "q12": "Var är mina tokens?",
+      "a12": "Se till att du lägger till kedjan och tokenadressen i din plånbok. Du hittar alla kontraktsadresser på sidan Kontrakt. Tiger-teamet använder Rabby-plånboken som gör det enklare att hantera flera kedjor.",
+      "q13": "Varför tar bryggning från Ethereum eller Base så lång tid?",
+      "a13": "Ethereum kräver två epoker innan transaktioner slutförs för maximal säkerhet. Eftersom Base avvecklas på Ethereum ärver den denna fördröjning. Detta prioriterar säkerhet framför hastighet - dina tokens är säkra, ha bara tålamod.",
+      "q14": "Vad händer om jag stannar kvar i min ursprungliga token och inte konverterar?",
+      "a14": "Det är ingen brådska att konvertera. BNBTiger och TigerOG kommer alltid att ha olika likviditetspooler, marknadsvärden och så vidare. Men BNBTiger har en hög skatt och TigerOG har ingen skatt för handel. Eftersom skatterna på originalet inte används för att stödja projektet, görs utvecklingen av CTO-teamet för TigerOG. Freedom Bridge och multi-chain är endast för TigerOG.",
+      "q15": "Finns det en skatt för att konvertera? Har TigerOG en skatt?",
+      "a15": "Nej. Det kostar bara den normala gasavgiften att konvertera och handla. Det finns inga ytterligare skatter eller avgifter, och TigerOG är ett skattefritt kontrakt.",
+      "q16": "Kan jag bara köpa och handla TigerOG direkt?",
+      "a16": "Inte än. Teamet har inte samlat in avgifter och skatter för att kunna finansiera tillräckligt stora likviditetspooler. För att få TigerOG nu måste du köpa eller redan äga originalet och konvertera. När du väl äger TigerOG kommer det inte att vara lätt att handla förrän investerare kommer för att lägga till i likviditetspoolen.",
+      "q17": "Varför ser TigerOGs marknadsvärde så uppblåst ut?",
+      "a17": "Ju mindre en likviditetspool är, desto mer påverkar varje liten handel det visade marknadsvärdet. Detta löser sig när investerare kommer för att vara likviditetsleverantörer.",
+      "q18": "Vilka säkerhetsrevisioner har gjorts?",
+      "a18": "Freedom Bridge har inte genomgått en formell revision av tredje part. Emellertid är koden för konverteringskontraktet baserad på SHx-konverteraren byggd av Stronghold-teamet (tidigare XRP- och Stellar-utvecklare som nyligen presenterade i Davos). Brygginfrastrukturen drivs av Axelar, som har genomgått flera säkerhetsrevisioner.",
+      "q19": "Hur skyddar Freedom Bridge mot hack eller utnyttjande?",
+      "a19": "Flera åtgärder finns på plats:\n\n• Konverteraren håller endast det exakta cirkulerande utbudet som behövs - inga överflödiga tokens som kan utnyttjas\n• Konverteraren har inga präglingsrättigheter\n• All kontraktskod verifieras on-chain och är öppen källkod\n• Token-rättigheter är säkrade i en Safe.global multisig-plånbok\n• Bryggning hanteras av Axelars stridstestade infrastruktur",
+      "q20": "Är bryggning oåterkallelig? Vad händer om en överföring misslyckas?",
+      "a20": "Bryggöverföringar kan sällan fastna på grund av otillräcklig gas eller nätverksstockning. Om detta händer kan du spåra din transaktion på Axelarscan och manuellt lägga till gas för att slutföra den. Axelar tillhandahåller verktyg för transaktionsåterställning - du kommer inte att förlora dina tokens.",
+      "q21": "Vilka är riskerna med att använda Freedom Bridge?",
+      "a21": "Som med alla DeFi-protokoll finns det inneboende risker inklusive smart kontraktsrisk, bryggrisk och marknadsvolatilitet. Vi rekommenderar att du gör din egen efterforskning (DYOR) och endast använder medel du har råd att förlora. Se vår juridiska ansvarsfriskrivning för mer information.",
+      "q22": "Kan jag konvertera det nya BNB Tiger Inu-kontraktet (september 2025)?",
+      "a22": "Nej. Freedom Bridge stöder den ursprungliga/gamla BNB Tiger-token som lanserades för flera år sedan - inte det nya kontraktet som skapades i september 2025. Freedom Bridge byggdes för gemenskapens övertagande (CTO) av de ursprungliga Tiger-, Lion- och Frog-tokens.",
+      "q23": "Hur lägger jag till likviditet?",
+      "a23": "Att lägga till likviditet är en avancerad DeFi-aktivitet med risker inklusive impermanent förlust. Om du är van vid att tillhandahålla likviditet på DEX:ar som PancakeSwap eller Uniswap är processen densamma - para ihop OG-token med en bastillgång. Här är en bra utbildningsserie om likviditet om du vill lära dig mer: https://www.youtube.com/watch?v=oiylIHvwMik&list=PL_ujg_v1hZ5iGtiuhT8NkSMqEOaLAgmUu",
+      "q24": "Kan teamet göra en rug pull?",
+      "a24": "Nej. Det finns ingen mekanism för en rug pull. Inga tokens eller skatter tilldelas teamet, och vi samlar inte in några bryggavgifter — dessa går till Axelar för stafettkostnader. Teamet är innehavare precis som du, som bygger detta på egen bekostnad. Den enda teamplånboken är en offentlig marknadsföringsplånbok finansierad av gemenskapsdonationer. Multisig Safe-plånboken kontrollerar kontraktsrättigheter såsom att pausa sändning till kedjor i händelse av nödsituation, men kan inte komma åt eller omdirigera användarmedel."
     }
+  },
+  "footer": {
+    "wiki": "Wiki",
+    "contracts": "Kontrakt",
+    "faq": "FAQ",
+    "disclaimer": "Ansvarsfriskrivning",
+    "github": "GitHub"
+  },
+  "disclaimer": {
+    "title": "Juridisk Ansvarsfriskrivning",
+    "header": "Viktigt Juridiskt Meddelande",
+    "subtitle": "Vänligen läs denna ansvarsfriskrivning noggrant innan du använder Freedom Bridge.",
+    "sections": {
+      "noInvestmentAdvice": {
+        "title": "Ingen Investeringsrådgivning",
+        "content": "Informationen som tillhandahålls på Freedom Bridge utgör inte investeringsrådgivning, finansiell rådgivning, handelsrådgivning eller någon annan typ av rådgivning. Du ska inte behandla något av innehållet som sådant. Freedom Bridge rekommenderar inte att någon kryptovaluta ska köpas, säljas eller innehas av dig. Gör din egen due diligence och rådfråga din finansiella rådgivare innan du fattar några investeringsbeslut."
+      },
+      "risksOfUse": {
+        "title": "Risker med Användning",
+        "content": "Kryptovalutamarknader är volatila och oförutsägbara. Genom att använda Freedom Bridge bekräftar och accepterar du att:\n\n• Smarta kontrakt kan innehålla buggar eller sårbarheter som kan leda till förlust av medel\n• Tvärkedjebryggor medför inneboende risker inklusive men inte begränsat till: orakelmisslyckanden, valideringssamverkan och nätverksstockning\n• Tokenvärden kan fluktuera dramatiskt och du kan förlora delar av eller hela din investering\n• Transaktioner på blockkedjenätverk är oåterkalleliga\n• Nätverksavgifter och gaskostnader ligger utanför vår kontroll och kan variera avsevärt"
+      },
+      "noWarranties": {
+        "title": "Inga Garantier",
+        "content": "Freedom Bridge tillhandahålls \"i befintligt skick\" och \"som tillgängligt\" utan några garantier av något slag, vare sig uttryckliga eller underförstådda. Vi garanterar inte att tjänsten kommer att vara oavbruten, säker eller felfri. Vi lämnar inga garantier angående noggrannheten, tillförlitligheten eller fullständigheten av information som tillhandahålls via plattformen."
+      },
+      "limitationOfLiability": {
+        "title": "Ansvarsbegränsning",
+        "content": "I den utsträckning det är tillåtet enligt lag ska Freedom Bridge, dess utvecklare, bidragsgivare och dotterbolag inte hållas ansvariga för några direkta, indirekta, tillfälliga, speciella, följdskador eller straffskadestånd som uppstår ur eller i samband med din användning av plattformen, inklusive men inte begränsat till förlust av vinst, förlust av data eller förlust av kryptovalutatillgångar."
+      },
+      "thirdPartyServices": {
+        "title": "Tredjepartstjänster",
+        "content": "Freedom Bridge integreras med tredjepartstjänster inklusive Axelar Network för tvärkedjebryggning. Vi ansvarar inte för åtgärder, innehåll, information eller data från dessa tredje parter. Din användning av tredjepartstjänster omfattas av deras respektive villkor."
+      },
+      "regulatoryCompliance": {
+        "title": "Regelefterlevnad",
+        "content": "Kryptovalutaregler varierar beroende på jurisdiktion. Du är ensam ansvarig för att säkerställa att din användning av Freedom Bridge följer alla tillämpliga lagar och förordningar i din jurisdiktion. Freedom Bridge gör inga utfästelser angående lagligheten av tjänsterna i någon jurisdiktion."
+      },
+      "dyor": {
+        "title": "Gör Din Egen Efterforskning (DYOR)",
+        "content": "Gör alltid din egen efterforskning (DYOR) innan du interagerar med något DeFi-protokoll. Verifiera kontraktsadresser, förstå mekaniken för varje token du interagerar med och investera aldrig mer än du har råd att förlora."
+      }
+    },
+    "acknowledgment": "Genom att använda Freedom Bridge bekräftar du att du har läst, förstått och godkänner att vara bunden av denna ansvarsfriskrivning.",
+    "lastUpdated": "Senast uppdaterad: Januari 2026"
+  },
+  "disclaimerModal": {
+    "title": "Viktig Ansvarsfriskrivning",
+    "subtitle": "Vänligen läs och bekräfta innan du fortsätter.",
+    "noAdvice": "Freedom Bridge tillhandahåller inte investerings-, finansiell eller handelsrådgivning. Investeringar i kryptovaluta är volatila och riskfyllda.",
+    "risks": "Genom att använda denna plattform bekräftar du att smarta kontrakt kan innehålla sårbarheter, tvärkedjebryggor medför inneboende risker och transaktioner är oåterkalleliga.",
+    "dyor": "Gör alltid din egen efterforskning (DYOR) och använd endast medel du har råd att förlora.",
+    "fullDisclaimer": "För fullständiga detaljer, se vår",
+    "fullDisclaimerLink": "Juridisk Ansvarsfriskrivning",
+    "accept": "Jag Förstår och Accepterar"
   },
   "common": {
     "from": "Från",
     "to": "Till",
     "max": "MAX",
+    "cancel": "Avbryt",
     "chainId": "Kedje-ID",
     "bscChain": "BSC-kedja",
     "insufficientBalance": "Otillräckligt saldo.",

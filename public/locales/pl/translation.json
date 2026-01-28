@@ -4,6 +4,7 @@
     "titleBridge": "Most"
   },
   "nav": {
+    "home": "Strona Główna",
     "settings": "Ustawienia",
     "menu": "Menu",
     "preferences": "Preferencje",
@@ -16,15 +17,24 @@
     "wiki": "Dokumentacja / Wiki",
     "contracts": "Kontrakty",
     "faq": "FAQ",
-    "logout": "Wyloguj",
     "language": "Język",
     "languageSearchPlaceholder": "Szukaj języków",
     "languageNoResults": "Nie znaleziono języków",
     "close": "Zamknij"
   },
   "addNetworks": {
-    "title": "Dodaj Sieci",
-    "description": "Kliknij przycisk poniżej, aby dodać sieci do swojego portfela. Ułatwia to przełączanie między łańcuchami podczas testowania."
+    "title": "Dodaj Sieci do Portfela",
+    "description": "Kliknij dowolną sieć, aby dodać ją do MetaMask, Rabby lub innych portfeli Web3",
+    "searchPlaceholder": "Szukaj sieci...",
+    "noResults": "Nie znaleziono sieci",
+    "networkCount": "sieć"
+  },
+  "addNetwork": {
+    "connectWallet": "Najpierw podłącz portfel",
+    "alreadyPending": "Żądanie już oczekuje. Sprawdź swój portfel.",
+    "error": "Nie udało się dodać sieci. Dodaj ją ręcznie.",
+    "adding": "Dodawanie...",
+    "button": "Dodaj"
   },
   "tabs": {
     "convert": "Konwertuj",
@@ -44,8 +54,21 @@
     "tigerOGMissing": "Brak tokena TigerOG dla tego łańcucha",
     "networkWarning": {
       "title": "Nieprawidłowa Sieć",
-      "message": "Konwersja tokenów jest dostępna tylko na łańcuchu BSC.",
-      "description": "Proszę przełączyć się na łańcuch BSC w swoim portfelu, aby konwertować tokeny, lub przejść do zakładki Most, aby przesyłać tokeny między łańcuchami."
+      "message": "Konwersja tokenów jest dostępna tylko na łańcuchu BSC. Przełącz się na BSC, aby konwertować starsze tokeny."
+    },
+    "confirmModal": {
+      "title": "Potwierdź Konwersję",
+      "warning": "Zaraz przekonwertujesz swoje tokeny. Przeczytaj uważnie poniższe informacje przed kontynuowaniem.",
+      "irreversible": "Ta akcja jest nieodwracalna!",
+      "burnExplanation": "Twoje tokeny {{legacySymbol}} zostaną trwale spalone, a równoważna ilość tokenów {{newSymbol}} zostanie wyemitowana do Twojego portfela. Tego nie można cofnąć.",
+      "positiveNote": "Zaleta: {{newSymbol}} jest całkowicie wolny od podatku — koniec z 10%+ podatkami od każdej transakcji.",
+      "confirmQuestion": "Przekonwertować {{amount}} {{legacySymbol}} na {{newSymbol}}?",
+      "confirmButton": "Rozumiem, Konwertuj"
+    },
+    "finalConfirmModal": {
+      "title": "Czy na pewno jesteś pewien?",
+      "message": "To Twoja ostatnia szansa na anulowanie. Po potwierdzeniu, Twoje {{legacySymbol}} zostaną przekonwertowane na {{newSymbol}} i nie będzie można ich przekonwertować z powrotem.",
+      "confirmButton": "Tak, Konwertuj Teraz"
     }
   },
   "bridge": {
@@ -74,25 +97,11 @@
     "cancel": "Anuluj",
     "save": "Zapisz"
   },
-  "wallet": {},
-  "login": {
-    "title": "Witaj ponownie",
-    "subtitle": "Zaloguj się, aby kontynuować do Freedom Bridge",
-    "emailLabel": "E-mail",
-    "emailPlaceholder": "nazwa@przykład.com",
-    "passwordLabel": "Hasło",
-    "passwordPlaceholder": "Wpisz hasło",
-    "rememberMe": "Zapamiętaj mnie na tym urządzeniu",
-    "submit": "Zaloguj",
-    "validation": {
-      "required": "E-mail i hasło są wymagane.",
-      "invalid": "Nieprawidłowy e-mail lub hasło."
-    }
-  },
   "landing": {
     "banner": {
       "title": "Jesteś tu nowy?",
-      "message": "Dowiedz się o Freedom Bridge i jak mostkować tokeny TigerOG między łańcuchami."
+      "message": "Dowiedz się o Freedom Bridge i jak mostkować tokeny TigerOG między łańcuchami.",
+      "note": "Uwaga: Konwersja tokenów jest trwała i nie można jej cofnąć."
     },
     "hero": {
       "badge": "Wspierane przez Axelar",
@@ -104,7 +113,7 @@
     "stats": {
       "messaging": "Sieć Axelar",
       "networks": "Aktywne Sieci",
-      "fees": "Opłaty Protokółowe",
+      "fees": "Opłaty Platformy",
       "finality": "Ostateczność"
     },
     "features": {
@@ -112,7 +121,7 @@
       "description": "Freedom Bridge wykorzystuje Axelar ITS, aby zapewnić płynne, bezpieczne i bezpodatkowe doświadczenie mostkowania w {{count}}+ blockchainach.",
       "stopDecay": {
         "title": "Zatrzymaj Rozpad",
-        "description": "Starsze tokeny spalają 10-11% Twojej wartości przy każdym zakupie i sprzedaży. Opakowanie w TigerOG natychmiast zatrzymuje ten krwotok, zachowując 100% Twojej wartości.",
+        "description": "Starsze tokeny spalają 10-11% Twojej wartości przy każdym zakupie i sprzedaży. Konwersja na TigerOG natychmiast zatrzymuje ten krwotok, zachowując 100% Twojej wartości.",
         "graphLabel1": "100% Zachowane (TigerOG)",
         "graphLabel2": "-40% Wartości (Starszy 10% Podatek)"
       },
@@ -130,14 +139,19 @@
         "button": "Rozpocznij Mostkowanie"
       }
     },
-    "teaser": {
-      "title": "Chcesz inne monety?",
-      "subtitle": "Co myślisz o <lunc>LUNC</lunc>, <crepe>Crepe</crepe>, lub <shiba>Shiba</shiba>"
-    },
     "cta": {
       "title": "Gotowy do mostkowania?",
-      "description": "Dołącz do rewolucji interłańcuchowej. Owinięcie aktywów i rozpoczęcie mostkowania przez Axelar zajmuje mniej niż minutę.",
+      "description": "Dołącz do rewolucji interłańcuchowej. Konwersja aktywów i rozpoczęcie mostkowania przez Axelar zajmuje mniej niż minutę.",
       "button": "Uruchom Aplikację Teraz"
+    },
+    "buyTokens": {
+      "badge": "Rozpocznij",
+      "title": "Zdobądź Aktywa",
+      "description": "Nie masz jeszcze żadnych tokenów? Kup oryginalne tokeny na PancakeSwap, a następnie przekonwertuj je na nowe wersje wielołańcuchowe.",
+      "buyOn": "Kup na PancakeSwap",
+      "then": "następnie",
+      "convertTo": "Konwertuj na",
+      "buyNow": "Kup Teraz"
     }
   },
   "wiki": {
@@ -145,7 +159,7 @@
     "searchPlaceholder": "Szukaj w dokumentacji...",
     "header": {
       "title": "Dokumentacja",
-      "subtitle": "Dowiedz się, jak owijać starsze tokeny, mostkować między łańcuchami i integrować się z Freedom Bridge."
+      "subtitle": "Dowiedz się, jak konwertować starsze tokeny i mostkować między łańcuchami."
     },
     "nav": {
       "gettingStarted": "Rozpocznij",
@@ -153,15 +167,17 @@
       "developers": "Deweloperzy",
       "tigerogSupply": "Podaż TigerOG",
       "lionogSupply": "Podaż LionOG",
-      "frogogSupply": "Podaż FrogOG"
+      "frogogSupply": "Podaż FrogOG",
+      "githubRepo": "Repozytorium GitHub",
+      "axelarDocs": "Dokumentacja Axelar ITS"
     },
     "articles": {
       "whatIs": {
         "title": "Czym jest Freedom Bridge?",
-        "content": "Freedom Bridge to zdecentralizowany protokół mostkowania zbudowany na Axelar Interchain Token Service (ITS). Został zaprojektowany w celu uwolnienia tokenów od ograniczeń jednego łańcucha i wysokich podatków transakcyjnych. Poprzez owinięcie standardowych tokenów w aktywa kompatybilne z interchain, użytkownicy mogą swobodnie przenosić swoje wartości między obsługiwanymi blockchainami.",
+        "content": "Freedom Bridge to zdecentralizowany protokół mostkowania zbudowany na Axelar Interchain Token Service (ITS). Pozwala on na konwersję starszych tokenów na aktywa wolne od podatku i kompatybilne z interchain, które mogą swobodnie przemieszczać się między obsługiwanymi blockchainami.",
         "taxFreeTitle": "Transfery Bez Podatku",
         "taxFreeDesc": "Starsze tokeny często mają podatki w wysokości 10%+. Tokeny TigerOG mają 0% podatku.",
-        "omnichainTitle": "Omnichain",
+        "omnichainTitle": "Interchain",
         "omnichainDesc": "Przenoś aktywa natychmiast między {{count}}+ blockchainami przez Axelar."
       },
       "howToConvert": {
@@ -169,7 +185,7 @@
         "step1": "Podłącz swój portfel do łańcucha źródłowego (np. BNB Chain).",
         "step2": "Przejdź do zakładki <strong>Konwertuj</strong>.",
         "step3": "Wybierz starszy token, który chcesz konwertować.",
-        "step4": "Zatwierdź kontrakt migracyjny, aby wydawać swoje tokeny.",
+        "step4": "Zatwierdź Kontrakt Konwersji, aby wydawać swoje tokeny.",
         "step5": "Kliknij <strong>Konwertuj</strong>, aby wpłacić swoje starsze tokeny i otrzymać równoważną ilość tokenów \"TigerOG\".",
         "note": "<strong>Uwaga:</strong> Konwersja wiąże się z podatkiem transakcyjnym starszego tokena (podczas aktualizacji), jeśli Twój token pobiera podatek od transferów. Jednak po konwersji na TigerOG wszystkie kolejne transfery i mosty są wolne od podatku."
       },
@@ -185,9 +201,9 @@
         "title": "Sieć Axelar",
         "content": "Wykorzystujemy Axelar jako naszą warstwę interoperacyjności. Axelar to zdecentralizowana sieć, która łączy różne blockchainy, umożliwiając bezpieczną komunikację międzyłańcuchową i transfer aktywów. Model bezpieczeństwa Axelar opiera się na zestawie walidatorów bez zezwoleń, zapewniając wysoki poziom bezpieczeństwa dla tokenów interchain."
       },
-      "migration": {
-        "title": "Logika Migracji",
-        "content": "Kontrakt migracyjny jest wdrożony na łańcuchu źródłowym (np. BSC). Przechowuje oryginalne starsze tokeny w depozycie. Kiedy aktualizujesz tokeny, wpłacasz je do kontraktu migracyjnego. Kiedy rozwijasz (jeśli obsługiwane), spalasz reprezentację TigerOG, aby uwolnić oryginalne tokeny. Zapewnia to ściśle zabezpieczone powiązanie 1:1."
+      "conversion": {
+        "title": "Logika Konwersji",
+        "content": "Kontrakt Konwersji jest wdrożony na BSC. Kiedy konwertujesz, Twoje starsze tokeny są wysyłane na martwy adres (trwale spalane), a Ty otrzymujesz TigerOG w stosunku 1:1. Jest to proces jednokierunkowy — starsze tokeny są niszczone i nigdy nie mogą zostać odzyskane."
       },
       "contracts": {
         "title": "Adresy Inteligentnych Kontraktów",
@@ -198,7 +214,7 @@
       "security": {
         "title": "Model Bezpieczeństwa",
         "content": "Bezpieczeństwo jest wbudowane w każdą warstwę Freedom Bridge:",
-        "point1": "<strong>Architektura Migracji:</strong> Starsze tokeny są przechowywane w zweryfikowanych, niezmiennych inteligentnych kontraktach.",
+        "point1": "<strong>Architektura Konwersji:</strong> Starsze tokeny są trwale spalane za pośrednictwem zweryfikowanych, niezmiennych inteligentnych kontraktów.",
         "point2": "<strong>Walidatorzy Axelar:</strong> Wiadomości międzyłańcuchowe są weryfikowane przez zdecentralizowaną sieć Axelar.",
         "point3": "<strong>Spójna Podaż:</strong> ITS zarządza wybijaniem i spalaniem, aby utrzymać stałą całkowitą podaż we wszystkich łańcuchach.",
         "point4": "<strong>Audytowana Logika:</strong> Zbudowane na standardowych bibliotekach Axelar i OpenZeppelin."
@@ -229,7 +245,7 @@
         "lpLockedDesc": "Pula płynności PancakeSwap zawiera tokeny BNBTiger sparowane z BNB. Kiedy tokeny LP są spalane (wysyłane na martwy adres), bazowe tokeny w puli stają się trwale zablokowane.",
         "lpBurnedPercent": "Spalone tokeny LP: 86.18% wszystkich tokenów LP",
         "lpLockedPercent": "Dlatego 86.18% tokenów w LP jest trwale zablokowanych",
-        "note": "<strong>Uwaga:</strong> TigerOG utrzymuje stosunek 1:1 z BNBTiger podczas migracji. Podaż w obiegu TigerOG odpowiada prawdziwej podaży w obiegu BNBTiger po uwzględnieniu wszystkich spalonych i zablokowanych tokenów.",
+        "note": "<strong>Uwaga:</strong> TigerOG utrzymuje stosunek 1:1 z BNBTiger podczas konwersji. Podaż w obiegu TigerOG odpowiada prawdziwej podaży w obiegu BNBTiger po uwzględnieniu wszystkich spalonych i zablokowanych tokenów.",
         "launchData": "<strong>Dane Startowe:</strong> Te liczby zostały obliczone podczas startu. Starszy token BNBTiger nadal spala tokeny przy każdej transakcji kupna/sprzedaży, więc rzeczywista podaż w obiegu może być nieco niższa niż pokazano.",
         "legacyContract": "Kontrakt Tokena BNBTiger",
         "ogContract": "Kontrakt Tokena TigerOG",
@@ -254,7 +270,7 @@
         "lpLockedDesc": "Pula płynności PancakeSwap zawiera tokeny BNBLion sparowane z BNB. Kiedy tokeny LP są spalane (wysyłane na martwy adres), bazowe tokeny w puli stają się trwale zablokowane.",
         "lpBurnedPercent": "Spalone tokeny LP: 99.98% wszystkich tokenów LP",
         "lpLockedPercent": "Dlatego 99.98% tokenów w LP jest trwale zablokowanych",
-        "note": "<strong>Uwaga:</strong> LionOG utrzymuje stosunek 1:1 z BNBLion podczas migracji. Podaż w obiegu LionOG odpowiada prawdziwej podaży w obiegu BNBLion po uwzględnieniu wszystkich spalonych i zablokowanych tokenów.",
+        "note": "<strong>Uwaga:</strong> LionOG utrzymuje stosunek 1:1 z BNBLion podczas konwersji. Podaż w obiegu LionOG odpowiada prawdziwej podaży w obiegu BNBLion po uwzględnieniu wszystkich spalonych i zablokowanych tokenów.",
         "launchData": "<strong>Dane Startowe:</strong> Te liczby zostały obliczone podczas startu. Starszy token BNBLion nadal spala tokeny przy każdej transakcji kupna/sprzedaży, więc rzeczywista podaż w obiegu może być nieco niższa niż pokazano.",
         "legacyContract": "Kontrakt Tokena BNBLion",
         "ogContract": "Kontrakt Tokena LionOG",
@@ -279,7 +295,7 @@
         "lpLockedDesc": "Pula płynności PancakeSwap zawiera tokeny BNBFrog sparowane z BNB. Kiedy tokeny LP są spalane (wysyłane na martwy adres), bazowe tokeny w puli stają się trwale zablokowane.",
         "lpBurnedPercent": "Spalone tokeny LP: 99.31% wszystkich tokenów LP",
         "lpLockedPercent": "Dlatego 99.31% tokenów w LP jest trwale zablokowanych",
-        "note": "<strong>Uwaga:</strong> FrogOG utrzymuje stosunek 1:1 z BNBFrog podczas migracji. Podaż w obiegu FrogOG odpowiada prawdziwej podaży w obiegu BNBFrog po uwzględnieniu wszystkich spalonych i zablokowanych tokenów.",
+        "note": "<strong>Uwaga:</strong> FrogOG utrzymuje stosunek 1:1 z BNBFrog podczas konwersji. Podaż w obiegu FrogOG odpowiada prawdziwej podaży w obiegu BNBFrog po uwzględnieniu wszystkich spalonych i zablokowanych tokenów.",
         "launchData": "<strong>Dane Startowe:</strong> Te liczby zostały obliczone podczas startu. Starszy token BNBFrog nadal spala tokeny przy każdej transakcji kupna/sprzedaży, więc rzeczywista podaż w obiegu może być nieco niższa niż pokazano.",
         "legacyContract": "Kontrakt Tokena BNBFrog",
         "ogContract": "Kontrakt Tokena FrogOG",
@@ -310,15 +326,69 @@
       "liquidity": "Płynność"
     },
     "liquidity": {
-      "title": "Pule Płynności"
-    }
+      "poolAddress": "Adres Puli",
+      "tradeOn": "Handluj na"
+    },
+    "overview": {
+      "interchainTokens": {
+        "title": "Tokeny Interchain",
+        "description": "Tokeny interchain wdrożone za pomocą Axelar Interchain Token Service (ITS). Te tokeny zachowują spójne adresy we wszystkich obsługiwanych sieciach."
+      },
+      "axelarNetwork": {
+        "title": "Sieć Axelar",
+        "description": "Bazowy protokół wiadomości, który zabezpiecza transfery międzyłańcuchowe i zapewnia integralność danych między różnymi blockchainami."
+      },
+      "conversionContracts": {
+        "title": "Kontrakty Konwersji",
+        "description": "Odpowiedzialne za konwersję starszych tokenów na aktywa interchain. Te kontrakty obsługują logikę depozytu i wybijania na łańcuchu pochodzenia."
+      },
+      "conversionContractsTable": {
+        "title": "Adresy Kontraktów Konwersji",
+        "subtitle": "Te kontrakty na BSC obsługują konwersję ze starszych tokenów na tokeny interchain.",
+        "token": "Token",
+        "legacyToken": "Starszy Token",
+        "conversionContract": "Kontrakt Konwersji",
+        "newToken": "Token Interchain"
+      },
+      "liquidityPools": {
+        "title": "Pule Płynności",
+        "description": "Pule płynności DEX, w których możesz handlować tokenami OG na różnych łańcuchach."
+      },
+      "liquidityPoolsTable": {
+        "title": "Pule Płynności",
+        "subtitle": "Pule DEX do handlu tokenami OG",
+        "token": "Token",
+        "chain": "Łańcuch",
+        "dex": "DEX",
+        "poolAddress": "Adres Puli"
+      }
+    },
+    "filterTokens": "Filtruj tokeny...",
+    "interchainAsset": "Aktywo Interchain przez Axelar ITS",
+    "availableOnChains": "Dostępne na {{count}} łańcuchach",
+    "table": {
+      "chain": "Łańcuch",
+      "tokenAddress": "Adres Tokena",
+      "axelarChainName": "Nazwa Łańcucha Axelar",
+      "chainId": "ID: {{id}}"
+    },
+    "axelarId": "Axelar ID: {{name}}",
+    "copied": "Skopiowano!",
+    "copyAddress": "Kopiuj adres"
   },
   "faq": {
     "title": "Wsparcie Freedom Bridge",
     "header": "Często Zadawane Pytania",
-    "subtitle": "Odpowiedzi na często zadawane pytania dotyczące TigerOG, mostkowania i Axelar.",
+    "subtitle": "Odpowiedzi na częste pytania dotyczące TigerOG, mostkowania i Axelar.",
+    "sections": {
+      "gettingStarted": "Rozpoczęcie",
+      "convertingTrading": "Konwersja i Handel",
+      "bridging": "Mostkowanie",
+      "technical": "Techniczne",
+      "securityRisks": "Bezpieczeństwo i Ryzyko"
+    },
     "cta": {
-      "title": "Masz jeszcze pytania?",
+      "title": "Nadal masz pytania?",
       "description": "Dołącz do naszej społeczności na Telegramie lub sprawdź szczegółową Wiki, aby uzyskać przewodniki techniczne.",
       "wiki": "Odwiedź Wiki",
       "telegram": "Dołącz do Telegramu"
@@ -327,25 +397,112 @@
       "q1": "Jaki jest cel konwersji moich tokenów?",
       "a1": "Konwersja tokenów na TigerOG usuwa podatek transakcyjny (często 10-12%) związany ze starszym tokenem. Pozwala również na mostkowanie tych tokenów do innych blockchainów, takich jak Ethereum, Base i innych, za pośrednictwem Axelar, umożliwiając dostęp do nowych ekosystemów.",
       "q2": "Czy używanie Freedom Bridge jest bezpieczne?",
-      "a2": "Tak. Protokół wykorzystuje bezpieczny kontrakt migracyjny i Axelar Interchain Token Service. Podczas konwersji Twój BNBTiger jest trwale spalany, a Ty otrzymujesz TigerOG w stosunku 1:1. Mechanizm spalania zapewnia, że całkowita podaż jest odpowiednio zarządzana we wszystkich łańcuchach.",
+      "a2": "Tak. Protokół wykorzystuje bezpieczny kontrakt Konwersji i Axelar Interchain Token Service. Podczas konwersji Twój BNBTiger jest trwale spalany, a Ty otrzymujesz TigerOG w stosunku 1:1. Mechanizm spalania zapewnia, że całkowita podaż jest odpowiednio zarządzana we wszystkich łańcuchach.",
       "q3": "Czy są jakieś opłaty?",
       "a3": "Freedom Bridge sam w sobie nie pobiera opłat za konwersję. Płacisz tylko standardowe opłaty za gaz blockchain. Mostkowanie między łańcuchami obejmuje opłatę za gaz międzyłańcuchowy płaconą Axelar za pokrycie kosztów przekaźnikowych.",
       "q4": "Co się stanie, jeśli stracę swoje tokeny?",
       "a4": "Tokeny TigerOG zachowują się jak każdy inny token ERC20. Jeśli stracisz dostęp do swojego portfela, nie można ich odzyskać. Zawsze przechowuj swoje klucze prywatne i frazy odzyskiwania w bezpiecznym miejscu.",
       "q5": "Czy mogę konwertować swoje tokeny TigerOG z powrotem na BNBTiger?",
-      "a5": "Nie. Migracja to konwersja jednokierunkowa. Kiedy konwertujesz BNBTiger na TigerOG, Twoje tokeny BNBTiger są trwale spalane (wysyłane na martwy adres). Jest to celowe — TigerOG to ulepszona, bezpodatkowa wersja przeznaczona do całkowitego zastąpienia starszego tokena.",
+      "a5": "Nie. Konwersja jest jednokierunkowa. Kiedy konwertujesz BNBTiger na TigerOG, Twoje tokeny BNBTiger są trwale spalane (wysyłane na martwy adres). Jest to celowe — TigerOG to ulepszona, bezpodatkowa wersja przeznaczona do całkowitego zastąpienia starszego tokena.",
       "q6": "Które sieci są obsługiwane?",
       "a6": "Obsługujemy wiele łańcuchów EVM za pośrednictwem Axelar, w tym BNB Chain, Ethereum, Base i wiele innych. Sprawdź Wiki, aby uzyskać pełną listę obsługiwanych sieci.",
       "q7": "Jak długo trwa mostkowanie?",
-      "a7": "Szybkość mostkowania zależy od finalizacji łańcucha źródłowego i przekazywania Axelar. Zazwyczaj transfer między łańcuchami trwa około 2-5 minut.",
+      "a7": "Szybkość mostkowania zależy od tego, Z jakiego łańcucha wysyłasz:\n\n• Ethereum: 15-20 min (wymaga więcej potwierdzeń)\n• BSC i Avalanche: 2-4 min (najszybciej)\n• Base, Linea, Polygon: 3-5 min\n\nAplikacja pokazuje szacowany czas przed mostkowaniem.",
       "q8": "Jakie są podaże w obiegu tokenów OG?",
-      "a8": "Każdy token OG ma stałą podaż w obiegu pochodzącą z oryginalnego tokena BNB, uwzględniającą spalone tokeny, utknięte salda kontraktów i zablokowane LP. TigerOG: ~3.66 kwadryliona (36.62% oryginału). LionOG: ~3.83 kwadryliona (38.33% oryginału). FrogOG: ~8.39 kwadryliona (83.86% oryginału). Zobacz Wiki, aby uzyskać szczegółowe zestawienia dla każdego tokena."
+      "a8": "Każdy token OG ma stałą podaż w obiegu pochodzącą z oryginalnego tokena BNB, uwzględniającą spalone tokeny, utknięte salda kontraktów i zablokowane LP:\n\n• TigerOG: ~3.66 kwadryliona (36.62% oryginału)\n• LionOG: ~3.83 kwadryliona (38.33% oryginału)\n• FrogOG: ~8.39 kwadryliona (83.86% oryginału)\n\n Zobacz Wiki, aby uzyskać szczegółowe zestawienia.",
+      "q9": "Dlaczego kontrakt OG nie został zrzeczony (renounced)?",
+      "a9": "Zrzeczenie się kontraktu usunęłoby możliwość rozwoju i dodawania nowych łańcuchów w przyszłości. Chociaż kontrakt nie zostanie zrzeczony w dającej się przewidzieć przyszłości, do wprowadzenia jakichkolwiek zmian wymagane są liczne podpisy (multisig). Ponadto, żadne tokeny ani podatki nie są przydzielane zespołowi.",
+      "q10": "Dlaczego kontrakt OG jest wybijalny (mintable)?",
+      "a10": "Mostkowanie międzyłańcuchowe wymaga funkcji wybijania/spalania - tokeny są spalane przy opuszczaniu łańcucha i wybijane po przybyciu. Utrzymuje to stałą całkowitą podaż we wszystkich sieciach. Wybijanie jest kontrolowane przez portfel multisig Safe.",
+      "q11": "Czy TigerOG opuszcza BNB Chain na rzecz Axelar?",
+      "a11": "Nie. Axelar nie jest blockchainem - to protokół mostkowania, który łączy łańcuchy. BNB Chain pozostaje łańcuchem pochodzenia, na którym konwertujesz starsze tokeny. Axelar po prostu umożliwia Twoim tokenom przemieszczanie się między BNB, Ethereum, Base i innymi obsługiwanymi sieciami.",
+      "q12": "Gdzie są moje tokeny?",
+      "a12": "Upewnij się, że dodałeś łańcuch i adres tokena do swojego portfela. Wszystkie adresy kontraktów znajdziesz na stronie Kontrakty. Zespół Tiger używa portfela Rabby, który ułatwia zarządzanie wieloma łańcuchami.",
+      "q13": "Dlaczego mostkowanie z Ethereum lub Base trwa tak długo?",
+      "a13": "Ethereum wymaga dwóch epok przed sfinalizowaniem transakcji dla maksymalnego bezpieczeństwa. Ponieważ Base rozlicza się na Ethereum, dziedziczy to opóźnienie. To stawia bezpieczeństwo ponad szybkością - Twoje tokeny są bezpieczne, po prostu bądź cierpliwy.",
+      "q14": "Co się stanie, jeśli zostanę przy moim oryginalnym tokenie i nie przekonwertuję?",
+      "a14": "Nie ma pośpiechu z konwersją. BNBTiger i TigerOG zawsze będą miały różne pule płynności, kapitalizacje rynkowe i tak dalej. Ale BNBTiger ma wysoki podatek, a TigerOG nie ma podatku od handlu. Ponieważ podatki od oryginału nie są wykorzystywane do wspierania projektu, rozwój jest prowadzony przez zespół CTO dla TigerOG. Freedom Bridge i multi-chain są tylko dla TigerOG.",
+      "q15": "Czy jest podatek za konwersję? Czy TigerOG ma podatek?",
+      "a15": "Nie. Konwersja i handel kosztują tylko normalną opłatę za gaz. Nie ma żadnych dodatkowych podatków ani opłat, a TigerOG jest kontraktem bezpodatkowym.",
+      "q16": "Czy mogę po prostu kupić i handlować TigerOG bezpośrednio?",
+      "a16": "Jeszcze nie. Zespół nie pobrał opłat i podatków, aby móc sfinansować wystarczająco duże pule płynności. Aby zdobyć TigerOG teraz, musisz kupić lub już posiadać oryginał i przekonwertować go. Gdy już będziesz właścicielem TigerOG, nie będzie on łatwo zbywalny, dopóki inwestorzy nie przyjdą dodać do puli płynności.",
+      "q17": "Dlaczego kapitalizacja rynkowa TigerOG wygląda na tak zawyżoną?",
+      "a17": "Im mniejsza pula płynności, tym bardziej każda mała transakcja ma ogromny wpływ na wyświetlaną kapitalizację rynkową. To rozwiąże się, gdy inwestorzy staną się dostawcami płynności.",
+      "q18": "Jakie audyty bezpieczeństwa zostały przeprowadzone?",
+      "a18": "Freedom Bridge nie przeszedł formalnego audytu strony trzeciej. Jednak kod kontraktu konwertera opiera się na konwerterze SHx zbudowanym przez zespół Stronghold (byłych deweloperów XRP i Stellar, którzy niedawno prezentowali w Davos). Infrastruktura mostkowania jest zasilana przez Axelar, który przeszedł wiele audytów bezpieczeństwa.",
+      "q19": "W jaki sposób Freedom Bridge chroni przed włamaniami lub exploitami?",
+      "a19": "Wdrożono kilka środków:\n\n• Konwerter przechowuje tylko dokładnie potrzebną podaż w obiegu - brak nadmiarowych tokenów, które mogłyby zostać wykorzystane\n• Konwerter nie ma uprawnień do wybijania\n• Cały kod kontraktu jest zweryfikowany w łańcuchu i jest open source\n• Uprawnienia tokenów są zabezpieczone w portfelu multisig Safe.global\n• Mostkowanie jest obsługiwane przez sprawdzoną w boju infrastrukturę Axelar",
+      "q20": "Czy mostkowanie jest nieodwracalne? Co jeśli transfer się nie powiedzie?",
+      "a20": "Transfery mostkowe rzadko mogą utknąć z powodu niewystarczającej ilości gazu lub przeciążenia sieci. Jeśli tak się stanie, możesz śledzić swoją transakcję na Axelarscan i ręcznie dodać gaz, aby ją zakończyć. Axelar zapewnia narzędzia do odzyskiwania transakcji - nie stracisz swoich tokenów.",
+      "q21": "Jakie są ryzyka związane z korzystaniem z Freedom Bridge?",
+      "a21": "Jak w przypadku każdego protokołu DeFi, istnieje ryzyko nieodłączne, w tym ryzyko inteligentnego kontraktu, ryzyko mostu i zmienność rynku. Zalecamy przeprowadzenie własnych badań (DYOR) i używanie tylko funduszy, na których utratę możesz sobie pozwolić. Zobacz nasze zastrzeżenie prawne, aby uzyskać więcej informacji.",
+      "q22": "Czy mogę przekonwertować nowy kontrakt BNB Tiger Inu (wrzesień 2025)?",
+      "a22": "Nie. Freedom Bridge obsługuje oryginalny/starszy token BNB Tiger, który wystartował kilka lat temu - nie nowy kontrakt utworzony we wrześniu 2025. Freedom Bridge został zbudowany dla przejęcia przez społeczność (CTO) oryginalnych tokenów Tiger, Lion i Frog.",
+      "q23": "Jak dodać płynność?",
+      "a23": "Dodawanie płynności to zaawansowana aktywność DeFi wiążąca się z ryzykiem, w tym nietrwałą stratą (impermanent loss). Jeśli masz doświadczenie w dostarczaniu płynności na giełdach DEX, takich jak PancakeSwap lub Uniswap, proces jest taki sam - sparuj token OG z aktywem bazowym. Tutaj znajduje się świetna seria edukacyjna na temat płynności, jeśli chcesz dowiedzieć się więcej: https://www.youtube.com/watch?v=oiylIHvwMik&list=PL_ujg_v1hZ5iGtiuhT8NkSMqEOaLAgmUu",
+      "q24": "Czy zespół może zrobić 'rug pull'?",
+      "a24": "Nie. Nie ma mechanizmu na 'rug pull'. Żadne tokeny ani podatki nie są przydzielane zespołowi, a my nie pobieramy żadnych opłat za mostkowanie — trafiają one do Axelar na koszty przekaźnikowe. Zespół to posiadacze tacy jak Ty, budujący to na własny koszt. Jedynym portfelem zespołu jest publiczny portfel marketingowy finansowany z darowizn społeczności. Portfel multisig Safe kontroluje uprawnienia kontraktu, takie jak wstrzymywanie wysyłania do łańcuchów w nagłych wypadkach, ale nie może uzyskać dostępu ani przekierować funduszy użytkowników."
     }
+  },
+  "footer": {
+    "wiki": "Wiki",
+    "contracts": "Kontrakty",
+    "faq": "FAQ",
+    "disclaimer": "Zastrzeżenie",
+    "github": "GitHub"
+  },
+  "disclaimer": {
+    "title": "Zastrzeżenie Prawne",
+    "header": "Ważna Nota Prawna",
+    "subtitle": "Proszę uważnie przeczytać to zastrzeżenie przed użyciem Freedom Bridge.",
+    "sections": {
+      "noInvestmentAdvice": {
+        "title": "Brak Porady Inwestycyjnej",
+        "content": "Informacje zawarte na Freedom Bridge nie stanowią porady inwestycyjnej, finansowej, handlowej ani żadnego innego rodzaju porady. Nie powinieneś traktować żadnej treści jako takiej. Freedom Bridge nie zaleca kupna, sprzedaży ani przechowywania jakiejkolwiek kryptowaluty. Przeprowadź własną analizę due diligence i skonsultuj się z doradcą finansowym przed podjęciem jakichkolwiek decyzji inwestycyjnych."
+      },
+      "risksOfUse": {
+        "title": "Ryzyko Użytkowania",
+        "content": "Rynki kryptowalut są zmienne i nieprzewidywalne. Korzystając z Freedom Bridge, przyjmujesz do wiadomości i akceptujesz, że:\n\n• Inteligentne kontrakty mogą zawierać błędy lub luki, które mogą skutkować utratą funduszy\n• Mosty międzyłańcuchowe wiążą się z nieodłącznym ryzykiem, w tym między innymi: awariami wyroczni, zmową walidatorów i przeciążeniem sieci\n• Wartości tokenów mogą gwałtownie się wahać i możesz stracić część lub całość swojej inwestycji\n• Transakcje w sieciach blockchain są nieodwracalne\n• Opłaty sieciowe i koszty gazu są poza naszą kontrolą i mogą się znacznie różnić"
+      },
+      "noWarranties": {
+        "title": "Brak Gwarancji",
+        "content": "Freedom Bridge jest udostępniany w stanie \"takim, jaki jest\" i \"w miarę dostępności\" bez jakichkolwiek gwarancji, wyraźnych lub dorozumianych. Nie gwarantujemy, że usługa będzie nieprzerwana, bezpieczna lub wolna od błędów. Nie udzielamy gwarancji dotyczących dokładności, wiarygodności ani kompletności jakichkolwiek informacji udostępnianych za pośrednictwem platformy."
+      },
+      "limitationOfLiability": {
+        "title": "Ograniczenie Odpowiedzialności",
+        "content": "W maksymalnym zakresie dozwolonym przez prawo, Freedom Bridge, jego deweloperzy, współtwórcy i podmioty stowarzyszone nie ponoszą odpowiedzialności za jakiekolwiek bezpośrednie, pośrednie, przypadkowe, specjalne, wynikowe lub karne szkody wynikające z lub związane z korzystaniem z platformy, w tym między innymi utratę zysków, utratę danych lub utratę aktywów kryptowalutowych."
+      },
+      "thirdPartyServices": {
+        "title": "Usługi Stron Trzecich",
+        "content": "Freedom Bridge integruje się z usługami stron trzecich, w tym z siecią Axelar do mostkowania międzyłańcuchowego. Nie ponosimy odpowiedzialności za działania, treści, informacje ani dane tych stron trzecich. Korzystanie z usług stron trzecich podlega ich odpowiednim warunkom."
+      },
+      "regulatoryCompliance": {
+        "title": "Zgodność z Przepisami",
+        "content": "Przepisy dotyczące kryptowalut różnią się w zależności od jurysdykcji. Ponosisz wyłączną odpowiedzialność za zapewnienie, że korzystanie z Freedom Bridge jest zgodne ze wszystkimi obowiązującymi prawami i przepisami w Twojej jurysdykcji. Freedom Bridge nie składa żadnych oświadczeń dotyczących legalności usług w jakiejkolwiek jurysdykcji."
+      },
+      "dyor": {
+        "title": "Przeprowadź Własne Badania (DYOR)",
+        "content": "Zawsze przeprowadzaj własne badania (DYOR) przed interakcją z jakimkolwiek protokołem DeFi. Weryfikuj adresy kontraktów, zrozum mechanikę każdego tokena, z którym wchodzisz w interakcję, i nigdy nie inwestuj więcej, niż możesz stracić."
+      }
+    },
+    "acknowledgment": "Korzystając z Freedom Bridge, potwierdzasz, że przeczytałeś, zrozumiałeś i zgadzasz się na związanie tym zastrzeżeniem.",
+    "lastUpdated": "Ostatnia aktualizacja: Styczeń 2026"
+  },
+  "disclaimerModal": {
+    "title": "Ważne Zastrzeżenie",
+    "subtitle": "Przeczytaj i zaakceptuj przed kontynuowaniem.",
+    "noAdvice": "Freedom Bridge nie udziela porad inwestycyjnych, finansowych ani handlowych. Inwestycje w kryptowaluty są zmienne i ryzykowne.",
+    "risks": "Korzystając z tej platformy, przyjmujesz do wiadomości, że inteligentne kontrakty mogą zawierać luki, mosty międzyłańcuchowe wiążą się z ryzykiem, a transakcje są nieodwracalne.",
+    "dyor": "Zawsze przeprowadzaj własne badania (DYOR) i używaj tylko funduszy, na których utratę możesz sobie pozwolić.",
+    "fullDisclaimer": "Pełne szczegóły znajdziesz w naszym",
+    "fullDisclaimerLink": "Zastrzeżeniu Prawnym",
+    "accept": "Rozumiem i Akceptuję"
   },
   "common": {
     "from": "Od",
     "to": "Do",
-    "max": "MAKS",
+    "max": "MAX",
+    "cancel": "Anuluj",
     "chainId": "ID Łańcucha",
     "bscChain": "Łańcuch BSC",
     "insufficientBalance": "Niewystarczające saldo.",

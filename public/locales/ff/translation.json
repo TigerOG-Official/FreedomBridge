@@ -4,6 +4,7 @@
     "titleBridge": "Pont"
   },
   "nav": {
+    "home": "Jaɓɓorgo",
     "settings": "Teelte",
     "menu": "Doggol",
     "preferences": "Cuɓe",
@@ -45,6 +46,20 @@
     "networkWarning": {
       "title": "Rajo Bonɗo",
       "message": "Waylude token ko dow BSC Chain tan waɗata. Tiiɗno waylu fayde BSC ngam waylude legacy tokens maa."
+    },
+    "confirmModal": {
+      "title": "Tabitinde Waylude",
+      "warning": "Aɗa yiɗi waylude tokens maa. Tiiɗno janngu ko les ɗoo no moƴƴi hade jokkude.",
+      "irreversible": "Ɗum waawaa artireede!",
+      "burnExplanation": "{{legacySymbol}} tokens maa ina burn-aa haa abada te limoore potɗe e {{newSymbol}} tokens ina mint-ee e wallet maa. Ɗum waawaa artireede.",
+      "positiveNote": "Ko moƴƴi: {{newSymbol}} alaa tax fof — alaa 10%+ taxes e kala transaction.",
+      "confirmQuestion": "Waylu {{amount}} {{legacySymbol}} fayde {{newSymbol}}?",
+      "confirmButton": "Mi fahmii, Waylu"
+    },
+    "finalConfirmModal": {
+      "title": "Mbele Aɗa Goonɗini?",
+      "message": "Ɗum ko fartaŋŋe maa cakkitiɗo ngam haɗude. So a tabitinii, {{legacySymbol}} maa ina waylaa fayde {{newSymbol}} te waawaa artireede.",
+      "confirmButton": "Eey, Waylu Jooni"
     }
   },
   "bridge": {
@@ -296,7 +311,12 @@
     "tabs": {
       "overview": "Jiytugol",
       "byToken": "Sabu Token",
-      "byChain": "Sabu Chain"
+      "byChain": "Sabu Chain",
+      "liquidity": "Liquidity"
+    },
+    "liquidity": {
+      "poolAddress": "Pool Address",
+      "tradeOn": "Trade dow"
     },
     "overview": {
       "interchainTokens": {
@@ -318,6 +338,18 @@
         "legacyToken": "Legacy Token",
         "conversionContract": "Conversion Contract",
         "newToken": "Interchain Token"
+      },
+      "liquidityPools": {
+        "title": "Liquidity Pools",
+        "description": "DEX liquidity pools ɗo mbaawɗaa trade-ude OG tokens dow chains ceertuɗi."
+      },
+      "liquidityPoolsTable": {
+        "title": "Liquidity Pools",
+        "subtitle": "DEX pools ngam trade-ude OG tokens",
+        "token": "Token",
+        "chain": "Chain",
+        "dex": "DEX",
+        "poolAddress": "Pool Address"
       }
     },
     "filterTokens": "Filter tokens...",
@@ -337,6 +369,13 @@
     "title": "Wallitorde Freedom Bridge",
     "header": "Naamne Keewɗe",
     "subtitle": "Jaabawuuji e naamne keewɗe faati e TigerOG, pontude, e Axelar.",
+    "sections": {
+      "gettingStarted": "Fuɗɗaade",
+      "convertingTrading": "Waylude & Trade",
+      "bridging": "Pontude",
+      "technical": "Technical",
+      "securityRisks": "Security & Risks"
+    },
     "cta": {
       "title": "Aɗa jogii naamne goɗɗe?",
       "description": "Naatu e community amen dow Telegram walla ƴeew Wiki ngam guides technical.",
@@ -351,21 +390,108 @@
       "q3": "Mbele ina woodi njoɓɗi?",
       "a3": "Freedom Bridge e hoore mum ƴettataa njoɓdi ngam waylude. A yoɓata tan ko standard blockchain gas fees. Pontude hakkunde chains ina adda cross-chain gas fee yoɓeteeɗo Axelar ngam cover relaying costs.",
       "q4": "Ko waɗata so mi lalkii tokens am?",
-      "a4": "TigerOG tokens ina gollira hono kala ERC20 token goɗɗo. So a lalkii access e wallet maa, mbaawaa heɓteede. Kala sahaa reenu private keys maa e recovery phrases.",
+      "a4": "TigerOG tokens ina gollira hono kala ERC20/BEP20 token goɗɗo. So a lalkii access e wallet maa, mbaawaa heɓteede. Kala sahaa reenu private keys maa e recovery phrases.",
       "q5": "Mbele mi waawi artirde TigerOG tokens am fayde BNBTiger?",
-      "a5": "Alaa. Conversion ko laawol gootal. So a waylii BNBTiger fayde TigerOG, BNBTiger tokens maa ina burn-aa haa abada (nelaa to dead address). Ɗum feewnaa nii — TigerOG ko upgraded, tax-free version mo foti lomtaade legacy token o fof.",
+      "a5": "Alaa. Conversion ko laawol gootal. So a waylii BNBTiger fayde TigerOG, legacy tokens maa ina lock-aa haa abada nder conversion contract. Ɗum feewnaa nii — TigerOG ko upgraded, tax-free version mo foti lomtaade legacy token o fof.",
       "q6": "Hol rajooji tawaaɗi?",
       "a6": "Min mballitotoo multiple EVM chains via Axelar, ina jeyaa heen BNB Chain, Ethereum, Base, e ko nanndi heen. Ƴeew Wiki ngam list cakkitiɗo rajooji tawaaɗi.",
       "q7": "Pontude ƴettata ko waktuuji foti?",
-      "a7": "Pontude yaawde ina pawaa e source chain's finality e Axelar's relaying. Ko ɓuri heewde, transfer hakkunde chains ina ƴetta 2-5 minti.",
+      "a7": "Yaawde pontude ina pawaa e chain mo neldirtaa:\n\n• Ethereum: 15-20 minti (ina naamnii confirmations ɓurɗe)\n• BSC e Avalanche: 2-4 minti (ɓuri yaawde)\n• Base, Linea, Polygon: 3-5 minti\n\nApp o ina holla waktu ɓesmaaɗo hade pontude.",
       "q8": "Ko woni circulating supplies e OG tokens?",
-      "a8": "Kala OG token ina jogii fixed circulating supply takkaaɗo daga original BNB token, nder ƴeewde burned tokens, stuck contract balances, e locked LP. TigerOG: ~3.66 septillion (36.62% e original). LionOG: ~3.83 septillion (38.33% e original). FrogOG: ~8.39 septillion (83.86% e original). Ƴeew Wiki ngam breakdowns cakkitiɗe e kala token."
+      "a8": "Kala OG token ina jogii fixed circulating supply takkaaɗo daga original BNB token, nder ƴeewde burned tokens, stuck contract balances, e locked LP:\n\n• TigerOG: ~3.66 septillion (36.62% e original)\n• LionOG: ~3.83 septillion (38.33% e original)\n• FrogOG: ~8.39 septillion (83.86% e original)\n\nƳeew Wiki ngam breakdowns cakkitiɗe.",
+      "q9": "Ko waɗi OG contract renounce-aaka?",
+      "a9": "Renounce-ude contract ina momta waawde topitaade e ɓeydude chains kese yeeso. Contract o renounce-etaake ngam yiyde yeeso, kono signatures keewɗi ina naamnii ngam waɗde waylude fof. Kadi, alaa tokens walla taxes jeytaaɗi e team.",
+      "q10": "Ko waɗi OG contract ina mintable?",
+      "a10": "Cross-chain bridging ina naamnii mint/burn functionality — tokens ina burn-aa so ɓe njalti chain te ina mint-aa so ɓe naati. Ɗum ina reena total supply constant dow kala networks. Minting ina control-ee e multisig Safe wallet.",
+      "q11": "Mbele TigerOG ina yaltude BNB Chain ngam Axelar?",
+      "a11": "Alaa. Axelar wonaa blockchain — ko bridging protocol mo jokkondirta chains. BNB Chain ko origin chain ɗo waylirtaa legacy tokens. Axelar ina newna tan tokenji maa dillude hakkunde BNB, Ethereum, Base, e rajooji goɗɗi tawaaɗi.",
+      "q12": "Hol ɗo tokenji am ngoni?",
+      "a12": "Laaɓtinaa a ɓeydii chain e token address nder wallet maa. A tawata kala contract addresses dow Contracts page. Tiger team ina huutoroo Rabby wallet mo newnata manage-ude chains keewɗi.",
+      "q13": "Ko waɗi pontude daga Ethereum walla Base ina juuti?",
+      "a13": "Ethereum ina naamnii two epochs hade finalize-ude transactions ngam security ɓurɗo. Sabu Base ina settle dow Ethereum, o heɓa ɗum delay ndee. Ɗum ina teskina security ɓuri yaawde — tokenji maa ina reeni, muñu tan.",
+      "q14": "Ko waɗata so mi heddii e original token am te mi waylaa?",
+      "a14": "Alaa jaɓɓal ngam waylude. BNBTiger e TigerOG ina jogii liquidity pools ceertuɗi, market caps, e ko nanndi heen. Kono BNBTiger ina jogii tax toowɗo te TigerOG alaa tax ngam trade. Sabu taxes original ɗe kuutortaake ngam wallitde project o, development waɗetee ko team CTO ngam TigerOG. Freedom Bridge e multi-chain ko ngam TigerOG tan.",
+      "q15": "Mbele ina woodi tax ngam waylude? Mbele TigerOG ina jogii tax?",
+      "a15": "Alaa. Ko gas fee normal tan naamnii ngam waylude e trade. Alaa taxes walla fees ɓeydaaɗi, te TigerOG ko tax-free contract.",
+      "q16": "Mbele mi waawi soodo e trade-ude TigerOG sara?",
+      "a16": "Taho alaa. Team o moƴƴitaani fees e taxes ngam waawde fund-ude liquidity pools ɓurɗi mawnude. Ngam heɓude TigerOG jooni, a haani soodo walla jogaade original o te waylude. So a jogii TigerOG, ina waɗa caɗeele trade-ude haa investors ngara ɓeydude e liquidity pool.",
+      "q17": "Ko waɗi market cap TigerOG ina yiyloo toowɗo?",
+      "a17": "So liquidity pool ina famɗi, kala trade famɗo ina waɗa impact mawɗo dow market cap hollaaɗo. Ɗum ina moƴƴoo so investors ngarii wontude liquidity providers.",
+      "q18": "Hol security audits waɗaaɗi?",
+      "a18": "Freedom Bridge heɓaani formal third-party audit. Kono, converter contract code ina tuugii e SHx converter feewnaaɗo e Stronghold team (developers XRP e Stellar ɓennuɗe mo hollii e Davos). Bridging infrastructure ina wallitaa e Axelar, mo heɓii security audits keewɗi.",
+      "q19": "No Freedom Bridge reenirta e hacks walla exploits?",
+      "a19": "Kuuɗe keewɗe ina waɗaa:\n\n• Converter ina jogii tan exact circulating supply naamniiɗo — alaa tokens ɓeydaaɗi exploitotooɗi\n• Converter alaa mint permissions\n• Kala contract code verify-aama on-chain te ko open source\n• Token permissions ina reenaa e Safe.global multisig wallet\n• Pontude ina manage-aa e Axelar's battle-tested infrastructure",
+      "q20": "Mbele pontude waawaa artireede? Ko waɗata so transfer yowaama?",
+      "a20": "Pont transfers seeɗaa ina mbaawi stuck-ude sabu gas yonaa walla network congestion. So ɗum waɗii, a waawi follow-ude transaction maa dow Axelarscan te ɓeydude gas e junngo ngam jokkinde. Axelar ina rokka transaction recovery tools — a lalkataako tokenji maa.",
+      "q21": "Hol risks jokkondirɗi e huutoraade Freedom Bridge?",
+      "a21": "Hono kala DeFi protocol, risks inherent ina woodi ina jeyaa heen smart contract risk, bridge risk, e market volatility. Min mballitoo waɗde research maa (DYOR) te huutoro tan funds ɗi a waawi lalkude. Ƴeew legal disclaimer amen ngam info ɓurngo.",
+      "q22": "Mbele mi waawi waylude contract BNB Tiger Inu keso (September 2025)?",
+      "a22": "Alaa. Freedom Bridge ina wallitoo original/legacy BNB Tiger token mo udditaa duuɓi keewɗi — wonaa contract keso feewnaaɗo September 2025. Freedom Bridge feewnaa ko ngam community takeover (CTO) Tiger, Lion, e Frog tokens asliiɗi.",
+      "q23": "No ɓeydirtaa liquidity?",
+      "a23": "Ɓeydude liquidity ko advanced DeFi activity mo jogii risks ina jeyaa heen impermanent loss. So a anndii no provide-irtaa liquidity dow DEXs hono PancakeSwap walla Uniswap, process o ko gooto — pair-u OG token e base asset. Ɗoo ko educational series moƴƴo faati e liquidity so a yiɗii janngude ɓuri: https://www.youtube.com/watch?v=oiylIHvwMik&list=PL_ujg_v1hZ5iGtiuhT8NkSMqEOaLAgmUu",
+      "q24": "Mbele team waawi rug pull?",
+      "a24": "Alaa. Alaa mechanism ngam rug pull. Alaa tokens walla taxes jeytaaɗi e team, te min ƴettataa bridging fees — ɗum yahata Axelar ngam relaying costs. Team ko holders hono maa, ina feewna ɗum e njoɓɗi hoɗɗi. Wallet team ko marketing wallet public mo fund-aa e community donations. Multisig Safe wallet ina control-a contract permissions hono dartinde nelde fayde chains nder emergency, kono waawaa access-ude walla redirect-ude funds users."
     }
+  },
+  "footer": {
+    "wiki": "Wiki",
+    "contracts": "Contracts",
+    "faq": "FAQ",
+    "disclaimer": "Disclaimer",
+    "github": "GitHub"
+  },
+  "disclaimer": {
+    "title": "Legal Disclaimer",
+    "header": "Tinndinoore Laawol Teskinnde",
+    "subtitle": "Tiiɗno janngu ɗum disclaimer haa no moƴƴi hade huutoraade Freedom Bridge.",
+    "sections": {
+      "noInvestmentAdvice": {
+        "title": "Alaa Wasiyaaji Investment",
+        "content": "Kabaruuji rokketeeɗi dow Freedom Bridge wonaa investment advice, financial advice, trading advice, walla fannu wasiya goɗɗo fof. A haanaa ƴeewde kala content hono nii. Freedom Bridge wasiyaaki wonde kala cryptocurrency soodeede, yeeyeede, walla jogeede. Waɗ due diligence maa te wasiyoo financial advisor maa hade waɗde investment decisions fof."
+      },
+      "risksOfUse": {
+        "title": "Risks Huutoraade",
+        "content": "Cryptocurrency markets ina muuya te mbaawaa anndeede. Huutoraade Freedom Bridge, a anndi te a jaɓi wonde:\n\n• Smart contracts ina mbaawi jogaade bugs walla vulnerabilities baɗooji lalkude funds\n• Cross-chain bridges ina jogii inherent risks ina jeyaa heen: oracle failures, validator collusion, e network congestion\n• Njoɓɗi token ina mbaawi muuyde sanne te a waawi lalkude seeɗa walla fof e investment maa\n• Transactions dow blockchain networks mbaawaa artireede\n• Network fees e gas costs wonaa e les control amen te ina mbaawi waylitaade sanne"
+      },
+      "noWarranties": {
+        "title": "Alaa Warranties",
+        "content": "Freedom Bridge ina rokkaa \"ko woni nii\" e \"ko woodi nii\" alaa warranties fof, anndaaɗi walla tedduɗi. Min laaɓtintaako wonde service o ina jokka, ina reeni, walla alaa ɗum juumre. Min rokkaa warranties faati e accuracy, reliability, walla timmoode kabaruuji rokkaaɗi e platform o."
+      },
+      "limitationOfLiability": {
+        "title": "Limitation of Liability",
+        "content": "Haa ɗo laawol yamirata, Freedom Bridge, topitiiɓe mum, wallitiiɓe, e jokkondirɓe mum mbaawaa jaabteede e kala direct, indirect, incidental, special, consequential, walla punitive damages iwdi e walla jokkondirɗi e huutoraade platform o, ina jeyaa heen lalkude profits, lalkude data, walla lalkude cryptocurrency assets."
+      },
+      "thirdPartyServices": {
+        "title": "Third-Party Services",
+        "content": "Freedom Bridge ina jokkondiri e third-party services ina jeyaa heen Axelar Network ngam cross-chain bridging. Min mbaawaa jaabteede kuuɗe, content, kabaruuji, walla data ɗii third parties. Huutoraade maa third-party services ina pawaa e terms e conditions maɓɓe."
+      },
+      "regulatoryCompliance": {
+        "title": "Regulatory Compliance",
+        "content": "Cryptocurrency regulations ina ceerti sabu jurisdiction. Ko aan tan jaabotooɗo wonde huutoraade maa Freedom Bridge ina rewi e kala laws e regulations gollotooɗi nder jurisdiction maa. Freedom Bridge alaa representations faati e legality services nder kala jurisdiction."
+      },
+      "dyor": {
+        "title": "Waɗ Research Maa",
+        "content": "Kala sahaa waɗ research maa (DYOR) hade interact-ude e kala DeFi protocol. Verify-u contract addresses, faamu mechanics kala token mo interact-irtaa, te hoto invest ɓurde ko mbaawɗaa lalkude."
+      }
+    },
+    "acknowledgment": "Huutoraade Freedom Bridge, a anndi wonde a janngii, a fahmii, te a jaɓii ɗum disclaimer.",
+    "lastUpdated": "Hesɗitinaa sakkitorde: January 2026"
+  },
+  "disclaimerModal": {
+    "title": "Tinndinoore Teskinnde",
+    "subtitle": "Tiiɗno janngu te tabitinaa hade jokkude.",
+    "noAdvice": "Freedom Bridge rokkaa investment, financial, walla trading advice. Cryptocurrency investments ina muuya te ina jogii risk.",
+    "risks": "Huutoraade platform o, a anndi wonde smart contracts ina mbaawi jogaade vulnerabilities, cross-chain bridges ina jogii inherent risks, te transactions mbaawaa artireede.",
+    "dyor": "Kala sahaa waɗ research maa (DYOR) te huutoro tan funds ɗi a waawi lalkude.",
+    "fullDisclaimer": "Ngam details fof, ƴeew",
+    "fullDisclaimerLink": "Legal Disclaimer",
+    "accept": "Mi fahmii te mi Jaɓii"
   },
   "common": {
     "from": "Daga",
     "to": "Fayde",
     "max": "MAX",
+    "cancel": "Haɗu",
     "chainId": "Chain ID",
     "bscChain": "BSC Chain",
     "insufficientBalance": "Ceede ɗuuɗaani.",

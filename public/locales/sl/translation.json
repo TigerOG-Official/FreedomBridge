@@ -4,6 +4,7 @@
     "titleBridge": "Most"
   },
   "nav": {
+    "home": "Domov",
     "settings": "Nastavitve",
     "menu": "Meni",
     "preferences": "Preference",
@@ -23,29 +24,43 @@
     "close": "Zapri"
   },
   "addNetworks": {
-    "title": "Dodaj Omrežja",
-    "description": "Kliknite spodnji gumb, da dodate omrežja v svojo denarnico. To olajša preklapljanje med verigami med testiranjem."
+    "title": "Dodaj Omrežja v Denarnico",
+    "description": "Kliknite katero koli omrežje, da ga dodate v MetaMask, Rabby ali druge Web3 denarnice",
+    "searchPlaceholder": "Išči omrežja...",
+    "noResults": "Ni najdenih omrežij",
+    "networkCount": "omrežje"
+  },
+  "addNetwork": {
+    "connectWallet": "Prosimo, najprej povežite svojo denarnico",
+    "alreadyPending": "Zahteva že čaka. Preverite svojo denarnico.",
+    "error": "Dodajanje omrežja ni uspelo. Prosimo, dodajte ga ročno.",
+    "adding": "Dodajanje...",
+    "button": "Dodaj"
   },
   "tabs": {
     "convert": "Pretvorba",
     "bridge": "Most"
   },
   "convert": {
-    "token": "Žeton",
-    "selectToken": "Izberi Žeton",
     "balance": "Stanje",
-    "noConvertibleTokens": "Ni žetonov za pretvorbo na {{chainName}}",
-    "convert": "Pretvori",
-    "addToWalletLabel": "Uvozi {{symbol}} na {{chainName}} v denarnico",
     "addToWalletButton": "Uvozi v Denarnico",
-    "addingToken": "Dodajanje…",
-    "addTokenError": "Žetona ni bilo mogoče dodati v denarnico",
-    "legacyTokenMissing": "Manjka stari žeton za to verigo",
-    "tigerOGMissing": "Manjka TigerOG žeton za to verigo",
     "networkWarning": {
       "title": "Napačno Omrežje",
-      "message": "Pretvorba žetonov je na voljo samo na verigi BSC.",
-      "description": "Prosimo, preklopite na verigo BSC v svoji denarnici za pretvorbo žetonov ali pojdite na zavihek Most za prenos žetonov med verigami."
+      "message": "Pretvorba žetonov je na voljo samo na verigi BSC. Prosimo, preklopite na BSC za pretvorbo vaših starih žetonov."
+    },
+    "confirmModal": {
+      "title": "Potrdi Pretvorbo",
+      "warning": "Pripravljate se na pretvorbo svojih žetonov. Pred nadaljevanjem natančno preberite naslednje.",
+      "irreversible": "To dejanje je nepovratno!",
+      "burnExplanation": "Vaši žetoni {{legacySymbol}} bodo trajno uničeni (poslani na mrtvi naslov) in enaka količina žetonov {{newSymbol}} bo izkovana v vašo denarnico. Tega ni mogoče razveljaviti.",
+      "positiveNote": "Dobra stran: {{newSymbol}} je popolnoma brez davka — nič več 10%+ davkov na vsako transakcijo.",
+      "confirmQuestion": "Pretvorim {{amount}} {{legacySymbol}} v {{newSymbol}}?",
+      "confirmButton": "Razumem, Pretvori"
+    },
+    "finalConfirmModal": {
+      "title": "Ste Res Prepričani?",
+      "message": "To je vaša zadnja priložnost za preklic. Ko potrdite, bodo vaši {{legacySymbol}} pretvorjeni v {{newSymbol}} in jih ne bo mogoče pretvoriti nazaj.",
+      "confirmButton": "Da, Pretvori Zdaj"
     }
   },
   "bridge": {
@@ -56,9 +71,7 @@
     "noDestination": "Ni cilja",
     "noBridgeableTokens": "Ni mostnih žetonov",
     "bridgeButton": "Mostni Žetoni",
-    "getFeeQuote": "Pridobi Ponudbo za Provizijo",
-    "viewOnAxelarscan": "Ogled v Axelar Explorerju",
-    "addDestinationTokenLabel": "Uvozi {{symbol}} na {{chainName}} v denarnico",
+    "viewOnAxelarscan": "Ogled na Axelarscan",
     "addTokenError": "Žetona ni bilo mogoče dodati v denarnico",
     "estimatedTime": "Ocenjen čas",
     "recentTransactions": "Nedavne Transakcije",
@@ -74,25 +87,11 @@
     "cancel": "Prekliči",
     "save": "Shrani"
   },
-  "wallet": {},
-  "login": {
-    "title": "Dobrodošli nazaj",
-    "subtitle": "Prijavite se za nadaljevanje v Freedom Bridge",
-    "emailLabel": "E-pošta",
-    "emailPlaceholder": "ime@primer.com",
-    "passwordLabel": "Geslo",
-    "passwordPlaceholder": "Vnesite geslo",
-    "rememberMe": "Zapomni si me na tej napravi",
-    "submit": "Prijava",
-    "validation": {
-      "required": "E-pošta in geslo sta obvezna.",
-      "invalid": "Neveljavna e-pošta ali geslo."
-    }
-  },
   "landing": {
     "banner": {
       "title": "Nov tukaj?",
-      "message": "Spoznajte Freedom Bridge in kako premostiti TigerOG žetone prek verig."
+      "message": "Spoznajte Freedom Bridge in kako premostiti TigerOG žetone prek verig.",
+      "note": "Opomba: Pretvorba žetonov je trajna in je ni mogoče razveljaviti."
     },
     "hero": {
       "badge": "Poganja Axelar",
@@ -118,7 +117,7 @@
       },
       "conversion": {
         "title": "1:1 Pretvorba",
-        "description": "Skupna ponudba se nikoli ne spremeni. Žetoni so v varni migracijski pogodbi in uporabljen je natančen ekvivalent 1:1. Brez inflacije, brez redčenja."
+        "description": "Skupna ponudba se nikoli ne spremeni. Žetoni so v varni pretvorni pogodbi in uporabljen je natančen ekvivalent 1:1. Brez inflacije, brez redčenja."
       },
       "multichain": {
         "title": "Večverigovno",
@@ -130,14 +129,19 @@
         "button": "Začni Mostenje"
       }
     },
-    "teaser": {
-      "title": "Želite druge kovance?",
-      "subtitle": "Kaj menite o <lunc>LUNC</lunc>, <crepe>Crepe</crepe> ali <shiba>Shiba</shiba>"
-    },
     "cta": {
       "title": "Pripravljeni na mostenje?",
-      "description": "Pridružite se medverigovni revoluciji. Traja manj kot minuto, da ovijete svoja sredstva in začnete mostenje prek Axelar.",
+      "description": "Pridružite se medverigovni revoluciji. Traja manj kot minuto, da pretvorite svoje žetone in začnete mostenje prek Axelar.",
       "button": "Zaženi Aplikacijo Zdaj"
+    },
+    "buyTokens": {
+      "badge": "Začni",
+      "title": "Pridobi Sredstva",
+      "description": "Še nimate žetonov? Kupite originalne žetone na PancakeSwap, nato pa jih pretvorite v nove večverigovne različice.",
+      "buyOn": "Kupi na PancakeSwap",
+      "then": "nato",
+      "convertTo": "Pretvori v",
+      "buyNow": "Kupi Zdaj"
     }
   },
   "wiki": {
@@ -145,7 +149,7 @@
     "searchPlaceholder": "Išči dokumentacijo...",
     "header": {
       "title": "Dokumentacija",
-      "subtitle": "Naučite se, kako oviti stare žetone, mostiti med verigami in se integrirati s Freedom Bridge."
+      "subtitle": "Naučite se, kako pretvoriti stare žetone in mostiti med verigami."
     },
     "nav": {
       "gettingStarted": "Začetek",
@@ -153,12 +157,14 @@
       "developers": "Razvijalci",
       "tigerogSupply": "Ponudba TigerOG",
       "lionogSupply": "Ponudba LionOG",
-      "frogogSupply": "Ponudba FrogOG"
+      "frogogSupply": "Ponudba FrogOG",
+      "githubRepo": "GitHub Repozitorij",
+      "axelarDocs": "Dokumentacija Axelar ITS"
     },
     "articles": {
       "whatIs": {
         "title": "Kaj je Freedom Bridge?",
-        "content": "Freedom Bridge je decentraliziran protokol za mostenje, zgrajen na storitvi Axelar Interchain Token Service (ITS). Zasnovan je za osvoboditev žetonov omejitev ene verige in visokih davkov na transakcije. Z ovijanjem standardnih žetonov v medverigovno združljiva sredstva lahko uporabniki prosto premikajo svojo vrednost prek podprtih verig blokov.",
+        "content": "Freedom Bridge je decentraliziran protokol za mostenje, zgrajen na storitvi Axelar Interchain Token Service (ITS). Omogoča vam pretvorbo starih žetonov v neobdavčena, medverigovno združljiva sredstva, ki se lahko prosto gibljejo prek podprtih verig blokov.",
         "taxFreeTitle": "Prenosi Brez Davka",
         "taxFreeDesc": "Stari žetoni imajo pogosto 10%+ davke. TigerOG žetoni imajo 0% davek.",
         "omnichainTitle": "Interchain",
@@ -169,7 +175,7 @@
         "step1": "Povežite svojo denarnico z izvorno verigo (npr. BNB Chain).",
         "step2": "Pojdite na zavihek <strong>Pretvorba</strong>.",
         "step3": "Izberite stari žeton, ki ga želite pretvoriti.",
-        "step4": "Odobrite pogodbo Migration za porabo vaših žetonov.",
+        "step4": "Odobrite Pretvorni pogodbi porabo vaših žetonov.",
         "step5": "Kliknite <strong>Pretvori</strong>, da položite svoje stare žetone in prejmete enakovreden znesek \"TigerOG\" žetonov.",
         "note": "<strong>Opomba:</strong> Pretvorba povzroči davek na transakcijo starega žetona (med nadgradnjo), če vaš žeton zaračuna davek na prenose. Vendar pa so po pretvorbi v TigerOG vsi nadaljnji prenosi in mostenja brez tega davka."
       },
@@ -185,9 +191,9 @@
         "title": "Omrežje Axelar",
         "content": "Uporabljamo Axelar kot naš sloj interoperabilnosti. Axelar je decentralizirano omrežje, ki povezuje različne verige blokov, kar omogoča varno medverigovno komunikacijo in prenose sredstev. Varnostni model Axelar se zanaša na nabor validatorjev brez dovoljenj, kar zagotavlja visoko stopnjo varnosti za medverigovne žetone."
       },
-      "migration": {
-        "title": "Migracijska Logika",
-        "content": "Migracijska pogodba je nameščena na izvorni verigi (npr. BSC). V hrambi hrani izvirne stare žetone. Ko nadgradite žetone, položite v migracijsko pogodbo. Ko razvijete (če je podprto), sežgete predstavitev TigerOG, da sprostite izvirne žetone. To zagotavlja strogo podprto vezavo 1:1."
+      "conversion": {
+        "title": "Logika Pretvorbe",
+        "content": "Pretvorna pogodba je nameščena na BSC. Ko pretvorite, so vaši stari žetoni poslani na mrtvi naslov (trajno uničeni) in prejmete TigerOG v razmerju 1:1. To je enosmeren proces — stari žetoni so uničeni in jih ni mogoče nikoli obnoviti."
       },
       "contracts": {
         "title": "Naslovi Pametnih Pogodb",
@@ -198,7 +204,7 @@
       "security": {
         "title": "Varnostni Model",
         "content": "Varnost je vgrajena v vsako plast Freedom Bridge:",
-        "point1": "<strong>Migracijska Arhitektura:</strong> Stari žetoni se hranijo v preverjeni, nespremenljivi pametni pogodbi.",
+        "point1": "<strong>Pretvorna Arhitektura:</strong> Stari žetoni so trajno uničeni prek preverjenih, nespremenljivih pametnih pogodb.",
         "point2": "<strong>Validatorji Axelar:</strong> Medverigovna sporočila preverja decentralizirano omrežje Axelar.",
         "point3": "<strong>Dosledna Ponudba:</strong> ITS upravlja kovanje in sežiganje za vzdrževanje konstantne skupne ponudbe na vseh verigah.",
         "point4": "<strong>Revidirana Logika:</strong> Zgrajeno na standardnih knjižnicah Axelar in OpenZeppelin."
@@ -229,7 +235,7 @@
         "lpLockedDesc": "Likvidnostni bazen PancakeSwap vsebuje žetone BNBTiger, povezane z BNB. Ko so žetoni LP sežgani (poslani na mrtvi naslov), osnovni žetoni v bazenu postanejo trajno zaklenjeni.",
         "lpBurnedPercent": "Sežgani žetoni LP: 86.18% vseh žetonov LP",
         "lpLockedPercent": "Zato je 86.18% žetonov v LP trajno zaklenjenih",
-        "note": "<strong>Opomba:</strong> TigerOG ohranja razmerje 1:1 z BNBTiger med migracijo. Ponudba TigerOG v obtoku se ujema z resnično ponudbo BNBTiger v obtoku po upoštevanju vseh sežganih in zaklenjenih žetonov.",
+        "note": "<strong>Opomba:</strong> TigerOG ohranja razmerje 1:1 z BNBTiger med pretvorbo. Ponudba TigerOG v obtoku se ujema z resnično ponudbo BNBTiger v obtoku po upoštevanju vseh sežganih in zaklenjenih žetonov.",
         "launchData": "<strong>Podatki o Zagonu:</strong> Te številke so bile izračunane ob zagonu. Stari žeton BNBTiger še naprej sežiga žetone pri vsaki transakciji nakupa/prodaje, zato je dejanska ponudba v obtoku lahko nekoliko nižja od prikazane.",
         "legacyContract": "Pogodba Žetona BNBTiger",
         "ogContract": "Pogodba Žetona TigerOG",
@@ -254,7 +260,7 @@
         "lpLockedDesc": "Likvidnostni bazen PancakeSwap vsebuje žetone BNBLion, povezane z BNB. Ko so žetoni LP sežgani (poslani na mrtvi naslov), osnovni žetoni v bazenu postanejo trajno zaklenjeni.",
         "lpBurnedPercent": "Sežgani žetoni LP: 99.98% vseh žetonov LP",
         "lpLockedPercent": "Zato je 99.98% žetonov v LP trajno zaklenjenih",
-        "note": "<strong>Opomba:</strong> LionOG ohranja razmerje 1:1 z BNBLion med migracijo. Ponudba LionOG v obtoku se ujema z resnično ponudbo BNBLion v obtoku po upoštevanju vseh sežganih in zaklenjenih žetonov.",
+        "note": "<strong>Opomba:</strong> LionOG ohranja razmerje 1:1 z BNBLion med pretvorbo. Ponudba LionOG v obtoku se ujema z resnično ponudbo BNBLion v obtoku po upoštevanju vseh sežganih in zaklenjenih žetonov.",
         "launchData": "<strong>Podatki o Zagonu:</strong> Te številke so bile izračunane ob zagonu. Stari žeton BNBLion še naprej sežiga žetone pri vsaki transakciji nakupa/prodaje, zato je dejanska ponudba v obtoku lahko nekoliko nižja od prikazane.",
         "legacyContract": "Pogodba Žetona BNBLion",
         "ogContract": "Pogodba Žetona LionOG",
@@ -279,7 +285,7 @@
         "lpLockedDesc": "Likvidnostni bazen PancakeSwap vsebuje žetone BNBFrog, povezane z BNB. Ko so žetoni LP sežgani (poslani na mrtvi naslov), osnovni žetoni v bazenu postanejo trajno zaklenjeni.",
         "lpBurnedPercent": "Sežgani žetoni LP: 99.31% vseh žetonov LP",
         "lpLockedPercent": "Zato je 99.31% žetonov v LP trajno zaklenjenih",
-        "note": "<strong>Opomba:</strong> FrogOG ohranja razmerje 1:1 z BNBFrog med migracijo. Ponudba FrogOG v obtoku se ujema z resnično ponudbo BNBFrog v obtoku po upoštevanju vseh sežganih in zaklenjenih žetonov.",
+        "note": "<strong>Opomba:</strong> FrogOG ohranja razmerje 1:1 z BNBFrog med pretvorbo. Ponudba FrogOG v obtoku se ujema z resnično ponudbo BNBFrog v obtoku po upoštevanju vseh sežganih in zaklenjenih žetonov.",
         "launchData": "<strong>Podatki o Zagonu:</strong> Te številke so bile izračunane ob zagonu. Stari žeton BNBFrog še naprej sežiga žetone pri vsaki transakciji nakupa/prodaje, zato je dejanska ponudba v obtoku lahko nekoliko nižja od prikazane.",
         "legacyContract": "Pogodba Žetona BNBFrog",
         "ogContract": "Pogodba Žetona FrogOG",
@@ -310,13 +316,67 @@
       "liquidity": "Likvidnost"
     },
     "liquidity": {
-      "title": "Likvidnostni Bazeni"
-    }
+      "poolAddress": "Naslov Bazena",
+      "tradeOn": "Trguj na"
+    },
+    "overview": {
+      "interchainTokens": {
+        "title": "Medverigovni Žetoni",
+        "description": "Medverigovni žetoni, nameščeni prek Axelar Interchain Token Service (ITS). Ti žetoni ohranjajo dosledne naslove v vseh podprtih omrežjih."
+      },
+      "axelarNetwork": {
+        "title": "Omrežje Axelar",
+        "description": "Temeljni protokol sporočanja, ki varuje prenose med verigami in zagotavlja celovitost podatkov med različnimi verigami blokov."
+      },
+      "conversionContracts": {
+        "title": "Pretvorne Pogodbe",
+        "description": "Odgovorne za pretvorbo starih žetonov v medverigovna sredstva. Te pogodbe upravljajo logiko pologa in kovanja na izvorni verigi."
+      },
+      "conversionContractsTable": {
+        "title": "Naslovi Pretvornih Pogodb",
+        "subtitle": "Te pogodbe na BSC upravljajo pretvorbo iz starih žetonov v medverigovne žetone.",
+        "token": "Žeton",
+        "legacyToken": "Stari Žeton",
+        "conversionContract": "Pretvorna Pogodba",
+        "newToken": "Medverigovni Žeton"
+      },
+      "liquidityPools": {
+        "title": "Likvidnostni Bazeni",
+        "description": "DEX likvidnostni bazeni, kjer lahko trgujete z OG žetoni na različnih verigah."
+      },
+      "liquidityPoolsTable": {
+        "title": "Likvidnostni Bazeni",
+        "subtitle": "DEX bazeni za trgovanje z OG žetoni",
+        "token": "Žeton",
+        "chain": "Veriga",
+        "dex": "DEX",
+        "poolAddress": "Naslov Bazena"
+      }
+    },
+    "filterTokens": "Filtriraj žetone...",
+    "interchainAsset": "Medverigovno Sredstvo prek Axelar ITS",
+    "availableOnChains": "Na voljo na {{count}} verigah",
+    "table": {
+      "chain": "Veriga",
+      "tokenAddress": "Naslov Žetona",
+      "axelarChainName": "Ime Verige Axelar",
+      "chainId": "ID: {{id}}"
+    },
+    "axelarId": "Axelar ID: {{name}}",
+    "copied": "Kopirano!",
+    "copyAddress": "Kopiraj naslov"
   },
   "faq": {
     "title": "Podpora Freedom Bridge",
     "header": "Pogosta Vprašanja",
     "subtitle": "Odgovori na pogosta vprašanja o TigerOG, mostenju in Axelar.",
+    "sections": {
+      "gettingStarted": "Začetek",
+      "convertingTrading": "Pretvorba in Trgovanje",
+      "bridging": "Mostenje",
+      "technical": "Tehnično",
+      "securityRisks": "Varnost in Tveganja"
+    },
     "cta": {
       "title": "Imate še vedno vprašanja?",
       "description": "Pridružite se naši skupnosti na Telegramu ali preverite podrobni Wiki za tehnične vodnike.",
@@ -327,25 +387,112 @@
       "q1": "Kakšen je namen pretvorbe mojih žetonov?",
       "a1": "Pretvorba vaših žetonov v TigerOG odstrani davek na transakcijo (pogosto 10-12%), povezan s starim žetonom. Prav tako vam omogoča mostenje teh žetonov na druge verige blokov, kot so Ethereum, Base in druge, prek Axelar, kar omogoča dostop do novih ekosistemov.",
       "q2": "Ali je varno uporabljati Freedom Bridge?",
-      "a2": "Da. Protokol uporablja varno migracijsko pogodbo in storitev Axelar Interchain Token Service. Ko pretvorite, je vaš BNBTiger trajno sežgan in prejmete TigerOG v razmerju 1:1. Mehanizem sežiganja zagotavlja, da se skupna ponudba ustrezno upravlja na vseh verigah.",
+      "a2": "Da. Protokol uporablja varno pretvorno pogodbo in storitev Axelar Interchain Token Service. Ko pretvorite, je vaš BNBTiger trajno uničen in prejmete TigerOG v razmerju 1:1. Mehanizem uničenja zagotavlja, da se skupna ponudba ustrezno upravlja na vseh verigah.",
       "q3": "Ali obstajajo kakšne provizije?",
       "a3": "Freedom Bridge sam po sebi ne zaračunava provizije za pretvorbo. Plačate samo standardne pristojbine za plin verige blokov. Mostenje med verigami vključuje pristojbino za medverigovni plin, ki se plača Axelar za kritje stroškov posredovanja.",
       "q4": "Kaj se zgodi, če izgubim svoje žetone?",
       "a4": "TigerOG žetoni se obnašajo kot kateri koli drug žeton ERC20. Če izgubite dostop do svoje denarnice, jih ni mogoče obnoviti. Vedno varujte svoje zasebne ključe in fraze za obnovitev.",
       "q5": "Ali lahko svoje TigerOG žetone pretvorim nazaj v BNBTiger?",
-      "a5": "Ne. Migracija je enosmerna pretvorba. Ko pretvorite BNBTiger v TigerOG, so vaši žetoni BNBTiger trajno sežgani (poslani na mrtvi naslov). To je namerno — TigerOG je nadgrajena, neobdavčena različica, namenjena popolni zamenjavi starega žetona.",
+      "a5": "Ne. Pretvorba je enosmeren proces. Ko pretvorite BNBTiger v TigerOG, so vaši žetoni BNBTiger trajno zaklenjeni v pretvorni pogodbi (uničeni). To je namerno — TigerOG je nadgrajena, neobdavčena različica, namenjena popolni zamenjavi starega žetona.",
       "q6": "Katera omrežja so podprta?",
       "a6": "Podpiramo več verig EVM prek Axelar, vključno z BNB Chain, Ethereum, Base in drugimi. Preverite Wiki za celoten seznam podprtih omrežij.",
       "q7": "Kako dolgo traja mostenje?",
-      "a7": "Hitrost mostenja je odvisna od dokončnosti izvorne verige in posredovanja Axelar. Običajno prenos med verigami traja približno 2-5 minut.",
+      "a7": "Čas mostenja je odvisen od tega, iz katere verige pošiljate:\n\n• Ethereum: 15-20 min (potrebuje več potrditev)\n• BSC & Avalanche: 2-4 min (najhitreje)\n• Base, Linea, Polygon: 3-5 min\n\nAplikacija prikaže ocenjen čas pred mostenjem.",
       "q8": "Kakšne so ponudbe OG žetonov v obtoku?",
-      "a8": "Vsak OG žeton ima fiksno ponudbo v obtoku, ki izhaja iz izvirnega žetona BNB, ob upoštevanju sežganih žetonov, zataknjenih stanj pogodb in zaklenjenih LP. TigerOG: ~3.66 septilijona (36.62% izvirnika). LionOG: ~3.83 septilijona (38.33% izvirnika). FrogOG: ~8.39 septilijona (83.86% izvirnika). Glejte Wiki za podrobne razčlenitve."
+      "a8": "Vsak OG žeton ima fiksno ponudbo v obtoku, ki izhaja iz izvirnega žetona BNB, ob upoštevanju uničenih žetonov, zataknjenih stanj pogodb in zaklenjenih LP. TigerOG: ~3.66 septilijona (36.62% izvirnika). LionOG: ~3.83 septilijona (38.33% izvirnika). FrogOG: ~8.39 septilijona (83.86% izvirnika). Glejte Wiki za podrobne razčlenitve.",
+      "q9": "Zakaj se OG pogodbi niso odrekli (renounced)?",
+      "a9": "Odrekanje pogodbi bi odstranilo možnost razvoja in dodajanja novih verig v prihodnosti. Čeprav se pogodbi v bližnji prihodnosti ne bomo odrekli, so za vsako spremembo potrebni večkratni podpisi. Prav tako ekipi niso dodeljeni nobeni žetoni ali davki.",
+      "q10": "Zakaj je OG pogodba kovljiva (mintable)?",
+      "a10": "Mostenje med verigami zahteva funkcionalnost kovanja/uničenja - žetoni se uničijo, ko zapustijo verigo, in izkujejo, ko prispejo. To ohranja konstantno skupno ponudbo v vseh omrežjih. Kovanje nadzoruje multisig Safe denarnica.",
+      "q11": "Ali TigerOG zapušča BNB Chain za Axelar?",
+      "a11": "Ne. Axelar ni veriga blokov - je mostni protokol, ki povezuje verige skupaj. BNB Chain ostaja izvorna veriga, kjer pretvarjate stare žetone. Axelar preprosto omogoča vašim žetonom premikanje med BNB, Ethereum, Base in drugimi podprtimi omrežji.",
+      "q12": "Kje so moji žetoni?",
+      "a12": "Prepričajte se, da ste v svojo denarnico dodali verigo in naslov žetona. Vse naslove pogodb najdete na strani Pogodbe. Ekipa Tiger uporablja denarnico Rabby, ki olajša upravljanje več verig.",
+      "q13": "Zakaj mostenje iz Ethereuma ali Base traja tako dolgo?",
+      "a13": "Ethereum zahteva dve epohi pred dokončanjem transakcij za maksimalno varnost. Ker se Base poravnava na Ethereumu, podeduje to zamudo. To daje prednost varnosti pred hitrostjo - vaši žetoni so varni, bodite potrpežljivi.",
+      "q14": "Kaj se zgodi, če ostanem pri svojem izvirnem žetonu in ne pretvorim?",
+      "a14": "S pretvorbo ni treba hiteti. BNBTiger in TigerOG bosta vedno imela različne likvidnostne bazene, tržne kapitalizacije in tako naprej. Toda BNBTiger ima visok davek, TigerOG pa nima davka za trgovanje. Ker se davki na izvirniku ne uporabljajo za podporo projektu, razvoj za TigerOG izvaja ekipa CTO. Freedom Bridge in multi-chain sta samo za TigerOG.",
+      "q15": "Ali obstaja davek za pretvorbo? Ali ima TigerOG davek?",
+      "a15": "Ne. Pretvorba in trgovanje stane samo običajno pristojbino za plin. Ni dodatnih davkov ali pristojbin, TigerOG pa je pogodba brez davka.",
+      "q16": "Ali lahko kupim in trgujem s TigerOG neposredno?",
+      "a16": "Še ne. Ekipa ni zbrala pristojbin in davkov, da bi lahko financirala dovolj velike likvidnostne bazene. Če želite zdaj dobiti TigerOG, morate kupiti ali že imeti izvirnik in ga pretvoriti. Ko boste imeli TigerOG, z njim ne bo lahko trgovati, dokler ne pridejo vlagatelji, da bi dodali v likvidnostni bazen.",
+      "q17": "Zakaj je tržna kapitalizacija TigerOG videti tako napihnjena?",
+      "a17": "Manjši kot je likvidnostni bazen, večji vpliv ima vsaka majhna transakcija na prikazano tržno kapitalizacijo. To se reši, ko vlagatelji postanejo ponudniki likvidnosti.",
+      "q18": "Kakšne varnostne revizije so bile opravljene?",
+      "a18": "Freedom Bridge ni opravil formalne revizije tretje osebe. Vendar pa koda pretvorne pogodbe temelji na pretvorniku SHx, ki ga je zgradila ekipa Stronghold (nekdanji razvijalci XRP in Stellar, ki so pred kratkim predstavili v Davosu). Mostno infrastrukturo poganja Axelar, ki je opravil več varnostnih revizij.",
+      "q19": "Kako Freedom Bridge ščiti pred hekerji ali izkoriščanjem?",
+      "a19": "Vzpostavljenih je več ukrepov:\n\n• Pretvornik hrani le točno potrebno ponudbo v obtoku - brez presežnih žetonov, ki bi jih bilo mogoče izkoristiti\n• Pretvornik nima dovoljenj za kovanje\n• Vsa koda pogodbe je preverjena na verigi in je odprtokodna\n• Dovoljenja za žetone so zavarovana v multisig denarnici Safe.global\n• Mostenje upravlja infrastruktura Axelar, preizkušena v boju",
+      "q20": "Ali je mostenje nepovratno? Kaj če prenos ne uspe?",
+      "a20": "Prenosi prek mostu se lahko redko zataknejo zaradi nezadostnega plina ali prezasedenosti omrežja. Če se to zgodi, lahko spremljate svojo transakcijo na Axelarscan in ročno dodate plin za dokončanje. Axelar ponuja orodja za obnovitev transakcij - ne boste izgubili svojih žetonov.",
+      "q21": "Kakšna so tveganja, povezana z uporabo Freedom Bridge?",
+      "a21": "Tako kot pri vsakem protokolu DeFi obstajajo inherentna tveganja, vključno s tveganjem pametne pogodbe, tveganjem mostu in volatilnostjo trga. Priporočamo, da opravite lastno raziskavo (DYOR) in uporabite samo sredstva, ki si jih lahko privoščite izgubiti. Za več informacij glejte našo pravno izjavo.",
+      "q22": "Ali lahko pretvorim novo pogodbo BNB Tiger Inu (september 2025)?",
+      "a22": "Ne. Freedom Bridge podpira originalni/stari žeton BNB Tiger, ki je bil lansiran pred nekaj leti - ne nove pogodbe, ustvarjene septembra 2025. Freedom Bridge je bil zgrajen za prevzem skupnosti (CTO) originalnih žetonov Tiger, Lion in Frog.",
+      "q23": "Kako dodam likvidnost?",
+      "a23": "Dodajanje likvidnosti je napredna dejavnost DeFi s tveganji, vključno z nestalno izgubo. Če imate izkušnje z zagotavljanjem likvidnosti na DEX-ih, kot sta PancakeSwap ali Uniswap, je postopek enak - združite žeton OG z osnovnim sredstvom. Tukaj je odličen izobraževalni video o likvidnosti, če želite izvedeti več: https://www.youtube.com/watch?v=oiylIHvwMik&list=PL_ujg_v1hZ5iGtiuhT8NkSMqEOaLAgmUu",
+      "q24": "Ali lahko ekipa naredi 'rug pull'?",
+      "a24": "Ne. Mehanizma za 'rug pull' ni. Ekipi niso dodeljeni nobeni žetoni ali davki in ne pobiramo nobenih provizij za mostenje — te gredo Axelarju za stroške posredovanja. Ekipa so imetniki, tako kot vi, ki to gradijo na lastne stroške. Edina denarnica ekipe je javna marketinška denarnica, financirana z donacijami skupnosti. Multisig Safe denarnica nadzoruje dovoljenja pogodbe, kot je začasna ustavitev pošiljanja v verige v nujnih primerih, vendar ne more dostopati do sredstev uporabnikov ali jih preusmeriti."
     }
+  },
+  "footer": {
+    "wiki": "Wiki",
+    "contracts": "Pogodbe",
+    "faq": "Pogosta Vprašanja",
+    "disclaimer": "Izjava o Omejitvi Odgovornosti",
+    "github": "GitHub"
+  },
+  "disclaimer": {
+    "title": "Pravna Izjava o Omejitvi Odgovornosti",
+    "header": "Pomembno Pravno Obvestilo",
+    "subtitle": "Pred uporabo Freedom Bridge natančno preberite to izjavo o omejitvi odgovornosti.",
+    "sections": {
+      "noInvestmentAdvice": {
+        "title": "Brez Investicijskega Svetovanja",
+        "content": "Informacije, navedene na Freedom Bridge, ne predstavljajo investicijskega svetovanja, finančnega svetovanja, trgovalnega svetovanja ali katere koli druge vrste svetovanja. Nobene vsebine ne smete obravnavati kot take. Freedom Bridge ne priporoča, da kupite, prodate ali hranite katero koli kriptovaluto. Pred sprejemanjem kakršnih koli investicijskih odločitev opravite lasten skrbni pregled in se posvetujte s svojim finančnim svetovalcem."
+      },
+      "risksOfUse": {
+        "title": "Tveganja Uporabe",
+        "content": "Trgi kriptovalut so volatilni in nepredvidljivi. Z uporabo Freedom Bridge potrjujete in sprejemate, da:\n\n• Pametne pogodbe lahko vsebujejo hrošče ali ranljivosti, ki bi lahko povzročile izgubo sredstev\n• Mostovi med verigami nosijo inherentna tveganja, vključno z, vendar ne omejeno na: okvare orakljev, dogovarjanje validatorjev in prezasedenost omrežja\n• Vrednosti žetonov lahko dramatično nihajo in lahko izgubite del ali celotno naložbo\n• Transakcije v omrežjih veriženja blokov so nepovratne\n• Omrežne pristojbine in stroški plina so zunaj našega nadzora in se lahko znatno razlikujejo"
+      },
+      "noWarranties": {
+        "title": "Brez Jamstev",
+        "content": "Freedom Bridge je na voljo \"takšen, kot je\" in \"kot je na voljo\" brez kakršnih koli jamstev, izrecnih ali implicitnih. Ne jamčimo, da bo storitev neprekinjena, varna ali brez napak. Ne dajemo nobenih jamstev glede točnosti, zanesljivosti ali popolnosti kakršnih koli informacij, posredovanih prek platforme."
+      },
+      "limitationOfLiability": {
+        "title": "Omejitev Odgovornosti",
+        "content": "V največjem obsegu, ki ga dovoljuje zakon, Freedom Bridge, njegovi razvijalci, sodelavci in podružnice ne odgovarjajo za nobeno neposredno, posredno, naključno, posebno, posledično ali kaznovalno škodo, ki izhaja iz ali je povezana z vašo uporabo platforme, vključno z, vendar ne omejeno na izgubo dobička, izgubo podatkov ali izgubo sredstev kriptovalut."
+      },
+      "thirdPartyServices": {
+        "title": "Storitve Tretjih Oseb",
+        "content": "Freedom Bridge se integrira s storitvami tretjih oseb, vključno z omrežjem Axelar za mostenje med verigami. Nismo odgovorni za dejanja, vsebino, informacije ali podatke teh tretjih oseb. Vaša uporaba storitev tretjih oseb je predmet njihovih pogojev."
+      },
+      "regulatoryCompliance": {
+        "title": "Skladnost s Predpisi",
+        "content": "Predpisi o kriptovalutah se razlikujejo glede na jurisdikcijo. Izključno vi ste odgovorni za zagotavljanje, da je vaša uporaba Freedom Bridge v skladu z vsemi veljavnimi zakoni in predpisi v vaši jurisdikciji. Freedom Bridge ne daje nobenih zagotovil glede zakonitosti storitev v kateri koli jurisdikciji."
+      },
+      "dyor": {
+        "title": "Opravite Lastno Raziskavo (DYOR)",
+        "content": "Pred interakcijo s katerim koli protokolom DeFi vedno opravite lastno raziskavo (DYOR). Preverite naslove pogodb, razumite mehaniko katerega koli žetona, s katerim komunicirate, in nikoli ne vlagajte več, kot si lahko privoščite izgubiti."
+      }
+    },
+    "acknowledgment": "Z uporabo Freedom Bridge potrjujete, da ste prebrali, razumeli in se strinjate, da vas ta izjava zavezuje.",
+    "lastUpdated": "Zadnja posodobitev: Januar 2026"
+  },
+  "disclaimerModal": {
+    "title": "Pomembna Izjava o Omejitvi Odgovornosti",
+    "subtitle": "Prosimo, preberite in potrdite pred nadaljevanjem.",
+    "noAdvice": "Freedom Bridge ne zagotavlja investicijskega, finančnega ali trgovalnega svetovanja. Naložbe v kriptovalute so volatilne in tvegane.",
+    "risks": "Z uporabo te platforme potrjujete, da lahko pametne pogodbe vsebujejo ranljivosti, mostovi med verigami nosijo inherentna tveganja in so transakcije nepovratne.",
+    "dyor": "Vedno opravite lastno raziskavo (DYOR) in uporabite samo sredstva, ki si jih lahko privoščite izgubiti.",
+    "fullDisclaimer": "Za vse podrobnosti glejte našo",
+    "fullDisclaimerLink": "Pravno Izjavo o Omejitvi Odgovornosti",
+    "accept": "Razumem in Sprejemam"
   },
   "common": {
     "from": "Od",
     "to": "Do",
     "max": "MAKS",
+    "cancel": "Prekliči",
     "chainId": "ID Verige",
     "bscChain": "Veriga BSC",
     "insufficientBalance": "Nezadostno stanje.",

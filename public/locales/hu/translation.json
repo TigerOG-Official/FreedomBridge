@@ -4,6 +4,7 @@
     "titleBridge": "Híd"
   },
   "nav": {
+    "home": "Főoldal",
     "settings": "Beállítások",
     "menu": "Menü",
     "preferences": "Beállítások",
@@ -45,6 +46,23 @@
     "networkWarning": {
       "title": "Rossz hálózat",
       "message": "A token átváltás csak a BSC Chain-en érhető el. Kérjük, váltson BSC-re a régi tokenek átváltásához."
+    },
+    "confirmModal": {
+      "title": "Átváltás megerősítése",
+      "warning": "Éppen átváltani készül tokenjeit. Kérjük, olvassa el figyelmesen a következőket a folytatás előtt.",
+      "irreversible": "Ez a művelet visszafordíthatatlan!",
+      "burnExplanation": "A(z) {{legacySymbol}} tokenjei véglegesen elégetésre kerülnek a halott címre küldéssel, és egyenértékű {{newSymbol}} tokenek lesznek verve. Nem állíthatók vissza vagy válthatók vissza.",
+      "positiveNote": "Pozitívum: A(z) {{newSymbol}} teljesen adómentes, lehetővé téve a szabad átutalást, kereskedést vagy áthidalást adóköltségek nélkül.",
+      "confirmQuestion": "Átváltja a(z) {{amount}} {{legacySymbol}}-t {{newSymbol}}-ra?",
+      "confirmButton": "Megértettem, Átváltás"
+    },
+    "finalConfirmModal": {
+      "title": "Végső megerősítés",
+      "message": "Írja be a <1>megerősít</1> szót alább az átváltás folytatásához.",
+      "inputPlaceholder": "Írja be: 'megerősít' a folytatáshoz",
+      "confirmWord": "megerősít",
+      "confirmButton": "Átváltás megerősítése",
+      "converting": "Átváltás..."
     }
   },
   "bridge": {
@@ -296,7 +314,8 @@
     "tabs": {
       "overview": "Áttekintés",
       "byToken": "Token szerint",
-      "byChain": "Lánc szerint"
+      "byChain": "Lánc szerint",
+      "liquidity": "Likviditás"
     },
     "overview": {
       "interchainTokens": {
@@ -318,7 +337,35 @@
         "legacyToken": "Régi Token",
         "conversionContract": "Átváltási Szerződés",
         "newToken": "Interchain Token"
+      },
+      "liquidityPools": {
+        "title": "Likviditási Poolok",
+        "description": "A likviditási poolok kereskedési mélységet biztosítanak az OG tokeneknek a támogatott láncokon. Ezek a poolok lehetővé teszik a vételt és eladást híd használata nélkül."
+      },
+      "liquidityPoolsTable": {
+        "title": "Aktív Likviditási Poolok",
+        "subtitle": "Ellenőrzött likviditási poolok az OG tokenekhez támogatott DEX-eken.",
+        "token": "Token",
+        "chain": "Lánc",
+        "dex": "DEX",
+        "pair": "Pár",
+        "poolAddress": "Pool Cím"
       }
+    },
+    "liquidity": {
+      "title": "Likviditási Poolok",
+      "subtitle": "Mély likviditás a támogatott láncokon",
+      "description": "Az OG tokenek likviditási poolokkal rendelkeznek több láncon, lehetővé téve a kereskedést áthidalás nélkül. Ezek a poolok mélységet biztosítanak a közvetlen vételhez és eladáshoz minden láncon.",
+      "availablePools": "Elérhető Poolok",
+      "token": "Token",
+      "chain": "Lánc",
+      "dex": "DEX",
+      "pair": "Pár",
+      "poolAddress": "Pool Cím",
+      "trade": "Kereskedés",
+      "noPools": "Ehhez a tokenhez nem érhetők el likviditási poolok.",
+      "addLiquidity": "Likviditás hozzáadása",
+      "removeLiquidity": "Likviditás kivonása"
     },
     "filterTokens": "Tokenek szűrése...",
     "interchainAsset": "Interchain Eszköz az Axelar ITS-en keresztül",
@@ -337,6 +384,12 @@
     "title": "Szabadság Híd Támogatás",
     "header": "Gyakran Ismételt Kérdések",
     "subtitle": "Válaszok a TigerOG-val, az áthidalással és az Axelar-ral kapcsolatos gyakori kérdésekre.",
+    "sections": {
+      "general": "Általános",
+      "conversion": "Átváltás",
+      "bridging": "Áthidalás",
+      "security": "Biztonság"
+    },
     "cta": {
       "title": "Még mindig vannak kérdései?",
       "description": "Csatlakozzon közösségünkhöz a Telegramon, vagy tekintse meg a részletes Wikit technikai útmutatókért.",
@@ -359,13 +412,101 @@
       "q7": "Mennyi ideig tart az áthidalás?",
       "a7": "Az áthidalási sebesség a forráslánc véglegességétől és az Axelar továbbításától függ. Jellemzően a láncközi átutalás körülbelül 2-5 percet vesz igénybe.",
       "q8": "Mennyi a forgalomban lévő kínálata az OG tokeneknek?",
-      "a8": "Minden OG token rögzített forgalomban lévő kínálattal rendelkezik, amely az eredeti BNB tokenjéből származik, figyelembe véve az elégetett tokeneket, a beragadt szerződéses egyenlegeket és a zárolt LP-t. TigerOG: ~3,66 szeptillió (az eredeti 36,62%-a). LionOG: ~3,83 szeptillió (az eredeti 38,33%-a). FrogOG: ~8,39 szeptillió (az eredeti 83,86%-a). Lásd a Wikit az egyes tokenek részletes bontásáért."
+      "a8": "Minden OG token rögzített forgalomban lévő kínálattal rendelkezik, amely az eredeti BNB tokenjéből származik, figyelembe véve az elégetett tokeneket, a beragadt szerződéses egyenlegeket és a zárolt LP-t. TigerOG: ~3,66 szeptillió (az eredeti 36,62%-a). LionOG: ~3,83 szeptillió (az eredeti 38,33%-a). FrogOG: ~8,39 szeptillió (az eredeti 83,86%-a). Lásd a Wikit az egyes tokenek részletes bontásáért.",
+      "q9": "Mi az Axelar?",
+      "a9": "Az Axelar egy decentralizált interoperabilitási hálózat, amely összeköti a blokkláncokat, lehetővé téve a biztonságos kommunikációt és eszközátvitelt a láncok között. Működteti a Freedom Bridge-et a tokenek hálózatok közötti áthidalásához.",
+      "q10": "Hogyan működik az áthidalás?",
+      "a10": "Amikor áthidal tokeneket, azok elégetésre kerülnek a forrásláncon és verésre a célláncon az Axelar Interchain Token Service-en keresztül. Ez következetes teljes kínálatot tart fenn minden láncon.",
+      "q11": "Szükségem van ETH/BNB-re a gázdíjakhoz?",
+      "a11": "Igen, szüksége van a lánc natív valutájára a gázdíjakhoz. A BSC-hez BNB kell. Az Ethereumhoz ETH kell. Az áthidaláshoz a célláncon is szükség van gázra, amelyet előre fizet.",
+      "q12": "Mi van, ha elakad a tranzakcióm?",
+      "a12": "Az Axelar tranzakciók jellemzően 2-5 percen belül befejeződnek. Ha a tranzakciója hosszabb ideig marad függőben, ellenőrizheti az állapotot az Axelarscan-en a tranzakciós hash segítségével. A legtöbb probléma magától megoldódik, miközben a validátorok feldolgozzák az üzenetet.",
+      "q13": "Vissza tudok hidalatni a BSC-re?",
+      "a13": "Igen! Az áthidalás kétirányú. Áthidalhatja a TigerOG-t bármelyik támogatott láncról vissza a BSC-re vagy bármelyik más támogatott láncra.",
+      "q14": "Miért kellene másik láncra hidalnom?",
+      "a14": "Az áthidalás hozzáférést biztosít különböző DeFi ökoszisztémákhoz, potenciálisan alacsonyabb gázdíjakhoz és új kereskedési lehetőségekhez. Minden lánc egyedi előnyökkel és közösséggel rendelkezik.",
+      "q15": "Van minimum összeg az áthidaláshoz?",
+      "a15": "A protokoll által megszabott minimum nincs, de a tranzakciónak fedeznie kell a gázdíjakat. Nagyon kis összegek esetén az áthidalás nem biztos, hogy megéri a gázköltségek miatt.",
+      "q16": "Ellenőrzöttek a szerződések?",
+      "a16": "Igen, a Freedom Bridge-ben használt összes okosszerződés ellenőrzött és megtekinthető a blokklánc felfedezőkön. Szabványos OpenZeppelin könyvtárakat és Axelar ITS implementációkat használnak.",
+      "q17": "Ki irányítja a Freedom Bridge-et?",
+      "a17": "A Freedom Bridge megváltoztathatatlan átváltási szerződéseket és az Axelar decentralizált validátor hálózatát használja. Nincs központosított entitás, amely irányítaná az áthidalást vagy átváltásokat.",
+      "q18": "Mi van, ha az Axelar leáll?",
+      "a18": "Az Axelar egy decentralizált hálózat több validátorral. Ha néhány validátor offline, a hálózat továbbra is működik. Azonban átmeneti torlódás lelassíthatja a tranzakciók feldolgozását.",
+      "q19": "Visszavonható az átváltás?",
+      "a19": "Nem. Az átváltás végleges és visszafordíthatatlan. A régi tokenek elégetésre kerülnek (a halott címre küldve), és soha nem állíthatók vissza. Ellenőrizze az összegeket megerősítés előtt.",
+      "q20": "Hogyan adhatom hozzá a TigerOG-t a tárcámhoz?",
+      "a20": "Használja az 'Importálás a tárcába' gombot az átváltás után, vagy manuálisan adja hozzá a token címét a Szerződések oldalról. A cím minden EVM láncon ugyanaz.",
+      "q21": "Miért lenne jobb nekem a TigerOG, mint a BNBTiger?",
+      "a21": "A TigerOG-nak nincs tranzakciós adója (a BNBTiger-nek ~10% adója van), áthidalható több láncra, és modern token implementációval rendelkezik. Ez sokkal olcsóbbá teszi a kereskedést, áthidalást és használatot.",
+      "q22": "Nőni fog az egyenlegem tükrözések révén?",
+      "a22": "Nem. A TigerOG nem használ tükrözési mechanizmust, ellentétben a régi BNBTiger tokennel. Az egyenlege rögzített marad, hacsak nem kereskedik vagy hidalat aktívan.",
+      "q23": "Vásárolhatok TigerOG-t közvetlenül?",
+      "a23": "A TigerOG kereskedhető a támogatott láncok likviditási pooljain. Tekintse meg a Likviditás fület a Szerződések oldalon az elérhető kereskedési párokért.",
+      "q24": "Ez egy rug pull?",
+      "a24": "Nem. A Freedom Bridge átlátható, ellenőrzött szerződéseket használ, admin funkciók nélkül az alapok manipulálására. Az átváltási szerződések megváltoztathatatlanok, és a likviditás zárolva van. Minden kód nyílt forráskódú és ellenőrzött a blokkláncon."
     }
+  },
+  "footer": {
+    "builtWith": "Készült",
+    "by": "által",
+    "rights": "Minden jog fenntartva.",
+    "github": "GitHub",
+    "twitter": "Twitter",
+    "telegram": "Telegram",
+    "dextools": "DexTools"
+  },
+  "disclaimer": {
+    "title": "Jogi nyilatkozat",
+    "subtitle": "Fontos információk a Freedom Bridge használatáról",
+    "sections": {
+      "noFinancialAdvice": {
+        "title": "Nem pénzügyi tanács",
+        "content": "A Freedom Bridge-en keresztül nyújtott információk kizárólag tájékoztató jellegűek, és nem minősülnek pénzügyi, befektetési, jogi vagy egyéb szakmai tanácsadásnak. Mindig végezze el saját kutatását, és konzultáljon képzett szakemberekkel bármilyen pénzügyi döntés meghozatala előtt."
+      },
+      "useAtOwnRisk": {
+        "title": "Használat saját felelősségre",
+        "content": "A Freedom Bridge használata teljes mértékben saját felelősségre történik. A protokoll 'ahogy van' és 'ahogy elérhető' alapon működik, bármilyen garancia nélkül, legyen az kifejezett vagy hallgatólagos. Nem garantáljuk a szolgáltatásainkhoz való folyamatos, megszakítás nélküli vagy biztonságos hozzáférést."
+      },
+      "smartContractRisks": {
+        "title": "Okosszerződés kockázatok",
+        "content": "Az okosszerződésekkel való interakció eredendő kockázatokkal jár, beleértve, de nem kizárólagosan a kódhibákat, sebezhetőségeket és kihasználásokat. Bár szerződéseink ellenőrzöttek és teszteltek, minden kockázatot nem lehet kiküszöbölni. Soha ne fektessen be többet, mint amennyit megengedhet magának veszteségként."
+      },
+      "irreversibleTransactions": {
+        "title": "Visszafordíthatatlan tranzakciók",
+        "content": "Minden blokklánc tranzakció, beleértve az átváltásokat és áthidalásokat, végleges és visszafordíthatatlan. Ellenőrizze az összes tranzakciós adatot megerősítés előtt. Az elveszett vagy rosszul küldött tokenek nem biztos, hogy visszaszerezhetők."
+      },
+      "thirdPartyServices": {
+        "title": "Harmadik fél szolgáltatások",
+        "content": "A Freedom Bridge harmadik fél szolgáltatásokra támaszkodik, beleértve az Axelar Networkot a láncközi áthidaláshoz. Nem vagyunk felelősek semmilyen problémáért, késedelemért vagy veszteségért, amely ezekből a külső szolgáltatásokból ered."
+      },
+      "regulatoryCompliance": {
+        "title": "Szabályozási megfelelés",
+        "content": "A felhasználók kizárólagos felelősséggel tartoznak a joghatóságukban alkalmazandó törvények és szabályozások betartásáért. A Freedom Bridge nem biztos, hogy minden régióban elérhető, és a felhasználóknak ellenőrizniük kell a hozzáférés jogszerűségét a területükön."
+      }
+    },
+    "lastUpdated": "Utoljára frissítve",
+    "agreement": "A Freedom Bridge használatával elismeri, hogy elolvasta, megértette és elfogadja ezt a jogi nyilatkozatot."
+  },
+  "disclaimerModal": {
+    "title": "Jogi nyilatkozat",
+    "description": "Kérjük, olvassa el figyelmesen a folytatás előtt.",
+    "openSource": "A Freedom Bridge egy nyílt forráskódú szoftver. A protokoll használatával elfogadja a következőket:",
+    "noGuarantees": "Nincs garancia",
+    "noGuaranteesText": "Ez a szoftver 'ahogy van' állapotban biztosított, mindenféle garancia nélkül. Használat saját felelősségre.",
+    "irreversible": "Visszafordíthatatlan műveletek",
+    "irreversibleText": "A token átváltások és áthidalások véglegesek és nem vonhatók vissza. Ellenőrizzen minden részletet.",
+    "userResponsibility": "Felhasználói felelősség",
+    "userResponsibilityText": "Ön kizárólagos felelősséggel tartozik tranzakcióiért és a helyi törvényeknek való megfelelésért.",
+    "readMore": "Bővebben",
+    "checkboxLabel": "Megértem és elfogadom ezeket a feltételeket",
+    "continueButton": "Folytatás"
   },
   "common": {
     "from": "Innen",
     "to": "Ide",
     "max": "MAX",
+    "cancel": "Mégse",
     "chainId": "Lánc ID",
     "bscChain": "BSC Chain",
     "insufficientBalance": "Elégtelen egyenleg.",

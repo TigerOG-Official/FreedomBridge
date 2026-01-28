@@ -4,6 +4,7 @@
     "titleBridge": "橋樑"
   },
   "nav": {
+    "home": "主頁",
     "settings": "設定",
     "menu": "目錄",
     "preferences": "偏好設定",
@@ -16,36 +17,49 @@
     "wiki": "文件 / Wiki",
     "contracts": "合約",
     "faq": "常見問題",
-    "logout": "登出",
     "language": "語言",
     "languageSearchPlaceholder": "搵語言",
     "languageNoResults": "搵唔到語言",
     "close": "閂咗佢"
   },
   "addNetworks": {
-    "title": "加網絡",
-    "description": "撳下面個掣加網絡入你個錢包。咁樣測試嗰陣轉鏈就容易好多。"
+    "title": "加網絡入錢包",
+    "description": "撳任何一個網絡嚟加佢入 MetaMask、Rabby 或者其他 Web3 錢包",
+    "searchPlaceholder": "搵網絡...",
+    "noResults": "搵唔到網絡",
+    "networkCount": "個網絡"
+  },
+  "addNetwork": {
+    "connectWallet": "請先連接你個錢包",
+    "alreadyPending": "請求處理緊。檢查下你個錢包。",
+    "error": "加唔到網絡。請手動加。",
+    "adding": "加緊...",
+    "button": "加"
   },
   "tabs": {
     "convert": "轉換",
     "bridge": "橋接"
   },
   "convert": {
-    "token": "代幣",
-    "selectToken": "揀代幣",
     "balance": "餘額",
-    "noConvertibleTokens": "喺 {{chainName}} 冇可以轉換嘅代幣",
-    "convert": "轉換",
-    "addToWalletLabel": "將 {{chainName}} 上嘅 {{symbol}} 加落錢包",
     "addToWalletButton": "加落錢包",
-    "addingToken": "加緊...",
-    "addTokenError": "加唔到代幣落錢包",
-    "legacyTokenMissing": "呢條鏈冇咗個舊代幣",
-    "tigerOGMissing": "呢條鏈冇咗個 TigerOG 代幣",
     "networkWarning": {
       "title": "網絡唔啱",
-      "message": "代幣轉換淨係可以喺 BSC 鏈度做。",
-      "description": "唔該轉去你錢包入面嘅 BSC 鏈嚟轉換代幣，或者去橋接嗰頁將代幣轉去其他鏈。"
+      "message": "代幣轉換淨係可以喺 BSC 鏈度做。唔該轉去 BSC 嚟轉換你嘅舊代幣。"
+    },
+    "confirmModal": {
+      "title": "確認轉換",
+      "warning": "你準備轉換你嘅代幣。請喺繼續之前仔細閱讀以下內容。",
+      "irreversible": "呢個動作係返唔到轉頭㗎！",
+      "burnExplanation": "你嘅 {{legacySymbol}} 代幣會永久銷毀，然後會有等量嘅 {{newSymbol}} 代幣鑄造入你個錢包度。呢個過程係不可逆轉。",
+      "positiveNote": "好處係：{{newSymbol}} 係完全免稅 —— 唔會再每單交易收 10%+ 稅。",
+      "confirmQuestion": "將 {{amount}} {{legacySymbol}} 轉換做 {{newSymbol}}？",
+      "confirmButton": "我明白，轉換"
+    },
+    "finalConfirmModal": {
+      "title": "你真係肯定？",
+      "message": "呢個係你最後取消嘅機會。一旦確認，你嘅 {{legacySymbol}} 就會轉做 {{newSymbol}}，而且轉唔返轉頭。",
+      "confirmButton": "係，即刻轉換"
     }
   },
   "bridge": {
@@ -56,9 +70,7 @@
     "noDestination": "冇目的地",
     "noBridgeableTokens": "冇可以橋接嘅代幣",
     "bridgeButton": "橋接代幣",
-    "getFeeQuote": "攞手續費報價",
-    "viewOnAxelarscan": "喺 Axelar 瀏覽器度睇",
-    "addDestinationTokenLabel": "將 {{chainName}} 上嘅 {{symbol}} 加落錢包",
+    "viewOnAxelarscan": "喺 Axelarscan 度睇",
     "addTokenError": "加唔到代幣落錢包",
     "estimatedTime": "預計時間",
     "recentTransactions": "最近交易",
@@ -74,25 +86,11 @@
     "cancel": "取消",
     "save": "儲存"
   },
-  "wallet": {},
-  "login": {
-    "title": "歡迎返嚟",
-    "subtitle": "登入嚟繼續去自由之橋",
-    "emailLabel": "電郵",
-    "emailPlaceholder": "name@example.com",
-    "passwordLabel": "密碼",
-    "passwordPlaceholder": "輸入密碼",
-    "rememberMe": "喺呢部機記住我",
-    "submit": "登入",
-    "validation": {
-      "required": "電郵同密碼係必需嘅。",
-      "invalid": "電郵或者密碼唔啱。"
-    }
-  },
   "landing": {
     "banner": {
       "title": "新嚟咩?",
-      "message": "了解 Freedom Bridge 同點樣橋接 TigerOG 代幣。"
+      "message": "了解 Freedom Bridge 同點樣橋接 TigerOG 代幣。",
+      "note": "注意：代幣轉換係永久性同埋返唔到轉頭。"
     },
     "hero": {
       "badge": "由 Axelar 支持",
@@ -109,16 +107,16 @@
     },
     "features": {
       "title": "跨鏈代幣服務",
-      "description": "自由之橋利用 Axelar ITS 喺 {{count}}+ 個區塊鏈之間提供無縫、安全同免稅嘅橋接體驗。",
+      "description": "Freedom Bridge 利用 Axelar ITS 喺 {{count}}+ 個區塊鏈之間提供無縫、安全同免稅嘅橋接體驗。",
       "stopDecay": {
         "title": "停止衰減",
-        "description": "傳統代幣每次買賣都會燒你 10-11% 嘅價值。轉換做 TigerOG 即刻止血，保住你 100% 嘅價值。",
+        "description": "舊代幣每次買賣都會燒你 10-11% 嘅價值。轉換做 TigerOG 即刻止血，保住你 100% 嘅價值。",
         "graphLabel1": "100% 保留 (TigerOG)",
-        "graphLabel2": "-40% 價值 (傳統 10% 稅)"
+        "graphLabel2": "-40% 價值 (舊 10% 稅)"
       },
       "conversion": {
         "title": "1:1 轉換",
-        "description": "總供應量永遠唔變。代幣鎖喺個安全遷移合約度，然後用完全相等嘅 1:1 等價物。冇通脹，冇稀釋。"
+        "description": "總供應量永遠唔變。代幣鎖喺個安全轉換合約度，然後用完全相等嘅 1:1 等價物。冇通脹，冇稀釋。"
       },
       "multichain": {
         "title": "多鏈",
@@ -130,22 +128,27 @@
         "button": "開始橋接"
       }
     },
-    "teaser": {
-      "title": "你想要其他幣嗎？",
-      "subtitle": "你覺得 <lunc>LUNC</lunc>、<crepe>Crepe</crepe> 或者 <shiba>Shiba</shiba> 點？"
-    },
     "cta": {
       "title": "準備好橋接未？",
       "description": "加入跨鏈革命。轉換你嘅資產同經 Axelar 開始橋接只需唔夠一分鐘。",
       "button": "即刻開 App"
+    },
+    "buyTokens": {
+      "badge": "開始",
+      "title": "獲取資產",
+      "description": "仲未有代幣？去 PancakeSwap 買原始代幣，然後將佢哋轉做新嘅多鏈版本。",
+      "buyOn": "去 PancakeSwap 買",
+      "then": "然後",
+      "convertTo": "轉換做",
+      "buyNow": "即刻買"
     }
   },
   "wiki": {
-    "title": "自由之橋 Wiki",
+    "title": "Freedom Bridge Wiki",
     "searchPlaceholder": "搜尋文件...",
     "header": {
       "title": "文件",
-      "subtitle": "學下點樣轉換傳統代幣、跨鏈橋接同埋同自由之橋整合。"
+      "subtitle": "學下點樣轉換舊代幣同跨鏈橋接。"
     },
     "nav": {
       "gettingStarted": "起步",
@@ -153,14 +156,16 @@
       "developers": "開發者",
       "tigerogSupply": "TigerOG 供應",
       "lionogSupply": "LionOG 供應",
-      "frogogSupply": "FrogOG 供應"
+      "frogogSupply": "FrogOG 供應",
+      "githubRepo": "GitHub 倉庫",
+      "axelarDocs": "Axelar ITS 文件"
     },
     "articles": {
       "whatIs": {
-        "title": "咩係自由之橋？",
-        "content": "自由之橋係一個建立喺 Axelar 跨鏈代幣服務 (ITS) 上嘅去中心化橋接協議。佢設計嚟將代幣由單一鏈限制同高額交易稅中釋放出嚟。通過將標準代幣轉換做跨鏈兼容資產，用戶可以喺支援嘅區塊鏈上自由移動佢哋嘅價值。",
+        "title": "咩係 Freedom Bridge？",
+        "content": "Freedom Bridge 係一個建立喺 Axelar 跨鏈代幣服務 (ITS) 上嘅去中心化橋接協議。佢容許你將舊代幣轉換做免稅、跨鏈兼容嘅資產，可以喺支援嘅區塊鏈上自由移動。",
         "taxFreeTitle": "免稅轉移",
-        "taxFreeDesc": "傳統代幣通常有 10%+ 嘅稅。TigerOG 代幣係 0% 稅。",
+        "taxFreeDesc": "舊代幣通常有 10%+ 嘅稅。TigerOG 代幣係 0% 稅。",
         "omnichainTitle": "全鏈",
         "omnichainDesc": "經 Axelar 喺 {{count}}+ 個區塊鏈之間即時移動資產。"
       },
@@ -168,26 +173,26 @@
         "title": "點樣轉換代幣",
         "step1": "將你個錢包連接去來源鏈 (例如，BNB Chain)。",
         "step2": "去 <strong>轉換</strong> 嗰頁。",
-        "step3": "揀你想轉換嘅傳統代幣。",
-        "step4": "批准遷移合約用你啲代幣。",
-        "step5": "撳 <strong>轉換</strong> 嚟存入你嘅傳統代幣同接收等量嘅 \"TigerOG\" 代幣。",
-        "note": "<strong>注意：</strong> 如果你個代幣對轉移收稅，轉換會產生傳統代幣嘅交易稅 (喺升級期間)。不過，一旦轉換做 TigerOG，之後所有轉移同橋接都免稅。"
+        "step3": "揀你想轉換嘅舊代幣。",
+        "step4": "批准轉換合約用你啲代幣。",
+        "step5": "撳 <strong>轉換</strong> 嚟存入你嘅舊代幣同接收等量嘅 \"TigerOG\" 代幣。",
+        "note": "<strong>注意：</strong> 如果你個代幣對轉移收稅，轉換會產生舊代幣嘅交易稅 (喺升級期間)。不過，一旦轉換做 TigerOG，之後所有轉移同橋接都免稅。"
       },
       "supportedNetworks": {
         "title": "支援嘅網絡",
-        "content": "自由之橋支援一個不斷增長嘅 {{count}}+ 區塊鏈生態系統，經 Axelar 喺 EVM 領域實現無縫嘅互操作性。"
+        "content": "Freedom Bridge 支援一個不斷增長嘅 {{count}}+ 區塊鏈生態系統，經 Axelar 喺 EVM 領域實現無縫嘅互操作性。"
       },
       "xerc20": {
         "title": "跨鏈代幣",
-        "content": "Axelar 跨鏈代幣服務 (ITS) 容許代幣喺多條鏈上部署，並有一致嘅地址同統一嘅供應管理。自由之橋用 ITS 確保 TigerOG 無論橋接去邊度都係一個規範資產。"
+        "content": "Axelar 跨鏈代幣服務 (ITS) 容許代幣喺多條鏈上部署，並有一致嘅地址同統一嘅供應管理。Freedom Bridge 用 ITS 確保 TigerOG 無論橋接去邊度都係一個規範資產。"
       },
       "axelar": {
         "title": "Axelar 網絡",
         "content": "我哋利用 Axelar 作為我哋嘅互操作性層。Axelar 係一個去中心化網絡，連接唔同嘅區塊鏈，實現安全嘅跨鏈通訊同資產轉移。Axelar 嘅安全模型依賴一組無需許可嘅驗證者，為跨鏈代幣提供高級別嘅安全性。"
       },
-      "migration": {
-        "title": "遷移邏輯",
-        "content": "遷移合約部署喺來源鏈 (例如，BSC) 上。佢託管原始嘅傳統代幣。當你升級代幣嗰陣，你係存入緊遷移合約。當你解包裝嗰陣 (如果支援)，你係銷毀緊 TigerOG 代表嚟釋放原始代幣。呢樣確保咗嚴格嘅 1:1 支持。"
+      "conversion": {
+        "title": "轉換邏輯",
+        "content": "轉換合約部署喺 BSC 上。當你轉換嗰陣，你嘅舊代幣會送去黑洞地址 (永久銷毀)，你會以 1:1 比例收到 TigerOG。呢個係單向過程 —— 舊代幣會被銷毀，永遠攞唔返。"
       },
       "contracts": {
         "title": "智能合約地址",
@@ -197,8 +202,8 @@
       },
       "security": {
         "title": "安全模型",
-        "content": "安全建立喺自由之橋嘅每一層：",
-        "point1": "<strong>遷移架構：</strong> 傳統代幣保存喺經過驗證嘅、不可變嘅智能合約入面。",
+        "content": "安全建立喺 Freedom Bridge 嘅每一層：",
+        "point1": "<strong>轉換架構：</strong> 舊代幣經由經過驗證嘅、不可變嘅智能合約永久銷毀。",
         "point2": "<strong>Axelar 驗證者：</strong> 跨鏈訊息由 Axelar 嘅去中心化網絡驗證。",
         "point3": "<strong>一致供應：</strong> ITS 管理鑄造同銷毀，以維持所有鏈上嘅恆定總供應量。",
         "point4": "<strong>經審計邏輯：</strong> 建基於行業標準嘅 Axelar 同 OpenZeppelin 庫之上。"
@@ -229,8 +234,8 @@
         "lpLockedDesc": "PancakeSwap 流動性池包含同 BNB 配對嘅 BNBTiger 代幣。當 LP 代幣被銷毀 (送去黑洞地址)，池入面嘅底層代幣就會永久鎖定。",
         "lpBurnedPercent": "LP 代幣已銷毀：佔所有 LP 代幣 86.18%",
         "lpLockedPercent": "所以，LP 入面 86.18% 嘅代幣係永久鎖定咗",
-        "note": "<strong>注意：</strong> TigerOG 喺遷移期間維持同 BNBTiger 1:1 嘅比例。TigerOG 嘅流通供應量喺扣除所有已銷毀同鎖定代幣之後，同 BNBTiger 嘅真實流通供應量相符。",
-        "launchData": "<strong>啟動數據：</strong> 呢啲數字係喺啟動嗰陣計出嚟。傳統 BNBTiger 代幣喺每單買賣交易都會繼續銷毀代幣，所以實際流通供應量可能會比顯示嘅少啲。",
+        "note": "<strong>注意：</strong> TigerOG 喺轉換期間維持同 BNBTiger 1:1 嘅比例。TigerOG 嘅流通供應量喺扣除所有已銷毀同鎖定代幣之後，同 BNBTiger 嘅真實流通供應量相符。",
+        "launchData": "<strong>啟動數據：</strong> 呢啲數字係喺啟動嗰陣計出嚟。舊 BNBTiger 代幣喺每單買賣交易都會繼續銷毀代幣，所以實際流通供應量可能會比顯示嘅少啲。",
         "legacyContract": "BNBTiger 代幣合約",
         "ogContract": "TigerOG 代幣合約",
         "amounts": {
@@ -254,8 +259,8 @@
         "lpLockedDesc": "PancakeSwap 流動性池包含同 BNB 配對嘅 BNBLion 代幣。當 LP 代幣被銷毀 (送去黑洞地址)，池入面嘅底層代幣就會永久鎖定。",
         "lpBurnedPercent": "LP 代幣已銷毀：佔所有 LP 代幣 99.98%",
         "lpLockedPercent": "所以，LP 入面 99.98% 嘅代幣係永久鎖定咗",
-        "note": "<strong>注意：</strong> LionOG 喺遷移期間維持同 BNBLion 1:1 嘅比例。LionOG 嘅流通供應量喺扣除所有已銷毀同鎖定代幣之後，同 BNBLion 嘅真實流通供應量相符。",
-        "launchData": "<strong>啟動數據：</strong> 呢啲數字係喺啟動嗰陣計出嚟。傳統 BNBLion 代幣喺每單買賣交易都會繼續銷毀代幣，所以實際流通供應量可能會比顯示嘅少啲。",
+        "note": "<strong>注意：</strong> LionOG 喺轉換期間維持同 BNBLion 1:1 嘅比例。LionOG 嘅流通供應量喺扣除所有已銷毀同鎖定代幣之後，同 BNBLion 嘅真實流通供應量相符。",
+        "launchData": "<strong>啟動數據：</strong> 呢啲數字係喺啟動嗰陣計出嚟。舊 BNBLion 代幣喺每單買賣交易都會繼續銷毀代幣，所以實際流通供應量可能會比顯示嘅少啲。",
         "legacyContract": "BNBLion 代幣合約",
         "ogContract": "LionOG 代幣合約",
         "amounts": {
@@ -279,8 +284,8 @@
         "lpLockedDesc": "PancakeSwap 流動性池包含同 BNB 配對嘅 BNBFrog 代幣。當 LP 代幣被銷毀 (送去黑洞地址)，池入面嘅底層代幣就會永久鎖定。",
         "lpBurnedPercent": "LP 代幣已銷毀：佔所有 LP 代幣 99.31%",
         "lpLockedPercent": "所以，LP 入面 99.31% 嘅代幣係永久鎖定咗",
-        "note": "<strong>注意：</strong> FrogOG 喺遷移期間維持同 BNBFrog 1:1 嘅比例。FrogOG 嘅流通供應量喺扣除所有已銷毀同鎖定代幣之後，同 BNBFrog 嘅真實流通供應量相符。",
-        "launchData": "<strong>啟動數據：</strong> 呢啲數字係喺啟動嗰陣計出嚟。傳統 BNBFrog 代幣喺每單買賣交易都會繼續銷毀代幣，所以實際流通供應量可能會比顯示嘅少啲。",
+        "note": "<strong>注意：</strong> FrogOG 喺轉換期間維持同 BNBFrog 1:1 嘅比例。FrogOG 嘅流通供應量喺扣除所有已銷毀同鎖定代幣之後，同 BNBFrog 嘅真實流通供應量相符。",
+        "launchData": "<strong>啟動數據：</strong> 呢啲數字係喺啟動嗰陣計出嚟。舊 BNBFrog 代幣喺每單買賣交易都會繼續銷毀代幣，所以實際流通供應量可能會比顯示嘅少啲。",
         "legacyContract": "BNBFrog 代幣合約",
         "ogContract": "FrogOG 代幣合約",
         "amounts": {
@@ -301,7 +306,7 @@
     "title": "合約地址",
     "header": {
       "title": "智能合約",
-      "subtitle": "自由之橋生態系統中代幣同橋樑嘅官方部署地址。"
+      "subtitle": "Freedom Bridge 生態系統入面代幣同橋樑嘅官方部署地址。"
     },
     "tabs": {
       "overview": "概覽",
@@ -310,13 +315,67 @@
       "liquidity": "流動性"
     },
     "liquidity": {
-      "title": "流動性池"
-    }
+      "poolAddress": "池地址",
+      "tradeOn": "喺度交易"
+    },
+    "overview": {
+      "interchainTokens": {
+        "title": "跨鏈代幣",
+        "description": "經 Axelar 跨鏈代幣服務 (ITS) 部署嘅跨鏈代幣。呢啲代幣喺所有支援嘅網絡上保持一致嘅地址。"
+      },
+      "axelarNetwork": {
+        "title": "Axelar 網絡",
+        "description": "底層訊息協議，確保跨鏈轉賬嘅安全性同唔同區塊鏈之間嘅數據完整性。"
+      },
+      "conversionContracts": {
+        "title": "轉換合約",
+        "description": "負責將舊代幣轉換做跨鏈資產。呢啲合約處理來源鏈上嘅存款同鑄造邏輯。"
+      },
+      "conversionContractsTable": {
+        "title": "轉換合約地址",
+        "subtitle": "呢啲喺 BSC 上嘅合約處理從舊代幣到跨鏈代幣嘅轉換。",
+        "token": "代幣",
+        "legacyToken": "舊代幣",
+        "conversionContract": "轉換合約",
+        "newToken": "跨鏈代幣"
+      },
+      "liquidityPools": {
+        "title": "流動性池",
+        "description": "DEX 流動性池，你可以喺唔同嘅鏈上面交易 OG 代幣。"
+      },
+      "liquidityPoolsTable": {
+        "title": "流動性池",
+        "subtitle": "用嚟交易 OG 代幣嘅 DEX 池",
+        "token": "代幣",
+        "chain": "鏈",
+        "dex": "DEX",
+        "poolAddress": "池地址"
+      }
+    },
+    "filterTokens": "篩選代幣...",
+    "interchainAsset": "經 Axelar ITS 嘅跨鏈資產",
+    "availableOnChains": "喺 {{count}} 條鏈上可用",
+    "table": {
+      "chain": "鏈",
+      "tokenAddress": "代幣地址",
+      "axelarChainName": "Axelar 鏈名",
+      "chainId": "ID: {{id}}" 
+    },
+    "axelarId": "Axelar ID: {{name}}",
+    "copied": "複製咗！",
+    "copyAddress": "複製地址"
   },
   "faq": {
-    "title": "自由之橋支援",
+    "title": "Freedom Bridge 支援",
     "header": "常見問題",
     "subtitle": "關於 TigerOG、橋接同 Axelar 嘅常見問題解答。",
+    "sections": {
+      "gettingStarted": "起步",
+      "convertingTrading": "轉換 & 交易",
+      "bridging": "橋接",
+      "technical": "技術",
+      "securityRisks": "安全 & 風險"
+    },
     "cta": {
       "title": "仲有問題？",
       "description": "加入我哋嘅 Telegram 社群或者睇詳細嘅 Wiki 攞技術指南。",
@@ -325,27 +384,114 @@
     },
     "questions": {
       "q1": "轉換我啲代幣有咩用？",
-      "a1": "將你啲代幣轉換做 TigerOG 可以去除同傳統代幣相關嘅交易稅 (通常係 10-12%)。佢仲容許你經 Axelar 將呢啲代幣橋接去其他區塊鏈，好似 Ethereum、Base 等，從而喺新生態系統中攞到機會。",
-      "q2": "用自由之橋安唔安全？",
-      "a2": "係。個協議用安全嘅遷移合約同 Axelar 跨鏈代幣服務。當你轉換嗰陣，你嘅 BNBTiger 會永久銷毀，你會以 1:1 比例收到 TigerOG。銷毀機制確保總供應量喺所有鏈上都得到妥善管理。",
+      "a1": "將你啲代幣轉換做 TigerOG 可以去除同舊代幣相關嘅交易稅 (通常係 10-12%)。佢仲容許你經 Axelar 將呢啲代幣橋接去其他區塊鏈，好似 Ethereum、Base 等，從而喺新生態系統中攞到機會。",
+      "q2": "用 Freedom Bridge 安唔安全？",
+      "a2": "係。個協議用安全嘅轉換合約同 Axelar 跨鏈代幣服務。當你轉換嗰陣，你嘅 BNBTiger 會永久銷毀，你會以 1:1 比例收到 TigerOG。銷毀機制確保總供應量喺所有鏈上都得到妥善管理。",
       "q3": "有冇任何費用？",
-      "a3": "自由之橋本身唔對轉換收費。你只需俾標準區塊鏈燃料費。鏈之間橋接涉及支付俾 Axelar 嘅跨鏈燃料費，用嚟支付中繼成本。",
+      "a3": "Freedom Bridge 本身唔對轉換收費。你只需俾標準區塊鏈燃料費。鏈之間橋接涉及支付俾 Axelar 嘅跨鏈燃料費，用嚟支付中繼成本。",
       "q4": "如果我整唔見咗我啲代幣會點？",
-      "a4": "TigerOG 代幣嘅行為同任何其他 ERC20 代幣一樣。如果你失去咗對錢包嘅存取權，佢哋將無法恢復。始終妥善保管你嘅私鑰同助記詞。",
+      "a4": "TigerOG 代幣嘅行為同任何其他 ERC20/BEP20 代幣一樣。如果你失去咗對錢包嘅存取權，佢哋將無法恢復。始終妥善保管你嘅私鑰同助記詞。",
       "q5": "我可以將我嘅 TigerOG 代幣轉換返做 BNBTiger 嗎？",
-      "a5": "唔得。遷移係單向轉換。當你將 BNBTiger 轉換做 TigerOG 嗰陣，你嘅 BNBTiger 代幣會永久銷毀 (送去黑洞地址)。呢個係設計好嘅 —— TigerOG 係升級版、免稅版本，旨在完全取代傳統代幣。",
+      "a5": "唔得。轉換係單向過程。當你將 BNBTiger 轉換做 TigerOG 嗰陣，你嘅舊代幣會永久鎖喺轉換合約度。呢個係設計好嘅 —— TigerOG 係升級版、免稅版本，旨在完全取代舊代幣。",
       "q6": "支援邊啲網絡？",
       "a6": "我哋經 Axelar 支援多個 EVM 鏈，包括 BNB Chain、Ethereum、Base 等等。睇 Wiki 攞支援網絡嘅完整列表。",
       "q7": "橋接要幾耐？",
-      "a7": "橋接速度取決於來源鏈嘅確定性時間同 Axelar 中繼。通常，鏈之間嘅轉移大約需要 2-5 分鐘。",
+      "a7": "橋接時間取決於你由邊度送出：\n\n• Ethereum: 15-20 分鐘 (需要多啲確認)\n• BSC & Avalanche: 2-4 分鐘 (最快)\n• Base, Linea, Polygon: 3-5 分鐘\n\n個 App 會喺你橋接之前顯示預計時間。",
       "q8": "OG 代幣嘅流通供應量係幾多？",
-      "a8": "每個 OG 代幣都有一個源自其原始 BNB 代幣嘅固定流通供應量，計算埋已銷毀代幣、卡住嘅合約餘額同鎖定嘅 LP。TigerOG：~3.66 秭 (佔原始 36.62%)。 LionOG：~3.83 秭 (佔原始 38.33%)。 FrogOG：~8.39 秭 (佔原始 83.86%)。睇 Wiki 攞每個代幣嘅詳細明細。"
+      "a8": "每個 OG 代幣都有一個源自其原始 BNB 代幣嘅固定流通供應量，計算埋已銷毀代幣、卡住嘅合約餘額同鎖定嘅 LP：\n\n• TigerOG: ~3.66 秭 (佔原始 36.62%)\n• LionOG: ~3.83 秭 (佔原始 38.33%)\n• FrogOG: ~8.39 秭 (佔原始 83.86%)\n\n睇 Wiki 攞詳細明細。",
+      "q9": "點解唔放棄 OG 合約擁有權？",
+      "a9": "放棄合約擁有權會冇咗將來開發同加新鏈嘅能力。雖然可見將來都唔會放棄合約，但要做任何改動都需要多個簽名。同埋，團隊冇分到任何代幣或者稅。",
+      "q10": "點解 OG 合約可以鑄造？",
+      "a10": "跨鏈橋接需要鑄造/銷毀功能 - 代幣離開一條鏈嗰陣銷毀，到達嗰陣鑄造。呢樣保持總供應量喺所有網絡上不變。鑄造由一個多簽署 Safe 錢包控制。",
+      "q11": "TigerOG 係咪離開 BNB Chain 去 Axelar？",
+      "a11": "唔係。Axelar 唔係一個區塊鏈 - 佢係連接鏈嘅橋接協議。BNB Chain 仍然係你轉換舊代幣嘅來源鏈。Axelar 淨係容許你嘅代幣喺 BNB、Ethereum、Base 同其他支援網絡之間移動。",
+      "q12": "我啲代幣去咗邊？",
+      "a12": "確保你加咗條鏈同代幣地址入你個錢包。你可以喺合約頁面搵到所有合約地址。Tiger 團隊用 Rabby 錢包，管理多條鏈容易啲。",
+      "q13": "點解由 Ethereum 或者 Base 橋接要咁耐？",
+      "a13": "Ethereum 需要兩個 epoch 先至確認交易，以確保最大安全性。由於 Base 喺 Ethereum 上結算，佢繼承咗呢個延遲。呢個係以安全為先，速度次之 - 你啲代幣好安全，只需俾啲耐性。",
+      "q14": "如果我留喺原始代幣唔轉換會點？",
+      "a14": "唔急住轉換。BNBTiger 同 TigerOG 永遠會有唔同嘅流動性池、市值等等。不過 BNBTiger 稅高，TigerOG 交易免稅。由於原始代幣嘅稅唔係用嚟支援項目，開發係由 CTO 團隊為 TigerOG 做嘅。Freedom Bridge 同多鏈淨係俾 TigerOG。",
+      "q15": "轉換有冇稅？TigerOG 有冇稅？",
+      "a15": "冇。轉換同交易淨係俾正常燃料費。冇額外稅或費用，TigerOG 係一個免稅合約。",
+      "q16": "我可以就咁直接買同交易 TigerOG 嗎？",
+      "a16": "未得住。團隊未收到足夠嘅費同稅去資助足夠大嘅流動性池。而家要攞 TigerOG，你要買或者已經擁有原始代幣然後轉換。一旦你擁有 TigerOG，直到有投資者嚟加流動性池之前，都唔容易交易。",
+      "q17": "點解 TigerOG 市值睇落咁誇張？",
+      "a17": "流動性池越細，任何細微交易對顯示嘅市值影響就越大。一旦投資者嚟做流動性提供者，呢個問題就會解決。",
+      "q18": "做咗咩安全審計？",
+      "a18": "Freedom Bridge 未做過正式嘅第三方審計。不過，轉換器合約代碼係基於 Stronghold 團隊 (前 XRP 同 Stellar 開發者，最近喺 Davos 演講) 建立嘅 SHx 轉換器。橋接基礎設施由 Axelar 支持，Axelar 做過多次安全審計。",
+      "q19": "Freedom Bridge 點樣防止黑客或漏洞利用？",
+      "a19": "有幾個措施：\n\n• 轉換器只持有確實需要嘅流通供應量 - 冇多餘代幣可以被利用\n• 轉換器冇鑄造權限\n• 所有合約代碼都喺鏈上驗證咗並且開源\n• 代幣權限鎖喺 Safe.global 多簽署錢包入面\n• 橋接由 Axelar 經過實戰測試嘅基礎設施處理",
+      "q20": "橋接係咪不可逆轉？如果轉賬失敗會點？",
+      "a20": "橋接轉賬好少會因為唔夠燃料費或者網絡擠塞而卡住。如果發生呢種情況，你可以喺 Axelarscan 追蹤你嘅交易並手動加燃料費嚟完成。Axelar 提供交易恢復工具 - 你唔會唔見你啲代幣。",
+      "q21": "用 Freedom Bridge 有咩風險？",
+      "a21": "同任何 DeFi 協議一樣，有固有風險，包括智能合約風險、橋接風險同市場波動。我哋建議你自己做研究 (DYOR) 並只用你可以承擔損失嘅資金。睇我哋嘅法律免責聲明攞更多資訊。",
+      "q22": "我可以轉換新嘅 BNB Tiger Inu 合約 (2025年9月) 嗎？",
+      "a22": "唔得。Freedom Bridge 支援幾年前推出嘅原始/舊 BNB Tiger 代幣 - 唔係 2025 年 9 月建立嘅新合約。Freedom Bridge 係為原始 Tiger、Lion 同 Frog 代幣嘅社區接管 (CTO) 而建。",
+      "q23": "我點樣加流動性？",
+      "a23": "加流動性係一種高級 DeFi 活動，有風險，包括無常損失 (impermanent loss)。如果你有喺 PancakeSwap 或者 Uniswap 等 DEX 提供流動性嘅經驗，過程係一樣嘅 - 將 OG 代幣同基礎資產配對。如果你想學多啲，呢度有個關於流動性嘅正斗教學系列：https://www.youtube.com/watch?v=oiylIHvwMik&list=PL_ujg_v1hZ5iGtiuhT8NkSMqEOaLAgmUu",
+      "q24": "團隊會唔會 rug pull (捲款跑路)？",
+      "a24": "唔會。冇機制可以 rug pull。冇代幣或者稅分俾團隊，我哋都唔收任何橋接費 —— 嗰啲係俾 Axelar 支付中繼成本。團隊同你一樣都係持有者，自費建立呢個項目。唯一嘅團隊錢包係一個由社區捐款資助嘅公開營銷錢包。多簽署 Safe 錢包控制合約權限，例如喺緊急情況下暫停發送去其他鏈，但唔能夠存取或者轉移用戶資金。"
     }
+  },
+  "footer": {
+    "wiki": "Wiki",
+    "contracts": "合約",
+    "faq": "常見問題",
+    "disclaimer": "免責聲明",
+    "github": "GitHub"
+  },
+  "disclaimer": {
+    "title": "法律免責聲明",
+    "header": "重要法律聲明",
+    "subtitle": "用 Freedom Bridge 之前請仔細閱讀呢個免責聲明。",
+    "sections": {
+      "noInvestmentAdvice": {
+        "title": "非投資建議",
+        "content": "Freedom Bridge 上提供嘅資訊唔構成投資建議、財務建議、交易建議或任何其他類型嘅建議。你唔應該將任何內容視為建議。Freedom Bridge 唔建議你買、賣或持有任何加密貨幣。喺做任何投資決定之前，請做你自己嘅盡職調查並諮詢你嘅財務顧問。"
+      },
+      "risksOfUse": {
+        "title": "使用風險",
+        "content": "加密貨幣市場波動大且不可預測。通過使用 Freedom Bridge，你承認並接受：\n\n• 智能合約可能包含漏洞或弱點，可能導致資金損失\n• 跨鏈橋樑帶有固有風險，包括但不限於：預言機故障、驗證者勾結同網絡擠塞\n• 代幣價值可能會大幅波動，你可能會損失部分或全部投資\n• 區塊鏈網絡上嘅交易係不可逆轉嘅\n• 網絡費用同燃料成本超出我哋控制範圍，可能會大幅變動"
+      },
+      "noWarranties": {
+        "title": "無保證",
+        "content": "Freedom Bridge 按「現狀」及「現有」基礎提供，不作任何明示或暗示嘅保證。我哋唔保證服務會不中斷、安全或冇錯誤。我哋唔對平台提供嘅任何資訊嘅準確性、可靠性或完整性作任何保證。"
+      },
+      "limitationOfLiability": {
+        "title": "責任限制",
+        "content": "喺法律允許嘅最大範圍內，Freedom Bridge、其開發者、貢獻者同關聯公司對因你使用平台而引起或與之相關嘅任何直接、間接、附帶、特殊、後果性或懲罰性損害（包括但不限於利潤損失、數據損失或加密貨幣資產損失）概不負責。"
+      },
+      "thirdPartyServices": {
+        "title": "第三方服務",
+        "content": "Freedom Bridge 同第三方服務（包括用於跨鏈橋接嘅 Axelar 網絡）整合。我哋對呢啲第三方嘅行為、內容、資訊或數據概不負責。你使用第三方服務受其各自嘅條款及細則約束。"
+      },
+      "regulatoryCompliance": {
+        "title": "合規性",
+        "content": "加密貨幣法規因司法管轄區而異。你有責任確保你使用 Freedom Bridge 符合你所在司法管轄區嘅所有適用法律同法規。Freedom Bridge 唔對服務喺任何司法管轄區嘅合法性作任何陳述。"
+      },
+      "dyor": {
+        "title": "做你自己嘅研究 (DYOR)",
+        "content": "喺同任何 DeFi 協議互動之前，始終做你自己嘅研究 (DYOR)。驗證合約地址，了解你互動嘅任何代幣嘅機制，並且永遠唔好投資超過你可以承擔損失嘅金額。"
+      }
+    },
+    "acknowledgment": "通過使用 Freedom Bridge，你承認你已經閱讀、明白並同意受呢個免責聲明約束。",
+    "lastUpdated": "最後更新：2026年1月"
+  },
+  "disclaimerModal": {
+    "title": "重要免責聲明",
+    "subtitle": "請喺繼續之前閱讀並確認。",
+    "noAdvice": "Freedom Bridge 唔提供投資、財務或交易建議。加密貨幣投資波動大且有風險。",
+    "risks": "通過使用呢個平台，你承認智能合約可能包含漏洞，跨鏈橋樑帶有固有風險，而且交易係不可逆轉嘅。",
+    "dyor": "始終做你自己嘅研究 (DYOR) 並只用你可以承擔損失嘅資金。",
+    "fullDisclaimer": "有關詳細資訊，請參閱",
+    "fullDisclaimerLink": "法律免責聲明",
+    "accept": "我明白並接受"
   },
   "common": {
     "from": "由",
     "to": "去",
     "max": "最多",
+    "cancel": "取消",
     "chainId": "鏈 ID",
     "bscChain": "BSC 鏈",
     "insufficientBalance": "餘額唔夠。",

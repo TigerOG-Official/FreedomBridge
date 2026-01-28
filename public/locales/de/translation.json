@@ -4,6 +4,7 @@
     "titleBridge": "Brücke"
   },
   "nav": {
+    "home": "Startseite",
     "settings": "Einstellungen",
     "menu": "Menü",
     "preferences": "Einstellungen",
@@ -22,7 +23,7 @@
     "close": "Schließen"
   },
   "addNetworks": {
-    "title": "Netzwerke hinzufügen",
+    "title": "Netzwerke zum Wallet hinzufügen",
     "description": "Klicke auf ein Netzwerk, um es zu MetaMask, Rabby oder anderen Web3-Wallets hinzuzufügen",
     "searchPlaceholder": "Netzwerke suchen...",
     "noResults": "Keine Netzwerke gefunden",
@@ -45,6 +46,20 @@
     "networkWarning": {
       "title": "Falsches Netzwerk",
       "message": "Token-Konvertierung ist nur auf der BSC Chain verfügbar. Bitte wechsle zu BSC, um deine Legacy-Tokens zu konvertieren."
+    },
+    "confirmModal": {
+      "title": "Konvertierung bestätigen",
+      "warning": "Du bist dabei, deine Tokens zu konvertieren. Bitte lies das Folgende sorgfältig, bevor du fortfährst.",
+      "irreversible": "Diese Aktion ist unumkehrbar!",
+      "burnExplanation": "Deine {{legacySymbol}} Tokens werden dauerhaft verbrannt und eine gleichwertige Menge {{newSymbol}} Tokens wird in dein Wallet gemintet. Dies kann nicht rückgängig gemacht werden.",
+      "positiveNote": "Der Vorteil: {{newSymbol}} ist komplett steuerfrei — keine 10%+ Steuern mehr bei jeder Transaktion.",
+      "confirmQuestion": "{{amount}} {{legacySymbol}} in {{newSymbol}} konvertieren?",
+      "confirmButton": "Ich verstehe, konvertieren"
+    },
+    "finalConfirmModal": {
+      "title": "Bist du wirklich sicher?",
+      "message": "Dies ist deine letzte Chance zum Abbrechen. Sobald du bestätigst, werden deine {{legacySymbol}} in {{newSymbol}} konvertiert und können nicht zurückgewandelt werden.",
+      "confirmButton": "Ja, jetzt konvertieren"
     }
   },
   "bridge": {
@@ -86,7 +101,7 @@
     },
     "stats": {
       "messaging": "Axelar Network",
-      "networks": "Netzwerke live",
+      "networks": "Netzwerke aktiv",
       "fees": "Protokollgebühren",
       "finality": "Finalität"
     },
@@ -160,7 +175,7 @@
         "step2": "Navigiere zum <strong>Konvertieren</strong>-Tab.",
         "step3": "Wähle den Legacy-Token, den du konvertieren möchtest.",
         "step4": "Erteile dem Konvertierungsvertrag die Genehmigung, deine Tokens auszugeben.",
-        "step5": "Klicke auf <strong>Konvertieren</strong>, um deine Legacy-Tokens einzuzahlen und eine äquivalente Menge TigerOG-Tokens zu erhalten.",
+        "step5": "Klicke auf <strong>Konvertieren</strong>, um deine Legacy-Tokens einzuzahlen und eine äquivalente Menge \"TigerOG\"-Tokens zu erhalten.",
         "note": "<strong>Hinweis:</strong> Die Konvertierung löst die Transaktionssteuer des Legacy-Tokens aus (während des Upgrades), falls dein Token Steuern auf Übertragungen erhebt. Nach der Konvertierung zu TigerOG sind jedoch alle weiteren Übertragungen und Brücken steuerfrei."
       },
       "supportedNetworks": {
@@ -296,7 +311,12 @@
     "tabs": {
       "overview": "Übersicht",
       "byToken": "Nach Token",
-      "byChain": "Nach Kette"
+      "byChain": "Nach Kette",
+      "liquidity": "Liquidität"
+    },
+    "liquidity": {
+      "poolAddress": "Pool-Adresse",
+      "tradeOn": "Handeln auf"
     },
     "overview": {
       "interchainTokens": {
@@ -318,6 +338,18 @@
         "legacyToken": "Legacy-Token",
         "conversionContract": "Konvertierungsvertrag",
         "newToken": "Interchain-Token"
+      },
+      "liquidityPools": {
+        "title": "Liquiditätspools",
+        "description": "DEX-Liquiditätspools, in denen du OG-Tokens auf verschiedenen Ketten handeln kannst."
+      },
+      "liquidityPoolsTable": {
+        "title": "Liquiditätspools",
+        "subtitle": "DEX-Pools für den Handel mit OG-Tokens",
+        "token": "Token",
+        "chain": "Kette",
+        "dex": "DEX",
+        "poolAddress": "Pool-Adresse"
       }
     },
     "filterTokens": "Tokens filtern...",
@@ -337,6 +369,13 @@
     "title": "Freedom Bridge Support",
     "header": "Häufig gestellte Fragen",
     "subtitle": "Antworten auf häufige Fragen zu TigerOG, Brücken und Axelar.",
+    "sections": {
+      "gettingStarted": "Erste Schritte",
+      "convertingTrading": "Konvertierung & Handel",
+      "bridging": "Brücken",
+      "technical": "Technisch",
+      "securityRisks": "Sicherheit & Risiken"
+    },
     "cta": {
       "title": "Noch Fragen?",
       "description": "Tritt unserer Community auf Telegram bei oder schau im ausführlichen Wiki für technische Anleitungen.",
@@ -359,13 +398,100 @@
       "q7": "Wie lange dauert das Brücken?",
       "a7": "Die Brückengeschwindigkeit hängt von der Finalität der Quellkette und der Axelar-Übermittlung ab. Typischerweise dauert eine Übertragung zwischen Ketten etwa 2-5 Minuten.",
       "q8": "Wie hoch ist das Umlaufangebot der OG-Tokens?",
-      "a8": "Jeder OG-Token hat ein festes Umlaufangebot, das von seinem ursprünglichen BNB-Token abgeleitet ist, unter Berücksichtigung von verbrannten Tokens, feststeckenden Vertragsguthaben und gesperrtem LP. TigerOG: ~3,66 Septillionen (36,62% des Originals). LionOG: ~3,83 Septillionen (38,33% des Originals). FrogOG: ~8,39 Septillionen (83,86% des Originals). Detaillierte Aufschlüsselungen jedes Tokens findest du im Wiki."
+      "a8": "Jeder OG-Token hat ein festes Umlaufangebot, das von seinem ursprünglichen BNB-Token abgeleitet ist, unter Berücksichtigung von verbrannten Tokens, feststeckenden Vertragsguthaben und gesperrtem LP. TigerOG: ~3,66 Septillionen (36,62% des Originals). LionOG: ~3,83 Septillionen (38,33% des Originals). FrogOG: ~8,39 Septillionen (83,86% des Originals). Detaillierte Aufschlüsselungen jedes Tokens findest du im Wiki.",
+      "q9": "Warum ist der OG-Vertrag nicht aufgegeben (renounced)?",
+      "a9": "Das Aufgeben des Vertrags würde die Möglichkeit entfernen, in Zukunft neue Ketten zu entwickeln und hinzuzufügen. Obwohl der Vertrag auf absehbare Zeit nicht aufgegeben wird, sind mehrere Signaturen erforderlich, um Änderungen vorzunehmen. Außerdem werden dem Team keine Tokens oder Steuern zugewiesen.",
+      "q10": "Warum ist der OG-Vertrag prägbar (mintable)?",
+      "a10": "Cross-Chain-Brücken erfordert Präge-/Verbrennungsfunktionalität — Tokens werden verbrannt, wenn sie eine Kette verlassen, und geprägt, wenn sie ankommen. Dies hält das Gesamtangebot über alle Netzwerke konstant. Das Prägen wird von einem Multisig-Safe-Wallet kontrolliert.",
+      "q11": "Verlässt TigerOG die BNB Chain für Axelar?",
+      "a11": "Nein. Axelar ist keine Blockchain — es ist das Brückenprotokoll, das Ketten miteinander verbindet. BNB Chain bleibt die Ursprungskette, auf der du Legacy-Tokens konvertierst. Axelar ermöglicht es deinen Tokens lediglich, sich zwischen BNB, Ethereum, Base und anderen unterstützten Netzwerken zu bewegen.",
+      "q12": "Wo sind meine Tokens?",
+      "a12": "Stelle sicher, dass du die Kette und die Token-Adresse in deinem Wallet hinzufügst. Alle Vertragsadressen findest du auf der Vertragsseite. Das Tiger-Team nutzt die Rabby-Wallet, die die Verwaltung mehrerer Ketten erleichtert.",
+      "q13": "Warum dauert das Brücken von Ethereum oder Base so lange?",
+      "a13": "Ethereum benötigt zwei Epochen, bevor Transaktionen für maximale Sicherheit finalisiert werden. Da Base auf Ethereum abwickelt, erbt es diese Verzögerung. Dies priorisiert Sicherheit über Geschwindigkeit — deine Tokens sind sicher, hab einfach Geduld.",
+      "q14": "Was passiert, wenn ich meinen Original-Token behalte und nicht konvertiere?",
+      "a14": "Es besteht kein Grund zur Eile bei der Konvertierung. BNBTiger und TigerOG werden immer unterschiedliche Liquiditätspools, Marktkapitalisierungen usw. haben. Aber BNBTiger hat eine hohe Steuer und TigerOG hat keine Steuer für den Handel. Da die Steuern des Originals nicht zur Unterstützung des Projekts verwendet werden, wird die Entwicklung vom CTO-Team für TigerOG durchgeführt. Freedom Bridge und Multi-Chain ist nur für TigerOG.",
+      "q15": "Gibt es eine Steuer für die Konvertierung? Hat TigerOG eine Steuer?",
+      "a15": "Nein. Es kostet nur die normale Gasgebühr zum Konvertieren und Handeln. Es gibt keine zusätzlichen Steuern oder Gebühren, und TigerOG ist ein steuerfreier Vertrag.",
+      "q16": "Kann ich TigerOG einfach direkt kaufen und handeln?",
+      "a16": "Noch nicht. Das Team hat keine Gebühren und Steuern erhoben, um ausreichend große Liquiditätspools finanzieren zu können. Um jetzt TigerOG zu bekommen, musst du das Original kaufen oder bereits besitzen und konvertieren. Sobald du TigerOG besitzt, wird es erst dann leicht handelbar sein, wenn Investoren kommen, um zum Liquiditätspool beizutragen.",
+      "q17": "Warum sieht die TigerOG-Marktkapitalisierung so aufgeblasen aus?",
+      "a17": "Je kleiner ein Liquiditätspool ist, desto mehr Auswirkung hat jeder kleine Handel auf die angezeigte Marktkapitalisierung. Dies löst sich, sobald Investoren als Liquiditätsanbieter kommen.",
+      "q18": "Welche Sicherheitsaudits wurden durchgeführt?",
+      "a18": "Freedom Bridge hat kein formales Audit durch einen Drittanbieter durchlaufen. Der Code des Konvertierungsvertrags basiert jedoch auf dem SHx-Konverter, der vom Stronghold-Team entwickelt wurde (ehemalige XRP- und Stellar-Entwickler, die kürzlich in Davos präsentiert haben). Die Brückeninfrastruktur wird von Axelar betrieben, das mehrere Sicherheitsaudits durchlaufen hat.",
+      "q19": "Wie schützt Freedom Bridge vor Hacks oder Exploits?",
+      "a19": "Mehrere Maßnahmen sind implementiert:\n\n• Der Konverter hält nur das exakt benötigte Umlaufangebot — keine überschüssigen Tokens, die ausgenutzt werden könnten\n• Der Konverter hat keine Präge-Berechtigungen\n• Der gesamte Vertragscode ist on-chain verifiziert und Open Source\n• Token-Berechtigungen sind in einem Safe.global-Multisig-Wallet gesichert\n• Das Brücken wird durch Axelars bewährte Infrastruktur abgewickelt",
+      "q20": "Ist das Brücken unumkehrbar? Was wenn eine Übertragung fehlschlägt?",
+      "a20": "Brücken-Übertragungen können selten aufgrund von unzureichendem Gas oder Netzwerküberlastung stecken bleiben. Falls das passiert, kannst du deine Transaktion auf Axelarscan verfolgen und manuell Gas hinzufügen, um sie abzuschließen. Axelar bietet Transaktionswiederherstellungstools — du wirst deine Tokens nicht verlieren.",
+      "q21": "Welche Risiken sind mit der Nutzung von Freedom Bridge verbunden?",
+      "a21": "Wie bei jedem DeFi-Protokoll gibt es inhärente Risiken, einschließlich Smart-Contract-Risiko, Brücken-Risiko und Marktvolatilität. Wir empfehlen, eigene Recherchen durchzuführen (DYOR) und nur Mittel zu verwenden, deren Verlust du dir leisten kannst. Weitere Informationen findest du in unserem Haftungsausschluss.",
+      "q22": "Kann ich den neuen BNB Tiger Inu-Vertrag (September 2025) konvertieren?",
+      "a22": "Nein. Freedom Bridge unterstützt den originalen/Legacy BNB Tiger-Token, der vor mehreren Jahren gestartet wurde — nicht den neuen Vertrag, der im September 2025 erstellt wurde. Freedom Bridge wurde für die Community-Übernahme (CTO) der originalen Tiger-, Lion- und Frog-Tokens gebaut.",
+      "q23": "Wie füge ich Liquidität hinzu?",
+      "a23": "Liquidität hinzuzufügen ist eine fortgeschrittene DeFi-Aktivität mit Risiken einschließlich Impermanent Loss. Wenn du Erfahrung mit der Bereitstellung von Liquidität auf DEXs wie PancakeSwap oder Uniswap hast, ist der Prozess derselbe — paare den OG-Token mit einem Basis-Asset. Hier ist eine hervorragende Lernreihe über Liquidität, wenn du mehr erfahren möchtest: https://www.youtube.com/watch?v=oiylIHvwMik&list=PL_ujg_v1hZ5iGtiuhT8NkSMqEOaLAgmUu",
+      "q24": "Kann das Team einen Rug Pull machen?",
+      "a24": "Nein. Es gibt keinen Mechanismus für einen Rug Pull. Dem Team werden keine Tokens oder Steuern zugewiesen, und wir erheben keine Brückengebühren — diese gehen an Axelar für die Übermittlungskosten. Das Team sind Halter genau wie ihr und bauen dies auf eigene Kosten. Das einzige Team-Wallet ist ein öffentliches Marketing-Wallet, das durch Community-Spenden finanziert wird. Das Multisig-Safe-Wallet kontrolliert Vertragsberechtigungen wie das Pausieren von Sendungen an Ketten im Notfall, kann aber nicht auf Benutzermittel zugreifen oder diese umleiten."
     }
+  },
+  "footer": {
+    "wiki": "Wiki",
+    "contracts": "Verträge",
+    "faq": "FAQ",
+    "disclaimer": "Haftungsausschluss",
+    "github": "GitHub"
+  },
+  "disclaimer": {
+    "title": "Haftungsausschluss",
+    "header": "Wichtiger rechtlicher Hinweis",
+    "subtitle": "Bitte lies diesen Haftungsausschluss sorgfältig, bevor du Freedom Bridge nutzt.",
+    "sections": {
+      "noInvestmentAdvice": {
+        "title": "Keine Anlageberatung",
+        "content": "Die auf Freedom Bridge bereitgestellten Informationen stellen keine Anlage-, Finanz-, Handels- oder sonstige Beratung dar. Du solltest keinen der Inhalte als solche behandeln. Freedom Bridge empfiehlt nicht, dass Kryptowährungen von dir gekauft, verkauft oder gehalten werden sollten. Führe deine eigene Sorgfaltspflicht durch und konsultiere deinen Finanzberater, bevor du Anlageentscheidungen triffst."
+      },
+      "risksOfUse": {
+        "title": "Nutzungsrisiken",
+        "content": "Kryptowährungsmärkte sind volatil und unvorhersehbar. Durch die Nutzung von Freedom Bridge erkennst du an und akzeptierst, dass:\n\n• Smart Contracts Fehler oder Schwachstellen enthalten können, die zum Verlust von Mitteln führen könnten\n• Cross-Chain-Brücken inhärente Risiken bergen, einschließlich, aber nicht beschränkt auf: Oracle-Ausfälle, Validator-Absprachen und Netzwerküberlastung\n• Token-Werte dramatisch schwanken können und du einen Teil oder deine gesamte Investition verlieren kannst\n• Transaktionen in Blockchain-Netzwerken unumkehrbar sind\n• Netzwerkgebühren und Gaskosten außerhalb unserer Kontrolle liegen und erheblich variieren können"
+      },
+      "noWarranties": {
+        "title": "Keine Gewährleistung",
+        "content": "Freedom Bridge wird \"wie besehen\" und \"wie verfügbar\" ohne jegliche Gewährleistung jeglicher Art bereitgestellt, sei es ausdrücklich oder stillschweigend. Wir garantieren nicht, dass der Dienst unterbrechungsfrei, sicher oder fehlerfrei sein wird. Wir übernehmen keine Gewährleistung hinsichtlich der Genauigkeit, Zuverlässigkeit oder Vollständigkeit der über die Plattform bereitgestellten Informationen."
+      },
+      "limitationOfLiability": {
+        "title": "Haftungsbeschränkung",
+        "content": "Im maximal gesetzlich zulässigen Umfang haften Freedom Bridge, seine Entwickler, Mitwirkenden und verbundenen Unternehmen nicht für direkte, indirekte, beiläufige, besondere, Folge- oder Strafschäden, die aus oder im Zusammenhang mit deiner Nutzung der Plattform entstehen, einschließlich, aber nicht beschränkt auf Gewinnverluste, Datenverluste oder den Verlust von Kryptowährungs-Assets."
+      },
+      "thirdPartyServices": {
+        "title": "Dienste Dritter",
+        "content": "Freedom Bridge integriert sich mit Diensten Dritter, einschließlich Axelar Network für Cross-Chain-Brücken. Wir sind nicht verantwortlich für die Handlungen, Inhalte, Informationen oder Daten dieser Dritten. Deine Nutzung von Drittanbieterdiensten unterliegt deren jeweiligen Geschäftsbedingungen."
+      },
+      "regulatoryCompliance": {
+        "title": "Regulatorische Compliance",
+        "content": "Kryptowährungsvorschriften variieren je nach Rechtsordnung. Du bist allein dafür verantwortlich sicherzustellen, dass deine Nutzung von Freedom Bridge allen geltenden Gesetzen und Vorschriften in deiner Rechtsordnung entspricht. Freedom Bridge macht keine Zusicherungen hinsichtlich der Legalität der Dienste in irgendeiner Rechtsordnung."
+      },
+      "dyor": {
+        "title": "Eigene Recherche durchführen",
+        "content": "Führe immer deine eigene Recherche (DYOR) durch, bevor du mit einem DeFi-Protokoll interagierst. Überprüfe Vertragsadressen, verstehe die Mechanik jedes Tokens, mit dem du interagierst, und investiere nie mehr, als du dir leisten kannst zu verlieren."
+      }
+    },
+    "acknowledgment": "Durch die Nutzung von Freedom Bridge erkennst du an, dass du diesen Haftungsausschluss gelesen und verstanden hast und zustimmst, daran gebunden zu sein.",
+    "lastUpdated": "Letzte Aktualisierung: Januar 2026"
+  },
+  "disclaimerModal": {
+    "title": "Wichtiger Hinweis",
+    "subtitle": "Bitte lies und bestätige, bevor du fortfährst.",
+    "noAdvice": "Freedom Bridge bietet keine Anlage-, Finanz- oder Handelsberatung. Kryptowährungsinvestitionen sind volatil und riskant.",
+    "risks": "Durch die Nutzung dieser Plattform erkennst du an, dass Smart Contracts Schwachstellen enthalten können, Cross-Chain-Brücken inhärente Risiken bergen und Transaktionen unumkehrbar sind.",
+    "dyor": "Führe immer deine eigene Recherche (DYOR) durch und verwende nur Mittel, deren Verlust du dir leisten kannst.",
+    "fullDisclaimer": "Für vollständige Details siehe unseren",
+    "fullDisclaimerLink": "Haftungsausschluss",
+    "accept": "Ich verstehe und akzeptiere"
   },
   "common": {
     "from": "Von",
     "to": "Nach",
     "max": "MAX",
+    "cancel": "Abbrechen",
     "chainId": "Ketten-ID",
     "bscChain": "BSC Chain",
     "insufficientBalance": "Ungenügendes Guthaben.",

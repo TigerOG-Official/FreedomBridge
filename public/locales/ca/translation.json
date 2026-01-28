@@ -4,6 +4,7 @@
     "titleBridge": "Pont"
   },
   "nav": {
+    "home": "Inici",
     "settings": "Configuració",
     "menu": "Menú",
     "preferences": "Preferències",
@@ -40,20 +41,25 @@
     "bridge": "Pont"
   },
   "convert": {
-    "token": "Token",
-    "selectToken": "Selecciona Token",
     "balance": "Balanç",
-    "noConvertibleTokens": "No hi ha tokens per convertir a {{chainName}}",
-    "convert": "Convertir",
-    "addToWalletLabel": "Importar {{symbol}} a {{chainName}} a la cartera",
     "addToWalletButton": "Importar a la Cartera",
-    "addingToken": "Afegint...",
-    "addTokenError": "No s'ha pogut afegir el token a la cartera",
-    "legacyTokenMissing": "Falta el token heretat per a aquesta cadena",
-    "tigerOGMissing": "Falta el token TigerOG per a aquesta cadena",
     "networkWarning": {
       "title": "Xarxa Incorrecta",
       "message": "La conversió de tokens només està disponible a la cadena BSC. Si us plau, canvieu a BSC per convertir els vostres tokens heretats."
+    },
+    "confirmModal": {
+      "title": "Confirmar Conversió",
+      "warning": "Esteu a punt de convertir els vostres tokens. Si us plau, llegiu el següent atentament abans de continuar.",
+      "irreversible": "Aquesta acció és irreversible!",
+      "burnExplanation": "Els vostres tokens {{legacySymbol}} es cremaran permanentment i es crearà una quantitat equivalent de tokens {{newSymbol}} a la vostra cartera. Aquesta acció no es pot revertir.",
+      "positiveNote": "L'avantatge: {{newSymbol}} és completament lliure d'impostos — ja no hi ha impostos del 10%+ en cada transacció.",
+      "confirmQuestion": "Convertir {{amount}} {{legacySymbol}} a {{newSymbol}}?",
+      "confirmButton": "Ho entenc, Convertir"
+    },
+    "finalConfirmModal": {
+      "title": "N'esteu realment segur?",
+      "message": "Aquesta és la vostra última oportunitat per cancel·lar. Una vegada confirmeu, els vostres {{legacySymbol}} es convertiran a {{newSymbol}} i no es podran tornar enrere.",
+      "confirmButton": "Sí, Convertir Ara"
     }
   },
   "bridge": {
@@ -64,9 +70,7 @@
     "noDestination": "Sense Destí",
     "noBridgeableTokens": "No hi ha tokens transferibles",
     "bridgeButton": "Transferir Tokens",
-    "getFeeQuote": "Obtenir Pressupost",
     "viewOnAxelarscan": "Veure a Axelarscan",
-    "addDestinationTokenLabel": "Importar {{symbol}} a {{chainName}} a la cartera",
     "addTokenError": "No s'ha pogut afegir el token a la cartera",
     "estimatedTime": "Temps estimat",
     "recentTransactions": "Transaccions Recents",
@@ -98,7 +102,7 @@
     "stats": {
       "messaging": "Xarxa Axelar",
       "networks": "Xarxes Actives",
-      "fees": "Comissions de Protocol",
+      "fees": "Comissió de Plataforma",
       "finality": "Finalitat"
     },
     "features": {
@@ -307,7 +311,12 @@
     "tabs": {
       "overview": "Visió General",
       "byToken": "Per Token",
-      "byChain": "Per Cadena"
+      "byChain": "Per Cadena",
+      "liquidity": "Liquiditat"
+    },
+    "liquidity": {
+      "poolAddress": "Adreça del Grup",
+      "tradeOn": "Comerç a"
     },
     "overview": {
       "interchainTokens": {
@@ -329,6 +338,18 @@
         "legacyToken": "Token Heretat",
         "conversionContract": "Contracte de Conversió",
         "newToken": "Token Intercadena"
+      },
+      "liquidityPools": {
+        "title": "Grups de Liquiditat",
+        "description": "Grups de liquiditat DEX on pots intercanviar tokens OG en diverses cadenes."
+      },
+      "liquidityPoolsTable": {
+        "title": "Grups de Liquiditat",
+        "subtitle": "Grups DEX per intercanviar tokens OG",
+        "token": "Token",
+        "chain": "Cadena",
+        "dex": "DEX",
+        "poolAddress": "Adreça del Grup"
       }
     },
     "filterTokens": "Filtrar tokens...",
@@ -347,7 +368,14 @@
   "faq": {
     "title": "Suport de Freedom Bridge",
     "header": "Preguntes Freqüents",
-    "subtitle": "Respostes a preguntes comunes sobre TigerOG, el pont i Axelar.",
+    "subtitle": "Respostes a preguntes comunes sobre TigerOG, transferències i Axelar.",
+    "sections": {
+      "gettingStarted": "Començant",
+      "convertingTrading": "Conversió i Comerç",
+      "bridging": "Transferència",
+      "technical": "Tècnic",
+      "securityRisks": "Seguretat i Riscos"
+    },
     "cta": {
       "title": "Encara tens preguntes?",
       "description": "Uneix-te a la nostra comunitat a Telegram o consulta la Wiki detallada per a guies tècniques.",
@@ -370,13 +398,112 @@
       "q7": "Quant triga la transferència?",
       "a7": "La velocitat de transferència depèn de la finalitat de la cadena d'origen i la retransmissió d'Axelar. Típicament, una transferència entre cadenes triga al voltant de 2-5 minuts.",
       "q8": "Quins són els subministraments circulants dels tokens OG?",
-      "a8": "Cada token OG té un subministrament circulant fix derivat del seu token BNB original, comptabilitzant tokens cremats, balanços de contracte encallats i LP bloquejat. TigerOG: ~3,66 septilions (36,62% de l'original). LionOG: ~3,83 septilions (38,33% de l'original). FrogOG: ~8,39 septilions (83,86% de l'original). Consulta la Wiki per a desglossaments detallats de cada token."
+      "a8": "Cada token OG té un subministrament circulant fix derivat del seu token BNB original, comptabilitzant tokens cremats, balanços de contracte encallats i LP bloquejat. TigerOG: ~3,66 septilions (36,62% de l'original). LionOG: ~3,83 septilions (38,33% de l'original). FrogOG: ~8,39 septilions (83,86% de l'original). Consulta la Wiki per a desglossaments detallats de cada token.",
+      "q9": "Per què no es renuncia al contracte OG?",
+      "a9": "Renunciar al contracte eliminaria la capacitat de desenvolupar i afegir noves cadenes en el futur. Tot i que no es renunciarà al contracte en el futur previsible, es requereixen múltiples signatures per fer qualsevol canvi. A més, no s'assignen tokens ni impostos a l'equip.",
+      "q10": "Per què el contracte OG és encunyable (mintable)?",
+      "a10": "La transferència entre cadenes requereix funcionalitat d'encunyació/crema - els tokens es cremen quan surten d'una cadena i s'encunyen quan arriben. Això manté el subministrament total constant a totes les xarxes. L'encunyació està controlada per una cartera multisignatura Safe.",
+      "q11": "TigerOG abandona BNB Chain per Axelar?",
+      "a11": "No. Axelar no és una blockchain - és el protocol de pont que connecta les cadenes. BNB Chain segueix sent la cadena d'origen on converteixes tokens heretats. Axelar simplement permet que els teus tokens es moguin entre BNB, Ethereum, Base i altres xarxes suportades.",
+      "q12": "On són els meus tokens?",
+      "a12": "Assegura't d'afegir la cadena i l'adreça del token a la teva cartera. Pots trobar totes les adreces de contractes a la pàgina de Contractes. L'equip de Tiger utilitza la cartera Rabby que facilita la gestió de múltiples cadenes.",
+      "q13": "Per què triga tant la transferència des d'Ethereum o Base?",
+      "a13": "Ethereum requereix dues èpoques abans de finalitzar les transaccions per a la màxima seguretat. Com que Base es liquida a Ethereum, hereta aquest retard. Això prioritza la seguretat sobre la velocitat - els teus tokens estan segurs, només tingues paciència.",
+      "q14": "Què passa si em quedo amb el meu token original i no converteixo?",
+      "a14": "No hi ha pressa per convertir. BNBTiger i TigerOG sempre tindran diferents grups de liquiditat, capitalització de mercat, etc. Però BNBTiger té un impost alt i TigerOG no té impost per comerciar. Com que els impostos de l'original no s'utilitzen per donar suport al projecte, el desenvolupament el fa l'equip CTO per a TigerOG. Freedom Bridge i la multicadena són només per a TigerOG.",
+      "q15": "Hi ha un impost per convertir? TigerOG té impost?",
+      "a15": "No. Només costa la comissió de gas normal per convertir i comerciar. No hi ha impostos ni comissions addicionals, i TigerOG és un contracte lliure d'impostos.",
+      "q16": "Puc simplement comprar i comerciar amb TigerOG directament?",
+      "a16": "Encara no. L'equip no ha recaptat comissions i impostos per poder finançar grups de liquiditat prou grans. Per obtenir TigerOG ara, has de comprar o ja posseir l'original i convertir. Una vegada tinguis TigerOG, no serà fàcil de comerciar fins que arribin inversors per afegir al grup de liquiditat.",
+      "q17": "Per què la capitalització de mercat de TigerOG sembla tan inflada?",
+      "a17": "Com més petit és un grup de liquiditat, més impacte té qualsevol petit comerç en la capitalització mostrada. Això es resol quan arribin inversors per ser proveïdors de liquiditat.",
+      "q18": "Quines auditories de seguretat s'han realitzat?",
+      "a18": "Freedom Bridge no ha passat per una auditoria formal de tercers. No obstant això, el codi del contracte de conversió es basa en el convertidor SHx construït per l'equip de Stronghold (antics desenvolupadors de XRP i Stellar que van presentar recentment a Davos). La infraestructura de pont està impulsada per Axelar, que ha passat múltiples auditories de seguretat.",
+      "q19": "Com protegeix Freedom Bridge contra hacks o exploits?",
+      "a19": "Hi ha diverses mesures implementades:
+
+• El convertidor només manté el subministrament circulant exacte necessari - sense tokens excedents que es puguin explotar
+• El convertidor no té permisos d'encunyació
+• Tot el codi de contractes està verificat a la cadena i és de codi obert
+• Els permisos de tokens estan assegurats en una cartera multisignatura Safe.global
+• La transferència es gestiona per la infraestructura provada d'Axelar",
+      "q20": "La transferència és irreversible? Què passa si falla?",
+      "a20": "Les transferències de pont rarament es poden quedar encallades per gas insuficient o congestió de xarxa. Si això passa, pots rastrejar la teva transacció a Axelarscan i afegir gas manualment per completar-la. Axelar proporciona eines de recuperació de transaccions - no perdràs els teus tokens.",
+      "q21": "Quins són els riscos d'utilitzar Freedom Bridge?",
+      "a21": "Com amb qualsevol protocol DeFi, hi ha riscos inherents incloent risc de contractes intel·ligents, risc de ponts i volatilitat del mercat. Recomanem fer la teva pròpia investigació (DYOR) i només utilitzar fons que puguis permetre't perdre. Consulta el nostre avís legal per a més informació.",
+      "q22": "Puc convertir el nou contracte BNB Tiger Inu (setembre 2025)?",
+      "a22": "No. Freedom Bridge suporta el token BNB Tiger original/heretat que es va llançar fa uns quants anys - no el nou contracte creat el setembre de 2025. Freedom Bridge va ser construït per a la presa de control comunitària (CTO) dels tokens originals Tiger, Lion i Frog.",
+      "q23": "Com afegeixo liquiditat?",
+      "a23": "Afegir liquiditat és una activitat DeFi avançada amb riscos incloent pèrdua impermanent. Si tens experiència proporcionant liquiditat en DEXs com PancakeSwap o Uniswap, el procés és el mateix - aparella el token OG amb un actiu base. Aquí hi ha una excel·lent sèrie educativa sobre liquiditat si vols aprendre més: https://www.youtube.com/watch?v=oiylIHvwMik&list=PL_ujg_v1hZ5iGtiuhT8NkSMqEOaLAgmUu",
+      "q24": "Pot l'equip fer un rug pull?",
+      "a24": "No. No existeix cap mecanisme per a un rug pull. No s'assignen tokens ni impostos a l'equip, i no cobrem cap comissió de transferència — aquestes van a Axelar per cobrir els costos de retransmissió. L'equip som posseïdors com vosaltres, construint això a despeses pròpies. L'única cartera de l'equip és una cartera de màrqueting pública finançada per donacions de la comunitat. La cartera multisignatura Safe controla els permisos dels contractes, com ara pausar l'enviament a cadenes en cas d'emergència, però no pot accedir ni redirigir els fons dels usuaris."
     }
+  },
+  "footer": {
+    "wiki": "Wiki",
+    "contracts": "Contractes",
+    "faq": "PMF",
+    "disclaimer": "Avís Legal",
+    "github": "GitHub"
+  },
+  "disclaimer": {
+    "title": "Avís Legal",
+    "header": "Avís Legal Important",
+    "subtitle": "Si us plau, llegeix aquest avís atentament abans d'utilitzar Freedom Bridge.",
+    "sections": {
+      "noInvestmentAdvice": {
+        "title": "Sense Assessorament d'Inversió",
+        "content": "La informació proporcionada a Freedom Bridge no constitueix assessorament d'inversió, financer, de comerç ni de cap altre tipus. No has de tractar cap contingut com a tal. Freedom Bridge no recomana que cap criptomoneda hagi de ser comprada, venuda o mantinguda per tu. Fes la teva pròpia diligència deguda i consulta el teu assessor financer abans de prendre qualsevol decisió d'inversió."
+      },
+      "risksOfUse": {
+        "title": "Riscos d'Ús",
+        "content": "Els mercats de criptomonedes són volàtils i imprevisibles. En utilitzar Freedom Bridge, reconeixes i acceptes que:
+
+• Els contractes intel·ligents poden contenir errors o vulnerabilitats que podrien resultar en pèrdua de fons
+• Els ponts entre cadenes comporten riscos inherents incloent però no limitats a: fallades d'oracles, col·lusió de validadors i congestió de xarxa
+• Els valors dels tokens poden fluctuar dramàticament i pots perdre part o tota la teva inversió
+• Les transaccions en xarxes blockchain són irreversibles
+• Les comissions de xarxa i costos de gas estan fora del nostre control i poden variar significativament"
+      },
+      "noWarranties": {
+        "title": "Sense Garanties",
+        "content": "Freedom Bridge es proporciona \"tal qual\" i \"segons disponibilitat\" sense garanties de cap tipus, ja siguin expresses o implícites. No garantim que el servei serà ininterromput, segur o lliure d'errors. No fem garanties sobre la precisió, fiabilitat o completitud de qualsevol informació proporcionada a través de la plataforma."
+      },
+      "limitationOfLiability": {
+        "title": "Limitació de Responsabilitat",
+        "content": "En la màxima mesura permesa per la llei, Freedom Bridge, els seus desenvolupadors, contribuïdors i afiliats no seran responsables de cap dany directe, indirecte, incidental, especial, conseqüent o punitiu que sorgeixi de o estigui relacionat amb el teu ús de la plataforma, incloent però no limitat a pèrdua de beneficis, pèrdua de dades o pèrdua d'actius de criptomoneda."
+      },
+      "thirdPartyServices": {
+        "title": "Serveis de Tercers",
+        "content": "Freedom Bridge s'integra amb serveis de tercers incloent Axelar Network per a transferències entre cadenes. No som responsables de les accions, contingut, informació o dades d'aquests tercers. El teu ús de serveis de tercers està subjecte als seus respectius termes i condicions."
+      },
+      "regulatoryCompliance": {
+        "title": "Compliment Regulatori",
+        "content": "Les regulacions de criptomonedes varien segons la jurisdicció. Ets l'únic responsable d'assegurar que el teu ús de Freedom Bridge compleixi amb totes les lleis i regulacions aplicables a la teva jurisdicció. Freedom Bridge no fa cap representació sobre la legalitat dels serveis en cap jurisdicció."
+      },
+      "dyor": {
+        "title": "Fes la Teva Pròpia Investigació",
+        "content": "Sempre fes la teva pròpia investigació (DYOR) abans d'interactuar amb qualsevol protocol DeFi. Verifica les adreces de contractes, entén els mecanismes de qualsevol token amb el qual interactuïs, i mai inverteixis més del que pots permetre't perdre."
+      }
+    },
+    "acknowledgment": "En utilitzar Freedom Bridge, reconeixes que has llegit, entès i acceptes estar subjecte a aquest avís legal.",
+    "lastUpdated": "Última actualització: Gener 2026"
+  },
+  "disclaimerModal": {
+    "title": "Avís Important",
+    "subtitle": "Si us plau, llegeix i reconeix abans de continuar.",
+    "noAdvice": "Freedom Bridge no proporciona assessorament d'inversió, financer ni de comerç. Les inversions en criptomonedes són volàtils i arriscades.",
+    "risks": "En utilitzar aquesta plataforma, reconeixes que els contractes intel·ligents poden contenir vulnerabilitats, els ponts entre cadenes comporten riscos inherents, i les transaccions són irreversibles.",
+    "dyor": "Sempre fes la teva pròpia investigació (DYOR) i només utilitza fons que puguis permetre't perdre.",
+    "fullDisclaimer": "Per a més detalls, consulta el nostre",
+    "fullDisclaimerLink": "Avís Legal",
+    "accept": "Ho Entenc i Accepto"
   },
   "common": {
     "from": "Des de",
     "to": "A",
     "max": "MÀX",
+    "cancel": "Cancel·lar",
     "chainId": "ID de Cadena",
     "bscChain": "Cadena BSC",
     "insufficientBalance": "Balanç insuficient.",

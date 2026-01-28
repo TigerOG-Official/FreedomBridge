@@ -4,6 +4,7 @@
     "titleBridge": "Gada"
   },
   "nav": {
+    "home": "Gida",
     "settings": "Saituna",
     "menu": "Menu",
     "preferences": "Zaɓuɓɓuka",
@@ -45,6 +46,21 @@
     "networkWarning": {
       "title": "Hanyar Sadarwa Ba Daidai Ba",
       "message": "Musanya token yana samuwa ne kawai akan BSC Chain. Da fatan za a canja zuwa BSC don musanya tsoffin tokens ɗinka."
+    },
+    "confirmModal": {
+      "title": "Tabbatar da Musanya",
+      "warning": "Kuna shirin musanya tokens ɗinku. Da fatan za a karanta masu zuwa sosai kafin ci gaba.",
+      "irreversible": "Wannan aikin ba za a iya dawo da shi ba!",
+      "burnExplanation": "Za a ƙone tokens ɗinku na {{legacySymbol}} har abada kuma za a ƙirƙira adadin daidai na tokens {{newSymbol}} zuwa walat ɗinku. Ba za a iya dawo da su ko musanya su baya ba.",
+      "positiveNote": "Amfanin: {{newSymbol}} ba shi da haraji gaba ɗaya, yana ba ku damar canja wuri, kasuwanci, ko gada cikin 'yanci ba tare da cajin haraji ba.",
+      "confirmQuestion": "Musanya {{amount}} {{legacySymbol}} zuwa {{newSymbol}}?",
+      "confirmButton": "Na Fahimta, Musanya"
+    },
+    "finalConfirmModal": {
+      "title": "Ƙarshen Tabbatarwa",
+      "message": "Kuna shirin musanya {{amount}} {{legacySymbol}} zuwa {{newSymbol}}. Wannan aikin BA ZA A IYA DAWO DA SHI BA.",
+      "confirm": "Tabbatar da Musanya",
+      "cancel": "Soke"
     }
   },
   "bridge": {
@@ -296,7 +312,8 @@
     "tabs": {
       "overview": "Bayanai",
       "byToken": "Ta Token",
-      "byChain": "Ta Sarka"
+      "byChain": "Ta Sarka",
+      "liquidity": "Ruwan Kuɗi"
     },
     "overview": {
       "interchainTokens": {
@@ -318,7 +335,27 @@
         "legacyToken": "Tsohon Token",
         "conversionContract": "Kwangilar Musanya",
         "newToken": "Interchain Token"
+      },
+      "liquidityPools": {
+        "title": "Pools na Ruwan Kuɗi",
+        "description": "PancakeSwap liquidity pools don cinikayyar token. Ana iya kulle waɗannan pools ta hanyar ƙone LP tokens, yana tabbatar da ruwan kuɗi na dindindin."
+      },
+      "liquidityPoolsTable": {
+        "title": "Ruwan Kuɗi na PancakeSwap",
+        "subtitle": "Pools na ruwan kuɗi masu aiki don cinikayyar token tare da adadin kulle LP.",
+        "pair": "Tsaran",
+        "poolAddress": "Adireshin Pool",
+        "lpBurned": "LP An Ƙone"
       }
+    },
+    "liquidity": {
+      "title": "Ruwan Kuɗi",
+      "description": "Tsaran Ruwan Kuɗi na PancakeSwap tare da matsayin kulle LP",
+      "pair": "Tsaran",
+      "poolAddress": "Adireshin Pool",
+      "lpBurned": "LP An Ƙone",
+      "tradingFee": "Kuɗin Ciniki",
+      "viewOnDexscreener": "Duba akan DEX Screener"
     },
     "filterTokens": "Tace tokens...",
     "interchainAsset": "Interchain Asset ta Axelar ITS",
@@ -337,6 +374,12 @@
     "title": "Freedom Bridge Taimako",
     "header": "Tambayoyin da Ake Yawan Yi",
     "subtitle": "Amsoshin tambayoyin da ake yawan yi game da TigerOG, gadawa, da Axelar.",
+    "sections": {
+      "general": "Gaba ɗaya",
+      "conversion": "Musanya",
+      "bridging": "Gadawa",
+      "security": "Tsaro"
+    },
     "cta": {
       "title": "Har yanzu kuna da tambayoyi?",
       "description": "Shiga al'ummar mu akan Telegram ko duba Wiki mai zurfi don jagororin fasaha.",
@@ -359,13 +402,107 @@
       "q7": "Har yaushe gadawa take ɗauka?",
       "a7": "Saurin gadawa ya dogara da lokacin ƙarshe na tushen sarka da turawar Axelar. Yawanci, canja wuri tsakanin sarƙoƙi yana ɗaukar kimanin minti 2-5.",
       "q8": "Menene wadata mai yawo na tokens na OG?",
-      "a8": "Kowane OG token yana da ƙayyadaddun wadata mai yawo wanda aka samo daga ainihin BNB token nasa, yana lissafin tokens da aka ƙone, ma'aunin kwangila da suka makale, da LP da aka kulle. TigerOG: ~3.66 septillion (36.62% na asali). LionOG: ~3.83 septillion (38.33% na asali). FrogOG: ~8.39 septillion (83.86% na asali). Bincika Wiki don cikakken bayani na kowane token."
+      "a8": "Kowane OG token yana da ƙayyadaddun wadata mai yawo wanda aka samo daga ainihin BNB token nasa, yana lissafin tokens da aka ƙone, ma'aunin kwangila da suka makale, da LP da aka kulle. TigerOG: ~3.66 septillion (36.62% na asali). LionOG: ~3.83 septillion (38.33% na asali). FrogOG: ~8.39 septillion (83.86% na asali). Bincika Wiki don cikakken bayani na kowane token.",
+      "q9": "Menene ya bambanta TigerOG da BNBTiger?",
+      "a9": "BNBTiger token ce ta gado tare da haraji kan kowane ciniki. TigerOG yana da haraji sifili - ba harajin siye, haraji siyarwa, ko haraji canja wuri. Hakanan tana iya gadawa ta Axelar zuwa sarƙoƙi da yawa.",
+      "q10": "Menene interchain token?",
+      "a10": "Interchain token kadara ce da ta wanzu a cikin sarƙoƙi da yawa tare da daidaitaccen adireshin da wadata. Axelar ITS yana sarrafa ƙira da ƙonewa, don haka lokacin da ka gada, ana ƙone tokens a sarka ɗaya kuma ana ƙira a wani.",
+      "q11": "Zan iya gada zuwa kowace sarka?",
+      "a11": "Kuna iya gadawa zuwa kowace sarkar da Freedom Bridge ya tallafa. A halin yanzu waɗannan sun haɗa da BSC, Ethereum, Base, da ƙarin sarƙoƙin EVM masu dacewa. Duba shafin Wiki don sabuntawar jerin.",
+      "q12": "Menene zai faru idan gada ta gaza?",
+      "a12": "Idan ma'amalar gada ta gaza ko ta makale, tokens ɗinku sun kasance lafiya a cikin walat ɗinku a sarkar asali. Kuna iya gwada gadawa sake ko tuntuɓar tallafi. Axelar yana ba da hanyar bibiya ta Axelarscan.",
+      "q13": "Ni buƙatar gas a sarkar makoma?",
+      "a13": "Haka ne. Don karɓar da amfani da tokens ɗinku a sarkar makoma, kuna buƙatar ɗan gas token na asali (misali, ETH akan Ethereum, BNB akan BSC) don biyan ma'amaloli.",
+      "q14": "Shin Freedom Bridge yana marasa tsakanin?",
+      "a14": "A'a. Freedom Bridge yana da ƙungiyar ci gaba da ke sarrafa tura kwangiloli da sabuntawa. Duk da haka, kwangiloli suna amfani da daidaitattun ɗakunan karatu da aka tantance, kuma gadawa ta dogara da tsarin masu tabbatarwa marasa izini na Axelar.",
+      "q15": "Yaya musanya ke aiki ta fasaha?",
+      "a15": "Lokacin da kuka musanya, kwangilar musanya ta karɓi tokens ɗinku na gado kuma ta aika su zuwa adireshin matattu (0x...dEaD), tana ƙone su har abada. Sannan tana ƙira daidai adadin OG tokens zuwa adireshin ku.",
+      "q16": "Yaya gadawa ke aiki ta fasaha?",
+      "a16": "Gadawa tana amfani da Axelar ITS. Lokacin da kuka gada, ana ƙone tokens a tushen sarka kuma ana ƙira daidai adadin a sarkar makoma. Axelar validators suna tabbatar da wannan tsakanin sarƙoƙi.",
+      "q17": "Menene adireshin matattu?",
+      "a17": "Adireshin matattu (0x000...dEaD) walat ce da babu wanda ke da maɓallansa na sirri. Ana amfani da ita don ƙone tokens har abada - da zarar an aika tokens a can, ba za a iya dawo da su ba.",
+      "q18": "Shin tokens na suna da ruwan kuɗi?",
+      "a18": "TigerOG na asali a BSC yana da ruwan kuɗi a PancakeSwap. Lokacin da kuka gada zuwa wasu sarƙoƙi, ruwan kuɗi zai bambanta. Bincika DEXs a sarkar makomarka don pools na kasuwanci masu samuwa.",
+      "q19": "Shin kwangiloli sun kai dubawa?",
+      "a19": "Kwangiloli sun gina akan daidaitattun OpenZeppelin da ɗakunan karatu na Axelar waɗanda aka tantance sosai. An buga lambar tushe don tabbatarwa.",
+      "q20": "Shin na iya musanya sashi na tokens dina ne kawai?",
+      "a20": "Haka ne. Kuna iya musanya kowanne adadin tokens ɗinku na gado - ba za ku musanya duka ba. Kawai shigar da adadin da kuke son musanya.",
+      "q21": "Me ke faruwa ga kadarori na interchain da na gada idan na mutu?",
+      "a21": "Tokens ɗinku na interchain sun kasance a cikin walat ɗinku kamar kowane crypto asset. Sun bi daidaitattun dokoki na gadon crypto - duk wanda ke da damar shiga maɓallan sirri ko kalmar dawowa za su iya samun su.",
+      "q22": "Yaya zan ƙara TigerOG zuwa walat dina?",
+      "a22": "Amfani da maɓallin \"Shigo da zuwa Walat\" a bayan musanya, ko ƙara token da hannu ta amfani da adireshin kwangila daga shafin Kwangiloli. Tabbatar cewa kuna kan daidaitaccen hanyar sadarwa.",
+      "q23": "Wane walat ne ke aiki da Freedom Bridge?",
+      "a23": "Kowane walat mai dacewa da EVM yana aiki - MetaMask, Rabby, Trust Wallet, da sauransu. Kawai haɗa zuwa app kuma ku tabbatar cewa kuna kan hanyar sadarwa da ta dace.",
+      "q24": "Wannan rug pull ne?",
+      "a24": "A'a. Freedom Bridge yana amfani da amintattun kwangiloli masu kaifin baki don musanya da Axelar's ITS mai tabbatarwa don gadawa. Ana ƙone tsoffin tokens har abada - ba kulle ba - ana ƙirƙira sabbin tokens ne kawai lokacin da aka ƙone tsohuwar sigar. Kwangilolin an buga kuma ana iya tabbatarwa."
     }
+  },
+  "footer": {
+    "copyright": "© {{year}} Freedom Bridge. Duk haƙƙoƙi an tanadi.",
+    "poweredBy": "Axelar ne ke da iko",
+    "disclaimer": "Ƙin Amsa"
+  },
+  "disclaimer": {
+    "title": "Ƙin Amsar Shari'a",
+    "intro": "Da fatan za a karanta wannan ƙin amsar sosai kafin amfani da Freedom Bridge.",
+    "sections": {
+      "noAdvice": {
+        "title": "Babu Nasihar Kuɗi",
+        "content": "Abubuwan da ke cikin wannan gidan yanar gizon ba a nufin su zama nasihar kuɗi, saka hannun jari, haraji, ko shari'a ba. Musanya token da gadawa suna da haɗari da rashin tabbas. Kamata ku yi shawara tare da ƙwararrun ƙwararru kafin yanke wani shawarar kuɗi."
+      },
+      "risksInvolved": {
+        "title": "Haɗarin da Ke Ciki",
+        "content": "Cryptocurrency da DeFi suna da haɗari na musamman ciki har da:",
+        "risks": {
+          "volatility": "Canjin farashin kasuwa da rashin daidaituwa",
+          "smartContract": "Rauni na smart contract ko gazawa",
+          "bridge": "Haɗarin gadawa tsakanin sarƙoƙi da jinkiri",
+          "regulatory": "Rashin tabbas na doka",
+          "liquidity": "Haɗarin ruwan kuɗi da zamewa na farashin"
+        }
+      },
+      "noGuarantees": {
+        "title": "Babu Tabbaci",
+        "content": "Freedom Bridge ana samar da shi \"yadda yake\" ba tare da wani tabbaci ba. Ba ma ba da garantin cewa kayan aikin za su kasance marasa kuskure, amintattu, ko za su kasance samuwa kullum. Kuna yin hulɗa da yarjejeniyar a haɗarin ku."
+      },
+      "irreversibility": {
+        "title": "Rashin Dawo",
+        "content": "Musanya token aikin hanya ɗaya ne wanda ba za a iya dawo da shi ba. Da zarar kun musanya tokens ɗinku na gado zuwa tokens na OG, ba za a iya soke wannan aiki ba. Tabbatar kun fahimci wannan kafin ci gaba."
+      },
+      "thirdParty": {
+        "title": "Sabis na Wasu",
+        "content": "Freedom Bridge yana dogaro da sabis na wasu kamar Axelar Network don gadawa tsakanin sarƙoƙi. Ba mu da iko akan waɗannan sabis kuma ba mu da alhakin ayyukansu ko rashin samuwar su."
+      },
+      "taxImplications": {
+        "title": "Abubuwan da Suka Shafi Haraji",
+        "content": "Musanya tokens da gadawa tsakanin sarƙoƙi na iya haifar da abubuwan haraji a cikin ikon ku. Kuna da alhakin tantance da cika duk wajibcin haraji."
+      },
+      "jurisdiction": {
+        "title": "Ikon Shari'a",
+        "content": "Freedom Bridge na iya kasancewa ba shi da lasisi ko an hana shi a wasu ikon shari'a. Alhakin ku ne tabbatar da cewa amfani da yarjejeniyar ya bi duk dokokin da suka dace a yankin ku."
+      }
+    },
+    "acceptance": "Ta amfani da Freedom Bridge, kun amince cewa kun karanta, fahimta, kuma ku yarda da wannan ƙin amsar."
+  },
+  "disclaimerModal": {
+    "title": "Mahimmin Ƙin Amsa",
+    "content": "Freedom Bridge yana samar da software na gwaji don musanya token da gadawa tsakanin sarƙoƙi. Ta hanyar amfani da wannan yarjejeniyar, kun amince cewa:",
+    "points": {
+      "p1": "Kuna amfani da software a kan haɗarin ku",
+      "p2": "Musanya token ba za a iya dawo da shi ba kuma na ƙarshe ne",
+      "p3": "DeFi da kadarori na crypto suna da canjin farashi",
+      "p4": "Wannan ba nasihar kuɗi ba ce",
+      "p5": "Kun bi duk dokokin yankin ku"
+    },
+    "fullDisclaimer": "Karanta Cikakken Ƙin Amsar",
+    "accept": "Na Fahimta kuma na Yarda",
+    "decline": "Ƙi"
   },
   "common": {
     "from": "Daga",
     "to": "Zuwa",
     "max": "MAX",
+    "cancel": "Soke",
     "chainId": "ID na Sarka",
     "bscChain": "BSC Chain",
     "insufficientBalance": "Ma'auni bai isa ba.",

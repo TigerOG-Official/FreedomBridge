@@ -4,6 +4,7 @@
     "titleBridge": "Ibhulorho"
   },
   "nav": {
+    "home": "Ekhaya",
     "settings": "Izicwangciso",
     "menu": "Imenyu",
     "preferences": "Ukhetho",
@@ -16,36 +17,49 @@
     "wiki": "Amaxwebhu / Wiki",
     "contracts": "Izivumelwano",
     "faq": "Imibuzo Ebuzwa Rhoqo",
-    "logout": "Phuma",
     "language": "Ulwimi",
     "languageSearchPlaceholder": "Khangela iilwimi",
     "languageNoResults": "Akukho lwimi lufunyenweyo",
     "close": "Vala"
   },
   "addNetworks": {
-    "title": "Yongeza Iinethiwekhi",
-    "description": "Cofa iqhosha elingezantsi ukuze ungeze Iinethiwekhi kwiwallet yakho. Oku kwenza kube lula ukutshintsha phakathi kwamakhonkco ngelixa uvavanya."
+    "title": "Yongeza Iinethiwekhi kwiWallet",
+    "description": "Cofa nayiphi na inethiwekhi ukuze uyongeze kwi-MetaMask, i-Rabby, okanye ezinye ii-wallet ze-Web3",
+    "searchPlaceholder": "Khangela iinethiwekhi...",
+    "noResults": "Akukho nethiwekhi ifunyenweyo",
+    "networkCount": "inethiwekhi"
+  },
+  "addNetwork": {
+    "connectWallet": "Nceda uqhagamshele i-wallet yakho kuqala",
+    "alreadyPending": "Isicelo sele silindile. Jonga i-wallet yakho.",
+    "error": "Ayiphumelelanga ukongeza inethiwekhi. Nceda uyongeze ngesandla.",
+    "adding": "Iyongeza...",
+    "button": "Yongeza"
   },
   "tabs": {
     "convert": "Guqula",
     "bridge": "Ibhulorho"
   },
   "convert": {
-    "token": "Itoken",
-    "selectToken": "Khetha iToken",
     "balance": "Ibhalansi",
-    "noConvertibleTokens": "Akukho token zinokuguqulwa kwi-{{chainName}}",
-    "convert": "Guqula",
-    "addToWalletLabel": "Ngenisa {{symbol}} kwi {{chainName}} kwiwallet",
     "addToWalletButton": "Ngenisa kwiWallet",
-    "addingToken": "Iyongeza…",
-    "addTokenError": "Ayikwazi ukongeza itoken kwiwallet",
-    "legacyTokenMissing": "Itoken yakudala ayikho kule khonkco",
-    "tigerOGMissing": "Itoken ye-TigerOG ayikho kule khonkco",
     "networkWarning": {
       "title": "Inethiwekhi Engachanekanga",
-      "message": "Ukuguqulwa kwetoken kufumaneka kuphela kwiKhonkco le-BSC.",
-      "description": "Nceda utshintshele kwiKhonkco le-BSC kwiwallet yakho ukuze uguqule iitokeni, okanye ujonge kwi-Bridge tab ukuze udlulise iitokeni phakathi kwamakhonkco."
+      "message": "Ukuguqulwa kwetoken kufumaneka kuphela kwiKhonkco le-BSC. Nceda utshintshele kwi-BSC ukuze uguqule iitokeni zakho zakudala."
+    },
+    "confirmModal": {
+      "title": "Qinisekisa Ukuguqulwa",
+      "warning": "Uza kuguqula iitokeni zakho. Nceda ufundisise oku kulandelayo ngaphambi kokuba uqhubeke.",
+      "irreversible": "Esi senzo asinakuguqulwa!",
+      "burnExplanation": "Iitokeni zakho ze-{{legacySymbol}} ziza kutshiswa ngokusisigxina kwaye isixa esilinganayo seetokeni ze-{{newSymbol}} ziza kwenziwa kwi-wallet yakho. Oku akunakubuyiselwa umva.",
+      "positiveNote": "icala elihle: I-{{newSymbol}} ayinarhafu kwaphela — akukho rhafu ye-10%+ kwintengiselwano nganye.",
+      "confirmQuestion": "Guqula {{amount}} {{legacySymbol}} ibe yi {{newSymbol}}?",
+      "confirmButton": "Ndiyaqonda, Guqula"
+    },
+    "finalConfirmModal": {
+      "title": "Uqinisekile Nyani?",
+      "message": "Eli lithuba lakho lokugqibela lokurhoxisa. Nje ukuba uqinisekise, i-{{legacySymbol}} yakho iza kuguqulwa ibe yi-{{newSymbol}} kwaye ayinakubuyiselwa umva.",
+      "confirmButton": "Ewe, Guqula Ngoku"
     }
   },
   "bridge": {
@@ -56,9 +70,7 @@
     "noDestination": "Akukho ndawo uya kuyo",
     "noBridgeableTokens": "Akukho token zinokudluliselwa ngebhulorho",
     "bridgeButton": "Dlulisa iiToken ngebhulorho",
-    "getFeeQuote": "Fumana Ixabiso leNtlawulo",
     "viewOnAxelarscan": "Jonga kwi-Axelarscan",
-    "addDestinationTokenLabel": "Ngenisa {{symbol}} kwi {{chainName}} kwiwallet",
     "addTokenError": "Ayikwazi ukongeza itoken kwiwallet",
     "estimatedTime": "Ixesha eliqikelelweyo",
     "recentTransactions": "Iitransaction zakutshanje",
@@ -74,25 +86,11 @@
     "cancel": "Rhoxisa",
     "save": "Gcina"
   },
-  "wallet": {},
-  "login": {
-    "title": "Wamkelekile kwakhona",
-    "subtitle": "Ngena ukuze uqhubeke kwiBhulorho yeNkululeko",
-    "emailLabel": "I-imeyile",
-    "emailPlaceholder": "igama@umzekelo.com",
-    "passwordLabel": "Iphaswedi",
-    "passwordPlaceholder": "Faka iphaswedi",
-    "rememberMe": "Ndicel' undikhumbule kwesi sixhobo",
-    "submit": "Ngena",
-    "validation": {
-      "required": "I-imeyile nephaswedi ziyafuneka.",
-      "invalid": "I-imeyile okanye iphaswedi engachanekanga."
-    }
-  },
   "landing": {
     "banner": {
-      "title": "Intsha apha?",
-      "message": "Funda nge-Freedom Bridge nendlela yokudlulisa iitokeni ze-TigerOG phakathi kwamakhonkco."
+      "title": "Umtsha apha?",
+      "message": "Funda nge-Freedom Bridge nendlela yokudlulisa iitokeni ze-TigerOG phakathi kwamakhonkco.",
+      "note": "Qaphela: Ukuguqulwa kwetoken kusisigxina kwaye akunakubuyiselwa umva."
     },
     "hero": {
       "badge": "Inikwe amandla yi-Axelar",
@@ -112,13 +110,13 @@
       "description": "I-Freedom Bridge isebenzisa i-Axelar ITS ukunikezela ngamava okudibanisa angenamthungo, akhuselekileyo, kwaye angenarhafu kwi-blockchains ezi-{{count}}+.",
       "stopDecay": {
         "title": "Yeka Ukubola",
-        "description": "Iitokeni zakudala zitshisa i-10-11% yexabiso lakho kuyo yonke into oyithengayo kunye nokuthengisa. Ukuguqulela kwi-TigerOG kuyakunqanda oku kuphuma igazi ngoko nangoko, kugcina i-100% yamandla akho.",
+        "description": "Iitokeni zakudala zitshisa i-10-11% yexabiso lakho kuyo yonke into oyithengayo kunye nokuthengisa. Ukuguqula kwi-TigerOG kuyakunqanda oku kuphuma igazi ngoko nangoko, kugcina i-100% yamandla akho.",
         "graphLabel1": "100% Igciniwe (TigerOG)",
         "graphLabel2": "-40% Ixabiso (Irhafu Yakudala 10%)"
       },
       "conversion": {
         "title": "1:1 Ukuguqulwa",
-        "description": "Ukunikezelwa okupheleleyo akutshintshi. Iitokeni zigcinwe kwisivumelwano sokufuduka esikhuselekileyo, kwaye i-1:1 echanekileyo iyasetyenziswa. Akukho kutyala imali, akukho kuthotywa."
+        "description": "Ukunikezelwa okupheleleyo akutshintshi. Iitokeni zigcinwe kwisivumelwano sokuguqula esikhuselekileyo, kwaye i-1:1 echanekileyo iyasetyenziswa. Akukho kutyala imali, akukho kuthotywa."
       },
       "multichain": {
         "title": "Amakhonkco Amaninzi",
@@ -130,14 +128,19 @@
         "button": "Qalisa Ukudibanisa"
       }
     },
-    "teaser": {
-      "title": "Ufuna ezinye iingqekembe?",
-      "subtitle": "Ucinga ntoni nge <lunc>LUNC</lunc>, <crepe>Crepe</crepe>, okanye <shiba>Shiba</shiba>??"
-    },
     "cta": {
       "title": "Ulungele ukudibanisa?",
-      "description": "Joyina inguqu ye-interchain. Kuthatha ngaphantsi komzuzu ukuguqula ii-asethi zakho kwaye uqalise ukudibanisa nge-Axelar.",
+      "description": "Joyina inguqu ye-interchain. Kuthatha ngaphantsi komzuzu ukuguqula iitokeni zakho kwaye uqalise ukudibanisa nge-Axelar.",
       "button": "Qalisa I-App Ngoku"
+    },
+    "buyTokens": {
+      "badge": "Qalisa",
+      "title": "Fumana Ii-Asethi",
+      "description": "Awunazo iitokeni okwangoku? Thenga iitokeni zoqobo kwi-PancakeSwap, emva koko uziguqulele kwiinguqulelo ezintsha ze-multichain.",
+      "buyOn": "Thenga kwi-PancakeSwap",
+      "then": "ke",
+      "convertTo": "Guqulela kwi",
+      "buyNow": "Thenga Ngoku"
     }
   },
   "wiki": {
@@ -145,7 +148,7 @@
     "searchPlaceholder": "Khangela amaxwebhu...",
     "header": {
       "title": "Amaxwebhu",
-      "subtitle": "Funda indlela yokuguqula iitokeni zakudala, ibhulorho phakathi kwamakhonkco, kunye nokudibanisa neFreedom Bridge."
+      "subtitle": "Funda indlela yokuguqula iitokeni zakudala kwaye udibanise amakhonkco."
     },
     "nav": {
       "gettingStarted": "Ukuqalisa",
@@ -153,7 +156,9 @@
       "developers": "Abaphuhlisi",
       "tigerogSupply": "Ubonelelo lwe-TigerOG",
       "lionogSupply": "Ubonelelo lwe-LionOG",
-      "frogogSupply": "Ubonelelo lwe-FrogOG"
+      "frogogSupply": "Ubonelelo lwe-FrogOG",
+      "githubRepo": "Indawo yokugcina ye-GitHub",
+      "axelarDocs": "Amaxwebhu e-Axelar ITS"
     },
     "articles": {
       "whatIs": {
@@ -169,7 +174,7 @@
         "step1": "Qhagamshela iwallet yakho kwikhonkco lomthombo (umz. i-BNB Chain).",
         "step2": "Yiya kwi <strong>Guqula</strong> ithebhu.",
         "step3": "Khetha itoken yakudala ofuna ukuyiguqula.",
-        "step4": "Vuma isivumelwano se-Migration sokuchitha iitokeni zakho.",
+        "step4": "Vuma isivumelwano sokuGuqula sokuchitha iitokeni zakho.",
         "step5": "Cofa <strong>Guqula</strong> ukufaka iitokeni zakho zakudala kwaye ufumane isixa esilinganayo se \"TigerOG\" iitokeni.",
         "note": "<strong>Qaphela:</strong> Ukuguqula kuthatha irhafu yentengiselwano yetoken yakudala (ngexesha lohlaziyo) ukuba itoken yakho ihlawulisa irhafu kotshintshiselwano. Nangona kunjalo, xa sele iguqulelwe kwi-TigerOG, lonke utshintshiselwano olulandelayo kunye neebhulorho zikhululekile kule rhafu."
       },
@@ -185,9 +190,9 @@
         "title": "Inethiwekhi ye-Axelar",
         "content": "Sisebenzisa i-Axelar njengoluhlu lwethu lokusebenzisana. I-Axelar yinethiwekhi ebekwe kwiindawo ezahlukeneyo eqhagamshela ii-blockchains ezahlukeneyo, evumela unxibelelwano olukhuselekileyo kunye nokutshintshelwa kwee-asethi. Imodeli yokhuseleko ye-Axelar ixhhomekeke kwiiseti zee-validators engadingi mvume, ezibonelela ngokhuseleko lwenqanaba eliphezulu kwiitokeni ze-interchain."
       },
-      "migration": {
-        "title": "I-Logic yoFuduko",
-        "content": "Isivumelwano se-Migration sisetyenziswe kwikhonkco lokuqala (umz. BSC). Ibamba iitokeni zakudala zoqobo elugcinweni. Xa uphucula iitokeni, ufaka kwisivumelwano se-Migration. Xa ukhulula (ukuba kuyaxhaswa), utshisa ukumelwa kwe-TigerOG ukukhulula iitokeni zoqobo. Oku kuqinisekisa i-1:1 exhaswa ngokungqongqo."
+      "conversion": {
+        "title": "I-Logic yoGuqulo",
+        "content": "Isivumelwano sokuGuqula sisetyenziswe kwi-BSC. Xa uguqula, iitokeni zakho zakudala zithunyelwa kwidilesi efileyo (zitshisiwe ngokusisigxina) kwaye ufumana i-TigerOG kumlinganiselo we-1:1. Le yinkqubo yendlela enye — iitokeni zakudala ziyatshatyalaliswa kwaye azinakuze zifunyanwe kwakhona."
       },
       "contracts": {
         "title": "Iidilesi zeSivumelwano esiHlakaniphileyo",
@@ -198,7 +203,7 @@
       "security": {
         "title": "Imodeli yoKhuseleko",
         "content": "Ukhuseleko lwakhiwe kuwo wonke umaleko weFreedom Bridge:",
-        "point1": "<strong>I-Architecture yoFuduko:</strong> Iitokeni zakudala zigcinwa kwizivumelwano ezihlakaniphileyo eziqinisekisiweyo, ezingenakutshintshwa.",
+        "point1": "<strong>I-Architecture yoGuqulo:</strong> Iitokeni zakudala zitshiswa ngokusisigxina ngezivumelwano ezihlakaniphileyo eziqinisekisiweyo, ezingenakutshintshwa.",
         "point2": "<strong>I-Axelar Validators:</strong> Imiyalezo enqamlezileyo iqinisekiswa yinetiwekhi ye-Axelar ebekwe kwiindawo ezahlukeneyo.",
         "point3": "<strong>Ubonelelo Olungaguqukiyo:</strong> I-ITS ilawula i-minting kunye ne-burning ukugcina ubonelelo olupheleleyo luhleli kuzo zonke iinethiwekhi.",
         "point4": "<strong>I-Logic ePhicothiweyo:</strong> Yakhiwe kwi-Axelar kunye ne-OpenZeppelin standard libraries."
@@ -310,13 +315,67 @@
       "liquidity": "Ubumanzi"
     },
     "liquidity": {
-      "title": "Amachibi oBumanzi"
-    }
+      "poolAddress": "Idilesi yeChibi",
+      "tradeOn": "Rhweba kwi"
+    },
+    "overview": {
+      "interchainTokens": {
+        "title": "ii-Token ze-Interchain",
+        "description": "Iitokeni ze-Interchain ezisasazwe nge-Axelar Interchain Token Service (ITS). Ezi tokeni zigcina iidilesi ezifanayo kuzo zonke iinethiwekhi ezixhaswayo."
+      },
+      "axelarNetwork": {
+        "title": "Inethiwekhi ye-Axelar",
+        "description": "Iprotocol yomyalezo esisiseko ekhusela ukutshintshelwa kwee-cross-chain kwaye iqinisekisa ingqibelelo yedatha phakathi kwee-blockchains ezahlukeneyo."
+      },
+      "conversionContracts": {
+        "title": "Izivumelwano zokuGuqula",
+        "description": "Zinoxanduva lokuguqula iitokeni zakudala zibe zii-asethi ze-interchain. Ezi zivumelwano ziphatha idiphozithi kunye ne-minting logic kwikhonkco lemvelaphi."
+      },
+      "conversionContractsTable": {
+        "title": "Iidilesi zeSivumelwano zokuGuqula",
+        "subtitle": "Ezi zivumelwano kwi-BSC ziphatha ukuguqulwa ukusuka kwiitokeni zakudala ukuya kwiitokeni ze-interchain.",
+        "token": "Itoken",
+        "legacyToken": "Itoken Yakudala",
+        "conversionContract": "Isivumelwano sokuGuqula",
+        "newToken": "Itoken ye-Interchain"
+      },
+      "liquidityPools": {
+        "title": "Amachibi oBumanzi",
+        "description": "I-DEX liquidity pools apho unokurhweba iitokeni ze-OG kumakhonkco ahlukeneyo."
+      },
+      "liquidityPoolsTable": {
+        "title": "Amachibi oBumanzi",
+        "subtitle": "Amachibi we-DEX okurhweba iitokeni ze-OG",
+        "token": "Itoken",
+        "chain": "Ikhonkco",
+        "dex": "DEX",
+        "poolAddress": "Idilesi yeChibi"
+      }
+    },
+    "filterTokens": "Hluza iitokeni...",
+    "interchainAsset": "I-Interchain Asset nge-Axelar ITS",
+    "availableOnChains": "Ifumaneka kumakhonkco e-{{count}}",
+    "table": {
+      "chain": "Ikhonkco",
+      "tokenAddress": "Idilesi yeToken",
+      "axelarChainName": "Igama leKhonkco le-Axelar",
+      "chainId": "ID: {{id}}"
+    },
+    "axelarId": "I-ID ye-Axelar: {{name}}",
+    "copied": "Ikopiwe!",
+    "copyAddress": "Kopa idilesi"
   },
   "faq": {
     "title": "Inkxaso ye-Freedom Bridge",
     "header": "Imibuzo Ebuzwa Rhoqo",
     "subtitle": "Iimpendulo kwimibuzo eqhelekileyo malunga ne-TigerOG, ukudibanisa, kunye ne-Axelar.",
+    "sections": {
+      "gettingStarted": "Ukuqalisa",
+      "convertingTrading": "Ukuguqula & Ukurhweba",
+      "bridging": "Ukudibanisa",
+      "technical": "Ubugcisa",
+      "securityRisks": "Ukhuseleko & nemingcipheko"
+    },
     "cta": {
       "title": "Usenemibuzo?",
       "description": "Joyina uluntu lwethu kwi-Telegram okanye ujonge i-Wiki eneenkcukacha zeziKhokelo zobugcisa.",
@@ -327,25 +386,112 @@
       "q1": "Yintoni injongo yokuguqula iitokeni zam?",
       "a1": "Ukuguqula iitokeni zakho zibe yi-TigerOG kususa irhafu yentengiselwano (ihlala i-10-12%) eyayanyaniswa netoken yakudala. Ikwakuvumela ukuba udibanise ezi tokeni kwezinye ii-blockchains ezifana ne-Ethereum, i-Base, kunye nokunye nge-Axelar, uvumela ukufikelela kwi-ecosystems entsha.",
       "q2": "Ingaba kukhuselekile ukusebenzisa i-Freedom Bridge?",
-      "a2": "Ewe. Iprotocol isebenzisa isivumelwano se-Migration esikhuselekileyo kunye ne-Axelar's Interchain Token Service. Xa uguqula, i-BNBTiger yakho itshiswa ngokusisigxina kwaye ufumana i-TigerOG kumlinganiselo we-1:1. Inkqubo yokutshisa iqinisekisa ukuba ubonelelo lulonke lulawulwa kakuhle kuwo onke amakhonkco.",
+      "a2": "Ewe. Iprotocol isebenzisa isivumelwano sokuGuqula esikhuselekileyo kunye ne-Axelar's Interchain Token Service. Xa uguqula, i-BNBTiger yakho itshiswa ngokusisigxina kwaye ufumana i-TigerOG kumlinganiselo we-1:1. Inkqubo yokutshisa iqinisekisa ukuba ubonelelo lulonke lulawulwa kakuhle kuwo wonke amakhonkco.",
       "q3": "Ingaba kukho nayiphi na imirhumo?",
       "a3": "I-Freedom Bridge ngokwayo ayihlawulisi mrhumo ngokuguqula. Uhlawula kuphela imirhumo yegesi ye-blockchain eqhelekileyo. Ukudibanisa phakathi kwamakhonkco kubandakanya umrhumo wegesi enqamlezileyo ohlawulwa ku-Axelar ukugubungela iindleko zokudlulisela.",
       "q4": "Kwenzeka ntoni ukuba ndilahlekelwa ziitokeni zam?",
       "a4": "ii-Token ze-TigerOG ziziphatha njengayo nayiphi na enye itoken ye-ERC20. Ukuba ulahlekelwa lufikelelo kwiwallet yakho, azinakubuyiselwa. Soloko ugcina izitshixo zakho zabucala kunye namabinzana okubuyisela ekhuselekile.",
       "q5": "Ndingakwazi ukuguqulela iitokeni zam ze-TigerOG zibuyele kwi-BNBTiger?",
-      "a5": "Hayi. Ufuduko luguqulelo lwendlela enye. Xa uguqulela i-BNBTiger kwi-TigerOG, iitokeni zakho ze-BNBTiger zitshiswa ngokusisigxina (zithunyelwe kwidilesi efileyo). Oku kungenxa yoyilo — i-TigerOG luguqulelo oluphuculweyo, olungenarhafu olujolise ekuthatheni indawo yetoken yakudala ngokupheleleyo.",
+      "a5": "Hayi. Ukuguqula luguqulelo lwendlela enye. Xa uguqulela i-BNBTiger kwi-TigerOG, iitokeni zakho ze-BNBTiger zitshiswa ngokusisigxina (zithunyelwe kwidilesi efileyo). Oku kungenxa yoyilo — i-TigerOG luguqulelo oluphuculweyo, olungenarhafu olujolise ekuthatheni indawo yetoken yakudala ngokupheleleyo.",
       "q6": "Ziziphi iinethiwekhi ezixhaswayo?",
       "a6": "Sixhasa amakhonkco amaninzi we-EVM nge-Axelar, kubandakanywa i-BNB Chain, i-Ethereum, i-Base, kunye nokunye. Jonga i-Wiki kuluhlu olupheleleyo lweenethiwekhi ezixhaswayo.",
       "q7": "Kuthatha ixesha elingakanani ukudibanisa?",
-      "a7": "Isantya sokudibanisa sixhomekeke kwixesha lokugqibela lekhonkco lomthombo kunye nokudluliselwa kwe-Axelar. Ngokuqhelekileyo, ukudluliselwa phakathi kwamakhonkco kuthatha malunga nemizuzu emi-2-5.",
+      "a7": "Ixesha lokudibanisa lixhomekeke kwikhonkco olithumela UKUSUKA:\n\n• I-Ethereum: 15-20 imizuzu (ifuna ukuqinisekiswa ngakumbi)\n• I-BSC & Avalanche: 2-4 imizuzu (ikhawuleza kakhulu)\n• I-Base, Linea, Polygon: 3-5 imizuzu\n\nI-app ibonisa ixesha eliqikelelweyo ngaphambi kokuba udibanise.",
       "q8": "Luthini ubonelelo oluvelayo lweetoken ze-OG?",
-      "a8": "Itoken nganye ye-OG inobonelelo olusisigxina oluvelayo oluvela kwitoken yayo ye-BNB yoqobo, ukubala iitokeni ezitshisiweyo, iibhalansi zezivumelwano ezibambekileyo, kunye ne-LP etshixiweyo. I-TigerOG: ~3.66 iseptiliyoni (36.62% yoqobo). I-LionOG: ~3.83 iseptiliyoni (38.33% yoqobo). I-FrogOG: ~8.39 iseptiliyoni (83.86% yoqobo). Bona i-Wiki ngokuchithwa kweenkcukacha zetoken nganye."
+      "a8": "Itoken nganye ye-OG inobonelelo olusisigxina oluvelayo oluvela kwitoken yayo ye-BNB yoqobo, ukubala iitokeni ezitshisiweyo, iibhalansi zezivumelwano ezibambekileyo, kunye ne-LP etshixiweyo:\n\n• I-TigerOG: ~3.66 iseptiliyoni (36.62% yoqobo)\n• I-LionOG: ~3.83 iseptiliyoni (38.33% yoqobo)\n• I-FrogOG: ~8.39 iseptiliyoni (83.86% yoqobo)\n\nBona i-Wiki ngokuchithwa kweenkcukacha.",
+      "q9": "Kutheni isivumelwano se-OG singayekiswanga (renounced)?",
+      "a9": "Ukuyekisa isivumelwano kuya kususa amandla okuphuhlisa kunye nokongeza amakhonkco amatsha kwixesha elizayo. Nangona isivumelwano singayi kuyekiswa kwixesha elibonakalayo, iisignesha ezininzi ziyafuneka ukwenza naluphi na utshintsho. Kananjalo, akukho token okanye irhafu eyabelwe iqela.",
+      "q10": "Kutheni isivumelwano se-OG sinokwenziwa (mintable)?",
+      "a10": "Ukudibanisa amakhonkco kufuna ukusebenza kwe-mint/burn - iitokeni ziyatshiswa xa ziphuma kwikhonkco kwaye zenziwe xa zifika. Oku kugcina ubonelelo lulonke lungaguquki kuzo zonke iinethiwekhi. Ukwenziwa kulawulwa yi-multisig Safe wallet.",
+      "q11": "Ngaba i-TigerOG ishiya i-BNB Chain ye-Axelar?",
+      "a11": "Hayi. I-Axelar ayiyo-blockchain - yiprotocol yokudibanisa edibanisa amakhonkco kunye. I-BNB Chain ihlala ilikhonkco lemvelaphi apho uguqula khona iitokeni zakudala. I-Axelar ivumela nje iitokeni zakho ukuba zihambe phakathi kwe-BNB, i-Ethereum, i-Base, kunye nezinye iinethiwekhi ezixhaswayo.",
+      "q12": "Ziphi iitokeni zam?",
+      "a12": "Qinisekisa ukuba udibanise ikhonkco kunye nedilesi yetoken kwiwallet yakho. Ungazifumana zonke iidilesi zesivumelwano kwiphepha leZivumelwano. Iqela le-Tiger lisebenzisa i-Rabby wallet eyenza ukulawula amakhonkco amaninzi kube lula.",
+      "q13": "Kutheni ukudibanisa ukusuka kwi-Ethereum okanye i-Base kuthatha ixesha elide?",
+      "a13": "I-Ethereum ifuna ii-epochs ezimbini ngaphambi kokugqiba iitransaction zokhuseleko oluphezulu. Ekubeni i-Base ihlala kwi-Ethereum, ilifumana njengelifa eli lilibaziseko. Oku kubeka phambili ukhuseleko ngaphezu kwesantya - iitokeni zakho zikhuselekile, yiba nomonde.",
+      "q14": "Kwenzeka ntoni ukuba ndihlala kwitoken yam yoqobo kwaye ndingaguquli?",
+      "a14": "Akukho kukhawuleza ukuguqula. I-BNBTiger kunye ne-TigerOG ziya kuhlala zine-liquidity pools ezahlukeneyo, i-market caps, njalo njalo. Kodwa i-BNBTiger inorhafu ephezulu kwaye i-TigerOG ayinarhafu yokurhweba. Ekubeni iirhafu kwiyoqobo zingasetyenziswanga ukuxhasa iprojekthi, uphuhliso lwenziwa liqela le-CTO le-TigerOG. I-Freedom Bridge kunye ne-multi-chain yenzelwe kuphela i-TigerOG.",
+      "q15": "Ingaba kukho irhafu yokuguqula? Ingaba i-TigerOG inayo irhafu?",
+      "a15": "Hayi. Kubiza kuphela umrhumo wegesi eqhelekileyo ukuguqula nokurhweba. Akukho rhafu okanye imirhumo eyongezelelweyo, kwaye i-TigerOG sisivumelwano esingenarhafu.",
+      "q16": "Ndingakwazi ukuthenga nokurhweba i-TigerOG ngqo?",
+      "a16": "Hayi okwangoku. Iqela alikaqokeleli imirhumo kunye neerhafu ukuze bakwazi ukuxhasa imali kwi-liquidity pools ezinkulu ngokwaneleyo. Ukuze ufumane i-TigerOG ngoku, kufuneka uthenge okanye ube sele unayo yoqobo kwaye uguqule. Nje ukuba unayo i-TigerOG, ayizukuthengiswa lula kude abatyali-mali beze ukongeza kwi-liquidity pool.",
+      "q17": "Kutheni i-market cap ye-TigerOG ibonakala inyukile?",
+      "a17": "Okukhona i-liquidity pool incinci, kokukhona naluphi na urhwebo oluncinci lwenziimpembelelo enkulu kwi-market cap ebonisiweyo. Oku kuza kulunga xa abatyali-mali beze kuba ngababoneleli be-liquidity.",
+      "q18": "Ziziphi uphicotho lokhuseleko olwenziweyo?",
+      "a18": "I-Freedom Bridge ayikwenziwanga uphicotho olusemthethweni lomntu wesithathu. Nangona kunjalo, ikhowudi yesivumelwano somguquli isekelwe kwi-SHx converter eyakhiwe liqela le-Stronghold (ababephethe i-XRP kunye ne-Stellar abasanda kubonisa e-Davos). Isiseko sokudibanisa sinikwe amandla yi-Axelar, ewenze uphicotho lokhuseleko oluninzi.",
+      "q19": "I-Freedom Bridge ikhusela njani kwii-hacks okanye ukuxhaphaza?",
+      "a19": "Amanyathelo amaninzi akhona:\n\n• Umguquliubamba kuphela ubonelelo oluvelayo olufunekayo - akukho tokeni ezigqithisileyo ezinokuxhaphazwa\n• Umguquliakanamvume yokwenza (mint)\n• Yonke ikhowudi yesivumelwano iqinisekisiwe kwi-chain kwaye yimithombo evulekileyo\n• Iimvume zetoken zikhuselwe kwi-Safe.global multisig wallet\n• Ukudibanisa kusingathwa yisiseko esivavanyiweyo se-Axelar",
+      "q20": "Ingaba ukudibanisa akunakuguqulwa? Kwenzeka ntoni ukuba ukudluliselwa akuphumeleli?",
+      "a20": "Udluliselo lwebhulorho lwanqabile ukuba lubambeke ngenxa yegesi enganelanga okanye ukuxinana kwenethiwekhi. Ukuba oku kuyenzeka, ungawujonga umkhondo wentengiselwano yakho kwi-Axelarscan kwaye ungeze ngesandla igesi ukuyigqiba. I-Axelar ibonelela ngezixhobo zokubuyisela intengiselwano - awuzukulahlekelwa ziitokeni zakho.",
+      "q21": "Ziziphi iingozi ezinxulumene nokusebenzisa i-Freedom Bridge?",
+      "a21": "Njengayo nayiphi na iprotocol ye-DeFi, kukho iingozi ezibandakanyekayo kuquka umngcipheko wesivumelwano esihlakaniphileyo, umngcipheko webhulorho, kunye nokuguquguquka kwemarike. Sincoma ukwenza uphando lwakho (DYOR) kwaye usebenzise kuphela imali onokukwazi ukuyiphulukana nayo. Jonga inkcazo yethu yomthetho ngolwazi oluthe vetshe.",
+      "q22": "Ndingakwazi ukuguqula isivumelwano esitsha se-BNB Tiger Inu (Septemba 2025)?",
+      "a22": "Hayi. I-Freedom Bridge ixhasa itoken ye-BNB Tiger yoqobo/yakudala eyasungulwa kwiminyaka emininzi eyadlulayo - hayi isivumelwano esitsha esenziwe ngoSeptemba 2025. I-Freedom Bridge yakhelwe ukuthatha indawo koluntu (CTO) yeetokeni ze-Tiger, Lion, kunye ne-Frog zoqobo.",
+      "q23": "Ndilongeza njani ubumanzi (liquidity)?",
+      "a23": "Ukongeza ubumanzi ngumsebenzi we-DeFi ophezulu onemingcipheko kubandakanya ukulahleka okwethutyana. Ukuba unamava okubonelela ngobumanzi kwii-DEX ezifana ne-PancakeSwap okanye i-Uniswap, inkqubo iyafana - bhanqa itoken ye-OG kunye ne-asethi yesiseko. Nolu uthotho oluhle lwemfundo malunga nobumanzi ukuba ufuna ukufunda ngakumbi: https://www.youtube.com/watch?v=oiylIHvwMik&list=PL_ujg_v1hZ5iGtiuhT8NkSMqEOaLAgmUu",
+      "q24": "Ingaba iqela lingatsala i-rug?",
+      "a24": "Hayi. Akukho ndlela yokutsala i-rug. Akukho tokeni okanye irhafu eyabelwe iqela, kwaye asiqokeleli nayiphi na imirhumo yokudibanisa — ezo ziya ku-Axelar ngeendleko zokudlulisela. Iqela ngabanini njengawe, abakha oku ngeendleko zabo. I-wallet yeqela kuphela yi-wallet yokuthengisa kawonke-wonke ehlawulelwa yiminikelo yoluntu. I-multisig Safe wallet ilawula iimvume zesivumelwano ezifana nokunqumamisa ukuthumela kumakhonkco xa kukho imeko kaxakeka, kodwa ayinakufikelela okanye iphinde ithumele imali yomsebenzisi."
     }
+  },
+  "footer": {
+    "wiki": "Wiki",
+    "contracts": "Izivumelwano",
+    "faq": "FAQ",
+    "disclaimer": "Inkcazo",
+    "github": "GitHub"
+  },
+  "disclaimer": {
+    "title": "Inkcazo yaseMthethweni",
+    "header": "Isaziso saseMthethweni esiBalulekileyo",
+    "subtitle": "Nceda ufundisise le nkcazo ngaphambi kokusebenzisa i-Freedom Bridge.",
+    "sections": {
+      "noInvestmentAdvice": {
+        "title": "Akukho Ngcebiso yoTyalo-mali",
+        "content": "Ulwazi olunikezelwe kwi-Freedom Bridge aluquki ngcebiso yotyalo-mali, ingcebiso yemali, ingcebiso yokurhweba, okanye naluphi na olunye uhlobo lwengcebiso. Akufanele uphathe nawuphi na umxholo njengolo hlobo. I-Freedom Bridge ayincomi ukuba nayiphi na i-cryptocurrency kufuneka ithengwe, ithengiswe, okanye ibanjwe nguwe. Yenza ukukhuthala kwakho kwaye udibane nomcebisi wakho wezimali ngaphambi kokwenza naziphi na izigqibo zotyalo-mali."
+      },
+      "risksOfUse": {
+        "title": "Imingcipheko yoSetyenziso",
+        "content": "Iimarike ze-Cryptocurrency ziyaguquguquka kwaye azinakuqikelelwa. Ngokusebenzisa i-Freedom Bridge, uyavuma kwaye uyamkela ukuba:\n\n• Izivumelwano ezihlakaniphileyo zinokuqulatha iibugs okanye ubuthathaka obunokukhokelela ekulahlekelweni yimali\n• Iibhulorho ze-Cross-chain zithwele imingcipheko ekhoyo kubandakanya kodwa kungaphelelanga apho: ukusilela kwe-oracle, ukusebenzisana kwe-validator, kunye nokuxinana kwenethiwekhi\n• Amaxabiso etoken anokutshintsha kakhulu kwaye unokulahlekelwa yinxalenye okanye lonke utyalo-mali lwakho\n• Iitransaction kwiinethiwekhi ze-blockchain azinakubuyiselwa umva\n• Imirhumo yenethiwekhi kunye neendleko zegesi zingaphaya kolawulo lwethu kwaye zinokwahluka kakhulu"
+      },
+      "noWarranties": {
+        "title": "Akukho Ziwaranti",
+        "content": "I-Freedom Bridge ibonelelwa \"njengoko injalo\" kwaye \"njengoko ifumaneka\" ngaphandle kwazo naziphi na iwaranti zalo naluphi na uhlobo, nokuba kuchaziwe okanye kuchazwe. Asiqinisekisi ukuba inkonzo ayizukuphazamiseka, ikhuselekile, okanye ayinaziphene. Asenzi ziwaranti malunga nokuchaneka, ukuthembeka, okanye ukuphelela kwalo nakuphi na ulwazi olunikezelwe eqongeni."
+      },
+      "limitationOfLiability": {
+        "title": "Umda woXanduva",
+        "content": "Ukuya kuthi ga kowona mlinganiselo uvunyelweyo ngumthetho, i-Freedom Bridge, abaphuhlisi bayo, abafak'izandla, kunye namahlakani ayayi kuba nabutyala ngawo nawuphi na umonakalo othe ngqo, ongathanga ngqo, wengozi, owodwa, owalandelayo, okanye owohlwayayo ovela okanye onxulumene nokusebenzisa kwakho iqonga, kubandakanya kodwa kungaphelelanga apho ilahleko yenzuzo, ukulahleka kwedatha, okanye ukulahleka kwe-asethi ye-cryptocurrency."
+      },
+      "thirdPartyServices": {
+        "title": "IiNkonzo zeQela leSithathu",
+        "content": "I-Freedom Bridge idibanisa neenkonzo zeqela lesithathu kuquka i-Axelar Network yebhulorho enqamlezileyo. Asinaxanduva lwezenzo, umxholo, ulwazi, okanye idatha yala maqela esithathu. Ukusebenzisa kwakho iinkonzo zeqela lesithathu kuxhomekeke kwimigaqo kunye nemiqathango yabo."
+      },
+      "regulatoryCompliance": {
+        "title": "Ukuthotyelwa koMthetho",
+        "content": "Imigaqo ye-Cryptocurrency iyahluka ngokwegunya. Unoxanduva olunye lokuqinisekisa ukuba ukusebenzisa kwakho i-Freedom Bridge kuthobela yonke imithetho kunye nemigaqo ekhoyo kwigunya lakho. I-Freedom Bridge ayenzi naluphi na umelo malunga nokusemthethweni kweenkonzo kulo naliphi na igunya."
+      },
+      "dyor": {
+        "title": "Yenza Uphando Lwakho (DYOR)",
+        "content": "Soloko usenza uphando lwakho (DYOR) ngaphambi kokusebenzisana nayo nayiphi na iprotocol ye-DeFi. Qinisekisa iidilesi zesivumelwano, qonda ukusebenza kwayo nayiphi na itoken osebenzisana nayo, kwaye ungaze utyale imali engaphezulu kunaleyo unokukwazi ukuyiphulukana nayo."
+      }
+    },
+    "acknowledgment": "Ngokusebenzisa i-Freedom Bridge, uyavuma ukuba ufunde, waqonda, kwaye uyavuma ukubotshelelwa yile nkcazo.",
+    "lastUpdated": "Igqitywe ukuhlaziywa: Janyuwari 2026"
+  },
+  "disclaimerModal": {
+    "title": "Inkcazo eBalulekileyo",
+    "subtitle": "Nceda ufundisise kwaye uvume ngaphambi kokuba uqhubeke.",
+    "noAdvice": "I-Freedom Bridge ayinikezeli ngeengcebiso zotyalo-mali, ezemali, okanye zokurhweba. Utyalo-mali lwe-Cryptocurrency luyaguquguquka kwaye lunomngcipheko.",
+    "risks": "Ngokusebenzisa eli qonga, uyavuma ukuba izivumelwano ezihlakaniphileyo zinokuqulatha ubuthathaka, iibhulorho ze-cross-chain zithwele imingcipheko ekhoyo, kwaye iitransaction azinakubuyiselwa umva.",
+    "dyor": "Soloko usenza uphando lwakho (DYOR) kwaye usebenzise kuphela imali onokukwazi ukuyiphulukana nayo.",
+    "fullDisclaimer": "Kwiinkcukacha ezipheleleyo, bona yethu",
+    "fullDisclaimerLink": "Inkcazo yaseMthethweni",
+    "accept": "Ndiyaqonda kwaye Ndiyamkela"
   },
   "common": {
     "from": "Ukusuka",
     "to": "Ukuya",
     "max": "UBUNINZI",
+    "cancel": "Rhoxisa",
     "chainId": "I-ID yeKhonkco",
     "bscChain": "Ikhonkco le-BSC",
     "insufficientBalance": "Ibhalansi ayonelanga.",

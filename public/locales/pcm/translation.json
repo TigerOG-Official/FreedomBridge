@@ -4,6 +4,7 @@
     "titleBridge": "Bridge"
   },
   "nav": {
+    "home": "Home",
     "settings": "Settings",
     "menu": "Menu",
     "preferences": "Wetin you like",
@@ -15,7 +16,7 @@
     "switchPalette": "Change Color",
     "wiki": "Read About Am / Wiki",
     "contracts": "Contracts",
-    "faq": "FAQ",
+    "faq": "Question Wey Dem Ask Well Well",
     "logout": "Comot",
     "language": "Language",
     "languageSearchPlaceholder": "Find language",
@@ -24,7 +25,17 @@
   },
   "addNetworks": {
     "title": "Join Networks",
-    "description": "Click button wey dey down to add networks to your wallet. Dis one go make am easy to switch between chains when you dey test."
+    "description": "Click button wey dey down to add networks to your wallet. Dis one go make am easy to switch between chains when you dey test.",
+    "searchPlaceholder": "Find networks...",
+    "noResults": "We no see any network",
+    "networkCount": "network"
+  },
+  "addNetwork": {
+    "connectWallet": "Abeg connect your wallet first",
+    "alreadyPending": "We still dey wait for network. Check your wallet.",
+    "error": "We no fit add network. Abeg add am manually.",
+    "adding": "E dey add...",
+    "button": "Join"
   },
   "tabs": {
     "convert": "Change Am",
@@ -44,8 +55,21 @@
     "tigerOGMissing": "TigerOG token no dey for this chain",
     "networkWarning": {
       "title": "Network No Correct",
-      "message": "Token conversion only dey available for BSC Chain.",
-      "description": "Abeg switch to BSC Chain for your wallet if you wan convert tokens, or go to Bridge tab to carry tokens go another chain."
+      "message": "Token conversion only dey available for BSC Chain. Abeg switch to BSC make you fit convert your legacy tokens."
+    },
+    "confirmModal": {
+      "title": "Confirm say you wan change am",
+      "warning": "You wan change your tokens now. Abeg read wetin dey here carefully before you continue.",
+      "irreversible": "If you do am, you no fit undo am!",
+      "burnExplanation": "Your {{legacySymbol}} tokens go burn forever (sent to dead address) and we go mint equal amount of {{newSymbol}} tokens give you for wallet. You no fit reverse am.",
+      "positiveNote": "The sweet part: {{newSymbol}} no get any tax at all — no more 10%+ tax for every transaction.",
+      "confirmQuestion": "Change {{amount}} {{legacySymbol}} to {{newSymbol}}?",
+      "confirmButton": "I Don Hear, Change Am"
+    },
+    "finalConfirmModal": {
+      "title": "You sure well well?",
+      "message": "Na last chance to cancel be this. Once you confirm, your {{legacySymbol}} go change to {{newSymbol}} and e no fit change back.",
+      "confirmButton": "Yes, Change Am Now"
     }
   },
   "bridge": {
@@ -74,25 +98,11 @@
     "cancel": "No do again",
     "save": "Save Am"
   },
-  "wallet": {},
-  "login": {
-    "title": "Welcome Back",
-    "subtitle": "Sign in make you continue to Freedom Bridge",
-    "emailLabel": "Email",
-    "emailPlaceholder": "name@example.com",
-    "passwordLabel": "Password",
-    "passwordPlaceholder": "Put your password",
-    "rememberMe": "Remember me for this device",
-    "submit": "Enter Inside",
-    "validation": {
-      "required": "Email and password na must.",
-      "invalid": "Email or password no correct."
-    }
-  },
   "landing": {
     "banner": {
       "title": "New for here?",
-      "message": "Learn about Freedom Bridge and how to bridge TigerOG tokens across chains."
+      "message": "Learn about Freedom Bridge and how to bridge TigerOG tokens across chains.",
+      "note": "Note: Token conversion na forever and you no fit reverse am."
     },
     "hero": {
       "badge": "Axelar dey power am",
@@ -130,14 +140,19 @@
         "button": "Start to Bridge"
       }
     },
-    "teaser": {
-      "title": "You want other coins?",
-      "subtitle": "Wetin you think about <lunc>LUNC</lunc>, <crepe>Crepe</crepe>, or <shiba>Shiba</shiba>??"
-    },
     "cta": {
       "title": "You ready to bridge?",
       "description": "Join the interchain revolution. E no dey reach one minute to wrap your assets and start bridging via Axelar.",
       "button": "Open App Now"
+    },
+    "buyTokens": {
+      "badge": "Start Am",
+      "title": "Get Property",
+      "description": "You never get tokens? Buy the original tokens for PancakeSwap, then change dem to the new multi-chain versions.",
+      "buyOn": "Buy for PancakeSwap",
+      "then": "then",
+      "convertTo": "Change to",
+      "buyNow": "Buy Now"
     }
   },
   "wiki": {
@@ -145,7 +160,7 @@
     "searchPlaceholder": "Find wetin you dey look for...",
     "header": {
       "title": "Read About Am",
-      "subtitle": "Learn how to wrap legacy tokens, bridge across chains, and join Freedom Bridge."
+      "subtitle": "Learn how to convert legacy tokens and bridge across chains."
     },
     "nav": {
       "gettingStarted": "Dey Start",
@@ -153,12 +168,14 @@
       "developers": "Developers",
       "tigerogSupply": "TigerOG Supply",
       "lionogSupply": "LionOG Supply",
-      "frogogSupply": "FrogOG Supply"
+      "frogogSupply": "FrogOG Supply",
+      "githubRepo": "GitHub Repo",
+      "axelarDocs": "Axelar ITS Docs"
     },
     "articles": {
       "whatIs": {
         "title": "Wetin be Freedom Bridge?",
-        "content": "Freedom Bridge na decentralized bridging protocol wey dem build on top Axelar's Interchain Token Service (ITS). Dem design am to free tokens from single-chain limitations and high transaction taxes. By wrapping standard tokens into interchain-compatible assets, users fit move their value freely across supported blockchains.",
+        "content": "Freedom Bridge na decentralized bridging protocol wey dem build on top Axelar's Interchain Token Service (ITS). E allow you change legacy tokens to tax-free, interchain-compatible assets wey fit move freely across supported blockchains.",
         "taxFreeTitle": "Transfers wey no get tax",
         "taxFreeDesc": "Legacy tokens usually get 10%+ taxes. TigerOG tokens get 0% tax.",
         "omnichainTitle": "Interchain",
@@ -169,7 +186,7 @@
         "step1": "Connect your wallet to the source chain (e.g., BNB Chain).",
         "step2": "Go to the <strong>Change Am</strong> tab.",
         "step3": "Select the legacy token wey you wan convert.",
-        "step4": "Approve the Migration contract make e fit spend your tokens.",
+        "step4": "Approve the Conversion contract make e fit spend your tokens.",
         "step5": "Click <strong>Change Am</strong> to deposit your legacy tokens and collect equivalent amount of \"TigerOG\" tokens.",
         "note": "<strong>Note:</strong> Conversion go collect the legacy token transaction tax (when you upgrade) if your token dey charge tax on transfers. But once you convert am to TigerOG, all transfers and bridges after that one free from tax."
       },
@@ -185,9 +202,9 @@
         "title": "Axelar Network",
         "content": "We dey use Axelar as our interoperability layer. Axelar na decentralized network wey dey connect different blockchains, enabling secure cross-chain communication and asset transfers. Axelar security model rely on permissionless set of validators, providing high-grade security for interchain tokens."
       },
-      "migration": {
-        "title": "Migration Logic",
-        "content": "The Migration contract dey deployed on the origin chain (e.g., BSC). E dey hold the original legacy tokens in custody. When you upgrade tokens, you dey deposit into the Migration contract. When you unwrap (if supported), you dey burn the TigerOG representation to release the original tokens. This one ensure strictly backed 1:1 peg."
+      "conversion": {
+        "title": "Conversion Logic",
+        "content": "The Conversion contract dey deployed for BSC. When you convert, your legacy tokens go sent to dead address (burn forever) and you collect TigerOG at 1:1 ratio. This one na one-way waka — the legacy tokens don destroy and no fit come back."
       },
       "contracts": {
         "title": "Smart Contract Address dem",
@@ -197,9 +214,9 @@
       },
       "security": {
         "title": "Security Model",
-        "content": "Security dey very important. We dey use multi-layer security approach:",
-        "point1": "<strong>Migration Architecture:</strong> Legacy tokens dey inside verified, immutable smart contracts.",
-        "point2": "<strong>Axelar Validators:</strong> Axelar decentralized network dey verify cross-chain messages.",
+        "content": "Security dey inside every layer of Freedom Bridge:",
+        "point1": "<strong>Conversion Architecture:</strong> Legacy tokens dey burn forever via verified, immutable smart contracts.",
+        "point2": "<strong>Axelar Validators:</strong> Cross-chain messages wey verify by Axelar decentralized network.",
         "point3": "<strong>Consistent Supply:</strong> ITS dey manage minting and burning to maintain constant total supply across all chains.",
         "point4": "<strong>Audited Logic:</strong> E build on top industry-standard Axelar and OpenZeppelin libraries."
       },
@@ -229,7 +246,7 @@
         "lpLockedDesc": "The PancakeSwap liquidity pool contain BNBTiger tokens wey pair with BNB. When LP tokens burn (sent to dead address), the underlying tokens for the pool become permanently locked.",
         "lpBurnedPercent": "LP tokens burned: 86.18% of all LP tokens",
         "lpLockedPercent": "Therefore, 86.18% of tokens for the LP dey permanently locked",
-        "note": "<strong>Note:</strong> TigerOG maintain 1:1 ratio with BNBTiger during migration. The circulating supply of TigerOG match the true circulating supply of BNBTiger after accounting for all burned and locked tokens.",
+        "note": "<strong>Note:</strong> TigerOG maintain 1:1 ratio with BNBTiger during conversion. The circulating supply of TigerOG match the true circulating supply of BNBTiger after accounting for all burned and locked tokens.",
         "launchData": "<strong>Launch Data:</strong> These figures na calculate dem calculate am at launch. The legacy BNBTiger token continue to burn tokens on each buy/sell transaction, so the actual circulating supply fit slightly lower pass wetin show.",
         "legacyContract": "BNBTiger Token Contract",
         "ogContract": "TigerOG Token Contract",
@@ -254,7 +271,7 @@
         "lpLockedDesc": "The PancakeSwap liquidity pool contain BNBLion tokens wey pair with BNB. When LP tokens burn (sent to dead address), the underlying tokens for the pool become permanently locked.",
         "lpBurnedPercent": "LP tokens burned: 99.98% of all LP tokens",
         "lpLockedPercent": "Therefore, 99.98% of tokens for the LP dey permanently locked",
-        "note": "<strong>Note:</strong> LionOG maintain 1:1 ratio with BNBLion during migration. The circulating supply of LionOG match the true circulating supply of BNBLion after accounting for all burned and locked tokens.",
+        "note": "<strong>Note:</strong> LionOG maintain 1:1 ratio with BNBLion during conversion. The circulating supply of LionOG match the true circulating supply of BNBLion after accounting for all burned and locked tokens.",
         "launchData": "<strong>Launch Data:</strong> These figures na calculate dem calculate am at launch. The legacy BNBLion token continue to burn tokens on each buy/sell transaction, so the actual circulating supply fit slightly lower pass wetin show.",
         "legacyContract": "BNBLion Token Contract",
         "ogContract": "LionOG Token Contract",
@@ -279,7 +296,7 @@
         "lpLockedDesc": "The PancakeSwap liquidity pool contain BNBFrog tokens wey pair with BNB. When LP tokens burn (sent to dead address), the underlying tokens for the pool become permanently locked.",
         "lpBurnedPercent": "LP tokens burned: 99.31% of all LP tokens",
         "lpLockedPercent": "Therefore, 99.31% of tokens for the LP dey permanently locked",
-        "note": "<strong>Note:</strong> FrogOG maintain 1:1 ratio with BNBFrog during migration. The circulating supply of FrogOG match the true circulating supply of BNBFrog after accounting for all burned and locked tokens.",
+        "note": "<strong>Note:</strong> FrogOG maintain 1:1 ratio with BNBFrog during conversion. The circulating supply of FrogOG match the true circulating supply of BNBFrog after accounting for all burned and locked tokens.",
         "launchData": "<strong>Launch Data:</strong> These figures na calculate dem calculate am at launch. The legacy BNBFrog token continue to burn tokens on each buy/sell transaction, so the actual circulating supply fit slightly lower pass wetin show.",
         "legacyContract": "BNBFrog Token Contract",
         "ogContract": "FrogOG Token Contract",
@@ -310,13 +327,67 @@
       "liquidity": "Money wey dey"
     },
     "liquidity": {
-      "title": "Liquidity Pools"
-    }
+      "poolAddress": "Pool Address",
+      "tradeOn": "Trade for"
+    },
+    "overview": {
+      "interchainTokens": {
+        "title": "Interchain Tokens",
+        "description": "Interchain tokens wey deploy via Axelar Interchain Token Service (ITS). These tokens maintain consistent address across all supported networks."
+      },
+      "axelarNetwork": {
+        "title": "Axelar Network",
+        "description": "The messaging protocol wey secure cross-chain transfers and ensure data integrity between different blockchains."
+      },
+      "conversionContracts": {
+        "title": "Conversion Contracts",
+        "description": "Wetin dey responsible to convert legacy tokens to interchain assets. These contracts handle the deposit and minting logic for the origin chain."
+      },
+      "conversionContractsTable": {
+        "title": "Conversion Contract Address dem",
+        "subtitle": "These contracts for BSC dey handle the conversion from legacy tokens to interchain tokens.",
+        "token": "Token",
+        "legacyToken": "Legacy Token",
+        "conversionContract": "Conversion Contract",
+        "newToken": "Interchain Token"
+      },
+      "liquidityPools": {
+        "title": "Liquidity Pools",
+        "description": "DEX liquidity pools where you fit trade OG tokens for various chains."
+      },
+      "liquidityPoolsTable": {
+        "title": "Liquidity Pools",
+        "subtitle": "DEX pools for trading OG tokens",
+        "token": "Token",
+        "chain": "Chain",
+        "dex": "DEX",
+        "poolAddress": "Pool Address"
+      }
+    },
+    "filterTokens": "Filter tokens...",
+    "interchainAsset": "Interchain Asset via Axelar ITS",
+    "availableOnChains": "Available for {{count}} chains",
+    "table": {
+      "chain": "Chain",
+      "tokenAddress": "Token Address",
+      "axelarChainName": "Axelar Chain Name",
+      "chainId": "ID: {{id}}" 
+    },
+    "axelarId": "Axelar ID: {{name}}",
+    "copied": "E don copy!",
+    "copyAddress": "Copy address"
   },
   "faq": {
     "title": "Freedom Bridge Support",
     "header": "Question Wey Dem Dey Ask Well Well",
     "subtitle": "Answers to common questions about TigerOG, bridging, and Axelar.",
+    "sections": {
+      "gettingStarted": "Dey Start",
+      "convertingTrading": "Converting & Trading",
+      "bridging": "Bridging",
+      "technical": "Technical",
+      "securityRisks": "Security & Risks"
+    },
     "cta": {
       "title": "You still get question?",
       "description": "Join our community for Telegram or check the detailed Wiki for technical guides.",
@@ -327,24 +398,112 @@
       "q1": "Wetin be the purpose of changing my tokens?",
       "a1": "Converting your tokens into TigerOG dey remove the transaction tax (usually 10-12%) wey follow the legacy token. E also allow you bridge these tokens to other blockchains like Ethereum, Base, and more via Axelar, enabling access to new ecosystems.",
       "q2": "E safe to use Freedom Bridge?",
-      "a2": "Yes. The protocol dey use secure Migration contract and Axelar's Interchain Token Service. When you convert, your BNBTiger dey burn forever and you receive TigerOG at 1:1 ratio. The burn mechanism ensure say total supply dey properly managed across all chains.",
+      "a2": "Yes. The protocol dey use secure Conversion contract and Axelar's Interchain Token Service. When you convert, your BNBTiger dey burn forever and you receive TigerOG at 1:1 ratio. The burn mechanism ensure say total supply dey properly managed across all chains.",
       "q3": "Any fees dey?",
       "a3": "Freedom Bridge itself no dey charge fee for changing am. You only pay the standard blockchain gas fees. Bridging between chains involve cross-chain gas fee wey you pay to Axelar to cover the relaying costs.",
       "q4": "Wetin happen if I lose my tokens?",
       "a4": "TigerOG tokens behave just like any other ERC20 token. If you lose access to your wallet, you no fit recover am. Always keep your private keys and recovery phrases secure.",
       "q5": "I fit change my TigerOG tokens back to BNBTiger?",
-      "a5": "No o. The migration na one-way conversion. When you convert BNBTiger to TigerOG, your BNBTiger tokens dey burn forever (sent to the dead address). This one na by design — TigerOG na the upgraded, tax-free version wey dem mean make e replace the legacy token entirely.",
+      "a5": "No o. The migration na one-way conversion. When you convert BNBTiger to TigerOG, your legacy tokens dey burn forever (sent to the dead address). This one na by design — TigerOG na the upgraded, tax-free version wey dem mean make e replace the legacy token entirely.",
       "q6": "Which networks una dey support?",
-      "a6": "We dey support many-many networks via Axelar, including BNB Chain, Ethereum, Base, and more. Check the Wiki for the full list of supported networks.",
+      "a6": "We dey support many-many EVM chains via Axelar, including BNB Chain, Ethereum, Base, and more. Check the Wiki for the full list of supported networks.",
       "q7": "How long bridging dey take?",
-      "a7": "Bridging speed depend on the finality time of the source chain and Axelar relaying. Usually, transfer between chains dey take about 2-5 minutes.",
-      "a8": "Each OG token get fixed circulating supply wey come from its original BNB token, accounting for burned tokens, stuck contract balances, and locked LP. TigerOG: ~3.66 septillion (36.62% of original). LionOG: ~3.83 septillion (38.33% of original). FrogOG: ~8.39 septillion (83.86% of original). Check the Wiki for details on each token."
+      "a7": "Bridging speed depend on which chain you dey sending FROM:\n\n• Ethereum: 15-20 min (need more confirmations)\n• BSC & Avalanche: 2-4 min (fastest)\n• Base, Linea, Polygon: 3-5 min\n\nThe app show the estimated time before you bridge.",
+      "q8": "Wetin be the circulating supplies of the OG tokens?",
+      "a8": "Each OG token get fixed circulating supply wey come from its original BNB token, accounting for burned tokens, stuck contract balances, and locked LP:\n\n• TigerOG: ~3.66 septillion (36.62% of original)\n• LionOG: ~3.83 septillion (38.33% of original)\n• FrogOG: ~8.39 septillion (83.86% of original)\n\nCheck the Wiki for detailed breakdowns.",
+      "q9": "Why OG contract no dey renounced?",
+      "a9": "Renouncing the contract go remove the ability to develop and add new chains for future. While the contract no go dey renounced for foreseeable future, multiple signatures dey required to make any changes. Also, no tokens or taxes dey allocated to the team.",
+      "q10": "Why OG contract dey mintable?",
+      "a10": "Cross-chain bridging require mint/burn functionality - tokens dey burned when leaving a chain and minted when arriving. This keeps total supply constant across all networks. Minting dey controlled by a multisig Safe wallet.",
+      "q11": "TigerOG dey leave BNB Chain for Axelar?",
+      "a11": "No o. Axelar no be blockchain - na bridging protocol wey dey connect chains together. BNB Chain remain the origin chain where you convert legacy tokens. Axelar simply enable your tokens to move between BNB, Ethereum, Base, and other supported networks.",
+      "q12": "Where my tokens dey?",
+      "a12": "Make sure say you add the chain and token address to your wallet. You fit find all contract addresses for the Contracts page. The Tiger team dey use Rabby wallet which makes managing multiple chains easier.",
+      "q13": "Why bridging from Ethereum or Base dey take so long?",
+      "a13": "Ethereum require two epochs before finalizing transactions for maximum security. Since Base settle on Ethereum, e inherit this delay. This prioritizes security over speed - your tokens dey safe, just exercise patience.",
+      "q14": "Wetin happen if I stay for my original token and no convert?",
+      "a14": "No rush to convert. BNBTiger and TigerOG go always get different liquidity pools, market caps, and so on. But BNBTiger get high tax and TigerOG no get tax for trading. Since the taxes on the original no dey used to support the project, development is done by the CTO team for TigerOG. Freedom Bridge and multi-chain na only for TigerOG.",
+      "q15": "Tax dey to convert? TigerOG get tax?",
+      "a15": "No o. E only cost the normal gas fee to convert and trade. No additional taxes or fees, and TigerOG na tax-free contract.",
+      "q16": "I fit just buy and trade TigerOG directly?",
+      "a16": "Not yet. The team never collect fees and taxes to fit fund large enough liquidity pools. To get TigerOG now, you have to buy or already own the original and convert. Once you own TigerOG, e no go dey easily traded until investors come to add to the liquidity pool.",
+      "q17": "Why TigerOG market cap look so inflated?",
+      "a17": "The smaller a liquidity pool, the more any small trade make huge impact on the displayed market cap. This resolves once investors come to be liquidity providers.",
+      "q18": "Which security audits dem don do?",
+      "a18": "Freedom Bridge never undergo formal third-party audit. However, the converter contract code base on the SHx converter wey Stronghold team build (former XRP and Stellar developers wey recently present for Davos). The bridging infrastructure dey powered by Axelar, wey don undergo multiple security audits.",
+      "q19": "How Freedom Bridge protect against hacks or exploits?",
+      "a19": "Several measures dey in place:\n\n• The converter only hold the exact circulating supply wey needed - no excess tokens wey fit exploited\n• The converter no get mint permissions\n• All contract code verify on-chain and open source\n• Token permissions dey secured in a Safe.global multisig wallet\n• Bridging dey handled by Axelar's battle-tested infrastructure",
+      "q20": "Bridging fit reverse? What if transfer fail?",
+      "a20": "Bridge transfers fit rarely get stuck due to insufficient gas or network congestion. If this happen, you fit track your transaction for Axelarscan and manually add gas to complete am. Axelar provide transaction recovery tools - you no go lose your tokens.",
+      "q21": "What are the risks associated with using Freedom Bridge?",
+      "a21": "As with any DeFi protocol, inherent risks dey including smart contract risk, bridge risk, and market volatility. We recommend make you do your own research (DYOR) and only use funds wey you fit afford to lose. See our legal disclaimer for more information.",
+      "q22": "I fit convert the new BNB Tiger Inu contract (September 2025)?",
+      "a22": "No o. Freedom Bridge support the original/legacy BNB Tiger token wey launch several years ago - not the new contract created in September 2025. Freedom Bridge build for the community takeover (CTO) of the original Tiger, Lion, and Frog tokens.",
+      "q23": "How I fit add liquidity?",
+      "a23": "Adding liquidity na advanced DeFi activity with risks including impermanent loss. If you get experience with providing liquidity on DEXs like PancakeSwap or Uniswap, the process be the same - pair the OG token with a base asset. Here's a great educational series on liquidity if you wan learn more: https://www.youtube.com/watch?v=oiylIHvwMik&list=PL_ujg_v1hZ5iGtiuhT8NkSMqEOaLAgmUu",
+      "q24": "Team fit do rug pull?",
+      "a24": "No o. No mechanism dey for rug pull. No tokens or taxes allocated to the team, and we no collect any bridging fees — those go to Axelar for relaying costs. The team na holders just like you, building this at personal expense. The only team wallet na public marketing wallet funded by community donations. The multisig Safe wallet controls contract permissions such as pausing sending to chains in case of emergency, but cannot access or redirect user funds."
     }
+  },
+  "footer": {
+    "wiki": "Wiki",
+    "contracts": "Contracts",
+    "faq": "FAQ",
+    "disclaimer": "Disclaimer",
+    "github": "GitHub"
+  },
+  "disclaimer": {
+    "title": "Legal Disclaimer",
+    "header": "Important Legal Notice",
+    "subtitle": "Abeg read this disclaimer carefully before you use Freedom Bridge.",
+    "sections": {
+      "noInvestmentAdvice": {
+        "title": "No Be Investment Advice",
+        "content": "The information wey dey Freedom Bridge no constitute investment advice, financial advice, trading advice, or any other sort of advice. You no suppose treat any of the content like that. Freedom Bridge no recommend say make you buy, sell, or hold any cryptocurrency. Do your own due diligence and consult your financial advisor before you make any investment decisions."
+      },
+      "risksOfUse": {
+        "title": "Risks of Use",
+        "content": "Cryptocurrency markets dey volatile and unpredictable. By using Freedom Bridge, you acknowledge and accept say:\n\n• Smart contracts fit get bugs or vulnerabilities wey fit result in loss of funds\n• Cross-chain bridges carry inherent risks including but not limited to: oracle failures, validator collusion, and network congestion\n• Token values fit fluctuate dramatically and you fit lose some or all of your investment\n• Transactions on blockchain networks irreversible\n• Network fees and gas costs dey beyond our control and fit vary significantly"
+      },
+      "noWarranties": {
+        "title": "No Warranties",
+        "content": "Freedom Bridge dey provided \"as is\" and \"as available\" without any warranties of any kind, either express or implied. We no guarantee say the service go dey uninterrupted, secure, or error-free. We no make warranties regarding the accuracy, reliability, or completeness of any information provided through the platform."
+      },
+      "limitationOfLiability": {
+        "title": "Limitation of Liability",
+        "content": "To the maximum extent permitted by law, Freedom Bridge, its developers, contributors, and affiliates no go liable for any direct, indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the platform, including but not limited to loss of profits, loss of data, or loss of cryptocurrency assets."
+      },
+      "thirdPartyServices": {
+        "title": "Third-Party Services",
+        "content": "Freedom Bridge integrates with third-party services including Axelar Network for cross-chain bridging. We no responsible for the actions, content, information, or data of these third parties. Your use of third-party services subject to their respective terms and conditions."
+      },
+      "regulatoryCompliance": {
+        "title": "Regulatory Compliance",
+        "content": "Cryptocurrency regulations vary by jurisdiction. You solely responsible for ensuring say your use of Freedom Bridge complies with all applicable laws and regulations in your jurisdiction. Freedom Bridge no make any representations regarding the legality of the services in any jurisdiction."
+      },
+      "dyor": {
+        "title": "Do Your Own Research (DYOR)",
+        "content": "Always do your own research (DYOR) before interacting with any DeFi protocol. Verify contract addresses, understand the mechanics of any token you interact with, and never invest more pass wetin you fit afford to lose."
+      }
+    },
+    "acknowledgment": "By using Freedom Bridge, you acknowledge say you don read, understand, and agree to be bound by this disclaimer.",
+    "lastUpdated": "Last updated: January 2026"
+  },
+  "disclaimerModal": {
+    "title": "Important Disclaimer",
+    "subtitle": "Abeg read and acknowledge before proceeding.",
+    "noAdvice": "Freedom Bridge no dey provide investment, financial, or trading advice. Cryptocurrency investments dey volatile and risky.",
+    "risks": "By using this platform, you acknowledge say smart contracts fit contain vulnerabilities, cross-chain bridges carry inherent risks, and transactions irreversible.",
+    "dyor": "Always do your own research (DYOR) and only use funds wey you fit afford to lose.",
+    "fullDisclaimer": "For full details, see our",
+    "fullDisclaimerLink": "Legal Disclaimer",
+    "accept": "I Understand and Accept"
   },
   "common": {
     "from": "From",
     "to": "To",
-    "max": "Wetin big pass",
+    "max": "ALL",
+    "cancel": "No do again",
     "chainId": "Chain ID",
     "bscChain": "BSC Chain",
     "insufficientBalance": "Your balance no reach.",

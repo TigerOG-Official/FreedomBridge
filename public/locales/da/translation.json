@@ -1,9 +1,10 @@
 {
   "app": {
-    "titleFreedom": "Frihed",
-    "titleBridge": "Bro"
+    "titleFreedom": "Freedom",
+    "titleBridge": "Bridge"
   },
   "nav": {
+    "home": "Hjem",
     "settings": "Indstillinger",
     "menu": "Menu",
     "preferences": "Præferencer",
@@ -22,9 +23,9 @@
     "close": "Luk"
   },
   "addNetworks": {
-    "title": "Tilføj netværk til tegnebog",
+    "title": "Tilføj netværk til din tegnebog",
     "description": "Klik på et netværk for at tilføje det til MetaMask, Rabby eller andre Web3-tegnebøger",
-    "searchPlaceholder": "Søg netværk...",
+    "searchPlaceholder": "Søg efter netværk...",
     "noResults": "Ingen netværk fundet",
     "networkCount": "netværk"
   },
@@ -37,23 +38,28 @@
   },
   "tabs": {
     "convert": "Konverter",
-    "bridge": "Bro"
+    "bridge": "Bridge"
   },
   "convert": {
-    "token": "Token",
-    "selectToken": "Vælg token",
     "balance": "Saldo",
-    "noConvertibleTokens": "Ingen tokens at konvertere på {{chainName}}",
-    "convert": "Konverter",
-    "addToWalletLabel": "Importér {{symbol}} på {{chainName}} til tegnebog",
-    "addToWalletButton": "Importér til tegnebog",
-    "addingToken": "Tilføjer...",
-    "addTokenError": "Kunne ikke tilføje token til tegnebog",
-    "legacyTokenMissing": "Legacy token mangler for denne kæde",
-    "tigerOGMissing": "TigerOG token mangler for denne kæde",
+    "addToWalletButton": "Importer til tegnebog",
     "networkWarning": {
       "title": "Forkert netværk",
       "message": "Token-konvertering er kun tilgængelig på BSC Chain. Skift venligst til BSC for at konvertere dine legacy tokens."
+    },
+    "confirmModal": {
+      "title": "Bekræft konvertering",
+      "warning": "Du er ved at konvertere dine tokens. Læs venligst følgende omhyggeligt, før du fortsætter.",
+      "irreversible": "Denne handling kan ikke fortrydes!",
+      "burnExplanation": "Dine {{legacySymbol}} tokens vil blive brændt permanent, og en tilsvarende mængde {{newSymbol}} tokens vil blive mintet til din wallet. Dette kan ikke fortrydes.",
+      "positiveNote": "Fordelen: {{newSymbol}} er helt skattefri — ingen mere 10%+ skat på hver transaktion.",
+      "confirmQuestion": "Konverter {{amount}} {{legacySymbol}} til {{newSymbol}}?",
+      "confirmButton": "Jeg forstår, konverter"
+    },
+    "finalConfirmModal": {
+      "title": "Er du helt sikker?",
+      "message": "Dette er din sidste chance for at fortryde. Når du bekræfter, vil dine {{legacySymbol}} blive konverteret til {{newSymbol}}, og det kan ikke gøres om.",
+      "confirmButton": "Ja, konverter nu"
     }
   },
   "bridge": {
@@ -62,22 +68,20 @@
     "toChain": "Til kæde",
     "selectDestinationPlaceholder": "Vælg destination",
     "noDestination": "Ingen destination",
-    "noBridgeableTokens": "Ingen overførbare tokens",
-    "bridgeButton": "Overfør tokens",
-    "getFeeQuote": "Få gebyroverslag",
+    "noBridgeableTokens": "Ingen tokens til rådighed for overførsel",
+    "bridgeButton": "Bridge tokens",
     "viewOnAxelarscan": "Vis på Axelarscan",
-    "addDestinationTokenLabel": "Importér {{symbol}} på {{chainName}} til tegnebog",
     "addTokenError": "Kunne ikke tilføje token til tegnebog",
-    "estimatedTime": "Est. tid",
+    "estimatedTime": "Estimeret tid",
     "recentTransactions": "Seneste transaktioner",
     "clearHistory": "Ryd historik",
-    "historyStoredLocally": "Transaktionshistorik gemmes lokalt på denne enhed"
+    "historyStoredLocally": "Transaktionshistorikken gemmes lokalt på denne enhed"
   },
   "settings": {
     "title": "Indstillinger",
     "environment": "Miljø",
     "rpcEndpoints": "RPC-endepunkter",
-    "rpcEndpointsHelp": "Opdater RPC URL for hver kæde i det valgte miljø.",
+    "rpcEndpointsHelp": "Opdater den RPC URL, der bruges til hver kæde i det valgte miljø.",
     "noChainsConfigured": "Ingen kæder konfigureret til dette miljø.",
     "cancel": "Annuller",
     "save": "Gem"
@@ -85,12 +89,12 @@
   "landing": {
     "banner": {
       "title": "Ny her?",
-      "message": "Lær om Freedom Bridge og hvordan du overfører TigerOG tokens på tværs af kæder.",
+      "message": "Lær om Freedom Bridge og hvordan du overfører TigerOG tokens mellem kæder.",
       "note": "Bemærk: Token-konvertering er permanent og kan ikke fortrydes."
     },
     "hero": {
       "badge": "Drevet af Axelar",
-      "title": "Frigør dine <1/> <2>aktiver</2>",
+      "title": "Sæt dine <1/> <2>aktiver</2> fri",
       "subtitle": "Overfør TigerOG tokens på tværs af kæder uden besvær med Axelars Interchain Token Service. Sikkert, hurtigt og skattefrit.",
       "launchApp": "Start app",
       "documentation": "Dokumentation"
@@ -103,39 +107,40 @@
     },
     "features": {
       "title": "Interchain Token Service",
-      "description": "Freedom Bridge bruger Axelar ITS til at levere en problemfri, sikker og skattefri overførselsoplevelse på tværs af {{count}}+ blockchains.",
+      "description": "Freedom Bridge benytter Axelar ITS til at levere en problemfri, sikker og skattefri bridge-oplevelse på tværs af {{count}}+ blockchains.",
       "stopDecay": {
-        "title": "Stop forfaldet",
-        "description": "Legacy tokens brænder 10-11% af din værdi ved hvert køb og salg. Konvertering til TigerOG stopper denne blødning øjeblikkeligt og bevarer 100% af din værdi.",
+        "title": "Stop værditabet",
+        "description": "Legacy tokens brænder 10-11% af din værdi ved hvert køb og salg. Konvertering til TigerOG stopper dette tab øjeblikkeligt og bevarer 100% af din værdi.",
         "graphLabel1": "100% bevaret (TigerOG)",
         "graphLabel2": "-40% værdi (legacy 10% skat)"
       },
       "conversion": {
         "title": "1:1 konvertering",
-        "description": "Den samlede forsyning ændres aldrig. Tokens indsættes i en sikker konverteringskontrakt, og en nøjagtig 1:1 ækvivalent bruges. Ingen inflation, ingen udvanding."
+        "description": "Den samlede forsyning ændres aldrig. Tokens deponeres i en sikker konverteringskontrakt, og en nøjagtig 1:1 ækvivalent bruges. Ingen inflation, ingen udvanding."
       },
       "multichain": {
         "title": "Multi-chain",
-        "description": "Implementér én gang, få adgang overalt. Dit aktiv bliver en native interchain token på tværs af kæder, herunder Ethereum, BNB Chain, Base og flere."
+        "description": "Implementer én gang, få adgang overalt. Dit aktiv bliver et native interchain token på tværs af kæder, herunder Ethereum, BNB Chain, Base og flere.",
+        "button": "Begynd at bridge"
       },
       "security": {
         "title": "Axelar-sikkerhed",
         "description": "Drevet af Axelars decentraliserede netværk af validatorer. ITS sikrer, at dine tokens overføres sikkert og konsistent på tværs af alle forbundne netværk.",
-        "button": "Begynd at overføre"
+        "button": "Begynd at bridge"
       }
     },
     "cta": {
-      "title": "Klar til at overføre?",
-      "description": "Deltag i interchain-revolutionen. Det tager mindre end et minut at konvertere dine tokens og begynde at overføre via Axelar.",
+      "title": "Klar til at bridge?",
+      "description": "Deltag i interchain-revolutionen. Det tager mindre end et minut at konvertere dine tokens og begynde at bridge via Axelar.",
       "button": "Start app nu"
     },
     "buyTokens": {
       "badge": "Kom i gang",
       "title": "Anskaf aktiver",
-      "description": "Har du ikke nogen tokens endnu? Køb base tokens på PancakeSwap, og konvertér dem derefter til de nye multichain-versioner.",
+      "description": "Har du ikke nogen tokens endnu? Køb base tokens på PancakeSwap, og konverter dem derefter til de nye multichain-versioner.",
       "buyOn": "Køb på PancakeSwap",
       "then": "derefter",
-      "convertTo": "Konvertér til",
+      "convertTo": "Konverter til",
       "buyNow": "Køb nu"
     }
   },
@@ -144,7 +149,7 @@
     "searchPlaceholder": "Søg i dokumentation...",
     "header": {
       "title": "Dokumentation",
-      "subtitle": "Lær hvordan du konverterer legacy tokens og overfører på tværs af kæder."
+      "subtitle": "Lær hvordan du konverterer legacy tokens og overfører dem mellem kæder."
     },
     "nav": {
       "gettingStarted": "Kom godt i gang",
@@ -159,9 +164,9 @@
     "articles": {
       "whatIs": {
         "title": "Hvad er Freedom Bridge?",
-        "content": "Freedom Bridge er en decentraliseret broprotokol bygget på Axelars Interchain Token Service (ITS). Den lader dig konvertere legacy tokens til skattefrie, interchain-kompatible aktiver, der kan bevæge sig frit på tværs af understøttede blockchains.",
+        "content": "Freedom Bridge er en decentraliseret bridge-protokol bygget på Axelars Interchain Token Service (ITS). Den gør det muligt for dig at konvertere legacy tokens til skattefrie, interchain-kompatible aktiver, der kan bevæge sig frit mellem understøttede blockchains.",
         "taxFreeTitle": "Skattefrie overførsler",
-        "taxFreeDesc": "Legacy tokens har ofte 10%+ skatter. TigerOG tokens har 0% skat.",
+        "taxFreeDesc": "Legacy tokens har ofte 10%+ i skatter. TigerOG tokens har 0% skat.",
         "omnichainTitle": "Interchain",
         "omnichainDesc": "Flyt aktiver øjeblikkeligt mellem {{count}}+ blockchains via Axelar."
       },
@@ -171,8 +176,8 @@
         "step2": "Gå til fanen <strong>Konverter</strong>.",
         "step3": "Vælg det legacy token, du vil konvertere.",
         "step4": "Godkend konverteringskontrakten til at bruge dine tokens.",
-        "step5": "Klik på <strong>Konverter</strong> for at indsætte dine legacy tokens og modtage en tilsvarende mængde \"TigerOG\" tokens.",
-        "note": "<strong>Bemærk:</strong> Konvertering udløser legacy tokenets transaktionsskat (under opgraderingen), hvis dit token opkræver skat på overførsler. Men når de først er konverteret til TigerOG, er alle efterfølgende overførsler skattefrie."
+        "step5": "Klik på <strong>Konverter</strong> for at deponere dine legacy tokens og modtage en tilsvarende mængde \"TigerOG\" tokens.",
+        "note": "<strong>Bemærk:</strong> Konverteringen udløser legacy tokenets transaktionsskat (under opgraderingen), hvis dit token opkræver skat på overførsler. Når de først er konverteret til TigerOG, er alle efterfølgende overførsler og bridges dog skattefrie."
       },
       "supportedNetworks": {
         "title": "Understøttede netværk",
@@ -180,7 +185,7 @@
       },
       "xerc20": {
         "title": "Interchain tokens",
-        "content": "Axelar Interchain Token Service (ITS) tillader tokens at blive implementeret på tværs af flere kæder med en konsistent adresse og forenet forsyningsstyring. Freedom Bridge bruger ITS til at sikre, at TigerOG forbliver et kanonisk aktiv, uanset hvor det overføres til."
+        "content": "Axelar Interchain Token Service (ITS) gør det muligt at implementere tokens på tværs af flere kæder med en konsistent adresse og forenet forsyningsstyring. Freedom Bridge bruger ITS til at sikre, at TigerOG forbliver et kanonisk aktiv, uanset hvor det bridges hen."
       },
       "axelar": {
         "title": "Axelar-netværk",
@@ -214,7 +219,7 @@
           "percentOfTotal": "% af total",
           "originalSupply": "Original totalforsyning",
           "deadAddress": "Død adresse (brændt)",
-          "contractBalance": "Kontraktsaldo (fastlåst)",
+          "contractBalance": "Kontraktsaldo (låst)",
           "circulatingSupply": "Cirkulerende forsyning"
         },
         "deadAddressTitle": "1. Død adresse",
@@ -302,12 +307,17 @@
     "title": "Kontraktadresser",
     "header": {
       "title": "Smart kontrakter",
-      "subtitle": "Officielle implementeringsadresser for tokens og broer på tværs af Freedom Bridge-økosystemet."
+      "subtitle": "Officielle adresser for tokens og bridges i Freedom Bridge-økosystemet."
     },
     "tabs": {
       "overview": "Oversigt",
       "byToken": "Efter token",
-      "byChain": "Efter kæde"
+      "byChain": "Efter kæde",
+      "liquidity": "Likviditet"
+    },
+    "liquidity": {
+      "poolAddress": "Pulje-adresse",
+      "tradeOn": "Handl på"
     },
     "overview": {
       "interchainTokens": {
@@ -316,19 +326,31 @@
       },
       "axelarNetwork": {
         "title": "Axelar-netværk",
-        "description": "Den underliggende beskedprotokol, der sikrer cross-chain overførsler og garanterer dataintegritet mellem forskellige blockchains."
+        "description": "Den underliggende protokol for beskeder, der sikrer cross-chain overførsler og garanterer dataintegritet mellem forskellige blockchains."
       },
       "conversionContracts": {
         "title": "Konverteringskontrakter",
-        "description": "Ansvarlige for at konvertere legacy tokens til interchain-aktiver. Disse kontrakter håndterer indsætnings- og minting-logik på oprindelseskæden."
+        "description": "Ansvarlige for at konvertere legacy tokens til interchain-aktiver. Disse kontrakter håndterer deponerings- og minting-logikken på kildekæden."
       },
       "conversionContractsTable": {
-        "title": "Konverteringskontraktadresser",
-        "subtitle": "Disse kontrakter på BSC håndterer konvertering fra legacy tokens til interchain tokens.",
+        "title": "Adresser på konverteringskontrakter",
+        "subtitle": "Disse kontrakter på BSC håndterer konverteringen fra legacy tokens til interchain tokens.",
         "token": "Token",
         "legacyToken": "Legacy token",
         "conversionContract": "Konverteringskontrakt",
         "newToken": "Interchain token"
+      },
+      "liquidityPools": {
+        "title": "Likviditetspuljer",
+        "description": "DEX likviditetspuljer, hvor du kan handle OG tokens på forskellige kæder."
+      },
+      "liquidityPoolsTable": {
+        "title": "Likviditetspuljer",
+        "subtitle": "DEX-puljer til handel med OG tokens",
+        "token": "Token",
+        "chain": "Kæde",
+        "dex": "DEX",
+        "poolAddress": "Pulje-adresse"
       }
     },
     "filterTokens": "Filtrer tokens...",
@@ -342,53 +364,147 @@
     },
     "axelarId": "Axelar ID: {{name}}",
     "copied": "Kopieret!",
-    "copyAddress": "Kopiér adresse"
+    "copyAddress": "Kopier adresse"
   },
   "faq": {
     "title": "Freedom Bridge support",
     "header": "Ofte stillede spørgsmål",
-    "subtitle": "Svar på almindelige spørgsmål om TigerOG, overførsel og Axelar.",
+    "subtitle": "Svar på almindelige spørgsmål om TigerOG, bridging og Axelar.",
+    "sections": {
+      "gettingStarted": "Kom godt i gang",
+      "convertingTrading": "Konvertering og handel",
+      "bridging": "Bridging",
+      "technical": "Teknisk",
+      "securityRisks": "Sikkerhed og risici"
+    },
     "cta": {
       "title": "Har du stadig spørgsmål?",
       "description": "Deltag i vores fællesskab på Telegram eller tjek den detaljerede Wiki for tekniske vejledninger.",
       "wiki": "Besøg Wiki",
-      "telegram": "Deltag i Telegram"
+      "telegram": "Deltag på Telegram"
     },
     "questions": {
       "q1": "Hvad er formålet med at konvertere mine tokens?",
-      "a1": "Konvertering af dine tokens til TigerOG fjerner transaktionsskatten (ofte 10-12%), der er forbundet med legacy tokenet. Det giver dig også mulighed for at overføre disse tokens til andre blockchains som Ethereum, Base og flere via Axelar, hvilket giver adgang til nye økosystemer.",
+      "a1": "Konvertering af dine tokens til TigerOG fjerner transaktionsskatten (ofte 10-12%), der er forbundet med legacy tokenet. Det giver dig også mulighed for at bridge disse tokens til andre blockchains som Ethereum, Base og flere via Axelar, hvilket giver adgang til nye økosystemer.",
       "q2": "Er det sikkert at bruge Freedom Bridge?",
       "a2": "Ja. Protokollen bruger en sikker konverteringskontrakt og Axelars Interchain Token Service. Når du konverterer, bliver din BNBTiger permanent brændt, og du modtager TigerOG i et 1:1 forhold. Brændingsmekanismen sikrer, at den samlede forsyning styres korrekt på tværs af alle kæder.",
       "q3": "Er der nogen gebyrer?",
-      "a3": "Freedom Bridge opkræver ikke gebyr for konvertering. Du betaler kun standard blockchain-gasgebyrer. Overførsel mellem kæder indebærer et cross-chain gasgebyr betalt til Axelar for at dække relæomkostningerne.",
+      "a3": "Freedom Bridge opkræver ikke gebyr for selve konverteringen. Du betaler kun standard blockchain-gasgebyrer. Bridging mellem kæder indebærer et cross-chain gasgebyr betalt til Axelar for at dække relæomkostningerne.",
       "q4": "Hvad sker der, hvis jeg mister mine tokens?",
-      "a4": "TigerOG tokens opfører sig som enhver anden ERC20 token. Hvis du mister adgangen til din tegnebog, kan de ikke gendannes. Hold altid dine private nøgler og gendannelsesfraser sikre.",
+      "a4": "TigerOG tokens opfører sig som enhver anden ERC20/BEP20 token. Hvis du mister adgangen til din tegnebog, kan de ikke gendannes. Sørg altid for at opbevare dine private nøgler og gendannelsesfraser sikkert.",
       "q5": "Kan jeg konvertere mine TigerOG tokens tilbage til BNBTiger?",
-      "a5": "Nej. Konvertering er envejs. Når du konverterer BNBTiger til TigerOG, brændes dine legacy tokens permanent (sendes til den døde adresse). Dette er med vilje — TigerOG er den opgraderede, skattefrie version, der er beregnet til helt at erstatte legacy tokenet.",
+      "a5": "Nej. Konverteringen er envejs. Når du konverterer BNBTiger til TigerOG, bliver dine legacy tokens låst permanent i konverteringskontrakten. Dette er bevidst — TigerOG er den opgraderede, skattefrie version, der er beregnet til helt at erstatte legacy tokenet.",
       "q6": "Hvilke netværk understøttes?",
-      "a6": "Vi understøtter flere EVM-kæder via Axelar, herunder BNB Chain, Ethereum, Base og flere. Tjek Wiki for den fulde liste over understøttede netværk.",
-      "q7": "Hvor lang tid tager overførsel?",
-      "a7": "Overførselshastigheden afhænger af kildekædens finalitet og Axelars relæ. Typisk tager en overførsel mellem kæder omkring 2-5 minutter.",
-      "q8": "Hvad er de cirkulerende forsyninger af OG tokens?",
-      "a8": "Hver OG token har en fast cirkulerende forsyning afledt af dens originale BNB token, der tager højde for brændte tokens, fastlåste kontraktsaldi og låst LP. TigerOG: ~3,66 septillion (36,62% af original). LionOG: ~3,83 septillion (38,33% af original). FrogOG: ~8,39 septillion (83,86% af original). Se Wiki for detaljerede fordelinger af hver token."
+      "a6": "Vi understøtter flere EVM-kæder via Axelar, herunder BNB Chain, Ethereum, Base og flere. Tjek vores Wiki for den fulde liste over understøttede netværk.",
+      "q7": "Hvor lang tid tager bridging?",
+      "a7": "Bridging-tiden afhænger af, hvilken kæde du sender FRA:\n\n• Ethereum: 15-20 min (kræver flere bekræftelser)\n• BSC & Avalanche: 2-4 min (hurtigst)\n• Base, Linea, Polygon: 3-5 min\n\nAppen viser den estimerede tid, før du bridger.",
+      "q8": "Hvad er den cirkulerende forsyning for OG-tokens?",
+      "a8": "Hver OG token har en fast cirkulerende forsyning afledt af dens originale BNB-token, efter fratrækning af brændte tokens, fastlåste kontraktsaldi og låst LP:\n\n• TigerOG: ~3,66 septillioner (36,62% af den originale)\n• LionOG: ~3,83 septillioner (38,33% af den originale)\n• FrogOG: ~8,39 septillioner (83,86% af den originale)\n\nSe vores Wiki for detaljerede oversigter.",
+      "q9": "Hvorfor er OG-kontrakten ikke frasagt (renounced)?",
+      "a9": "At frasige sig kontrakten ville fjerne muligheden for at udvikle og tilføje nye kæder i fremtiden. Selvom kontrakten ikke vil blive frasagt i den nærmeste fremtid, kræves der flere signaturer for at foretage ændringer. Derudover er der ingen tokens eller skatter allokeret til teamet.",
+      "q10": "Hvorfor kan der mintes i OG-kontrakten?",
+      "a10": "Cross-chain bridging kræver mint/burn-funktionalitet - tokens brændes, når de forlader en kæde, og mintes, når de ankommer til en anden. Dette holder den samlede forsyning konstant på tværs af alle netværk. Minting kontrolleres af en multisig Safe-tegnebog.",
+      "q11": "Forlader TigerOG BNB Chain til fordel for Axelar?",
+      "a11": "Nej. Axelar er ikke en blockchain - det er bridge-protokollen, der forbinder kæder. BNB Chain forbliver kildekæden, hvor du konverterer legacy tokens. Axelar gør det blot muligt for dine tokens at bevæge sig mellem BNB, Ethereum, Base og andre understøttede netværk.",
+      "q12": "Hvor er mine tokens?",
+      "a12": "Sørg for at tilføje kæden og token-adressen til din tegnebog. Du kan finde alle kontraktadresser på siden Kontrakter. Tiger-teamet bruger Rabby-tegnebogen, som gør det lettere at administrere flere kæder.",
+      "q13": "Hvorfor tager bridging fra Ethereum eller Base så lang tid?",
+      "a13": "Ethereum kræver to epoker før transaktioner finaliseres for maksimal sikkerhed. Da Base afvikles på Ethereum, arver den denne forsinkelse. Dette prioriterer sikkerhed over hastighed - dine tokens er sikre, hav blot tålmodighed.",
+      "q14": "Hvad sker der, hvis jeg bliver ved mit originale token og ikke konverterer?",
+      "a14": "Der er ikke noget hastværk med at konvertere. BNBTiger og TigerOG vil altid have forskellige likviditetspuljer, markedsværdier osv. Men BNBTiger har en høj skat, og TigerOG har ingen skat ved handel. Da skatterne på originalen ikke bruges til at støtte projektet, udføres udviklingen af CTO-teamet for TigerOG. Freedom Bridge og multi-chain er kun for TigerOG.",
+      "q15": "Er der en skat for at konvertere? Har TigerOG en skat?",
+      "a15": "Nej. Det koster kun det normale gasgebyr at konvertere og handle. Der er ingen yderligere skatter eller gebyrer, og TigerOG er en skattefri kontrakt.",
+      "q16": "Kan jeg bare købe og handle TigerOG direkte?",
+      "a16": "Ikke endnu. Teamet har ikke opkrævet gebyrer og skatter for at kunne finansiere tilstrækkeligt store likviditetspuljer. For at få TigerOG nu, skal du købe eller allerede eje originalen og konvertere. Når du ejer TigerOG, vil den ikke være let at handle, før der kommer investorer til for at tilføje til likviditetspuljen.",
+      "q17": "Hvorfor ser TigerOG's markedsværdi så oppustet ud?",
+      "a17": "Jo mindre en likviditetspulje er, desto mere påvirker enhver lille handel den viste markedsværdi. Dette løses, når der kommer investorer som likviditetsudbydere.",
+      "q18": "Hvilke sikkerhedsrevisioner er der foretaget?",
+      "a18": "Freedom Bridge har ikke gennemgået en formel tredjepartsrevision. Koden til konverteringskontrakten er dog baseret på SHx-konverteren bygget af Stronghold-teamet (tidligere XRP- og Stellar-udviklere, som for nylig præsenterede i Davos). Bridge-infrastrukturen drives af Axelar, som har gennemgået flere sikkerhedsrevisioner.",
+      "q19": "Hvordan beskytter Freedom Bridge mod hacks eller exploits?",
+      "a19": "Der er flere foranstaltninger på plads:\n\n• Konverteren holder kun den nøjagtige cirkulerende forsyning, der er brug for - ingen overskydende tokens, der kan udnyttes\n• Konverteren har ingen minting-rettigheder\n• Al kontraktkode er verificeret on-chain og er open source\n• Token-rettigheder er sikret i en Safe.global multisig-tegnebog\n• Bridging håndteres af Axelars gennemtestede infrastruktur",
+      "q20": "Er bridging irreversibel? Hvad hvis en overførsel fejler?",
+      "a20": "Bridge-overførsler kan sjældent sidde fast på grund af utilstrækkelig gas eller netværksbelastning. Hvis dette sker, kan du spore din transaktion på Axelarscan og manuelt tilføje gas for at fuldføre den. Axelar leverer værktøjer til gendannelse af transaktioner - du mister ikke dine tokens.",
+      "q21": "Hvilke risici er der forbundet med at bruge Freedom Bridge?",
+      "a21": "Som med enhver DeFi-protokol er der iboende risici, herunder smart kontrakt-risiko, bridge-risiko og markedsvolatilitet. Vi anbefaler, at du laver din egen research (DYOR) og kun bruger midler, du har råd til at tabe. Se vores ansvarsfraskrivelse for mere information.",
+      "q22": "Kan jeg konvertere den nye BNB Tiger Inu-kontrakt (september 2025)?",
+      "a22": "Nej. Freedom Bridge understøtter det originale/legacy BNB Tiger-token, der blev lanceret for flere år siden - ikke den nye kontrakt oprettet i september 2025. Freedom Bridge blev bygget til community-overtagelsen (CTO) af de originale Tiger-, Lion- og Frog-tokens.",
+      "q23": "Hvordan tilføjer jeg likviditet?",
+      "a23": "At tilføje likviditet er en avanceret DeFi-aktivitet med risici, herunder impermanent loss. Hvis du har erfaring med at yde likviditet på DEX'er som PancakeSwap eller Uniswap, er processen den samme - par OG-tokenet med et base-aktiv. Her er en fremragende uddannelsesserie om likviditet, hvis du vil lære mere: https://www.youtube.com/watch?v=oiylIHvwMik&list=PL_ujg_v1hZ5iGtiuhT8NkSMqEOaLAgmUu",
+      "q24": "Kan teamet lave et rug pull?",
+      "a24": "Nej. Der er ingen mekanisme for et rug pull. Ingen tokens eller skatter tildeles teamet, og vi opkræver ingen bridging-gebyrer — de går til Axelar for relaying-omkostninger. Teamet er holdere ligesom jer, der bygger dette på egen regning. Den eneste team-wallet er en offentlig marketing-wallet finansieret af community-donationer. Multisig Safe-walleten kontrollerer kontrakttilladelser som at pause afsendelse til chains i nødstilfælde, men kan ikke tilgå eller omdirigere brugernes midler."
     }
+  },
+  "footer": {
+    "wiki": "Wiki",
+    "contracts": "Kontrakter",
+    "faq": "FAQ",
+    "disclaimer": "Ansvarsfraskrivelse",
+    "github": "GitHub"
+  },
+  "disclaimer": {
+    "title": "Juridisk ansvarsfraskrivelse",
+    "header": "Vigtig juridisk meddelelse",
+    "subtitle": "Læs venligst denne ansvarsfraskrivelse omhyggeligt, før du bruger Freedom Bridge.",
+    "sections": {
+      "noInvestmentAdvice": {
+        "title": "Ingen investeringsrådgivning",
+        "content": "Informationen på Freedom Bridge udgør ikke investeringsrådgivning, finansiel rådgivning, handelsrådgivning eller nogen anden form for rådgivning. Du bør ikke behandle noget indhold som sådant. Freedom Bridge anbefaler ikke, at nogen kryptovaluta skal købes, sælges eller holdes af dig. Foretag din egen research og rådfør dig med din finansielle rådgiver, før du træffer investeringsbeslutninger."
+      },
+      "risksOfUse": {
+        "title": "Risici ved brug",
+        "content": "Kryptovalutamarkeder er volatile og uforudsigelige. Ved at bruge Freedom Bridge anerkender og accepterer du, at:\n\n• Smart kontrakter kan indeholde fejl eller sårbarheder, der kan føre til tab af midler\n• Cross-chain bridges bærer iboende risici, herunder men ikke begrænset til: oracle-fejl, validator-sammenværgelse og netværksbelastning\n• Token-værdier kan svinge voldsomt, og du kan tabe en del af eller hele din investering\n• Transaktioner på blockchain-netværk er irreversible\n• Netværksgebyrer og gasomkostninger ligger uden for vores kontrol og kan variere betydeligt"
+      },
+      "noWarranties": {
+        "title": "Ingen garantier",
+        "content": "Freedom Bridge leveres \"som beset\" og \"som tilgængelig\" uden garantier af nogen art, hverken udtrykkelige eller underforståede. Vi garanterer ikke, at tjenesten vil være uafbrudt, sikker eller fejlfri. Vi giver ingen garantier vedrørende nøjagtigheden, pålideligheden eller fuldstændigheden af information leveret gennem platformen."
+      },
+      "limitationOfLiability": {
+        "title": "Ansvarsbegrænsning",
+        "content": "I det maksimale omfang tilladt ved lov skal Freedom Bridge, dets udviklere, bidragsydere og tilknyttede selskaber ikke holdes ansvarlige for nogen direkte, indirekte, hændelige, specielle, følgeskader eller pønalt erstatningsansvar, der opstår som følge af eller i forbindelse med din brug af platformen, herunder men ikke begrænset til tab af fortjeneste, tab af data eller tab af kryptovaluta-aktiver."
+      },
+      "thirdPartyServices": {
+        "title": "Tredjepartstjenester",
+        "content": "Freedom Bridge integreres med tredjepartstjenester, herunder Axelar Network til cross-chain bridging. Vi er ikke ansvarlige for disse tredjeparters handlinger, indhold, information eller data. Din brug af tredjepartstjenester er underlagt deres respektive vilkår og betingelser."
+      },
+      "regulatoryCompliance": {
+        "title": "Overholdelse af lovgivning",
+        "content": "Regler for kryptovaluta varierer efter jurisdiktion. Du er eneansvarlig for at sikre, at din brug af Freedom Bridge overholder alle gældende love og regler i din jurisdiktion. Freedom Bridge giver ingen erklæringer om tjenesternes lovlighed i nogen jurisdiktion."
+      },
+      "dyor": {
+        "title": "Lav din egen research",
+        "content": "Lav altid din egen research (DYOR), før du interagerer med en DeFi-protokol. Verificer kontraktadresser, forstå mekanismerne i de tokens, du interagerer med, og invester aldrig mere, end du har råd til at tabe."
+      }
+    },
+    "acknowledgment": "Ved at bruge Freedom Bridge anerkender du, at du har læst, forstået og accepterer at være bundet af denne ansvarsfraskrivelse.",
+    "lastUpdated": "Sidst opdateret: Januar 2026"
+  },
+  "disclaimerModal": {
+    "title": "Vigtig ansvarsfraskrivelse",
+    "subtitle": "Læs venligst og bekræft, før du fortsætter.",
+    "noAdvice": "Freedom Bridge yder ikke investerings-, finansiel eller handelsrådgivning. Investeringer i kryptovaluta er volatile og risikable.",
+    "risks": "Ved at bruge denne platform anerkender du, at smart kontrakter kan indeholde sårbarheder, cross-chain bridges indebærer iboende risici, og transaktioner er irreversible.",
+    "dyor": "Lav altid din egen research (DYOR) og brug kun midler, du har råd til at tabe.",
+    "fullDisclaimer": "For fulde detaljer, se vores",
+    "fullDisclaimerLink": "Juridisk ansvarsfraskrivelse",
+    "accept": "Jeg forstår og accepterer"
   },
   "common": {
     "from": "Fra",
     "to": "Til",
     "max": "MAKS",
+    "cancel": "Annuller",
     "chainId": "Kæde-ID",
     "bscChain": "BSC Chain",
     "insufficientBalance": "Utilstrækkelig saldo.",
     "failedToSwitchNetwork": "Kunne ikke skifte netværk. Skift venligst manuelt i din tegnebog.",
     "failedToFetchFeeQuote": "Kunne ikke hente gebyroverslag.",
     "unableToDetermineGas": "Kan ikke bestemme Axelar gas-betaling",
-    "bridgeTxFailed": "Overførselstransaktion mislykkedes",
+    "bridgeTxFailed": "Bridge-transaktion fejlede",
     "estimatedGas": "Estimeret Axelar-gas",
     "success": "Succes!",
-    "viewOnExplorer": "Vis på Explorer",
-    "bridging": "Overfører...",
-    "transactionFailed": "Transaktion mislykkedes",
+    "viewOnExplorer": "Vis i Explorer",
+    "bridging": "Bridger...",
+    "transactionFailed": "Transaktion fejlede",
     "search": "Søg",
     "backToApp": "Tilbage til app"
   }

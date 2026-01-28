@@ -4,6 +4,7 @@
     "titleBridge": "Köprü"
   },
   "nav": {
+    "home": "Ana Sayfa",
     "settings": "Ayarlar",
     "menu": "Menü",
     "preferences": "Tercihler",
@@ -16,7 +17,6 @@
     "wiki": "Dokümantasyon / Wiki",
     "contracts": "Sözleşmeler",
     "faq": "SSS",
-    "logout": "Çıkış Yap",
     "language": "Dil",
     "languageSearchPlaceholder": "Dilleri ara",
     "languageNoResults": "Dil bulunamadı",
@@ -24,28 +24,42 @@
   },
   "addNetworks": {
     "title": "Ağları Ekle",
-    "description": "Cüzdanınıza Ağlar eklemek için aşağıdaki bir düğmeye tıklayın. Bu, test sırasında zincirler arasında geçiş yapmayı kolaylaştırır."
+    "description": "MetaMask, Rabby veya diğer Web3 cüzdanlarına eklemek için herhangi bir ağa tıklayın",
+    "searchPlaceholder": "Ağları ara...",
+    "noResults": "Ağ bulunamadı",
+    "networkCount": "ağ"
+  },
+  "addNetwork": {
+    "connectWallet": "Lütfen önce cüzdanınızı bağlayın",
+    "alreadyPending": "İstek zaten beklemede. Cüzdanınızı kontrol edin.",
+    "error": "Ağ eklenemedi. Lütfen manuel olarak ekleyin.",
+    "adding": "Ekleniyor...",
+    "button": "Ekle"
   },
   "tabs": {
     "convert": "Dönüştür",
     "bridge": "Köprü"
   },
   "convert": {
-    "token": "Token",
-    "selectToken": "Token Seç",
     "balance": "Bakiye",
-    "noConvertibleTokens": "{{chainName}} üzerinde dönüştürülecek token yok",
-    "convert": "Dönüştür",
-    "addToWalletLabel": "{{chainName}} üzerindeki {{symbol}} tokenını cüzdana aktar",
     "addToWalletButton": "Cüzdana Aktar",
-    "addingToken": "Ekleniyor...",
-    "addTokenError": "Token cüzdana eklenemiyor",
-    "legacyTokenMissing": "Bu zincir için eski token eksik",
-    "tigerOGMissing": "Bu zincir için TigerOG token eksik",
     "networkWarning": {
       "title": "Yanlış Ağ",
-      "message": "Token dönüşümü yalnızca BSC Zincirinde mevcuttur.",
-      "description": "Tokenları dönüştürmek için lütfen cüzdanınızda BSC Zincirine geçin veya tokenları zincirler arasında transfer etmek için Köprü sekmesine gidin."
+      "message": "Token dönüşümü yalnızca BSC Zincirinde mevcuttur. Eski tokenlarınızı dönüştürmek için lütfen BSC'ye geçin."
+    },
+    "confirmModal": {
+      "title": "Dönüşümü Onayla",
+      "warning": "Tokenlarınızı dönüştürmek üzeresiniz. Devam etmeden önce lütfen aşağıdakileri dikkatlice okuyun.",
+      "irreversible": "Bu işlem geri alınamaz!",
+      "burnExplanation": "{{legacySymbol}} tokenlarınız kalıcı olarak yakılacak ve cüzdanınıza eşit miktarda {{newSymbol}} token basılacaktır. Bu işlem geri alınamaz.",
+      "positiveNote": "İyi tarafı: {{newSymbol}} tamamen vergiden muaftır — artık her işlemde %10'dan fazla vergi yok.",
+      "confirmQuestion": "{{amount}} {{legacySymbol}} tokenını {{newSymbol}} tokenına dönüştür?",
+      "confirmButton": "Anlıyorum, Dönüştür"
+    },
+    "finalConfirmModal": {
+      "title": "Gerçekten Emin Misiniz?",
+      "message": "Bu, iptal etmek için son şansınız. Onayladığınızda, {{legacySymbol}} tokenlarınız {{newSymbol}} tokenına dönüştürülecek ve geri dönüştürülemez.",
+      "confirmButton": "Evet, Şimdi Dönüştür"
     }
   },
   "bridge": {
@@ -56,9 +70,7 @@
     "noDestination": "Hedef yok",
     "noBridgeableTokens": "Köprülenebilir token yok",
     "bridgeButton": "Tokenları Köprüle",
-    "getFeeQuote": "Ücret Teklifi Al",
     "viewOnAxelarscan": "Axelarscan'de Görüntüle",
-    "addDestinationTokenLabel": "{{chainName}} üzerindeki {{symbol}} tokenını cüzdana aktar",
     "addTokenError": "Token cüzdana eklenemiyor",
     "estimatedTime": "Tah. süre",
     "recentTransactions": "Son İşlemler",
@@ -74,28 +86,14 @@
     "cancel": "İptal",
     "save": "Kaydet"
   },
-  "wallet": {},
-  "login": {
-    "title": "Tekrar hoş geldiniz",
-    "subtitle": "Freedom Bridge'e devam etmek için oturum açın",
-    "emailLabel": "E-posta",
-    "emailPlaceholder": "ad@example.com",
-    "passwordLabel": "Şifre",
-    "passwordPlaceholder": "Şifreyi girin",
-    "rememberMe": "Bu cihazda beni hatırla",
-    "submit": "Giriş Yap",
-    "validation": {
-      "required": "E-posta ve şifre gerekli.",
-      "invalid": "Geçersiz e-posta veya şifre."
-    }
-  },
   "landing": {
     "banner": {
       "title": "Burada yeni misiniz?",
-      "message": "Freedom Bridge ve TigerOG tokenlarını zincirler arasında nasıl köprüleyeceğinizi öğrenin."
+      "message": "Freedom Bridge ve TigerOG tokenlarını zincirler arasında nasıl köprüleyeceğinizi öğrenin.",
+      "note": "Not: Token dönüşümü kalıcıdır ve geri alınamaz."
     },
     "hero": {
-      "badge": "Axelar Tarafından Desteklenmektedir",
+      "badge": "Axelar ile Güçlendirilmiştir",
       "title": "<1/> <2>Varlıklarınızı</2> Özgürleştirin",
       "subtitle": "Axelar'in Zincirler Arası Token Hizmetini kullanarak TigerOG tokenlarını zincirler arasında sorunsuz bir şekilde köprüleyin. Güvenli, hızlı ve vergisiz.",
       "launchApp": "Uygulamayı Başlat",
@@ -130,14 +128,19 @@
         "button": "Köprülemeye Başla"
       }
     },
-    "teaser": {
-      "title": "Başka coinler mi istiyorsunuz?",
-      "subtitle": "<lunc>LUNC</lunc>, <crepe>Crepe</crepe> veya <shiba>Shiba</shiba> hakkında ne düşünüyorsunuz?"
-    },
     "cta": {
       "title": "Köprülemeye hazır mısınız?",
       "description": "Zincirler arası devrime katılın. Varlıklarınızı sarmak ve Axelar aracılığıyla köprülemeye başlamak bir dakikadan az sürer.",
       "button": "Uygulamayı Şimdi Başlat"
+    },
+    "buyTokens": {
+      "badge": "Başlayın",
+      "title": "Varlık Edin",
+      "description": "Henüz hiç tokenınız yok mu? Orijinal tokenları PancakeSwap'tan satın alın, ardından bunları yeni çok zincirli versiyonlara dönüştürün.",
+      "buyOn": "PancakeSwap'ta Satın Al",
+      "then": "sonra",
+      "convertTo": "Şuna Dönüştür:",
+      "buyNow": "Şimdi Satın Al"
     }
   },
   "wiki": {
@@ -153,7 +156,9 @@
       "developers": "Geliştiriciler",
       "tigerogSupply": "TigerOG Arzı",
       "lionogSupply": "LionOG Arzı",
-      "frogogSupply": "FrogOG Arzı"
+      "frogogSupply": "FrogOG Arzı",
+      "githubRepo": "GitHub Deposu",
+      "axelarDocs": "Axelar ITS Dokümantasyonu"
     },
     "articles": {
       "whatIs": {
@@ -185,9 +190,9 @@
         "title": "Axelar Ağı",
         "content": "Birlikte çalışabilirlik katmanımız olarak Axelar kullanıyoruz. Axelar, farklı blok zincirlerini birbirine bağlayan, güvenli zincirler arası iletişim ve varlık transferi sağlayan merkezi olmayan bir ağdır. Axelar'in güvenlik modeli, zincirler arası tokenlar için yüksek dereceli güvenlik sağlayan izinsiz bir doğrulayıcı kümesine dayanır."
       },
-      "migration": {
-        "title": "Göç Mantığı",
-        "content": "Göç sözleşmesi kaynak zincirde (örneğin, BSC) dağıtılır. Orijinal eski tokenları gözetim altında tutar. Tokenları yükselttiğinizde, Göç sözleşmesine yatırırsınız. Çözdüğünüzde (destekleniyorsa), orijinal tokenları serbest bırakmak için TigerOG temsilini yakıyorsunuz. Bu, kesin bir 1:1 destek sağlar."
+      "conversion": {
+        "title": "Dönüşüm Mantığı",
+        "content": "Dönüşüm sözleşmesi BSC üzerinde dağıtılmıştır. Dönüştürdüğünüzde, eski tokenlarınız ölü adrese gönderilir (kalıcı olarak yakılır) ve 1:1 oranında TigerOG alırsınız. Bu tek yönlü bir işlemdir — eski tokenlar yok edilir ve asla geri alınamaz."
       },
       "contracts": {
         "title": "Akıllı Sözleşme Adresleri",
@@ -310,13 +315,67 @@
       "liquidity": "Likidite"
     },
     "liquidity": {
-      "title": "Likidite Havuzları"
-    }
+      "poolAddress": "Havuz Adresi",
+      "tradeOn": "Şurada işlem yap:"
+    },
+    "overview": {
+      "interchainTokens": {
+        "title": "Zincirler Arası Tokenlar",
+        "description": "Axelar Zincirler Arası Token Hizmeti (ITS) aracılığıyla dağıtılan tokenlar. Bu tokenlar, tüm desteklenen ağlarda tutarlı adresleri korur."
+      },
+      "axelarNetwork": {
+        "title": "Axelar Ağı",
+        "description": "Zincirler arası transferleri güvence altına alan ve farklı blok zincirleri arasında veri bütünlüğünü sağlayan temel mesajlaşma protokolü."
+      },
+      "conversionContracts": {
+        "title": "Dönüşüm Sözleşmeleri",
+        "description": "Eski tokenları zincirler arası varlıklara dönüştürmekten sorumludur. Bu sözleşmeler, kaynak zincirdeki yatırma ve basma mantığını yönetir."
+      },
+      "conversionContractsTable": {
+        "title": "Dönüşüm Sözleşmesi Adresleri",
+        "subtitle": "BSC üzerindeki bu sözleşmeler, eski tokenlardan zincirler arası tokenlara dönüşümü yönetir.",
+        "token": "Token",
+        "legacyToken": "Eski Token",
+        "conversionContract": "Dönüşüm Sözleşmesi",
+        "newToken": "Zincirler Arası Token"
+      },
+      "liquidityPools": {
+        "title": "Likidite Havuzları",
+        "description": "OG tokenlarını çeşitli zincirlerde takas edebileceğiniz DEX likidite havuzları."
+      },
+      "liquidityPoolsTable": {
+        "title": "Likidite Havuzları",
+        "subtitle": "OG tokenları ticareti için DEX havuzları",
+        "token": "Token",
+        "chain": "Zincir",
+        "dex": "DEX",
+        "poolAddress": "Havuz Adresi"
+      }
+    },
+    "filterTokens": "Tokenları filtrele...",
+    "interchainAsset": "Axelar ITS ile Zincirler Arası Varlık",
+    "availableOnChains": "{{count}} zincirde mevcut",
+    "table": {
+      "chain": "Zincir",
+      "tokenAddress": "Token Adresi",
+      "axelarChainName": "Axelar Zincir Adı",
+      "chainId": "Kimlik: {{id}}"
+    },
+    "axelarId": "Axelar Kimliği: {{name}}",
+    "copied": "Kopyalandı!",
+    "copyAddress": "Adresi kopyala"
   },
   "faq": {
     "title": "Freedom Bridge Desteği",
     "header": "Sıkça Sorulan Sorular",
     "subtitle": "TigerOG, köprüleme ve Axelar hakkında sık sorulan soruların yanıtları.",
+    "sections": {
+      "gettingStarted": "Başlarken",
+      "convertingTrading": "Dönüştürme ve Ticaret",
+      "bridging": "Köprüleme",
+      "technical": "Teknik",
+      "securityRisks": "Güvenlik ve Riskler"
+    },
     "cta": {
       "title": "Hala sorularınız mı var?",
       "description": "Telegram'daki topluluğumuza katılın veya teknik kılavuzlar için ayrıntılı Wiki'yi kontrol edin.",
@@ -327,25 +386,112 @@
       "q1": "Tokenlarımı dönüştürmenin amacı nedir?",
       "a1": "Tokenlarınızı TigerOG'ye dönüştürmek, eski tokenla ilişkili işlem vergisini (genellikle %10-12) kaldırır. Ayrıca bu tokenları Axelar aracılığıyla Ethereum, Base ve daha fazlası gibi diğer blok zincirlerine köprülemenize izin vererek yeni ekosistemlere erişim sağlar.",
       "q2": "Freedom Bridge'i kullanmak güvenli mi?",
-      "a2": "Evet. Protokol, güvenli bir Göç sözleşmesi ve Axelar'in Zincirler Arası Token Hizmetini kullanır. Dönüştürdüğünüzde, BNBTiger'ınız kalıcı olarak yakılır ve 1:1 oranında TigerOG alırsınız. Yakma mekanizması, toplam arzın tüm zincirlerde düzgün bir şekilde yönetilmesini sağlar.",
+      "a2": "Evet. Protokol, güvenli bir Dönüşüm sözleşmesi ve Axelar'in Zincirler Arası Token Hizmetini kullanır. Dönüştürdüğünüzde, BNBTiger'ınız kalıcı olarak yakılır ve 1:1 oranında TigerOG alırsınız. Yakma mekanizması, toplam arzın tüm zincirlerde düzgün bir şekilde yönetilmesini sağlar.",
       "q3": "Herhangi bir ücret var mı?",
       "a3": "Freedom Bridge'in kendisi dönüştürme için bir ücret talep etmez. Yalnızca standart blok zinciri gaz ücretlerini ödersiniz. Zincirler arasında köprüleme, aktarma maliyetlerini karşılamak için Axelar'a ödenen bir zincirler arası gaz ücretini içerir.",
       "q4": "Tokenlarımı kaybedersem ne olur?",
-      "a4": "TigerOG tokenları diğer herhangi bir ERC20 tokenı gibi davranır. Cüzdanınıza erişimi kaybederseniz, kurtarılamazlar. Özel anahtarlarınızı ve kurtarma ifadelerinizi her zaman güvende tutun.",
+      "a4": "TigerOG tokenları diğer herhangi bir ERC20/BEP20 tokenı gibi davranır. Cüzdanınıza erişimi kaybederseniz, kurtarılamazlar. Özel anahtarlarınızı ve kurtarma ifadelerinizi her zaman güvende tutun.",
       "q5": "Tokenlarımı tekrar BNBTiger'a dönüştürebilir miyim?",
-      "a5": "Hayır. Göç, tek yönlü bir dönüşümdür. BNBTiger'ı TigerOG'ye dönüştürdüğünüzde, BNBTiger tokenlarınız kalıcı olarak yakılır (ölü adrese gönderilir). Bu kasıtlıdır — TigerOG, eski tokenı tamamen değiştirmek için tasarlanmış yükseltilmiş, vergisiz sürümdür.",
+      "a5": "Hayır. Dönüşüm, tek yönlü bir işlemdir. BNBTiger'ı TigerOG'ye dönüştürdüğünüzde, eski tokenlarınız dönüşüm sözleşmesinde kalıcı olarak kilitlenir. Bu kasıtlıdır — TigerOG, eski tokenı tamamen değiştirmek için tasarlanmış yükseltilmiş, vergisiz sürümdür.",
       "q6": "Hangi ağlar destekleniyor?",
       "a6": "Axelar aracılığıyla BNB Chain, Ethereum, Base ve daha fazlası dahil olmak üzere birden fazla EVM zincirini destekliyoruz. Desteklenen ağların tam listesi için Wiki'yi kontrol edin.",
       "q7": "Köprüleme ne kadar sürer?",
-      "a7": "Köprüleme hızı, kaynak zincirin kesinleşme süresine ve Axelar aktarımına bağlıdır. Tipik olarak, zincirler arası bir transfer yaklaşık 2-5 dakika sürer.",
+      "a7": "Köprüleme süresi, NEREDEN gönderdiğinize bağlıdır:\n\n• Ethereum: 15-20 dk (daha fazla onay gerekir)\n• BSC & Avalanche: 2-4 dk (en hızlı)\n• Base, Linea, Polygon: 3-5 dk\n\nUygulama, köprüleme yapmadan önce tahmini süreyi gösterir.",
       "q8": "OG tokenlarının dolaşımdaki arzı nedir?",
-      "a8": "Her OG tokenı, orijinal BNB tokenından türetilen, yakılan tokenları, sıkışmış sözleşme bakiyelerini ve kilitli LP'yi hesaba katan sabit bir dolaşım arzına sahiptir. TigerOG: ~3.66 septilyon (orijinalin %36.62'si). LionOG: ~3.83 septilyon (orijinalin %38.33'ü). FrogOG: ~8.39 septilyon (orijinalin %83.86'sı). Her tokenın ayrıntılı dökümleri için Wiki'ye bakın."
+      "a8": "Her OG tokenı, orijinal BNB tokenından türetilen, yakılan tokenları, sıkışmış sözleşme bakiyelerini ve kilitli LP'yi hesaba katan sabit bir dolaşım arzına sahiptir:\n\n• TigerOG: ~3.66 septilyon (orijinalin %36.62'si)\n• LionOG: ~3.83 septilyon (orijinalin %38.33'ü)\n• FrogOG: ~8.39 septilyon (orijinalin %83.86'sı)\n\nHer tokenın ayrıntılı dökümleri için Wiki'ye bakın.",
+      "q9": "OG sözleşmesi neden feragat edilmedi?",
+      "a9": "Sözleşmeden feragat etmek, gelecekte geliştirme ve yeni zincirler ekleme yeteneğini ortadan kaldırır. Sözleşme öngörülebilir gelecekte feragat edilmeyecek olsa da, herhangi bir değişiklik yapmak için birden fazla imza gereklidir. Ayrıca, ekibe hiçbir token veya vergi tahsis edilmemiştir.",
+      "q10": "OG sözleşmesi neden basılabilir?",
+      "a10": "Zincirler arası köprüleme, basma/yakma işlevselliği gerektirir - tokenlar bir zincirden ayrılırken yakılır ve ulaştığında basılır. Bu, tüm ağlarda toplam arzı sabit tutar. Basma işlemi, çoklu imzalı bir Safe cüzdanı tarafından kontrol edilir.",
+      "q11": "TigerOG Axelar için BNB Chain'den ayrılıyor mu?",
+      "a11": "Hayır. Axelar bir blok zinciri değildir - zincirleri birbirine bağlayan köprüleme protokolüdür. BNB Chain, eski tokenları dönüştürdüğünüz kaynak zincir olarak kalır. Axelar sadece tokenlarınızın BNB, Ethereum, Base ve diğer desteklenen ağlar arasında hareket etmesini sağlar.",
+      "q12": "Tokenlarım nerede?",
+      "a12": "Zinciri ve token adresini cüzdanınıza eklediğinizden emin olun. Tüm sözleşme adreslerini Sözleşmeler sayfasında bulabilirsiniz. Tiger ekibi, birden fazla zinciri yönetmeyi kolaylaştıran Rabby cüzdanını kullanır.",
+      "q13": "Ethereum veya Base'den köprüleme neden bu kadar uzun sürüyor?",
+      "a13": "Ethereum, maksimum güvenlik için işlemleri sonuçlandırmadan önce iki dönem (epoch) gerektirir. Base, Ethereum üzerinde işlem gördüğünden, bu gecikmeyi devralır. Bu, hız yerine güvenliğe öncelik verir - tokenlarınız güvendedir, sadece sabırlı olun.",
+      "q14": "Orijinal tokenımda kalırsam ve dönüştürmezsem ne olur?",
+      "a14": "Dönüştürmek için acele etmenize gerek yok. BNBTiger ve TigerOG her zaman farklı likidite havuzlarına, piyasa değerlerine vb. sahip olacaktır. Ancak BNBTiger'in vergisi yüksektir ve TigerOG'nin ticaret için vergisi yoktur. Orijinal üzerindeki vergiler projeyi desteklemek için kullanılmadığından, geliştirme CTO ekibi tarafından TigerOG için yapılmaktadır. Freedom Bridge ve çoklu zincir sadece TigerOG içindir.",
+      "q15": "Dönüştürmek için vergi var mı? TigerOG'nin vergisi var mı?",
+      "a15": "Hayır. Dönüştürmek ve ticaret yapmak sadece normal gaz ücretine mal olur. Ek vergi veya ücret yoktur ve TigerOG vergisiz bir sözleşmedir.",
+      "q16": "Sadece doğrudan TigerOG alıp satabilir miyim?",
+      "a16": "Henüz değil. Ekip, yeterince büyük likidite havuzlarını finanse edebilmek için ücret ve vergi toplamadı. Şimdi TigerOG almak için orijinalini satın almanız veya zaten sahip olmanız ve dönüştürmeniz gerekir. TigerOG'ye sahip olduğunuzda, yatırımcılar likidite havuzuna ekleme yapana kadar kolayca alınıp satılamaz.",
+      "q17": "TigerOG piyasa değeri neden bu kadar şişirilmiş görünüyor?",
+      "a17": "Bir likidite havuzu ne kadar küçükse, küçük bir ticaret görüntülenen piyasa değeri üzerinde o kadar büyük bir etki yaratır. Yatırımcılar likidite sağlayıcı olmak için geldiklerinde bu durum düzelir.",
+      "q18": "Hangi güvenlik denetimleri yapıldı?",
+      "a18": "Freedom Bridge resmi bir üçüncü taraf denetiminden geçmemiştir. Ancak, dönüştürücü sözleşme kodu, Stronghold ekibi (yakın zamanda Davos'ta sunum yapan eski XRP ve Stellar geliştiricileri) tarafından oluşturulan SHx dönüştürücüsüne dayanmaktadır. Köprüleme altyapısı, birden fazla güvenlik denetiminden geçmiş olan Axelar tarafından desteklenmektedir.",
+      "q19": "Freedom Bridge saldırılara veya istismarlara karşı nasıl koruma sağlar?",
+      "a19": "Çeşitli önlemler alınmıştır:\n\n• Dönüştürücü yalnızca gereken tam dolaşım arzını tutar - istismar edilebilecek fazla token yoktur\n• Dönüştürücünün basma izni yoktur\n• Tüm sözleşme kodu zincir üzerinde doğrulanmış ve açık kaynaktır\n• Token izinleri Safe.global çoklu imzalı cüzdanda güvence altına alınmıştır\n• Köprüleme, Axelar'in savaşta test edilmiş altyapısı tarafından yönetilir",
+      "q20": "Köprüleme geri alınamaz mı? Bir transfer başarısız olursa ne olur?",
+      "a20": "Köprü transferleri nadiren yetersiz gaz veya ağ tıkanıklığı nedeniyle sıkışabilir. Bu olursa, işleminizi Axelarscan'de takip edebilir ve tamamlamak için manuel olarak gaz ekleyebilirsiniz. Axelar işlem kurtarma araçları sağlar - tokenlarınızı kaybetmezsiniz.",
+      "q21": "Freedom Bridge kullanmanın riskleri nelerdir?",
+      "a21": "Herhangi bir DeFi protokolünde olduğu gibi, akıllı sözleşme riski, köprü riski ve piyasa oynaklığı gibi doğal riskler vardır. Kendi araştırmanızı yapmanızı (DYOR) ve yalnızca kaybetmeyi göze alabileceğiniz fonları kullanmanızı öneririz. Daha fazla bilgi için yasal sorumluluk reddimize bakın.",
+      "q22": "Yeni BNB Tiger Inu sözleşmesini (Eylül 2025) dönüştürebilir miyim?",
+      "a22": "Hayır. Freedom Bridge, Eylül 2025'te oluşturulan yeni sözleşmeyi değil, birkaç yıl önce başlatılan orijinal/eski BNB Tiger tokenını destekler. Freedom Bridge, orijinal Tiger, Lion ve Frog tokenlarının topluluk devralımı (CTO) için inşa edilmiştir.",
+      "q23": "Nasıl likidite eklerim?",
+      "a23": "Likidite eklemek, geçici kayıp (impermanent loss) dahil olmak üzere riskleri olan gelişmiş bir DeFi aktivitesidir. PancakeSwap veya Uniswap gibi DEX'lerde likidite sağlama konusunda deneyimliyseniz, süreç aynıdır - OG tokenını bir temel varlıkla eşleştirin. Daha fazla bilgi edinmek isterseniz likidite üzerine harika bir eğitim serisi: https://www.youtube.com/watch?v=oiylIHvwMik&list=PL_ujg_v1hZ5iGtiuhT8NkSMqEOaLAgmUu",
+      "q24": "Ekip rug pull (dolandırıcılık) yapabilir mi?",
+      "a24": "Hayır. Rug pull için bir mekanizma yoktur. Ekibe hiçbir token veya vergi tahsis edilmemiştir ve herhangi bir köprüleme ücreti toplamıyoruz — bunlar aktarma maliyetleri için Axelar'a gider. Ekip, tıpkı sizin gibi sahiplerdir ve bunu kişisel harcamalarıyla inşa etmektedir. Tek ekip cüzdanı, topluluk bağışlarıyla finanse edilen halka açık bir pazarlama cüzdanıdır. Çoklu imzalı Safe cüzdanı, acil durumlarda zincirlere gönderimi duraklatma gibi sözleşme izinlerini kontrol eder, ancak kullanıcı fonlarına erişemez veya yönlendiremez."
     }
+  },
+  "footer": {
+    "wiki": "Wiki",
+    "contracts": "Sözleşmeler",
+    "faq": "SSS",
+    "disclaimer": "Sorumluluk Reddi",
+    "github": "GitHub"
+  },
+  "disclaimer": {
+    "title": "Yasal Sorumluluk Reddi",
+    "header": "Önemli Yasal Uyarı",
+    "subtitle": "Freedom Bridge'i kullanmadan önce lütfen bu sorumluluk reddini dikkatlice okuyun.",
+    "sections": {
+      "noInvestmentAdvice": {
+        "title": "Yatırım Tavsiyesi Değildir",
+        "content": "Freedom Bridge'de sağlanan bilgiler yatırım tavsiyesi, finansal tavsiye, ticaret tavsiyesi veya başka herhangi bir türde tavsiye teşkil etmez. İçeriğin hiçbirini bu şekilde değerlendirmemelisiniz. Freedom Bridge, tarafınızdan herhangi bir kripto paranın alınmasını, satılmasını veya tutulmasını önermez. Herhangi bir yatırım kararı vermeden önce kendi durum tespitinizi yapın ve finansal danışmanınıza danışın."
+      },
+      "risksOfUse": {
+        "title": "Kullanım Riskleri",
+        "content": "Kripto para piyasaları değişken ve öngörülemezdir. Freedom Bridge'i kullanarak şunları kabul ve beyan edersiniz:\n\n• Akıllı sözleşmeler, fon kaybına neden olabilecek hatalar veya güvenlik açıkları içerebilir\n• Zincirler arası köprüler, oracle arızaları, doğrulayıcı gizli anlaşmaları ve ağ tıkanıklığı dahil ancak bunlarla sınırlı olmamak üzere doğal riskler taşır\n• Token değerleri önemli ölçüde dalgalanabilir ve yatırımınızın bir kısmını veya tamamını kaybedebilirsiniz\n• Blok zinciri ağlarındaki işlemler geri alınamaz\n• Ağ ücretleri ve gaz maliyetleri kontrolümüz dışındadır ve önemli ölçüde değişebilir"
+      },
+      "noWarranties": {
+        "title": "Garanti Yoktur",
+        "content": "Freedom Bridge, açık veya zımni hiçbir garanti olmaksızın \"olduğu gibi\" ve \"mevcut olduğu şekilde\" sağlanır. Hizmetin kesintisiz, güvenli veya hatasız olacağını garanti etmiyoruz. Platform aracılığıyla sağlanan herhangi bir bilginin doğruluğu, güvenilirliği veya eksiksizliği konusunda hiçbir garanti vermiyoruz."
+      },
+      "limitationOfLiability": {
+        "title": "Sorumluluğun Sınırlandırılması",
+        "content": "Yasaların izin verdiği azami ölçüde, Freedom Bridge, geliştiricileri, katkıda bulunanları ve iştirakleri, kar kaybı, veri kaybı veya kripto para varlıklarının kaybı dahil ancak bunlarla sınırlı olmamak üzere, platformu kullanımınızdan kaynaklanan veya bununla ilgili hiçbir doğrudan, dolaylı, arızi, özel, sonuç olarak ortaya çıkan veya cezai tazminattan sorumlu tutulamaz."
+      },
+      "thirdPartyServices": {
+        "title": "Üçüncü Taraf Hizmetleri",
+        "content": "Freedom Bridge, zincirler arası köprüleme için Axelar Network dahil olmak üzere üçüncü taraf hizmetlerle entegre olur. Bu üçüncü tarafların eylemlerinden, içeriğinden, bilgilerinden veya verilerinden sorumlu değiliz. Üçüncü taraf hizmetlerini kullanımınız, ilgili hüküm ve koşullara tabidir."
+      },
+      "regulatoryCompliance": {
+        "title": "Mevzuata Uygunluk",
+        "content": "Kripto para düzenlemeleri yargı bölgesine göre değişir. Freedom Bridge kullanımınızın, yargı bölgenizdeki geçerli tüm yasa ve düzenlemelere uygun olmasını sağlamaktan yalnızca siz sorumlusunuz. Freedom Bridge, hizmetlerin herhangi bir yargı bölgesinde yasallığı konusunda hiçbir beyanda bulunmaz."
+      },
+      "dyor": {
+        "title": "Kendi Araştırmanızı Yapın",
+        "content": "Herhangi bir DeFi protokolüyle etkileşime girmeden önce her zaman kendi araştırmanızı yapın (DYOR). Sözleşme adreslerini doğrulayın, etkileşimde bulunduğunuz tokenın mekaniğini anlayın ve asla kaybetmeyi göze alabileceğinizden daha fazlasını yatırmayın."
+      }
+    },
+    "acknowledgment": "Freedom Bridge'i kullanarak, bu sorumluluk reddini okuduğunuzu, anladığınızı ve bunlarla bağlı kalmayı kabul ettiğinizi beyan edersiniz.",
+    "lastUpdated": "Son güncelleme: Ocak 2026"
+  },
+  "disclaimerModal": {
+    "title": "Önemli Sorumluluk Reddi",
+    "subtitle": "Devam etmeden önce lütfen okuyun ve onaylayın.",
+    "noAdvice": "Freedom Bridge yatırım, finansal veya ticaret tavsiyesi vermez. Kripto para yatırımları değişken ve risklidir.",
+    "risks": "Bu platformu kullanarak, akıllı sözleşmelerin güvenlik açıkları içerebileceğini, zincirler arası köprülerin doğal riskler taşıdığını ve işlemlerin geri alınamaz olduğunu kabul edersiniz.",
+    "dyor": "Her zaman kendi araştırmanızı yapın (DYOR) ve yalnızca kaybetmeyi göze alabileceğiniz fonları kullanın.",
+    "fullDisclaimer": "Tam ayrıntılar için bkz.",
+    "fullDisclaimerLink": "Yasal Sorumluluk Reddi",
+    "accept": "Anlıyorum ve Kabul Ediyorum"
   },
   "common": {
     "from": "Nereden",
     "to": "Nereye",
     "max": "MAKS",
+    "cancel": "İptal",
     "chainId": "Zincir Kimliği",
     "bscChain": "BSC Zinciri",
     "insufficientBalance": "Yetersiz bakiye.",

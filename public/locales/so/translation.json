@@ -4,6 +4,7 @@
     "titleBridge": "Buundada"
   },
   "nav": {
+    "home": "Hoyga",
     "settings": "Dejinta",
     "menu": "Liiska",
     "preferences": "Dookhyada",
@@ -16,36 +17,50 @@
     "wiki": "Dukumentiyada / Wiki",
     "contracts": "Heshiisyada",
     "faq": "Su'aalaha Inta Badan La Isweydiiyo",
-    "logout": "Ka bax",
     "language": "Luqadda",
     "languageSearchPlaceholder": "Raadi luqadaha",
     "languageNoResults": "Lama helin luqado",
-    "close": "Xidh"
+    "close": "Xidh",
+    "logout": "Ka bax"
   },
   "addNetworks": {
-    "title": "Kudar Shabakado",
-    "description": "Guji badhanka hoose si aad ugu darto shabakado boorsadaada. Tani waxay fududaynaysaa in la kala beddelo silsiladaha inta lagu jiro tijaabinta."
+    "title": "Kudar Shabakado Boorsada",
+    "description": "Guji shabakad kasta si aad ugu darto MetaMask, Rabby, ama boorsooyinka kale ee Web3",
+    "searchPlaceholder": "Raadi shabakadaha...",
+    "noResults": "Lama helin shabakado",
+    "networkCount": "shabakad"
+  },
+  "addNetwork": {
+    "connectWallet": "Fadlan marka hore ku xidh boorsadaada",
+    "alreadyPending": "Codsiga mar hore ayuu sugayaa. Hubi boorsadaada.",
+    "error": "Waa lagu guuldareystay in lagu daro shabakad. Fadlan gacanta ku dar.",
+    "adding": "Kudaraya...",
+    "button": "Kudar"
   },
   "tabs": {
     "convert": "Beddel",
     "bridge": "Buundo"
   },
   "convert": {
-    "token": "Calaamad",
-    "selectToken": "Dooro Calaamad",
     "balance": "Hadhaaga",
-    "noConvertibleTokens": "Ma jiraan calaamado la beddeli karo oo ku jira {{chainName}}",
-    "convert": "Beddel",
-    "addToWalletLabel": "Soo deji {{symbol}} gudaha {{chainName}} boorsada",
     "addToWalletButton": "Soo Deji Boorsada",
-    "addingToken": "Kudaraya...",
-    "addTokenError": "Lama awoodo in lagu daro calaamadda boorsada",
-    "legacyTokenMissing": "Calaamaddii hore ayaa ka maqan silsiladdan",
-    "tigerOGMissing": "Calaamadda TigerOG ayaa ka maqan silsiladdan",
     "networkWarning": {
       "title": "Shabakad Qaldan",
-      "message": "Beddelka calaamadda waxaa laga heli karaa oo keliya BSC Chain.",
-      "description": "Fadlan u beddel BSC Chain boorsadaada si aad u beddesho calaamadaha, ama u gudub tabka Buundada si aad ugu wareejiso calaamadaha silsiladaha dhexdooda."
+      "message": "Beddelka calaamadda waxaa laga heli karaa oo keliya BSC Chain. Fadlan u beddel BSC si aad u beddesho calaamadahaagii hore."
+    },
+    "confirmModal": {
+      "title": "Xaqiiji Beddelka",
+      "warning": "Waxaad ku dhowdahay inaad beddesho calaamadahaaga. Fadlan si taxadar leh u akhri waxyaabaha soo socda ka hor inta aanad sii wadin.",
+      "irreversible": "Tallaabadan lama beddeli karo!",
+      "burnExplanation": "Calaamadahaaga {{legacySymbol}} si joogto ah ayaa loo gubi doonaa waxaana qadar u dhigma ee {{newSymbol}} lagu soo saari doonaa boorsadaada. Tani lama beddeli karo.",
+      "positiveNote": "Dhinaca wanaagsan: {{newSymbol}} gebi ahaanba waa canshuur la'aan — ma jirto 10%+ canshuur ah macaamil kasta.",
+      "confirmQuestion": "Beddel {{amount}} {{legacySymbol}} una beddel {{newSymbol}}?",
+      "confirmButton": "Waan Fahmay, Beddel"
+    },
+    "finalConfirmModal": {
+      "title": "Ma Hubtaa Runtii?",
+      "message": "Tani waa fursadaada ugu dambeysa ee aad ku joojin karto. Markaad xaqiijiso, {{legacySymbol}} waxaa loo beddeli doonaa {{newSymbol}} dibna looma beddeli karo.",
+      "confirmButton": "Haa, Beddel Hadda"
     }
   },
   "bridge": {
@@ -56,9 +71,7 @@
     "noDestination": "Ma jirto meel loo socdo",
     "noBridgeableTokens": "Ma jiraan calaamado la buundo gelin karo",
     "bridgeButton": "Calaamadaha Buundada",
-    "getFeeQuote": "Hel Qiimaha Kharashka",
-    "viewOnAxelarscan": "Ku eeg Axelar Baare",
-    "addDestinationTokenLabel": "Soo deji {{symbol}} gudaha {{chainName}} boorsada",
+    "viewOnAxelarscan": "Ku eeg Axelarscan",
     "addTokenError": "Lama awoodo in lagu daro calaamadda boorsada",
     "estimatedTime": "Waqtiga la qiyaasay",
     "recentTransactions": "Macaamiladii Dhawaa",
@@ -74,25 +87,11 @@
     "cancel": "Jooji",
     "save": "Keydi"
   },
-  "wallet": {},
-  "login": {
-    "title": "Soo dhowow mar kale",
-    "subtitle": "Soo gal si aad u sii wadato Freedom Bridge",
-    "emailLabel": "Iimayl",
-    "emailPlaceholder": "magaca@tusaale.com",
-    "passwordLabel": "Furaha sirta ah",
-    "passwordPlaceholder": "Geli furaha sirta ah",
-    "rememberMe": "I xusuusnow qalabkan",
-    "submit": "Soo gal",
-    "validation": {
-      "required": "Iimaylka iyo furaha sirta ah waa loo baahan yahay.",
-      "invalid": "Iimayl ama furaha sirta ah oo khaldan."
-    }
-  },
   "landing": {
     "banner": {
       "title": "Cusub halkan?",
-      "message": "Wax ka baro Freedom Bridge iyo sida loo buundo geliyo calaamadaha TigerOG silsiladaha."
+      "message": "Wax ka baro Freedom Bridge iyo sida loo buundo geliyo calaamadaha TigerOG silsiladaha.",
+      "note": "Fiiro gaar ah: Beddelka calaamadda waa mid joogto ah lamana beddeli karo."
     },
     "hero": {
       "badge": "Waxaa xoojiyay Axelar",
@@ -104,7 +103,7 @@
     "stats": {
       "messaging": "Shabakadda Axelar",
       "networks": "Shabakadaha Tooska Ah",
-      "fees": "Kharashyada Protocol-ka",
+      "fees": "Kharashka Platform-ka",
       "finality": "Dhameystirka"
     },
     "features": {
@@ -118,7 +117,7 @@
       },
       "conversion": {
         "title": "Beddelka 1:1",
-        "description": "Wadarta sahayda weligeed isma beddesho. Tokens-ka waxaa lagu hayaa heshiis guuritaan oo ammaan ah, waxaana la isticmaalaa mid u dhigma 1:1. Ma jirto sicir barar, ma jirto qasid."
+        "description": "Wadarta sahayda weligeed isma beddesho. Tokens-ka waxaa lagu hayaa heshiis beddelaad oo ammaan ah, waxaana la isticmaalaa mid u dhigma 1:1 sax ah. Ma jirto sicir barar, ma jirto qasid."
       },
       "multichain": {
         "title": "Silsilado Badan",
@@ -130,14 +129,19 @@
         "button": "Bilow Buundada"
       }
     },
-    "teaser": {
-      "title": "Ma doonaysaa lacago kale?",
-      "subtitle": "Maxaad ka qabtaa <lunc>LUNC</lunc>, <crepe>Crepe</crepe>, ama <shiba>Shiba</shiba>??"
-    },
     "cta": {
       "title": "Diyaar ma u tahay inaad buundo gasho?",
-      "description": "Ku biir kacaanka interchain. Waxay qaadataa wax ka yar hal daqiiqo in la duubo hantidaada oo la bilaabo buundada iyada oo loo marayo Axelar.",
+      "description": "Ku biir kacaanka interchain. Waxay qaadataa wax ka yar hal daqiiqo in la beddelo calaamadahaaga oo la bilaabo buundada iyada oo loo marayo Axelar.",
       "button": "Bilow App-ka Hadda"
+    },
+    "buyTokens": {
+      "badge": "Bilow",
+      "title": "Hela Hanti",
+      "description": "Weli ma haysatid wax calaamado ah? Ka iibso calaamadaha asalka ah PancakeSwap, ka dibna u beddel noocyada cusub ee silsiladaha badan.",
+      "buyOn": "Ka iibso PancakeSwap",
+      "then": "ka dibna",
+      "convertTo": "U beddel",
+      "buyNow": "Iibso Hadda"
     }
   },
   "wiki": {
@@ -145,7 +149,7 @@
     "searchPlaceholder": "Raadi dukumentiyada...",
     "header": {
       "title": "Dukumentiyada",
-      "subtitle": "Baro sida loo duubo tokens-ka hore, loo kala gudbo silsiladaha, iyo loogu biiro Freedom Bridge."
+      "subtitle": "Baro sida loo beddelo tokens-ka hore iyo sida loo kala gudbo silsiladaha."
     },
     "nav": {
       "gettingStarted": "Bilaabidda",
@@ -153,12 +157,14 @@
       "developers": "Horumariyayaasha",
       "tigerogSupply": "Sahayda TigerOG",
       "lionogSupply": "Sahayda LionOG",
-      "frogogSupply": "Sahayda FrogOG"
+      "frogogSupply": "Sahayda FrogOG",
+      "githubRepo": "Kaydka GitHub",
+      "axelarDocs": "Dukumentiyada Axelar ITS"
     },
     "articles": {
       "whatIs": {
         "title": "Waa maxay Freedom Bridge?",
-        "content": "Freedom Bridge waa borotokool baahsan oo lagu dhisay Adeegga Calaamadaha Interchain ee Axelar (ITS). Waxaa loogu talagalay in lagu xoreeyo tokens-ka xaddidaadaha silsiladda kaliya iyo canshuuraha macaamilka ee sarreeya. Adigoo ku duubaya tokens-ka caadiga ah hanti ku habboon interchain, isticmaalayaashu waxay u wareejin karaan qiimahooda si xor ah blockchains-ka la taageeray.",
+        "content": "Freedom Bridge waa borotokool buundo baahsan oo lagu dhisay Adeegga Calaamadaha Interchain ee Axelar (ITS). Waxay kuu ogolaanaysaa inaad u beddesho calaamadaha hore hanti canshuur la'aan ah, ku habboon interchain oo si xor ah ugu dhex socon kara blockchains-ka la taageeray.",
         "taxFreeTitle": "Wareejinta Canshuur La'aanta",
         "taxFreeDesc": "Tokens-ka hore waxay inta badan leeyihiin canshuur 10%+. Tokens-ka TigerOG waxay leeyihiin canshuur 0%.",
         "omnichainTitle": "Interchain",
@@ -169,7 +175,7 @@
         "step1": "Ku xidh boorsadaada silsiladda isha (tusaale, BNB Chain).",
         "step2": "U gudub tabka <strong>Beddel</strong>.",
         "step3": "Dooro token-ka hore ee aad rabto inaad beddesho.",
-        "step4": "Oggolow Heshiiska Guuritaanka si aad u isticmaasho tokens-kaaga.",
+        "step4": "Oggolow Heshiiska Beddelka si aad u isticmaasho tokens-kaaga.",
         "step5": "Guji <strong>Beddel</strong> si aad u dhigato tokens-kaaga hore oo aad u hesho qadar u dhigma ee \"TigerOG\" tokens.",
         "note": "<strong>Fiiro gaar ah:</strong> Beddelku wuxuu keenayaa canshuurta macaamilka ee token-ka hore (inta lagu jiro cusboonaysiinta) haddii token-kaagu uu canshuur ka qaado wareejinta. Si kastaba ha ahaatee, marka loo beddelo TigerOG, dhammaan wareejinta iyo buundooyinka xiga waa canshuur la'aan."
       },
@@ -185,9 +191,9 @@
         "title": "Shabakadda Axelar",
         "content": "Waxaan u isticmaalnaa Axelar lakabkayaga isdhexgalka. Axelar waa shabakad baahsan oo isku xirta blockchains kala duwan, taasoo awood u siinaysa isgaarsiinta silsiladaha isku xiran ee ammaanka ah iyo wareejinta hantida. Qaabka amniga ee Axelar wuxuu ku tiirsan yahay koox xaqiijiyeyaal ah oo oggolaansho la'aan ah, oo bixiya ammaan heer sare ah calaamadaha interchain."
       },
-      "migration": {
-        "title": "Macquulka Guuritaanka",
-        "content": "Heshiiska Guuritaanka waxaa lagu daadgureeyay silsiladda asalka (tusaale, BSC). Waxay ku haysaa tokens-kii hore ee asalka ah haynta. Markaad cusboonaysiiso tokens, waxaad dhiganaysaa Heshiiska Guuritaanka. Markaad furto (haddii la taageero), waxaad gubeysaa matalaadda TigerOG si aad u sii deyso tokens-ka asalka ah. Tani waxay hubinaysaa taageero adag oo 1:1 ah."
+      "conversion": {
+        "title": "Macquulka Beddelka",
+        "content": "Heshiiska Beddelka waxaa lagu daadgureeyay BSC. Markaad beddesho, calaamadahaagii hore waxaa loo diraa cinwaanka dhintay (si joogto ah ayaa loo gubaa) waxaadna helaysaa TigerOG oo ah 1:1. Tani waa hab hal dhinac ah — calaamadihii hore way burbureen oo dib looma soo celin karo."
       },
       "contracts": {
         "title": "Cinwaannada Heshiiska Caqliga Badan",
@@ -198,7 +204,7 @@
       "security": {
         "title": "Qaabka Amniga",
         "content": "Amniga ayaa lagu dhisay lakab kasta oo Freedom Bridge ah:",
-        "point1": "<strong>Qaab-dhismeedka Guuritaanka:</strong> Tokens-ka hore waxaa lagu hayaa heshiisyo caqli badan oo la xaqiijiyay, oo aan la beddeli karin.",
+        "point1": "<strong>Qaab-dhismeedka Beddelka:</strong> Tokens-ka hore waxaa si joogto ah loogu gubaa heshiisyo caqli badan oo la xaqiijiyay, oo aan la beddeli karin.",
         "point2": "<strong>Xaqiijiyeyaasha Axelar:</strong> Fariimaha silsiladaha isku xiran waxaa xaqiijiya shabakadda baahsan ee Axelar.",
         "point3": "<strong>Sahay Joogto ah:</strong> ITS waxay maamushaa soo saarista iyo gubashada si loo ilaaliyo wadarta sahayda joogtada ah ee dhammaan silsiladaha.",
         "point4": "<strong>Macquulka La Hanti-dhowray:</strong> Waxaa lagu dhisay maktabadaha caadiga ah ee OpenZeppelin iyo Axelar."
@@ -229,7 +235,7 @@
         "lpLockedDesc": "Barkadda dareeraha PancakeSwap waxay ka kooban tahay tokens BNBTiger oo lagu lamaaniyay BNB. Marka tokens LP la gubo (loo diro cinwaanka dhintay), tokens-ka hoose ee barkadda waxay noqdaan kuwo si joogto ah u xidhan.",
         "lpBurnedPercent": "Tokens LP la gubay: 86.18% dhammaan tokens LP",
         "lpLockedPercent": "Sidaa darteed, 86.18% tokens-ka LP si joogto ah ayay u xidhan yihiin",
-        "note": "<strong>Fiiro gaar ah:</strong> TigerOG waxay ilaalisaa saamiga 1:1 ee BNBTiger inta lagu jiro guuritaanka. Sahayda wareegta ee TigerOG waxay u dhigantaa sahayda wareegta ee dhabta ah ee BNBTiger ka dib marka la xisaabiyo dhammaan tokens-ka la gubay iyo kuwa xidhan.",
+        "note": "<strong>Fiiro gaar ah:</strong> TigerOG waxay ilaalisaa saamiga 1:1 ee BNBTiger inta lagu jiro beddelka. Sahayda wareegta ee TigerOG waxay u dhigantaa sahayda wareegta ee dhabta ah ee BNBTiger ka dib marka la xisaabiyo dhammaan tokens-ka la gubay iyo kuwa xidhan.",
         "launchData": "<strong>Xogta Daahfurka:</strong> Tirooyinkan waxaa la xisaabiyay markii la bilaabay. Token-ka hore ee BNBTiger wuxuu sii wadaa inuu gubo tokens macaamil kasta oo iibsi/iib, markaa sahayda dhabta ah ee wareegta ayaa laga yaabaa inay wax yar ka hooseyso inta la muujiyay.",
         "legacyContract": "Heshiiska Token BNBTiger",
         "ogContract": "Heshiiska Token TigerOG",
@@ -254,7 +260,7 @@
         "lpLockedDesc": "Barkadda dareeraha PancakeSwap waxay ka kooban tahay tokens BNBLion oo lagu lamaaniyay BNB. Marka tokens LP la gubo (loo diro cinwaanka dhintay), tokens-ka hoose ee barkadda waxay noqdaan kuwo si joogto ah u xidhan.",
         "lpBurnedPercent": "Tokens LP la gubay: 99.98% dhammaan tokens LP",
         "lpLockedPercent": "Sidaa darteed, 99.98% tokens-ka LP si joogto ah ayay u xidhan yihiin",
-        "note": "<strong>Fiiro gaar ah:</strong> LionOG waxay ilaalisaa saamiga 1:1 ee BNBLion inta lagu jiro guuritaanka. Sahayda wareegta ee LionOG waxay u dhigantaa sahayda wareegta ee dhabta ah ee BNBLion ka dib marka la xisaabiyo dhammaan tokens-ka la gubay iyo kuwa xidhan.",
+        "note": "<strong>Fiiro gaar ah:</strong> LionOG waxay ilaalisaa saamiga 1:1 ee BNBLion inta lagu jiro beddelka. Sahayda wareegta ee LionOG waxay u dhigantaa sahayda wareegta ee dhabta ah ee BNBLion ka dib marka la xisaabiyo dhammaan tokens-ka la gubay iyo kuwa xidhan.",
         "launchData": "<strong>Xogta Daahfurka:</strong> Tirooyinkan waxaa la xisaabiyay markii la bilaabay. Token-ka hore ee BNBLion wuxuu sii wadaa inuu gubo tokens macaamil kasta oo iibsi/iib, markaa sahayda dhabta ah ee wareegta ayaa laga yaabaa inay wax yar ka hooseyso inta la muujiyay.",
         "legacyContract": "Heshiiska Token BNBLion",
         "ogContract": "Heshiiska Token LionOG",
@@ -279,7 +285,7 @@
         "lpLockedDesc": "Barkadda dareeraha PancakeSwap waxay ka kooban tahay tokens BNBFrog oo lagu lamaaniyay BNB. Marka tokens LP la gubo (loo diro cinwaanka dhintay), tokens-ka hoose ee barkadda waxay noqdaan kuwo si joogto ah u xidhan.",
         "lpBurnedPercent": "Tokens LP la gubay: 99.31% dhammaan tokens LP",
         "lpLockedPercent": "Sidaa darteed, 99.31% tokens-ka LP si joogto ah ayay u xidhan yihiin",
-        "note": "<strong>Fiiro gaar ah:</strong> FrogOG waxay ilaalisaa saamiga 1:1 ee BNBFrog inta lagu jiro guuritaanka. Sahayda wareegta ee FrogOG waxay u dhigantaa sahayda wareegta ee dhabta ah ee BNBFrog ka dib marka la xisaabiyo dhammaan tokens-ka la gubay iyo kuwa xidhan.",
+        "note": "<strong>Fiiro gaar ah:</strong> FrogOG waxay ilaalisaa saamiga 1:1 ee BNBFrog inta lagu jiro beddelka. Sahayda wareegta ee FrogOG waxay u dhigantaa sahayda wareegta ee dhabta ah ee BNBFrog ka dib marka la xisaabiyo dhammaan tokens-ka la gubay iyo kuwa xidhan.",
         "launchData": "<strong>Xogta Daahfurka:</strong> Tirooyinkan waxaa la xisaabiyay markii la bilaabay. Token-ka hore ee BNBFrog wuxuu sii wadaa inuu gubo tokens macaamil kasta oo iibsi/iib, markaa sahayda dhabta ah ee wareegta ayaa laga yaabaa inay wax yar ka hooseyso inta la muujiyay.",
         "legacyContract": "Heshiiska Token BNBFrog",
         "ogContract": "Heshiiska Token FrogOG",
@@ -301,7 +307,7 @@
     "title": "Cinwaannada Heshiiska",
     "header": {
       "title": "Heshiisyada Caqliga Badan",
-      "subtitle": "Cinwaannada daadgureynta rasmiga ah ee tokens, router-yada, iyo barkadaha dareeraha ee guud ahaan nidaamka deegaanka Freedom Bridge."
+      "subtitle": "Cinwaannada daadgureynta rasmiga ah ee tokens iyo buundooyinka guud ahaan nidaamka deegaanka Freedom Bridge."
     },
     "tabs": {
       "overview": "Guudmar",
@@ -310,42 +316,183 @@
       "liquidity": "Dareeraha"
     },
     "liquidity": {
-      "title": "Barkadaha Dareeraha"
-    }
+      "poolAddress": "Cinwaanka Barkadda",
+      "tradeOn": "Ku ganacso"
+    },
+    "overview": {
+      "interchainTokens": {
+        "title": "Calaamadaha Interchain",
+        "description": "Calaamadaha Interchain ee la daadgureeyay iyada oo loo marayo Adeegga Calaamadaha Interchain ee Axelar (ITS). Calaamadahani waxay ilaaliyaan cinwaanno joogto ah dhammaan shabakadaha la taageeray."
+      },
+      "axelarNetwork": {
+        "title": "Shabakadda Axelar",
+        "description": "Borotokoolka fariimaha hoose ee sugaya wareejinta silsiladaha isku xiran oo hubiya daacadnimada xogta u dhaxaysa blockchains kala duwan."
+      },
+      "conversionContracts": {
+        "title": "Heshiisyada Beddelka",
+        "description": "Mas'uul ka ah u beddelka calaamadaha hore hantida interchain. Heshiisyadani waxay maamulaan dhigaalka iyo macquulka soo saarista ee silsiladda asalka."
+      },
+      "conversionContractsTable": {
+        "title": "Cinwaannada Heshiiska Beddelka",
+        "subtitle": "Heshiisyadan ku yaal BSC waxay maamulaan beddelka laga soo bilaabo calaamadaha hore ilaa calaamadaha interchain.",
+        "token": "Calaamad",
+        "legacyToken": "Calaamaddii Hore",
+        "conversionContract": "Heshiiska Beddelka",
+        "newToken": "Calaamadda Interchain"
+      },
+      "liquidityPools": {
+        "title": "Barkadaha Dareeraha",
+        "description": "Barkadaha dareeraha DEX halkaas oo aad uga ganacsan karto calaamadaha OG silsilado kala duwan."
+      },
+      "liquidityPoolsTable": {
+        "title": "Barkadaha Dareeraha",
+        "subtitle": "Barkadaha DEX ee ganacsiga calaamadaha OG",
+        "token": "Calaamad",
+        "chain": "Silsilad",
+        "dex": "DEX",
+        "poolAddress": "Cinwaanka Barkadda"
+      }
+    },
+    "filterTokens": "Kala saar calaamadaha...",
+    "interchainAsset": "Hantida Interchain via Axelar ITS",
+    "availableOnChains": "Laga heli karo {{count}} silsiladood",
+    "table": {
+      "chain": "Silsilad",
+      "tokenAddress": "Cinwaanka Calaamadda",
+      "axelarChainName": "Magaca Silsiladda Axelar",
+      "chainId": "ID: {{id}}"
+    },
+    "axelarId": "Axelar ID: {{name}}",
+    "copied": "Waa la koobiyeeyay!",
+    "copyAddress": "Koobi cinwaanka"
   },
   "faq": {
     "title": "Taageerada Freedom Bridge",
     "header": "Su'aalaha Inta Badan La Isweydiiyo",
-    "subtitle": "Jawaabaha su'aalaha caadiga ah ee ku saabsan duubista, buundada, iyo amniga.",
+    "subtitle": "Jawaabaha su'aalaha caadiga ah ee ku saabsan TigerOG, buundada, iyo Axelar.",
+    "sections": {
+      "gettingStarted": "Bilaabidda",
+      "convertingTrading": "Beddelka & Ganacsiga",
+      "bridging": "Buundada",
+      "technical": "Farsamo",
+      "securityRisks": "Amniga & Khataraha"
+    },
     "cta": {
       "title": "Weli ma qabtaa su'aalo?",
-      "description": "Ku biir bulshadeena Discord ama ka eeg Wiki faahfaahsan hagayaasha farsamada.",
+      "description": "Ku biir bulshadeena Telegram ama ka eeg Wiki faahfaahsan hagayaasha farsamada.",
       "wiki": "Booqo Wiki",
       "telegram": "Ku biir Telegram"
     },
     "questions": {
       "q1": "Waa maxay ujeedada beddelka calaamadahayga?",
-      "a1": "U beddelka calaamadahaaga heerka Freedom Bridge (xERC20) waxay ka saartaa canshuurta macaamilka (inta badan 10-12%) ee la xidhiidha calaamadda hore. Waxay sidoo kale kuu ogolaanaysaa inaad u gudbiso calaamadahan blockchains kale sida Base, Ethereum, iyo in ka badan, taasoo awood u siinaysa gelitaanka DeFi iyo dareeraha guud ahaan nidaamka deegaanka.",
+      "a1": "U beddelka calaamadahaaga TigerOG waxay ka saartaa canshuurta macaamilka (inta badan 10-12%) ee la xidhiidha calaamadda hore. Waxay sidoo kale kuu ogolaanaysaa inaad u gudbiso calaamadahan blockchains kale sida Ethereum, Base, iyo in ka badan iyada oo loo marayo Axelar, taasoo awood u siinaysa gelitaanka nidaamyada deegaanka cusub.",
       "q2": "Ma ammaan baa in la isticmaalo Freedom Bridge?",
-      "a2": "Haa. Borotokoolku wuxuu isticmaalaa nidaamka Lockbox oo ay bulshadu hanti-dhowrtay iyo heshiisyada caadiga ah ee OpenZeppelin. Calaamadahaaga asalka ah waxaa lagu xiray qandaraas caqli badan oo ku yaal silsiladda isha, waxaana la soo saaray nuqul sax ah oo 1:1 ah. Waxaad dib u soo ceshan kartaa calaamadahaaga asalka ah wakhti kasta adigoo gubaya nooca la duubay.",
+      "a2": "Haa. Borotokoolku wuxuu isticmaalaa Heshiis Beddelaad oo ammaan ah iyo Adeegga Calaamadaha Interchain ee Axelar. Markaad beddesho, BNBTiger-kaaga si joogto ah ayaa loo gubaa oo waxaad helaysaa TigerOG saamiga 1:1. Farsamada gubashada waxay hubinaysaa in wadarta sahayda si habboon loo maamulo dhammaan silsiladaha.",
       "q3": "Ma jiraan kharashyo?",
-      "a3": "Borotokoolka Freedom Bridge laftiisu wax lacag ah kama qaado beddelka. Waxaad bixinaysaa oo kaliya kharashyada caadiga ah ee gaaska blockchain. Si kastaba ha ahaatee, buundada u dhaxaysa silsiladaha (tusaale, BSC ilaa Base) waxay ku lug leedahay kharash yar si loo daboolo kharashyada fariimaha silsiladaha isku xiran iyada oo loo marayo Axelar.",
+      "a3": "Freedom Bridge lafteedu wax lacag ah kama qaado beddelka. Waxaad bixinaysaa oo kaliya kharashyada caadiga ah ee gaaska blockchain. Buundada u dhaxaysa silsiladaha waxay ku lug leedahay kharash gaas oo isku xidhan oo la siiyo Axelar si loo daboolo kharashyada gudbinta.",
       "q4": "Maxaa dhacaya haddii aan lumiyo calaamadahayga?",
-      "a4": "Calaamadaha TigerOG waxay u dhaqmaan sida calaamad kasta oo kale oo ERC20 ah. Haddii aad lumiso gelitaanka boorsadaada ama aad u dirto cinwaan khaldan, lama soo celin karo. Had iyo jeer hubi inaad u dirayso cinwaanka saxda ah oo furayaashaada gaarka ah dhig meel ammaan ah.",
+      "a4": "Calaamadaha TigerOG waxay u dhaqmaan sida calaamad kasta oo kale oo ERC20 ah. Haddii aad lumiso gelitaanka boorsadaada, lama soo celin karo. Had iyo jeer dhig furayaashaada gaarka ah iyo weedhaha soo kabashada meel ammaan ah.",
       "q5": "Miyaan u beddeli karaa calaamadahayga TigerOG dib ugu celiyo BNBTiger?",
-      "a5": "Maya. Guuritaanku waa beddel hal dhinac ah. Markaad u beddesho BNBTiger una beddesho TigerOG, calaamadahaaga BNBTiger si joogto ah ayaa loo gubaa (loo diraa cinwaanka dhintay). Tani waa qaabka loogu talagalay - TigerOG waa nooca la cusboonaysiiyay, ee canshuur la'aanta ah kaas oo loogu talagalay inuu gebi ahaanba beddelo calaamaddii hore.",
+      "a5": "Maya. Beddelku waa mid hal dhinac ah. Markaad u beddesho BNBTiger una beddesho TigerOG, calaamadahaaga BNBTiger si joogto ah ayaa loo gubaa (loo diraa cinwaanka dhintay). Tani waa qaabka loogu talagalay — TigerOG waa nooca la cusboonaysiiyay, ee canshuur la'aanta ah kaas oo loogu talagalay inuu gebi ahaanba beddelo calaamaddii hore.",
       "q6": "Waa maxay shabakadaha la taageeray?",
-      "a6": "Waxaan taageernaa in ka badan 50 blockchains oo ay ku jiraan Ethereum, BNB Chain, Base, Arbitrum, Optimism, Polygon, Avalanche, iyo in ka badan. Ka eeg Wiki liiska buuxa ee shabakadaha la taageeray.",
+      "a6": "Waxaan taageernaa silsilado badan oo EVM ah iyada oo loo marayo Axelar, oo ay ku jiraan BNB Chain, Ethereum, Base, iyo in ka badan. Ka eeg Wiki liiska buuxa ee shabakadaha la taageeray.",
       "q7": "Intee in le'eg ayay qaadataa buundada?",
-      "a7": "Xawaaraha buundada wuxuu ku xiran yahay waqtiga dhameystirka silsiladda isha iyo lakabka fariimaha Axelar. Caadi ahaan, wareejinta BSC ilaa silsilad kale waxay qaadataa qiyaastii 1-3 daqiiqo.",
+      "a7": "Waqtiga buundada wuxuu ku xiran yahay silsiladda aad ka soo direyso:\n\n• Ethereum: 15-20 daqiiqo (waxay u baahan tahay xaqiijin dheeraad ah)\n• BSC & Avalanche: 2-4 daqiiqo (ugu dhakhsaha badan)\n• Base, Linea, Polygon: 3-5 daqiiqo\n\nApp-ku wuxuu muujinayaa waqtiga la qiyaasay ka hor inta aadan buundo gelin.",
       "q8": "Waa maxay sahayda wareegta ee calaamadaha OG?",
-      "a8": "Calaamad kasta oo OG ah waxay leedahay sahay wareegta oo go'an oo laga soo qaatay calaamadda asalka ah ee BNB, iyadoo xisaabta lagu darsayo calaamadaha la gubay, hadhaaga heshiiska ee xayiran, iyo LP xidhan. TigerOG: ~3.66 septillion (36.62% ee asalka). LionOG: ~3.83 septillion (38.33% ee asalka). FrogOG: ~8.39 septillion (83.86% ee asalka). Eeg Wiki faahfaahinta burburka calaamad kasta."
+      "a8": "Calaamad kasta oo OG ah waxay leedahay sahay wareegta oo go'an oo laga soo qaatay calaamadda asalka ah ee BNB, iyadoo xisaabta lagu darsayo calaamadaha la gubay, hadhaaga heshiiska ee xayiran, iyo LP xidhan:\n\n• TigerOG: ~3.66 septillion (36.62% ee asalka)\n• LionOG: ~3.83 septillion (38.33% ee asalka)\n• FrogOG: ~8.39 septillion (83.86% ee asalka)\n\nEeg Wiki faahfaahinta burburka.",
+      "q9": "Maxaa heshiiska OG looga tanaasulin?",
+      "a9": "Ka tanaasulida heshiiska waxay meesha ka saaraysaa awoodda horumarinta iyo ku darista silsilado cusub mustaqbalka. In kasta oo heshiiska aan laga tanaasuli doonin mustaqbalka dhow, saxiixyo badan ayaa loo baahan yahay si isbeddel loo sameeyo. Sidoo kale, ma jiraan calaamado ama canshuuro loo qoondeeyay kooxda.",
+      "q10": "Maxaa heshiiska OG loo soo saari karaa?",
+      "a10": "Buundada silsiladaha isku xiran waxay u baahan tahay shaqaynta soo saarista/gubashada - calaamadaha waa la gubaa marka ay ka baxayaan silsiladda waxaana la soo saaraa marka ay imaanayaan. Tani waxay ilaalinaysaa wadarta guud ee sahayda mid joogto ah dhammaan shabakadaha. Soo saarista waxaa maamula boorsada multisig Safe.",
+      "q11": "Miyuu TigerOG ka tagayaa BNB Chain una guurayaa Axelar?",
+      "a11": "Maya. Axelar maaha blockchain - waa borotokoolka buundada ee isku xira silsiladaha. BNB Chain ayaa weli ah silsiladda asalka ah halkaas oo aad ku beddesho calaamadaha hore. Axelar waxay si fudud ugu ogolaanaysaa calaamadahaaga inay u kala guuraan BNB, Ethereum, Base, iyo shabakadaha kale ee la taageeray.",
+      "q12": "Aaway calaamadahaygu?",
+      "a12": "Hubi inaad ku dartay silsiladda iyo cinwaanka calaamadda boorsadaada. Waxaad ka heli kartaa dhammaan cinwaannada heshiiska bogga Heshiisyada. Kooxda Tiger waxay isticmaashaa boorsada Rabby taasoo fududaynaysa maareynta silsilado badan.",
+      "q13": "Maxay buundada ka imaanaysa Ethereum ama Base u qaadanaysaa waqti dheer?",
+      "a13": "Ethereum waxay u baahan tahay laba xilli (epochs) ka hor inta aan la dhamaystirin macaamilada si loo helo ammaan ugu sarreeya. Maadaama Base ay dejiso Ethereum, waxay dhaxashaa dib u dhacan. Tani waxay mudnaan siinaysaa amniga marka loo eego xawaaraha - calaamadahaagu waa ammaan, samir.",
+      "q14": "Maxaa dhacaya haddii aan sii joogo calaamaddayda asalka ah oo aanan beddelin?",
+      "a14": "Ma jiro degdeg lagu beddelo. BNBTiger iyo TigerOG waxay had iyo jeer yeelan doonaan barkado dareere ah, suuqyo (market caps), iyo wixii la mid ah. Laakiin BNBTiger waxay leedahay canshuur sare TigerOG-na ma laha canshuur ganacsi. Maadaama canshuuraha asalka ah aan loo isticmaalin in lagu taageero mashruuca, horumarinta waxaa sameeya kooxda CTO ee TigerOG. Freedom Bridge iyo silsilado badan waa TigerOG oo kaliya.",
+      "q15": "Ma jiraa canshuur beddelka? TigerOG miyay leedahay canshuur?",
+      "a15": "Maya. Waxay kaliya ku kacaysaa kharashka gaaska caadiga ah in la beddelo oo la ganacsado. Ma jiraan canshuuro ama kharashyo dheeraad ah, TigerOG-na waa heshiis canshuur la'aan ah.",
+      "q16": "Miyaan si toos ah u iibsan karaa oo uga ganacsan karaa TigerOG?",
+      "a16": "Weli maya. Kooxdu ma ururin kharashyo iyo canshuur si ay awood ugu yeelato inay maalgeliso barkado dareere ah oo waaweyn. Si aad u hesho TigerOG hadda, waa inaad iibsataa ama aad hore u haysataa asalka oo aad beddeshaa. Markaad leedahay TigerOG, si fudud looguma ganacsan doono ilaa maalgashadayaashu ay yimaadaan si ay ugu daraan barkadda dareeraha.",
+      "q17": "Maxay suuqa TigerOG ugu muuqataa mid sicir barar ah?",
+      "a17": "Marka ay yaraato barkadda dareeraha, waa in badan oo ganacsi yar uu saameyn weyn ku yeesho suuqa la soo bandhigay. Tani way xallinaysaa marka maalgashadayaashu yimaadaan si ay u noqdaan bixiyeyaasha dareeraha.",
+      "q18": "Waa maxay hanti-dhowrka amniga ee la sameeyay?",
+      "a18": "Freedom Bridge ma marin hanti-dhowr rasmi ah oo dhinac saddexaad ah. Si kastaba ha ahaatee, koodhka heshiiska beddelka wuxuu ku saleysan yahay beddelka SHx oo ay dhisatay kooxda Stronghold (hore u ahaan jirtay horumariyayaasha XRP iyo Stellar oo dhawaan ku soo bandhigay Davos). Kaabayaasha buundada waxaa xoojiyay Axelar, oo maray hanti-dhowr ammaan oo badan.",
+      "q19": "Sidee Freedom Bridge u ilaalisaa hacks-ka ama faa'iidaysiga?",
+      "a19": "Tallaabooyin dhowr ah ayaa meesha yaal:\n\n• Beddeluhu wuxuu hayaa oo keliya sahayda wareegta ee saxda ah ee loo baahan yahay - ma jiraan calaamado dheeraad ah oo la faa'iidaysan karo\n• Beddeluhu ma laha oggolaansho soo saarid\n• Dhammaan koodhka heshiiska waa la xaqiijiyay silsiladda waana il furan\n• Oggolaanshaha calaamadda waxaa lagu sugay boorsada multisig ee Safe.global\n• Buundada waxaa gacanta ku haysa kaabayaasha Axelar ee dagaalka lagu tijaabiyay",
+      "q20": "Ma buundadu waa mid aan laga noqon karin? Maxaa dhacaya haddii wareejintu fashilanto?",
+      "a20": "Wareejinta buundada marar dhif ah ayay ku dhegi karaan sababtoo ah gaas aan ku filnayn ama saxmadda shabakadda. Haddii tani dhacdo, waxaad kula socon kartaa macaamilkaaga Axelarscan oo aad gacanta ku dari kartaa gaas si aad u dhamaystirto. Axelar waxay bixisaa qalabka soo kabashada macaamilka - ma waayi doontid calaamadahaaga.",
+      "q21": "Waa maxay khataraha la xiriira isticmaalka Freedom Bridge?",
+      "a21": "Sida borotokool kasta oo DeFi ah, waxaa jira khataro dabiici ah oo ay ku jiraan khatarta heshiiska caqliga, khatarta buundada, iyo isbeddelka suuqa. Waxaan kugula talineynaa inaad sameyso cilmi-baaristaada (DYOR) oo aad isticmaasho kaliya lacagaha aad awooddo inaad lumiso. Eeg afeefteena sharciga ah wixii macluumaad dheeraad ah.",
+      "q22": "Miyaan beddeli karaa heshiiska cusub ee BNB Tiger Inu (Sebtembar 2025)?",
+      "a22": "Maya. Freedom Bridge waxay taageertaa kaliya calaamadda asalka/hore ee BNB Tiger oo la bilaabay dhowr sano ka hor - maaha heshiiska cusub ee la sameeyay Sebtembar 2025. Freedom Bridge waxaa loo dhisay la wareegida bulshada (CTO) ee calaamadaha asalka ah ee Tiger, Lion, iyo Frog.",
+      "q23": "Sidee baan ugu daraa dareere?",
+      "a23": "Ku darista dareeraha waa hawl DeFi sare ah oo leh khataro ay ku jiraan khasaare aan joogto ahayn. Haddii aad khibrad u leedahay bixinta dareeraha DEX-yada sida PancakeSwap ama Uniswap, habsocodku waa isku mid - ku lamaaneeya calaamadda OG hanti saldhig ah.",
+      "q24": "Kooxdu ma samayn kartaa rug pull?",
+      "a24": "Maya. Ma jiro hab loogu talagalay rug pull. Ma jiraan calaamado ama canshuuro loo qoondeeyay kooxda, mana ururino wax kharash buundo ah — kuwaas waxay aadaan Axelar kharashyada gudbinta. Kooxdu waa kuwa haysta sidaada oo kale, oo ku dhisaya tan kharash shakhsi ah. Boorsada kooxda kaliya waa boorsada suuq-geynta dadweynaha oo ay maalgeliso tabarucaadka bulshada. Boorsada multisig Safe waxay maamushaa oggolaanshaha heshiiska sida joojinta u dirista silsiladaha haddii ay dhacdo xaalad degdeg ah, laakiin ma geli karto ama ma wareejin karto lacagaha isticmaalaha."
     }
+  },
+  "footer": {
+    "wiki": "Wiki",
+    "contracts": "Heshiisyada",
+    "faq": "FAQ",
+    "disclaimer": "Afeef",
+    "github": "GitHub"
+  },
+  "disclaimer": {
+    "title": "Afeef Sharci",
+    "header": "Ogeysiis Sharci oo Muhiim ah",
+    "subtitle": "Fadlan si taxadar leh u akhri afeeftan ka hor inta aanad isticmaalin Freedom Bridge.",
+    "sections": {
+      "noInvestmentAdvice": {
+        "title": "Talo Maalgashi Ma Aha",
+        "content": "Macluumaadka lagu bixiyo Freedom Bridge kama dhigna talo maalgashi, talo maaliyadeed, talo ganacsi, ama nooc kale oo talo ah. Waa inaadan u qaadan wax ka mid ah waxyaabaha ku jira sidaas. Freedom Bridge kuguma talinayso in wax cryptocurrency ah aad iibsato, iibiso, ama aad haysato. Samee dadaalkaaga oo la tasho la-taliyahaaga maaliyadeed ka hor inta aanad samayn wax go'aamo maalgashi ah."
+      },
+      "risksOfUse": {
+        "title": "Khataraha Isticmaalka",
+        "content": "Suuqyada Cryptocurrency waa kuwo kacsan oo aan la saadaalin karin. Adigoo isticmaalaya Freedom Bridge, waxaad qiraysaa oo aad aqbashay in:\n• Heshiisyada caqliga lihi ay yeelan karaan cayayaano ama dayac taasoo keeni karta lumis lacageed\n• Buundooyinka silsiladaha isku xiran waxay xambaarsan yihiin khataro dabiici ah oo ay ka mid yihiin laakiin aan ku xaddidnayn: fashilka oracle, heshiiska xaqiijiyeyaasha, iyo saxmadda shabakadda\n• Qiimaha calaamadaha wuxuu isbedeli karaa si weyn waxaadna waayi kartaa qaar ama dhammaan maalgashigaaga\n• Macaamilada shabakadaha blockchain lama beddeli karo\n• Kharashyada shabakadda iyo kharashyada gaaska ayaa ka baxsan xakamayntayada wayna kala duwanaan karaan si weyn"
+      },
+      "noWarranties": {
+        "title": "Dammaanad Ma Leh",
+        "content": "Freedom Bridge waxaa lagu bixiyaa \"sida ay tahay\" iyo \"sida ay u diyaarsan tahay\" iyada oo aan lahayn wax dammaanad ah nooc kasta ha ahaatee, ha ahaato mid la sheegay ama mid la maldaha. Ma dammaanad qaadayno in adeeggu noqon doono mid aan kala go' lahayn, ammaan ah, ama khalad la'aan ah. Ma bixinno wax dammaanad ah oo ku saabsan saxnaanta, isku halaynta, ama dhammaystirka macluumaadka lagu bixiyo madal."
+      },
+      "limitationOfLiability": {
+        "title": "Xaddidaadda Mas'uuliyadda",
+        "content": "Ilaa heerka ugu sarreeya ee sharcigu ogol yahay, Freedom Bridge, horumariyayaasheeda, ka qaybqaatayaasha, iyo la-hawlgalayaasha mas'uul kama noqon doonaan waxyeello toos ah, aan toos ahayn, shil ah, gaar ah, cawaaqib ah, ama ciqaab ah oo ka dhalata ama la xidhiidha isticmaalkaaga madal, oo ay ku jiraan laakiin aan ku xaddidnayn luminta faa'iidada, luminta xogta, ama luminta hantida cryptocurrency."
+      },
+      "thirdPartyServices": {
+        "title": "Adeegyada Dhinac Saddexaad",
+        "content": "Freedom Bridge waxay la midowdaa adeegyada dhinac saddexaad oo ay ku jirto Shabakadda Axelar ee buundada silsiladaha isku xiran. Mas'uul kama nihin ficilada, waxyaabaha ku jira, macluumaadka, ama xogta dhinacyadan saddexaad. Isticmaalkaaga adeegyada dhinac saddexaad wuxuu ku xiran yahay shuruudahooda iyo xaaladaha."
+      },
+      "regulatoryCompliance": {
+        "title": "U Hoggaansanaanta Sharciga",
+        "content": "Shuruucda Cryptocurrency way ku kala duwan yihiin awoodaha xukunka. Adiga ayaa mas'uul ka ah inaad hubiso in isticmaalkaaga Freedom Bridge uu waafaqsan yahay dhammaan sharciyada iyo qawaaniinta khuseeya ee awooddaada xukunka. Freedom Bridge ma samayso wax matalaad ah oo ku saabsan sharci ahaanshaha adeegyada awood kasta."
+      },
+      "dyor": {
+        "title": "Samee Cilmi-baaristaada (DYOR)",
+        "content": "Had iyo jeer samee cilmi-baaristaada (DYOR) ka hor inta aanad la macaamilin borotokool kasta oo DeFi ah. Xaqiiji cinwaannada heshiiska, fahmo farsamada calaamad kasta oo aad la macaamilayso, oo waligaa ha maalgashan wax ka badan inta aad awooddo inaad lumiso."
+      }
+    },
+    "acknowledgment": "Adigoo isticmaalaya Freedom Bridge, waxaad qiraysaa inaad akhriday, fahantay, oo aad aqbashay in lagugu xidho afeeftan.",
+    "lastUpdated": "Cusboonaysiinta ugu dambeysay: Janaayo 2026"
+  },
+  "disclaimerModal": {
+    "title": "Afeef Muhiim ah",
+    "subtitle": "Fadlan akhri oo qiro ka hor inta aanad sii wadin.",
+    "noAdvice": "Freedom Bridge ma bixiso talo maalgashi, maaliyadeed, ama ganacsi. Maalgashiga Cryptocurrency waa mid kacsan oo khatar ah.",
+    "risks": "Adigoo isticmaalaya madal-kan, waxaad qiraysaa in heshiisyada caqliga lihi ay yeelan karaan dayac, buundooyinka silsiladaha isku xiran ay xambaarsan yihiin khataro dabiici ah, oo macaamiladu yihiin kuwo aan laga noqon karin.",
+    "dyor": "Had iyo jeer samee cilmi-baaristaada (DYOR) oo isticmaal kaliya lacagaha aad awooddo inaad lumiso.",
+    "fullDisclaimer": "Wixii faahfaahin buuxda ah, eeg",
+    "fullDisclaimerLink": "Afeef Sharci",
+    "accept": "Waan Fahmay oo Aqbalay"
   },
   "common": {
     "from": "Ka",
     "to": "Ku",
     "max": "UGU BADAN",
+    "cancel": "Jooji",
     "chainId": "Aqoonsiga Silsiladda",
     "bscChain": "Silsiladda BSC",
     "insufficientBalance": "Hadhaaga oo aan ku filnayn.",

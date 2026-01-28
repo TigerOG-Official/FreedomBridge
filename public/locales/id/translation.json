@@ -4,6 +4,7 @@
     "titleBridge": "Jembatan"
   },
   "nav": {
+    "home": "Beranda",
     "settings": "Pengaturan",
     "menu": "Menu",
     "preferences": "Preferensi",
@@ -45,6 +46,23 @@
     "networkWarning": {
       "title": "Jaringan Salah",
       "message": "Konversi token hanya tersedia di BSC Chain. Silakan beralih ke BSC untuk mengonversi token lama Anda."
+    },
+    "confirmModal": {
+      "title": "Konfirmasi Konversi",
+      "warning": "Anda akan mengonversi token Anda. Harap baca yang berikut ini dengan seksama sebelum melanjutkan.",
+      "irreversible": "Tindakan ini tidak dapat dibatalkan!",
+      "burnExplanation": "Token {{legacySymbol}} Anda akan dibakar secara permanen dengan mengirimnya ke alamat mati dan token {{newSymbol}} yang setara akan dicetak. Token tidak dapat dipulihkan atau dikonversi kembali.",
+      "positiveNote": "Sisi positif: {{newSymbol}} sepenuhnya bebas pajak, memungkinkan Anda untuk mentransfer, berdagang, atau menjembatani dengan bebas tanpa biaya pajak.",
+      "confirmQuestion": "Konversi {{amount}} {{legacySymbol}} ke {{newSymbol}}?",
+      "confirmButton": "Saya Mengerti, Konversi"
+    },
+    "finalConfirmModal": {
+      "title": "Konfirmasi Akhir",
+      "message": "Ketik <1>konfirmasi</1> di bawah untuk melanjutkan konversi.",
+      "inputPlaceholder": "Ketik 'konfirmasi' untuk melanjutkan",
+      "confirmWord": "konfirmasi",
+      "confirmButton": "Konfirmasi Konversi",
+      "converting": "Mengonversi..."
     }
   },
   "bridge": {
@@ -296,7 +314,8 @@
     "tabs": {
       "overview": "Ringkasan",
       "byToken": "Berdasarkan Token",
-      "byChain": "Berdasarkan Rantai"
+      "byChain": "Berdasarkan Rantai",
+      "liquidity": "Likuiditas"
     },
     "overview": {
       "interchainTokens": {
@@ -318,7 +337,35 @@
         "legacyToken": "Token Lama",
         "conversionContract": "Kontrak Konversi",
         "newToken": "Token Interchain"
+      },
+      "liquidityPools": {
+        "title": "Pool Likuiditas",
+        "description": "Pool likuiditas menyediakan kedalaman perdagangan untuk token OG di rantai yang didukung. Pool-pool ini memungkinkan pembelian dan penjualan tanpa menggunakan jembatan."
+      },
+      "liquidityPoolsTable": {
+        "title": "Pool Likuiditas Aktif",
+        "subtitle": "Pool likuiditas terverifikasi untuk token OG di DEX yang didukung.",
+        "token": "Token",
+        "chain": "Rantai",
+        "dex": "DEX",
+        "pair": "Pasangan",
+        "poolAddress": "Alamat Pool"
       }
+    },
+    "liquidity": {
+      "title": "Pool Likuiditas",
+      "subtitle": "Likuiditas mendalam di seluruh rantai yang didukung",
+      "description": "Token OG memiliki pool likuiditas di berbagai rantai, memungkinkan perdagangan tanpa perlu menjembatani. Pool-pool ini menyediakan kedalaman untuk membeli dan menjual langsung di setiap rantai.",
+      "availablePools": "Pool yang Tersedia",
+      "token": "Token",
+      "chain": "Rantai",
+      "dex": "DEX",
+      "pair": "Pasangan",
+      "poolAddress": "Alamat Pool",
+      "trade": "Perdagangan",
+      "noPools": "Tidak ada pool likuiditas yang tersedia untuk token ini.",
+      "addLiquidity": "Tambah Likuiditas",
+      "removeLiquidity": "Hapus Likuiditas"
     },
     "filterTokens": "Filter token...",
     "interchainAsset": "Aset Interchain via Axelar ITS",
@@ -337,6 +384,12 @@
     "title": "Dukungan Jembatan Kebebasan",
     "header": "Pertanyaan yang Sering Diajukan",
     "subtitle": "Jawaban atas pertanyaan umum tentang TigerOG, penjembatanan, dan Axelar.",
+    "sections": {
+      "general": "Umum",
+      "conversion": "Konversi",
+      "bridging": "Penjembatanan",
+      "security": "Keamanan"
+    },
     "cta": {
       "title": "Masih punya pertanyaan?",
       "description": "Bergabunglah dengan komunitas kami di Telegram atau periksa Wiki terperinci untuk panduan teknis.",
@@ -359,13 +412,101 @@
       "q7": "Berapa lama waktu yang dibutuhkan untuk menjembatani?",
       "a7": "Kecepatan menjembatani tergantung pada finalitas rantai sumber dan relai Axelar. Biasanya, transfer antar rantai memakan waktu sekitar 2-5 menit.",
       "q8": "Berapa pasokan beredar token OG?",
-      "a8": "Setiap token OG memiliki pasokan beredar tetap yang berasal dari token BNB aslinya, memperhitungkan token yang dibakar, saldo kontrak yang macet, dan LP yang terkunci. TigerOG: ~3,66 septiliun (36,62% dari asli). LionOG: ~3,83 septiliun (38,33% dari asli). FrogOG: ~8,39 septiliun (83,86% dari asli). Lihat Wiki untuk rincian terperinci dari setiap token."
+      "a8": "Setiap token OG memiliki pasokan beredar tetap yang berasal dari token BNB aslinya, memperhitungkan token yang dibakar, saldo kontrak yang macet, dan LP yang terkunci. TigerOG: ~3,66 septiliun (36,62% dari asli). LionOG: ~3,83 septiliun (38,33% dari asli). FrogOG: ~8,39 septiliun (83,86% dari asli). Lihat Wiki untuk rincian terperinci dari setiap token.",
+      "q9": "Apa itu Axelar?",
+      "a9": "Axelar adalah jaringan interoperabilitas terdesentralisasi yang menghubungkan blockchain, memungkinkan komunikasi yang aman dan transfer aset lintas rantai. Ini menggerakkan Freedom Bridge untuk menjembatani token antara jaringan.",
+      "q10": "Bagaimana cara kerja penjembatanan?",
+      "a10": "Saat Anda menjembatani token, mereka dibakar di rantai sumber dan dicetak di rantai tujuan melalui Layanan Token Interchain Axelar. Ini mempertahankan total pasokan yang konsisten di semua rantai.",
+      "q11": "Apakah saya perlu ETH/BNB untuk biaya gas?",
+      "a11": "Ya, Anda memerlukan mata uang native rantai untuk biaya gas. Untuk BSC, Anda memerlukan BNB. Untuk Ethereum, Anda memerlukan ETH. Penjembatanan juga memerlukan gas di rantai tujuan yang dibayar di muka.",
+      "q12": "Bagaimana jika transaksi saya macet?",
+      "a12": "Transaksi Axelar biasanya selesai dalam 2-5 menit. Jika transaksi Anda tetap tertunda lebih lama, Anda dapat memeriksa status di Axelarscan menggunakan hash transaksi. Sebagian besar masalah teratasi sendiri saat validator memproses pesan.",
+      "q13": "Bisakah saya menjembatani kembali ke BSC?",
+      "a13": "Ya! Penjembatanan bersifat dua arah. Anda dapat menjembatani TigerOG dari rantai yang didukung mana pun kembali ke BSC atau ke rantai yang didukung lainnya.",
+      "q14": "Mengapa saya harus menjembatani ke rantai lain?",
+      "a14": "Penjembatanan memberikan akses ke ekosistem DeFi yang berbeda, biaya gas yang berpotensi lebih rendah, dan peluang perdagangan baru. Setiap rantai memiliki keunggulan dan komunitas yang unik.",
+      "q15": "Apakah ada jumlah minimum untuk menjembatani?",
+      "a15": "Tidak ada minimum yang diberlakukan oleh protokol, tetapi transaksi perlu menutupi biaya gas. Jumlah yang sangat kecil mungkin tidak layak untuk dijembatani karena biaya gas.",
+      "q16": "Apakah kontraknya diverifikasi?",
+      "a16": "Ya, semua kontrak pintar yang digunakan di Freedom Bridge diverifikasi dan dapat ditinjau di penjelajah blockchain. Mereka menggunakan library standar OpenZeppelin dan implementasi Axelar ITS.",
+      "q17": "Siapa yang mengontrol Freedom Bridge?",
+      "a17": "Freedom Bridge menggunakan kontrak konversi yang tidak dapat diubah dan jaringan validator terdesentralisasi Axelar. Tidak ada entitas terpusat yang mengontrol penjembatanan atau konversi.",
+      "q18": "Bagaimana jika Axelar down?",
+      "a18": "Axelar adalah jaringan terdesentralisasi dengan banyak validator. Bahkan jika beberapa validator offline, jaringan tetap berfungsi. Namun, kemacetan sementara dapat memperlambat pemrosesan transaksi.",
+      "q19": "Bisakah konversi dibatalkan?",
+      "a19": "Tidak. Konversi bersifat permanen dan tidak dapat dibatalkan. Token lama Anda dibakar (dikirim ke alamat mati) dan tidak dapat dipulihkan. Verifikasi jumlah sebelum mengonfirmasi.",
+      "q20": "Bagaimana cara menambahkan TigerOG ke dompet saya?",
+      "a20": "Gunakan tombol 'Impor ke Dompet' setelah konversi, atau tambahkan alamat token secara manual dari halaman Kontrak. Alamatnya sama di semua rantai EVM.",
+      "q21": "Mengapa saya menginginkan TigerOG daripada BNBTiger?",
+      "a21": "TigerOG tidak memiliki pajak transaksi (BNBTiger memiliki pajak ~10%), dapat dijembatani ke berbagai rantai, dan memiliki implementasi token modern. Ini membuat perdagangan, penjembatanan, dan penggunaan jauh lebih murah.",
+      "q22": "Apakah saldo saya akan bertambah melalui refleksi?",
+      "a22": "Tidak. TigerOG tidak menggunakan mekanisme refleksi tidak seperti token BNBTiger lama. Saldo Anda tetap tetap kecuali Anda secara aktif berdagang atau menjembatani.",
+      "q23": "Bisakah saya membeli TigerOG secara langsung?",
+      "a23": "TigerOG dapat diperdagangkan di pool likuiditas di rantai yang didukung. Periksa tab Likuiditas di halaman Kontrak untuk pasangan perdagangan yang tersedia.",
+      "q24": "Apakah ini rug pull?",
+      "a24": "Tidak. Freedom Bridge menggunakan kontrak transparan yang diverifikasi tanpa fungsi admin untuk memanipulasi dana. Kontrak konversi tidak dapat diubah dan likuiditas terkunci. Semua kode bersifat open source dan diverifikasi di blockchain."
     }
+  },
+  "footer": {
+    "builtWith": "Dibangun dengan",
+    "by": "oleh",
+    "rights": "Hak cipta dilindungi.",
+    "github": "GitHub",
+    "twitter": "Twitter",
+    "telegram": "Telegram",
+    "dextools": "DexTools"
+  },
+  "disclaimer": {
+    "title": "Penafian",
+    "subtitle": "Informasi penting tentang menggunakan Freedom Bridge",
+    "sections": {
+      "noFinancialAdvice": {
+        "title": "Bukan Nasihat Keuangan",
+        "content": "Informasi yang disediakan melalui Freedom Bridge hanya untuk tujuan informasi dan bukan merupakan nasihat keuangan, investasi, hukum, atau profesional lainnya. Selalu lakukan riset Anda sendiri dan konsultasikan dengan profesional yang berkualifikasi sebelum membuat keputusan keuangan apa pun."
+      },
+      "useAtOwnRisk": {
+        "title": "Gunakan dengan Risiko Sendiri",
+        "content": "Penggunaan Freedom Bridge sepenuhnya merupakan risiko Anda sendiri. Protokol disediakan 'sebagaimana adanya' dan 'sebagaimana tersedia' tanpa jaminan apa pun, baik tersurat maupun tersirat. Kami tidak menjamin akses yang terus-menerus, tidak terputus, atau aman ke layanan kami."
+      },
+      "smartContractRisks": {
+        "title": "Risiko Kontrak Pintar",
+        "content": "Berinteraksi dengan kontrak pintar membawa risiko yang melekat termasuk, tetapi tidak terbatas pada, bug kode, kerentanan, dan eksploitasi. Meskipun kontrak kami diaudit dan diuji, tidak semua risiko dapat dihilangkan. Jangan pernah menginvestasikan lebih dari yang Anda mampu untuk kehilangan."
+      },
+      "irreversibleTransactions": {
+        "title": "Transaksi Tidak Dapat Dibatalkan",
+        "content": "Semua transaksi blockchain, termasuk konversi dan penjembatanan, bersifat final dan tidak dapat dibatalkan. Verifikasi semua detail transaksi sebelum mengonfirmasi. Token yang hilang atau salah kirim mungkin tidak dapat dipulihkan."
+      },
+      "thirdPartyServices": {
+        "title": "Layanan Pihak Ketiga",
+        "content": "Freedom Bridge bergantung pada layanan pihak ketiga, termasuk Jaringan Axelar untuk penjembatanan lintas rantai. Kami tidak bertanggung jawab atas masalah, penundaan, atau kerugian yang timbul dari layanan eksternal ini."
+      },
+      "regulatoryCompliance": {
+        "title": "Kepatuhan Regulasi",
+        "content": "Pengguna bertanggung jawab sendiri untuk memastikan kepatuhan terhadap hukum dan peraturan yang berlaku di yurisdiksi mereka. Freedom Bridge mungkin tidak tersedia di semua wilayah, dan pengguna harus memverifikasi legalitas akses di wilayah mereka."
+      }
+    },
+    "lastUpdated": "Terakhir Diperbarui",
+    "agreement": "Dengan menggunakan Freedom Bridge, Anda mengakui bahwa Anda telah membaca, memahami, dan menyetujui penafian ini."
+  },
+  "disclaimerModal": {
+    "title": "Penafian",
+    "description": "Harap baca dengan seksama sebelum melanjutkan.",
+    "openSource": "Freedom Bridge adalah perangkat lunak open source. Dengan menggunakan protokol ini, Anda menerima hal-hal berikut:",
+    "noGuarantees": "Tidak Ada Jaminan",
+    "noGuaranteesText": "Perangkat lunak ini disediakan 'sebagaimana adanya' tanpa jaminan apa pun. Gunakan dengan risiko Anda sendiri.",
+    "irreversible": "Tindakan Tidak Dapat Dibatalkan",
+    "irreversibleText": "Konversi dan penjembatanan token bersifat permanen dan tidak dapat dibatalkan. Verifikasi semua detail.",
+    "userResponsibility": "Tanggung Jawab Pengguna",
+    "userResponsibilityText": "Anda bertanggung jawab sendiri atas transaksi Anda dan kepatuhan terhadap hukum lokal.",
+    "readMore": "Baca Selengkapnya",
+    "checkboxLabel": "Saya memahami dan menerima syarat-syarat ini",
+    "continueButton": "Lanjutkan"
   },
   "common": {
     "from": "Dari",
     "to": "Ke",
     "max": "MAKS",
+    "cancel": "Batal",
     "chainId": "ID Rantai",
     "bscChain": "BSC Chain",
     "insufficientBalance": "Saldo tidak mencukupi.",

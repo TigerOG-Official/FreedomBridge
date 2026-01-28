@@ -1,9 +1,10 @@
 {
   "app": {
-    "titleFreedom": "Podul",
-    "titleBridge": "Libertății"
+    "titleFreedom": "Freedom",
+    "titleBridge": "Bridge"
   },
   "nav": {
+    "home": "Acasă",
     "settings": "Setări",
     "menu": "Meniu",
     "preferences": "Preferințe",
@@ -12,117 +13,114 @@
       "dark": "Întunecat",
       "light": "Luminos"
     },
-    "switchPalette": "Schimbă paleta",
+    "switchPalette": "Schimbă Paleta",
     "wiki": "Documentație / Wiki",
     "contracts": "Contracte",
-    "faq": "Întrebări frecvente",
-    "logout": "Deconectare",
+    "faq": "Întrebări Frecvente",
     "language": "Limbă",
-    "languageSearchPlaceholder": "Căutați limbi",
+    "languageSearchPlaceholder": "Caută limbi",
     "languageNoResults": "Nu s-au găsit limbi",
     "close": "Închide"
   },
   "addNetworks": {
-    "title": "Adăugați rețele",
-    "description": "Faceți clic pe un buton de mai jos pentru a adăuga rețele în portofelul dvs. Acest lucru face ușoară comutarea între lanțuri în timpul testării."
+    "title": "Adaugă Rețele în Portofel",
+    "description": "Apasă pe orice rețea pentru a o adăuga în MetaMask, Rabby sau alte portofele Web3",
+    "searchPlaceholder": "Caută rețele...",
+    "noResults": "Nu s-au găsit rețele",
+    "networkCount": "rețea"
+  },
+  "addNetwork": {
+    "connectWallet": "Vă rugăm să vă conectați portofelul mai întâi",
+    "alreadyPending": "Cerere în așteptare. Verificați-vă portofelul.",
+    "error": "Nu s-a putut adăuga rețeaua. Vă rugăm să o adăugați manual.",
+    "adding": "Se adaugă...",
+    "button": "Adaugă"
   },
   "tabs": {
     "convert": "Convertește",
-    "bridge": "Pod"
+    "bridge": "Bridge"
   },
   "convert": {
-    "token": "Token",
-    "selectToken": "Selectează Token",
     "balance": "Sold",
-    "noConvertibleTokens": "Nu există token-uri de convertit pe {{chainName}}",
-    "convert": "Convertește",
-    "addToWalletLabel": "Importă {{symbol}} de pe {{chainName}} în portofel",
-    "addToWalletButton": "Importă în portofel",
-    "addingToken": "Se adaugă...",
-    "addTokenError": "Nu s-a putut adăuga token-ul în portofel",
-    "legacyTokenMissing": "Token-ul vechi lipsește pentru acest lanț",
-    "tigerOGMissing": "Token-ul TigerOG lipsește pentru acest lanț",
+    "addToWalletButton": "Importă în Portofel",
     "networkWarning": {
-      "title": "Rețea greșită",
-      "message": "Conversia token-urilor este disponibilă numai pe BSC Chain.",
-      "description": "Vă rugăm să treceți la BSC Chain în portofelul dvs. pentru a converti token-uri, sau navigați la fila Pod pentru a transfera token-uri între lanțuri."
+      "title": "Rețea Greșită",
+      "message": "Conversia token-urilor este disponibilă doar pe rețeaua BSC. Vă rugăm să comutați pe BSC pentru a vă converti token-urile vechi."
+    },
+    "confirmModal": {
+      "title": "Confirmă Conversia",
+      "warning": "Sunteți pe cale să vă convertiți token-urile. Vă rugăm să citiți cu atenție următoarele înainte de a continua.",
+      "irreversible": "Această acțiune este ireversibilă!",
+      "burnExplanation": "Token-urile dumneavoastră {{legacySymbol}} vor fi arse permanent, iar o cantitate egală de token-uri {{newSymbol}} va fi emisă (minted) în portofelul dumneavoastră. Acest proces nu poate fi anulat.",
+      "positiveNote": "Avantajul: {{newSymbol}} este complet fără taxe — nu mai există acele taxe de 10%+ la fiecare tranzacție.",
+      "confirmQuestion": "Convertiți {{amount}} {{legacySymbol}} în {{newSymbol}}?",
+      "confirmButton": "Am înțeles, Convertește"
+    },
+    "finalConfirmModal": {
+      "title": "Sunteți Sigur?",
+      "message": "Aceasta este ultima șansă de a anula. Odată confirmat, token-urile {{legacySymbol}} vor fi convertite în {{newSymbol}} și nu mai pot fi recuperate.",
+      "confirmButton": "Da, Convertește Acum"
     }
   },
   "bridge": {
-    "fromChain": "De la Lanț",
-    "selectChainPlaceholder": "Selectează lanț",
-    "toChain": "Către Lanț",
+    "fromChain": "De la Rețeaua",
+    "selectChainPlaceholder": "Selectează rețeaua",
+    "toChain": "Către Rețeaua",
     "selectDestinationPlaceholder": "Selectează destinația",
     "noDestination": "Fără destinație",
     "noBridgeableTokens": "Nu există token-uri transferabile",
     "bridgeButton": "Transferă Token-uri",
-    "getFeeQuote": "Obține cotația taxei",
     "viewOnAxelarscan": "Vezi pe Axelarscan",
-    "addDestinationTokenLabel": "Importă {{symbol}} de pe {{chainName}} în portofel",
     "addTokenError": "Nu s-a putut adăuga token-ul în portofel",
     "estimatedTime": "Timp est.",
     "recentTransactions": "Tranzacții Recente",
     "clearHistory": "Șterge istoricul",
-    "historyStoredLocally": "Istoricul tranzacțiilor stocat local pe acest dispozitiv"
+    "historyStoredLocally": "Istoricul tranzacțiilor este stocat local pe acest dispozitiv"
   },
   "settings": {
     "title": "Setări",
     "environment": "Mediu",
     "rpcEndpoints": "Endpoint-uri RPC",
-    "rpcEndpointsHelp": "Actualizează URL-ul RPC utilizat pentru fiecare lanț în mediul selectat.",
-    "noChainsConfigured": "Niciun lanț configurat pentru acest mediu.",
+    "rpcEndpointsHelp": "Actualizează URL-ul RPC utilizat pentru fiecare rețea în mediul selectat.",
+    "noChainsConfigured": "Nicio rețea configurată pentru acest mediu.",
     "cancel": "Anulează",
     "save": "Salvează"
-  },
-  "wallet": {},
-  "login": {
-    "title": "Bun venit înapoi",
-    "subtitle": "Conectați-vă pentru a continua la Podul Libertății",
-    "emailLabel": "Email",
-    "emailPlaceholder": "nume@exemplu.com",
-    "passwordLabel": "Parolă",
-    "passwordPlaceholder": "Introduceți parola",
-    "rememberMe": "Ține-mă minte pe acest dispozitiv",
-    "submit": "Conectare",
-    "validation": {
-      "required": "Email-ul și parola sunt obligatorii.",
-      "invalid": "Email sau parolă invalidă."
-    }
   },
   "landing": {
     "banner": {
       "title": "Nou aici?",
-      "message": "Învățați despre Podul Libertății și cum să transferați token-uri TigerOG între lanțuri."
+      "message": "Află mai multe despre Freedom Bridge și cum să transferi token-uri TigerOG între rețele.",
+      "note": "Notă: Conversia token-urilor este permanentă și nu poate fi anulată."
     },
     "hero": {
       "badge": "Propulsat de Axelar",
-      "title": "Dezlănțuiește-ți <1/> <2>Activele</2>",
-      "subtitle": "Transferă fără sudură token-uri TigerOG între lanțuri folosind Serviciul de Token-uri Interlanț Axelar. Sigur, rapid și fără taxe.",
+      "title": "Eliberează-ți <1/> <2>Activele</2>",
+      "subtitle": "Transferă fără sudură token-uri TigerOG între rețele folosind Serviciul de Token-uri Interlanț Axelar. Sigur, rapid și fără taxe.",
       "launchApp": "Lansează Aplicația",
       "documentation": "Documentație"
     },
     "stats": {
       "messaging": "Rețeaua Axelar",
       "networks": "Rețele Active",
-      "fees": "Taxe Protocol",
+      "fees": "Taxă Platformă",
       "finality": "Finalitate"
     },
     "features": {
       "title": "Serviciul de Token-uri Interlanț",
-      "description": "Podul Libertății utilizează Axelar ITS pentru a oferi o experiență de transfer fără sudură, sigură și fără taxe prin {{count}}+ blockchain-uri.",
+      "description": "Freedom Bridge utilizează Axelar ITS pentru a oferi o experiență de transfer fără sudură, sigură și fără taxe prin peste {{count}} blockchain-uri.",
       "stopDecay": {
-        "title": "Oprește Descompunerea",
-        "description": "Token-urile vechi ard 10-11% din valoarea ta la fiecare cumpărare și vânzare. Conversia în TigerOG oprește această sângerare imediat, păstrând 100% din valoarea ta.",
-        "graphLabel1": "100% Reținut (TigerOG)",
+        "title": "Oprește Pierderea de Valoare",
+        "description": "Token-urile vechi ard 10-11% din valoarea ta la fiecare cumpărare și vânzare. Conversia în TigerOG oprește această pierdere imediat, păstrând 100% din valoarea ta.",
+        "graphLabel1": "100% Păstrat (TigerOG)",
         "graphLabel2": "-40% Valoare (Taxă Veche 10%)"
       },
       "conversion": {
         "title": "Conversie 1:1",
-        "description": "Oferta totală nu se schimbă niciodată. Token-urile sunt deținute într-un contract sigur de migrare și se utilizează exact echivalentul 1:1. Fără inflație, fără diluare."
+        "description": "Oferta totală nu se schimbă niciodată. Token-urile sunt deținute într-un contract de conversie sigur, folosind un echivalent exact de 1:1. Fără inflație, fără diluare."
       },
       "multichain": {
         "title": "Multi-Lanț",
-        "description": "Desfășoară o dată, accesează oriunde. Activul tău devine un token interlanț nativ prin lanțuri, inclusiv Ethereum, BNB Chain, Base și altele."
+        "description": "Implementează o dată, accesează oriunde. Activul tău devine un token interlanț nativ în rețele precum Ethereum, BNB Chain, Base și altele."
       },
       "security": {
         "title": "Securitate Axelar",
@@ -130,64 +128,71 @@
         "button": "Începe Transferul"
       }
     },
-    "teaser": {
-      "title": "Vreți alte monede?",
-      "subtitle": "Ce părere aveți despre <lunc>LUNC</lunc>, <crepe>Crepe</crepe> sau <shiba>Shiba</shiba>"
-    },
     "cta": {
-      "title": "Gata să transferi?",
-      "description": "Alătură-te revoluției interlanț. Durează mai puțin de un minut să îți împachetezi activele și să începi transferul prin Axelar.",
+      "title": "Gata de transfer?",
+      "description": "Alătură-te revoluției interlanț. Durează mai puțin de un minut să îți convertești activele și să începi transferul prin Axelar.",
       "button": "Lansează Aplicația Acum"
+    },
+    "buyTokens": {
+      "badge": "Începe",
+      "title": "Achiziționează Active",
+      "description": "Nu ai încă niciun token? Cumpără token-urile originale de pe PancakeSwap, apoi convertește-le în noile versiuni multi-lanț.",
+      "buyOn": "Cumpără de pe PancakeSwap",
+      "then": "apoi",
+      "convertTo": "Convertește în",
+      "buyNow": "Cumpără Acum"
     }
   },
   "wiki": {
-    "title": "Wiki Podul Libertății",
-    "searchPlaceholder": "Caută documentație...",
+    "title": "Wiki Freedom Bridge",
+    "searchPlaceholder": "Caută în documentație...",
     "header": {
       "title": "Documentație",
-      "subtitle": "Învață cum să convertești token-uri vechi, să transferi între lanțuri și să integrezi cu Podul Libertății."
+      "subtitle": "Învață cum să convertești token-uri vechi și să le transferi între rețele."
     },
     "nav": {
       "gettingStarted": "Primii Pași",
-      "coreConcepts": "Concepte De Bază",
+      "coreConcepts": "Concepte Fundamentale",
       "developers": "Dezvoltatori",
       "tigerogSupply": "Ofertă TigerOG",
       "lionogSupply": "Ofertă LionOG",
-      "frogogSupply": "Ofertă FrogOG"
+      "frogogSupply": "Ofertă FrogOG",
+      "githubRepo": "Repozitoriu GitHub",
+      "axelarDocs": "Documentație Axelar ITS"
     },
     "articles": {
       "whatIs": {
-        "title": "Ce este Podul Libertății?",
-        "content": "Podul Libertății este un protocol de transfer descentralizat construit pe Serviciul de Token-uri Interlanț (ITS) Axelar. Este conceput pentru a elibera token-urile de limitările unui singur lanț și taxele mari de tranzacție. Prin împachetarea token-urilor standard în active compatibile interlanț, utilizatorii își pot muta valoarea liber prin blockchain-urile acceptate.",
+        "title": "Ce este Freedom Bridge?",
+        "content": "Freedom Bridge este un protocol de transfer descentralizat construit pe Serviciul de Token-uri Interlanț (ITS) Axelar. Acesta îți permite să convertești token-urile vechi în active compatibile interlanț și fără taxe, care se pot mișca liber prin blockchain-urile acceptate.",
         "taxFreeTitle": "Transferuri Fără Taxe",
-        "taxFreeDesc": "Token-urile vechi au adesea taxe de 10%+. Token-urile TigerOG au 0% taxă.",
+        "taxFreeDesc": "Token-urile vechi au adesea taxe de peste 10%. Token-urile TigerOG au 0% taxă.",
         "omnichainTitle": "Interlanț",
-        "omnichainDesc": "Mută active instantaneu între {{count}}+ blockchain-uri prin Axelar."
+        "omnichainDesc": "Mută activele instantaneu între peste {{count}} blockchain-uri prin Axelar."
       },
       "howToConvert": {
         "title": "Cum să Convertești Token-uri",
-        "step1": "Conectează-ți portofelul la lanțul sursă (de exemplu, BNB Chain).",
+        "step1": "Conectează-ți portofelul la rețeaua sursă (ex: BNB Chain).",
         "step2": "Navighează la fila <strong>Convertește</strong>.",
         "step3": "Selectează token-ul vechi pe care vrei să îl convertești.",
-        "step4": "Aprobă contractul de Migrare să îți cheltuiască token-urile.",
+        "step4": "Aprobă contractul de Conversie pentru a-ți utiliza token-urile.",
         "step5": "Fă clic pe <strong>Convertește</strong> pentru a depune token-urile vechi și a primi o cantitate echivalentă de token-uri \"TigerOG\".",
-        "note": "<strong>Notă:</strong> Conversia suportă taxa de tranzacție a token-ului vechi (în timpul upgrade-ului) dacă token-ul tău percepe taxă la transferuri. Totuși, odată convertit în TigerOG, toate transferurile și punțile ulterioare sunt fără taxe."
+        "note": "<strong>Notă:</strong> Conversia implică taxa de tranzacție a token-ului vechi (în timpul upgrade-ului) dacă token-ul tău percepe taxă la transferuri. Totuși, odată convertit în TigerOG, toate transferurile și punțile ulterioare sunt fără taxe."
       },
       "supportedNetworks": {
         "title": "Rețele Acceptate",
-        "content": "Podul Libertății acceptă un ecosistem în creștere de {{count}}+ blockchain-uri, permițând interoperabilitate fără sudură în peisajul EVM prin Axelar."
+        "content": "Freedom Bridge susține un ecosistem în creștere de peste {{count}} blockchain-uri, permițând interoperabilitate fluidă în peisajul EVM prin Axelar."
       },
       "xerc20": {
         "title": "Token-uri Interlanț",
-        "content": "Serviciul de Token-uri Interlanț Axelar (ITS) permite ca token-urile să fie desfășurate pe mai multe lanțuri cu o adresă consistentă și gestionare unificată a ofertei. Podul Libertății utilizează ITS pentru a se asigura că TigerOG rămâne un activ canonic oriunde este transferat."
+        "content": "Serviciul de Token-uri Interlanț Axelar (ITS) permite ca token-urile să fie implementate pe mai multe rețele cu o adresă consistentă și gestionare unificată a ofertei. Freedom Bridge utilizează ITS pentru a se asigura că TigerOG rămâne un activ canonic oriunde este transferat."
       },
       "axelar": {
         "title": "Rețeaua Axelar",
-        "content": "Utilizăm Axelar ca stratul nostru de interoperabilitate. Axelar este o rețea descentralizată care conectează diferite blockchain-uri, permițând comunicare sigură între lanțuri și transferuri de active. Modelul de securitate al Axelar se bazează pe un set de validatori fără permisiuni, oferind securitate de înaltă calitate pentru token-urile interlanț."
+        "content": "Utilizăm Axelar ca strat de interoperabilitate. Axelar este o rețea descentralizată care conectează diferite blockchain-uri, permițând comunicare securizată între rețele și transferuri de active. Modelul de securitate Axelar se bazează pe un set de validatori fără permisiuni, oferind securitate de nivel înalt pentru token-urile interlanț."
       },
-      "migration": {
-        "title": "Logica Migrării",
-        "content": "Contractul de Migrare este desfășurat pe lanțul de origine (de exemplu, BSC). Deține token-urile originale vechi în custodie. Când actualizezi token-uri, depui în contractul de Migrare. Când despachetezi (dacă este acceptat), arzi reprezentarea TigerOG pentru a elibera token-urile originale. Acest lucru asigură o paritate strictă 1:1."
+      "conversion": {
+        "title": "Logica Conversiei",
+        "content": "Contractul de Conversie este implementat pe BSC. Atunci când convertești, token-urile tale vechi sunt trimise la adresa moartă (arse permanent) și primești TigerOG în raport de 1:1. Acesta este un proces unidirecțional — token-urile vechi sunt distruse și nu pot fi recuperate niciodată."
       },
       "contracts": {
         "title": "Adrese Contracte Inteligente",
@@ -197,16 +202,16 @@
       },
       "security": {
         "title": "Model de Securitate",
-        "content": "Securitatea este integrată în fiecare strat al Podul Libertății:",
-        "point1": "<strong>Arhitectura Migrării:</strong> Token-urile vechi sunt deținute în contracte inteligente verificate și imuabile.",
-        "point2": "<strong>Validatori Axelar:</strong> Mesajele între lanțuri sunt verificate de rețeaua descentralizată Axelar.",
-        "point3": "<strong>Ofertă Consistentă:</strong> ITS gestionează emiterea și arderea pentru a menține o ofertă totală constantă pe toate lanțurile.",
+        "content": "Securitatea este integrată în fiecare strat al Freedom Bridge:",
+        "point1": "<strong>Arhitectura de Conversie:</strong> Token-urile vechi sunt arse permanent prin contracte inteligente verificate și imuabile.",
+        "point2": "<strong>Validatori Axelar:</strong> Mesajele între rețele sunt verificate de rețeaua descentralizată Axelar.",
+        "point3": "<strong>Ofertă Consistentă:</strong> ITS gestionează emiterea și arderea pentru a menține o ofertă totală constantă pe toate rețelele.",
         "point4": "<strong>Logică Auditată:</strong> Construit pe biblioteci standard Axelar și OpenZeppelin."
       },
       "supplyCommon": {
-        "howWeCalculated": "Cum am calculat acest lucru",
+        "howWeCalculated": "Cum Am Calculat",
         "verification": "Verificare",
-        "verificationDesc": "Toate cifrele de ofertă pot fi verificate independent pe lanț:",
+        "verificationDesc": "Toate cifrele ofertei pot fi verificate independent on-chain:",
         "table": {
           "category": "Categorie",
           "amount": "Cantitate",
@@ -221,15 +226,15 @@
         "lpLockedTitle": "3. Token-uri LP Blocate"
       },
       "tigerogSupply": {
-        "title": "Descompunere Ofertă TigerOG",
-        "intro": "TigerOG are o ofertă circulantă fixă derivată din token-ul original BNBTiger. Calculul ofertei ia în considerare toate token-urile arse și blocate permanent.",
+        "title": "Detalierea Ofertei TigerOG",
+        "intro": "TigerOG are o ofertă circulantă fixă derivată din token-ul BNBTiger original. Calculul ofertei ia în considerare toate token-urile arse și blocate permanent.",
         "lpLocked": "LP Blocat (86.18% din LP Ars)",
-        "deadAddressDesc": "Token-urile trimise la <code>0x000...dEaD</code> sunt arse permanent și nu pot fi recuperate niciodată. Aceasta include token-urile arse prin mecanismul original de taxare BNBTiger.",
-        "contractBalanceDesc": "O cantitate mică de token-uri sunt blocate în contractul BNBTiger însuși. Aceste token-uri sunt inaccesibile și eliminate efectiv din circulație.",
+        "deadAddressDesc": "Token-urile trimise la <code>0x000...dEaD</code> sunt arse permanent și nu pot fi recuperate niciodată. Aceasta include token-urile arse prin mecanismul de taxare al BNBTiger original.",
+        "contractBalanceDesc": "O mică cantitate de token-uri sunt blocate în contractul BNBTiger însuși. Aceste token-uri sunt inaccesibile și eliminate efectiv din circulație.",
         "lpLockedDesc": "Fondul de lichiditate PancakeSwap conține token-uri BNBTiger împerecheate cu BNB. Când token-urile LP sunt arse (trimise la adresa moartă), token-urile subiacente din fond devin blocate permanent.",
         "lpBurnedPercent": "Token-uri LP arse: 86.18% din toate token-urile LP",
         "lpLockedPercent": "Prin urmare, 86.18% din token-urile din LP sunt blocate permanent",
-        "note": "<strong>Notă:</strong> TigerOG menține un raport 1:1 cu BNBTiger în timpul migrării. Oferta circulantă a TigerOG se potrivește cu oferta circulantă reală a BNBTiger după contabilizarea tuturor token-urilor arse și blocate.",
+        "note": "<strong>Notă:</strong> TigerOG menține raportul 1:1 cu BNBTiger în timpul conversiei. Oferta circulantă a TigerOG corespunde ofertei circulante reale a BNBTiger după contabilizarea tuturor token-urilor arse și blocate.",
         "launchData": "<strong>Date Lansare:</strong> Aceste cifre au fost calculate la lansare. Token-ul vechi BNBTiger continuă să ardă token-uri la fiecare tranzacție de cumpărare/vânzare, astfel încât oferta circulantă reală poate fi ușor mai mică decât cea afișată.",
         "legacyContract": "Contract Token BNBTiger",
         "ogContract": "Contract Token TigerOG",
@@ -246,15 +251,15 @@
         }
       },
       "lionogSupply": {
-        "title": "Descompunere Ofertă LionOG",
-        "intro": "LionOG are o ofertă circulantă fixă derivată din token-ul original BNBLion. Calculul ofertei ia în considerare toate token-urile arse și blocate permanent.",
+        "title": "Detalierea Ofertei LionOG",
+        "intro": "LionOG are o ofertă circulantă fixă derivată din token-ul BNBLion original. Calculul ofertei ia în considerare toate token-urile arse și blocate permanent.",
         "lpLocked": "LP Blocat (99.98% din LP Ars)",
-        "deadAddressDesc": "Token-urile trimise la <code>0x000...dEaD</code> sunt arse permanent și nu pot fi recuperate niciodată. Aceasta include token-urile arse prin mecanismul original de taxare BNBLion.",
-        "contractBalanceDesc": "O cantitate mică de token-uri sunt blocate în contractul BNBLion însuși. Aceste token-uri sunt inaccesibile și eliminate efectiv din circulație.",
+        "deadAddressDesc": "Token-urile trimise la <code>0x000...dEaD</code> sunt arse permanent și nu pot fi recuperate niciodată. Aceasta include token-urile arse prin mecanismul de taxare al BNBLion original.",
+        "contractBalanceDesc": "O mică cantitate de token-uri sunt blocate în contractul BNBLion însuși. Aceste token-uri sunt inaccesibile și eliminate efectiv din circulație.",
         "lpLockedDesc": "Fondul de lichiditate PancakeSwap conține token-uri BNBLion împerecheate cu BNB. Când token-urile LP sunt arse (trimise la adresa moartă), token-urile subiacente din fond devin blocate permanent.",
         "lpBurnedPercent": "Token-uri LP arse: 99.98% din toate token-urile LP",
         "lpLockedPercent": "Prin urmare, 99.98% din token-urile din LP sunt blocate permanent",
-        "note": "<strong>Notă:</strong> LionOG menține un raport 1:1 cu BNBLion în timpul migrării. Oferta circulantă a LionOG se potrivește cu oferta circulantă reală a BNBLion după contabilizarea tuturor token-urilor arse și blocate.",
+        "note": "<strong>Notă:</strong> LionOG menține raportul 1:1 cu BNBLion în timpul conversiei. Oferta circulantă a LionOG corespunde ofertei circulante reale a BNBLion după contabilizarea tuturor token-urilor arse și blocate.",
         "launchData": "<strong>Date Lansare:</strong> Aceste cifre au fost calculate la lansare. Token-ul vechi BNBLion continuă să ardă token-uri la fiecare tranzacție de cumpărare/vânzare, astfel încât oferta circulantă reală poate fi ușor mai mică decât cea afișată.",
         "legacyContract": "Contract Token BNBLion",
         "ogContract": "Contract Token LionOG",
@@ -271,15 +276,15 @@
         }
       },
       "frogogSupply": {
-        "title": "Descompunere Ofertă FrogOG",
-        "intro": "FrogOG are o ofertă circulantă fixă derivată din token-ul original BNBFrog. Calculul ofertei ia în considerare toate token-urile arse și blocate permanent.",
+        "title": "Detalierea Ofertei FrogOG",
+        "intro": "FrogOG are o ofertă circulantă fixă derivată din token-ul BNBFrog original. Calculul ofertei ia în considerare toate token-urile arse și blocate permanent.",
         "lpLocked": "LP Blocat (99.31% din LP Ars)",
-        "deadAddressDesc": "Token-urile trimise la <code>0x000...dEaD</code> sunt arse permanent și nu pot fi recuperate niciodată. Aceasta include token-urile arse prin mecanismul original de taxare BNBFrog.",
-        "contractBalanceDesc": "O cantitate mică de token-uri sunt blocate în contractul BNBFrog însuși. Aceste token-uri sunt inaccesibile și eliminate efectiv din circulație.",
+        "deadAddressDesc": "Token-urile trimise la <code>0x000...dEaD</code> sunt arse permanent și nu pot fi recuperate niciodată. Aceasta include token-urile arse prin mecanismul de taxare al BNBFrog original.",
+        "contractBalanceDesc": "O mică cantitate de token-uri sunt blocate în contractul BNBFrog însuși. Aceste token-uri sunt inaccesibile și eliminate efectiv din circulație.",
         "lpLockedDesc": "Fondul de lichiditate PancakeSwap conține token-uri BNBFrog împerecheate cu BNB. Când token-urile LP sunt arse (trimise la adresa moartă), token-urile subiacente din fond devin blocate permanent.",
         "lpBurnedPercent": "Token-uri LP arse: 99.31% din toate token-urile LP",
         "lpLockedPercent": "Prin urmare, 99.31% din token-urile din LP sunt blocate permanent",
-        "note": "<strong>Notă:</strong> FrogOG menține un raport 1:1 cu BNBFrog în timpul migrării. Oferta circulantă a FrogOG se potrivește cu oferta circulantă reală a BNBFrog după contabilizarea tuturor token-urilor arse și blocate.",
+        "note": "<strong>Notă:</strong> FrogOG menține raportul 1:1 cu BNBFrog în timpul conversiei. Oferta circulantă a FrogOG corespunde ofertei circulante reale a BNBFrog după contabilizarea tuturor token-urilor arse și blocate.",
         "launchData": "<strong>Date Lansare:</strong> Aceste cifre au fost calculate la lansare. Token-ul vechi BNBFrog continuă să ardă token-uri la fiecare tranzacție de cumpărare/vânzare, astfel încât oferta circulantă reală poate fi ușor mai mică decât cea afișată.",
         "legacyContract": "Contract Token BNBFrog",
         "ogContract": "Contract Token FrogOG",
@@ -291,7 +296,7 @@
           "contractPercent": "<0.01%",
           "lp": "−874.144.424.929.004.044.398.902",
           "lpPercent": "8.74%",
-          "circulating": "8.385.795.686.123.088.377.024.138",
+          "circulating": "8,385,795,686,123,088,377,024,138",
           "circulatingPercent": "83.86%"
         }
       }
@@ -301,61 +306,202 @@
     "title": "Adrese Contracte",
     "header": {
       "title": "Contracte Inteligente",
-      "subtitle": "Adrese oficiale de implementare pentru token-uri și punți în ecosistemul Podul Libertății."
+      "subtitle": "Adrese oficiale de implementare pentru token-uri și punți în ecosistemul Freedom Bridge."
     },
     "tabs": {
       "overview": "Prezentare Generală",
       "byToken": "După Token",
-      "byChain": "După Lanț",
+      "byChain": "După Rețea",
       "liquidity": "Lichiditate"
     },
     "liquidity": {
-      "title": "Fonduri de Lichiditate"
-    }
+      "poolAddress": "Adresă Pool",
+      "tradeOn": "Tranzacționează pe"
+    },
+    "overview": {
+      "interchainTokens": {
+        "title": "Token-uri Interlanț",
+        "description": "Token-uri interlanț implementate prin Axelar Interchain Token Service (ITS). Acestea păstrează adrese consistente pe toate rețelele acceptate."
+      },
+      "axelarNetwork": {
+        "title": "Rețeaua Axelar",
+        "description": "Protocolul de mesagerie de bază care securizează transferurile cross-chain și asigură integritatea datelor între diferite blockchain-uri."
+      },
+      "conversionContracts": {
+        "title": "Contracte de Conversie",
+        "description": "Responsabile pentru conversia token-urilor vechi în active interlanț. Aceste contracte gestionează logica de depunere și emitere pe rețeaua de origine."
+      },
+      "conversionContractsTable": {
+        "title": "Adrese Contracte de Conversie",
+        "subtitle": "Aceste contracte pe BSC gestionează conversia de la token-uri vechi la token-uri interlanț.",
+        "token": "Token",
+        "legacyToken": "Token Vechi",
+        "conversionContract": "Contract de Conversie",
+        "newToken": "Token Interlanț"
+      },
+      "liquidityPools": {
+        "title": "Pool-uri de Lichiditate",
+        "description": "Pool-uri de lichiditate DEX unde poți tranzacționa token-uri OG pe diverse rețele."
+      },
+      "liquidityPoolsTable": {
+        "title": "Pool-uri de Lichiditate",
+        "subtitle": "Pool-uri DEX pentru tranzacționarea token-urilor OG",
+        "token": "Token",
+        "chain": "Rețea",
+        "dex": "DEX",
+        "poolAddress": "Adresă Pool"
+      }
+    },
+    "filterTokens": "Filtrează token-urile...",
+    "interchainAsset": "Activ Interlanț prin Axelar ITS",
+    "availableOnChains": "Disponibil pe {{count}} rețele",
+    "table": {
+      "chain": "Rețea",
+      "tokenAddress": "Adresă Token",
+      "axelarChainName": "Nume Rețea Axelar",
+      "chainId": "ID: {{id}}"
+    },
+    "axelarId": "ID Axelar: {{name}}",
+    "copied": "Copiat!",
+    "copyAddress": "Copiază adresa"
   },
   "faq": {
-    "title": "Suport Podul Libertății",
+    "title": "Suport Freedom Bridge",
     "header": "Întrebări Frecvente",
     "subtitle": "Răspunsuri la întrebări comune despre TigerOG, transfer și Axelar.",
+    "sections": {
+      "gettingStarted": "Primii Pași",
+      "convertingTrading": "Conversie și Tranzacționare",
+      "bridging": "Transfer (Bridging)",
+      "technical": "Tehnic",
+      "securityRisks": "Securitate și Riscuri"
+    },
     "cta": {
       "title": "Mai aveți întrebări?",
-      "description": "Alăturați-vă comunității noastre pe Telegram sau verificați Wiki-ul detaliat pentru ghiduri tehnice.",
+      "description": "Alăturați-vă comunității noastre pe Telegram sau consultați Wiki-ul detaliat pentru ghiduri tehnice.",
       "wiki": "Vizitați Wiki",
       "telegram": "Alăturați-vă pe Telegram"
     },
     "questions": {
       "q1": "Care este scopul conversiei token-urilor mele?",
       "a1": "Conversia token-urilor tale în TigerOG elimină taxa de tranzacție (adesea 10-12%) asociată cu token-ul vechi. De asemenea, îți permite să transferi aceste token-uri către alte blockchain-uri precum Ethereum, Base și altele prin Axelar, permițând accesul la noi ecosisteme.",
-      "q2": "Este sigur să folosesc Podul Libertății?",
-      "a2": "Da. Protocolul utilizează un contract de Migrare sigur și Serviciul de Token-uri Interlanț Axelar. Când convertești, BNBTiger-ul tău este ars permanent și primești TigerOG într-un raport 1:1. Mecanismul de ardere asigură că oferta totală este gestionată corect pe toate lanțurile.",
+      "q2": "Este sigur să folosesc Freedom Bridge?",
+      "a2": "Da. Protocolul utilizează un contract de Conversie sigur și Serviciul de Token-uri Interlanț Axelar. Când convertești, BNBTiger-ul tău este ars permanent și primești TigerOG într-un raport 1:1. Mecanismul de ardere asigură că oferta totală este gestionată corect pe toate rețelele.",
       "q3": "Există taxe?",
-      "a3": "Podul Libertății în sine nu percepe o taxă pentru conversie. Plătești doar taxele standard de gaz blockchain. Totuși, transferul între lanțuri implică o taxă de gaz inter-lanț plătită către Axelar pentru a acoperi costurile de transfer.",
+      "a3": "Freedom Bridge în sine nu percepe o taxă pentru conversie. Plătești doar taxele standard de gaz blockchain. Transferul între rețele implică o taxă de gaz cross-chain plătită către Axelar pentru a acoperi costurile de retransmitere.",
       "q4": "Ce se întâmplă dacă îmi pierd token-urile?",
-      "a4": "Token-urile TigerOG se comportă la fel ca orice alt token ERC20. Dacă îți pierzi accesul la portofel, ele nu pot fi recuperate. Păstrează întotdeauna cheile private și frazele de recuperare în siguranță.",
+      "a4": "Token-urile TigerOG se comportă ca orice alt token ERC20/BEP20. Dacă îți pierzi accesul la portofel, acestea nu pot fi recuperate. Păstrează întotdeauna cheile private și frazele de recuperare în siguranță.",
       "q5": "Pot converti token-urile TigerOG înapoi în BNBTiger?",
-      "a5": "Nu. Migrarea este o conversie unidirecțională. Când convertești BNBTiger în TigerOG, token-urile tale BNBTiger sunt arse permanent (trimise la adresa moartă). Acest lucru este intenționat — TigerOG este versiunea actualizată, fără taxe, menită să înlocuiască complet token-ul vechi.",
+      "a5": "Nu. Conversia este unidirecțională. Când convertești BNBTiger în TigerOG, token-urile tale vechi sunt blocate permanent în contractul de conversie. Acest lucru este intenționat — TigerOG este versiunea actualizată, fără taxe, menită să înlocuiască complet token-ul vechi.",
       "q6": "Ce rețele sunt acceptate?",
-      "a6": "Acceptăm mai multe lanțuri EVM prin Axelar, inclusiv BNB Chain, Ethereum, Base și altele. Verifică Wiki-ul pentru lista completă a rețelelor acceptate.",
+      "a6": "Acceptăm mai multe lanțuri EVM prin Axelar, inclusiv BNB Chain, Ethereum, Base și altele. Consultă Wiki-ul pentru lista completă a rețelelor suportate.",
       "q7": "Cât durează transferul?",
-      "a7": "Viteza de transfer depinde de timpul de finalitate al lanțului sursă și de releul Axelar. De obicei, un transfer între lanțuri durează aproximativ 2-5 minute.",
+      "a7": "Timpul de transfer depinde de rețeaua de la care trimiți:\n\n• Ethereum: 15-20 min (necesită mai multe confirmări)\n• BSC & Avalanche: 2-4 min (cel mai rapid)\n• Base, Linea, Polygon: 3-5 min\n\nAplicația afișe textul estimat înainte de transfer.",
       "q8": "Care sunt ofertele circulante ale token-urilor OG?",
-      "a8": "Fiecare token OG are o ofertă circulantă fixă derivată din token-ul său original BNB, ținând cont de token-urile arse, soldurile contractelor blocate și LP-urile blocate. TigerOG: ~3.66 septilioane (36.62% din original). LionOG: ~3.83 septilioane (38.33% din original). FrogOG: ~8.39 septilioane (83.86% din original). Vezi Wiki-ul pentru descompuneri detaliate ale fiecărui token."
+      "a8": "Fiecare token OG are o ofertă circulantă fixă derivată din token-ul său original BNB, ținând cont de token-urile arse, soldurile blocate în contracte și LP-ul blocat:\n\n• TigerOG: ~3.66 septilioane (36.62% din original)\n• LionOG: ~3.83 septilioane (38.33% din original)\n• FrogOG: ~8.39 septilioane (83.86% din original)\n\nVezi Wiki pentru detalii.",
+      "q9": "De ce contractul OG nu a fost renunțat (renounced)?",
+      "a9": "Renunțarea la contract ar elimina capacitatea de a dezvolta și adăuga noi rețele în viitor. Deși contractul nu va fi renunțat în viitorul apropiat, sunt necesare mai multe semnături (multisig) pentru a face orice modificare. De asemenea, nicio sumă de token-uri sau taxe nu sunt alocate echipei.",
+      "q10": "De ce contractul OG este emitent (mintable)?",
+      "a10": "Transferul cross-chain necesită funcționalitate de mint/burn — token-urile sunt arse când părăsesc o rețea și emise când ajung la destinație. Acest lucru menține oferta totală constantă pe toate rețelele. Emiterea este controlată de un portofel multisig Safe.",
+      "q11": "Părăsește TigerOG rețeaua BNB Chain pentru Axelar?",
+      "a11": "Nu. Axelar nu este un blockchain — este protocolul de transfer care conectează rețelele între ele. BNB Chain rămâne rețeaua de origine unde convertești token-urile vechi. Axelar permite pur și simplu token-urilor tale să se miște între BNB, Ethereum, Base și alte rețele suportate.",
+      "q12": "Unde sunt token-urile mele?",
+      "a12": "Asigură-te că ai adăugat rețeaua și adresa token-ului în portofelul tău. Poți găsi toate adresele contractelor pe pagina Contracte. Echipa Tiger folosește portofelul Rabby, care facilitează gestionarea mai multor rețele.",
+      "q13": "De ce transferul din Ethereum sau Base durează atât de mult?",
+      "a13": "Ethereum necesită două epoci înainte de a finaliza tranzacțiile pentru securitate maximă. Deoarece Base se decontează pe Ethereum, moștenește această întârziere. Acest lucru prioritizează securitatea în fața vitezei — token-urile tale sunt în siguranță, trebuie doar să ai răbdare.",
+      "q14": "Ce se întâmplă dacă rămân la token-ul meu original și nu îl convertesc?",
+      "a14": "Nu este nicio grabă să convertești. BNBTiger și TigerOG vor avea întotdeauna pool-uri de lichiditate diferite, capitalizări de piață diferite și așa mai departe. Dar BNBTiger are o taxă mare, iar TigerOG nu are nicio taxă pentru tranzacționare. Deoarece taxele de pe original nu sunt folosite pentru a susține proiectul, dezvoltarea este făcută de echipa CTO pentru TigerOG. Freedom Bridge și suportul multi-chain sunt exclusiv pentru TigerOG.",
+      "q15": "Există o taxă pentru conversie? Are TigerOG o taxă?",
+      "a15": "Nu. Costă doar taxa normală de gaz pentru a converti și a tranzacționa. Nu există taxe sau comisioane suplimentare, iar TigerOG este un contract fără taxe.",
+      "q16": "Pot cumpăra și tranzacționa TigerOG direct?",
+      "a16": "Nu încă. Echipa nu a colectat taxe și impozite pentru a putea finanța pool-uri de lichiditate suficient de mari. Pentru a obține TigerOG acum, trebuie să cumperi sau să deții deja originalul și să îl convertești. Odată ce deții TigerOG, acesta nu va fi ușor de tranzacționat până când nu vor veni investitori care să adauge lichiditate.",
+      "q17": "De ce capitalizarea de piață a TigerOG pare atât de umflată?",
+      "a17": "Cu cât un pool de lichiditate este mai mic, cu atât orice tranzacție mică are un impact uriaș asupra capitalizării de piață afișate. Acest lucru se va rezolva odată ce investitorii vor deveni furnizori de lichiditate.",
+      "q18": "Ce audituri de securitate au fost făcute?",
+      "a18": "Freedom Bridge nu a trecut printr-un audit formal de către o parte terță. Totuși, codul contractului de conversie este bazat pe convertorul SHx construit de echipa Stronghold (foști dezvoltatori XRP și Stellar care au prezentat recent la Davos). Infrastructura de transfer este propulsată de Axelar, care a trecut prin multiple audituri de securitate.",
+      "q19": "Cum protejează Freedom Bridge împotriva atacurilor sau exploatărilor?",
+      "a19": "Mai multe măsuri sunt în vigoare:\n\n• Convertorul deține doar oferta circulantă exactă necesară — nu există token-uri în exces care ar putea fi exploatate\n• Convertorul nu are permisiuni de emitere (mint)\n• Tot codul contractelor este verificat on-chain și este open source\n• Permisiunile token-urilor sunt securizate într-un portofel multisig Safe.global\n• Transferul este gestionat de infrastructura testată a celor de la Axelar",
+      "q20": "Este transferul ireversibil? Ce se întâmplă dacă un transfer eșuează?",
+      "a20": "Transferurile prin bridge se pot bloca rareori din cauza gazului insuficient sau a congestiei rețelei. Dacă se întâmplă acest lucru, poți urmări tranzacția pe Axelarscan și poți adăuga manual gaz pentru a o finaliza. Axelar oferă instrumente de recuperare a tranzacțiilor — nu îți vei pierde token-urile.",
+      "q21": "Care sunt riscurile asociate cu utilizarea Freedom Bridge?",
+      "a21": "Ca la orice protocol DeFi, există riscuri inerente, inclusiv riscul contractelor inteligente, riscul de transfer și volatilitatea pieței. Vă recomandăm să faceți propria cercetare (DYOR) și să folosiți doar fonduri pe care vă permiteți să le pierdeți. Consultați avertismentul nostru legal pentru mai multe informații.",
+      "q22": "Pot converti noul contract BNB Tiger Inu (septembrie 2025)?",
+      "a22": "Nu. Freedom Bridge suportă token-ul BNB Tiger original/vechi care a fost lansat acum câțiva ani — nu noul contract creat în septembrie 2025. Freedom Bridge a fost construit pentru preluarea de către comunitate (CTO) a token-urilor originale Tiger, Lion și Frog.",
+      "q23": "Cum adaug lichiditate?",
+      "a23": "Adăugarea de lichiditate este o activitate DeFi avansată, cu riscuri precum pierderea impermanentă (impermanent loss). Dacă aveți experiență în furnizarea de lichiditate pe DEX-uri precum PancakeSwap sau Uniswap, procesul este același — asociați token-ul OG cu un activ de bază. Iată o serie educațională excelentă despre lichiditate dacă doriți să aflați mai multe: https://www.youtube.com/watch?v=oiylIHvwMik&list=PL_ujg_v1hZ5iGtiuhT8NkSMqEOaLAgmUu",
+      "q24": "Poate echipa să facă 'rug pull'?",
+      "a24": "Nu. Nu există niciun mecanism pentru un rug pull. Nicio sumă de token-uri sau taxe nu este alocată echipei, iar noi nu colectăm taxe de transfer — acelea merg la Axelar pentru costurile de retransmitere. Echipa este formată din deținători ca și voi, construind acest proiect pe cont propriu. Singurul portofel al echipei este un portofel public de marketing finanțat prin donații ale comunității. Portofelul multisig Safe controlează permisiunile contractelor, cum ar fi suspendarea trimiterii către rețele în caz de urgență, dar nu poate accesa sau redirecționa fondurile utilizatorilor."
     }
+  },
+  "footer": {
+    "wiki": "Wiki",
+    "contracts": "Contracte",
+    "faq": "FAQ",
+    "disclaimer": "Avertisment Legal",
+    "github": "GitHub"
+  },
+  "disclaimer": {
+    "title": "Avertisment Legal",
+    "header": "Notă Legală Importantă",
+    "subtitle": "Vă rugăm să citiți cu atenție acest avertisment înainte de a utiliza Freedom Bridge.",
+    "sections": {
+      "noInvestmentAdvice": {
+        "title": "Fără Consultanță de Investiții",
+        "content": "Informațiile furnizate pe Freedom Bridge nu constituie consultanță de investiții, consultanță financiară, consultanță de tranzacționare sau orice alt tip de consultanță. Nu trebuie să tratați niciun conținut ca atare. Freedom Bridge nu recomandă cumpărarea, vânzarea sau deținerea niciunei criptomonede. Efectuați propria cercetare și consultați-vă consilierul financiar înainte de a lua orice decizie de investiție."
+      },
+      "risksOfUse": {
+        "title": "Riscuri de Utilizare",
+        "content": "Piețele de criptomonede sunt volatile și imprevizibile. Prin utilizarea Freedom Bridge, recunoașteți și acceptați că:\n\n• Contractele inteligente pot conține bug-uri sau vulnerabilități care ar putea duce la pierderea fondurilor\n• Punțile cross-chain (bridge-urile) poartă riscuri inerente, inclusiv: eșecuri ale oracolelor, coluziunea validatorilor și congestia rețelei\n• Valorile token-urilor pot oscila dramatic și puteți pierde o parte sau întreaga investiție\n• Tranzacțiile pe rețelele blockchain sunt ireversibile\n• Taxele de rețea și costurile de gaz sunt în afara controlului nostru și pot varia semnificativ"
+      },
+      "noWarranties": {
+        "title": "Fără Garanții",
+        "content": "Freedom Bridge este furnizat \"ca atare\" și \"conform disponibilității\", fără niciun fel de garanție, fie expresă, fie implicită. Nu garantăm că serviciul va fi neîntrerupt, sigur sau fără erori. Nu oferim garanții cu privire la acuratețea, fiabilitatea sau caracterul complet al oricăror informații furnizate prin intermediul platformei."
+      },
+      "limitationOfLiability": {
+        "title": "Limitarea Răspunderii",
+        "content": "În măsura maximă permisă de lege, Freedom Bridge, dezvoltatorii săi, contribuitorii și afiliații săi nu vor fi răspunzători pentru niciun fel de daune directe, indirecte, incidentale, speciale, consecvențiale sau punitive care decurg din sau sunt legate de utilizarea de către dumneavoastră a platformei, inclusiv pierderea profiturilor, pierderea datelor sau pierderea activelor cripto."
+      },
+      "thirdPartyServices": {
+        "title": "Servicii Terțe",
+        "content": "Freedom Bridge se integrează cu servicii terțe, inclusiv Axelar Network pentru transferuri cross-chain. Nu suntem responsabili pentru acțiunile, conținutul, informațiile sau datele acestor terțe părți. Utilizarea de către dumneavoastră a serviciilor terțe este supusă termenilor și condițiilor respective."
+      },
+      "regulatoryCompliance": {
+        "title": "Conformitate de Reglementare",
+        "content": "Reglementările privind criptomonedele variază în funcție de jurisdicție. Sunteți singurul responsabil pentru a vă asigura că utilizarea Freedom Bridge respectă toate legile și reglementările aplicabile în jurisdicția dumneavoastră. Freedom Bridge nu face nicio declarație cu privire la legalitatea serviciilor în nicio jurisdicție."
+      },
+      "dyor": {
+        "title": "Efectuați Propria Cercetare",
+        "content": "Efectuați întotdeauna propria cercetare (DYOR) înainte de a interacționa cu orice protocol DeFi. Verificați adresele contractelor, înțelegeți mecanismele oricărui token cu care interacționați și nu investiți niciodată mai mult decât vă puteți permite să pierdeți."
+      }
+    },
+    "acknowledgment": "Prin utilizarea Freedom Bridge, recunoașteți că ați citit, înțeles și sunteți de acord să respectați acest avertisment legal.",
+    "lastUpdated": "Ultima actualizare: ianuarie 2026"
+  },
+  "disclaimerModal": {
+    "title": "Avertisment Important",
+    "subtitle": "Vă rugăm să citiți și să acceptați înainte de a continua.",
+    "noAdvice": "Freedom Bridge nu oferă consultanță de investiții, financiară sau de tranzacționare. Investițiile în criptomonede sunt volatile și riscante.",
+    "risks": "Prin utilizarea acestei platforme, recunoașteți că contractele inteligente pot conține vulnerabilități, transferurile între rețele implică riscuri inerente, iar tranzacțiile sunt ireversibile.",
+    "dyor": "Efectuați întotdeauna propria cercetare (DYOR) și folosiți doar fonduri pe care vă permiteți să le pierdeți.",
+    "fullDisclaimer": "Pentru detalii complete, consultați",
+    "fullDisclaimerLink": "Avertismentul Legal",
+    "accept": "Am Înțeles și Accept"
   },
   "common": {
     "from": "De la",
     "to": "Către",
     "max": "MAX",
-    "chainId": "ID Lanț",
+    "cancel": "Anulează",
+    "chainId": "ID Rețea",
     "bscChain": "BSC Chain",
     "insufficientBalance": "Sold insuficient.",
-    "failedToSwitchNetwork": "Nu s-a putut schimba rețeaua. Vă rugăm să schimbați manual în portofelul dumneavoastră.",
+    "failedToSwitchNetwork": "Nu s-a putut schimba rețeaua. Vă rugăm să schimbați manual în portofel.",
     "failedToFetchFeeQuote": "Nu s-a putut obține cotația taxei.",
     "unableToDetermineGas": "Nu se poate determina plata gazului Axelar",
-    "bridgeTxFailed": "Tranzacția de transfer a eșuat",
+    "bridgeTxFailed": "Tranzacția a eșuat",
     "estimatedGas": "Gaz Axelar estimat",
     "success": "Succes!",
-    "viewOnExplorer": "Vizualizează pe Explorer",
+    "viewOnExplorer": "Vezi în Explorer",
     "bridging": "Se transferă...",
     "transactionFailed": "Tranzacție eșuată",
     "search": "Caută",

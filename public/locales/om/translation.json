@@ -4,6 +4,7 @@
     "titleBridge": "Riqicha"
   },
   "nav": {
+    "home": "Man'ee",
     "settings": "Qindaa'ina",
     "menu": "Baafata",
     "preferences": "Filannoolee",
@@ -16,7 +17,6 @@
     "wiki": "Sanadoota / Wiki",
     "contracts": "Kontraattoota",
     "faq": "Gaaffilee Yeroo Baay'ee Gaafataman",
-    "logout": "Ba'i",
     "language": "Afaan",
     "languageSearchPlaceholder": "Afaan barbaadi",
     "languageNoResults": "Afaan hin argamne",
@@ -24,7 +24,17 @@
   },
   "addNetworks": {
     "title": "Cimdaalee Dabali",
-    "description": "Cimdaalee waallee keessanitti dabaluuf gadi tuqaalee gadi jiran tuqaa. Kun yeroo qorannoo chaanota gidduutti jijjiiruu salphisa."
+    "description": "Cimdaa kamiyyuu MetaMask, Rabby, ykn waallee Web3 birootti dabaluuf tuqaa",
+    "searchPlaceholder": "Cimdaalee barbaadi...",
+    "noResults": "Cimdaan hin argamne",
+    "networkCount": "cimdaa"
+  },
+  "addNetwork": {
+    "connectWallet": "Maaloo dura waallee keessan walqunnamsiisaa",
+    "alreadyPending": "Gaaffiin duraanuu eegamaa jira. Waallee keessan ilaalaa.",
+    "error": "Cimdaa dabaluun hin danda'amne. Maaloo ofumaan dabalaa.",
+    "adding": "Dabalaa jira...",
+    "button": "Dabali"
   },
   "tabs": {
     "convert": "Jijjiiri",
@@ -44,8 +54,21 @@
     "tigerOGMissing": "Token TigerOG chaanii kanaaf hin jiru",
     "networkWarning": {
       "title": "Cimdaa Dogoggoraa",
-      "message": "Token jijjiiruun kan danda'amu Chaanii BSC irratti qofa.",
-      "description": "Tokenoota jijjiiruuf waallee keessan keessatti gara Chaanii BSC jijjiiraa ykn tokenoota chaanota gidduutti dabarsuuf gara tab Riqichaatti deemamaa."
+      "message": "Token jijjiiruun kan danda'amu Chaanii BSC irratti qofa. Maaloo, tokenoota durii keessan jijjiiruuf gara BSC tti jijjiiraa."
+    },
+    "confirmModal": {
+      "title": "Jijjiirraa Mirkaneessi",
+      "warning": "Isin tokenoota keessan jijjiiruuf jettuu. Maaloo, itti fufuu dura kana sirriitti dubbisaa.",
+      "irreversible": "Gochi kun deebi'ee hin dhufu!",
+      "burnExplanation": "Tokenootni {{legacySymbol}} keessan dhaabbataatti ni gubamu, akkasumas hamma wal-gitu tokenoota {{newSymbol}} waallee keessanitti ni oomishamu. Kun deebi'uu hin danda'u.",
+      "positiveNote": "Bu'aan isaa: {{newSymbol}} guutummaatti gibira irraa bilisa — daldala hunda irratti gibira 10%+ hin qabu.",
+      "confirmQuestion": "{{amount}} {{legacySymbol}} gara {{newSymbol}} tti jijjiiruu?",
+      "confirmButton": "Nan Hubadhe, Jijjiiri"
+    },
+    "finalConfirmModal": {
+      "title": "Dhuguma mirkaneeffatteettaa?",
+      "message": "Kun carraa dhumaa kee kan haquu dandeessudha. Yeroo mirkaneessitu, {{legacySymbol}} kee gara {{newSymbol}} tti ni jijjiirama, deebi'ee jijjiiramuu hin danda'u.",
+      "confirmButton": "Eeyyee, Amma Jijjiiri"
     }
   },
   "bridge": {
@@ -74,25 +97,11 @@
     "cancel": "Haquu",
     "save": "Olkaa'i"
   },
-  "wallet": {},
-  "login": {
-    "title": "Deebitee nagaatti dhufta",
-    "subtitle": "Freedom Bridge itti fufuuf seenaa",
-    "emailLabel": "Imeelii",
-    "emailPlaceholder": "maqaa@fakkeenya.com",
-    "passwordLabel": "Jecha Darbii",
-    "passwordPlaceholder": "Jecha darbii galchi",
-    "rememberMe": "Meechaa kana irratti na yaadadhu",
-    "submit": "Seenaa",
-    "validation": {
-      "required": "Imeelii fi jechi darbii barbaachisaadha.",
-      "invalid": "Imeelii ykn jechi darbii sirrii miti."
-    }
-  },
   "landing": {
     "banner": {
       "title": "Haaraa asitti?",
-      "message": "Waa'ee Freedom Bridge fi akkaataa tokenoota TigerOG chaanota gidduutti riqichan baraa."
+      "message": "Waa'ee Freedom Bridge fi akkaataa tokenoota TigerOG chaanota gidduutti riqichan baraa.",
+      "note": "Hubachiisa: Token jijjiiruun dhaabbataadha fi deebi'uu hin danda'u."
     },
     "hero": {
       "badge": "Axelar'n Gaggeeffame",
@@ -130,14 +139,19 @@
         "button": "Riqicha Jalqabi"
       }
     },
-    "teaser": {
-      "title": "Saantima kan biraa barbaadduu?",
-      "subtitle": "Waa'ee <lunc>LUNC</lunc>, <crepe>Crepe</crepe>, ykn <shiba>Shiba</shiba> maal jettaa?"
-    },
     "cta": {
       "title": "Riqichuuf qophooftee?",
       "description": "Jijjiirama interchain irratti hirmaadhu. Qabeenya keessan jijjiiruuf fi Axelar fayyadamuun riqicha jalqabuuf daqiiqaa tokkoo gadi fudhata.",
       "button": "App Amma Buusi"
+    },
+    "buyTokens": {
+      "badge": "Jalqabi",
+      "title": "Qabeenya Argadhu",
+      "description": "Ammayyuu token hin qabduu? Tokenoota jalqabaa PancakeSwap irratti bitadhaa, sana booda gara vershiinii chaanii hedduu haaraatti jijjiiraa.",
+      "buyOn": "PancakeSwap Irratti Biti",
+      "then": "sana booda",
+      "convertTo": "Gara tti Jijjiiri",
+      "buyNow": "Amma Biti"
     }
   },
   "wiki": {
@@ -145,7 +159,7 @@
     "searchPlaceholder": "Sanadoota barbaadi...",
     "header": {
       "title": "Sanadoota",
-      "subtitle": "Akkaataa tokenoota durii jijjiiruu, chaanota gidduutti riqichuu fi Freedom Bridge waliin walitti dabaluu baraa."
+      "subtitle": "Akkaataa tokenoota durii jijjiiruu fi chaanota gidduutti riqichuu baraa."
     },
     "nav": {
       "gettingStarted": "Jalqaba",
@@ -153,12 +167,14 @@
       "developers": "Misoomsitoota",
       "tigerogSupply": "Dhiheessii TigerOG",
       "lionogSupply": "Dhiheessii LionOG",
-      "frogogSupply": "Dhiheessii FrogOG"
+      "frogogSupply": "Dhiheessii FrogOG",
+      "githubRepo": "GitHub Repository",
+      "axelarDocs": "Sanadoota Axelar ITS"
     },
     "articles": {
       "whatIs": {
         "title": "Freedom Bridge maalidha?",
-        "content": "Freedom Bridge pirotookolii riqichaa giddugaleessa hin qabne kan Axelar's Interchain Token Service (ITS) irratti ijaarameedha. Inni tokenoota daangaa chaanii tokkoo fi gibira daldalaa ol'aanaa irraa bilisoomsuuf hojjetame. Tokenoota idilee qabeenya interchain waliin walsimanitti jijjiiruudhaan, fayyadamtoonni gatii isaanii chaanota blokii deeggaraman gidduutti bilisaan sochoosuu danda'u.",
+        "content": "Freedom Bridge pirotookolii riqichaa giddugaleessa hin qabne kan Axelar's Interchain Token Service (ITS) irratti ijaarameedha. Inni tokenoota durii gara qabeenya gibira malee fi interchain walsimanitti jijjiiruuf isin dandeessisa, kunis chaanota blokii deeggaraman gidduutti bilisaan socho'uu danda'u.",
         "taxFreeTitle": "Daddabarsa Gibira Malee",
         "taxFreeDesc": "Tokenootni durii yeroo baay'ee gibira 10%+ qabu. Tokenootni TigerOG gibira 0% qabu.",
         "omnichainTitle": "Interchain",
@@ -169,7 +185,7 @@
         "step1": "Waallee keessan chaanii maddaatti hidhaa (fakkeenyaaf, Chaanii BNB).",
         "step2": "Gara <strong>Jijjiiri</strong> tabitti deemamaa.",
         "step3": "Tokenii durii jijjiiruu barbaaddan filadhaa.",
-        "step4": "Tokenoota keessan akka fayyadamamuuf Kontraata Godaansa raggaasisaa.",
+        "step4": "Tokenoota keessan akka fayyadamamuuf Kontraata Jijjiirraa raggaasisaa.",
         "step5": "Tokenoota keessan durii galchuuf fi tokenoota \"TigerOG\" walsiman argachuuf <strong>Jijjiiri</strong> tuqaa.",
         "note": "<strong>Hubachiisa:</strong> Jijjiirraan gibira daldalaa tokenii durii (yeroo fooyya'iinsaa) fida, yoo tokeniin keessan gibira daddabarsaa irratti kafalu ta'e. Haa ta'u malee, yeroo TigerOG tti jijjiirame booda, daddabarsi fi riqichi hunduu gibira kana irraa bilisa."
       },
@@ -185,9 +201,9 @@
         "title": "Axelar Network",
         "content": "Nu sadarkaa wal-hojjechuu keenyaaf Axelar fayyadamna. Axelar cimdaa giddugaleessa hin qabne kan chaanota blokii adda addaa walqunnamsiisu, qunnamtii chaanii gidduu nageenya qabu fi daddabarsa qabeenyaa dandeessisuudha. Modela nageenyaa Axelar validatoorota hayyama hin qabne irratti hundaa'a, kunis tokenoota interchain tiif nageenya sadarkaa ol'aanaa kenna."
       },
-      "migration": {
-        "title": "Loojikii Godaansa",
-        "content": "Kontraanni Godaansa chaanii madda irratti (fakkeenyaaf, BSC) hojjetama. Inni tokenoota durii jalqabaa to'annoo isaa jala qabata. Yeroo tokenoota fooyyessitan, kontraata Godaansa keessatti galchii godhaa jirtu. Yeroo hiikuu (yoo deeggarame), bakka bu'umsa TigerOG gubduu, tokenoota jalqabaa hiikuuf. Kun 1:1 gadi bu'iinsa mirkanaa'aa taasisa."
+      "conversion": {
+        "title": "Loojikii Jijjiirraa",
+        "content": "Kontraanni Jijjiirraa BSC irratti hojjetama. Yeroo jijjiirtan, tokenootni durii keessan gara adireesii du'aa ergamu (dhaabbataatti gubamu) fi TigerOG reeshiyoo 1:1 tti argattu. Kun adeemsa karaa tokko qofa — tokenootni durii ni balleeffamu, deebi'anii argamuu hin danda'an."
       },
       "contracts": {
         "title": "Adireesoota Kontraata Cimaa",
@@ -198,7 +214,7 @@
       "security": {
         "title": "Modela Nageenyaa",
         "content": "Nageenyi sadarkaa hunda Freedom Bridge keessatti ijaarameera:",
-        "point1": "<strong>Arkiitektar Godaansa:</strong> Tokenootni durii kontraata cimaa mirkanaa'ee fi hin jijjiiramne keessatti eegamuu.",
+        "point1": "<strong>Arkiitektar Jijjiirraa:</strong> Tokenootni durii kontraata cimaa mirkanaa'ee fi hin jijjiiramne fayyadamuun dhaabbataatti gubamu.",
         "point2": "<strong>Axelar Validators:</strong> Ergaawwan chaanii gidduu cimdaa giddugaleessa hin qabne kan Axelar'n mirkanaa'u.",
         "point3": "<strong>Dhiheessii Wal-fakkaataa:</strong> ITS dhiheessii waliigalaa chaanota hunda irratti akka dhaabbataa ta'uuf minting fi burning to'ata.",
         "point4": "<strong>Loojikii Qoratame:</strong> Axelar idilee fi OpenZeppelin libraries irratti kan ijaarame."
@@ -229,7 +245,7 @@
         "lpLockedDesc": "Pooliin liquidity PancakeSwap tokenoota BNBTiger kan BNB waliin walqabatan qaba. Yeroo tokenootni LP gubaman (gara adireesii du'aa ergaman), tokenootni bu'uuraa poolii keessa jiran dhaabbataatti qabamu.",
         "lpBurnedPercent": "Tokenootni LP gubaman: 86.18% tokenoota LP hunda irraa",
         "lpLockedPercent": "Kanaafuu, 86.18% tokenoota LP keessa jiran dhaabbataatti qabamaniiru",
-        "note": "<strong>Hubachiisa:</strong> TigerOG yeroo godaansa reeshiyoo 1:1 BNBTiger waliin eega. Dhiheessiin naanna'u TigerOG dhiheessii naanna'u dhugaa BNBTiger wajjin wal sima, erga tokenootni gubaman fi qabaman hundi lakkaa'amanii booda.",
+        "note": "<strong>Hubachiisa:</strong> TigerOG yeroo jijjiirraa reeshiyoo 1:1 BNBTiger waliin eega. Dhiheessiin naanna'u TigerOG dhiheessii naanna'u dhugaa BNBTiger wajjin wal sima, erga tokenootni gubaman fi qabaman hundi lakkaa'amanii booda.",
         "launchData": "<strong>Daataa Jalqabaa:</strong> Lakkoofsota kun yeroo jalqabaa herregaman. Tokeniin BNBTiger durii daldala bituu/gurguruu hunda irratti tokenoota gubuu itti fufa, kanaaf dhiheessiin naanna'u dhugaa kan mul'ifame irra xiqqoo gadi ta'uu danda'a.",
         "legacyContract": "Kontraata Token BNBTiger",
         "ogContract": "Kontraata Token TigerOG",
@@ -254,7 +270,7 @@
         "lpLockedDesc": "Pooliin liquidity PancakeSwap tokenoota BNBLion kan BNB waliin walqabatan qaba. Yeroo tokenootni LP gubaman (gara adireesii du'aa ergaman), tokenootni bu'uuraa poolii keessa jiran dhaabbataatti qabamu.",
         "lpBurnedPercent": "Tokenootni LP gubaman: 99.98% tokenoota LP hunda irraa",
         "lpLockedPercent": "Kanaafuu, 99.98% tokenoota LP keessa jiran dhaabbataatti qabamaniiru",
-        "note": "<strong>Hubachiisa:</strong> LionOG yeroo godaansa reeshiyoo 1:1 BNBLion waliin eega. Dhiheessiin naanna'u LionOG dhiheessii naanna'u dhugaa BNBLion wajjin wal sima, erga tokenootni gubaman fi qabaman hundi lakkaa'amanii booda.",
+        "note": "<strong>Hubachiisa:</strong> LionOG yeroo jijjiirraa reeshiyoo 1:1 BNBLion waliin eega. Dhiheessiin naanna'u LionOG dhiheessii naanna'u dhugaa BNBLion wajjin wal sima, erga tokenootni gubaman fi qabaman hundi lakkaa'amanii booda.",
         "launchData": "<strong>Daataa Jalqabaa:</strong> Lakkoofsota kun yeroo jalqabaa herregaman. Tokeniin BNBLion durii daldala bituu/gurguruu hunda irratti tokenoota gubuu itti fufa, kanaaf dhiheessiin naanna'u dhugaa kan mul'ifame irra xiqqoo gadi ta'uu danda'a.",
         "legacyContract": "Kontraata Token BNBLion",
         "ogContract": "Kontraata Token LionOG",
@@ -279,7 +295,7 @@
         "lpLockedDesc": "Pooliin liquidity PancakeSwap tokenoota BNBFrog kan BNB waliin walqabatan qaba. Yeroo tokenootni LP gubaman (gara adireesii du'aa ergaman), tokenootni bu'uuraa poolii keessa jiran dhaabbataatti qabamu.",
         "lpBurnedPercent": "Tokenootni LP gubaman: 99.31% tokenoota LP hunda irraa",
         "lpLockedPercent": "Kanaafuu, 99.31% tokenoota LP keessa jiran dhaabbataatti qabamaniiru",
-        "note": "<strong>Hubachiisa:</strong> FrogOG yeroo godaansa reeshiyoo 1:1 BNBFrog waliin eega. Dhiheessiin naanna'u FrogOG dhiheessii naanna'u dhugaa BNBFrog wajjin wal sima, erga tokenootni gubaman fi qabaman hundi lakkaa'amanii booda.",
+        "note": "<strong>Hubachiisa:</strong> FrogOG yeroo jijjiirraa reeshiyoo 1:1 BNBFrog waliin eega. Dhiheessiin naanna'u FrogOG dhiheessii naanna'u dhugaa BNBFrog wajjin wal sima, erga tokenootni gubaman fi qabaman hundi lakkaa'amanii booda.",
         "launchData": "<strong>Daataa Jalqabaa:</strong> Lakkoofsota kun yeroo jalqabaa herregaman. Tokeniin BNBFrog durii daldala bituu/gurguruu hunda irratti tokenoota gubuu itti fufa, kanaaf dhiheessiin naanna'u dhugaa kan mul'ifame irra xiqqoo gadi ta'uu danda'a.",
         "legacyContract": "Kontraata Token BNBFrog",
         "ogContract": "Kontraata Token FrogOG",
@@ -310,13 +326,67 @@
       "liquidity": "Liquidity"
     },
     "liquidity": {
-      "title": "Liquidity Pool'ota"
-    }
+      "poolAddress": "Adireesii Pool",
+      "tradeOn": "Irratti Daldali"
+    },
+    "overview": {
+      "interchainTokens": {
+        "title": "Tokenoota Interchain",
+        "description": "Tokenoota Interchain Axelar Interchain Token Service (ITS) fayyadamuun hojii irra oolan. Tokenootni kun cimdaalee deeggaraman hunda irratti adireesii wal-fakkaataa qabatu."
+      },
+      "axelarNetwork": {
+        "title": "Axelar Network",
+        "description": "Pirotookolii ergaa bu'uuraa kan daddabarsa cross-chain nageenya qabu mirkaneessu fi qulqullina daataa chaanota blokii adda addaa gidduutti eegu."
+      },
+      "conversionContracts": {
+        "title": "Kontraattoota Jijjiirraa",
+        "description": "Tokenoota durii gara qabeenya interchain tti jijjiiruuf itti gaafatamummaa qaba. Kontraattoonni kun loojikii galchuu fi oomishuu chaanii madda irratti raawwatu."
+      },
+      "conversionContractsTable": {
+        "title": "Adireesoota Kontraata Jijjiirraa",
+        "subtitle": "Kontraattoonni BSC irratti argaman kun jijjiirraa tokenoota durii irraa gara tokenoota interchain tti raawwatu.",
+        "token": "Token",
+        "legacyToken": "Token Durii",
+        "conversionContract": "Kontraata Jijjiirraa",
+        "newToken": "Token Interchain"
+      },
+      "liquidityPools": {
+        "title": "Poolota Liquidity",
+        "description": "Poolota liquidity DEX kan isin tokenoota OG chaanota adda addaa irratti daldaluu dandeessan."
+      },
+      "liquidityPoolsTable": {
+        "title": "Poolota Liquidity",
+        "subtitle": "Poolota DEX daldala tokenoota OG tiif",
+        "token": "Token",
+        "chain": "Chaanii",
+        "dex": "DEX",
+        "poolAddress": "Adireesii Pool"
+      }
+    },
+    "filterTokens": "Tokenoota calali...",
+    "interchainAsset": "Qabeenya Interchain Axelar ITS fayyadamuun",
+    "availableOnChains": "Cimdaalee {{count}} irratti argama",
+    "table": {
+      "chain": "Chaanii",
+      "tokenAddress": "Adireesii Token",
+      "axelarChainName": "Maqaa Chaanii Axelar",
+      "chainId": "ID: {{id}}" 
+    },
+    "axelarId": "Axelar ID: {{name}}",
+    "copied": "Garagalfameera!",
+    "copyAddress": "Adireesii garagalchi"
   },
   "faq": {
-    "title": "Freedom Bridge Deggersa",
+    "title": "Deggersa Freedom Bridge",
     "header": "Gaaffilee Yeroo Baay'ee Gaafataman",
     "subtitle": "Deebiilee gaaffilee waliigalaa waa'ee TigerOG, riqichuu fi Axelar.",
+    "sections": {
+      "gettingStarted": "Jalqaba",
+      "convertingTrading": "Jijjiiruu & Daldaluu",
+      "bridging": "Riqichuu",
+      "technical": "Teeknikaa",
+      "securityRisks": "Nageenya & Balaawwan"
+    },
     "cta": {
       "title": "Gaaffilee ammas qabduu?",
       "description": "Telegram irratti hawaasa keenyatti makamaa ykn gabaasa teeknikaaf Wiki bal'aa ilaalaa.",
@@ -327,25 +397,112 @@
       "q1": "Kaayyoon tokenoota koo jijjiiruu maalidha?",
       "a1": "Tokenoota keessan gara TigerOG tti jijjiiruun gibira daldalaa (yeroo baay'ee 10-12%) kan tokenii durii wajjin wal qabatee jiru ni dhabamsiisa. Kunis tokenoota kana chaanota blokii biroo kan akka Ethereum, Base, fi biroo irratti Axelar fayyadamuun riqichuuf isin dandeessisa, ekosistemii haaraa argachuuf gargaara.",
       "q2": "Freedom Bridge fayyadamuun nageenya qabaa?",
-      "a2": "Eeyyee. Pirotokooliin kun kontraata Godaansa nageenya qabu fi Axelar's Interchain Token Service fayyadama. Yeroo jijjiirtan, BNBTiger keessan dhaabbataatti gubama, akkasumas TigerOG reeshiyoo 1:1 tti argattu. Mekaanismiin gubuu dhiheessiin waliigalaa chaanota hunda irratti sirriitti akka hoogganamu mirkaneessa.",
+      "a2": "Eeyyee. Pirotokooliin kun kontraata Jijjiirraa nageenya qabu fi Axelar's Interchain Token Service fayyadama. Yeroo jijjiirtan, BNBTiger keessan dhaabbataatti gubama, akkasumas TigerOG reeshiyoo 1:1 tti argattu. Mekaanismiin gubuu dhiheessiin waliigalaa chaanota hunda irratti sirriitti akka hoogganamu mirkaneessa.",
       "q3": "Kaffaltii tokkollee jiraa?",
       "a3": "Freedom Bridge ofii isaatii jijjiirraaf kaffaltii tokkollee hin gaafatu. Kaffaltii gaazii blokii idilee qofa kafaltu. Chaanota gidduutti riqichuun kaffaltii gaazii cross-chain Axelar'f kafalamu qaba, kaffaltii daddabarsaa uwwisuuf.",
       "q4": "Tokenoota koo yoo dhabe maaltu ta'a?",
       "a4": "Tokenootni TigerOG tokenii ERC20 biroo akkuma hojjetan hojjetu. Yoo waallee keessanitti argamuu dadhabdan, deebisanii argachuu hin danda'amu. Yeroo hunda furii dhuunfaa fi jechoota deebisanii argachuu keessan nageenya isaa eegaa.",
       "q5": "Tokenoota TigerOG koo gara BNBTiger tti deebisee jijjiiruu danda'aa?",
-      "a5": "Lakki. Godaansi kun jijjiirraa karaa tokko qofa. Yeroo BNBTiger gara TigerOG tti jijjiirtan, tokenootni BNBTiger keessan dhaabbataatti gubamu (gara adireesii du'aa ergamu). Kunis ta'e jedhamee kan hojjetame — TigerOG vershiinii fooyya'aa, gibira irraa bilisa ta'e kan tokenii durii guutummaatti bakka bu'uuf yaadameedha.",
+      "a5": "Lakki. Jijjiirraan kun karaa tokko qofa. Yeroo BNBTiger gara TigerOG tti jijjiirtan, tokenootni durii keessan dhaabbataatti kontraata jijjiirraa keessatti qabamu. Kunis ta'e jedhamee kan hojjetame — TigerOG vershiinii fooyya'aa, gibira irraa bilisa ta'e kan tokenii durii guutummaatti bakka bu'uuf yaadameedha.",
       "q6": "Cimdaalee kamtu deeggarama?",
       "a6": "Nu chaanota EVM hedduu Axelar fayyadamuun deeggarra, BNB Chain, Ethereum, Base, fi biroo dabalatee. Chaanii blokii deeggaraman guutuu isaa argachuuf Wiki ilaalaa.",
       "q7": "Riqichuuf hangam yeroo fudhata?",
       "a7": "Saffisni riqichuu yeroo xumuraa chaanii madda fi daddabarsaa Axelar irratti hundaa'a. Yeroo baay'ee, chaanota gidduutti daddabarsuuf daqiiqaa 2-5 gidduu fudhata.",
       "q8": "Dhiheessiin naanna'u tokenoota OG maalidha?",
-      "a8": "Tokeniin OG tokkoon tokkoo dhiheessii naanna'u dhaabbataa kan tokenii BNB jalqabaa irraa dhufe qaba, tokenoota gubaman, haftee kontraataa qabaman, fi LP qabaman lakkaa'uun. TigerOG: ~3.66 septillion (36.62% jalqabaa). LionOG: ~3.83 septillion (38.33% jalqabaa). FrogOG: ~8.39 septillion (83.86% jalqabaa). Gadi bu'iinsa bal'aa tokenii hundaaf Wiki ilaalaa."
+      "a8": "Tokeniin OG tokkoon tokkoo dhiheessii naanna'u dhaabbataa kan tokenii BNB jalqabaa irraa dhufe qaba, tokenoota gubaman, haftee kontraataa qabaman, fi LP qabaman lakkaa'uun. TigerOG: ~3.66 septillion (36.62% jalqabaa). LionOG: ~3.83 septillion (38.33% jalqabaa). FrogOG: ~8.39 septillion (83.86% jalqabaa). Gadi bu'iinsa bal'aa tokenii hundaaf Wiki ilaalaa.",
+      "q9": "Maaliif kontraanni OG hin gatamne (renounced)?",
+      "a9": "Kontraata gatuun dandeettii gara fuulduraatti misoomsiisuu fi chaanota haaraa dabaluu dhabamsiisa. Yeroo dhihootti kontraanni hin gatamu ta'us, jijjiirama kamiyyuu gochuuf mallattoo hedduu (multisig) barbaachisa. Akkasumas, tokenootni ykn gibirri tokkollee garee kanaaf hin ramadamne.",
+      "q10": "Maaliif kontraanni OG oomishamuu danda'a (mintable)?",
+      "a10": "Riqichi cross-chain hojii oomishuu/gubuu barbaada - tokenootni yeroo chaanii tokko gadhiisan ni gubamu, yeroo bakka ga'umsaa ga'an immoo ni oomishamu. Kun dhiheessii waliigalaa cimdaalee hunda irratti dhaabbataa taasisa. Oomishuun waallee Safe multisig tiin to'atama.",
+      "q11": "TigerOG Axelar'f jedhee Chaanii BNB gadhiisaa jiraa?",
+      "a11": "Lakki. Axelar chaanii blokii miti - inni pirotookolii riqichaa kan chaanota walqunnamsiisudha. Chaaniin BNB chaanii madda ta'ee itti fufa, bakka itti tokenoota durii jijjiirtan. Axelar tokenootni keessan BNB, Ethereum, Base, fi cimdaalee deeggaraman biroo gidduutti akka socho'an qofa dandeessisa.",
+      "q12": "Tokenootni koo eessa jiru?",
+      "a12": "Adireesii chaanii fi tokenii waallee keessanitti dabaluu mirkaneeffadhaa. Adireesoota kontraataa hunda fuula Kontraattoota irraa argachuu dandeessu. Gareen Tiger waallee Rabby fayyadama, kunis chaanota hedduu hoogganuu salphisa.",
+      "q13": "Maaliif riqichi Ethereum ykn Base irraa yeroo dheeraa fudhata?",
+      "a13": "Ethereum nageenya ol'aanaaf daldala xumuruuf 'epochs' lama barbaada. Base Ethereum irratti waan hundaa'uuf, tursiisa kana dhaala. Kun nageenyaaf dursa kenna saffisa irra - tokenootni keessan nageenya qabu, obsaa.",
+      "q14": "Yoon tokenii koo jalqabaa qabadhee hin jijjiirre maaltu ta'a?",
+      "a14": "Jijjiiruuf jarjarri hin jiru. BNBTiger fi TigerOG yeroo hunda poolota liquidity, kaappii gabaa, fi kkf adda addaa qabaatu. Garuu BNBTiger gibira ol'aanaa qaba, TigerOG immoo daldalaaf gibira hin qabu. Gibirri jalqabaa pirojekticha deeggaruuf waan hin oolleef, misoomni garee CTO tiin TigerOG'f hojjetama. Freedom Bridge fi multi-chain TigerOG qofaaf.",
+      "q15": "Jijjiiruuf gibirri jiraa? TigerOG gibira qabaa?",
+      "a15": "Lakki. Jijjiiruu fi daldaluuf kaffaltii gaazii idilee qofa gaafata. Gibirri ykn kaffaltiin dabalataa hin jiru, TigerOG kontraata gibira irraa bilisa ta'eedha.",
+      "q16": "TigerOG kallattiin bitadhee daldaluu danda'aa?",
+      "a16": "Ammatti lakki. Gareen poolota liquidity gurguddaa maallaqaan deeggaruuf kaffaltii fi gibira hin walitti qabne. Amma TigerOG argachuuf, jalqabaa bitachuu ykn duraanuu qabaachuu fi jijjiiruu qabdu. Yeroo TigerOG qabaattan, hanga investaroonni dhufanii poolii liquidity dabalanitti salphaatti daldalamuu hin danda'u.",
+      "q17": "Maaliif kaappiin gabaa TigerOG baay'ee ol ka'e fakkaata?",
+      "a17": "Pooliin liquidity xiqqoo ta'e, daldalli xiqqoon kamiyyuu kaappii gabaa mul'atu irratti dhiibbaa guddaa qabaata. Kun yeroo investaroonni dhiheessitoota liquidity ta'an ni sirraa'a.",
+      "q18": "Odiitiin nageenyaa kamtu godhame?",
+      "a18": "Freedom Bridge odiitii qaama sadaffaa ofiiseelaa hin goone. Haa ta'u malee, koodiin kontraata jijjiirraa jijjiiraa SHx kan garee Stronghold (misoomsitoota XRP fi Stellar duraanii kanneen dhiheenya Davos irratti dhiheessan) ijaaran irratti hundaa'a. Caasa-ijaarsa riqichaa Axelar'n gaggeeffama, kan odiitii nageenyaa hedduu darbe.",
+      "q19": "Freedom Bridge hack ykn saamicha irraa akkamitti eega?",
+      "a19": "Tarkaanfiiwwan hedduutu fudhatame:\n\n• Jijjiiraan dhiheessii naanna'u barbaachisaa qofa qabata - tokenootni dabalataa kan saamamuu danda'an hin jiran\n• Jijjiiraan hayyama oomishuu hin qabu\n• Koodiin kontraataa hundi chaanii irratti mirkanaa'ee fi madda banaa (open source) dha\n• Hayyamni tokenii waallee multisig Safe.global keessatti eegama\n• Riqichi caasa-ijaarsa Axelar kan qoratamee mirkanaa'een gaggeeffama",
+      "q20": "Riqichi deebi'uu hin danda'uu? Yoo daddabarsi fashalaa'e hoo?",
+      "a20": "Daddabarsi riqichaa darbee darbee gaazii gahaa dhabuu ykn dhiphina cimdaatiin qabamuu danda'a. Yoo kun ta'e, daldala keessan Axelarscan irratti hordofuu fi xumuruuf gaazii ofumaan dabaluu dandeessu. Axelar meeshaalee daldala deebisanii argachuu dhiheessa - tokenoota keessan hin dhabdan.",
+      "q21": "Freedom Bridge fayyadamuun balaawwan maalfaa qaba?",
+      "a21": "Akkuma pirotookolii DeFi kamiyyuu, balaawwan uumamaa kanneen akka balaa kontraata cimaa, balaa riqichaa, fi jijjiirama gabaa ni jiru. Qorannoo mataa keessanii (DYOR) akka gootan fi maallaqa dhabuuf qophooftan qofa akka fayyadamtan gorsina. Odeeffannoo dabalataaf fialana itti gaafatamummaa keenya ilaalaa.",
+      "q22": "Kontraata haaraa BNB Tiger Inu (Fulbaana 2025) jijjiiruu danda'aa?",
+      "a22": "Lakki. Freedom Bridge tokenii BNB Tiger durii/jalqabaa kan waggoota muraasa dura baname qofa deeggara - kontraata haaraa Fulbaana 2025 uumame miti. Freedom Bridge kan ijaarameef fudhannoo hawaasaa (CTO) tokenoota Tiger, Lion, fi Frog jalqabaatiifi.",
+      "q23": "Liquidity akkamitti dabaluu danda'a?",
+      "a23": "Liquidity dabaluun hojii DeFi sadarkaa ol'aanaa kan balaawwan akka 'impermanent loss' of keessaa qabuudha. Yoo DEX kan akka PancakeSwap ykn Uniswap irratti liquidity dhiheessuu muuxannoo qabaattan, adeemsi isaa wal-fakkaata - tokenii OG qabeenya bu'uuraa waliin walqabsiisaa. Waa'ee liquidity caalaatti baruu yoo barbaaddan viidiyoo barnootaa gaarii asitti argattu: https://www.youtube.com/watch?v=oiylIHvwMik&list=PL_ujg_v1hZ5iGtiuhT8NkSMqEOaLAgmUu",
+      "q24": "Gareen 'rug pull' gochuu danda'aa?",
+      "a24": "Lakki. Mekaanismiin 'rug pull' ittiin godhan hin jiru. Tokenootni ykn gibirri garee kanaaf hin ramadamne, akkasumas kaffaltii riqichaa kamiyyuu hin walitti qabnu — sun kaffaltii daddabarsaaf gara Axelar deema. Gareen kun qabattota akkuma keessaniiti, baasii dhuunfaatiin kana ijaaraa jiru. Waalleen garee tokkichi waallee gabaa ummataa kan arjooma hawaasaatiin deeggaramudha. Waalleen multisig Safe hayyama kontraataa kan akka yeroo balaa tasee chaanotaaf erguu dhaabuu to'ata, garuu maallaqa fayyadamtootaa tuquu ykn kallattii jijjiiruu hin danda'u."
     }
+  },
+  "footer": {
+    "wiki": "Wiki",
+    "contracts": "Kontraattoota",
+    "faq": "Gaaffilee",
+    "disclaimer": "Fialana",
+    "github": "GitHub"
+  },
+  "disclaimer": {
+    "title": "Fialana Itti Gaafatamummaa Seeraa",
+    "header": "Beeksisa Seeraa Barbaachisaa",
+    "subtitle": "Maaloo Freedom Bridge fayyadamuu keessan dura fialana kana sirriitti dubbisaa.",
+    "sections": {
+      "noInvestmentAdvice": {
+        "title": "Gorsa Invastimantii Miti",
+        "content": "Odeeffannoon Freedom Bridge irratti dhihaate gorsa invastimantii, gorsa faayinaansii, gorsa daldalaa, ykn gorsa gosa biraa kamiyyuu miti. Qabiyyee isaa akkasitti fudhachuu hin qabdan. Freedom Bridge kiriiptookarensii kamiyyuu akka bitattan, gurgurtan, ykn qabattan hin gorsu. Murtoo invastimantii kamiyyuu gochuu keessan dura qorannoo mataa keessanii godhaa, gorsaa faayinaansii keessan mari'isisaa."
+      },
+      "risksOfUse": {
+        "title": "Balaawwan Fayyadamaa",
+        "content": "Gabaan kiriiptookarensii kan jijjiiramuu fi tilmaamuu hin danda'amnedha. Freedom Bridge fayyadamuudhaan, isin kanneen armaan gadii ni amantu ni fudhatus:\n\n• Kontraattoonni cimaan dogoggora ykn qaawwa qabaachuu danda'u kan maallaqa dhabuutti geessuu danda'a\n• Riqichoonni cross-chain balaawwan uumamaa qabu kanneen akka: kufaatii oracle, wal-shira validatoorotaa, fi dhiphina cimdaa, garuu kanaan qofa hin daangeffamu\n• Gatiin tokenii haalaan jijjiiramuu danda'a, invastimantii keessan gartokkee ykn guutuu dhabuu dandeessu\n• Daldalli cimdaalee blokii irratti godhamu deebi'uu hin danda'u\n• Kaffaltiin cimdaa fi baasiin gaazii to'annoo keenyaan ala, akkasumas haalaan jijjiiramuu danda'u"
+      },
+      "noWarranties": {
+        "title": "Wabii Hin Qabu",
+        "content": "Freedom Bridge \"akkuma jirutti\" fi \"akkuma argamutti\" wabii gosa kamiyyuu malee, ifatti ykn dhoksaatti, dhihaata. Tajaajilli kun addaan hin citu, nageenya qaba, ykn dogoggora irraa bilisa jedhanii wabii hin kenninu. Sirriusmaa, amanamummaa, ykn guutummaa odeeffannoo karaa pilaatfoormii dhihaatuu ilaalchisee wabii hin kenninu."
+      },
+      "limitationOfLiability": {
+        "title": "Daangaa Itti Gaafatamummaa",
+        "content": "Hanga seeri heyyamutti, Freedom Bridge, misoomsitoonni isaa, gumaachitoonni, fi michoonni isaa miidhaa kallattii, al-kallattii, tasaa, addaa, itti-fufiinsaa, ykn adabbii kamiyyuu kan fayyadama pilaatfoormii keessan irraa madduuf itti gaafatamummaa hin qabaatan, bu'aa dhabuu, daataa dhabuu, ykn qabeenya kiriiptookarensii dhabuu dabalatee garuu kanaan qofa hin daangeffamu."
+      },
+      "thirdPartyServices": {
+        "title": "Tajaajiloota Qaama Sadaffaa",
+        "content": "Freedom Bridge tajaajiloota qaama sadaffaa Axelar Network dabalatee riqicha cross-chain tiif walitti makama. Gochoota, qabiyyee, odeeffannoo, ykn daataa qaamolee sadaffaa kanaaf itti gaafatamummaa hin qabnu. Fayyadamni keessan tajaajiloota qaama sadaffaa haal-dureewwan isaanii irratti hundaa'a."
+      },
+      "regulatoryCompliance": {
+        "title": "Walsimannaa Seeraa",
+        "content": "Seerri kiriiptookarensii biyyaa biyyatti ni jijjiirama. Fayyadamni Freedom Bridge keessan seeraa fi dambiiwwan biyya keessanii hunda kan kabaju ta'uu mirkaneeffachuun itti gaafatamummaa keessani. Freedom Bridge seera qabeessummaa tajaajilichaa biyya kamiyyuu keessatti bakka hin bu'u."
+      },
+      "dyor": {
+        "title": "Qorannoo Mataa Keessanii Godhaa (DYOR)",
+        "content": "Pirotookolii DeFi kamiyyuu waliin wal-qunnamtii uumuu dura yeroo hunda qorannoo mataa keessanii (DYOR) godhaa. Adireesoota kontraataa mirkaneeffadhaa, mekaanizimii tokenii kamiyyuu kan itti fayyadamtan hubadhaa, akkasumas hamma dhabuu dandeessan ol gonkumaa invastimantii hin godhinaa."
+      }
+    },
+    "acknowledgment": "Freedom Bridge fayyadamuudhaan, fialana kana dubbisuu, hubachuu, fi ittiin buluuf walii galuu keessan mirkaneessitu.",
+    "lastUpdated": "Yeroo dhumaaf kan fooyya'e: Amajjii 2026"
+  },
+  "disclaimerModal": {
+    "title": "Fialana Barbaachisaa",
+    "subtitle": "Maaloo itti fufuu dura dubbisaa mirkaneeffadhaa.",
+    "noAdvice": "Freedom Bridge gorsa invastimantii, faayinaansii, ykn daldalaa hin kennu. Invastimantiin kiriiptookarensii jijjiiramaa fi balaa qaba.",
+    "risks": "Pilaatfoormii kana fayyadamuudhaan, kontraattoonni cimaan qaawwa qabaachuu akka danda'an, riqichoonni cross-chain balaa uumamaa akka qaban, fi daldalli deebi'uu akka hin dandeenye ni amantu.",
+    "dyor": "Yeroo hunda qorannoo mataa keessanii (DYOR) godhaa fi maallaqa dhabuu dandeessan qofa fayyadamaa.",
+    "fullDisclaimer": "Bal'inaan argachuuf, keenya ilaalaa",
+    "fullDisclaimerLink": "Fialana Itti Gaafatamummaa Seeraa",
+    "accept": "Nan Hubadhe, Nan Fudhame"
   },
   "common": {
     "from": "Irraa",
     "to": "Gara",
     "max": "Guddaa",
+    "cancel": "Haquu",
     "chainId": "ID Chaanii",
     "bscChain": "Chaanii BSC",
     "insufficientBalance": "Haalli gahaa miti.",
