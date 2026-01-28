@@ -141,6 +141,19 @@
       "then": "afei",
       "convertTo": "Sesa kɔ",
       "buyNow": "Tɔ Seesei"
+    },
+    "liveStats": {
+      "badge": "Protocol Stats a Ɛkɔ So Seesei",
+      "title": "Token Ho Nsɛm",
+      "description": "Nsɛm a ɛfi blockchain so tẽẽ a ɛkyerɛ nea wɔasesa ne sɛnea wɔakyekyɛ wɔ nfiriduwa a wɔboa no nyinaa so.",
+      "totalConverted": "Nea Wɔasesa Nyinaa",
+      "distribution": "Nfiriduwa Nkyekyɛmu",
+      "moreChains": "nfiriduwa pii",
+      "liquidityPools": "DEX Pools",
+      "liquidityDescription": "Gua ahorow a ɛyɛ adwuma wɔ DEX so",
+      "pools": "pools",
+      "lastUpdated": "Bere a wɔyɛɛ foforo",
+      "refresh": "Yɛ Foforo"
     }
   },
   "wiki": {

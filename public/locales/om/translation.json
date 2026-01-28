@@ -152,6 +152,19 @@
       "then": "sana booda",
       "convertTo": "Gara tti Jijjiiri",
       "buyNow": "Amma Biti"
+    },
+    "liveStats": {
+      "badge": "Istaatistiksii Pirotokoolii Kallattii",
+      "title": "Istaatistiksii Tokenii",
+      "description": "Daataa yeroo dhugaa blokchain irraa dhufe kan dhiheessii jijjiirame fi raabsa chaanota deeggaraman hunda irratti mul'isu.",
+      "totalConverted": "Waliigala Jijjiirame",
+      "distribution": "Raabsa Chaanii",
+      "moreChains": "chaanota dabalataa",
+      "liquidityPools": "Poolota Liquidity",
+      "liquidityDescription": "Poolota daldalaa socho'aa DEX hunda irratti",
+      "pools": "poolota",
+      "lastUpdated": "Yeroo dhumaaf kan fooyya'e",
+      "refresh": "Haaromsi"
     }
   },
   "wiki": {

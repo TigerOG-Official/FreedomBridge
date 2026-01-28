@@ -141,6 +141,19 @@
       "then": "sitten",
       "convertTo": "Muunna muotoon",
       "buyNow": "Osta nyt"
+    },
+    "liveStats": {
+      "badge": "Live-protokollatilastot",
+      "title": "Token-tilastot",
+      "description": "Reaaliaikaista dataa lohkoketjusta, joka näyttää muunnetun tarjonnan ja jakautumisen kaikissa tuetuissa ketjuissa.",
+      "totalConverted": "Yhteensä muunnettu",
+      "distribution": "Ketjujakauma",
+      "moreChains": "lisää ketjuja",
+      "liquidityPools": "Likviditeettipoolit",
+      "liquidityDescription": "Aktiiviset kaupankäyntipoolit DEXeissä",
+      "pools": "poolia",
+      "lastUpdated": "Viimeksi päivitetty",
+      "refresh": "Päivitä"
     }
   },
   "wiki": {

@@ -153,6 +153,19 @@
       "then": "en",
       "convertTo": "Zet om naar",
       "buyNow": "Koop Nu"
+    },
+    "liveStats": {
+      "badge": "Live Protocol Statistieken",
+      "title": "Token Statistieken",
+      "description": "Realtime gegevens van de blockchain die de omgezette voorraad en distributie over alle ondersteunde ketens tonen.",
+      "totalConverted": "Totaal Omgezet",
+      "distribution": "Keten Distributie",
+      "moreChains": "meer ketens",
+      "liquidityPools": "Liquiditeitspools",
+      "liquidityDescription": "Actieve handelspools over DEX'en",
+      "pools": "pools",
+      "lastUpdated": "Laatst bijgewerkt",
+      "refresh": "Vernieuwen"
     }
   },
   "wiki": {

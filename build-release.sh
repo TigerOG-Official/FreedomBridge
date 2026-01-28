@@ -14,6 +14,10 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 DIST_DIR="${SCRIPT_DIR}/dist"
 RELEASE_DIR="${SCRIPT_DIR}/release"
 
+# Get version from package.json
+VERSION=$(node -p "require('./package.json').version")
+echo "📋 Version: v${VERSION} (from package.json)"
+
 echo "============================================"
 echo "Freedom Bridge - Release Builder"
 echo "============================================"
@@ -214,9 +218,9 @@ if [ "${1:-}" = "--all" ]; then
   rm -rf "${SCRIPT_DIR}/pkg/app/dist"
   cp -r "${DIST_DIR}" "${SCRIPT_DIR}/pkg/app/dist"
 
-  # Run goreleaser
-  echo "   Running goreleaser..."
-  goreleaser release --snapshot --clean
+  # Run goreleaser with version from package.json
+  echo "   Running goreleaser (v${VERSION})..."
+  GORELEASER_CURRENT_TAG="v${VERSION}" goreleaser release --snapshot --clean
 
   echo "   ✅ Linux/Windows binaries complete"
 fi

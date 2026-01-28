@@ -152,6 +152,19 @@
       "then": "następnie",
       "convertTo": "Konwertuj na",
       "buyNow": "Kup Teraz"
+    },
+    "liveStats": {
+      "badge": "Statystyki Protokołu na Żywo",
+      "title": "Statystyki Tokena",
+      "description": "Dane w czasie rzeczywistym z blockchaina pokazujące przekonwertowaną podaż i dystrybucję we wszystkich obsługiwanych łańcuchach.",
+      "totalConverted": "Suma Przekonwertowana",
+      "distribution": "Dystrybucja w Łańcuchach",
+      "moreChains": "więcej łańcuchów",
+      "liquidityPools": "Pule Płynności",
+      "liquidityDescription": "Aktywne pule handlowe na giełdach DEX",
+      "pools": "pule",
+      "lastUpdated": "Ostatnia aktualizacja",
+      "refresh": "Odświež"
     }
   },
   "wiki": {

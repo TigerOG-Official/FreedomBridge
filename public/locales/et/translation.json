@@ -141,6 +141,19 @@
       "then": "seejärel",
       "convertTo": "Teisenda",
       "buyNow": "Osta kohe"
+    },
+    "liveStats": {
+      "badge": "Protokolli reaalajas statistika",
+      "title": "Tokenite statistika",
+      "description": "Reaalajas andmed plokiahelast, mis näitavad teisendatud varusid ja jaotust kõigis toetatud ahelates.",
+      "totalConverted": "Kokku teisendatud",
+      "distribution": "Jaotus ahelate vahel",
+      "moreChains": "veel ahelaid",
+      "liquidityPools": "Likviidsusbasseinid",
+      "liquidityDescription": "Aktiivsed kauplemisbasseinid DEX-ides",
+      "pools": "basseinid",
+      "lastUpdated": "Viimati uuendatud",
+      "refresh": "Värskenda"
     }
   },
   "wiki": {

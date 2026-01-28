@@ -141,6 +141,19 @@
       "then": "sau đó",
       "convertTo": "Chuyển đổi sang",
       "buyNow": "Mua ngay"
+    },
+    "liveStats": {
+      "badge": "Thống kê giao thức trực tiếp",
+      "title": "Thống kê Token",
+      "description": "Dữ liệu thời gian thực từ blockchain hiển thị nguồn cung đã chuyển đổi và phân phối trên tất cả các chuỗi được hỗ trợ.",
+      "totalConverted": "Tổng cộng đã chuyển đổi",
+      "distribution": "Phân bổ chuỗi",
+      "moreChains": "thêm chuỗi",
+      "liquidityPools": "Pool thanh khoản",
+      "liquidityDescription": "Các pool giao dịch đang hoạt động trên các DEX",
+      "pools": "pool",
+      "lastUpdated": "Cập nhật lần cuối",
+      "refresh": "Làm mới"
     }
   },
   "wiki": {

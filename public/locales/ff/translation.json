@@ -141,6 +141,19 @@
       "then": "caggal",
       "convertTo": "Waylu fayde",
       "buyNow": "Soodo Jooni"
+    },
+    "liveStats": {
+      "badge": "Limoore Protocol Live",
+      "title": "Limoore Token",
+      "description": "Kabaruuji waktu gooto daga blockchain kollooji supply waylaaɗo e distribution dow kala chains tawaaɗi.",
+      "totalConverted": "Fof Waylaama",
+      "distribution": "Chain Distribution",
+      "moreChains": "chains goɗɗi",
+      "liquidityPools": "Liquidity Pools",
+      "liquidityDescription": "Pools jago gollotooɗi dow DEXs",
+      "pools": "pools",
+      "lastUpdated": "Hesɗitinaa sakkitorde",
+      "refresh": "Hesɗitin"
     }
   },
   "wiki": {

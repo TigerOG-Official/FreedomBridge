@@ -141,6 +141,19 @@
       "then": "tapos",
       "convertTo": "I-convert sa",
       "buyNow": "Bumili Ngayon"
+    },
+    "liveStats": {
+      "badge": "Live Protocol Stats",
+      "title": "Mga Stat ng Token",
+      "description": "Real-time na data mula sa blockchain na nagpapakita ng na-convert na supply at pamamahagi sa lahat ng suportadong chain.",
+      "totalConverted": "Kabuuang Na-convert",
+      "distribution": "Pamamahagi ng Chain",
+      "moreChains": "higit pang mga chain",
+      "liquidityPools": "Mga Liquidity Pool",
+      "liquidityDescription": "Mga aktibong trading pool sa buong DEX",
+      "pools": "mga pool",
+      "lastUpdated": "Huling na-update",
+      "refresh": "I-refresh"
     }
   },
   "wiki": {

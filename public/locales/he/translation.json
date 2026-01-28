@@ -142,6 +142,19 @@
       "then": "ואז",
       "convertTo": "המר ל",
       "buyNow": "קנה עכשיו"
+    },
+    "liveStats": {
+      "badge": "סטטיסטיקות פרוטוקול בזמן אמת",
+      "title": "סטטיסטיקות אסימון",
+      "description": "נתונים בזמן אמת מהבלוקצ'יין המציגים את האספקה המומרת וההפצה בכל השרשראות הנתמכות.",
+      "totalConverted": "סך הכל הומר",
+      "distribution": "הפצת שרשרת",
+      "moreChains": "עוד שרשראות",
+      "liquidityPools": "מאגרי נזילות",
+      "liquidityDescription": "מאגרי מסחר פעילים ב-DEXים",
+      "pools": "מאגרים",
+      "lastUpdated": "עודכן לאחרונה",
+      "refresh": "רענן"
     }
   },
   "wiki": {

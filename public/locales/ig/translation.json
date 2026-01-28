@@ -142,6 +142,19 @@
       "then": "wee",
       "convertTo": "Tụgharịa na",
       "buyNow": "Zụta Ugbu A"
+    },
+    "liveStats": {
+      "badge": "Ọnụ Ọgụgụ Protocol Dị Ndụ",
+      "title": "Ọnụ Ọgụgụ Akara Ngosi",
+      "description": "Data oge a na-enweta na blockchain na-egosi ọkọnọ atụgharịrị na nkesa n'ofe netwọk niile akwadoro.",
+      "totalConverted": "Ngụkọta Atụgharịrị",
+      "distribution": "Nkesa Yinye",
+      "moreChains": "yinye ndị ọzọ",
+      "liquidityPools": "Ọdọ Mmiri",
+      "liquidityDescription": "Ọdọ mmiri azụmahịa na-arụ ọrụ n'ofe DEXs",
+      "pools": "ọdọ mmiri",
+      "lastUpdated": "Emelitere ikpeazụ",
+      "refresh": "Mee ka ọ dị ọhụrụ"
     }
   },
   "wiki": {

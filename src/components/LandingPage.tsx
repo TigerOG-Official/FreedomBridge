@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { lazy, Suspense } from "react";
 import { Button } from "./ui/button";
 import { motion } from "motion/react";
 import {
@@ -7,13 +8,15 @@ import {
   ShieldCheck,
   Zap,
   Rocket,
-  ArrowRight,
   Book,
   ExternalLink,
   ShoppingCart
 } from "lucide-react";
 import { useTranslation, Trans } from "react-i18next";
 import chainsConfig from "../config/chains.json";
+
+// Lazy load StatsSection to avoid blocking initial render
+const StatsSection = lazy(() => import("./landing/StatsSection"));
 
 export default function LandingPage() {
   const navigate = useNavigate();
@@ -87,7 +90,7 @@ export default function LandingPage() {
       </section>
 
       {/* Stats Bar */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
@@ -112,6 +115,24 @@ export default function LandingPage() {
            </div>
         </div>
       </motion.div>
+
+      {/* Live Token Stats Section - Lazy loaded */}
+      <Suspense fallback={
+        <section className="relative z-10 max-w-7xl mx-auto px-4 pb-32 w-full">
+          <div className="mb-12 text-center">
+            <div className="h-6 w-40 bg-muted/20 animate-pulse rounded-full mx-auto mb-4" />
+            <div className="h-12 w-64 bg-muted/20 animate-pulse rounded mx-auto mb-6" />
+            <div className="h-6 w-96 bg-muted/20 animate-pulse rounded mx-auto" />
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[1, 2, 3].map((i) => (
+              <div key={i} className="bento-card p-6 h-64 animate-pulse" />
+            ))}
+          </div>
+        </section>
+      }>
+        <StatsSection />
+      </Suspense>
 
       {/* Features Section */}
       <section id="features" className="relative z-10 max-w-7xl mx-auto px-4 pb-32 w-full">

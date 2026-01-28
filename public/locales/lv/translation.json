@@ -152,6 +152,19 @@
       "then": "tad",
       "convertTo": "Konvertēt uz",
       "buyNow": "Pirkt Tagad"
+    },
+    "liveStats": {
+      "badge": "Tiešraides Protokola Statistika",
+      "title": "Tokenu Statistika",
+      "description": "Reāllaika dati no blokķēdes, kas parāda konvertēto piedāvājumu un sadalījumu visās atbalstītajās ķēdēs.",
+      "totalConverted": "Kopā Konvertēts",
+      "distribution": "Ķēdes Sadalījums",
+      "moreChains": "vairāk ķēžu",
+      "liquidityPools": "Likviditātes Fondi",
+      "liquidityDescription": "Aktīvie tirdzniecības fondi visos DEX",
+      "pools": "fondi",
+      "lastUpdated": "Pēdējo reizi atjaunināts",
+      "refresh": "Atsvaidzināt"
     }
   },
   "wiki": {

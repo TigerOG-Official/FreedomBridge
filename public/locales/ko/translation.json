@@ -141,6 +141,19 @@
       "then": "그 다음",
       "convertTo": "변환하기",
       "buyNow": "지금 구매"
+    },
+    "liveStats": {
+      "badge": "라이브 프로토콜 통계",
+      "title": "토큰 통계",
+      "description": "지원되는 모든 체인에 걸쳐 변환된 공급량 및 분포를 보여주는 블록체인의 실시간 데이터.",
+      "totalConverted": "총 변환됨",
+      "distribution": "체인 분포",
+      "moreChains": "더 많은 체인",
+      "liquidityPools": "유동성 풀",
+      "liquidityDescription": "DEX 전반의 활성 거래 풀",
+      "pools": "풀",
+      "lastUpdated": "마지막 업데이트",
+      "refresh": "새로고침"
     }
   },
   "wiki": {

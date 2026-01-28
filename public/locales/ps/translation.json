@@ -152,6 +152,19 @@
       "then": "بیا",
       "convertTo": "ته بدل کړئ",
       "buyNow": "اوس وپیرئ"
+    },
+    "liveStats": {
+      "badge": "د ژوندۍ پروتوکول احصایې",
+      "title": "د ټوکن احصایې",
+      "description": "د بلاکچین څخه د ریښتیني وخت ډیټا چې په ټولو ملاتړ شوي زنځیرونو کې بدل شوي عرضه او ویش ښیې.",
+      "totalConverted": "ټول بدل شوي",
+      "distribution": "د زنځیر ویش",
+      "moreChains": "نور زنځیرونه",
+      "liquidityPools": "د مایع حوضونه",
+      "liquidityDescription": "په DEXs کې فعال سوداګریز حوضونه",
+      "pools": "حوضونه",
+      "lastUpdated": "وروستی تازه",
+      "refresh": "تازه کول"
     }
   },
   "wiki": {

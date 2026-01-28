@@ -142,6 +142,19 @@
       "then": "pastaj",
       "convertTo": "Konverto në",
       "buyNow": "Bli Tani"
+    },
+    "liveStats": {
+      "badge": "Statistikat e Protokollit Live",
+      "title": "Statistikat e Token-it",
+      "description": "Të dhëna në kohë reale nga blockchain që tregojnë furnizimin e konvertuar dhe shpërndarjen në të gjithë zinxhirët e mbështetur.",
+      "totalConverted": "Total i Konvertuar",
+      "distribution": "Shpërndarja e Zinxhirit",
+      "moreChains": "më shumë zinxhirë",
+      "liquidityPools": "Pishinat e Likuiditetit",
+      "liquidityDescription": "Pishinat aktive të tregtimit në të gjithë DEX-et",
+      "pools": "pishina",
+      "lastUpdated": "Përditësuar së fundmi",
+      "refresh": "Rifresko"
     }
   },
   "wiki": {

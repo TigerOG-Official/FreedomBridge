@@ -142,6 +142,19 @@
       "then": "obva",
       "convertTo": "Shandura kuita",
       "buyNow": "Tenga Iye Zvino"
+    },
+    "liveStats": {
+      "badge": "Nhamba dzeProtokol dzeKurarama",
+      "title": "Nhamba dzeToken",
+      "description": "Data yenguva chaiyo kubva kublockchain inoratidza kupa kwakashandurwa uye kugoverwa mumanetiweki ese anotsigirwa.",
+      "totalConverted": "Zvese zvakashandurwa",
+      "distribution": "Kugoverwa kweCheni",
+      "moreChains": "mamwe maketani",
+      "liquidityPools": "Madziva eMari",
+      "liquidityDescription": "Madziva ekutengesa ari kushanda mumaDEX",
+      "pools": "madziva",
+      "lastUpdated": "Yakagadziriswa",
+      "refresh": "Zorodza"
     }
   },
   "wiki": {

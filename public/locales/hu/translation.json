@@ -144,6 +144,19 @@
       "then": "majd",
       "convertTo": "Átváltás erre",
       "buyNow": "Vásárlás most"
+    },
+    "liveStats": {
+      "badge": "Élő Protokoll Statisztikák",
+      "title": "Token Statisztikák",
+      "description": "Valós idejű adatok a blokkláncról, amelyek az átváltott kínálatot és az elosztást mutatják minden támogatott láncon.",
+      "totalConverted": "Összesen Átváltva",
+      "distribution": "Lánc Elosztás",
+      "moreChains": "több lánc",
+      "liquidityPools": "Likviditási Poolok",
+      "liquidityDescription": "Aktív kereskedési poolok DEX-eken",
+      "pools": "poolok",
+      "lastUpdated": "Utoljára frissítve",
+      "refresh": "Frissítés"
     }
   },
   "wiki": {

@@ -142,6 +142,19 @@
       "then": "फिर",
       "convertTo": "में कन्वर्ट करें",
       "buyNow": "अभी खरीदें"
+    },
+    "liveStats": {
+      "badge": "लाइव प्रोटोकॉल आँकड़े",
+      "title": "टोकन आँकड़े",
+      "description": "ब्लॉकचेन से रीयल-टाइम डेटा जो सभी समर्थित चेन में परिवर्तित आपूर्ति और वितरण दिखाता है।",
+      "totalConverted": "कुल परिवर्तित",
+      "distribution": "चेन वितरण",
+      "moreChains": "और चेन",
+      "liquidityPools": "तरलता पूल",
+      "liquidityDescription": "DEXs में सक्रिय ट्रेडिंग पूल",
+      "pools": "पूल",
+      "lastUpdated": "अंतिम अद्यतन",
+      "refresh": "ताज़ा करें"
     }
   },
   "wiki": {

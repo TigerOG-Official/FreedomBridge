@@ -152,6 +152,19 @@
       "then": "kemudian",
       "convertTo": "Tukar kepada",
       "buyNow": "Beli Sekarang"
+    },
+    "liveStats": {
+      "badge": "Statistik Protokol Langsung",
+      "title": "Statistik Token",
+      "description": "Data masa nyata dari blok rantai yang menunjukkan bekalan yang ditukar dan pengedaran di semua rantaian yang disokong.",
+      "totalConverted": "Jumlah Ditukar",
+      "distribution": "Pengedaran Rantaian",
+      "moreChains": "lebih banyak rantaian",
+      "liquidityPools": "Kumpulan Kecairan",
+      "liquidityDescription": "Kumpulan perdagangan aktif di seluruh DEX",
+      "pools": "kumpulan",
+      "lastUpdated": "Terakhir dikemas kini",
+      "refresh": "Muat semula"
     }
   },
   "wiki": {

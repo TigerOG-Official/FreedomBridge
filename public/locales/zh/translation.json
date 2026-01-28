@@ -141,6 +141,19 @@
       "then": "然后",
       "convertTo": "转换为",
       "buyNow": "立即购买"
+    },
+    "liveStats": {
+      "badge": "实时协议统计",
+      "title": "代币统计",
+      "description": "来自区块链的实时数据，显示所有支持链上的转换供应量和分布情况。",
+      "totalConverted": "总转换量",
+      "distribution": "链上分布",
+      "moreChains": "更多链",
+      "liquidityPools": "流动性池",
+      "liquidityDescription": "各 DEX 上的活跃交易池",
+      "pools": "资金池",
+      "lastUpdated": "最后更新",
+      "refresh": "刷新"
     }
   },
   "wiki": {

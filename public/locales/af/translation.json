@@ -141,6 +141,19 @@
       "then": "dan",
       "convertTo": "Skakel om na",
       "buyNow": "Koop Nou"
+    },
+    "liveStats": {
+      "badge": "Regstreekse Protokolstatistiek",
+      "title": "Tokenstatistiek",
+      "description": "Intydse data vanaf die blokketting wat omskakelde aanbod en verspreiding oor alle ondersteunde netwerke toon.",
+      "totalConverted": "Totaal Omskep",
+      "distribution": "Netwerkverspreiding",
+      "moreChains": "meer netwerke",
+      "liquidityPools": "Likiditeitspoele",
+      "liquidityDescription": "Aktiewe handelspoele oor DEX'e",
+      "pools": "poele",
+      "lastUpdated": "Laas opgedateer",
+      "refresh": "Verfris"
     }
   },
   "wiki": {

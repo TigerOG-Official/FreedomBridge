@@ -141,6 +141,19 @@
       "then": "ከዚያ",
       "convertTo": "ወደ",
       "buyNow": "አሁን ግዛ"
+    },
+    "liveStats": {
+      "badge": "የፕሮቶኮል ስታቲስቲክስ",
+      "title": "የቶከን ስታቲስቲክስ",
+      "description": "በሁሉም የተደገፉ ሰንሰለቶች ላይ የተቀየረ አቅርቦት እና ስርጭትን የሚያሳይ ከብሎክቼይን የመጣ የቀጥታ መረጃ።",
+      "totalConverted": "ጠቅላላ የተቀየረ",
+      "distribution": "የሰንሰለት ስርጭት",
+      "moreChains": "ተጨማሪ ሰንሰለቶች",
+      "liquidityPools": "የፈሳሽ ገንዳዎች",
+      "liquidityDescription": "በDEXs ላይ ያሉ ንቁ የንግድ ገንዳዎች",
+      "pools": "ገንዳዎች",
+      "lastUpdated": "መጨረሻ የተሻሻለው",
+      "refresh": "አድስ"
     }
   },
   "wiki": {

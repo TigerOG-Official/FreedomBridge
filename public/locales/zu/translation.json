@@ -141,6 +141,19 @@
       "then": "bese",
       "convertTo": "Guqulela ku",
       "buyNow": "Thenga Manje"
+    },
+    "liveStats": {
+      "badge": "Izibalo Ze-Protocol Ezibukhoma",
+      "title": "Izibalo Ze-Token",
+      "description": "Idatha yesikhathi sangempela evela ku-blockchain ebonisa ukunikezwa okuguquliwe nokusatshalaliswa kuwo wonke amaketanga asekelwayo.",
+      "totalConverted": "Ingqikithi Eguquliwe",
+      "distribution": "Ukusatshalaliswa Kweketanga",
+      "moreChains": "amaketanga engeziwe",
+      "liquidityPools": "Amachibi Okungena",
+      "liquidityDescription": "Amachibi okuhweba asebenzayo kuwo wonke ama-DEX",
+      "pools": "amachibi",
+      "lastUpdated": "Kugcine ukubuyekezwa",
+      "refresh": "Vuselela"
     }
   },
   "wiki": {

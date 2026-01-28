@@ -141,6 +141,19 @@
       "then": "hanyuma",
       "convertTo": "Hindura muri",
       "buyNow": "Gura Ubu"
+    },
+    "liveStats": {
+      "badge": "Ibiranga Protocol Imbonankubone",
+      "title": "Ibiranga Token",
+      "description": "Amakuru y'ako kanya avuye kuri blockchain yerekana ingano yahinduwe n'iyakwirakwijwe ku minyururu yose ishyigikiwe.",
+      "totalConverted": "Igiteranyo Cyahinduwe",
+      "distribution": "Ikubitiro rya Chain",
+      "moreChains": "iminyururu myinshi",
+      "liquidityPools": "Ibidendezi by'Imari",
+      "liquidityDescription": "Ibidendezi by'ubucuruzi bikora kuri DEX",
+      "pools": "ibidendezi",
+      "lastUpdated": "Iheruka kuvugururwa",
+      "refresh": "Vugurura"
     }
   },
   "wiki": {

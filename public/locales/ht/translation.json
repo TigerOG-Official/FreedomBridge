@@ -144,6 +144,19 @@
       "then": "epi",
       "convertTo": "Konvèti an",
       "buyNow": "Achte Kounye a"
+    },
+    "liveStats": {
+      "badge": "Estatistik Pwotokòl an Dirèk",
+      "title": "Estatistik Token",
+      "description": "Done an tan reyèl soti nan blòkchèn nan ki montre pwovizyon konvèti ak distribisyon atravè tout chèn sipòte yo.",
+      "totalConverted": "Total Konvèti",
+      "distribution": "Distribisyon Chèn",
+      "moreChains": "plis chèn",
+      "liquidityPools": "Pisin Likidite",
+      "liquidityDescription": "Pisin komès aktif atravè DEX yo",
+      "pools": "pisin",
+      "lastUpdated": "Dènye Mizajou",
+      "refresh": "Rafrechi"
     }
   },
   "wiki": {

@@ -142,6 +142,19 @@
       "then": "sannan",
       "convertTo": "Musanya zuwa",
       "buyNow": "Saya Yanzu"
+    },
+    "liveStats": {
+      "badge": "Kididdigar Protocol na Live",
+      "title": "Kididdigar Token",
+      "description": "Bayanan lokaci na gaske daga blockchain da ke nuna wadatar da aka canza da rarrabawa a duk faɗin sarƙoƙi masu tallafi.",
+      "totalConverted": "Jimlar An Canza",
+      "distribution": "Rarraba Sarka",
+      "moreChains": "ƙarin sarƙoƙi",
+      "liquidityPools": "Pools na Ruwan Kuɗi",
+      "liquidityDescription": "Pools na ciniki masu aiki a duk faɗin DEXs",
+      "pools": "pools",
+      "lastUpdated": "Sabuntawar ƙarshe",
+      "refresh": "Sabunta"
     }
   },
   "wiki": {

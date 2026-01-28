@@ -152,6 +152,19 @@
       "then": "avy eo",
       "convertTo": "Ovay ho",
       "buyNow": "Vidio Izao"
+    },
+    "liveStats": {
+      "badge": "Antontan'isa Protokol Mivantana",
+      "title": "Antontan'isa Token",
+      "description": "Angona amin'ny fotoana tena izy avy amin'ny blockchain mampiseho ny famatsiana novaina sy ny fitsinjarana manerana ny rojo tohana rehetra.",
+      "totalConverted": "Totaly Novaina",
+      "distribution": "Fitsinjarana Rojo",
+      "moreChains": "rojo bebe kokoa",
+      "liquidityPools": "Dobo Liquidity",
+      "liquidityDescription": "Dobo varotra mavitrika manerana ny DEX",
+      "pools": "dobo",
+      "lastUpdated": "Nohavaozina farany",
+      "refresh": "Havaozy"
     }
   },
   "wiki": {

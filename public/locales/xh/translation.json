@@ -141,6 +141,19 @@
       "then": "ke",
       "convertTo": "Guqulela kwi",
       "buyNow": "Thenga Ngoku"
+    },
+    "liveStats": {
+      "badge": "Iinkcukacha zeProtocol ezibukhoma",
+      "title": "Iinkcukacha zeToken",
+      "description": "Idatha yexesha loqobo evela kwi-blockchain ebonisa ubonelelo oluguquliweyo kunye nokunikezelwa kuwo onke amakhonkco axhaswayo.",
+      "totalConverted": "Iyonke eguquliweyo",
+      "distribution": "Unikezelo lweKhonkco",
+      "moreChains": "amakhonkco angaphezulu",
+      "liquidityPools": "Amachibi oBumanzi",
+      "liquidityDescription": "Amachibi okurhweba asebenzayo kuzo zonke ii-DEX",
+      "pools": "amachibi",
+      "lastUpdated": "Igqitywe ukuhlaziywa",
+      "refresh": "Hlaziya"
     }
   },
   "wiki": {

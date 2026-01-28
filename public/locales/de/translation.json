@@ -141,6 +141,19 @@
       "then": "dann",
       "convertTo": "Konvertieren zu",
       "buyNow": "Jetzt kaufen"
+    },
+    "liveStats": {
+      "badge": "Live-Protokollstatistiken",
+      "title": "Token-Statistiken",
+      "description": "Echtzeitdaten aus der Blockchain, die das konvertierte Angebot und die Verteilung über alle unterstützten Ketten zeigen.",
+      "totalConverted": "Gesamt konvertiert",
+      "distribution": "Kettenverteilung",
+      "moreChains": "weitere Ketten",
+      "liquidityPools": "Liquiditätspools",
+      "liquidityDescription": "Aktive Handelspools über DEXs",
+      "pools": "Pools",
+      "lastUpdated": "Zuletzt aktualisiert",
+      "refresh": "Aktualisieren"
     }
   },
   "wiki": {

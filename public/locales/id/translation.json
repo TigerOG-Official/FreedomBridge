@@ -144,6 +144,19 @@
       "then": "lalu",
       "convertTo": "Konversi ke",
       "buyNow": "Beli Sekarang"
+    },
+    "liveStats": {
+      "badge": "Statistik Protokol Langsung",
+      "title": "Statistik Token",
+      "description": "Data real-time dari blockchain yang menunjukkan pasokan yang dikonversi dan distribusi di semua rantai yang didukung.",
+      "totalConverted": "Total Dikonversi",
+      "distribution": "Distribusi Rantai",
+      "moreChains": "rantai lainnya",
+      "liquidityPools": "Pool Likuiditas",
+      "liquidityDescription": "Pool perdagangan aktif di seluruh DEX",
+      "pools": "pool",
+      "lastUpdated": "Terakhir diperbarui",
+      "refresh": "Segarkan"
     }
   },
   "wiki": {

@@ -141,6 +141,19 @@
       "then": "o kɔ",
       "convertTo": "Yɛlɛma ka kɛ",
       "buyNow": "San Sisan"
+    },
+    "liveStats": {
+      "badge": "Porotokɔli Kibaruw",
+      "title": "Token Kibaruw",
+      "description": "Kibaruw blockchain kan min bɛ yɛlɛmani ni jɛnsenni jira chainw kan.",
+      "totalConverted": "Yɛlɛmani Bɛɛ",
+      "distribution": "Chain Jɛnsenni",
+      "moreChains": "chain wɛrɛw",
+      "liquidityPools": "Liquidity Pools",
+      "liquidityDescription": "Sanni ni feere yɔrɔw DEX kan",
+      "pools": "pools",
+      "lastUpdated": "Yɛlɛmani laban",
+      "refresh": "Yɛlɛma"
     }
   },
   "wiki": {

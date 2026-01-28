@@ -152,6 +152,19 @@
       "then": "ਫਿਰ",
       "convertTo": "ਵਿੱਚ ਤਬਦੀਲ ਕਰੋ",
       "buyNow": "ਹੁਣੇ ਖਰੀਦੋ"
+    },
+    "liveStats": {
+      "badge": "ਲਾਈਵ ਪ੍ਰੋਟੋਕੋਲ ਅੰਕੜੇ",
+      "title": "ਟੋਕਨ ਅੰਕੜੇ",
+      "description": "ਬਲਾਕਚੈਨ ਤੋਂ ਰੀਅਲ-ਟਾਈਮ ਡੇਟਾ ਜੋ ਸਾਰੀਆਂ ਸਮਰਥਿਤ ਚੇਨਾਂ ਵਿੱਚ ਤਬਦੀਲ ਕੀਤੀ ਸਪਲਾਈ ਅਤੇ ਵੰਡ ਨੂੰ ਦਰਸਾਉਂਦਾ ਹੈ।",
+      "totalConverted": "ਕੁੱਲ ਤਬਦੀਲ",
+      "distribution": "ਚੇਨ ਵੰਡ",
+      "moreChains": "ਹੋਰ ਚੇਨਾਂ",
+      "liquidityPools": "ਤਰਲਤਾ ਪੂਲ",
+      "liquidityDescription": "DEXs ਵਿੱਚ ਸਰਗਰਮ ਵਪਾਰਕ ਪੂਲ",
+      "pools": "ਪੂਲ",
+      "lastUpdated": "ਆਖਰੀ ਅੱਪਡੇਟ",
+      "refresh": "ਤਾਜ਼ਾ ਕਰੋ"
     }
   },
   "wiki": {

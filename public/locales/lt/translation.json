@@ -141,6 +141,19 @@
       "then": "tada",
       "convertTo": "Konvertuoti į",
       "buyNow": "Pirkti Dabar"
+    },
+    "liveStats": {
+      "badge": "Gyvo Protokolo Statistika",
+      "title": "Žetonų Statistika",
+      "description": "Realaus laiko duomenys iš blokų grandinės, rodantys konvertuotą pasiūlą ir pasiskirstymą visose palaikomose grandinėse.",
+      "totalConverted": "Iš Viso Konvertuota",
+      "distribution": "Grandinės Pasiskirstymas",
+      "moreChains": "daugiau grandinių",
+      "liquidityPools": "Likvidumo Fondai",
+      "liquidityDescription": "Aktyvūs prekybos fondai DEX",
+      "pools": "fondai",
+      "lastUpdated": "Paskutinį kartą atnaujinta",
+      "refresh": "Atnaujinti"
     }
   },
   "wiki": {

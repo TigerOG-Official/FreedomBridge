@@ -141,6 +141,19 @@
       "then": "kisha",
       "convertTo": "Badilisha kuwa",
       "buyNow": "Nunua Sasa"
+    },
+    "liveStats": {
+      "badge": "Takwimu za Protokol Moja kwa Moja",
+      "title": "Takwimu za Tokeni",
+      "description": "Data ya wakati halisi kutoka kwa blockchain inayoonyesha usambazaji uliobadilishwa na mgawanyo kwenye minyororo yote inayoungwa mkono.",
+      "totalConverted": "Jumla Iliyobadilishwa",
+      "distribution": "Mgawanyo wa Mnyororo",
+      "moreChains": "minyororo zaidi",
+      "liquidityPools": "Mabwawa ya Ukwasi",
+      "liquidityDescription": "Mabwawa ya biashara yanayofanya kazi kwenye DEX",
+      "pools": "mabwawa",
+      "lastUpdated": "Ilisasishwa mwisho",
+      "refresh": "Refresh"
     }
   },
   "wiki": {

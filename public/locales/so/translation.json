@@ -142,6 +142,19 @@
       "then": "ka dibna",
       "convertTo": "U beddel",
       "buyNow": "Iibso Hadda"
+    },
+    "liveStats": {
+      "badge": "Tirooyinka Protocol-ka ee Tooska ah",
+      "title": "Tirooyinka Token-ka",
+      "description": "Xogta waqtiga dhabta ah ee blockchain oo muujinaysa sahayda la beddelay iyo qaybinta dhammaan silsiladaha la taageeray.",
+      "totalConverted": "Wadarta la Beddelay",
+      "distribution": "Qaybinta Silsiladda",
+      "moreChains": "silsilado badan",
+      "liquidityPools": "Barkadaha Dareeraha",
+      "liquidityDescription": "Barkadaha ganacsiga ee firfircoon ee DEX-yada",
+      "pools": "barkado",
+      "lastUpdated": "Cusboonaysiintii ugu dambaysay",
+      "refresh": "Cusboonaysii"
     }
   },
   "wiki": {

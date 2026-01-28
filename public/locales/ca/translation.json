@@ -141,6 +141,19 @@
       "then": "després",
       "convertTo": "Convertir a",
       "buyNow": "Comprar Ara"
+    },
+    "liveStats": {
+      "badge": "Estadístiques del Protocol en Viu",
+      "title": "Estadístiques del Token",
+      "description": "Dades en temps real de la blockchain que mostren el subministrament convertit i la distribució en totes les cadenes suportades.",
+      "totalConverted": "Total Convertit",
+      "distribution": "Distribució per Cadena",
+      "moreChains": "més cadenes",
+      "liquidityPools": "Grups de Liquiditat",
+      "liquidityDescription": "Grups de negociació actius en DEXs",
+      "pools": "grups",
+      "lastUpdated": "Última actualització",
+      "refresh": "Actualitzar"
     }
   },
   "wiki": {

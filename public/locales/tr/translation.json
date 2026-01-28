@@ -141,6 +141,19 @@
       "then": "sonra",
       "convertTo": "Şuna Dönüştür:",
       "buyNow": "Şimdi Satın Al"
+    },
+    "liveStats": {
+      "badge": "Canlı Protokol İstatistikleri",
+      "title": "Token İstatistikleri",
+      "description": "Desteklenen tüm zincirlerde dönüştürülen arzı ve dağılımı gösteren blok zincirinden gerçek zamanlı veriler.",
+      "totalConverted": "Toplam Dönüştürülen",
+      "distribution": "Zincir Dağılımı",
+      "moreChains": "daha fazla zincir",
+      "liquidityPools": "Likvidite Havuzları",
+      "liquidityDescription": "DEX'lerdeki aktif işlem havuzları",
+      "pools": "havuzlar",
+      "lastUpdated": "Son güncelleme",
+      "refresh": "Yenile"
     }
   },
   "wiki": {

@@ -142,6 +142,19 @@
       "then": "その後",
       "convertTo": "に変換",
       "buyNow": "今すぐ購入"
+    },
+    "liveStats": {
+      "badge": "ライブプロトコル統計",
+      "title": "トークン統計",
+      "description": "サポートされているすべてのチェーンでの変換済み供給量と分布を示すブロックチェーンからのリアルタイムデータ。",
+      "totalConverted": "総変換数",
+      "distribution": "チェーン分布",
+      "moreChains": "他のチェーン",
+      "liquidityPools": "流動性プール",
+      "liquidityDescription": "DEX全体のアクティブな取引プール",
+      "pools": "プール",
+      "lastUpdated": "最終更新",
+      "refresh": "更新"
     }
   },
   "wiki": {

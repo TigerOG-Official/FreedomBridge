@@ -142,6 +142,19 @@
       "then": "sedan",
       "convertTo": "Konvertera till",
       "buyNow": "Köp Nu"
+    },
+    "liveStats": {
+      "badge": "Live Protokollstatistik",
+      "title": "Tokenstatistik",
+      "description": "Realtidsdata från blockkedjan som visar konverterat utbud och distribution över alla stödda kedjor.",
+      "totalConverted": "Totalt Konverterat",
+      "distribution": "Kedjedistribution",
+      "moreChains": "fler kedjor",
+      "liquidityPools": "Likviditetspooler",
+      "liquidityDescription": "Aktiva handelspooler över DEX",
+      "pools": "pooler",
+      "lastUpdated": "Senast uppdaterad",
+      "refresh": "Uppdatera"
     }
   },
   "wiki": {

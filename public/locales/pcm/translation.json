@@ -153,6 +153,19 @@
       "then": "then",
       "convertTo": "Change to",
       "buyNow": "Buy Now"
+    },
+    "liveStats": {
+      "badge": "Live Protocol Stats",
+      "title": "Token Stats",
+      "description": "Real-time data from blockchain wey show converted supply and distribution across all supported chains.",
+      "totalConverted": "Total Wey Convert",
+      "distribution": "Chain Distribution",
+      "moreChains": "more chains",
+      "liquidityPools": "Liquidity Pools",
+      "liquidityDescription": "Active trading pools across DEXs",
+      "pools": "pools",
+      "lastUpdated": "Last updated",
+      "refresh": "Refresh"
     }
   },
   "wiki": {

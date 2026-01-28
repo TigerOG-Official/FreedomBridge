@@ -144,6 +144,19 @@
       "then": "zatim",
       "convertTo": "Pretvorite u",
       "buyNow": "Kupite sada"
+    },
+    "liveStats": {
+      "badge": "Statistika protokola uživo",
+      "title": "Statistika tokena",
+      "description": "Podaci u stvarnom vremenu s blockchaina koji prikazuju pretvorenu ponudu i distribuciju na svim podržanim lancima.",
+      "totalConverted": "Ukupno Pretvoreno",
+      "distribution": "Distribucija Lanca",
+      "moreChains": "više lanaca",
+      "liquidityPools": "Likvidnosni Bazeni",
+      "liquidityDescription": "Aktivni bazeni za trgovanje na DEX-ovima",
+      "pools": "bazeni",
+      "lastUpdated": "Zadnje ažurirano",
+      "refresh": "Osvježi"
     }
   },
   "wiki": {

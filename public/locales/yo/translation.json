@@ -141,6 +141,19 @@
       "then": "lẹhinna",
       "convertTo": "Yi pada si",
       "buyNow": "Ra Bayi"
+    },
+    "liveStats": {
+      "badge": "Awọn iṣiro Ilana Live",
+      "title": "Awọn iṣiro Token",
+      "description": "Data akoko gidi lati inu blockchain ti n ṣafihan ipese ti o yipada ati pinpin kọja gbogbo awọn ẹwọn atilẹyin.",
+      "totalConverted": "Lapapọ Iyipada",
+      "distribution": "Pipin Pq",
+      "moreChains": "awọn ẹwọn diẹ sii",
+      "liquidityPools": "Awọn adagun Liquidity",
+      "liquidityDescription": "Awọn adagun iṣowo ti nṣiṣe lọwọ kọja awọn DEX",
+      "pools": "awọn adagun",
+      "lastUpdated": "Imudojuiwọn to kẹhin",
+      "refresh": "Sọ di otun"
     }
   },
   "wiki": {

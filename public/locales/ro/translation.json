@@ -141,6 +141,19 @@
       "then": "apoi",
       "convertTo": "Convertește în",
       "buyNow": "Cumpără Acum"
+    },
+    "liveStats": {
+      "badge": "Statistici Protocol Live",
+      "title": "Statistici Token",
+      "description": "Date în timp real din blockchain care arată oferta convertită și distribuția pe toate rețelele acceptate.",
+      "totalConverted": "Total Convertit",
+      "distribution": "Distribuție pe Rețele",
+      "moreChains": "mai multe rețele",
+      "liquidityPools": "Pool-uri de Lichiditate",
+      "liquidityDescription": "Pool-uri de tranzacționare active pe DEX-uri",
+      "pools": "pool-uri",
+      "lastUpdated": "Ultima actualizare",
+      "refresh": "Reîmprospătează"
     }
   },
   "wiki": {

@@ -142,6 +142,19 @@
       "then": "nato",
       "convertTo": "Pretvori v",
       "buyNow": "Kupi Zdaj"
+    },
+    "liveStats": {
+      "badge": "Živa Statistika Protokola",
+      "title": "Statistika Žetonov",
+      "description": "Podatki v realnem času iz verige blokov, ki prikazujejo pretvorjeno ponudbo in porazdelitev po vseh podprtih verigah.",
+      "totalConverted": "Skupaj Pretvoreno",
+      "distribution": "Porazdelitev Verig",
+      "moreChains": "več verig",
+      "liquidityPools": "Likvidnostni Bazeni",
+      "liquidityDescription": "Aktivni trgovalni bazeni po DEX-ih",
+      "pools": "bazeni",
+      "lastUpdated": "Zadnja posodobitev",
+      "refresh": "Osveži"
     }
   },
   "wiki": {

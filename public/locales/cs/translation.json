@@ -141,6 +141,19 @@
       "then": "poté",
       "convertTo": "Převést na",
       "buyNow": "Koupit nyní"
+    },
+    "liveStats": {
+      "badge": "Živé statistiky protokolu",
+      "title": "Statistiky tokenu",
+      "description": "Data v reálném čase z blockchainu ukazující převedenou nabídku a distribuci napříč všemi podporovanými řetězci.",
+      "totalConverted": "Celkem převedeno",
+      "distribution": "Distribuce v řetězcích",
+      "moreChains": "další řetězce",
+      "liquidityPools": "Fondy likvidity",
+      "liquidityDescription": "Aktivní obchodní fondy napříč DEX",
+      "pools": "fondy",
+      "lastUpdated": "Naposledy aktualizováno",
+      "refresh": "Obnovit"
     }
   },
   "wiki": {
