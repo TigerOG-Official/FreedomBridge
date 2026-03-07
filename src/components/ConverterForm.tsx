@@ -282,19 +282,35 @@ const ConverterForm = () => {
   };
 
   const addTokenToWallet = async () => {
-    if (!walletClient || !NEW_TOKEN_ADDRESS || !selectedPair) return;
+    if (!NEW_TOKEN_ADDRESS || !selectedPair) return;
     try {
       setAddingToken(true);
-      await walletClient.watchAsset({
-        type: "ERC20",
+      const params = {
+        type: "ERC20" as const,
         options: {
           address: NEW_TOKEN_ADDRESS,
           decimals: DECIMALS,
           symbol: selectedPair.newSymbol,
         },
-      });
+      };
+
+      // Race against a timeout - some wallets hang on watchAsset
+      const timeoutPromise = new Promise((_, reject) =>
+        setTimeout(() => reject(new Error("timeout")), 15000)
+      );
+
+      // Try walletClient first, fall back to window.ethereum for mobile compatibility
+      const watchPromise = walletClient
+        ? walletClient.watchAsset(params)
+        : window.ethereum?.request({
+            method: "wallet_watchAsset",
+            params: params,
+          });
+
+      if (!watchPromise) return;
+      await Promise.race([watchPromise, timeoutPromise]);
     } catch {
-      // User likely rejected - no error needed
+      // User rejected or timeout - no error needed
     } finally {
       setAddingToken(false);
     }

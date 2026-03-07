@@ -117,6 +117,33 @@ const LIQUIDITY_POOLS = [
     explorerUrl: "https://basescan.org/address/0x6b9667bf054d3d7f48c411b261e35a0dff3c5d77",
     dexUrl: "https://app.uniswap.org/explore/pools/base/0x6b9667bf054d3d7f48c411b261e35a0dff3c5d77",
   },
+  {
+    token: "TigerOG",
+    chainId: 43114,
+    chainName: "Avalanche",
+    dex: "Uniswap",
+    poolAddress: "0xB41a0D21b043ce3355727025519f1934c3d2cF16",
+    explorerUrl: "https://snowtrace.io/address/0xB41a0D21b043ce3355727025519f1934c3d2cF16",
+    dexUrl: "https://app.uniswap.org/explore/pools/avalanche/0xB41a0D21b043ce3355727025519f1934c3d2cF16",
+  },
+  {
+    token: "TigerOG",
+    chainId: 59144,
+    chainName: "Linea",
+    dex: "EthereX",
+    poolAddress: "0xc9d6deb194dd8e3967c27ab14c227c3c74e65741",
+    explorerUrl: "https://lineascan.build/address/0xc9d6deb194dd8e3967c27ab14c227c3c74e65741",
+    dexUrl: "https://www.etherex.finance/liquidity/0xc9d6deb194dd8e3967c27ab14c227c3c74e65741",
+  },
+  {
+    token: "TigerOG",
+    chainId: 137,
+    chainName: "Polygon",
+    dex: "Uniswap",
+    poolAddress: "0xf5B31B7C98bd0B97eE33b28264137B63C3EDEccf",
+    explorerUrl: "https://polygonscan.com/address/0xf5B31B7C98bd0B97eE33b28264137B63C3EDEccf",
+    dexUrl: "https://app.uniswap.org/explore/pools/polygon/0xf5B31B7C98bd0B97eE33b28264137B63C3EDEccf",
+  },
   // LionOG
   {
     token: "LionOG",
@@ -520,58 +547,69 @@ export default function ContractsPage() {
               </div>
             </TabsContent>
 
-            <TabsContent value="liquidity" className="space-y-6">
-              <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-                {LIQUIDITY_POOLS.map((pool, index) => (
-                  <Card key={index} className="border-muted bg-card h-full">
-                    <CardHeader className="pb-3 border-b border-border/40">
-                      <CardTitle className="text-lg flex items-center gap-2">
-                        {CHAIN_ICONS[pool.chainId] && (
-                          <img
-                            src={CHAIN_ICONS[pool.chainId]}
-                            alt={pool.chainName}
-                            className="w-6 h-6 rounded-full"
-                          />
-                        )}
-                        {pool.token} on {pool.chainName}
-                      </CardTitle>
-                      <CardDescription className="text-xs">
-                        {pool.dex}
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent className="pt-4 space-y-4">
-                      <div className="space-y-1">
-                        <div className="font-medium text-sm text-foreground flex justify-between">
-                          <span>{t('contracts.liquidity.poolAddress', 'Pool Address')}</span>
-                        </div>
-                        <div className="text-xs font-mono bg-muted/30 p-2 rounded border border-border/50 flex justify-between items-center group">
-                          <span className="truncate">{pool.poolAddress}</span>
-                          <CopyButton text={pool.poolAddress} className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity" copiedText={t('contracts.copied')} copyText={t('contracts.copyAddress')} />
-                        </div>
-                      </div>
-                      <div className="flex gap-2 pt-2">
-                        <a
-                          href={pool.dexUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex-1 inline-flex items-center justify-center gap-2 px-3 py-2 text-sm font-medium rounded-md bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
-                        >
-                          <Droplets className="w-4 h-4" />
-                          {t('contracts.liquidity.tradeOn', 'Trade on')} {pool.dex}
-                        </a>
-                        <a
-                          href={pool.explorerUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center justify-center gap-2 px-3 py-2 text-sm font-medium rounded-md border border-border hover:bg-muted/50 transition-colors"
-                        >
-                          <ExternalLink className="w-4 h-4" />
-                        </a>
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
+            <TabsContent value="liquidity" className="space-y-8">
+              {Object.entries(
+                LIQUIDITY_POOLS.reduce((acc, pool) => {
+                  if (!acc[pool.token]) acc[pool.token] = [];
+                  acc[pool.token].push(pool);
+                  return acc;
+                }, {} as Record<string, typeof LIQUIDITY_POOLS>)
+              ).map(([token, pools]) => (
+                <div key={token} className="space-y-4">
+                  <h3 className="text-lg font-semibold border-b border-border/40 pb-2">{token}</h3>
+                  <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+                    {pools.map((pool, index) => (
+                      <Card key={index} className="border-muted bg-card h-full">
+                        <CardHeader className="pb-3 border-b border-border/40">
+                          <CardTitle className="text-base flex items-center gap-2">
+                            {CHAIN_ICONS[pool.chainId] && (
+                              <img
+                                src={CHAIN_ICONS[pool.chainId]}
+                                alt={pool.chainName}
+                                className="w-5 h-5 rounded-full"
+                              />
+                            )}
+                            {pool.chainName}
+                          </CardTitle>
+                          <CardDescription className="text-xs">
+                            {pool.dex}
+                          </CardDescription>
+                        </CardHeader>
+                        <CardContent className="pt-3 space-y-3">
+                          <div className="space-y-1">
+                            <div className="font-medium text-xs text-muted-foreground">
+                              {t('contracts.liquidity.poolAddress', 'Pool Address')}
+                            </div>
+                            <div className="text-xs font-mono bg-muted/30 p-2 rounded border border-border/50 flex justify-between items-center group">
+                              <span className="truncate">{pool.poolAddress}</span>
+                              <CopyButton text={pool.poolAddress} className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity" copiedText={t('contracts.copied')} copyText={t('contracts.copyAddress')} />
+                            </div>
+                          </div>
+                          <div className="flex gap-2 pt-1">
+                            <a
+                              href={pool.dexUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="flex-1 inline-flex items-center justify-center gap-2 px-3 py-2 text-xs font-medium rounded-md bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
+                            >
+                              <Droplets className="w-3.5 h-3.5" />
+                              {t('contracts.liquidity.tradeOn', 'Trade on')} {pool.dex}
+                            </a>
+                            <a
+                              href={pool.explorerUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center justify-center gap-2 px-3 py-2 text-xs font-medium rounded-md border border-border hover:bg-muted/50 transition-colors"
+                            >
+                              <ExternalLink className="w-3.5 h-3.5" />
+                            </a>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </TabsContent>
           </Tabs>
 

@@ -626,7 +626,7 @@ function App() {
             </span>
             <span style={{ opacity: 0.4 }}>|</span>
             <a
-              href="https://github.com/TigerOG-Official/FreedomBridge/blob/main/TigerOG%20Whitepaper%201.7.pdf"
+              href="/TigerOG%20Whitepaper%201.7.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:opacity-80 transition-opacity"

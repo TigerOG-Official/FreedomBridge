@@ -1,6 +1,16 @@
 import { useQueries } from "@tanstack/react-query";
-import { createPublicClient, http, parseAbi } from "viem";
-import { bsc, mainnet, base } from "viem/chains";
+import { createPublicClient, http, fallback, parseAbi } from "viem";
+import { bsc, mainnet, base, avalanche, linea, polygon } from "viem/chains";
+import defaultRpcs from "../config/default-rpcs.json";
+
+// Build fallback transport from configured RPCs
+function getTransport(chainId: number) {
+  const rpcs = (defaultRpcs as Record<string, string[]>)[String(chainId)];
+  if (rpcs && rpcs.length > 0) {
+    return fallback(rpcs.map((url) => http(url)));
+  }
+  return http();
+}
 
 // Liquidity pools from ContractsPage
 const LIQUIDITY_POOLS = [
@@ -28,6 +38,30 @@ const LIQUIDITY_POOLS = [
     dex: "Uniswap",
     poolAddress: "0x6b9667bf054d3d7f48c411b261e35a0dff3c5d77" as `0x${string}`,
     dexUrl: "https://app.uniswap.org/explore/pools/base/0x6b9667bf054d3d7f48c411b261e35a0dff3c5d77",
+  },
+  {
+    token: "TigerOG",
+    chainId: 43114,
+    chainName: "Avalanche",
+    dex: "Uniswap",
+    poolAddress: "0xB41a0D21b043ce3355727025519f1934c3d2cF16" as `0x${string}`,
+    dexUrl: "https://app.uniswap.org/explore/pools/avalanche/0xB41a0D21b043ce3355727025519f1934c3d2cF16",
+  },
+  {
+    token: "TigerOG",
+    chainId: 59144,
+    chainName: "Linea",
+    dex: "EthereX",
+    poolAddress: "0xc9d6deb194dd8e3967c27ab14c227c3c74e65741" as `0x${string}`,
+    dexUrl: "https://www.etherex.finance/liquidity/0xc9d6deb194dd8e3967c27ab14c227c3c74e65741",
+  },
+  {
+    token: "TigerOG",
+    chainId: 137,
+    chainName: "Polygon",
+    dex: "Uniswap",
+    poolAddress: "0xf5B31B7C98bd0B97eE33b28264137B63C3EDEccf" as `0x${string}`,
+    dexUrl: "https://app.uniswap.org/explore/pools/polygon/0xf5B31B7C98bd0B97eE33b28264137B63C3EDEccf",
   },
   // LionOG
   {
@@ -86,6 +120,9 @@ const CHAIN_MAP: Record<number, typeof bsc> = {
   56: bsc,
   1: mainnet,
   8453: base,
+  43114: avalanche,
+  59144: linea,
+  137: polygon,
 };
 
 // UniswapV2/PancakeSwap pair ABI for getReserves
@@ -142,7 +179,7 @@ export function useLiquidityStats(): UseLiquidityStatsReturn {
 
           const client = createPublicClient({
             chain,
-            transport: http(),
+            transport: getTransport(chainId),
           });
 
           // Build multicall contracts - 3 calls per pool (reserves, token0, token1)

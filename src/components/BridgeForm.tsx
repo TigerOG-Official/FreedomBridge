@@ -345,22 +345,37 @@ const BridgeForm = () => {
   };
 
   const addDestinationTokenToWallet = async () => {
-    if (!walletClient || !destinationTokenConfig?.tokenAddress || !destinationChainId) {return;}
+    if (!destinationTokenConfig?.tokenAddress || !destinationChainId) {return;}
     try {
       setAddingDestinationToken(true);
-      // watchAsset doesn't require being on the same chain - just add the token directly
-      await walletClient.watchAsset({
-        type: "ERC20",
+      const params = {
+        type: "ERC20" as const,
         options: {
           address: destinationTokenConfig.tokenAddress,
           decimals: destinationTokenConfig.decimals,
           symbol: destinationDisplaySymbol,
         },
-      });
+      };
+
+      // Race against a timeout - some wallets hang on watchAsset
+      const timeoutPromise = new Promise((_, reject) =>
+        setTimeout(() => reject(new Error("timeout")), 15000)
+      );
+
+      // Try walletClient first, fall back to window.ethereum for mobile compatibility
+      const watchPromise = walletClient
+        ? walletClient.watchAsset(params)
+        : window.ethereum?.request({
+            method: "wallet_watchAsset",
+            params: params,
+          });
+
+      if (!watchPromise) return;
+      await Promise.race([watchPromise, timeoutPromise]);
     } catch (err) {
-      // User likely rejected the request - don't show error for user rejections
+      // User rejected, timeout, or unsupported - only show non-rejection errors
       const message = extractErrorMessage(err);
-      if (message && !message.toLowerCase().includes('reject') && !message.toLowerCase().includes('denied')) {
+      if (message && !message.toLowerCase().includes('reject') && !message.toLowerCase().includes('denied') && !message.toLowerCase().includes('timeout')) {
         setError(message ?? t('bridge.addTokenError'));
       }
     } finally {

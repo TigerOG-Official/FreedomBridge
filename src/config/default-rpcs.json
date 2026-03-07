@@ -21,9 +21,9 @@
     "https://rpc.xrplevm.org"
   ],
   "137": [
-    "https://polygon-rpc.com",
     "https://polygon-bor-rpc.publicnode.com",
-    "https://rpc.ankr.com/polygon"
+    "https://rpc.ankr.com/polygon",
+    "https://polygon-rpc.com"
   ],
   "43114": [
     "https://api.avax.network/ext/bc/C/rpc",

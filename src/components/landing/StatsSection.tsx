@@ -85,9 +85,14 @@ export default function StatsSection() {
     return `${minutes}m`;
   };
 
-  // Get price based on chain (BSC uses BNB, others use ETH)
+  // Get native token price based on chain
   const getPriceForChain = (chainId: number): number => {
-    return chainId === 56 ? prices.BNB : prices.ETH;
+    switch (chainId) {
+      case 56: return prices.BNB;
+      case 137: return prices.MATIC;
+      case 43114: return prices.AVAX;
+      default: return prices.ETH; // ETH, Base, Linea
+    }
   };
 
   const handleRefresh = () => {

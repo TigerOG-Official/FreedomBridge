@@ -1,7 +1,17 @@
 import { useQueries } from "@tanstack/react-query";
-import { createPublicClient, http, erc20Abi } from "viem";
+import { createPublicClient, http, fallback, erc20Abi } from "viem";
 import { bsc, mainnet, base, linea, polygon, avalanche } from "viem/chains";
 import { MAINNET_TOKENS } from "../config/tokens";
+import defaultRpcs from "../config/default-rpcs.json";
+
+// Build fallback transport from configured RPCs
+function getTransport(chainId: number) {
+  const rpcs = (defaultRpcs as Record<string, string[]>)[String(chainId)];
+  if (rpcs && rpcs.length > 0) {
+    return fallback(rpcs.map((url) => http(url)));
+  }
+  return http();
+}
 
 // Converter contract addresses on BSC - these hold the pre-minted OG tokens
 // Actual "converted" = Total Supply - Converter Balance
@@ -85,7 +95,7 @@ export function useTokenStats(): UseTokenStatsReturn {
       queryFn: async (): Promise<TokenSupplyData[]> => {
         const client = createPublicClient({
           chain: chainInfo.chain,
-          transport: http(),
+          transport: getTransport(chainInfo.id),
         });
 
         // Build multicall contracts for all tokens on this chain
@@ -150,7 +160,7 @@ export function useTokenStats(): UseTokenStatsReturn {
       queryFn: async (): Promise<Record<string, bigint>> => {
         const client = createPublicClient({
           chain: bsc,
-          transport: http(),
+          transport: getTransport(56),
         });
 
         const contracts = OG_TOKENS.map((symbol) => {
