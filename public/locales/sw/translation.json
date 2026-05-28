@@ -147,6 +147,8 @@
       "title": "Takwimu za Tokeni",
       "description": "Data ya wakati halisi kutoka kwa blockchain inayoonyesha usambazaji uliobadilishwa na mgawanyo kwenye minyororo yote inayoungwa mkono.",
       "totalConverted": "Jumla Iliyobadilishwa",
+      "totalBurned": "Imechomwa",
+      "burnedDerivedTooltip": "Imetokana na tofauti ya ugavi (mint ya awali toa ugavi wa sasa wa cross-chain). Mkataba wa kuchoma wa awali hauonyeshi kihesabu.",
       "distribution": "Mgawanyo wa Mnyororo",
       "moreChains": "minyororo zaidi",
       "liquidityPools": "Mabwawa ya Ukwasi",
@@ -261,6 +263,13 @@
           "lpPercent": "5.65%",
           "circulating": "3,662,233,757,674,602,416,819,986",
           "circulatingPercent": "36.62%"
+        },
+        "burnContract": {
+          "title": "Mkataba wa Kuchoma wa Hiari",
+          "intro": "Vault maalum ya kuchoma imewekwa kwenye BNB Chain. Mtu yeyote anaweza kutuma TigerOG kwenye mkataba, na mtu yeyote anaweza kisha kuita kazi yake ya <code>burn()</code> ili kuangamiza kabisa salio kamili la mkataba — jambo ambalo hupunguza ugavi wa jumla kwenye chains zote.",
+          "addressLabel": "Mkataba wa kuchoma:",
+          "properties": "Mkataba hauna <strong>mmiliki, hauna admin, hauna njia ya upgrade, na hauna kazi ya rescue</strong>. Tokeni inayolengwa <strong>imebandikwa kama hardcode wakati wa compile</strong> — inaweza kuchoma TigerOG pekee.",
+          "counter": "Kihesabu cha umma <code>totalBurned</code> huongezeka kwa atomic kila kunapotokea kuchoma — hii ndiyo nambari ambayo kionyeshi cha Burned kinasoma kwenye ukurasa wa nyumbani."
         }
       },
       "lionogSupply": {
@@ -286,6 +295,12 @@
           "lpPercent": "4.42%",
           "circulating": "3,832,903,409,282,876,056,519,182",
           "circulatingPercent": "38.33%"
+        },
+        "burnContract": {
+          "title": "Mkataba wa Kuchoma wa Hiari",
+          "intro": "Mkataba wa kuchoma umewekwa kwenye BNB Chain. Mtu yeyote anaweza kutuma LionOG kwenye mkataba, na mtu yeyote anaweza kisha kuanzisha kazi yake ya kuchoma ili kuangamiza kabisa salio lililoshikiliwa — jambo ambalo hupunguza ugavi wa jumla kwenye chains zote.",
+          "addressLabel": "Mkataba wa kuchoma:",
+          "legacy": "Mkataba huu ni toleo asilia na <strong>hauonyeshi kihesabu cha <code>totalBurned</code> on-chain</strong>. Kwa hivyo, nambari ya Burned inayoonyeshwa kwenye ukurasa wa nyumbani inatokana na kuondoa ugavi wa sasa wa cross-chain kutoka kwa mint ya awali."
         }
       },
       "frogogSupply": {
@@ -311,6 +326,13 @@
           "lpPercent": "8.74%",
           "circulating": "8,385,795,686,123,088,377,024,138",
           "circulatingPercent": "83.86%"
+        },
+        "burnContract": {
+          "title": "Mkataba wa Kuchoma wa Hiari",
+          "intro": "Vault maalum ya kuchoma imewekwa kwenye BNB Chain. Mtu yeyote anaweza kutuma FrogOG kwenye mkataba, na mtu yeyote anaweza kisha kuita kazi yake ya <code>burn()</code> ili kuangamiza kabisa salio kamili la mkataba — jambo ambalo hupunguza ugavi wa jumla kwenye chains zote.",
+          "addressLabel": "Mkataba wa kuchoma:",
+          "properties": "Mkataba hauna <strong>mmiliki, hauna admin, hauna njia ya upgrade, na hauna kazi ya rescue</strong>. Tokeni inayolengwa <strong>imebandikwa kama hardcode wakati wa compile</strong> — inaweza kuchoma FrogOG pekee.",
+          "counter": "Kihesabu cha umma <code>totalBurned</code> huongezeka kwa atomic kila kunapotokea kuchoma — hii ndiyo nambari ambayo kionyeshi cha Burned kinasoma kwenye ukurasa wa nyumbani."
         }
       }
     }

@@ -1,6 +1,6 @@
 import { useState, useMemo } from "react";
 import { motion } from "motion/react";
-import { ArrowLeft, Search, Copy, Check, ExternalLink, Layers, ShieldCheck, Globe, Droplets } from "lucide-react";
+import { ArrowLeft, Search, Copy, Check, ExternalLink, Layers, ShieldCheck, Globe, Droplets, Flame } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "./ui/button";
 import { useTranslation } from "react-i18next";
@@ -84,6 +84,34 @@ const CONVERSION_CONTRACTS = [
     legacyAddress: "0x64da67A12a46f1DDF337393e2dA12eD0A507Ad3D",
     conversionAddress: "0xbF4b1F662247147afCefecbdEa5590fd103dF1FB",
     newAddress: "0x0E3b564bdD09348840811C7e1106BbD0e98b5b4f",
+  },
+];
+
+// Burn contracts on BSC (chainId 56). Tokens sent here are permanently destroyed.
+// TigerOG / FrogOG expose a totalBurned() counter; the LionOG burn contract is the
+// older revision without a counter — its total is derived from supply delta on the
+// landing page.
+const BURN_CONTRACTS = [
+  {
+    id: "tigerog",
+    name: "TigerOG",
+    symbol: "TIGEROG",
+    burnAddress: "0x999775Ae662a176131EB44C6F62d275A24e39d97",
+    type: "counter" as const,
+  },
+  {
+    id: "lionog",
+    name: "LionOG",
+    symbol: "LIONOG",
+    burnAddress: "0x3a8b67c2034e259b7e193262455ff634bbd00d6d",
+    type: "legacy" as const,
+  },
+  {
+    id: "frogog",
+    name: "FrogOG",
+    symbol: "FROGOG",
+    burnAddress: "0x34b9f2e2d76f850977557a3acdfe6e740d417e4f",
+    type: "counter" as const,
   },
 ];
 
@@ -403,6 +431,64 @@ export default function ContractsPage() {
                                    <ExternalLink className="w-3 h-3" />
                                  </a>
                                </div>
+                             </td>
+                           </tr>
+                         ))}
+                       </tbody>
+                     </table>
+                   </div>
+                 </CardContent>
+               </Card>
+
+               {/* Burn Contracts Table */}
+               <Card className="overflow-hidden border-muted bg-card">
+                 <CardHeader className="bg-muted/20 pb-4">
+                   <CardTitle className="text-xl flex items-center gap-2">
+                     <Flame className="w-5 h-5 text-orange-500" />
+                     {t('contracts.overview.burnContractsTable.title', 'Burn Contracts')}
+                   </CardTitle>
+                   <CardDescription>
+                     {t('contracts.overview.burnContractsTable.subtitle', 'Send tokens to these contracts to permanently remove them from supply. Deployed on BNB Chain.')}
+                   </CardDescription>
+                 </CardHeader>
+                 <CardContent className="p-0">
+                   <div className="overflow-x-auto">
+                     <table className="w-full text-sm text-left">
+                       <thead className="text-xs uppercase bg-muted/50 border-b">
+                         <tr>
+                           <th className="px-6 py-3 font-medium text-muted-foreground">{t('contracts.overview.burnContractsTable.token', 'Token')}</th>
+                           <th className="px-6 py-3 font-medium text-muted-foreground">{t('contracts.overview.burnContractsTable.burnContract', 'Burn Contract')}</th>
+                           <th className="px-6 py-3 font-medium text-muted-foreground">{t('contracts.overview.burnContractsTable.tracking', 'Tracking')}</th>
+                         </tr>
+                       </thead>
+                       <tbody className="divide-y divide-border">
+                         {BURN_CONTRACTS.map((contract) => (
+                           <tr key={contract.id} className="hover:bg-muted/10 transition-colors">
+                             <td className="px-6 py-3 font-medium">
+                               <div className="flex flex-col">
+                                 <span>{contract.name}</span>
+                                 <span className="text-xs text-muted-foreground">{contract.symbol}</span>
+                               </div>
+                             </td>
+                             <td className="px-6 py-3 font-mono text-xs">
+                               <div className="flex items-center gap-2">
+                                 {truncateAddress(contract.burnAddress)}
+                                 <CopyButton text={contract.burnAddress} copiedText={t('contracts.copied')} copyText={t('contracts.copyAddress')} />
+                                 <a href={`https://bscscan.com/address/${contract.burnAddress}`} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
+                                   <ExternalLink className="w-3 h-3" />
+                                 </a>
+                               </div>
+                             </td>
+                             <td className="px-6 py-3 text-xs">
+                               {contract.type === 'counter' ? (
+                                 <span className="px-2 py-1 rounded bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-mono">
+                                   {t('contracts.overview.burnContractsTable.typeCounter', 'On-chain counter')}
+                                 </span>
+                               ) : (
+                                 <span className="px-2 py-1 rounded bg-amber-500/10 text-amber-600 dark:text-amber-400 font-mono">
+                                   {t('contracts.overview.burnContractsTable.typeLegacy', 'Legacy (supply delta)')}
+                                 </span>
+                               )}
                              </td>
                            </tr>
                          ))}

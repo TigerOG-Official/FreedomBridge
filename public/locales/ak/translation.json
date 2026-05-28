@@ -147,6 +147,8 @@
       "title": "Token Ho Nsɛm",
       "description": "Nsɛm a ɛfi blockchain so tẽẽ a ɛkyerɛ nea wɔasesa ne sɛnea wɔakyekyɛ wɔ nfiriduwa a wɔboa no nyinaa so.",
       "totalConverted": "Nea Wɔasesa Nyinaa",
+      "totalBurned": "Wahyew",
+      "burnedDerivedTooltip": "Yefi mfiase dodow no mu yi nea wɔn nsa aka seesei wɔ chain ahorow nyinaa so. Hyew kontrakt a edii kan no nni teller.",
       "distribution": "Nfiriduwa Nkyekyɛmu",
       "moreChains": "nfiriduwa pii",
       "liquidityPools": "DEX Pools",
@@ -261,6 +263,13 @@
           "lpPercent": "5.65%",
           "circulating": "3,662,233,757,674,602,416,819,986",
           "circulatingPercent": "36.62%"
+        },
+        "burnContract": {
+          "title": "Hyew Kontrakt a Yɛde Akoma",
+          "intro": "Yɛasi hyew adaka bi wɔ BNB Chain so. Obiara betumi de TigerOG akɔma kontrakt no, na obiara betumi afrɛ ne <code>burn()</code> dwumadi no de asɛe nea kontrakt no kura no nyinaa — na ato dodow no so wɔ chain ahorow nyinaa so.",
+          "addressLabel": "Hyew kontrakt:",
+          "properties": "Kontrakt no nni <strong>wura, nni admin, nni nkɔso kwan, na nni nea wobetumi de aboa</strong>. Token a wɔrehyew no, wɔahyɛ no <strong>compile bere mu</strong> — TigerOG nko ara na ɛbɛtumi ahyew.",
+          "counter": "<code>totalBurned</code> a obiara hu no kɔ soro berɛ biara a wɔbɛhyew bi — eyi na ɛkenkan Burned dodow wɔ home page so."
         }
       },
       "lionogSupply": {
@@ -286,6 +295,12 @@
           "lpPercent": "4.42%",
           "circulating": "3,832,903,409,282,876,056,519,182",
           "circulatingPercent": "38.33%"
+        },
+        "burnContract": {
+          "title": "Hyew Kontrakt a Yɛde Akoma",
+          "intro": "Yɛasi hyew kontrakt bi wɔ BNB Chain so. Obiara betumi de LionOG akɔma kontrakt no, na obiara betumi afrɛ ne hyew dwumadi no de asɛe nea ɛkura no nyinaa — na ato dodow no so wɔ chain ahorow nyinaa so.",
+          "addressLabel": "Hyew kontrakt:",
+          "legacy": "Saa kontrakt yi yɛ nea edii kan, na <strong>ɛnnyi <code>totalBurned</code> a obiara hu wɔ chain so</strong>. Enti Burned dodow a ɛda adi wɔ home page so no, yefi mfiase dodow no mu yi nea wɔn nsa aka seesei wɔ chain ahorow nyinaa so."
         }
       },
       "frogogSupply": {
@@ -311,6 +326,13 @@
           "lpPercent": "8.74%",
           "circulating": "8,385,795,686,123,088,377,024,138",
           "circulatingPercent": "83.86%"
+        },
+        "burnContract": {
+          "title": "Hyew Kontrakt a Yɛde Akoma",
+          "intro": "Yɛasi hyew adaka bi wɔ BNB Chain so. Obiara betumi de FrogOG akɔma kontrakt no, na obiara betumi afrɛ ne <code>burn()</code> dwumadi no de asɛe nea kontrakt no kura no nyinaa — na ato dodow no so wɔ chain ahorow nyinaa so.",
+          "addressLabel": "Hyew kontrakt:",
+          "properties": "Kontrakt no nni <strong>wura, nni admin, nni nkɔso kwan, na nni nea wobetumi de aboa</strong>. Token a wɔrehyew no, wɔahyɛ no <strong>compile bere mu</strong> — FrogOG nko ara na ɛbɛtumi ahyew.",
+          "counter": "<code>totalBurned</code> a obiara hu no kɔ soro berɛ biara a wɔbɛhyew bi — eyi na ɛkenkan Burned dodow wɔ home page so."
         }
       }
     }

@@ -148,6 +148,8 @@
       "title": "トークン統計",
       "description": "サポートされているすべてのチェーンでの変換済み供給量と分布を示すブロックチェーンからのリアルタイムデータ。",
       "totalConverted": "総変換数",
+      "totalBurned": "バーン済み",
+      "burnedDerivedTooltip": "供給差分から導出（初期ミントから現在のクロスチェーン供給量を引いたもの）。元のバーン契約はカウンターを公開していません。",
       "distribution": "チェーン分布",
       "moreChains": "他のチェーン",
       "liquidityPools": "流動性プール",
@@ -262,6 +264,13 @@
           "lpPercent": "5.65%",
           "circulating": "3,662,233,757,674,602,416,819,986",
           "circulatingPercent": "36.62%"
+        },
+        "burnContract": {
+          "title": "自主的バーン契約",
+          "intro": "BNB Chain上に専用のバーンボールトがデプロイされています。誰でもTigerOGをこの契約に送ることができ、誰でも<code>burn()</code>関数を呼び出して契約の全残高を永久に破棄することができます — これによりすべてのチェーンの総供給量が減少します。",
+          "addressLabel": "バーン契約:",
+          "properties": "この契約には<strong>所有者がいません、管理者がいません、アップグレードパスがありません、レスキュー関数もありません</strong>。ターゲットトークンは<strong>コンパイル時にハードコードされている</strong>ため、TigerOGしかバーンできません。",
+          "counter": "公開された<code>totalBurned</code>カウンターは各バーンと共にアトミックに増加します — これがホームページのBurned数値が読み取る値です。"
         }
       },
       "lionogSupply": {
@@ -287,6 +296,12 @@
           "lpPercent": "4.42%",
           "circulating": "3,832,903,409,282,876,056,519,182",
           "circulatingPercent": "38.33%"
+        },
+        "burnContract": {
+          "title": "自主的バーン契約",
+          "intro": "BNB Chain上にバーン契約がデプロイされています。誰でもLionOGをこの契約に送ることができ、誰でもバーン関数をトリガーして保有残高を永久に破棄することができます — これによりすべてのチェーンの総供給量が減少します。",
+          "addressLabel": "バーン契約:",
+          "legacy": "この契約はオリジナル版で、<strong>オンチェーンの<code>totalBurned</code>カウンターを公開していません</strong>。そのため、ホームページに表示されるBurned数値は、現在のクロスチェーン供給量を初期ミントから差し引いて算出されます。"
         }
       },
       "frogogSupply": {
@@ -312,6 +327,13 @@
           "lpPercent": "8.74%",
           "circulating": "8,385,795,686,123,088,377,024,138",
           "circulatingPercent": "83.86%"
+        },
+        "burnContract": {
+          "title": "自主的バーン契約",
+          "intro": "BNB Chain上に専用のバーンボールトがデプロイされています。誰でもFrogOGをこの契約に送ることができ、誰でも<code>burn()</code>関数を呼び出して契約の全残高を永久に破棄することができます — これによりすべてのチェーンの総供給量が減少します。",
+          "addressLabel": "バーン契約:",
+          "properties": "この契約には<strong>所有者がいません、管理者がいません、アップグレードパスがありません、レスキュー関数もありません</strong>。ターゲットトークンは<strong>コンパイル時にハードコードされている</strong>ため、FrogOGしかバーンできません。",
+          "counter": "公開された<code>totalBurned</code>カウンターは各バーンと共にアトミックに増加します — これがホームページのBurned数値が読み取る値です。"
         }
       }
     }

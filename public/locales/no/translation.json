@@ -147,6 +147,8 @@
       "title": "Token-statistikk",
       "description": "Sanntidsdata fra blokkjeden som viser konvertert forsyning og distribusjon på tvers av alle støttede kjeder.",
       "totalConverted": "Totalt konvertert",
+      "totalBurned": "Brent",
+      "burnedDerivedTooltip": "Utledet fra tilbudsforskjell (opprinnelig mint minus nåværende kryss-chain tilbud). Den opprinnelige burn-kontrakten eksponerer ikke en teller.",
       "distribution": "Kjededistribusjon",
       "moreChains": "flere kjeder",
       "liquidityPools": "Likviditetspooler",
@@ -261,6 +263,13 @@
           "lpPercent": "5,65%",
           "circulating": "3 662 233 757 674 602 416 819 986",
           "circulatingPercent": "36,62%"
+        },
+        "burnContract": {
+          "title": "Frivillig burn-kontrakt",
+          "intro": "Et dedikert burn-hvelv er distribuert på BNB Chain. Hvem som helst kan sende TigerOG til kontrakten, og hvem som helst kan deretter kalle dens <code>burn()</code>-funksjon for å permanent ødelegge kontraktens fulle saldo — som reduserer det totale tilbudet på tvers av alle chains.",
+          "addressLabel": "Burn-kontrakt:",
+          "properties": "Kontrakten har <strong>ingen eier, ingen administrator, ingen oppgraderingsbane og ingen redningsfunksjon</strong>. Måltokenet er <strong>hardkodet på kompileringstidspunktet</strong> — den kan bare brenne TigerOG.",
+          "counter": "En offentlig <code>totalBurned</code>-teller øker atomært med hver burn — det er denne verdien Burned-tallet på forsiden leser."
         }
       },
       "lionogSupply": {
@@ -286,6 +295,12 @@
           "lpPercent": "4,42%",
           "circulating": "3 832 903 409 282 876 056 519 182",
           "circulatingPercent": "38,33%"
+        },
+        "burnContract": {
+          "title": "Frivillig burn-kontrakt",
+          "intro": "En burn-kontrakt er distribuert på BNB Chain. Hvem som helst kan sende LionOG til kontrakten, og hvem som helst kan deretter utløse dens burn-funksjon for å permanent ødelegge den holdte saldoen — som reduserer det totale tilbudet på tvers av alle chains.",
+          "addressLabel": "Burn-kontrakt:",
+          "legacy": "Denne kontrakten er den opprinnelige versjonen og <strong>eksponerer ikke en on-chain <code>totalBurned</code>-teller</strong>. Burned-verdien som vises på forsiden utledes derfor ved å trekke det nåværende kryss-chain tilbudet fra den opprinnelige minten."
         }
       },
       "frogogSupply": {
@@ -311,6 +326,13 @@
           "lpPercent": "8,74%",
           "circulating": "8 385 795 686 123 088 377 024 138",
           "circulatingPercent": "83,86%"
+        },
+        "burnContract": {
+          "title": "Frivillig burn-kontrakt",
+          "intro": "Et dedikert burn-hvelv er distribuert på BNB Chain. Hvem som helst kan sende FrogOG til kontrakten, og hvem som helst kan deretter kalle dens <code>burn()</code>-funksjon for å permanent ødelegge kontraktens fulle saldo — som reduserer det totale tilbudet på tvers av alle chains.",
+          "addressLabel": "Burn-kontrakt:",
+          "properties": "Kontrakten har <strong>ingen eier, ingen administrator, ingen oppgraderingsbane og ingen redningsfunksjon</strong>. Måltokenet er <strong>hardkodet på kompileringstidspunktet</strong> — den kan bare brenne FrogOG.",
+          "counter": "En offentlig <code>totalBurned</code>-teller øker atomært med hver burn — det er denne verdien Burned-tallet på forsiden leser."
         }
       }
     }
@@ -467,7 +489,7 @@
         "content": "Kryptovalutamarkeder er volatile og uforutsigbare. Ved å bruke Freedom Bridge anerkjenner og godtar du at:\n\n• Smartkontrakter kan inneholde feil eller sårbarheter som kan føre til tap av midler\n• Krysskjede-broer bærer iboende risiko, inkludert men ikke begrenset til: orakelfeil, validator-samarbeid og nettverksstopp\n• Tokenverdier kan svinge dramatisk, og du kan tape deler av eller hele investeringen din\n• Transaksjoner på blokkjedenettverk er irreversible\n• Nettverksgebyrer og gasskostnader er utenfor vår kontroll og kan variere betydelig"
       },
       "noWarranties": {
-        "title": "Ingen garantier" ,
+        "title": "Ingen garantier",
         "content": "Freedom Bridge leveres \"som den er\" og \"som tilgjengelig\" uten noen form for garantier, verken uttrykte eller underforståtte. Vi garanterer ikke at tjenesten vil være uavbrutt, sikker eller feilfri. Vi gir ingen garantier angående nøyaktigheten, påliteligheten eller fullstendigheten av informasjonen som gis via plattformen."
       },
       "limitationOfLiability": {
@@ -483,7 +505,7 @@
         "content": "Regulering av kryptovaluta varierer etter jurisdiksjon. Du er selv ansvarlig for å sikre at din bruk av Freedom Bridge er i samsvar med alle gjeldende lover og regler i din jurisdiksjon. Freedom Bridge gir ingen fremstillinger angående lovligheten av tjenestene i noen jurisdiksjon."
       },
       "dyor": {
-        "title": "Gjør din egen undersøkelse" ,
+        "title": "Gjør din egen undersøkelse",
         "content": "Gjør alltid din egen undersøkelse (DYOR) før du samhandler med en DeFi-protokoll. Verifiser kontraktadresser, forstå mekanismene til ethvert token du samhandler med, og invester aldri mer enn du har råd til å tape."
       }
     },

@@ -147,6 +147,8 @@
       "title": "Token Statistics",
       "description": "Real-time data from the blockchain showing converted supply and distribution across all supported chains.",
       "totalConverted": "Total Converted",
+      "totalBurned": "Burned",
+      "burnedDerivedTooltip": "Derived from supply delta (initial mint minus current cross-chain supply). The original burn contract doesn't expose a counter.",
       "distribution": "Chain Distribution",
       "moreChains": "more chains",
       "liquidityPools": "Liquidity Pools",
@@ -261,6 +263,13 @@
           "lpPercent": "5.65%",
           "circulating": "3,662,233,757,674,602,416,819,986",
           "circulatingPercent": "36.62%"
+        },
+        "burnContract": {
+          "title": "Voluntary Burn Contract",
+          "intro": "A dedicated burn vault is deployed on BNB Chain. Anyone can send TigerOG to the contract, and anyone can then call its <code>burn()</code> function to permanently destroy the contract's full balance — reducing total supply across all chains.",
+          "properties": "The contract has <strong>no owner, no admin, no upgrade path, and no rescue function</strong>. The target token is <strong>hardcoded at compile time</strong> — it can only ever burn TigerOG.",
+          "counter": "A public <code>totalBurned</code> counter increments atomically with each burn — this is what the Burned figure on the home page reads.",
+          "addressLabel": "Burn contract:"
         }
       },
       "lionogSupply": {
@@ -286,6 +295,12 @@
           "lpPercent": "4.42%",
           "circulating": "3,832,903,409,282,876,056,519,182",
           "circulatingPercent": "38.33%"
+        },
+        "burnContract": {
+          "title": "Voluntary Burn Contract",
+          "intro": "A burn contract is deployed on BNB Chain. Anyone can send LionOG to the contract, and anyone can then trigger its burn function to permanently destroy the held balance — reducing total supply across all chains.",
+          "legacy": "This contract is the original revision and <strong>does not expose an on-chain <code>totalBurned</code> counter</strong>. The Burned figure shown on the home page is therefore derived by subtracting current cross-chain supply from the initial mint.",
+          "addressLabel": "Burn contract:"
         }
       },
       "frogogSupply": {
@@ -311,6 +326,13 @@
           "lpPercent": "8.74%",
           "circulating": "8,385,795,686,123,088,377,024,138",
           "circulatingPercent": "83.86%"
+        },
+        "burnContract": {
+          "title": "Voluntary Burn Contract",
+          "intro": "A dedicated burn vault is deployed on BNB Chain. Anyone can send FrogOG to the contract, and anyone can then call its <code>burn()</code> function to permanently destroy the contract's full balance — reducing total supply across all chains.",
+          "properties": "The contract has <strong>no owner, no admin, no upgrade path, and no rescue function</strong>. The target token is <strong>hardcoded at compile time</strong> — it can only ever burn FrogOG.",
+          "counter": "A public <code>totalBurned</code> counter increments atomically with each burn — this is what the Burned figure on the home page reads.",
+          "addressLabel": "Burn contract:"
         }
       }
     }
@@ -351,6 +373,15 @@
         "legacyToken": "Legacy Token",
         "conversionContract": "Conversion Contract",
         "newToken": "Interchain Token"
+      },
+      "burnContractsTable": {
+        "title": "Burn Contracts",
+        "subtitle": "Send tokens to these contracts to permanently remove them from supply. Deployed on BNB Chain.",
+        "token": "Token",
+        "burnContract": "Burn Contract",
+        "tracking": "Tracking",
+        "typeCounter": "On-chain counter",
+        "typeLegacy": "Legacy (supply delta)"
       },
       "liquidityPools": {
         "title": "Liquidity Pools",

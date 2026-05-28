@@ -147,6 +147,8 @@
       "title": "代币统计",
       "description": "来自区块链的实时数据，显示所有支持链上的转换供应量和分布情况。",
       "totalConverted": "总转换量",
+      "totalBurned": "已销毁",
+      "burnedDerivedTooltip": "从供应差额推导得出（初始 mint 减去当前 cross-chain 供应量）。原始销毁合约不公开计数器。",
       "distribution": "链上分布",
       "moreChains": "更多链",
       "liquidityPools": "流动性池",
@@ -261,6 +263,13 @@
           "lpPercent": "5.65%",
           "circulating": "3,662,233,757,674,602,416,819,986",
           "circulatingPercent": "36.62%"
+        },
+        "burnContract": {
+          "title": "自愿销毁合约",
+          "intro": "BNB Chain 上部署了一个专用的销毁保险库。任何人都可以将 TigerOG 发送到合约，然后任何人都可以调用其 <code>burn()</code> 函数，永久销毁合约的全部余额——从而减少所有 chain 的总供应量。",
+          "addressLabel": "销毁合约：",
+          "properties": "该合约<strong>没有所有者、没有管理员、没有升级路径，也没有救援功能</strong>。目标代币在<strong>编译时硬编码</strong>——只能销毁 TigerOG。",
+          "counter": "公开的 <code>totalBurned</code> 计数器在每次销毁时都会原子性地增加——这就是首页 Burned 数字所读取的值。"
         }
       },
       "lionogSupply": {
@@ -286,6 +295,12 @@
           "lpPercent": "4.42%",
           "circulating": "3,832,903,409,282,876,056,519,182",
           "circulatingPercent": "38.33%"
+        },
+        "burnContract": {
+          "title": "自愿销毁合约",
+          "intro": "BNB Chain 上部署了一个销毁合约。任何人都可以将 LionOG 发送到合约，然后任何人都可以触发其销毁函数，永久销毁持有的余额——从而减少所有 chain 的总供应量。",
+          "addressLabel": "销毁合约：",
+          "legacy": "该合约是原始版本，<strong>未公开链上的 <code>totalBurned</code> 计数器</strong>。因此首页显示的 Burned 数字是通过从初始 mint 中减去当前 cross-chain 供应量得出的。"
         }
       },
       "frogogSupply": {
@@ -311,6 +326,13 @@
           "lpPercent": "8.74%",
           "circulating": "8,385,795,686,123,088,377,024,138",
           "circulatingPercent": "83.86%"
+        },
+        "burnContract": {
+          "title": "自愿销毁合约",
+          "intro": "BNB Chain 上部署了一个专用的销毁保险库。任何人都可以将 FrogOG 发送到合约，然后任何人都可以调用其 <code>burn()</code> 函数，永久销毁合约的全部余额——从而减少所有 chain 的总供应量。",
+          "addressLabel": "销毁合约：",
+          "properties": "该合约<strong>没有所有者、没有管理员、没有升级路径，也没有救援功能</strong>。目标代币在<strong>编译时硬编码</strong>——只能销毁 FrogOG。",
+          "counter": "公开的 <code>totalBurned</code> 计数器在每次销毁时都会原子性地增加——这就是首页 Burned 数字所读取的值。"
         }
       }
     }

@@ -147,6 +147,8 @@
       "title": "Tokenite statistika",
       "description": "Reaalajas andmed plokiahelast, mis näitavad teisendatud varusid ja jaotust kõigis toetatud ahelates.",
       "totalConverted": "Kokku teisendatud",
+      "totalBurned": "Põletatud",
+      "burnedDerivedTooltip": "Tuletatud pakkumise vahest (algne mint miinus praegune ahelatevaheline pakkumine). Algne põletamise leping ei väljasta loendurit.",
       "distribution": "Jaotus ahelate vahel",
       "moreChains": "veel ahelaid",
       "liquidityPools": "Likviidsusbasseinid",
@@ -261,6 +263,13 @@
           "lpPercent": "5,65%",
           "circulating": "3 662 233 757 674 602 416 819 986",
           "circulatingPercent": "36,62%"
+        },
+        "burnContract": {
+          "title": "Vabatahtlik põletamise leping",
+          "intro": "BNB Chain'is on kasutusele võetud spetsiaalne põletamishoidla. Igaüks saab saata TigerOG lepingule, ja igaüks saab seejärel kutsuda selle <code>burn()</code> funktsiooni, et lepingu kogu jääk jäädavalt hävitada — vähendades üldist pakkumist kõigis ahelates.",
+          "addressLabel": "Põletamise leping:",
+          "properties": "Lepingul ei ole <strong>omanikku, administraatorit, uuendamise teed ega päästefunktsiooni</strong>. Sihttoken on <strong>kompileerimise ajal kõvasti kodeeritud</strong> — see saab põletada ainult TigerOG-i.",
+          "counter": "Avalik <code>totalBurned</code> loendur kasvab iga põletusega atomaarselt — seda väärtust loeb Burned näitaja avalehel."
         }
       },
       "lionogSupply": {
@@ -286,6 +295,12 @@
           "lpPercent": "4,42%",
           "circulating": "3 832 903 409 282 876 056 519 182",
           "circulatingPercent": "38,33%"
+        },
+        "burnContract": {
+          "title": "Vabatahtlik põletamise leping",
+          "intro": "BNB Chain'is on kasutusele võetud põletamise leping. Igaüks saab saata LionOG lepingule, ja igaüks saab seejärel käivitada selle põletamisfunktsiooni, et hoitav jääk jäädavalt hävitada — vähendades üldist pakkumist kõigis ahelates.",
+          "addressLabel": "Põletamise leping:",
+          "legacy": "See leping on algne versioon ja <strong>ei väljasta ahela peal olevat <code>totalBurned</code> loendurit</strong>. Seetõttu tuletatakse avalehel kuvatav Burned väärtus, lahutades praegune ahelatevaheline pakkumine algsest mündist."
         }
       },
       "frogogSupply": {
@@ -311,6 +326,13 @@
           "lpPercent": "8,74%",
           "circulating": "8 385 795 686 123 088 377 024 138",
           "circulatingPercent": "83,86%"
+        },
+        "burnContract": {
+          "title": "Vabatahtlik põletamise leping",
+          "intro": "BNB Chain'is on kasutusele võetud spetsiaalne põletamishoidla. Igaüks saab saata FrogOG lepingule, ja igaüks saab seejärel kutsuda selle <code>burn()</code> funktsiooni, et lepingu kogu jääk jäädavalt hävitada — vähendades üldist pakkumist kõigis ahelates.",
+          "addressLabel": "Põletamise leping:",
+          "properties": "Lepingul ei ole <strong>omanikku, administraatorit, uuendamise teed ega päästefunktsiooni</strong>. Sihttoken on <strong>kompileerimise ajal kõvasti kodeeritud</strong> — see saab põletada ainult FrogOG-i.",
+          "counter": "Avalik <code>totalBurned</code> loendur kasvab iga põletusega atomaarselt — seda väärtust loeb Burned näitaja avalehel."
         }
       }
     }

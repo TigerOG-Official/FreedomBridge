@@ -147,6 +147,8 @@
       "title": "Thống kê Token",
       "description": "Dữ liệu thời gian thực từ blockchain hiển thị nguồn cung đã chuyển đổi và phân phối trên tất cả các chuỗi được hỗ trợ.",
       "totalConverted": "Tổng cộng đã chuyển đổi",
+      "totalBurned": "Đã đốt",
+      "burnedDerivedTooltip": "Được suy ra từ chênh lệch nguồn cung (mint ban đầu trừ nguồn cung cross-chain hiện tại). Hợp đồng burn gốc không tiết lộ bộ đếm.",
       "distribution": "Phân bổ chuỗi",
       "moreChains": "thêm chuỗi",
       "liquidityPools": "Pool thanh khoản",
@@ -261,6 +263,13 @@
           "lpPercent": "5.65%",
           "circulating": "3,662,233,757,674,602,416,819,986",
           "circulatingPercent": "36.62%"
+        },
+        "burnContract": {
+          "title": "Hợp đồng Burn Tự nguyện",
+          "intro": "Một kho burn chuyên dụng đã được triển khai trên BNB Chain. Bất kỳ ai cũng có thể gửi TigerOG đến hợp đồng, và bất kỳ ai sau đó có thể gọi hàm <code>burn()</code> của nó để phá hủy vĩnh viễn toàn bộ số dư của hợp đồng — giảm tổng cung trên tất cả các chain.",
+          "addressLabel": "Hợp đồng burn:",
+          "properties": "Hợp đồng không có <strong>chủ sở hữu, không có admin, không có lộ trình nâng cấp và không có hàm cứu hộ</strong>. Token mục tiêu được <strong>hardcode tại thời điểm biên dịch</strong> — chỉ có thể đốt TigerOG.",
+          "counter": "Một bộ đếm công khai <code>totalBurned</code> tăng atomic với mỗi lần burn — đây là giá trị mà chỉ số Burned trên trang chủ đọc."
         }
       },
       "lionogSupply": {
@@ -286,6 +295,12 @@
           "lpPercent": "4.42%",
           "circulating": "3,832,903,409,282,876,056,519,182",
           "circulatingPercent": "38.33%"
+        },
+        "burnContract": {
+          "title": "Hợp đồng Burn Tự nguyện",
+          "intro": "Một hợp đồng burn đã được triển khai trên BNB Chain. Bất kỳ ai cũng có thể gửi LionOG đến hợp đồng, và bất kỳ ai sau đó có thể kích hoạt hàm burn của nó để phá hủy vĩnh viễn số dư đang nắm giữ — giảm tổng cung trên tất cả các chain.",
+          "addressLabel": "Hợp đồng burn:",
+          "legacy": "Hợp đồng này là phiên bản gốc và <strong>không tiết lộ bộ đếm <code>totalBurned</code> on-chain</strong>. Do đó, chỉ số Burned hiển thị trên trang chủ được tính bằng cách trừ nguồn cung cross-chain hiện tại khỏi mint ban đầu."
         }
       },
       "frogogSupply": {
@@ -311,6 +326,13 @@
           "lpPercent": "8.74%",
           "circulating": "8,385,795,686,123,088,377,024,138",
           "circulatingPercent": "83.86%"
+        },
+        "burnContract": {
+          "title": "Hợp đồng Burn Tự nguyện",
+          "intro": "Một kho burn chuyên dụng đã được triển khai trên BNB Chain. Bất kỳ ai cũng có thể gửi FrogOG đến hợp đồng, và bất kỳ ai sau đó có thể gọi hàm <code>burn()</code> của nó để phá hủy vĩnh viễn toàn bộ số dư của hợp đồng — giảm tổng cung trên tất cả các chain.",
+          "addressLabel": "Hợp đồng burn:",
+          "properties": "Hợp đồng không có <strong>chủ sở hữu, không có admin, không có lộ trình nâng cấp và không có hàm cứu hộ</strong>. Token mục tiêu được <strong>hardcode tại thời điểm biên dịch</strong> — chỉ có thể đốt FrogOG.",
+          "counter": "Một bộ đếm công khai <code>totalBurned</code> tăng atomic với mỗi lần burn — đây là giá trị mà chỉ số Burned trên trang chủ đọc."
         }
       }
     }

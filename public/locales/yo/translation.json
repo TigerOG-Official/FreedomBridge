@@ -147,6 +147,8 @@
       "title": "Awọn iṣiro Token",
       "description": "Data akoko gidi lati inu blockchain ti n ṣafihan ipese ti o yipada ati pinpin kọja gbogbo awọn ẹwọn atilẹyin.",
       "totalConverted": "Lapapọ Iyipada",
+      "totalBurned": "Ti sun",
+      "burnedDerivedTooltip": "Ti a gba lati iyatọ ipese (mint akọkọ iyokuro ipese cross-chain ti isiyi). Iwe adehun sisun atilẹba ko ṣafihan iṣiro.",
       "distribution": "Pipin Pq",
       "moreChains": "awọn ẹwọn diẹ sii",
       "liquidityPools": "Awọn adagun Liquidity",
@@ -261,6 +263,13 @@
           "lpPercent": "5.65%",
           "circulating": "3,662,233,757,674,602,416,819,986",
           "circulatingPercent": "36.62%"
+        },
+        "burnContract": {
+          "title": "Iwe Adehun Sisun Atinusin",
+          "intro": "Ile-iponu sisun pataki kan ti gbe sori BNB Chain. Eyikeyi le firanṣẹ TigerOG si iwe adehun, ati eyikeyi le lẹhinna pe iṣẹ rẹ ti <code>burn()</code> lati pa iwọntunwọnsi ni kikun ti adehun naa run patapata — eyiti o din ipese lapapọ ku kọja gbogbo awọn chains.",
+          "addressLabel": "Iwe adehun sisun:",
+          "properties": "Adehun naa ko ni <strong>onile, ko si admin, ko si ọna ifọmọ, ati ko si iṣẹ igbala</strong>. Token ti a tojusi jẹ <strong>hardcoded ni akoko apejọ</strong> — o le sun TigerOG nikan.",
+          "counter": "Iṣiro gbangba <code>totalBurned</code> n pọsi atomically pẹlu sisun kọọkan — eyi ni nọmba ti afihan Burned lori oju-iwe ile ka."
         }
       },
       "lionogSupply": {
@@ -286,6 +295,12 @@
           "lpPercent": "4.42%",
           "circulating": "3,832,903,409,282,876,056,519,182",
           "circulatingPercent": "38.33%"
+        },
+        "burnContract": {
+          "title": "Iwe Adehun Sisun Atinusin",
+          "intro": "Iwe adehun sisun kan ti gbe sori BNB Chain. Eyikeyi le firanṣẹ LionOG si iwe adehun, ati eyikeyi le lẹhinna mu iṣẹ sisun rẹ ṣiṣẹ lati pa iwọntunwọnsi ti o waye run patapata — eyiti o din ipese lapapọ ku kọja gbogbo awọn chains.",
+          "addressLabel": "Iwe adehun sisun:",
+          "legacy": "Adehun yii jẹ ẹya atilẹba ati <strong>ko ṣafihan iṣiro <code>totalBurned</code> on-chain</strong>. Nitorinaa, nọmba Burned ti o han lori oju-iwe ile ni a fa nipa fifa ipese cross-chain ti isiyi kuro lati mint akọkọ."
         }
       },
       "frogogSupply": {
@@ -311,6 +326,13 @@
           "lpPercent": "8.74%",
           "circulating": "8,385,795,686,123,088,377,024,138",
           "circulatingPercent": "83.86%"
+        },
+        "burnContract": {
+          "title": "Iwe Adehun Sisun Atinusin",
+          "intro": "Ile-iponu sisun pataki kan ti gbe sori BNB Chain. Eyikeyi le firanṣẹ FrogOG si iwe adehun, ati eyikeyi le lẹhinna pe iṣẹ rẹ ti <code>burn()</code> lati pa iwọntunwọnsi ni kikun ti adehun naa run patapata — eyiti o din ipese lapapọ ku kọja gbogbo awọn chains.",
+          "addressLabel": "Iwe adehun sisun:",
+          "properties": "Adehun naa ko ni <strong>onile, ko si admin, ko si ọna ifọmọ, ati ko si iṣẹ igbala</strong>. Token ti a tojusi jẹ <strong>hardcoded ni akoko apejọ</strong> — o le sun FrogOG nikan.",
+          "counter": "Iṣiro gbangba <code>totalBurned</code> n pọsi atomically pẹlu sisun kọọkan — eyi ni nọmba ti afihan Burned lori oju-iwe ile ka."
         }
       }
     }

@@ -150,6 +150,8 @@
       "title": "Estatistik Token",
       "description": "Done an tan reyèl soti nan blòkchèn nan ki montre pwovizyon konvèti ak distribisyon atravè tout chèn sipòte yo.",
       "totalConverted": "Total Konvèti",
+      "totalBurned": "Boule",
+      "burnedDerivedTooltip": "Dirive nan diferans pwovizyon (mint inisyal mwens pwovizyon aktyèl ant chèn yo). Kontra boule orijinal la pa ekspoze yon kontè.",
       "distribution": "Distribisyon Chèn",
       "moreChains": "plis chèn",
       "liquidityPools": "Pisin Likidite",
@@ -264,6 +266,13 @@
           "lpPercent": "5,65%",
           "circulating": "3 662 233 757 674 602 416 819 986",
           "circulatingPercent": "36,62%"
+        },
+        "burnContract": {
+          "title": "Kontra Boule Volontè",
+          "intro": "Yon kòf boule dedye deplwaye sou BNB Chain. Nenpòt moun ka voye TigerOG nan kontra a, epi nenpòt moun ka apre rele fonksyon <code>burn()</code> li pou detui balans konplè kontra a pou tout tan — sa redui pwovizyon total la nan tout chèn yo.",
+          "addressLabel": "Kontra boule:",
+          "properties": "Kontra a pa gen <strong>okenn pwopriyetè, okenn admin, okenn chemen amelyorasyon, ni okenn fonksyon sekou</strong>. Token sib la <strong>kode di nan moman konpilasyon an</strong> — li ka sèlman boule TigerOG.",
+          "counter": "Yon kontè piblik <code>totalBurned</code> ogmante atomikman chak fwa yon boule fèt — se nimewo sa a chif Burned sou paj akèy la li."
         }
       },
       "lionogSupply": {
@@ -289,6 +298,12 @@
           "lpPercent": "4,42%",
           "circulating": "3 832 903 409 282 876 056 519 182",
           "circulatingPercent": "38,33%"
+        },
+        "burnContract": {
+          "title": "Kontra Boule Volontè",
+          "intro": "Yon kontra boule deplwaye sou BNB Chain. Nenpòt moun ka voye LionOG nan kontra a, epi nenpòt moun ka apre aktive fonksyon boule li pou detui pou tout tan balans la kenbe — sa redui pwovizyon total la nan tout chèn yo.",
+          "addressLabel": "Kontra boule:",
+          "legacy": "Kontra sa a se vèsyon orijinal la epi <strong>li pa ekspoze yon kontè <code>totalBurned</code> sou chèn</strong>. Pou sa, chif Burned ki montre sou paj akèy la kalkile nan retire pwovizyon aktyèl ant chèn yo nan mint inisyal la."
         }
       },
       "frogogSupply": {
@@ -314,6 +329,13 @@
           "lpPercent": "8,74%",
           "circulating": "8 385 795 686 123 088 377 024 138",
           "circulatingPercent": "83,86%"
+        },
+        "burnContract": {
+          "title": "Kontra Boule Volontè",
+          "intro": "Yon kòf boule dedye deplwaye sou BNB Chain. Nenpòt moun ka voye FrogOG nan kontra a, epi nenpòt moun ka apre rele fonksyon <code>burn()</code> li pou detui balans konplè kontra a pou tout tan — sa redui pwovizyon total la nan tout chèn yo.",
+          "addressLabel": "Kontra boule:",
+          "properties": "Kontra a pa gen <strong>okenn pwopriyetè, okenn admin, okenn chemen amelyorasyon, ni okenn fonksyon sekou</strong>. Token sib la <strong>kode di nan moman konpilasyon an</strong> — li ka sèlman boule FrogOG.",
+          "counter": "Yon kontè piblik <code>totalBurned</code> ogmante atomikman chak fwa yon boule fèt — se nimewo sa a chif Burned sou paj akèy la li."
         }
       }
     }

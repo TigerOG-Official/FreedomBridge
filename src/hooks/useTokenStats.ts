@@ -69,6 +69,8 @@ export type TokenSupplyData = {
 export type TokenStats = {
   symbol: string;
   totalConverted: bigint;
+  /** Sum of raw totalSupply() across every chain (no converter subtraction). Used for burn math. */
+  totalSupplyRaw: bigint;
   decimals: number;
   distribution: Array<{
     chainId: number;
@@ -242,9 +244,13 @@ export function useTokenStats(): UseTokenStatsReturn {
 
     const tokenConfig = MAINNET_TOKENS[symbol];
 
+    // Raw cross-chain totalSupply sum (no converter subtraction) — needed for burn math
+    const totalSupplyRaw = tokenData.reduce((s, d) => s + d.totalSupply, BigInt(0));
+
     return {
       symbol,
       totalConverted,
+      totalSupplyRaw,
       decimals: tokenConfig?.token.decimals ?? 9,
       distribution,
     };

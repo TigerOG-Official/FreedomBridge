@@ -147,6 +147,8 @@
       "title": "Tokenstatistiek",
       "description": "Intydse data vanaf die blokketting wat omskakelde aanbod en verspreiding oor alle ondersteunde netwerke toon.",
       "totalConverted": "Totaal Omskep",
+      "totalBurned": "Verbrand",
+      "burnedDerivedTooltip": "Afgelei van aanbod-delta (aanvanklike munt minus huidige kruis-ketting aanbod). Die oorspronklike verbrand-kontrak stel nie 'n teller bloot nie.",
       "distribution": "Netwerkverspreiding",
       "moreChains": "meer netwerke",
       "liquidityPools": "Likiditeitspoele",
@@ -261,6 +263,13 @@
           "lpPercent": "5.65%",
           "circulating": "3,662,233,757,674,602,416,819,986",
           "circulatingPercent": "36.62%"
+        },
+        "burnContract": {
+          "title": "Vrywillige Verbrand-kontrak",
+          "intro": "'n Toegewyde verbrand-kluis is op BNB Chain ontplooi. Enigeen kan TigerOG na die kontrak stuur, en enigeen kan dan sy <code>burn()</code>-funksie aanroep om die kontrak se volle saldo permanent te vernietig — wat die totale aanbod oor alle kettings verminder.",
+          "addressLabel": "Verbrand-kontrak:",
+          "properties": "Die kontrak het <strong>geen eienaar, geen administrateur, geen opgraderingspad en geen reddingsfunksie nie</strong>. Die teikentoken is <strong>hardgekodeer tydens samestelling</strong> — dit kan slegs ooit TigerOG verbrand.",
+          "counter": "'n Publieke <code>totalBurned</code>-teller verhoog atomies met elke verbranding — dit is wat die Burned-syfer op die tuisblad lees."
         }
       },
       "lionogSupply": {
@@ -286,6 +295,12 @@
           "lpPercent": "4.42%",
           "circulating": "3,832,903,409,282,876,056,519,182",
           "circulatingPercent": "38.33%"
+        },
+        "burnContract": {
+          "title": "Vrywillige Verbrand-kontrak",
+          "intro": "'n Verbrand-kontrak is op BNB Chain ontplooi. Enigeen kan LionOG na die kontrak stuur, en enigeen kan dan sy verbrand-funksie aanroep om die saldo permanent te vernietig — wat die totale aanbod oor alle kettings verminder.",
+          "addressLabel": "Verbrand-kontrak:",
+          "legacy": "Hierdie kontrak is die oorspronklike weergawe en <strong>stel nie 'n aan-ketting <code>totalBurned</code>-teller bloot nie</strong>. Die Burned-syfer wat op die tuisblad gewys word, word dus afgelei deur die huidige kruis-ketting aanbod van die aanvanklike munt af te trek."
         }
       },
       "frogogSupply": {
@@ -311,6 +326,13 @@
           "lpPercent": "8.74%",
           "circulating": "8,385,795,686,123,088,377,024,138",
           "circulatingPercent": "83.86%"
+        },
+        "burnContract": {
+          "title": "Vrywillige Verbrand-kontrak",
+          "intro": "'n Toegewyde verbrand-kluis is op BNB Chain ontplooi. Enigeen kan FrogOG na die kontrak stuur, en enigeen kan dan sy <code>burn()</code>-funksie aanroep om die kontrak se volle saldo permanent te vernietig — wat die totale aanbod oor alle kettings verminder.",
+          "addressLabel": "Verbrand-kontrak:",
+          "properties": "Die kontrak het <strong>geen eienaar, geen administrateur, geen opgraderingspad en geen reddingsfunksie nie</strong>. Die teikentoken is <strong>hardgekodeer tydens samestelling</strong> — dit kan slegs ooit FrogOG verbrand.",
+          "counter": "'n Publieke <code>totalBurned</code>-teller verhoog atomies met elke verbranding — dit is wat die Burned-syfer op die tuisblad lees."
         }
       }
     }
@@ -409,21 +431,9 @@
       "q6": "Watter netwerke word ondersteun?",
       "a6": "Ons ondersteun verskeie EVM-netwerke via Axelar, insluitend BNB Chain, Ethereum, Base en meer. Kyk na die Wiki vir die volledige lys van ondersteunde netwerke.",
       "q7": "Hoe lank neem oorbrugging?",
-      "a7": "Oorbruggingstyd hang af van watter netwerk jy VANAF stuur:
-
-• Ethereum: 15-20 min (vereis meer bevestigings)
-• BSC & Avalanche: 2-4 min (vinnigste)
-• Base, Linea, Polygon: 3-5 min
-
-Die toepassing wys die geskatte tyd voordat jy brug.",
+      "a7": "Oorbruggingstyd hang af van watter netwerk jy VANAF stuur:\n\n• Ethereum: 15-20 min (vereis meer bevestigings)\n• BSC & Avalanche: 2-4 min (vinnigste)\n• Base, Linea, Polygon: 3-5 min\n\nDie toepassing wys die geskatte tyd voordat jy brug.",
       "q8": "Wat is die sirkulerende aanbod van die OG-tokens?",
-      "a8": "Elke OG-token het 'n vaste sirkulerende aanbod wat afgelei is van sy oorspronklike BNB-token, wat rekening hou met verbrande tokens, vasgevangde kontrakbalanse en geslote LP:
-
-• TigerOG: ~3.66 septiljoen (36.62% van oorspronklike)
-• LionOG: ~3.83 septiljoen (38.33% van oorspronklike)
-• FrogOG: ~8.39 septiljoen (83.86% van oorspronklike)
-
-Sien die Wiki vir gedetailleerde uiteensettings.",
+      "a8": "Elke OG-token het 'n vaste sirkulerende aanbod wat afgelei is van sy oorspronklike BNB-token, wat rekening hou met verbrande tokens, vasgevangde kontrakbalanse en geslote LP:\n\n• TigerOG: ~3.66 septiljoen (36.62% van oorspronklike)\n• LionOG: ~3.83 septiljoen (38.33% van oorspronklike)\n• FrogOG: ~8.39 septiljoen (83.86% van oorspronklike)\n\nSien die Wiki vir gedetailleerde uiteensettings.",
       "q9": "Hoekom word daar nie van die OG-kontrak afstand gedoen nie?",
       "a9": "Om van die kontrak afstand te doen ('renounce'), sou die vermoë wegneem om in die toekoms te ontwikkel en nuwe netwerke by te voeg. Alhoewel daar nie in die voorsienbare toekoms van die kontrak afstand gedoen sal word nie, word veelvuldige handtekeninge vereis om enige veranderinge aan te bring. Daarbenewens word geen tokens of belasting aan die span toegeken nie.",
       "q10": "Hoekom is die OG-kontrak muntbaar ('mintable')?",
@@ -445,13 +455,7 @@ Sien die Wiki vir gedetailleerde uiteensettings.",
       "q18": "Watter sekuriteitsoudits is gedoen?",
       "a18": "Freedom Bridge het nie 'n formele derdeparty-oudit ondergaan nie. Die omskakelaarkontrak-kode is egter gebaseer op die SHx-omskakelaar wat deur die Stronghold-span gebou is (voormalige XRP- en Stellar-ontwikkelaars wat onlangs by Davos aangebied het). Die oorbruggingsinfrastruktuur word aangedryf deur Axelar, wat veelvuldige sekuriteitsoudits ondergaan het.",
       "q19": "Hoe beskerm Freedom Bridge teen kuberaanvalle of uitbuiting?",
-      "a19": "Verskeie maatreëls is in plek:
-
-• Die omskakelaar hou slegs die presiese sirkulerende aanbod wat benodig word - geen oortollige tokens wat uitgebuit kan word nie
-• Die omskakelaar het geen muntregte nie
-• Alle kontrakkodes is op die ketting geverifieer en oopbron
-• Token-regte is beveilig in 'n Safe.global multisig-beursie
-• Oorbrugging word hanteer deur Axelar se bewese infrastruktuur",
+      "a19": "Verskeie maatreëls is in plek:\n\n• Die omskakelaar hou slegs die presiese sirkulerende aanbod wat benodig word - geen oortollige tokens wat uitgebuit kan word nie\n• Die omskakelaar het geen muntregte nie\n• Alle kontrakkodes is op die ketting geverifieer en oopbron\n• Token-regte is beveilig in 'n Safe.global multisig-beursie\n• Oorbrugging word hanteer deur Axelar se bewese infrastruktuur",
       "q20": "Is oorbrugging onomkeerbaar? Wat as 'n oordrag misluk?",
       "a20": "Brug-oordragte kan selde vassit weens onvoldoende gas of netwerkopeenhoping. As dit gebeur, kan jy jou transaksie op Axelarscan volg en handmatig gas byvoeg om dit te voltooi. Axelar bied transaksieherstelnutsmiddels - jy sal nie jou tokens verloor nie.",
       "q21": "Wat is die risiko's verbonde aan die gebruik van Freedom Bridge?",
@@ -482,13 +486,7 @@ Sien die Wiki vir gedetailleerde uiteensettings.",
       },
       "risksOfUse": {
         "title": "Risiko's van Gebruik",
-        "content": "Kriptogeldeenheidsmarkte is wisselvallig en onvoorspelbaar. Deur Freedom Bridge te gebruik, erken en aanvaar jy dat:
-
-• Slimkontrakte foute of kwesbaarhede kan bevat wat tot verlies van fondse kan lei
-• Kruisnetwerkbrûe inherente risiko's dra, insluitend maar nie beperk nie tot: orakel-mislukkings, valideerder-samespanning en netwerkopeenhoping
-• Tokenwaardes dramaties kan fluktueer en jy 'n deel van of al jou belegging kan verloor
-• Transaksies op blokkettingnetwerke is onomkeerbaar
-• Netwerkfooie en gaskoste is buite ons beheer en kan aansienlik wissel"
+        "content": "Kriptogeldeenheidsmarkte is wisselvallig en onvoorspelbaar. Deur Freedom Bridge te gebruik, erken en aanvaar jy dat:\n\n• Slimkontrakte foute of kwesbaarhede kan bevat wat tot verlies van fondse kan lei\n• Kruisnetwerkbrûe inherente risiko's dra, insluitend maar nie beperk nie tot: orakel-mislukkings, valideerder-samespanning en netwerkopeenhoping\n• Tokenwaardes dramaties kan fluktueer en jy 'n deel van of al jou belegging kan verloor\n• Transaksies op blokkettingnetwerke is onomkeerbaar\n• Netwerkfooie en gaskoste is buite ons beheer en kan aansienlik wissel"
       },
       "noWarranties": {
         "title": "Geen Waarborge",

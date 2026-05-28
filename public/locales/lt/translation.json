@@ -147,6 +147,8 @@
       "title": "Žetonų Statistika",
       "description": "Realaus laiko duomenys iš blokų grandinės, rodantys konvertuotą pasiūlą ir pasiskirstymą visose palaikomose grandinėse.",
       "totalConverted": "Iš Viso Konvertuota",
+      "totalBurned": "Sudeginta",
+      "burnedDerivedTooltip": "Gauta iš pasiūlos skirtumo (pradinis mint minus dabartinė kryžminės grandinės pasiūla). Originali burn sutartis neatskleidžia skaitiklio.",
       "distribution": "Grandinės Pasiskirstymas",
       "moreChains": "daugiau grandinių",
       "liquidityPools": "Likvidumo Fondai",
@@ -261,6 +263,13 @@
           "lpPercent": "5.65%",
           "circulating": "3,662,233,757,674,602,416,819,986",
           "circulatingPercent": "36.62%"
+        },
+        "burnContract": {
+          "title": "Savanoriška burn sutartis",
+          "intro": "BNB Chain'e įdiegta dedikuota burn saugykla. Bet kas gali siųsti TigerOG į sutartį, o tada bet kas gali iškviesti jos <code>burn()</code> funkciją, kad visam laikui sunaikintų visą sutarties likutį — sumažindamas bendrą pasiūlą visose grandinėse.",
+          "addressLabel": "Burn sutartis:",
+          "properties": "Sutartis neturi <strong>savininko, administratoriaus, atnaujinimo kelio ar gelbėjimo funkcijos</strong>. Tikslinis žetonas yra <strong>griežtai užkoduotas kompiliavimo metu</strong> — ji gali deginti tik TigerOG.",
+          "counter": "Viešas <code>totalBurned</code> skaitiklis atomiškai didėja su kiekvienu deginimu — tai yra vertė, kurią skaito Burned rodiklis pagrindiniame puslapyje."
         }
       },
       "lionogSupply": {
@@ -286,6 +295,12 @@
           "lpPercent": "4.42%",
           "circulating": "3,832,903,409,282,876,056,519,182",
           "circulatingPercent": "38.33%"
+        },
+        "burnContract": {
+          "title": "Savanoriška burn sutartis",
+          "intro": "BNB Chain'e įdiegta burn sutartis. Bet kas gali siųsti LionOG į sutartį, o tada bet kas gali aktyvuoti jos burn funkciją, kad visam laikui sunaikintų laikomą likutį — sumažindamas bendrą pasiūlą visose grandinėse.",
+          "addressLabel": "Burn sutartis:",
+          "legacy": "Ši sutartis yra originali versija ir <strong>neatskleidžia on-chain <code>totalBurned</code> skaitiklio</strong>. Todėl Burned vertė, rodoma pagrindiniame puslapyje, gaunama atimant dabartinę kryžminės grandinės pasiūlą iš pradinio mint."
         }
       },
       "frogogSupply": {
@@ -311,6 +326,13 @@
           "lpPercent": "8.74%",
           "circulating": "8,385,795,686,123,088,377,024,138",
           "circulatingPercent": "83.86%"
+        },
+        "burnContract": {
+          "title": "Savanoriška burn sutartis",
+          "intro": "BNB Chain'e įdiegta dedikuota burn saugykla. Bet kas gali siųsti FrogOG į sutartį, o tada bet kas gali iškviesti jos <code>burn()</code> funkciją, kad visam laikui sunaikintų visą sutarties likutį — sumažindamas bendrą pasiūlą visose grandinėse.",
+          "addressLabel": "Burn sutartis:",
+          "properties": "Sutartis neturi <strong>savininko, administratoriaus, atnaujinimo kelio ar gelbėjimo funkcijos</strong>. Tikslinis žetonas yra <strong>griežtai užkoduotas kompiliavimo metu</strong> — ji gali deginti tik FrogOG.",
+          "counter": "Viešas <code>totalBurned</code> skaitiklis atomiškai didėja su kiekvienu deginimu — tai yra vertė, kurią skaito Burned rodiklis pagrindiniame puslapyje."
         }
       }
     }

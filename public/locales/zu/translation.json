@@ -147,6 +147,8 @@
       "title": "Izibalo Ze-Token",
       "description": "Idatha yesikhathi sangempela evela ku-blockchain ebonisa ukunikezwa okuguquliwe nokusatshalaliswa kuwo wonke amaketanga asekelwayo.",
       "totalConverted": "Ingqikithi Eguquliwe",
+      "totalBurned": "Kushisiwe",
+      "burnedDerivedTooltip": "Itholwe ekuhlukaneni kokunikezwa (i-mint yokuqala isuse ukunikezwa kwamanje kwe-cross-chain). Isivumelwano sokushisa sokuqala asibavezi inkomba.",
       "distribution": "Ukusatshalaliswa Kweketanga",
       "moreChains": "amaketanga engeziwe",
       "liquidityPools": "Amachibi Okungena",
@@ -261,6 +263,13 @@
           "lpPercent": "5.65%",
           "circulating": "3,662,233,757,674,602,416,819,986",
           "circulatingPercent": "36.62%"
+        },
+        "burnContract": {
+          "title": "Isivumelwano Sokushisa Sokuzithandela",
+          "intro": "Indlu yokushisa ekhethekile ifakwe ku-BNB Chain. Noma ngubani angathumela TigerOG esivumelwaneni, kanti noma ngubani angabe sebizwa umsebenzi waso ka-<code>burn()</code> ukuze acekele phansi unaphakade ibhalansi ephelele yesivumelwano — okwehlisa ukunikezwa okuphelele kuwo wonke ama-chain.",
+          "addressLabel": "Isivumelwano sokushisa:",
+          "properties": "Isivumelwano <strong>asinamnikazi, asinamphathi, asinandlela yokuthuthukisa, futhi asinawo umsebenzi wokutakula</strong>. Ithokheni ekuhlosiwe <strong>ibhaliwe ngokuqinile ngesikhathi sokuhlangana</strong> — ingakwazi ukushisa TigerOG kuphela.",
+          "counter": "Inkomba yomphakathi <code>totalBurned</code> ikhuphuka nge-atomic ngokushisa ngakunye — leli yinombolo efundwa yindikimba yeBurned ekhasini lasekhaya."
         }
       },
       "lionogSupply": {
@@ -286,6 +295,12 @@
           "lpPercent": "4.42%",
           "circulating": "3,832,903,409,282,876,056,519,182",
           "circulatingPercent": "38.33%"
+        },
+        "burnContract": {
+          "title": "Isivumelwano Sokushisa Sokuzithandela",
+          "intro": "Isivumelwano sokushisa sifakwe ku-BNB Chain. Noma ngubani angathumela LionOG esivumelwaneni, kanti noma ngubani angabe sengiqalisa umsebenzi waso wokushisa ukuze acekele phansi unaphakade ibhalansi ephethwe — okwehlisa ukunikezwa okuphelele kuwo wonke ama-chain.",
+          "addressLabel": "Isivumelwano sokushisa:",
+          "legacy": "Lesi sivumelwano siyinguqulo yokuqala futhi <strong>asibavezi inkomba ye-<code>totalBurned</code> on-chain</strong>. Ngakho-ke inombolo yeBurned eboniswa ekhasini lasekhaya itholakala ngokususa ukunikezwa kwamanje kwe-cross-chain ku-mint yokuqala."
         }
       },
       "frogogSupply": {
@@ -311,6 +326,13 @@
           "lpPercent": "8.74%",
           "circulating": "8,385,795,686,123,088,377,024,138",
           "circulatingPercent": "83.86%"
+        },
+        "burnContract": {
+          "title": "Isivumelwano Sokushisa Sokuzithandela",
+          "intro": "Indlu yokushisa ekhethekile ifakwe ku-BNB Chain. Noma ngubani angathumela FrogOG esivumelwaneni, kanti noma ngubani angabe sebizwa umsebenzi waso ka-<code>burn()</code> ukuze acekele phansi unaphakade ibhalansi ephelele yesivumelwano — okwehlisa ukunikezwa okuphelele kuwo wonke ama-chain.",
+          "addressLabel": "Isivumelwano sokushisa:",
+          "properties": "Isivumelwano <strong>asinamnikazi, asinamphathi, asinandlela yokuthuthukisa, futhi asinawo umsebenzi wokutakula</strong>. Ithokheni ekuhlosiwe <strong>ibhaliwe ngokuqinile ngesikhathi sokuhlangana</strong> — ingakwazi ukushisa FrogOG kuphela.",
+          "counter": "Inkomba yomphakathi <code>totalBurned</code> ikhuphuka nge-atomic ngokushisa ngakunye — leli yinombolo efundwa yindikimba yeBurned ekhasini lasekhaya."
         }
       }
     }

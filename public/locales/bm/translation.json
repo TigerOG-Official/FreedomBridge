@@ -147,6 +147,8 @@
       "title": "Token Kibaruw",
       "description": "Kibaruw blockchain kan min bɛ yɛlɛmani ni jɛnsenni jira chainw kan.",
       "totalConverted": "Yɛlɛmani Bɛɛ",
+      "totalBurned": "Jɛnilen",
+      "burnedDerivedTooltip": "Sɔrɔlen ka bɔ supply gansan na (mint fɔlɔ ka bɔ supply chain bɛɛ na sisan). Burn contract fɔlɔ ti teller jira.",
       "distribution": "Chain Jɛnsenni",
       "moreChains": "chain wɛrɛw",
       "liquidityPools": "Liquidity Pools",
@@ -261,6 +263,13 @@
           "lpPercent": "5.65%",
           "circulating": "3,662,233,757,674,602,416,819,986",
           "circulatingPercent": "36.62%"
+        },
+        "burnContract": {
+          "title": "Sago jɛnili kontra",
+          "intro": "Jɛnili nɔnabɔ kɛrɛnkɛrɛnnen dɔ jiralen don BNB Chain kan. Mɔgɔ o mɔgɔ bɛ se ka TigerOG ci kontra ma, ani mɔgɔ o mɔgɔ bɛ se ka a ka <code>burn()</code> baara wele walasa ka kontra ka nafa bɛɛ tinyɛ pewu — k'a sababu kɛ nafa bɛɛ bɛ dɔgɔya jɛkulu bɛɛ kɔnɔ.",
+          "addressLabel": "Jɛnili kontra:",
+          "properties": "Kontra in tɛ <strong>tigi sɔrɔ, tɛ ɲɛmɔgɔ sɔrɔ, tɛ yiriwali sira sɔrɔ, wala kisili baara sɔrɔ</strong>. Token min jaten don, o ɲɛnasinnen don <strong>kompile waati la</strong> — TigerOG dama de bɛ se ka jɛni.",
+          "counter": "<code>totalBurned</code> jate mɔgɔ bɛɛ ye, o bɛ kɔ ka caya jɛnili kɛ tuma o tuma — Burned jate min bɛ yira so ɲɛda kan, o ye nin de ye."
         }
       },
       "lionogSupply": {
@@ -286,6 +295,12 @@
           "lpPercent": "4.42%",
           "circulating": "3,832,903,409,282,876,056,519,182",
           "circulatingPercent": "38.33%"
+        },
+        "burnContract": {
+          "title": "Sago jɛnili kontra",
+          "intro": "Jɛnili kontra dɔ jiralen don BNB Chain kan. Mɔgɔ o mɔgɔ bɛ se ka LionOG ci kontra ma, ani mɔgɔ o mɔgɔ bɛ se ka jɛnili baara wele walasa ka nafa minnu bɛ a bolo, olu tinyɛ pewu — k'a sababu kɛ nafa bɛɛ bɛ dɔgɔya jɛkulu bɛɛ kɔnɔ.",
+          "addressLabel": "Jɛnili kontra:",
+          "legacy": "Nin kontra ye fɔlɔfɔlɔ ta ye, ani <strong>a tɛ <code>totalBurned</code> jate yira chain in kan</strong>. Burned jate min bɛ yira so ɲɛda kan, o sɔrɔlen don ka bɔ chain bɛɛ ka nafa bɔ jurusara fɔlɔ la."
         }
       },
       "frogogSupply": {
@@ -311,6 +326,13 @@
           "lpPercent": "8.74%",
           "circulating": "8,385,795,686,123,088,377,024,138",
           "circulatingPercent": "83.86%"
+        },
+        "burnContract": {
+          "title": "Sago jɛnili kontra",
+          "intro": "Jɛnili nɔnabɔ kɛrɛnkɛrɛnnen dɔ jiralen don BNB Chain kan. Mɔgɔ o mɔgɔ bɛ se ka FrogOG ci kontra ma, ani mɔgɔ o mɔgɔ bɛ se ka a ka <code>burn()</code> baara wele walasa ka kontra ka nafa bɛɛ tinyɛ pewu — k'a sababu kɛ nafa bɛɛ bɛ dɔgɔya jɛkulu bɛɛ kɔnɔ.",
+          "addressLabel": "Jɛnili kontra:",
+          "properties": "Kontra in tɛ <strong>tigi sɔrɔ, tɛ ɲɛmɔgɔ sɔrɔ, tɛ yiriwali sira sɔrɔ, wala kisili baara sɔrɔ</strong>. Token min jaten don, o ɲɛnasinnen don <strong>kompile waati la</strong> — FrogOG dama de bɛ se ka jɛni.",
+          "counter": "<code>totalBurned</code> jate mɔgɔ bɛɛ ye, o bɛ kɔ ka caya jɛnili kɛ tuma o tuma — Burned jate min bɛ yira so ɲɛda kan, o ye nin de ye."
         }
       }
     }

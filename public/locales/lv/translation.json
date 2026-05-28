@@ -158,6 +158,8 @@
       "title": "Tokenu Statistika",
       "description": "Reāllaika dati no blokķēdes, kas parāda konvertēto piedāvājumu un sadalījumu visās atbalstītajās ķēdēs.",
       "totalConverted": "Kopā Konvertēts",
+      "totalBurned": "Sadedzināts",
+      "burnedDerivedTooltip": "Iegūts no piedāvājuma starpības (sākotnējais mint mīnus pašreizējais starpķēžu piedāvājums). Oriģinālais burn līgums neatklāj skaitītāju.",
       "distribution": "Ķēdes Sadalījums",
       "moreChains": "vairāk ķēžu",
       "liquidityPools": "Likviditātes Fondi",
@@ -272,6 +274,13 @@
           "lpPercent": "5.65%",
           "circulating": "3,662,233,757,674,602,416,819,986",
           "circulatingPercent": "36.62%"
+        },
+        "burnContract": {
+          "title": "Brīvprātīgs burn līgums",
+          "intro": "BNB Chain ir izvietota īpaša burn glabātuve. Jebkurš var nosūtīt TigerOG uz līgumu, un jebkurš pēc tam var izsaukt tā <code>burn()</code> funkciju, lai pastāvīgi iznīcinātu līguma pilnu atlikumu — samazinot kopējo piedāvājumu visās ķēdēs.",
+          "addressLabel": "Burn līgums:",
+          "properties": "Līgumam nav <strong>īpašnieka, administratora, jaunināšanas ceļa vai glābšanas funkcijas</strong>. Mērķa žetons ir <strong>cieši kodēts kompilācijas laikā</strong> — tas var dedzināt tikai TigerOG.",
+          "counter": "Publisks <code>totalBurned</code> skaitītājs atomāri palielinās ar katru dedzināšanu — šī ir vērtība, ko nolasa Burned rādītājs sākumlapā."
         }
       },
       "lionogSupply": {
@@ -297,6 +306,12 @@
           "lpPercent": "4.42%",
           "circulating": "3,832,903,409,282,876,056,519,182",
           "circulatingPercent": "38.33%"
+        },
+        "burnContract": {
+          "title": "Brīvprātīgs burn līgums",
+          "intro": "BNB Chain ir izvietots burn līgums. Jebkurš var nosūtīt LionOG uz līgumu, un jebkurš pēc tam var aktivizēt tā burn funkciju, lai pastāvīgi iznīcinātu turēto atlikumu — samazinot kopējo piedāvājumu visās ķēdēs.",
+          "addressLabel": "Burn līgums:",
+          "legacy": "Šis līgums ir oriģinālā versija un <strong>neatklāj on-chain <code>totalBurned</code> skaitītāju</strong>. Tāpēc Burned vērtība, kas parādīta sākumlapā, tiek iegūta, atņemot pašreizējo starpķēžu piedāvājumu no sākotnējās mint."
         }
       },
       "frogogSupply": {
@@ -322,6 +337,13 @@
           "lpPercent": "8.74%",
           "circulating": "8,385,795,686,123,088,377,024,138",
           "circulatingPercent": "83.86%"
+        },
+        "burnContract": {
+          "title": "Brīvprātīgs burn līgums",
+          "intro": "BNB Chain ir izvietota īpaša burn glabātuve. Jebkurš var nosūtīt FrogOG uz līgumu, un jebkurš pēc tam var izsaukt tā <code>burn()</code> funkciju, lai pastāvīgi iznīcinātu līguma pilnu atlikumu — samazinot kopējo piedāvājumu visās ķēdēs.",
+          "addressLabel": "Burn līgums:",
+          "properties": "Līgumam nav <strong>īpašnieka, administratora, jaunināšanas ceļa vai glābšanas funkcijas</strong>. Mērķa žetons ir <strong>cieši kodēts kompilācijas laikā</strong> — tas var dedzināt tikai FrogOG.",
+          "counter": "Publisks <code>totalBurned</code> skaitītājs atomāri palielinās ar katru dedzināšanu — šī ir vērtība, ko nolasa Burned rādītājs sākumlapā."
         }
       }
     }

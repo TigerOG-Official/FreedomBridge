@@ -148,6 +148,8 @@
       "title": "Statistika Žetonov",
       "description": "Podatki v realnem času iz verige blokov, ki prikazujejo pretvorjeno ponudbo in porazdelitev po vseh podprtih verigah.",
       "totalConverted": "Skupaj Pretvoreno",
+      "totalBurned": "Zgorelo",
+      "burnedDerivedTooltip": "Izpeljano iz razlike v ponudbi (začetni mint minus trenutna medverižna ponudba). Izvirna burn pogodba ne razkriva števca.",
       "distribution": "Porazdelitev Verig",
       "moreChains": "več verig",
       "liquidityPools": "Likvidnostni Bazeni",
@@ -262,6 +264,13 @@
           "lpPercent": "5.65%",
           "circulating": "3,662,233,757,674,602,416,819,986",
           "circulatingPercent": "36.62%"
+        },
+        "burnContract": {
+          "title": "Prostovoljna burn pogodba",
+          "intro": "Na BNB Chain je nameščen namenski burn trezor. Kdorkoli lahko pošlje TigerOG v pogodbo, in kdorkoli lahko nato pokliče njeno funkcijo <code>burn()</code>, da trajno uniči celotno stanje pogodbe — kar zmanjša skupno ponudbo na vseh verigah.",
+          "addressLabel": "Burn pogodba:",
+          "properties": "Pogodba nima <strong>lastnika, administratorja, poti za nadgradnjo ali reševalne funkcije</strong>. Ciljni žeton je <strong>trdo kodiran v času prevajanja</strong> — lahko žge samo TigerOG.",
+          "counter": "Javni števec <code>totalBurned</code> se atomarno povečuje z vsakim žganjem — to je vrednost, ki jo bere prikaz Burned na začetni strani."
         }
       },
       "lionogSupply": {
@@ -287,6 +296,12 @@
           "lpPercent": "4.42%",
           "circulating": "3,832,903,409,282,876,056,519,182",
           "circulatingPercent": "38.33%"
+        },
+        "burnContract": {
+          "title": "Prostovoljna burn pogodba",
+          "intro": "Na BNB Chain je nameščena burn pogodba. Kdorkoli lahko pošlje LionOG v pogodbo, in kdorkoli lahko nato sproži njeno burn funkcijo, da trajno uniči zadržano stanje — kar zmanjša skupno ponudbo na vseh verigah.",
+          "addressLabel": "Burn pogodba:",
+          "legacy": "Ta pogodba je izvirna različica in <strong>ne razkriva on-chain števca <code>totalBurned</code></strong>. Zato se vrednost Burned, prikazana na začetni strani, izpelje z odštevanjem trenutne medverižne ponudbe od začetnega minta."
         }
       },
       "frogogSupply": {
@@ -312,6 +327,13 @@
           "lpPercent": "8.74%",
           "circulating": "8,385,795,686,123,088,377,024,138",
           "circulatingPercent": "83.86%"
+        },
+        "burnContract": {
+          "title": "Prostovoljna burn pogodba",
+          "intro": "Na BNB Chain je nameščen namenski burn trezor. Kdorkoli lahko pošlje FrogOG v pogodbo, in kdorkoli lahko nato pokliče njeno funkcijo <code>burn()</code>, da trajno uniči celotno stanje pogodbe — kar zmanjša skupno ponudbo na vseh verigah.",
+          "addressLabel": "Burn pogodba:",
+          "properties": "Pogodba nima <strong>lastnika, administratorja, poti za nadgradnjo ali reševalne funkcije</strong>. Ciljni žeton je <strong>trdo kodiran v času prevajanja</strong> — lahko žge samo FrogOG.",
+          "counter": "Javni števec <code>totalBurned</code> se atomarno povečuje z vsakim žganjem — to je vrednost, ki jo bere prikaz Burned na začetni strani."
         }
       }
     }

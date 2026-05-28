@@ -147,6 +147,8 @@
       "title": "Token-tilastot",
       "description": "Reaaliaikaista dataa lohkoketjusta, joka näyttää muunnetun tarjonnan ja jakautumisen kaikissa tuetuissa ketjuissa.",
       "totalConverted": "Yhteensä muunnettu",
+      "totalBurned": "Poltettu",
+      "burnedDerivedTooltip": "Johdettu tarjontaerosta (alkuperäinen mint miinus nykyinen ketjujenvälinen tarjonta). Alkuperäinen polttosopimus ei tarjoa laskuria.",
       "distribution": "Ketjujakauma",
       "moreChains": "lisää ketjuja",
       "liquidityPools": "Likviditeettipoolit",
@@ -261,6 +263,13 @@
           "lpPercent": "5,65 %",
           "circulating": "3 662 233 757 674 602 416 819 986",
           "circulatingPercent": "36,62 %"
+        },
+        "burnContract": {
+          "title": "Vapaaehtoinen polttosopimus",
+          "intro": "BNB Chainiin on otettu käyttöön omistettu polttoholvi. Kuka tahansa voi lähettää TigerOG sopimukseen, ja kuka tahansa voi sitten kutsua sen <code>burn()</code>-funktiota tuhotakseen sopimuksen koko saldon pysyvästi — vähentäen kokonaistarjontaa kaikilla ketjuilla.",
+          "addressLabel": "Polttosopimus:",
+          "properties": "Sopimuksella ei ole <strong>omistajaa, ylläpitäjää, päivityspolkua eikä pelastusfunktiota</strong>. Kohdetoken on <strong>kovakoodattu käännösaikana</strong> — se voi polttaa vain TigerOG:ia.",
+          "counter": "Julkinen <code>totalBurned</code>-laskuri kasvaa atomisesti jokaisen polton yhteydessä — tämä on luku, jonka etusivun Burned-näyttö lukee."
         }
       },
       "lionogSupply": {
@@ -286,6 +295,12 @@
           "lpPercent": "4,42 %",
           "circulating": "3 832 903 409 282 876 056 519 182",
           "circulatingPercent": "38,33 %"
+        },
+        "burnContract": {
+          "title": "Vapaaehtoinen polttosopimus",
+          "intro": "BNB Chainiin on otettu käyttöön polttosopimus. Kuka tahansa voi lähettää LionOG sopimukseen, ja kuka tahansa voi sitten käynnistää sen polttofunktion tuhotakseen pidetyn saldon pysyvästi — vähentäen kokonaistarjontaa kaikilla ketjuilla.",
+          "addressLabel": "Polttosopimus:",
+          "legacy": "Tämä sopimus on alkuperäinen versio eikä <strong>tarjoa ketjussa olevaa <code>totalBurned</code>-laskuria</strong>. Etusivulla näkyvä Burned-luku johdetaan siksi vähentämällä nykyinen ketjujenvälinen tarjonta alkuperäisestä mintistä."
         }
       },
       "frogogSupply": {
@@ -311,6 +326,13 @@
           "lpPercent": "8,74 %",
           "circulating": "8 385 795 686 123 088 377 024 138",
           "circulatingPercent": "83,86 %"
+        },
+        "burnContract": {
+          "title": "Vapaaehtoinen polttosopimus",
+          "intro": "BNB Chainiin on otettu käyttöön omistettu polttoholvi. Kuka tahansa voi lähettää FrogOG sopimukseen, ja kuka tahansa voi sitten kutsua sen <code>burn()</code>-funktiota tuhotakseen sopimuksen koko saldon pysyvästi — vähentäen kokonaistarjontaa kaikilla ketjuilla.",
+          "addressLabel": "Polttosopimus:",
+          "properties": "Sopimuksella ei ole <strong>omistajaa, ylläpitäjää, päivityspolkua eikä pelastusfunktiota</strong>. Kohdetoken on <strong>kovakoodattu käännösaikana</strong> — se voi polttaa vain FrogOG:ia.",
+          "counter": "Julkinen <code>totalBurned</code>-laskuri kasvaa atomisesti jokaisen polton yhteydessä — tämä on luku, jonka etusivun Burned-näyttö lukee."
         }
       }
     }

@@ -147,6 +147,8 @@
       "title": "Limoore Token",
       "description": "Kabaruuji waktu gooto daga blockchain kollooji supply waylaaɗo e distribution dow kala chains tawaaɗi.",
       "totalConverted": "Fof Waylaama",
+      "totalBurned": "Sumi",
+      "burnedDerivedTooltip": "Derived e supply delta (mint aranal subtract current cross-chain supply). Original burn contract yaltinaani counter.",
       "distribution": "Chain Distribution",
       "moreChains": "chains goɗɗi",
       "liquidityPools": "Liquidity Pools",
@@ -261,6 +263,13 @@
           "lpPercent": "5.65%",
           "circulating": "3,662,233,757,674,602,416,819,986",
           "circulatingPercent": "36.62%"
+        },
+        "burnContract": {
+          "title": "Burn Contract suɓaaɗo",
+          "intro": "Burn vault tan deployaa ko nder BNB Chain. Kala neɗɗo ina waawi nuldude TigerOG faade e contract o, e kala neɗɗo ina waawi noddude function <code>burn()</code> ngam halkude balance contract o haa abada — ɗum lasal supply totale e chains fof.",
+          "addressLabel": "Burn contract:",
+          "properties": "Contract o alaa <strong>jeyɗo, alaa admin, alaa laawol upgrade, e alaa rescue function</strong>. Token waaɗnaaɗo ko <strong>hardcoded e compile time</strong> — sey TigerOG tan o waawi sumude.",
+          "counter": "Counter publique <code>totalBurned</code> ina ƴetta atomic e kala burn — ko ndee limoore Burned nde tagol kakkital o jangaa."
         }
       },
       "lionogSupply": {
@@ -286,6 +295,12 @@
           "lpPercent": "4.42%",
           "circulating": "3,832,903,409,282,876,056,519,182",
           "circulatingPercent": "38.33%"
+        },
+        "burnContract": {
+          "title": "Burn Contract suɓaaɗo",
+          "intro": "Burn contract tan deployaa ko nder BNB Chain. Kala neɗɗo ina waawi nuldude LionOG faade e contract o, e kala neɗɗo ina waawi noddude burn function nde ngam halkude balance ndi hebli haa abada — ɗum lasal supply totale e chains fof.",
+          "addressLabel": "Burn contract:",
+          "legacy": "Contract o ko version aslalo, e <strong>o yaltinaani counter <code>totalBurned</code> on-chain</strong>. Limoore Burned nde holliraa e tagol kakkital o, ɗum ko subtractaa current cross-chain supply e mint aranal."
         }
       },
       "frogogSupply": {
@@ -311,6 +326,13 @@
           "lpPercent": "8.74%",
           "circulating": "8,385,795,686,123,088,377,024,138",
           "circulatingPercent": "83.86%"
+        },
+        "burnContract": {
+          "title": "Burn Contract suɓaaɗo",
+          "intro": "Burn vault tan deployaa ko nder BNB Chain. Kala neɗɗo ina waawi nuldude FrogOG faade e contract o, e kala neɗɗo ina waawi noddude function <code>burn()</code> ngam halkude balance contract o haa abada — ɗum lasal supply totale e chains fof.",
+          "addressLabel": "Burn contract:",
+          "properties": "Contract o alaa <strong>jeyɗo, alaa admin, alaa laawol upgrade, e alaa rescue function</strong>. Token waaɗnaaɗo ko <strong>hardcoded e compile time</strong> — sey FrogOG tan o waawi sumude.",
+          "counter": "Counter publique <code>totalBurned</code> ina ƴetta atomic e kala burn — ko ndee limoore Burned nde tagol kakkital o jangaa."
         }
       }
     }

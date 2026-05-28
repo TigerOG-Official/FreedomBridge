@@ -147,6 +147,8 @@
       "title": "Statistici Token",
       "description": "Date în timp real din blockchain care arată oferta convertită și distribuția pe toate rețelele acceptate.",
       "totalConverted": "Total Convertit",
+      "totalBurned": "Ars",
+      "burnedDerivedTooltip": "Derivat din diferența de ofertă (mint inițial minus oferta cross-chain curentă). Contractul de burn original nu expune un contor.",
       "distribution": "Distribuție pe Rețele",
       "moreChains": "mai multe rețele",
       "liquidityPools": "Pool-uri de Lichiditate",
@@ -261,6 +263,13 @@
           "lpPercent": "5.65%",
           "circulating": "3.662.233.757.674.602.416.819.986",
           "circulatingPercent": "36.62%"
+        },
+        "burnContract": {
+          "title": "Contract de burn voluntar",
+          "intro": "Un seif de burn dedicat a fost desfășurat pe BNB Chain. Oricine poate trimite TigerOG către contract și oricine poate apoi apela funcția <code>burn()</code> pentru a distruge permanent soldul complet al contractului — reducând oferta totală pe toate lanțurile.",
+          "addressLabel": "Contract de burn:",
+          "properties": "Contractul nu are <strong>proprietar, administrator, cale de actualizare sau funcție de salvare</strong>. Token-ul țintă este <strong>codificat fix la momentul compilării</strong> — poate arde doar TigerOG.",
+          "counter": "Un contor public <code>totalBurned</code> crește atomic cu fiecare ardere — aceasta este valoarea pe care o citește indicatorul Burned de pe pagina principală."
         }
       },
       "lionogSupply": {
@@ -286,6 +295,12 @@
           "lpPercent": "4.42%",
           "circulating": "3.832.903.409.282.876.056.519.182",
           "circulatingPercent": "38.33%"
+        },
+        "burnContract": {
+          "title": "Contract de burn voluntar",
+          "intro": "Un contract de burn a fost desfășurat pe BNB Chain. Oricine poate trimite LionOG către contract și oricine poate apoi declanșa funcția sa de burn pentru a distruge permanent soldul deținut — reducând oferta totală pe toate lanțurile.",
+          "addressLabel": "Contract de burn:",
+          "legacy": "Acest contract este versiunea originală și <strong>nu expune un contor <code>totalBurned</code> on-chain</strong>. Prin urmare, valoarea Burned afișată pe pagina principală este derivată prin scăderea ofertei cross-chain curente din mint-ul inițial."
         }
       },
       "frogogSupply": {
@@ -311,6 +326,13 @@
           "lpPercent": "8.74%",
           "circulating": "8,385,795,686,123,088,377,024,138",
           "circulatingPercent": "83.86%"
+        },
+        "burnContract": {
+          "title": "Contract de burn voluntar",
+          "intro": "Un seif de burn dedicat a fost desfășurat pe BNB Chain. Oricine poate trimite FrogOG către contract și oricine poate apoi apela funcția <code>burn()</code> pentru a distruge permanent soldul complet al contractului — reducând oferta totală pe toate lanțurile.",
+          "addressLabel": "Contract de burn:",
+          "properties": "Contractul nu are <strong>proprietar, administrator, cale de actualizare sau funcție de salvare</strong>. Token-ul țintă este <strong>codificat fix la momentul compilării</strong> — poate arde doar FrogOG.",
+          "counter": "Un contor public <code>totalBurned</code> crește atomic cu fiecare ardere — aceasta este valoarea pe care o citește indicatorul Burned de pe pagina principală."
         }
       }
     }

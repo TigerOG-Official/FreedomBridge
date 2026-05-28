@@ -152,6 +152,8 @@
       "title": "Štatistiky Tokenov",
       "description": "Údaje v reálnom čase z blockchainu zobrazujúce skonvertovanú ponuku a distribúciu naprieč všetkými podporovanými reťazcami.",
       "totalConverted": "Celkovo Skonvertované",
+      "totalBurned": "Spálené",
+      "burnedDerivedTooltip": "Odvodené z rozdielu ponuky (počiatočný mint mínus aktuálna cross-chain ponuka). Pôvodná burn zmluva nesprístupňuje počítadlo.",
       "distribution": "Distribúcia Reťazcov",
       "moreChains": "viac reťazcov",
       "liquidityPools": "Fondy Likvidity",
@@ -266,6 +268,13 @@
           "lpPercent": "5,65%",
           "circulating": "3,662,233,757,674,602,416,819,986",
           "circulatingPercent": "36,62%"
+        },
+        "burnContract": {
+          "title": "Dobrovoľná burn zmluva",
+          "intro": "Na BNB Chain je nasadený dedikovaný burn trezor. Ktokoľvek môže poslať TigerOG do zmluvy a ktokoľvek potom môže zavolať jej funkciu <code>burn()</code>, čím natrvalo zničí celý zostatok zmluvy — znižujúc tak celkovú ponuku naprieč všetkými reťazcami.",
+          "addressLabel": "Burn zmluva:",
+          "properties": "Zmluva nemá <strong>žiadneho vlastníka, žiadneho administrátora, žiadnu cestu na upgrade ani žiadnu záchrannú funkciu</strong>. Cieľový token je <strong>napevno zakódovaný v čase kompilácie</strong> — môže páliť len TigerOG.",
+          "counter": "Verejné počítadlo <code>totalBurned</code> sa atomicky zvyšuje s každým spálením — to je hodnota, ktorú číta ukazovateľ Burned na hlavnej stránke."
         }
       },
       "lionogSupply": {
@@ -291,6 +300,12 @@
           "lpPercent": "4,42%",
           "circulating": "3,832,903,409,282,876,056,519,182",
           "circulatingPercent": "38,33%"
+        },
+        "burnContract": {
+          "title": "Dobrovoľná burn zmluva",
+          "intro": "Na BNB Chain je nasadená burn zmluva. Ktokoľvek môže poslať LionOG do zmluvy a ktokoľvek potom môže spustiť jej burn funkciu, čím natrvalo zničí zadržaný zostatok — znižujúc tak celkovú ponuku naprieč všetkými reťazcami.",
+          "addressLabel": "Burn zmluva:",
+          "legacy": "Táto zmluva je pôvodná verzia a <strong>nesprístupňuje on-chain počítadlo <code>totalBurned</code></strong>. Preto sa hodnota Burned zobrazená na hlavnej stránke odvodzuje odpočítaním aktuálnej cross-chain ponuky od počiatočného mintu."
         }
       },
       "frogogSupply": {
@@ -316,6 +331,13 @@
           "lpPercent": "8,74%",
           "circulating": "8,385,795,686,123,088,377,024,138",
           "circulatingPercent": "83,86%"
+        },
+        "burnContract": {
+          "title": "Dobrovoľná burn zmluva",
+          "intro": "Na BNB Chain je nasadený dedikovaný burn trezor. Ktokoľvek môže poslať FrogOG do zmluvy a ktokoľvek potom môže zavolať jej funkciu <code>burn()</code>, čím natrvalo zničí celý zostatok zmluvy — znižujúc tak celkovú ponuku naprieč všetkými reťazcami.",
+          "addressLabel": "Burn zmluva:",
+          "properties": "Zmluva nemá <strong>žiadneho vlastníka, žiadneho administrátora, žiadnu cestu na upgrade ani žiadnu záchrannú funkciu</strong>. Cieľový token je <strong>napevno zakódovaný v čase kompilácie</strong> — môže páliť len FrogOG.",
+          "counter": "Verejné počítadlo <code>totalBurned</code> sa atomicky zvyšuje s každým spálením — to je hodnota, ktorú číta ukazovateľ Burned na hlavnej stránke."
         }
       }
     }

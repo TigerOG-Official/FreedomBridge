@@ -148,6 +148,8 @@
       "title": "Statistiche Token",
       "description": "Dati in tempo reale dalla blockchain che mostrano l'offerta convertita e la distribuzione su tutte le chain supportate.",
       "totalConverted": "Totale Convertito",
+      "totalBurned": "Bruciato",
+      "burnedDerivedTooltip": "Derivato dalla differenza di offerta (mint iniziale meno offerta cross-chain corrente). Il contratto di burn originale non espone un contatore.",
       "distribution": "Distribuzione Chain",
       "moreChains": "altre chain",
       "liquidityPools": "Pool di Liquidità",
@@ -262,6 +264,13 @@
           "lpPercent": "5,65%",
           "circulating": "3.662.233.757.674.602.416.819.986",
           "circulatingPercent": "36,62%"
+        },
+        "burnContract": {
+          "title": "Contratto di burn volontario",
+          "intro": "Sulla BNB Chain è stato distribuito un vault di burn dedicato. Chiunque può inviare TigerOG al contratto e chiunque può poi chiamare la sua funzione <code>burn()</code> per distruggere permanentemente l'intero saldo del contratto — riducendo l'offerta totale su tutte le chain.",
+          "addressLabel": "Contratto di burn:",
+          "properties": "Il contratto non ha <strong>proprietario, amministratore, percorso di aggiornamento né funzione di salvataggio</strong>. Il token di destinazione è <strong>codificato in modo statico al momento della compilazione</strong> — può bruciare solo TigerOG.",
+          "counter": "Un contatore pubblico <code>totalBurned</code> si incrementa atomicamente ad ogni burn — è il valore letto dall'indicatore Burned nella home page."
         }
       },
       "lionogSupply": {
@@ -287,6 +296,12 @@
           "lpPercent": "4,42%",
           "circulating": "3.832.903.409.282.876.056.519.182",
           "circulatingPercent": "38,33%"
+        },
+        "burnContract": {
+          "title": "Contratto di burn volontario",
+          "intro": "Sulla BNB Chain è stato distribuito un contratto di burn. Chiunque può inviare LionOG al contratto e chiunque può poi attivare la sua funzione di burn per distruggere permanentemente il saldo detenuto — riducendo l'offerta totale su tutte le chain.",
+          "addressLabel": "Contratto di burn:",
+          "legacy": "Questo contratto è la versione originale e <strong>non espone un contatore <code>totalBurned</code> on-chain</strong>. Il valore Burned mostrato nella home page viene quindi calcolato sottraendo l'offerta cross-chain corrente dal mint iniziale."
         }
       },
       "frogogSupply": {
@@ -312,6 +327,13 @@
           "lpPercent": "8,74%",
           "circulating": "8.385.795.686.123.088.377.024.138",
           "circulatingPercent": "83,86%"
+        },
+        "burnContract": {
+          "title": "Contratto di burn volontario",
+          "intro": "Sulla BNB Chain è stato distribuito un vault di burn dedicato. Chiunque può inviare FrogOG al contratto e chiunque può poi chiamare la sua funzione <code>burn()</code> per distruggere permanentemente l'intero saldo del contratto — riducendo l'offerta totale su tutte le chain.",
+          "addressLabel": "Contratto di burn:",
+          "properties": "Il contratto non ha <strong>proprietario, amministratore, percorso di aggiornamento né funzione di salvataggio</strong>. Il token di destinazione è <strong>codificato in modo statico al momento della compilazione</strong> — può bruciare solo FrogOG.",
+          "counter": "Un contatore pubblico <code>totalBurned</code> si incrementa atomicamente ad ogni burn — è il valore letto dall'indicatore Burned nella home page."
         }
       }
     }

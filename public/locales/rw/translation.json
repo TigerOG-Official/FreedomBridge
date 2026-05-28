@@ -147,6 +147,8 @@
       "title": "Ibiranga Token",
       "description": "Amakuru y'ako kanya avuye kuri blockchain yerekana ingano yahinduwe n'iyakwirakwijwe ku minyururu yose ishyigikiwe.",
       "totalConverted": "Igiteranyo Cyahinduwe",
+      "totalBurned": "Cyatembye",
+      "burnedDerivedTooltip": "Iyaboneka muri delta y'ibitanga (mint y'ibanze ikurikiraho ibitanga bya cross-chain ubu). Amasezerano y'igitemba yo mu mizi ntiyerekana imbarukabaze.",
       "distribution": "Ikubitiro rya Chain",
       "moreChains": "iminyururu myinshi",
       "liquidityPools": "Ibidendezi by'Imari",
@@ -261,6 +263,13 @@
           "lpPercent": "5.65%",
           "circulating": "3,662,233,757,674,602,416,819,986",
           "circulatingPercent": "36.62%"
+        },
+        "burnContract": {
+          "title": "Amasezerano y'Igitemba Ku Bushake",
+          "intro": "Ububiko bw'igitemba bwihariye bwashyizweho kuri BNB Chain. Umuntu wese arashobora kohereza TigerOG ku masezerano, kandi umuntu wese arashobora hanyuma guhamagara umurimo wayo wa <code>burn()</code> kugira ngo asenye burundu balansi yose y'amasezerano — bigatuma haboneka kugabanuka kw'ibitanga muri chains zose.",
+          "addressLabel": "Amasezerano y'igitemba:",
+          "properties": "Amasezerano nta <strong>nyirayo, nta admin, nta nzira yo kuvugurura, kandi nta murimo wo gutabara afite</strong>. Token igamijwe <strong>yashizweho mu gihe cyo guhuza code</strong> — irashobora gusa gutemba TigerOG.",
+          "counter": "Imbarukabaze rusange <code>totalBurned</code> iyongera muri atomic uko buri gitemba kibaye — iyi ni umubare igitemba Burned cyerekana ku ipaji y'ibanze gisoma."
         }
       },
       "lionogSupply": {
@@ -286,6 +295,12 @@
           "lpPercent": "4.42%",
           "circulating": "3,832,903,409,282,876,056,519,182",
           "circulatingPercent": "38.33%"
+        },
+        "burnContract": {
+          "title": "Amasezerano y'Igitemba Ku Bushake",
+          "intro": "Amasezerano y'igitemba yashyizweho kuri BNB Chain. Umuntu wese arashobora kohereza LionOG ku masezerano, kandi umuntu wese arashobora hanyuma gutangiza umurimo wayo wo gutemba kugira ngo asenye burundu balansi ifite — bigatuma haboneka kugabanuka kw'ibitanga muri chains zose.",
+          "addressLabel": "Amasezerano y'igitemba:",
+          "legacy": "Aya masezerano ni verisiyo yo mu mizi kandi <strong>ntiyerekana imbarukabaze <code>totalBurned</code> kuri chain</strong>. Bityo, umubare wa Burned werekanwa ku ipaji y'ibanze uvuye mu gukura ibitanga bya cross-chain ubu mu mint y'ibanze."
         }
       },
       "frogogSupply": {
@@ -311,6 +326,13 @@
           "lpPercent": "8.74%",
           "circulating": "8,385,795,686,123,088,377,024,138",
           "circulatingPercent": "83.86%"
+        },
+        "burnContract": {
+          "title": "Amasezerano y'Igitemba Ku Bushake",
+          "intro": "Ububiko bw'igitemba bwihariye bwashyizweho kuri BNB Chain. Umuntu wese arashobora kohereza FrogOG ku masezerano, kandi umuntu wese arashobora hanyuma guhamagara umurimo wayo wa <code>burn()</code> kugira ngo asenye burundu balansi yose y'amasezerano — bigatuma haboneka kugabanuka kw'ibitanga muri chains zose.",
+          "addressLabel": "Amasezerano y'igitemba:",
+          "properties": "Amasezerano nta <strong>nyirayo, nta admin, nta nzira yo kuvugurura, kandi nta murimo wo gutabara afite</strong>. Token igamijwe <strong>yashizweho mu gihe cyo guhuza code</strong> — irashobora gusa gutemba FrogOG.",
+          "counter": "Imbarukabaze rusange <code>totalBurned</code> iyongera muri atomic uko buri gitemba kibaye — iyi ni umubare igitemba Burned cyerekana ku ipaji y'ibanze gisoma."
         }
       }
     }

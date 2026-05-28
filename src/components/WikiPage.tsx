@@ -446,6 +446,44 @@ export default function WikiPage() {
                                 className="text-xl font-semibold mt-6"
                                 style={{ fontFamily: 'var(--font-display)', color: 'var(--theme-text-primary)' }}
                               >
+                                {t('wiki.articles.tigerogSupply.burnContract.title', 'Voluntary Burn Contract')}
+                              </h3>
+                              <div
+                                className="p-4 rounded-lg border space-y-3"
+                                style={{ backgroundColor: 'var(--theme-card-bg)', borderColor: 'var(--theme-card-border)' }}
+                              >
+                                <p className="text-sm" style={{ color: 'var(--theme-text-secondary)' }}>
+                                  <Trans
+                                    i18nKey="wiki.articles.tigerogSupply.burnContract.intro"
+                                    components={{ code: <code className="px-1 py-0.5 rounded" style={{ backgroundColor: 'var(--theme-section-bg)' }} /> }}
+                                  />
+                                </p>
+                                <p className="text-sm" style={{ color: 'var(--theme-text-secondary)' }}>
+                                  <Trans i18nKey="wiki.articles.tigerogSupply.burnContract.properties" />
+                                </p>
+                                <p className="text-sm" style={{ color: 'var(--theme-text-secondary)' }}>
+                                  <Trans
+                                    i18nKey="wiki.articles.tigerogSupply.burnContract.counter"
+                                    components={{ code: <code className="px-1 py-0.5 rounded" style={{ backgroundColor: 'var(--theme-section-bg)' }} /> }}
+                                  />
+                                </p>
+                                <p className="text-sm" style={{ color: 'var(--theme-text-secondary)' }}>
+                                  <strong>{t('wiki.articles.tigerogSupply.burnContract.addressLabel', 'Burn contract:')}</strong>{' '}
+                                  <a
+                                    href="https://bscscan.com/address/0x999775Ae662a176131EB44C6F62d275A24e39d97"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="underline hover:text-[var(--primary)] font-mono text-xs break-all"
+                                  >
+                                    0x999775Ae662a176131EB44C6F62d275A24e39d97
+                                  </a>
+                                </p>
+                              </div>
+
+                              <h3
+                                className="text-xl font-semibold mt-6"
+                                style={{ fontFamily: 'var(--font-display)', color: 'var(--theme-text-primary)' }}
+                              >
                                 {t('wiki.articles.supplyCommon.verification')}
                               </h3>
                               <p className="leading-7" style={{ color: 'var(--theme-text-secondary)' }}>
@@ -588,6 +626,38 @@ export default function WikiPage() {
                                 className="text-xl font-semibold mt-6"
                                 style={{ fontFamily: 'var(--font-display)', color: 'var(--theme-text-primary)' }}
                               >
+                                {t('wiki.articles.lionogSupply.burnContract.title', 'Voluntary Burn Contract')}
+                              </h3>
+                              <div
+                                className="p-4 rounded-lg border space-y-3"
+                                style={{ backgroundColor: 'var(--theme-card-bg)', borderColor: 'var(--theme-card-border)' }}
+                              >
+                                <p className="text-sm" style={{ color: 'var(--theme-text-secondary)' }}>
+                                  {t('wiki.articles.lionogSupply.burnContract.intro', 'A burn contract is deployed on BNB Chain. Anyone can send LionOG to the contract, and anyone can then trigger its burn function to permanently destroy the held balance — reducing total supply across all chains.')}
+                                </p>
+                                <p className="text-sm" style={{ color: 'var(--theme-text-secondary)' }}>
+                                  <Trans
+                                    i18nKey="wiki.articles.lionogSupply.burnContract.legacy"
+                                    components={{ code: <code className="px-1 py-0.5 rounded" style={{ backgroundColor: 'var(--theme-section-bg)' }} /> }}
+                                  />
+                                </p>
+                                <p className="text-sm" style={{ color: 'var(--theme-text-secondary)' }}>
+                                  <strong>{t('wiki.articles.lionogSupply.burnContract.addressLabel', 'Burn contract:')}</strong>{' '}
+                                  <a
+                                    href="https://bscscan.com/address/0x3a8b67c2034e259b7e193262455ff634bbd00d6d"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="underline hover:text-[var(--primary)] font-mono text-xs break-all"
+                                  >
+                                    0x3a8b67c2034e259b7e193262455ff634bbd00d6d
+                                  </a>
+                                </p>
+                              </div>
+
+                              <h3
+                                className="text-xl font-semibold mt-6"
+                                style={{ fontFamily: 'var(--font-display)', color: 'var(--theme-text-primary)' }}
+                              >
                                 {t('wiki.articles.supplyCommon.verification')}
                               </h3>
                               <p className="leading-7" style={{ color: 'var(--theme-text-secondary)' }}>
@@ -723,6 +793,44 @@ export default function WikiPage() {
                                 </p>
                                 <p className="text-sm mt-2">
                                   <Trans i18nKey="wiki.articles.frogogSupply.launchData" />
+                                </p>
+                              </div>
+
+                              <h3
+                                className="text-xl font-semibold mt-6"
+                                style={{ fontFamily: 'var(--font-display)', color: 'var(--theme-text-primary)' }}
+                              >
+                                {t('wiki.articles.frogogSupply.burnContract.title', 'Voluntary Burn Contract')}
+                              </h3>
+                              <div
+                                className="p-4 rounded-lg border space-y-3"
+                                style={{ backgroundColor: 'var(--theme-card-bg)', borderColor: 'var(--theme-card-border)' }}
+                              >
+                                <p className="text-sm" style={{ color: 'var(--theme-text-secondary)' }}>
+                                  <Trans
+                                    i18nKey="wiki.articles.frogogSupply.burnContract.intro"
+                                    components={{ code: <code className="px-1 py-0.5 rounded" style={{ backgroundColor: 'var(--theme-section-bg)' }} /> }}
+                                  />
+                                </p>
+                                <p className="text-sm" style={{ color: 'var(--theme-text-secondary)' }}>
+                                  <Trans i18nKey="wiki.articles.frogogSupply.burnContract.properties" />
+                                </p>
+                                <p className="text-sm" style={{ color: 'var(--theme-text-secondary)' }}>
+                                  <Trans
+                                    i18nKey="wiki.articles.frogogSupply.burnContract.counter"
+                                    components={{ code: <code className="px-1 py-0.5 rounded" style={{ backgroundColor: 'var(--theme-section-bg)' }} /> }}
+                                  />
+                                </p>
+                                <p className="text-sm" style={{ color: 'var(--theme-text-secondary)' }}>
+                                  <strong>{t('wiki.articles.frogogSupply.burnContract.addressLabel', 'Burn contract:')}</strong>{' '}
+                                  <a
+                                    href="https://bscscan.com/address/0x34b9f2e2d76f850977557a3acdfe6e740d417e4f"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="underline hover:text-[var(--primary)] font-mono text-xs break-all"
+                                  >
+                                    0x34b9f2e2d76f850977557a3acdfe6e740d417e4f
+                                  </a>
                                 </p>
                               </div>
 

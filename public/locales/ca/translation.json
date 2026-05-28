@@ -147,6 +147,8 @@
       "title": "Estadístiques del Token",
       "description": "Dades en temps real de la blockchain que mostren el subministrament convertit i la distribució en totes les cadenes suportades.",
       "totalConverted": "Total Convertit",
+      "totalBurned": "Cremat",
+      "burnedDerivedTooltip": "Derivat de la diferència de subministrament (mint inicial menys subministrament actual entre cadenes). El contracte de crema original no exposa cap comptador.",
       "distribution": "Distribució per Cadena",
       "moreChains": "més cadenes",
       "liquidityPools": "Grups de Liquiditat",
@@ -261,6 +263,13 @@
           "lpPercent": "5,65%",
           "circulating": "3.662.233.757.674.602.416.819.986",
           "circulatingPercent": "36,62%"
+        },
+        "burnContract": {
+          "title": "Contracte de crema voluntari",
+          "intro": "S'ha desplegat una caixa forta de crema dedicada a BNB Chain. Qualsevol pot enviar TigerOG al contracte, i qualsevol pot llavors cridar la seva funció <code>burn()</code> per destruir permanentment el saldo total del contracte — reduint el subministrament total a través de totes les cadenes.",
+          "addressLabel": "Contracte de crema:",
+          "properties": "El contracte no té <strong>propietari, administrador, camí d'actualització, ni funció de rescat</strong>. El token objectiu està <strong>codificat en temps de compilació</strong> — només pot cremar TigerOG.",
+          "counter": "Un comptador públic <code>totalBurned</code> s'incrementa atòmicament amb cada crema — és el que llegeix la xifra Burned a la pàgina principal."
         }
       },
       "lionogSupply": {
@@ -286,6 +295,12 @@
           "lpPercent": "4,42%",
           "circulating": "3.832.903.409.282.876.056.519.182",
           "circulatingPercent": "38,33%"
+        },
+        "burnContract": {
+          "title": "Contracte de crema voluntari",
+          "intro": "S'ha desplegat un contracte de crema a BNB Chain. Qualsevol pot enviar LionOG al contracte, i qualsevol pot llavors activar la seva funció de crema per destruir permanentment el saldo retingut — reduint el subministrament total a través de totes les cadenes.",
+          "addressLabel": "Contracte de crema:",
+          "legacy": "Aquest contracte és la versió original i <strong>no exposa cap comptador <code>totalBurned</code> en cadena</strong>. La xifra Burned que apareix a la pàgina principal es deriva, per tant, restant el subministrament actual entre cadenes del mint inicial."
         }
       },
       "frogogSupply": {
@@ -311,6 +326,13 @@
           "lpPercent": "8,74%",
           "circulating": "8.385.795.686.123.088.377.024.138",
           "circulatingPercent": "83,86%"
+        },
+        "burnContract": {
+          "title": "Contracte de crema voluntari",
+          "intro": "S'ha desplegat una caixa forta de crema dedicada a BNB Chain. Qualsevol pot enviar FrogOG al contracte, i qualsevol pot llavors cridar la seva funció <code>burn()</code> per destruir permanentment el saldo total del contracte — reduint el subministrament total a través de totes les cadenes.",
+          "addressLabel": "Contracte de crema:",
+          "properties": "El contracte no té <strong>propietari, administrador, camí d'actualització, ni funció de rescat</strong>. El token objectiu està <strong>codificat en temps de compilació</strong> — només pot cremar FrogOG.",
+          "counter": "Un comptador públic <code>totalBurned</code> s'incrementa atòmicament amb cada crema — és el que llegeix la xifra Burned a la pàgina principal."
         }
       }
     }
@@ -433,13 +455,7 @@
       "q18": "Quines auditories de seguretat s'han realitzat?",
       "a18": "Freedom Bridge no ha passat per una auditoria formal de tercers. No obstant això, el codi del contracte de conversió es basa en el convertidor SHx construït per l'equip de Stronghold (antics desenvolupadors de XRP i Stellar que van presentar recentment a Davos). La infraestructura de pont està impulsada per Axelar, que ha passat múltiples auditories de seguretat.",
       "q19": "Com protegeix Freedom Bridge contra hacks o exploits?",
-      "a19": "Hi ha diverses mesures implementades:
-
-• El convertidor només manté el subministrament circulant exacte necessari - sense tokens excedents que es puguin explotar
-• El convertidor no té permisos d'encunyació
-• Tot el codi de contractes està verificat a la cadena i és de codi obert
-• Els permisos de tokens estan assegurats en una cartera multisignatura Safe.global
-• La transferència es gestiona per la infraestructura provada d'Axelar",
+      "a19": "Hi ha diverses mesures implementades:\n\n• El convertidor només manté el subministrament circulant exacte necessari - sense tokens excedents que es puguin explotar\n• El convertidor no té permisos d'encunyació\n• Tot el codi de contractes està verificat a la cadena i és de codi obert\n• Els permisos de tokens estan assegurats en una cartera multisignatura Safe.global\n• La transferència es gestiona per la infraestructura provada d'Axelar",
       "q20": "La transferència és irreversible? Què passa si falla?",
       "a20": "Les transferències de pont rarament es poden quedar encallades per gas insuficient o congestió de xarxa. Si això passa, pots rastrejar la teva transacció a Axelarscan i afegir gas manualment per completar-la. Axelar proporciona eines de recuperació de transaccions - no perdràs els teus tokens.",
       "q21": "Quins són els riscos d'utilitzar Freedom Bridge?",
@@ -470,13 +486,7 @@
       },
       "risksOfUse": {
         "title": "Riscos d'Ús",
-        "content": "Els mercats de criptomonedes són volàtils i imprevisibles. En utilitzar Freedom Bridge, reconeixes i acceptes que:
-
-• Els contractes intel·ligents poden contenir errors o vulnerabilitats que podrien resultar en pèrdua de fons
-• Els ponts entre cadenes comporten riscos inherents incloent però no limitats a: fallades d'oracles, col·lusió de validadors i congestió de xarxa
-• Els valors dels tokens poden fluctuar dramàticament i pots perdre part o tota la teva inversió
-• Les transaccions en xarxes blockchain són irreversibles
-• Les comissions de xarxa i costos de gas estan fora del nostre control i poden variar significativament"
+        "content": "Els mercats de criptomonedes són volàtils i imprevisibles. En utilitzar Freedom Bridge, reconeixes i acceptes que:\n\n• Els contractes intel·ligents poden contenir errors o vulnerabilitats que podrien resultar en pèrdua de fons\n• Els ponts entre cadenes comporten riscos inherents incloent però no limitats a: fallades d'oracles, col·lusió de validadors i congestió de xarxa\n• Els valors dels tokens poden fluctuar dramàticament i pots perdre part o tota la teva inversió\n• Les transaccions en xarxes blockchain són irreversibles\n• Les comissions de xarxa i costos de gas estan fora del nostre control i poden variar significativament"
       },
       "noWarranties": {
         "title": "Sense Garanties",

@@ -148,6 +148,8 @@
       "title": "Ọnụ Ọgụgụ Akara Ngosi",
       "description": "Data oge a na-enweta na blockchain na-egosi ọkọnọ atụgharịrị na nkesa n'ofe netwọk niile akwadoro.",
       "totalConverted": "Ngụkọta Atụgharịrị",
+      "totalBurned": "Akpọrọ ọkụ",
+      "burnedDerivedTooltip": "Esitere na ọdịiche ọfụ (mint mbụ wepụ ọfụ ugbu a n'etiti chains). Nkwekọrịta ọkụ mbụ adịghị egosi ngụta.",
       "distribution": "Nkesa Yinye",
       "moreChains": "yinye ndị ọzọ",
       "liquidityPools": "Ọdọ Mmiri",
@@ -262,6 +264,13 @@
           "lpPercent": "5.65%",
           "circulating": "3,662,233,757,674,602,416,819,986",
           "circulatingPercent": "36.62%"
+        },
+        "burnContract": {
+          "title": "Nkwekọrịta Ọkụ Nke Onyeisi Mmasị",
+          "intro": "Akwadoro vault ọkụ raara onwe ya nye na BNB Chain. Onye ọ bụla nwere ike izipu TigerOG na nkwekọrịta a, ma onye ọ bụla nwere ike ịkpọ ọrụ ya <code>burn()</code> iji bibie nchekwa zuru oke nke nkwekọrịta a ruo mgbe ebighi ebi — nke na-ebelata ngụkọta ọfụ na chains niile.",
+          "addressLabel": "Nkwekọrịta ọkụ:",
+          "properties": "Nkwekọrịta enweghị <strong>onye nwe ya, enweghị admin, enweghị ụzọ nkwalite, na enweghị ọrụ nzọpụta</strong>. Akara ngosi a chọrọ <strong>akpọtara ya na oge nchịkọta</strong> — naanị TigerOG ka ọ nwere ike ire ọkụ.",
+          "counter": "Otu ngụta ọha <code>totalBurned</code> na-abawanye na ụzọ atom n'ọkụ ọ bụla — nke a bụ ọnụọgụ Burned na-ezipụta na ibe nke isi."
         }
       },
       "lionogSupply": {
@@ -287,6 +296,12 @@
           "lpPercent": "4.42%",
           "circulating": "3,832,903,409,282,876,056,519,182",
           "circulatingPercent": "38.33%"
+        },
+        "burnContract": {
+          "title": "Nkwekọrịta Ọkụ Nke Onyeisi Mmasị",
+          "intro": "Akwadoro nkwekọrịta ọkụ na BNB Chain. Onye ọ bụla nwere ike izipu LionOG na nkwekọrịta a, ma onye ọ bụla nwere ike ịkpalite ọrụ ọkụ ya iji bibie nchekwa edebe ruo mgbe ebighi ebi — nke na-ebelata ngụkọta ọfụ na chains niile.",
+          "addressLabel": "Nkwekọrịta ọkụ:",
+          "legacy": "Nkwekọrịta a bụ mbụ mbụ na <strong>egosighi ngụta <code>totalBurned</code> na-arụ ọrụ na chain</strong>. N'ihi nke a, ọnụọgụ Burned a na-egosipụta na ibe nke isi sitere na ịwepu ọfụ ugbu a n'etiti chains site na mint mbụ."
         }
       },
       "frogogSupply": {
@@ -312,6 +327,13 @@
           "lpPercent": "8.74%",
           "circulating": "8,385,795,686,123,088,377,024,138",
           "circulatingPercent": "83.86%"
+        },
+        "burnContract": {
+          "title": "Nkwekọrịta Ọkụ Nke Onyeisi Mmasị",
+          "intro": "Akwadoro vault ọkụ raara onwe ya nye na BNB Chain. Onye ọ bụla nwere ike izipu FrogOG na nkwekọrịta a, ma onye ọ bụla nwere ike ịkpọ ọrụ ya <code>burn()</code> iji bibie nchekwa zuru oke nke nkwekọrịta a ruo mgbe ebighi ebi — nke na-ebelata ngụkọta ọfụ na chains niile.",
+          "addressLabel": "Nkwekọrịta ọkụ:",
+          "properties": "Nkwekọrịta enweghị <strong>onye nwe ya, enweghị admin, enweghị ụzọ nkwalite, na enweghị ọrụ nzọpụta</strong>. Akara ngosi a chọrọ <strong>akpọtara ya na oge nchịkọta</strong> — naanị FrogOG ka ọ nwere ike ire ọkụ.",
+          "counter": "Otu ngụta ọha <code>totalBurned</code> na-abawanye na ụzọ atom n'ọkụ ọ bụla — nke a bụ ọnụọgụ Burned na-ezipụta na ibe nke isi."
         }
       }
     }

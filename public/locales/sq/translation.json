@@ -148,6 +148,8 @@
       "title": "Statistikat e Token-it",
       "description": "Të dhëna në kohë reale nga blockchain që tregojnë furnizimin e konvertuar dhe shpërndarjen në të gjithë zinxhirët e mbështetur.",
       "totalConverted": "Total i Konvertuar",
+      "totalBurned": "Djegur",
+      "burnedDerivedTooltip": "Nxjerrë nga ndryshimi i ofertës (mint fillestar minus oferta aktuale cross-chain). Kontrata origjinale e djegies nuk ekspozon numërues.",
       "distribution": "Shpërndarja e Zinxhirit",
       "moreChains": "më shumë zinxhirë",
       "liquidityPools": "Pishinat e Likuiditetit",
@@ -262,6 +264,13 @@
           "lpPercent": "5.65%",
           "circulating": "3,662,233,757,674,602,416,819,986",
           "circulatingPercent": "36.62%"
+        },
+        "burnContract": {
+          "title": "Kontratë e djegies vullnetare",
+          "intro": "Një kasafortë djegieje e dedikuar është vendosur në BNB Chain. Kushdo mund të dërgojë TigerOG në kontratë, dhe kushdo mund të thërrasë më pas funksionin e saj <code>burn()</code> për të shkatërruar përgjithmonë bilancin e plotë të kontratës — duke ulur ofertën totale në të gjitha zinxhirët.",
+          "addressLabel": "Kontrata e djegies:",
+          "properties": "Kontrata nuk ka <strong>pronar, administrator, rrugë përmirësimi ose funksion shpëtimi</strong>. Token-i synuar është <strong>i koduar fort në kohën e kompilimit</strong> — mund të djegë vetëm TigerOG.",
+          "counter": "Një numërues publik <code>totalBurned</code> rritet atomikisht me çdo djegie — ky është numri që lexon treguesi Burned në faqen kryesore."
         }
       },
       "lionogSupply": {
@@ -287,6 +296,12 @@
           "lpPercent": "4.42%",
           "circulating": "3,832,903,409,282,876,056,519,182",
           "circulatingPercent": "38.33%"
+        },
+        "burnContract": {
+          "title": "Kontratë e djegies vullnetare",
+          "intro": "Një kontratë djegieje është vendosur në BNB Chain. Kushdo mund të dërgojë LionOG në kontratë, dhe kushdo mund të aktivizojë më pas funksionin e saj të djegies për të shkatërruar përgjithmonë bilancin e mbajtur — duke ulur ofertën totale në të gjitha zinxhirët.",
+          "addressLabel": "Kontrata e djegies:",
+          "legacy": "Kjo kontratë është versioni origjinal dhe <strong>nuk ekspozon një numërues <code>totalBurned</code> on-chain</strong>. Prandaj, numri Burned i shfaqur në faqen kryesore nxirret duke zbritur ofertën aktuale cross-chain nga mint-i fillestar."
         }
       },
       "frogogSupply": {
@@ -312,6 +327,13 @@
           "lpPercent": "8.74%",
           "circulating": "8,385,795,686,123,088,377,024,138",
           "circulatingPercent": "83.86%"
+        },
+        "burnContract": {
+          "title": "Kontratë e djegies vullnetare",
+          "intro": "Një kasafortë djegieje e dedikuar është vendosur në BNB Chain. Kushdo mund të dërgojë FrogOG në kontratë, dhe kushdo mund të thërrasë më pas funksionin e saj <code>burn()</code> për të shkatërruar përgjithmonë bilancin e plotë të kontratës — duke ulur ofertën totale në të gjitha zinxhirët.",
+          "addressLabel": "Kontrata e djegies:",
+          "properties": "Kontrata nuk ka <strong>pronar, administrator, rrugë përmirësimi ose funksion shpëtimi</strong>. Token-i synuar është <strong>i koduar fort në kohën e kompilimit</strong> — mund të djegë vetëm FrogOG.",
+          "counter": "Një numërues publik <code>totalBurned</code> rritet atomikisht me çdo djegie — ky është numri që lexon treguesi Burned në faqen kryesore."
         }
       }
     }

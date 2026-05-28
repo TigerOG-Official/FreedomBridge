@@ -158,6 +158,8 @@
       "title": "Antontan'isa Token",
       "description": "Angona amin'ny fotoana tena izy avy amin'ny blockchain mampiseho ny famatsiana novaina sy ny fitsinjarana manerana ny rojo tohana rehetra.",
       "totalConverted": "Totaly Novaina",
+      "totalBurned": "Voadoro",
+      "burnedDerivedTooltip": "Azo avy amin'ny fahasamihafan'ny famatsiana (mint voalohany minus ny famatsiana cross-chain ankehitriny). Ny fifanarahana fandoroana tany am-boalohany dia tsy mampiseho kônty.",
       "distribution": "Fitsinjarana Rojo",
       "moreChains": "rojo bebe kokoa",
       "liquidityPools": "Dobo Liquidity",
@@ -272,6 +274,13 @@
           "lpPercent": "5.65%",
           "circulating": "3,662,233,757,674,602,416,819,986",
           "circulatingPercent": "36.62%"
+        },
+        "burnContract": {
+          "title": "Fifanarahana fandoroana an-tsitrapo",
+          "intro": "Nampidirina ao amin'ny BNB Chain ny vata fandoroana manokana. Na iza na iza dia afaka mandefa TigerOG amin'ny fifanarahana, ary na iza na iza dia afaka miantso ny fiasany <code>burn()</code> mba handringana mandrakizay ny tahirim-bola feno ao amin'ny fifanarahana — izay mampihena ny famatsiana totaly amin'ny chain rehetra.",
+          "addressLabel": "Fifanarahana fandoroana:",
+          "properties": "Ny fifanarahana dia <strong>tsy manana tompony, tsy manana admin, tsy manana lalana fanavaozana, ary tsy manana fiasana famonjena</strong>. Ny token kendrena dia <strong>voasoratra mafy amin'ny fotoam-pamoronana</strong> — afaka mandoro fotsiny ny TigerOG.",
+          "counter": "Ny kônty ho an'ny besinimaro <code>totalBurned</code> dia mitombo amin'ny fomba atomika amin'ny fandoroana tsirairay — io no isa Burned hita ao amin'ny pejy fandraisana."
         }
       },
       "lionogSupply": {
@@ -297,6 +306,12 @@
           "lpPercent": "4.42%",
           "circulating": "3,832,903,409,282,876,056,519,182",
           "circulatingPercent": "38.33%"
+        },
+        "burnContract": {
+          "title": "Fifanarahana fandoroana an-tsitrapo",
+          "intro": "Nampidirina ao amin'ny BNB Chain ny fifanarahana fandoroana. Na iza na iza dia afaka mandefa LionOG amin'ny fifanarahana, ary na iza na iza dia afaka manakatra ny fiasany fandoroana mba handringana mandrakizay ny tahirim-bola voatazona — izay mampihena ny famatsiana totaly amin'ny chain rehetra.",
+          "addressLabel": "Fifanarahana fandoroana:",
+          "legacy": "Ity fifanarahana ity dia ny dikany tany am-boalohany ary <strong>tsy mampiseho kônty <code>totalBurned</code> on-chain</strong>. Noho izany ny isa Burned hita ao amin'ny pejy fandraisana dia azo amin'ny fakana ny famatsiana cross-chain ankehitriny amin'ny mint voalohany."
         }
       },
       "frogogSupply": {
@@ -322,6 +337,13 @@
           "lpPercent": "8.74%",
           "circulating": "8,385,795,686,123,088,377,024,138",
           "circulatingPercent": "83.86%"
+        },
+        "burnContract": {
+          "title": "Fifanarahana fandoroana an-tsitrapo",
+          "intro": "Nampidirina ao amin'ny BNB Chain ny vata fandoroana manokana. Na iza na iza dia afaka mandefa FrogOG amin'ny fifanarahana, ary na iza na iza dia afaka miantso ny fiasany <code>burn()</code> mba handringana mandrakizay ny tahirim-bola feno ao amin'ny fifanarahana — izay mampihena ny famatsiana totaly amin'ny chain rehetra.",
+          "addressLabel": "Fifanarahana fandoroana:",
+          "properties": "Ny fifanarahana dia <strong>tsy manana tompony, tsy manana admin, tsy manana lalana fanavaozana, ary tsy manana fiasana famonjena</strong>. Ny token kendrena dia <strong>voasoratra mafy amin'ny fotoam-pamoronana</strong> — afaka mandoro fotsiny ny FrogOG.",
+          "counter": "Ny kônty ho an'ny besinimaro <code>totalBurned</code> dia mitombo amin'ny fomba atomika amin'ny fandoroana tsirairay — io no isa Burned hita ao amin'ny pejy fandraisana."
         }
       }
     }

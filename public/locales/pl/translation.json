@@ -158,6 +158,8 @@
       "title": "Statystyki Tokena",
       "description": "Dane w czasie rzeczywistym z blockchaina pokazujące przekonwertowaną podaż i dystrybucję we wszystkich obsługiwanych łańcuchach.",
       "totalConverted": "Suma Przekonwertowana",
+      "totalBurned": "Spalono",
+      "burnedDerivedTooltip": "Wyprowadzone z różnicy podaży (początkowy mint minus aktualna podaż międzyłańcuchowa). Oryginalny burn kontrakt nie udostępnia licznika.",
       "distribution": "Dystrybucja w Łańcuchach",
       "moreChains": "więcej łańcuchów",
       "liquidityPools": "Pule Płynności",
@@ -272,6 +274,13 @@
           "lpPercent": "5.65%",
           "circulating": "3,662,233,757,674,602,416,819,986",
           "circulatingPercent": "36.62%"
+        },
+        "burnContract": {
+          "title": "Dobrowolny burn kontrakt",
+          "intro": "Na BNB Chain wdrożono dedykowany burn skarbiec. Każdy może wysłać TigerOG do kontraktu, a każdy może następnie wywołać jego funkcję <code>burn()</code>, aby trwale zniszczyć pełne saldo kontraktu — zmniejszając całkowitą podaż na wszystkich łańcuchach.",
+          "addressLabel": "Burn kontrakt:",
+          "properties": "Kontrakt nie ma <strong>właściciela, administratora, ścieżki aktualizacji ani funkcji ratunkowej</strong>. Docelowy token jest <strong>na stałe zakodowany w czasie kompilacji</strong> — może spalać tylko TigerOG.",
+          "counter": "Publiczny licznik <code>totalBurned</code> zwiększa się atomowo z każdym spaleniem — to wartość, którą odczytuje wskaźnik Burned na stronie głównej."
         }
       },
       "lionogSupply": {
@@ -297,6 +306,12 @@
           "lpPercent": "4.42%",
           "circulating": "3,832,903,409,282,876,056,519,182",
           "circulatingPercent": "38.33%"
+        },
+        "burnContract": {
+          "title": "Dobrowolny burn kontrakt",
+          "intro": "Na BNB Chain wdrożono burn kontrakt. Każdy może wysłać LionOG do kontraktu, a każdy może następnie uruchomić jego funkcję burn, aby trwale zniszczyć przechowywane saldo — zmniejszając całkowitą podaż na wszystkich łańcuchach.",
+          "addressLabel": "Burn kontrakt:",
+          "legacy": "Ten kontrakt jest oryginalną wersją i <strong>nie udostępnia licznika <code>totalBurned</code> on-chain</strong>. Dlatego wartość Burned wyświetlana na stronie głównej jest wyprowadzana przez odjęcie aktualnej podaży międzyłańcuchowej od początkowego mintu."
         }
       },
       "frogogSupply": {
@@ -322,6 +337,13 @@
           "lpPercent": "8.74%",
           "circulating": "8,385,795,686,123,088,377,024,138",
           "circulatingPercent": "83.86%"
+        },
+        "burnContract": {
+          "title": "Dobrowolny burn kontrakt",
+          "intro": "Na BNB Chain wdrożono dedykowany burn skarbiec. Każdy może wysłać FrogOG do kontraktu, a każdy może następnie wywołać jego funkcję <code>burn()</code>, aby trwale zniszczyć pełne saldo kontraktu — zmniejszając całkowitą podaż na wszystkich łańcuchach.",
+          "addressLabel": "Burn kontrakt:",
+          "properties": "Kontrakt nie ma <strong>właściciela, administratora, ścieżki aktualizacji ani funkcji ratunkowej</strong>. Docelowy token jest <strong>na stałe zakodowany w czasie kompilacji</strong> — może spalać tylko FrogOG.",
+          "counter": "Publiczny licznik <code>totalBurned</code> zwiększa się atomowo z każdym spaleniem — to wartość, którą odczytuje wskaźnik Burned na stronie głównej."
         }
       }
     }

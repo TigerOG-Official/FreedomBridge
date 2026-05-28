@@ -1,7 +1,8 @@
 import { motion } from "motion/react";
-import { RefreshCw, Activity, TrendingUp, Droplets, ExternalLink } from "lucide-react";
+import { RefreshCw, Activity, TrendingUp, Droplets, ExternalLink, Flame, Info } from "lucide-react";
 import { useTokenStats, formatLargeNumber } from "../../hooks/useTokenStats";
 import { useLiquidityStats, groupPoolsByToken } from "../../hooks/useLiquidityStats";
+import { useBurnStats } from "../../hooks/useBurnStats";
 import { usePrices, formatUSD } from "../../hooks/usePrices";
 import { useTranslation } from "react-i18next";
 
@@ -68,10 +69,12 @@ export default function StatsSection() {
   const { t } = useTranslation();
   const { stats, isLoading: statsLoading, refetch: refetchStats, lastUpdated } = useTokenStats();
   const { pools, isLoading: poolsLoading, refetch: refetchPools } = useLiquidityStats();
+  const { burns, isLoading: burnsLoading, refetch: refetchBurns } = useBurnStats();
   const { prices, isLoading: pricesLoading, refetch: refetchPrices } = usePrices();
 
-  const isLoading = statsLoading || poolsLoading || pricesLoading;
+  const isLoading = statsLoading || poolsLoading || pricesLoading || burnsLoading;
   const poolsByToken = groupPoolsByToken(pools);
+  const burnsBySymbol = Object.fromEntries(burns.map((b) => [b.symbol, b]));
 
   // Check if data is stale (older than STALE_TIME)
   const isStale = !lastUpdated || (Date.now() - lastUpdated.getTime()) >= STALE_TIME;
@@ -99,6 +102,7 @@ export default function StatsSection() {
     if (!canRefresh) return;
     refetchStats();
     refetchPools();
+    refetchBurns();
     refetchPrices();
   };
 
@@ -166,7 +170,7 @@ export default function StatsSection() {
               </div>
 
               {/* Total supply */}
-              <div className="mb-6">
+              <div className="mb-4">
                 {isLoading ? (
                   <div className="h-8 w-32 bg-muted/30 animate-pulse rounded" />
                 ) : (
@@ -175,6 +179,50 @@ export default function StatsSection() {
                   </p>
                 )}
               </div>
+
+              {/* Burned */}
+              {(() => {
+                const burn = burnsBySymbol[tokenStat.symbol];
+                const isDerived = burn?.source === "supplyDelta";
+                return (
+                  <div className="mb-6 flex items-center gap-2 text-xs">
+                    <Flame className="w-3.5 h-3.5 text-orange-500" />
+                    <span className="text-muted-foreground">
+                      {t('landing.liveStats.totalBurned', 'Burned')}:
+                    </span>
+                    {burnsLoading || !burn ? (
+                      <span className="h-3 w-20 bg-muted/30 animate-pulse rounded inline-block" />
+                    ) : (
+                      <span className="font-semibold feature-title">
+                        {formatLargeNumber(burn.burned, burn.decimals)}
+                      </span>
+                    )}
+                    {isDerived && (
+                      <span className="relative inline-flex">
+                        <span
+                          tabIndex={0}
+                          role="button"
+                          aria-describedby={`burn-derived-${tokenStat.symbol}`}
+                          className="peer inline-flex cursor-help text-muted-foreground/70 rounded outline-none focus:text-foreground"
+                        >
+                          <Info className="w-3 h-3" />
+                        </span>
+                        <span
+                          id={`burn-derived-${tokenStat.symbol}`}
+                          role="tooltip"
+                          style={{
+                            backgroundColor: 'var(--theme-modal-bg)',
+                            color: 'var(--theme-text-primary)',
+                          }}
+                          className="pointer-events-none absolute right-0 bottom-full mb-2 z-50 w-52 px-3 py-2 rounded-lg text-[11px] leading-snug text-left border border-[var(--theme-card-border)] shadow-xl backdrop-blur-md opacity-0 peer-hover:opacity-100 peer-focus:opacity-100 transition-opacity duration-150"
+                        >
+                          {t('landing.liveStats.burnedDerivedTooltip', 'Derived from supply delta (initial mint minus current cross-chain supply). The original burn contract doesn\'t expose a counter.')}
+                        </span>
+                      </span>
+                    )}
+                  </div>
+                );
+              })()}
 
               {/* Chain distribution */}
               <div className="space-y-2">

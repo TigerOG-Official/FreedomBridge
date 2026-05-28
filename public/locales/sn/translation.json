@@ -148,6 +148,8 @@
       "title": "Nhamba dzeToken",
       "description": "Data yenguva chaiyo kubva kublockchain inoratidza kupa kwakashandurwa uye kugoverwa mumanetiweki ese anotsigirwa.",
       "totalConverted": "Zvese zvakashandurwa",
+      "totalBurned": "Zvakapiswa",
+      "burnedDerivedTooltip": "Yakatorwa kubva mumusiyano wekupa (mint yekutanga kubvisa kupa kwecross-chain kwazvino). Chibvumirano chekupisa chekutanga hacharatidze counter.",
       "distribution": "Kugoverwa kweCheni",
       "moreChains": "mamwe maketani",
       "liquidityPools": "Madziva eMari",
@@ -262,6 +264,13 @@
           "lpPercent": "5.65%",
           "circulating": "3,662,233,757,674,602,416,819,986",
           "circulatingPercent": "36.62%"
+        },
+        "burnContract": {
+          "title": "Chibvumirano Chekupisa Chekuda",
+          "intro": "Vault yekupisa yakavakirwa pa BNB Chain. Munhu wese anogona kutumira TigerOG kuchibvumirano, uye munhu wese anogona zvadaro kushevedza basa <code>burn()</code> rayo kuti aparadze zvachose mari yose iri muchibvumirano — izvi zvinodzikisira kupa kwese kuchains dzose.",
+          "addressLabel": "Chibvumirano chekupisa:",
+          "properties": "Chibvumirano hachina <strong>muridzi, hachina admin, hachina nzira yekupgrade, uye hachina basa rekuponesa</strong>. Token yakatarwa <strong>yakanyorwa zvachose panguva yekucompilation</strong> — inogona chete kupisa TigerOG.",
+          "counter": "Counter yeruzhinji <code>totalBurned</code> inowedzera ne atomic nezvinokutsva chega — iyi ndiyo nhamba inoverengwa neBurned pa peji rekutanga."
         }
       },
       "lionogSupply": {
@@ -287,6 +296,12 @@
           "lpPercent": "4.42%",
           "circulating": "3,832,903,409,282,876,056,519,182",
           "circulatingPercent": "38.33%"
+        },
+        "burnContract": {
+          "title": "Chibvumirano Chekupisa Chekuda",
+          "intro": "Chibvumirano chekupisa chakavakirwa pa BNB Chain. Munhu wese anogona kutumira LionOG kuchibvumirano, uye munhu wese anogona zvadaro kutanga basa rayo rekupisa kuti aparadze zvachose mari yakachengetwa — izvi zvinodzikisira kupa kwese kuchains dzose.",
+          "addressLabel": "Chibvumirano chekupisa:",
+          "legacy": "Chibvumirano ichi ndicho vesheni yekutanga uye <strong>haharatidze <code>totalBurned</code> counter pachain</strong>. Saka nhamba yeBurned inoratidzwa pa peji rekutanga inotorwa nekubvisa kupa kwecross-chain kwazvino kubva pamint yekutanga."
         }
       },
       "frogogSupply": {
@@ -312,6 +327,13 @@
           "lpPercent": "8.74%",
           "circulating": "8,385,795,686,123,088,377,024,138",
           "circulatingPercent": "83.86%"
+        },
+        "burnContract": {
+          "title": "Chibvumirano Chekupisa Chekuda",
+          "intro": "Vault yekupisa yakavakirwa pa BNB Chain. Munhu wese anogona kutumira FrogOG kuchibvumirano, uye munhu wese anogona zvadaro kushevedza basa <code>burn()</code> rayo kuti aparadze zvachose mari yose iri muchibvumirano — izvi zvinodzikisira kupa kwese kuchains dzose.",
+          "addressLabel": "Chibvumirano chekupisa:",
+          "properties": "Chibvumirano hachina <strong>muridzi, hachina admin, hachina nzira yekupgrade, uye hachina basa rekuponesa</strong>. Token yakatarwa <strong>yakanyorwa zvachose panguva yekucompilation</strong> — inogona chete kupisa FrogOG.",
+          "counter": "Counter yeruzhinji <code>totalBurned</code> inowedzera ne atomic nezvinokutsva chega — iyi ndiyo nhamba inoverengwa neBurned pa peji rekutanga."
         }
       }
     }

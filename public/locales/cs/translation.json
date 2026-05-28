@@ -147,6 +147,8 @@
       "title": "Statistiky tokenu",
       "description": "Data v reálném čase z blockchainu ukazující převedenou nabídku a distribuci napříč všemi podporovanými řetězci.",
       "totalConverted": "Celkem převedeno",
+      "totalBurned": "Spáleno",
+      "burnedDerivedTooltip": "Odvozeno z rozdílu nabídky (počáteční mint mínus aktuální nabídka napříč řetězci). Původní burn smlouva nezpřístupňuje čítač.",
       "distribution": "Distribuce v řetězcích",
       "moreChains": "další řetězce",
       "liquidityPools": "Fondy likvidity",
@@ -188,7 +190,7 @@
         "step2": "Přejděte na kartu <strong>Převést</strong>.",
         "step3": "Vyberte starší token, který chcete převést.",
         "step4": "Schvalte konverzní smlouvu, aby mohla utrácet vaše tokeny.",
-        "step5": "Klikněte na <strong>Převést</strong> pro vložení vašich starších tokenů a obdržení ekvivalentního množství „TigerOG\u201d tokenů.",
+        "step5": "Klikněte na <strong>Převést</strong> pro vložení vašich starších tokenů a obdržení ekvivalentního množství „TigerOG” tokenů.",
         "note": "<strong>Poznámka:</strong> Konverze vyvolá transakční daň staršího tokenu (během upgradu), pokud váš token účtuje daň při převodech. Jakmile je však převeden na TigerOG, všechny následné převody a přenosy jsou bez daně."
       },
       "supportedNetworks": {
@@ -261,6 +263,13 @@
           "lpPercent": "5,65 %",
           "circulating": "3 662 233 757 674 602 416 819 986",
           "circulatingPercent": "36,62 %"
+        },
+        "burnContract": {
+          "title": "Dobrovolná burn smlouva",
+          "intro": "Na BNB Chain je nasazen dedikovaný burn trezor. Kdokoli může poslat TigerOG do smlouvy a kdokoli pak může zavolat její funkci <code>burn()</code>, čímž trvale zničí celý zůstatek smlouvy — sníží tak celkovou nabídku napříč všemi řetězci.",
+          "addressLabel": "Burn smlouva:",
+          "properties": "Smlouva nemá <strong>žádného vlastníka, žádného administrátora, žádnou cestu pro upgrade ani žádnou záchrannou funkci</strong>. Cílový token je <strong>napevno zakódován při kompilaci</strong> — může pálit pouze TigerOG.",
+          "counter": "Veřejný čítač <code>totalBurned</code> se atomicky zvyšuje s každým spálením — to je hodnota, kterou čte ukazatel Burned na hlavní stránce."
         }
       },
       "lionogSupply": {
@@ -286,6 +295,12 @@
           "lpPercent": "4,42 %",
           "circulating": "3 832 903 409 282 876 056 519 182",
           "circulatingPercent": "38,33 %"
+        },
+        "burnContract": {
+          "title": "Dobrovolná burn smlouva",
+          "intro": "Na BNB Chain je nasazena burn smlouva. Kdokoli může poslat LionOG do smlouvy a kdokoli pak může spustit její burn funkci, čímž trvale zničí zadržený zůstatek — sníží tak celkovou nabídku napříč všemi řetězci.",
+          "addressLabel": "Burn smlouva:",
+          "legacy": "Tato smlouva je původní verze a <strong>nezpřístupňuje on-chain čítač <code>totalBurned</code></strong>. Hodnota Burned zobrazená na hlavní stránce se proto odvozuje odečtením aktuální nabídky napříč řetězci od počátečního mintu."
         }
       },
       "frogogSupply": {
@@ -311,6 +326,13 @@
           "lpPercent": "8,74 %",
           "circulating": "8 385 795 686 123 088 377 024 138",
           "circulatingPercent": "83,86 %"
+        },
+        "burnContract": {
+          "title": "Dobrovolná burn smlouva",
+          "intro": "Na BNB Chain je nasazen dedikovaný burn trezor. Kdokoli může poslat FrogOG do smlouvy a kdokoli pak může zavolat její funkci <code>burn()</code>, čímž trvale zničí celý zůstatek smlouvy — sníží tak celkovou nabídku napříč všemi řetězci.",
+          "addressLabel": "Burn smlouva:",
+          "properties": "Smlouva nemá <strong>žádného vlastníka, žádného administrátora, žádnou cestu pro upgrade ani žádnou záchrannou funkci</strong>. Cílový token je <strong>napevno zakódován při kompilaci</strong> — může pálit pouze FrogOG.",
+          "counter": "Veřejný čítač <code>totalBurned</code> se atomicky zvyšuje s každým spálením — to je hodnota, kterou čte ukazatel Burned na hlavní stránce."
         }
       }
     }
@@ -468,7 +490,7 @@
       },
       "noWarranties": {
         "title": "Žádné záruky",
-        "content": "Freedom Bridge je poskytován \u201Etak, jak je\u201D a \u201Ejak je k dispozici\u201D bez jakýchkoli záruk jakéhokoli druhu, ať už výslovných nebo předpokládaných. Nezaručujeme, že služba bude nepřerušovaná, bezpečná nebo bezchybná. Neposkytujeme žádné záruky týkající se přesnosti, spolehlivosti nebo úplnosti jakýchkoli informací poskytovaných prostřednictvím platformy."
+        "content": "Freedom Bridge je poskytován „tak, jak je” a „jak je k dispozici” bez jakýchkoli záruk jakéhokoli druhu, ať už výslovných nebo předpokládaných. Nezaručujeme, že služba bude nepřerušovaná, bezpečná nebo bezchybná. Neposkytujeme žádné záruky týkající se přesnosti, spolehlivosti nebo úplnosti jakýchkoli informací poskytovaných prostřednictvím platformy."
       },
       "limitationOfLiability": {
         "title": "Omezení odpovědnosti",

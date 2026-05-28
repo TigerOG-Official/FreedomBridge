@@ -158,6 +158,8 @@
       "title": "Statistik Token",
       "description": "Data masa nyata dari blok rantai yang menunjukkan bekalan yang ditukar dan pengedaran di semua rantaian yang disokong.",
       "totalConverted": "Jumlah Ditukar",
+      "totalBurned": "Terbakar",
+      "burnedDerivedTooltip": "Diperoleh daripada perbezaan bekalan (mint awal tolak bekalan cross-chain semasa). Kontrak burn asal tidak mendedahkan kaunter.",
       "distribution": "Pengedaran Rantaian",
       "moreChains": "lebih banyak rantaian",
       "liquidityPools": "Kumpulan Kecairan",
@@ -272,6 +274,13 @@
           "lpPercent": "5.65%",
           "circulating": "3,662,233,757,674,602,416,819,986",
           "circulatingPercent": "36.62%"
+        },
+        "burnContract": {
+          "title": "Kontrak Burn Sukarela",
+          "intro": "Vault burn khusus telah di-deploy di BNB Chain. Sesiapa sahaja boleh menghantar TigerOG ke kontrak, dan sesiapa sahaja boleh kemudian memanggil fungsi <code>burn()</code>nya untuk memusnahkan baki penuh kontrak secara kekal — yang mengurangkan jumlah bekalan di semua chain.",
+          "addressLabel": "Kontrak burn:",
+          "properties": "Kontrak tidak mempunyai <strong>pemilik, admin, laluan upgrade atau fungsi rescue</strong>. Token sasaran adalah <strong>di-hardcode pada masa kompilasi</strong> — ia hanya boleh membakar TigerOG.",
+          "counter": "Kaunter awam <code>totalBurned</code> bertambah secara atomik dengan setiap pembakaran — inilah nombor yang dibaca oleh paparan Burned di laman utama."
         }
       },
       "lionogSupply": {
@@ -297,6 +306,12 @@
           "lpPercent": "4.42%",
           "circulating": "3,832,903,409,282,876,056,519,182",
           "circulatingPercent": "38.33%"
+        },
+        "burnContract": {
+          "title": "Kontrak Burn Sukarela",
+          "intro": "Kontrak burn telah di-deploy di BNB Chain. Sesiapa sahaja boleh menghantar LionOG ke kontrak, dan sesiapa sahaja boleh kemudian mencetuskan fungsi burn untuk memusnahkan baki yang dipegang secara kekal — yang mengurangkan jumlah bekalan di semua chain.",
+          "addressLabel": "Kontrak burn:",
+          "legacy": "Kontrak ini adalah versi asal dan <strong>tidak mendedahkan kaunter <code>totalBurned</code> on-chain</strong>. Oleh itu, nombor Burned yang dipaparkan di laman utama diperoleh dengan menolak bekalan cross-chain semasa daripada mint awal."
         }
       },
       "frogogSupply": {
@@ -322,6 +337,13 @@
           "lpPercent": "8.74%",
           "circulating": "8,385,795,686,123,088,377,024,138",
           "circulatingPercent": "83.86%"
+        },
+        "burnContract": {
+          "title": "Kontrak Burn Sukarela",
+          "intro": "Vault burn khusus telah di-deploy di BNB Chain. Sesiapa sahaja boleh menghantar FrogOG ke kontrak, dan sesiapa sahaja boleh kemudian memanggil fungsi <code>burn()</code>nya untuk memusnahkan baki penuh kontrak secara kekal — yang mengurangkan jumlah bekalan di semua chain.",
+          "addressLabel": "Kontrak burn:",
+          "properties": "Kontrak tidak mempunyai <strong>pemilik, admin, laluan upgrade atau fungsi rescue</strong>. Token sasaran adalah <strong>di-hardcode pada masa kompilasi</strong> — ia hanya boleh membakar FrogOG.",
+          "counter": "Kaunter awam <code>totalBurned</code> bertambah secara atomik dengan setiap pembakaran — inilah nombor yang dibaca oleh paparan Burned di laman utama."
         }
       }
     }
@@ -383,7 +405,7 @@
       "chain": "Rantai",
       "tokenAddress": "Alamat Token",
       "axelarChainName": "Nama Rantai Axelar",
-      "chainId": "ID: {{id}}" 
+      "chainId": "ID: {{id}}"
     },
     "axelarId": "Axelar ID: {{name}}",
     "copied": "Disalin!",

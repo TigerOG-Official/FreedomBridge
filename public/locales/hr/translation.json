@@ -150,6 +150,8 @@
       "title": "Statistika tokena",
       "description": "Podaci u stvarnom vremenu s blockchaina koji prikazuju pretvorenu ponudu i distribuciju na svim podržanim lancima.",
       "totalConverted": "Ukupno Pretvoreno",
+      "totalBurned": "Spaljeno",
+      "burnedDerivedTooltip": "Izvedeno iz razlike u opskrbi (početni mint umanjen za trenutnu međulančanu opskrbu). Izvorni burn ugovor ne otkriva brojač.",
       "distribution": "Distribucija Lanca",
       "moreChains": "više lanaca",
       "liquidityPools": "Likvidnosni Bazeni",
@@ -264,6 +266,13 @@
           "lpPercent": "5,65%",
           "circulating": "3.662.233.757.674.602.416.819.986",
           "circulatingPercent": "36,62%"
+        },
+        "burnContract": {
+          "title": "Dobrovoljni burn ugovor",
+          "intro": "Na BNB Chainu je raspoređen namjenski burn trezor. Bilo tko može poslati TigerOG u ugovor, a bilo tko zatim može pozvati njegovu funkciju <code>burn()</code> kako bi trajno uništio cjelokupno stanje ugovora — smanjujući ukupnu opskrbu na svim lancima.",
+          "addressLabel": "Burn ugovor:",
+          "properties": "Ugovor nema <strong>vlasnika, administratora, put za nadogradnju niti funkciju spašavanja</strong>. Ciljani token je <strong>tvrdo kodiran u vrijeme kompilacije</strong> — može spaljivati samo TigerOG.",
+          "counter": "Javni brojač <code>totalBurned</code> atomski se povećava sa svakim spaljivanjem — to je vrijednost koju čita pokazatelj Burned na početnoj stranici."
         }
       },
       "lionogSupply": {
@@ -289,6 +298,12 @@
           "lpPercent": "4,42%",
           "circulating": "3.832.903.409.282.876.056.519.182",
           "circulatingPercent": "38,33%"
+        },
+        "burnContract": {
+          "title": "Dobrovoljni burn ugovor",
+          "intro": "Na BNB Chainu je raspoređen burn ugovor. Bilo tko može poslati LionOG u ugovor, a bilo tko zatim može pokrenuti njegovu funkciju spaljivanja kako bi trajno uništio zadržano stanje — smanjujući ukupnu opskrbu na svim lancima.",
+          "addressLabel": "Burn ugovor:",
+          "legacy": "Ovaj ugovor je izvorna verzija i <strong>ne otkriva on-chain brojač <code>totalBurned</code></strong>. Stoga se vrijednost Burned prikazana na početnoj stranici izvodi oduzimanjem trenutne međulančane opskrbe od početnog minta."
         }
       },
       "frogogSupply": {
@@ -314,6 +329,13 @@
           "lpPercent": "8,74%",
           "circulating": "8.385.795.686.123.088.377.024.138",
           "circulatingPercent": "83,86%"
+        },
+        "burnContract": {
+          "title": "Dobrovoljni burn ugovor",
+          "intro": "Na BNB Chainu je raspoređen namjenski burn trezor. Bilo tko može poslati FrogOG u ugovor, a bilo tko zatim može pozvati njegovu funkciju <code>burn()</code> kako bi trajno uništio cjelokupno stanje ugovora — smanjujući ukupnu opskrbu na svim lancima.",
+          "addressLabel": "Burn ugovor:",
+          "properties": "Ugovor nema <strong>vlasnika, administratora, put za nadogradnju niti funkciju spašavanja</strong>. Ciljani token je <strong>tvrdo kodiran u vrijeme kompilacije</strong> — može spaljivati samo FrogOG.",
+          "counter": "Javni brojač <code>totalBurned</code> atomski se povećava sa svakim spaljivanjem — to je vrijednost koju čita pokazatelj Burned na početnoj stranici."
         }
       }
     }

@@ -147,6 +147,8 @@
       "title": "Token İstatistikleri",
       "description": "Desteklenen tüm zincirlerde dönüştürülen arzı ve dağılımı gösteren blok zincirinden gerçek zamanlı veriler.",
       "totalConverted": "Toplam Dönüştürülen",
+      "totalBurned": "Yakıldı",
+      "burnedDerivedTooltip": "Arz farkından türetilmiştir (başlangıç mint eksi mevcut cross-chain arz). Orijinal burn sözleşmesi sayaç açığa çıkarmaz.",
       "distribution": "Zincir Dağılımı",
       "moreChains": "daha fazla zincir",
       "liquidityPools": "Likvidite Havuzları",
@@ -261,6 +263,13 @@
           "lpPercent": "%5.65",
           "circulating": "3,662,233,757,674,602,416,819,986",
           "circulatingPercent": "%36.62"
+        },
+        "burnContract": {
+          "title": "Gönüllü Burn Sözleşmesi",
+          "intro": "BNB Chain üzerinde özel bir burn kasası dağıtılmıştır. Herhangi biri TigerOG'i sözleşmeye gönderebilir, ardından herhangi biri sözleşmenin tüm bakiyesini kalıcı olarak yok etmek için <code>burn()</code> fonksiyonunu çağırabilir — bu, tüm zincirlerdeki toplam arzı azaltır.",
+          "addressLabel": "Burn sözleşmesi:",
+          "properties": "Sözleşmenin <strong>sahibi yok, admini yok, yükseltme yolu yok ve kurtarma fonksiyonu yok</strong>. Hedef token <strong>derleme zamanında sabit kodlanmıştır</strong> — yalnızca TigerOG'i yakabilir.",
+          "counter": "Halka açık bir <code>totalBurned</code> sayacı her yakma ile atomik olarak artar — ana sayfadaki Burned göstergesinin okuduğu değer budur."
         }
       },
       "lionogSupply": {
@@ -286,6 +295,12 @@
           "lpPercent": "%4.42",
           "circulating": "3,832,903,409,282,876,056,519,182",
           "circulatingPercent": "%38.33"
+        },
+        "burnContract": {
+          "title": "Gönüllü Burn Sözleşmesi",
+          "intro": "BNB Chain üzerinde bir burn sözleşmesi dağıtılmıştır. Herhangi biri LionOG'u sözleşmeye gönderebilir, ardından herhangi biri tutulan bakiyeyi kalıcı olarak yok etmek için burn fonksiyonunu tetikleyebilir — bu, tüm zincirlerdeki toplam arzı azaltır.",
+          "addressLabel": "Burn sözleşmesi:",
+          "legacy": "Bu sözleşme orijinal sürümdür ve <strong>zincir üzerinde <code>totalBurned</code> sayacını açığa çıkarmaz</strong>. Bu nedenle ana sayfada gösterilen Burned değeri, mevcut cross-chain arzının başlangıç mint'ten çıkarılmasıyla elde edilir."
         }
       },
       "frogogSupply": {
@@ -311,6 +326,13 @@
           "lpPercent": "%8.74",
           "circulating": "8,385,795,686,123,088,377,024,138",
           "circulatingPercent": "%83.86"
+        },
+        "burnContract": {
+          "title": "Gönüllü Burn Sözleşmesi",
+          "intro": "BNB Chain üzerinde özel bir burn kasası dağıtılmıştır. Herhangi biri FrogOG'i sözleşmeye gönderebilir, ardından herhangi biri sözleşmenin tüm bakiyesini kalıcı olarak yok etmek için <code>burn()</code> fonksiyonunu çağırabilir — bu, tüm zincirlerdeki toplam arzı azaltır.",
+          "addressLabel": "Burn sözleşmesi:",
+          "properties": "Sözleşmenin <strong>sahibi yok, admini yok, yükseltme yolu yok ve kurtarma fonksiyonu yok</strong>. Hedef token <strong>derleme zamanında sabit kodlanmıştır</strong> — yalnızca FrogOG'i yakabilir.",
+          "counter": "Halka açık bir <code>totalBurned</code> sayacı her yakma ile atomik olarak artar — ana sayfadaki Burned göstergesinin okuduğu değer budur."
         }
       }
     }

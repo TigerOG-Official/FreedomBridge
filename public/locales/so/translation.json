@@ -148,6 +148,8 @@
       "title": "Tirooyinka Token-ka",
       "description": "Xogta waqtiga dhabta ah ee blockchain oo muujinaysa sahayda la beddelay iyo qaybinta dhammaan silsiladaha la taageeray.",
       "totalConverted": "Wadarta la Beddelay",
+      "totalBurned": "La gubay",
+      "burnedDerivedTooltip": "Laga soo qaaday kala duwanaanshaha sahayda (mint hore oo laga jaro sahayda cross-chain ee hadda). Heshiiska gubidda asalka ah ma muujiyo tirakood.",
       "distribution": "Qaybinta Silsiladda",
       "moreChains": "silsilado badan",
       "liquidityPools": "Barkadaha Dareeraha",
@@ -262,6 +264,13 @@
           "lpPercent": "5.65%",
           "circulating": "3,662,233,757,674,602,416,819,986",
           "circulatingPercent": "36.62%"
+        },
+        "burnContract": {
+          "title": "Heshiis Gubid Ikhtiyaari",
+          "intro": "Khasnad gubid u gaar ah ayaa lagu hagaajiyay BNB Chain. Qof kasta wuxuu u diri karaa TigerOG heshiiska, kana wuxuu kadib qof kasta wici karaa shaqada <code>burn()</code> si uu si joogto ah u baabbi'iyo dheelitirka buuxa ee heshiiska — taas oo yaraysa wadarta sahayda dhammaan chains.",
+          "addressLabel": "Heshiiska gubidda:",
+          "properties": "Heshiiska ma laha <strong>milkiile, ma laha admin, ma laha jid casriyeyn, kana ma laha shaqo badbaadin</strong>. Tokenka la beegsanayo waa <strong>si adag loo qoray waqtiga isku-darka</strong> — wuxuu kaliya gubi karaa TigerOG.",
+          "counter": "Tirakood guud <code>totalBurned</code> ayaa atomicly kordha gubid kasta — kani waa lambarka taariikha Burned ee bogga guriga akhriyo."
         }
       },
       "lionogSupply": {
@@ -287,6 +296,12 @@
           "lpPercent": "4.42%",
           "circulating": "3,832,903,409,282,876,056,519,182",
           "circulatingPercent": "38.33%"
+        },
+        "burnContract": {
+          "title": "Heshiis Gubid Ikhtiyaari",
+          "intro": "Heshiis gubid ayaa lagu hagaajiyay BNB Chain. Qof kasta wuxuu u diri karaa LionOG heshiiska, kana wuxuu kadib qof kasta dhaqaajin karaa shaqadiisa gubidda si uu si joogto ah u baabbi'iyo dheelitirka la haysto — taas oo yaraysa wadarta sahayda dhammaan chains.",
+          "addressLabel": "Heshiiska gubidda:",
+          "legacy": "Heshiiskan waa nuqulkii asalka ahaa, isaguna <strong>ma muujiyo tirakood <code>totalBurned</code> on-chain</strong>. Sidaa darteed, lambarka Burned ee lagu muujiyo bogga guriga waxa laga soo qaadaa goynta sahayda cross-chain ee hadda laga jaro minta hore."
         }
       },
       "frogogSupply": {
@@ -312,6 +327,13 @@
           "lpPercent": "8.74%",
           "circulating": "8,385,795,686,123,088,377,024,138",
           "circulatingPercent": "83.86%"
+        },
+        "burnContract": {
+          "title": "Heshiis Gubid Ikhtiyaari",
+          "intro": "Khasnad gubid u gaar ah ayaa lagu hagaajiyay BNB Chain. Qof kasta wuxuu u diri karaa FrogOG heshiiska, kana wuxuu kadib qof kasta wici karaa shaqada <code>burn()</code> si uu si joogto ah u baabbi'iyo dheelitirka buuxa ee heshiiska — taas oo yaraysa wadarta sahayda dhammaan chains.",
+          "addressLabel": "Heshiiska gubidda:",
+          "properties": "Heshiiska ma laha <strong>milkiile, ma laha admin, ma laha jid casriyeyn, kana ma laha shaqo badbaadin</strong>. Tokenka la beegsanayo waa <strong>si adag loo qoray waqtiga isku-darka</strong> — wuxuu kaliya gubi karaa FrogOG.",
+          "counter": "Tirakood guud <code>totalBurned</code> ayaa atomicly kordha gubid kasta — kani waa lambarka taariikha Burned ee bogga guriga akhriyo."
         }
       }
     }

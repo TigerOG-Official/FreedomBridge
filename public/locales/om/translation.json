@@ -158,6 +158,8 @@
       "title": "Istaatistiksii Tokenii",
       "description": "Daataa yeroo dhugaa blokchain irraa dhufe kan dhiheessii jijjiirame fi raabsa chaanota deeggaraman hunda irratti mul'isu.",
       "totalConverted": "Waliigala Jijjiirame",
+      "totalBurned": "Gubame",
+      "burnedDerivedTooltip": "Garaagarummaa dhiheessii irraa argame (mint jalqabaa irraa dhiheessii cross-chain ammee hir'isuu). Konkonata gubuu jalqabaa lakkooftuu hin agarsiisu.",
       "distribution": "Raabsa Chaanii",
       "moreChains": "chaanota dabalataa",
       "liquidityPools": "Poolota Liquidity",
@@ -272,6 +274,13 @@
           "lpPercent": "5.65%",
           "circulating": "3,662,233,757,674,602,416,819,986",
           "circulatingPercent": "36.62%"
+        },
+        "burnContract": {
+          "title": "Konkonata Gubuu Fedha-fedhi",
+          "intro": "Kuusaa gubuu addaa BNB Chain irratti diramuun jira. Eenyu iyyuu TigerOG gara konkonata kanaatti erguu danda'a, akkasumas eenyu iyyuu boodarra <code>burn()</code> hojii isaa kan waamuun balansii guutuu konkonataa kanaa yeroo hundaaf balleessuu danda'a — kun chains hunda irratti dhiheessii waliigalaa hir'isa.",
+          "addressLabel": "Konkonata gubuu:",
+          "properties": "Konkonatichi <strong>abbaa hin qabu, admin hin qabu, karaa upgrade hin qabu, akkasumas hojii rescue hin qabu</strong>. Tokenii kaayyamame <strong>yeroo kompiliirii hardcode ta'ee</strong> — TigerOG qofa gubuu danda'a.",
+          "counter": "Lakkooftuu hawaasaa <code>totalBurned</code> guba tokkoon tokkoonni waliin atomiikiidhaan dabala — kun lakkoofsaa Burned fuula seeraa irratti agarsiisuufi."
         }
       },
       "lionogSupply": {
@@ -297,6 +306,12 @@
           "lpPercent": "4.42%",
           "circulating": "3,832,903,409,282,876,056,519,182",
           "circulatingPercent": "38.33%"
+        },
+        "burnContract": {
+          "title": "Konkonata Gubuu Fedha-fedhi",
+          "intro": "Konkonata gubuu BNB Chain irratti diramuun jira. Eenyu iyyuu LionOG gara konkonata kanaatti erguu danda'a, akkasumas eenyu iyyuu boodarra hojii gubuu isaa kan kaasuun balansii qabame yeroo hundaaf balleessuu danda'a — kun chains hunda irratti dhiheessii waliigalaa hir'isa.",
+          "addressLabel": "Konkonata gubuu:",
+          "legacy": "Konkonatichi gosa jalqabaa yoo ta'u <strong>lakkooftuu <code>totalBurned</code> on-chain hin agarsiisu</strong>. Kanaaf, lakkoofsaa Burned fuula seeraa irratti mul'atu kan argamu, dhiheessii cross-chain ammee mint jalqabaa irraa hir'isuun."
         }
       },
       "frogogSupply": {
@@ -322,6 +337,13 @@
           "lpPercent": "8.74%",
           "circulating": "8,385,795,686,123,088,377,024,138",
           "circulatingPercent": "83.86%"
+        },
+        "burnContract": {
+          "title": "Konkonata Gubuu Fedha-fedhi",
+          "intro": "Kuusaa gubuu addaa BNB Chain irratti diramuun jira. Eenyu iyyuu FrogOG gara konkonata kanaatti erguu danda'a, akkasumas eenyu iyyuu boodarra <code>burn()</code> hojii isaa kan waamuun balansii guutuu konkonataa kanaa yeroo hundaaf balleessuu danda'a — kun chains hunda irratti dhiheessii waliigalaa hir'isa.",
+          "addressLabel": "Konkonata gubuu:",
+          "properties": "Konkonatichi <strong>abbaa hin qabu, admin hin qabu, karaa upgrade hin qabu, akkasumas hojii rescue hin qabu</strong>. Tokenii kaayyamame <strong>yeroo kompiliirii hardcode ta'ee</strong> — FrogOG qofa gubuu danda'a.",
+          "counter": "Lakkooftuu hawaasaa <code>totalBurned</code> guba tokkoon tokkoonni waliin atomiikiidhaan dabala — kun lakkoofsaa Burned fuula seeraa irratti agarsiisuufi."
         }
       }
     }
@@ -383,7 +405,7 @@
       "chain": "Chaanii",
       "tokenAddress": "Adireesii Token",
       "axelarChainName": "Maqaa Chaanii Axelar",
-      "chainId": "ID: {{id}}" 
+      "chainId": "ID: {{id}}"
     },
     "axelarId": "Axelar ID: {{name}}",
     "copied": "Garagalfameera!",

@@ -150,6 +150,8 @@
       "title": "Token Statisztikák",
       "description": "Valós idejű adatok a blokkláncról, amelyek az átváltott kínálatot és az elosztást mutatják minden támogatott láncon.",
       "totalConverted": "Összesen Átváltva",
+      "totalBurned": "Elégetve",
+      "burnedDerivedTooltip": "Az ellátási delta alapján származtatva (kezdeti mint mínusz aktuális lánc közötti kínálat). Az eredeti égetési szerződés nem tesz közzé számlálót.",
       "distribution": "Lánc Elosztás",
       "moreChains": "több lánc",
       "liquidityPools": "Likviditási Poolok",
@@ -264,6 +266,13 @@
           "lpPercent": "5,65%",
           "circulating": "3 662 233 757 674 602 416 819 986",
           "circulatingPercent": "36,62%"
+        },
+        "burnContract": {
+          "title": "Önkéntes égetési szerződés",
+          "intro": "A BNB Chainen egy dedikált égetési páncélterem került telepítésre. Bárki küldhet TigerOG-t a szerződésbe, és bárki ezután meghívhatja a <code>burn()</code> függvényét, hogy véglegesen megsemmisítse a szerződés teljes egyenlegét — csökkentve ezzel a teljes kínálatot minden láncon.",
+          "addressLabel": "Égetési szerződés:",
+          "properties": "A szerződésnek <strong>nincs tulajdonosa, nincs adminisztrátora, nincs frissítési útvonala és nincs mentési funkciója</strong>. A céltoken <strong>fordítási időben be van drótozva</strong> — csak TigerOG-t tud égetni.",
+          "counter": "Egy nyilvános <code>totalBurned</code> számláló atomi módon növekszik minden égetéssel — ezt az értéket olvassa a kezdőlap Burned mutatója."
         }
       },
       "lionogSupply": {
@@ -289,6 +298,12 @@
           "lpPercent": "4,42%",
           "circulating": "3 832 903 409 282 876 056 519 182",
           "circulatingPercent": "38,33%"
+        },
+        "burnContract": {
+          "title": "Önkéntes égetési szerződés",
+          "intro": "A BNB Chainen egy égetési szerződés került telepítésre. Bárki küldhet LionOG-t a szerződésbe, és bárki ezután elindíthatja az égetési függvényét, hogy véglegesen megsemmisítse a tartott egyenleget — csökkentve ezzel a teljes kínálatot minden láncon.",
+          "addressLabel": "Égetési szerződés:",
+          "legacy": "Ez a szerződés az eredeti változat, és <strong>nem tesz közzé on-chain <code>totalBurned</code> számlálót</strong>. Ezért a kezdőlapon megjelenő Burned érték az aktuális lánc közötti kínálat kezdeti mintből való kivonásával származik."
         }
       },
       "frogogSupply": {
@@ -314,6 +329,13 @@
           "lpPercent": "8,74%",
           "circulating": "8 385 795 686 123 088 377 024 138",
           "circulatingPercent": "83,86%"
+        },
+        "burnContract": {
+          "title": "Önkéntes égetési szerződés",
+          "intro": "A BNB Chainen egy dedikált égetési páncélterem került telepítésre. Bárki küldhet FrogOG-t a szerződésbe, és bárki ezután meghívhatja a <code>burn()</code> függvényét, hogy véglegesen megsemmisítse a szerződés teljes egyenlegét — csökkentve ezzel a teljes kínálatot minden láncon.",
+          "addressLabel": "Égetési szerződés:",
+          "properties": "A szerződésnek <strong>nincs tulajdonosa, nincs adminisztrátora, nincs frissítési útvonala és nincs mentési funkciója</strong>. A céltoken <strong>fordítási időben be van drótozva</strong> — csak FrogOG-t tud égetni.",
+          "counter": "Egy nyilvános <code>totalBurned</code> számláló atomi módon növekszik minden égetéssel — ezt az értéket olvassa a kezdőlap Burned mutatója."
         }
       }
     }

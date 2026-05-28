@@ -147,6 +147,8 @@
       "title": "代幣統計",
       "description": "來自區塊鏈嘅實時數據，顯示支援嘅所有鏈上嘅轉換供應量同分佈。",
       "totalConverted": "總轉換量",
+      "totalBurned": "已銷毀",
+      "burnedDerivedTooltip": "從供應差額推導出嚟（初始 mint 減去當前 cross-chain 供應量）。原始嘅銷毀合約並冇暴露計數器。",
       "distribution": "鏈上分佈",
       "moreChains": "更多鏈",
       "liquidityPools": "流動性池",
@@ -261,6 +263,13 @@
           "lpPercent": "5.65%",
           "circulating": "3,662,233,757,674,602,416,819,986",
           "circulatingPercent": "36.62%"
+        },
+        "burnContract": {
+          "title": "自願銷毀合約",
+          "intro": "BNB Chain 上部署咗一個專用嘅銷毀保險庫。任何人都可以將 TigerOG 發送到合約，然後任何人都可以調用其 <code>burn()</code> 函數，永久銷毀合約嘅全部餘額 — 從而減少所有 chain 嘅總供應量。",
+          "addressLabel": "銷毀合約：",
+          "properties": "呢個合約<strong>冇擁有者、冇管理員、冇升級路徑、亦冇救援功能</strong>。目標代幣係<strong>編譯時硬編碼</strong>嘅 — 只可以銷毀 TigerOG。",
+          "counter": "公開嘅 <code>totalBurned</code> 計數器喺每次銷毀時都會原子性咁增加 — 呢個就係主頁 Burned 數字所讀取嘅值。"
         }
       },
       "lionogSupply": {
@@ -286,6 +295,12 @@
           "lpPercent": "4.42%",
           "circulating": "3,832,903,409,282,876,056,519,182",
           "circulatingPercent": "38.33%"
+        },
+        "burnContract": {
+          "title": "自願銷毀合約",
+          "intro": "BNB Chain 上部署咗一個銷毀合約。任何人都可以將 LionOG 發送到合約，然後任何人都可以觸發其銷毀函數，永久銷毀持有嘅餘額 — 從而減少所有 chain 嘅總供應量。",
+          "addressLabel": "銷毀合約：",
+          "legacy": "呢個合約係原始版本，<strong>並冇暴露鏈上嘅 <code>totalBurned</code> 計數器</strong>。所以主頁顯示嘅 Burned 數字係將當前嘅 cross-chain 供應量從初始 mint 中扣除而得出。"
         }
       },
       "frogogSupply": {
@@ -311,6 +326,13 @@
           "lpPercent": "8.74%",
           "circulating": "8,385,795,686,123,088,377,024,138",
           "circulatingPercent": "83.86%"
+        },
+        "burnContract": {
+          "title": "自願銷毀合約",
+          "intro": "BNB Chain 上部署咗一個專用嘅銷毀保險庫。任何人都可以將 FrogOG 發送到合約，然後任何人都可以調用其 <code>burn()</code> 函數，永久銷毀合約嘅全部餘額 — 從而減少所有 chain 嘅總供應量。",
+          "addressLabel": "銷毀合約：",
+          "properties": "呢個合約<strong>冇擁有者、冇管理員、冇升級路徑、亦冇救援功能</strong>。目標代幣係<strong>編譯時硬編碼</strong>嘅 — 只可以銷毀 FrogOG。",
+          "counter": "公開嘅 <code>totalBurned</code> 計數器喺每次銷毀時都會原子性咁增加 — 呢個就係主頁 Burned 數字所讀取嘅值。"
         }
       }
     }
@@ -372,7 +394,7 @@
       "chain": "鏈",
       "tokenAddress": "代幣地址",
       "axelarChainName": "Axelar 鏈名",
-      "chainId": "ID: {{id}}" 
+      "chainId": "ID: {{id}}"
     },
     "axelarId": "Axelar ID: {{name}}",
     "copied": "複製咗！",

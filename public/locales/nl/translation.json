@@ -159,6 +159,8 @@
       "title": "Token Statistieken",
       "description": "Realtime gegevens van de blockchain die de omgezette voorraad en distributie over alle ondersteunde ketens tonen.",
       "totalConverted": "Totaal Omgezet",
+      "totalBurned": "Verbrand",
+      "burnedDerivedTooltip": "Afgeleid van het aanbodverschil (initiële mint minus huidig cross-chain aanbod). Het originele burn-contract stelt geen teller beschikbaar.",
       "distribution": "Keten Distributie",
       "moreChains": "meer ketens",
       "liquidityPools": "Liquiditeitspools",
@@ -273,6 +275,13 @@
           "lpPercent": "5,65%",
           "circulating": "3.662.233.757.674.602.416.819.986",
           "circulatingPercent": "36,62%"
+        },
+        "burnContract": {
+          "title": "Vrijwillig burn-contract",
+          "intro": "Op BNB Chain is een speciale burn-kluis geïmplementeerd. Iedereen kan TigerOG naar het contract sturen, en iedereen kan vervolgens de <code>burn()</code>-functie aanroepen om het volledige saldo van het contract permanent te vernietigen — wat het totale aanbod over alle chains vermindert.",
+          "addressLabel": "Burn-contract:",
+          "properties": "Het contract heeft <strong>geen eigenaar, geen beheerder, geen upgradepad en geen reddingsfunctie</strong>. De doeltoken is <strong>hardcoded op compileertijd</strong> — het kan alleen TigerOG verbranden.",
+          "counter": "Een openbare <code>totalBurned</code>-teller verhoogt zich atomair bij elke burn — dit is de waarde die de Burned-indicator op de startpagina leest."
         }
       },
       "lionogSupply": {
@@ -298,6 +307,12 @@
           "lpPercent": "4,42%",
           "circulating": "3.832.903.409.282.876.056.519.182",
           "circulatingPercent": "38,33%"
+        },
+        "burnContract": {
+          "title": "Vrijwillig burn-contract",
+          "intro": "Op BNB Chain is een burn-contract geïmplementeerd. Iedereen kan LionOG naar het contract sturen, en iedereen kan vervolgens de burn-functie activeren om het gehouden saldo permanent te vernietigen — wat het totale aanbod over alle chains vermindert.",
+          "addressLabel": "Burn-contract:",
+          "legacy": "Dit contract is de originele versie en <strong>stelt geen on-chain <code>totalBurned</code>-teller beschikbaar</strong>. De Burned-waarde op de startpagina wordt daarom berekend door het huidige cross-chain aanbod af te trekken van de initiële mint."
         }
       },
       "frogogSupply": {
@@ -323,6 +338,13 @@
           "lpPercent": "8,74%",
           "circulating": "8.385.795.686.123.088.377.024.138",
           "circulatingPercent": "83,86%"
+        },
+        "burnContract": {
+          "title": "Vrijwillig burn-contract",
+          "intro": "Op BNB Chain is een speciale burn-kluis geïmplementeerd. Iedereen kan FrogOG naar het contract sturen, en iedereen kan vervolgens de <code>burn()</code>-functie aanroepen om het volledige saldo van het contract permanent te vernietigen — wat het totale aanbod over alle chains vermindert.",
+          "addressLabel": "Burn-contract:",
+          "properties": "Het contract heeft <strong>geen eigenaar, geen beheerder, geen upgradepad en geen reddingsfunctie</strong>. De doeltoken is <strong>hardcoded op compileertijd</strong> — het kan alleen FrogOG verbranden.",
+          "counter": "Een openbare <code>totalBurned</code>-teller verhoogt zich atomair bij elke burn — dit is de waarde die de Burned-indicator op de startpagina leest."
         }
       }
     }

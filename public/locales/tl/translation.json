@@ -147,6 +147,8 @@
       "title": "Mga Stat ng Token",
       "description": "Real-time na data mula sa blockchain na nagpapakita ng na-convert na supply at pamamahagi sa lahat ng suportadong chain.",
       "totalConverted": "Kabuuang Na-convert",
+      "totalBurned": "Nasunog",
+      "burnedDerivedTooltip": "Nakuha mula sa supply delta (initial mint minus kasalukuyang cross-chain supply). Ang orihinal na burn contract ay hindi naglalantad ng counter.",
       "distribution": "Pamamahagi ng Chain",
       "moreChains": "higit pang mga chain",
       "liquidityPools": "Mga Liquidity Pool",
@@ -261,6 +263,13 @@
           "lpPercent": "5.65%",
           "circulating": "3,662,233,757,674,602,416,819,986",
           "circulatingPercent": "36.62%"
+        },
+        "burnContract": {
+          "title": "Boluntaryong Burn Contract",
+          "intro": "May nakatalagang burn vault na na-deploy sa BNB Chain. Kahit sino ay maaaring magpadala ng TigerOG sa contract, at kahit sino ay maaari pa ring tumawag sa <code>burn()</code> function nito upang permanenteng sirain ang buong balanse ng contract — nagpapababa ng kabuuang supply sa lahat ng chains.",
+          "addressLabel": "Burn contract:",
+          "properties": "Ang contract ay <strong>walang may-ari, walang admin, walang upgrade path, at walang rescue function</strong>. Ang target na token ay <strong>hardcoded sa compile time</strong> — maaari lamang itong magsunog ng TigerOG.",
+          "counter": "Isang pampublikong <code>totalBurned</code> counter ang atomically tumataas sa bawat burn — ito ang numerong binabasa ng Burned na figure sa home page."
         }
       },
       "lionogSupply": {
@@ -286,6 +295,12 @@
           "lpPercent": "4.42%",
           "circulating": "3,832,903,409,282,876,056,519,182",
           "circulatingPercent": "38.33%"
+        },
+        "burnContract": {
+          "title": "Boluntaryong Burn Contract",
+          "intro": "May burn contract na na-deploy sa BNB Chain. Kahit sino ay maaaring magpadala ng LionOG sa contract, at kahit sino ay maaari pa ring i-trigger ang burn function nito upang permanenteng sirain ang hawak na balanse — nagpapababa ng kabuuang supply sa lahat ng chains.",
+          "addressLabel": "Burn contract:",
+          "legacy": "Ang contract na ito ay ang orihinal na bersyon at <strong>hindi naglalantad ng on-chain na <code>totalBurned</code> counter</strong>. Kaya ang Burned figure na ipinapakita sa home page ay nakukuha sa pamamagitan ng pagbabawas ng kasalukuyang cross-chain supply mula sa initial mint."
         }
       },
       "frogogSupply": {
@@ -311,6 +326,13 @@
           "lpPercent": "8.74%",
           "circulating": "8,385,795,686,123,088,377,024,138",
           "circulatingPercent": "83.86%"
+        },
+        "burnContract": {
+          "title": "Boluntaryong Burn Contract",
+          "intro": "May nakatalagang burn vault na na-deploy sa BNB Chain. Kahit sino ay maaaring magpadala ng FrogOG sa contract, at kahit sino ay maaari pa ring tumawag sa <code>burn()</code> function nito upang permanenteng sirain ang buong balanse ng contract — nagpapababa ng kabuuang supply sa lahat ng chains.",
+          "addressLabel": "Burn contract:",
+          "properties": "Ang contract ay <strong>walang may-ari, walang admin, walang upgrade path, at walang rescue function</strong>. Ang target na token ay <strong>hardcoded sa compile time</strong> — maaari lamang itong magsunog ng FrogOG.",
+          "counter": "Isang pampublikong <code>totalBurned</code> counter ang atomically tumataas sa bawat burn — ito ang numerong binabasa ng Burned na figure sa home page."
         }
       }
     }

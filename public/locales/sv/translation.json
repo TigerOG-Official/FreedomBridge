@@ -148,6 +148,8 @@
       "title": "Tokenstatistik",
       "description": "Realtidsdata från blockkedjan som visar konverterat utbud och distribution över alla stödda kedjor.",
       "totalConverted": "Totalt Konverterat",
+      "totalBurned": "Bränt",
+      "burnedDerivedTooltip": "Härlett från utbudsskillnad (ursprunglig mint minus aktuellt cross-chain-utbud). Det ursprungliga burn-kontraktet exponerar inte en räknare.",
       "distribution": "Kedjedistribution",
       "moreChains": "fler kedjor",
       "liquidityPools": "Likviditetspooler",
@@ -262,6 +264,13 @@
           "lpPercent": "5.65%",
           "circulating": "3,662,233,757,674,602,416,819,986",
           "circulatingPercent": "36.62%"
+        },
+        "burnContract": {
+          "title": "Frivilligt burn-kontrakt",
+          "intro": "Ett dedikerat burn-valv är utplacerat på BNB Chain. Vem som helst kan skicka TigerOG till kontraktet, och vem som helst kan sedan anropa dess <code>burn()</code>-funktion för att permanent förstöra kontraktets fulla saldo — vilket minskar det totala utbudet över alla chains.",
+          "addressLabel": "Burn-kontrakt:",
+          "properties": "Kontraktet har <strong>ingen ägare, ingen administratör, ingen uppgraderingsväg och ingen räddningsfunktion</strong>. Måltokenen är <strong>hårdkodad vid kompileringstid</strong> — den kan endast bränna TigerOG.",
+          "counter": "En offentlig <code>totalBurned</code>-räknare ökar atomärt med varje burn — detta är värdet som Burned-indikatorn på startsidan läser."
         }
       },
       "lionogSupply": {
@@ -287,6 +296,12 @@
           "lpPercent": "4.42%",
           "circulating": "3,832,903,409,282,876,056,519,182",
           "circulatingPercent": "38.33%"
+        },
+        "burnContract": {
+          "title": "Frivilligt burn-kontrakt",
+          "intro": "Ett burn-kontrakt är utplacerat på BNB Chain. Vem som helst kan skicka LionOG till kontraktet, och vem som helst kan sedan utlösa dess burn-funktion för att permanent förstöra det innehavda saldot — vilket minskar det totala utbudet över alla chains.",
+          "addressLabel": "Burn-kontrakt:",
+          "legacy": "Detta kontrakt är den ursprungliga versionen och <strong>exponerar inte en on-chain <code>totalBurned</code>-räknare</strong>. Burned-värdet som visas på startsidan härleds därför genom att dra av det aktuella cross-chain-utbudet från den ursprungliga minten."
         }
       },
       "frogogSupply": {
@@ -312,6 +327,13 @@
           "lpPercent": "8.74%",
           "circulating": "8,385,795,686,123,088,377,024,138",
           "circulatingPercent": "83.86%"
+        },
+        "burnContract": {
+          "title": "Frivilligt burn-kontrakt",
+          "intro": "Ett dedikerat burn-valv är utplacerat på BNB Chain. Vem som helst kan skicka FrogOG till kontraktet, och vem som helst kan sedan anropa dess <code>burn()</code>-funktion för att permanent förstöra kontraktets fulla saldo — vilket minskar det totala utbudet över alla chains.",
+          "addressLabel": "Burn-kontrakt:",
+          "properties": "Kontraktet har <strong>ingen ägare, ingen administratör, ingen uppgraderingsväg och ingen räddningsfunktion</strong>. Måltokenen är <strong>hårdkodad vid kompileringstid</strong> — den kan endast bränna FrogOG.",
+          "counter": "En offentlig <code>totalBurned</code>-räknare ökar atomärt med varje burn — detta är värdet som Burned-indikatorn på startsidan läser."
         }
       }
     }

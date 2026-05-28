@@ -148,6 +148,8 @@
       "title": "Kididdigar Token",
       "description": "Bayanan lokaci na gaske daga blockchain da ke nuna wadatar da aka canza da rarrabawa a duk faɗin sarƙoƙi masu tallafi.",
       "totalConverted": "Jimlar An Canza",
+      "totalBurned": "An ƙone",
+      "burnedDerivedTooltip": "An samo daga bambancin wadata (farkon mint ya rage wadata ta yanzu ta cikin sarƙoƙi). Ainihin kwangilar ƙonewa ba ta nuna mai ƙidaya ba.",
       "distribution": "Rarraba Sarka",
       "moreChains": "ƙarin sarƙoƙi",
       "liquidityPools": "Pools na Ruwan Kuɗi",
@@ -262,6 +264,13 @@
           "lpPercent": "5.65%",
           "circulating": "3,662,233,757,674,602,416,819,986",
           "circulatingPercent": "36.62%"
+        },
+        "burnContract": {
+          "title": "Kwangilar Ƙonewa ta Son Rai",
+          "intro": "An tura ɗakin ajiya na ƙonewa na musamman a BNB Chain. Kowa zai iya tura TigerOG zuwa kwangilar, sannan kowa zai iya kiran aikinta na <code>burn()</code> don lalata cikakken ma'auni na kwangilar har abada — wanda ke rage jimillar wadata a cikin dukkan sarƙoƙi.",
+          "addressLabel": "Kwangilar ƙonewa:",
+          "properties": "Kwangilar ba ta da <strong>mai shi, ba ta da admin, ba ta da hanyar inganta, kuma ba ta da aikin ceto</strong>. Token da aka yi niyya <strong>an saka shi a tsayayye lokacin tarawa</strong> — kawai zai iya ƙone TigerOG.",
+          "counter": "Mai ƙidaya na jama'a <code>totalBurned</code> yana ƙaruwa ta hanyar atomic tare da kowane ƙonewa — wannan shi ne lambar Burned da ake nunawa a babban shafin."
         }
       },
       "lionogSupply": {
@@ -287,6 +296,12 @@
           "lpPercent": "4.42%",
           "circulating": "3,832,903,409,282,876,056,519,182",
           "circulatingPercent": "38.33%"
+        },
+        "burnContract": {
+          "title": "Kwangilar Ƙonewa ta Son Rai",
+          "intro": "An tura kwangilar ƙonewa a BNB Chain. Kowa zai iya tura LionOG zuwa kwangilar, sannan kowa zai iya kunna aikinta na ƙonewa don lalata ma'aunin da aka riƙe har abada — wanda ke rage jimillar wadata a cikin dukkan sarƙoƙi.",
+          "addressLabel": "Kwangilar ƙonewa:",
+          "legacy": "Wannan kwangilar ita ce ainihin sigar kuma <strong>ba ta nuna mai ƙidaya na <code>totalBurned</code> a kan sarƙoƙi ba</strong>. Saboda haka, lambar Burned da aka nuna a babban shafin ana samun ta ne ta hanyar cire wadata ta yanzu ta cikin sarƙoƙi daga farkon mint."
         }
       },
       "frogogSupply": {
@@ -312,6 +327,13 @@
           "lpPercent": "8.74%",
           "circulating": "8,385,795,686,123,088,377,024,138",
           "circulatingPercent": "83.86%"
+        },
+        "burnContract": {
+          "title": "Kwangilar Ƙonewa ta Son Rai",
+          "intro": "An tura ɗakin ajiya na ƙonewa na musamman a BNB Chain. Kowa zai iya tura FrogOG zuwa kwangilar, sannan kowa zai iya kiran aikinta na <code>burn()</code> don lalata cikakken ma'auni na kwangilar har abada — wanda ke rage jimillar wadata a cikin dukkan sarƙoƙi.",
+          "addressLabel": "Kwangilar ƙonewa:",
+          "properties": "Kwangilar ba ta da <strong>mai shi, ba ta da admin, ba ta da hanyar inganta, kuma ba ta da aikin ceto</strong>. Token da aka yi niyya <strong>an saka shi a tsayayye lokacin tarawa</strong> — kawai zai iya ƙone FrogOG.",
+          "counter": "Mai ƙidaya na jama'a <code>totalBurned</code> yana ƙaruwa ta hanyar atomic tare da kowane ƙonewa — wannan shi ne lambar Burned da ake nunawa a babban shafin."
         }
       }
     }

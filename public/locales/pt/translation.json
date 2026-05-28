@@ -147,6 +147,8 @@
       "title": "Estatísticas do Token",
       "description": "Dados em tempo real da blockchain mostrando o supply convertido e a distribuição em todas as redes suportadas.",
       "totalConverted": "Total Convertido",
+      "totalBurned": "Queimado",
+      "burnedDerivedTooltip": "Derivado da diferença de supply (mint inicial menos supply cross-chain atual). O contrato de queima original não expõe um contador.",
       "distribution": "Distribuição por Rede",
       "moreChains": "mais redes",
       "liquidityPools": "Pools de Liquidez",
@@ -261,6 +263,13 @@
           "lpPercent": "5,65%",
           "circulating": "3.662.233.757.674.602.416.819.986",
           "circulatingPercent": "36,62%"
+        },
+        "burnContract": {
+          "title": "Contrato de queima voluntário",
+          "intro": "Foi implantado um cofre de queima dedicado na BNB Chain. Qualquer pessoa pode enviar TigerOG para o contrato, e qualquer pessoa pode então chamar a função <code>burn()</code> para destruir permanentemente o saldo total do contrato — reduzindo o supply total em todas as chains.",
+          "addressLabel": "Contrato de queima:",
+          "properties": "O contrato não tem <strong>proprietário, administrador, caminho de upgrade nem função de resgate</strong>. O token alvo é <strong>codificado em tempo de compilação</strong> — só pode queimar TigerOG.",
+          "counter": "Um contador público <code>totalBurned</code> incrementa atomicamente a cada queima — é esse valor que o indicador Burned lê na página inicial."
         }
       },
       "lionogSupply": {
@@ -286,6 +295,12 @@
           "lpPercent": "4,42%",
           "circulating": "3.832.903.409.282.876.056.519.182",
           "circulatingPercent": "38,33%"
+        },
+        "burnContract": {
+          "title": "Contrato de queima voluntário",
+          "intro": "Foi implantado um contrato de queima na BNB Chain. Qualquer pessoa pode enviar LionOG para o contrato, e qualquer pessoa pode então acionar a função de queima para destruir permanentemente o saldo retido — reduzindo o supply total em todas as chains.",
+          "addressLabel": "Contrato de queima:",
+          "legacy": "Este contrato é a versão original e <strong>não expõe um contador <code>totalBurned</code> on-chain</strong>. Por isso, o valor Burned exibido na página inicial é derivado subtraindo o supply cross-chain atual do mint inicial."
         }
       },
       "frogogSupply": {
@@ -311,6 +326,13 @@
           "lpPercent": "8,74%",
           "circulating": "8.385.795.686.123.088.377.024.138",
           "circulatingPercent": "83,86%"
+        },
+        "burnContract": {
+          "title": "Contrato de queima voluntário",
+          "intro": "Foi implantado um cofre de queima dedicado na BNB Chain. Qualquer pessoa pode enviar FrogOG para o contrato, e qualquer pessoa pode então chamar a função <code>burn()</code> para destruir permanentemente o saldo total do contrato — reduzindo o supply total em todas as chains.",
+          "addressLabel": "Contrato de queima:",
+          "properties": "O contrato não tem <strong>proprietário, administrador, caminho de upgrade nem função de resgate</strong>. O token alvo é <strong>codificado em tempo de compilação</strong> — só pode queimar FrogOG.",
+          "counter": "Um contador público <code>totalBurned</code> incrementa atomicamente a cada queima — é esse valor que o indicador Burned lê na página inicial."
         }
       }
     }
@@ -372,7 +394,7 @@
       "chain": "Rede",
       "tokenAddress": "Endereço do Token",
       "axelarChainName": "Nome na Axelar",
-      "chainId": "ID: {{id}}" 
+      "chainId": "ID: {{id}}"
     },
     "axelarId": "ID Axelar: {{name}}",
     "copied": "Copiado!",

@@ -159,6 +159,8 @@
       "title": "Token Stats",
       "description": "Real-time data from blockchain wey show converted supply and distribution across all supported chains.",
       "totalConverted": "Total Wey Convert",
+      "totalBurned": "Don burn",
+      "burnedDerivedTooltip": "Dey come from supply delta (initial mint minus current cross-chain supply). The original burn contract no expose counter.",
       "distribution": "Chain Distribution",
       "moreChains": "more chains",
       "liquidityPools": "Liquidity Pools",
@@ -273,6 +275,13 @@
           "lpPercent": "5.65%",
           "circulating": "3,662,233,757,674,602,416,819,986",
           "circulatingPercent": "36.62%"
+        },
+        "burnContract": {
+          "title": "Voluntary Burn Contract",
+          "intro": "Dedicated burn vault dey deployed for BNB Chain. Anybody fit send TigerOG go the contract, and anybody fit then call im <code>burn()</code> function to destroy the contract full balance permanently — wey go reduce the total supply for all chains.",
+          "addressLabel": "Burn contract:",
+          "properties": "The contract no get <strong>owner, no admin, no upgrade path, and no rescue function</strong>. The target token na <strong>hardcoded at compile time</strong> — e fit only burn TigerOG.",
+          "counter": "One public <code>totalBurned</code> counter dey increase atomically every burn — na this number the Burned figure for home page dey read."
         }
       },
       "lionogSupply": {
@@ -298,6 +307,12 @@
           "lpPercent": "4.42%",
           "circulating": "3,832,903,409,282,876,056,519,182",
           "circulatingPercent": "38.33%"
+        },
+        "burnContract": {
+          "title": "Voluntary Burn Contract",
+          "intro": "One burn contract dey deployed for BNB Chain. Anybody fit send LionOG go the contract, and anybody fit then trigger im burn function to destroy the held balance permanently — wey go reduce the total supply for all chains.",
+          "addressLabel": "Burn contract:",
+          "legacy": "This contract na the original version, and <strong>e no expose any on-chain <code>totalBurned</code> counter</strong>. So the Burned figure wey dey show for home page dey come from subtracting current cross-chain supply from the initial mint."
         }
       },
       "frogogSupply": {
@@ -323,6 +338,13 @@
           "lpPercent": "8.74%",
           "circulating": "8,385,795,686,123,088,377,024,138",
           "circulatingPercent": "83.86%"
+        },
+        "burnContract": {
+          "title": "Voluntary Burn Contract",
+          "intro": "Dedicated burn vault dey deployed for BNB Chain. Anybody fit send FrogOG go the contract, and anybody fit then call im <code>burn()</code> function to destroy the contract full balance permanently — wey go reduce the total supply for all chains.",
+          "addressLabel": "Burn contract:",
+          "properties": "The contract no get <strong>owner, no admin, no upgrade path, and no rescue function</strong>. The target token na <strong>hardcoded at compile time</strong> — e fit only burn FrogOG.",
+          "counter": "One public <code>totalBurned</code> counter dey increase atomically every burn — na this number the Burned figure for home page dey read."
         }
       }
     }
@@ -384,7 +406,7 @@
       "chain": "Chain",
       "tokenAddress": "Token Address",
       "axelarChainName": "Axelar Chain Name",
-      "chainId": "ID: {{id}}" 
+      "chainId": "ID: {{id}}"
     },
     "axelarId": "Axelar ID: {{name}}",
     "copied": "E don copy!",

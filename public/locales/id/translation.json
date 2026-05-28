@@ -150,6 +150,8 @@
       "title": "Statistik Token",
       "description": "Data real-time dari blockchain yang menunjukkan pasokan yang dikonversi dan distribusi di semua rantai yang didukung.",
       "totalConverted": "Total Dikonversi",
+      "totalBurned": "Terbakar",
+      "burnedDerivedTooltip": "Diturunkan dari selisih pasokan (mint awal dikurangi pasokan cross-chain saat ini). Kontrak burn asli tidak mengekspos counter.",
       "distribution": "Distribusi Rantai",
       "moreChains": "rantai lainnya",
       "liquidityPools": "Pool Likuiditas",
@@ -264,6 +266,13 @@
           "lpPercent": "5,65%",
           "circulating": "3.662.233.757.674.602.416.819.986",
           "circulatingPercent": "36,62%"
+        },
+        "burnContract": {
+          "title": "Kontrak Burn Sukarela",
+          "intro": "Sebuah vault burn khusus telah di-deploy di BNB Chain. Siapa saja dapat mengirim TigerOG ke kontrak, dan siapa saja kemudian dapat memanggil fungsi <code>burn()</code> untuk menghancurkan saldo penuh kontrak secara permanen — mengurangi pasokan total di semua chain.",
+          "addressLabel": "Kontrak burn:",
+          "properties": "Kontrak ini <strong>tidak memiliki pemilik, tidak ada admin, tidak ada jalur upgrade, dan tidak ada fungsi rescue</strong>. Token target <strong>di-hardcode pada waktu kompilasi</strong> — hanya dapat membakar TigerOG.",
+          "counter": "Counter publik <code>totalBurned</code> bertambah secara atomik dengan setiap pembakaran — inilah angka yang dibaca oleh tampilan Burned di halaman beranda."
         }
       },
       "lionogSupply": {
@@ -289,6 +298,12 @@
           "lpPercent": "4,42%",
           "circulating": "3.832.903.409.282.876.056.519.182",
           "circulatingPercent": "38,33%"
+        },
+        "burnContract": {
+          "title": "Kontrak Burn Sukarela",
+          "intro": "Sebuah kontrak burn telah di-deploy di BNB Chain. Siapa saja dapat mengirim LionOG ke kontrak, dan siapa saja kemudian dapat memicu fungsi burn-nya untuk menghancurkan saldo yang ditahan secara permanen — mengurangi pasokan total di semua chain.",
+          "addressLabel": "Kontrak burn:",
+          "legacy": "Kontrak ini adalah versi asli dan <strong>tidak mengekspos counter <code>totalBurned</code> on-chain</strong>. Oleh karena itu, angka Burned yang ditampilkan di halaman beranda diturunkan dengan mengurangi pasokan cross-chain saat ini dari mint awal."
         }
       },
       "frogogSupply": {
@@ -314,6 +329,13 @@
           "lpPercent": "8,74%",
           "circulating": "8.385.795.686.123.088.377.024.138",
           "circulatingPercent": "83,86%"
+        },
+        "burnContract": {
+          "title": "Kontrak Burn Sukarela",
+          "intro": "Sebuah vault burn khusus telah di-deploy di BNB Chain. Siapa saja dapat mengirim FrogOG ke kontrak, dan siapa saja kemudian dapat memanggil fungsi <code>burn()</code> untuk menghancurkan saldo penuh kontrak secara permanen — mengurangi pasokan total di semua chain.",
+          "addressLabel": "Kontrak burn:",
+          "properties": "Kontrak ini <strong>tidak memiliki pemilik, tidak ada admin, tidak ada jalur upgrade, dan tidak ada fungsi rescue</strong>. Token target <strong>di-hardcode pada waktu kompilasi</strong> — hanya dapat membakar FrogOG.",
+          "counter": "Counter publik <code>totalBurned</code> bertambah secara atomik dengan setiap pembakaran — inilah angka yang dibaca oleh tampilan Burned di halaman beranda."
         }
       }
     }
