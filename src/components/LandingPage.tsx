@@ -9,8 +9,7 @@ import {
   Zap,
   Rocket,
   Book,
-  ExternalLink,
-  ShoppingCart
+  ExternalLink
 } from "lucide-react";
 import { useTranslation, Trans } from "react-i18next";
 import chainsConfig from "../config/chains.json";
@@ -144,7 +143,7 @@ export default function LandingPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Large Feature Card - The Graph */}
+          {/* Large Feature Card - Transaction-tax comparison */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -161,70 +160,18 @@ export default function LandingPage() {
               </p>
             </div>
             
-            {/* Graph: Real Tax Decay Visualization */}
-            <div className="mt-8 relative h-64 w-full rounded-xl overflow-hidden border graph-bg">
-              <svg className="absolute bottom-0 left-0 w-full h-full" viewBox="0 0 400 150" preserveAspectRatio="none">
-                <defs>
-                  <linearGradient id="graphGradient" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#6366f1" stopOpacity="0.4" />
-                    <stop offset="100%" stopColor="#6366f1" stopOpacity="0" />
-                  </linearGradient>
-                  <filter id="glow">
-                    <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
-                    <feMerge>
-                      <feMergeNode in="coloredBlur"/>
-                      <feMergeNode in="SourceGraphic"/>
-                    </feMerge>
-                  </filter>
-                </defs>
-                
-                {/* Area under the curve - Wrapped (Flat) */}
-                <path 
-                  d="M0 150 L0 40 L 400 40 V 150 Z" 
-                  fill="url(#graphGradient)" 
-                  className="graph-area"
-                  opacity="0.5"
-                />
-                
-                {/* The Line itself - Wrapped (Flat at 100%) */}
-                <path 
-                  d="M0 40 L 400 40" 
-                  fill="none" 
-                  strokeWidth="4" 
-                  className="graph-path"
-                  filter="url(#glow)"
-                />
-                
-                {/* Legacy Token Decay (10% tax compounding) */}
-                {/* Starts at 40 (100%), decays to ~120 (low balance) */}
-                <path 
-                  d="M0 40 C 100 40, 150 90, 400 130" 
-                  fill="none" 
-                  stroke="currentColor" 
-                  strokeOpacity="0.4"
-                  strokeWidth="3" 
-                  strokeDasharray="6,6"
-                />
-              </svg>
-              
-              {/* Floating Data Points */}
-              <motion.div 
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.5, duration: 0.5 }}
-                className="absolute top-[15%] right-[5%] bg-indigo-600 text-white text-xs font-bold px-3 py-1.5 rounded-md shadow-lg border border-indigo-400"
-              >
-                {t('landing.features.stopDecay.graphLabel1')}
-              </motion.div>
-              
-              <motion.div 
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.7, duration: 0.5 }}
-                className="absolute bottom-[15%] right-[5%] bg-red-500/80 text-white text-xs font-bold px-3 py-1.5 rounded-md shadow-lg border border-red-400/50"
-              >
-                {t('landing.features.stopDecay.graphLabel2')}
-              </motion.div>
+            {/* Neutral tax comparison without price or value claims */}
+            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="rounded-xl border graph-bg p-6 flex items-center min-h-28">
+                <p className="text-sm font-bold text-indigo-600 dark:text-indigo-300">
+                  {t('landing.features.stopDecay.graphLabel1')}
+                </p>
+              </div>
+              <div className="rounded-xl border graph-bg p-6 flex items-center min-h-28">
+                <p className="text-sm font-bold feature-text">
+                  {t('landing.features.stopDecay.graphLabel2')}
+                </p>
+              </div>
             </div>
           </motion.div>
 
@@ -310,7 +257,7 @@ export default function LandingPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* BNBTiger */}
           <motion.a
-            href="https://pancakeswap.finance/swap?outputCurrency=0xAC68931B666E086E9de380CFDb0Fb5704a35dc2D&chain=bsc"
+            href="https://pancakeswap.finance/info/v2/tokens/0xAC68931B666E086E9de380CFDb0Fb5704a35dc2D"
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, y: 20 }}
@@ -323,15 +270,14 @@ export default function LandingPage() {
             
             <div className="relative h-full rounded-[1.3rem] p-8 flex flex-col items-center text-center">
               <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-lg ring-1 ring-white/20 transition-transform duration-300 group-hover:scale-110" style={{ background: 'linear-gradient(135deg, var(--accent-primary), var(--accent-primary-strong))', boxShadow: '0 10px 20px -5px color-mix(in srgb, var(--accent-primary) 50%, transparent)' }}>
-                <ShoppingCart className="w-7 h-7 text-white" />
+                <ExternalLink className="w-7 h-7 text-white" />
               </div>
               
               <h3 className="text-2xl font-bold feature-title mb-2 group-hover:text-[var(--accent-primary)] transition-colors">BNBTiger</h3>
               <div className="h-px w-12 bg-[var(--theme-card-border)] my-4" />
               
               <p className="feature-text mb-8 text-sm leading-relaxed">
-                {t('landing.buyTokens.buyOn')} <br/>
-                <span className="text-[var(--accent-primary)] font-bold">{t('landing.buyTokens.then')}</span> {t('landing.buyTokens.convertTo')} TigerOG
+                {t('landing.buyTokens.buyOn')}
               </p>
 
               <div className="mt-auto flex items-center gap-2 btn-secondary-glass px-6 py-2 h-auto rounded-full text-sm group/btn">
@@ -343,7 +289,7 @@ export default function LandingPage() {
 
           {/* BNBLion */}
           <motion.a
-            href="https://pancakeswap.finance/swap?outputCurrency=0xdA1689C5557564d06E2A546F8FD47350b9D44a73&chain=bsc"
+            href="https://pancakeswap.finance/info/v2/tokens/0xdA1689C5557564d06E2A546F8FD47350b9D44a73"
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, y: 20 }}
@@ -356,15 +302,14 @@ export default function LandingPage() {
             
             <div className="relative h-full rounded-[1.3rem] p-8 flex flex-col items-center text-center">
               <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-lg ring-1 ring-white/20 transition-transform duration-300 group-hover:scale-110" style={{ background: 'linear-gradient(135deg, var(--accent-secondary), var(--theme-button-gradient-mid))', boxShadow: '0 10px 20px -5px color-mix(in srgb, var(--accent-secondary) 50%, transparent)' }}>
-                <ShoppingCart className="w-7 h-7 text-white" />
+                <ExternalLink className="w-7 h-7 text-white" />
               </div>
               
               <h3 className="text-2xl font-bold feature-title mb-2 group-hover:text-[var(--accent-secondary)] transition-colors">BNBLion</h3>
               <div className="h-px w-12 bg-[var(--theme-card-border)] my-4" />
               
               <p className="feature-text mb-8 text-sm leading-relaxed">
-                {t('landing.buyTokens.buyOn')} <br/>
-                <span className="text-[var(--accent-secondary)] font-bold">{t('landing.buyTokens.then')}</span> {t('landing.buyTokens.convertTo')} LionOG
+                {t('landing.buyTokens.buyOn')}
               </p>
 
               <div className="mt-auto flex items-center gap-2 btn-secondary-glass px-6 py-2 h-auto rounded-full text-sm group/btn">
@@ -376,7 +321,7 @@ export default function LandingPage() {
 
           {/* BNBFrog */}
           <motion.a
-            href="https://pancakeswap.finance/swap?outputCurrency=0x64da67A12a46f1DDF337393e2dA12eD0A507Ad3D&chain=bsc"
+            href="https://pancakeswap.finance/info/v2/tokens/0x64da67A12a46f1DDF337393e2dA12eD0A507Ad3D"
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, y: 20 }}
@@ -389,15 +334,14 @@ export default function LandingPage() {
             
             <div className="relative h-full rounded-[1.3rem] p-8 flex flex-col items-center text-center">
               <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-lg ring-1 ring-white/20 transition-transform duration-300 group-hover:scale-110" style={{ background: 'linear-gradient(135deg, var(--accent-signal), var(--theme-success-text))', boxShadow: '0 10px 20px -5px color-mix(in srgb, var(--accent-signal) 50%, transparent)' }}>
-                <ShoppingCart className="w-7 h-7 text-white" />
+                <ExternalLink className="w-7 h-7 text-white" />
               </div>
               
               <h3 className="text-2xl font-bold feature-title mb-2 group-hover:text-[var(--accent-signal)] transition-colors">BNBFrog</h3>
               <div className="h-px w-12 bg-[var(--theme-card-border)] my-4" />
               
               <p className="feature-text mb-8 text-sm leading-relaxed">
-                {t('landing.buyTokens.buyOn')} <br/>
-                <span className="text-[var(--accent-signal)] font-bold">{t('landing.buyTokens.then')}</span> {t('landing.buyTokens.convertTo')} FrogOG
+                {t('landing.buyTokens.buyOn')}
               </p>
 
               <div className="mt-auto flex items-center gap-2 btn-secondary-glass px-6 py-2 h-auto rounded-full text-sm group/btn">

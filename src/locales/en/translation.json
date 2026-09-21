@@ -109,14 +109,14 @@
       "title": "Interchain Token Service",
       "description": "Freedom Bridge leverages Axelar ITS to deliver a seamless, secure, and tax-free bridging experience across {{count}}+ blockchains.",
       "stopDecay": {
-        "title": "Stop the Decay",
-        "description": "Legacy tokens burn 10-11% of your value on every buy and sell. Converting to TigerOG stops this bleed immediately, preserving 100% of your value.",
-        "graphLabel1": "100% Retained (TigerOG)",
-        "graphLabel2": "-40% Value (Legacy 10% Tax)"
+        "title": "Transaction-Tax Comparison",
+        "description": "Legacy-token contracts may apply transaction taxes. OG tokens have a 0% token-transfer tax. Conversion is 1:1 in token units; market prices and available liquidity may differ.",
+        "graphLabel1": "OG tokens: 0% token-transfer tax",
+        "graphLabel2": "Legacy tokens: contract-specific taxes may apply"
       },
       "conversion": {
         "title": "1:1 Conversion",
-        "description": "Total supply never changes. Tokens are held in a secure conversion contract, and an exact 1:1 equivalent is used. No inflation, no dilution."
+        "description": "Total supply never changes. The rate is hardcoded 1:1 and cannot be altered, and the contract cannot mint. No inflation, no dilution."
       },
       "multichain": {
         "title": "Multi-Chain",
@@ -134,13 +134,11 @@
       "button": "Launch App Now"
     },
     "buyTokens": {
-      "badge": "Get Started",
-      "title": "Acquire Assets",
-      "description": "Don't have any tokens yet? Buy the original tokens on PancakeSwap, then convert them to the new multichain versions.",
-      "buyOn": "Buy on PancakeSwap",
-      "then": "then",
-      "convertTo": "Convert to",
-      "buyNow": "Buy Now"
+      "badge": "Third-Party Markets",
+      "title": "Legacy-Token Trading Pairs",
+      "description": "The original tokens have third-party trading pairs on PancakeSwap. Freedom Bridge does not operate those markets.",
+      "buyOn": "PancakeSwap trading pair",
+      "buyNow": "View Pair on PancakeSwap"
     },
     "liveStats": {
       "badge": "Live Protocol Stats",
